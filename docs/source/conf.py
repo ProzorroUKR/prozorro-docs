@@ -58,7 +58,7 @@ copyright = u'2014-2016, Quintagroup, Ltd'
 # built documents.
 #
 # The short X.Y version.
-version = pkg_resources.get_distribution(project).version
+version = "2.4"
 # The full version, including alpha/beta/rc tags.
 release = version
 
