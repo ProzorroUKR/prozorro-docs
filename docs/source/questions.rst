@@ -9,7 +9,7 @@ Submitting Questions
 
 Anybody (who provides their identity) can ask questions:
 
-.. include:: tutorial/ask-question.http
+.. include:: http/tutorial/ask-question.http
    :code:
 
 Retrieving Questions
@@ -17,7 +17,7 @@ Retrieving Questions
 
 Question author identities are not revealed before auction ends:
 
-.. include:: tutorial/list-question.http
+.. include:: http/tutorial/list-question.http
    :code:
 
 Answering
@@ -28,5 +28,5 @@ Submitting Answers
 
 Tender creator can answer questions:
  
-.. include:: tutorial/answer-question.http
+.. include:: http/tutorial/answer-question.http
    :code:

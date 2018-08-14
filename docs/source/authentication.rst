@@ -21,7 +21,7 @@ Getting token
 
 The token is issued when object is created in the database:
 
-.. include:: tutorial/create-tender-procuringEntity.http
+.. include:: http/tutorial/create-tender-procuringEntity.http
    :code:
 
 You can see the `access` with `token` in response.  Its value can be used to
@@ -38,5 +38,5 @@ You can pass access token in the following ways:
 
 See the example of the action with token passed as URL query string:
 
-.. include:: tutorial/patch-items-value-periods.http
+.. include:: http/tutorial/patch-items-value-periods.http
    :code:
