@@ -1,110 +1,248 @@
-$ http --auth broker: -j POST https://api-sandbox.openprocurement.org/api/0/tenders data:=@./school-tender.json
-POST /api/0/tenders HTTP/1.1
+POST /api/2.3/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Type: application/json; charset=utf-8
+Content-Length: 4164
+Content-Type: application/json
+Host: api-sandbox.openprocurement.org
 
 {
-    "data": {
-        "enquiryPeriod": {
-            "endDate": "2015-12-01"
-        }, 
-        "items": [
-            {
-                "description": "Послуги шкільних їдалень"
-            }
+  "data": {
+    "features": [
+      {
+        "code": "OCDS-123454-AIR-INTAKE", 
+        "description": "Ефективна потужність всмоктування пилососа, в ватах (аероватах)", 
+        "title": "Потужність всмоктування", 
+        "enum": [
+          {
+            "value": 0.1, 
+            "title": "До 1000 Вт"
+          }, 
+          {
+            "value": 0.15, 
+            "title": "Більше 1000 Вт"
+          }
         ], 
-        "minimalStep": {
-            "amount": 35000, 
-            "currency": "UAH", 
-            "valueAddedTaxIncluded": true
-        }, 
-        "procuringEntity": {
-            "address": {
-                "countryName": "Україна", 
-                "locality": "м. Вінниця", 
-                "postalCode": "21027", 
-                "region": "м. Вінниця", 
-                "streetAddress": "вул. Стахурського. 22"
-            }, 
-            "contactPoint": {
-                "name": "Куца Світлана Валентинівна", 
-                "telephone": "+380 (432) 46-53-02", 
-                "url": "http://sch10.edu.vn.ua/"
-            }, 
-            "identifier": {
-                "id": "21725150", 
-                "legalName": "Заклад \"Загальноосвітня школа І-ІІІ ступенів № 10 Вінницької міської ради\"", 
-                "scheme": "UA-EDR"
-            }, 
-            "name": "ЗОСШ #10 м.Вінниці"
-        }, 
-        "tenderPeriod": {
-            "endDate": "2015-12-10"
-        }, 
-        "value": {
-            "amount": 500000, 
-            "currency": "UAH", 
-            "valueAddedTaxIncluded": true
-        }
-    }
-}
-
-HTTP/1.1 201 Created
-Content-Type: application/json; charset=UTF-8
-Location: https://api-sandbox.openprocurement.org/api/0/tenders/166b4a36611047a492d85c3693b86b4e
-
-{
-    "access": {
-        "token": "953613dd25d6421588b2597504b747ed"
+        "title_en": "Air Intake", 
+        "relatedItem": "e214fbd9ed204c9bb42f9e1f628109f8", 
+        "featureOf": "item"
+      }, 
+      {
+        "code": "OCDS-123454-YEARS", 
+        "description": "Кількість років, які організація учасник працює на ринку", 
+        "title": "Років на ринку", 
+        "enum": [
+          {
+            "value": 0.05, 
+            "title": "До 3 років"
+          }, 
+          {
+            "value": 0.1, 
+            "title": "Більше 3 років, менше 5 років"
+          }, 
+          {
+            "value": 0.15, 
+            "title": "Більше 5 років"
+          }
+        ], 
+        "title_en": "Years trading", 
+        "featureOf": "tenderer"
+      }
+    ], 
+    "title": "футляри до державних нагород", 
+    "minimalStep": {
+      "currency": "UAH", 
+      "amount": 35
     }, 
-    "data": {
-        "dateModified": "2014-12-26T21:30:56.586789+02:00", 
-        "enquiryPeriod": {
-            "endDate": "2015-12-01T00:00:00+02:00", 
-            "startDate": "2014-12-26T21:30:56.522694+02:00"
+    "enquiryPeriod": {
+      "endDate": "2017-08-01T17:36:49.331754"
+    }, 
+    "title_en": "Cases with state awards", 
+    "value": {
+      "currency": "UAH", 
+      "amount": 500
+    }, 
+    "mode": "test", 
+    "procurementMethodType": "belowThreshold", 
+    "procuringEntity": {
+      "contactPoint": {
+        "name": "Державне управління справами", 
+        "telephone": "0440000000"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "00037256", 
+        "uri": "http://www.dus.gov.ua/"
+      }, 
+      "name": "Державне управління справами", 
+      "kind": "general", 
+      "address": {
+        "countryName": "Україна", 
+        "postalCode": "01220", 
+        "region": "м. Київ", 
+        "streetAddress": "вул. Банкова, 11, корпус 1", 
+        "locality": "м. Київ"
+      }
+    }, 
+    "title_ru": "футляры к государственным наградам", 
+    "items": [
+      {
+        "description": "футляри до державних нагород", 
+        "classification": {
+          "scheme": "ДК021", 
+          "id": "44617100-9", 
+          "description": "Cartons"
         }, 
-        "id": "166b4a36611047a492d85c3693b86b4e", 
-        "items": [
-            {
-                "description": "Послуги шкільних їдалень"
-            }
+        "description_en": "Cases with state awards", 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "папір і картон гофровані, паперова й картонна тара"
+          }
         ], 
-        "minimalStep": {
-            "amount": 35000.0, 
-            "currency": "UAH", 
-            "valueAddedTaxIncluded": true
+        "description_ru": "футляры к государственным наградам", 
+        "id": "e214fbd9ed204c9bb42f9e1f628109f8", 
+        "unit": {
+          "code": "44617100-9", 
+          "name": "item"
         }, 
-        "owner": "broker", 
-        "procuringEntity": {
-            "address": {
-                "countryName": "Україна", 
-                "locality": "м. Вінниця", 
-                "postalCode": "21027", 
-                "region": "м. Вінниця", 
-                "streetAddress": "вул. Стахурського. 22"
-            }, 
-            "contactPoint": {
-                "name": "Куца Світлана Валентинівна", 
-                "telephone": "+380 (432) 46-53-02", 
-                "url": "http://sch10.edu.vn.ua/"
-            }, 
-            "identifier": {
-                "id": "21725150", 
-                "legalName": "Заклад \"Загальноосвітня школа І-ІІІ ступенів № 10 Вінницької міської ради\"", 
-                "scheme": "UA-EDR"
-            }, 
-            "name": "ЗОСШ #10 м.Вінниці"
-        }, 
-        "status": "active.enquiries", 
-        "tenderID": "UA-2014-12-26-000050", 
-        "tenderPeriod": {
-            "endDate": "2015-12-10T00:00:00+02:00", 
-            "startDate": "2015-12-01T00:00:00+02:00"
-        }, 
-        "value": {
-            "amount": 500000.0, 
-            "currency": "UAH", 
-            "valueAddedTaxIncluded": true
-        }
+        "quantity": 5
+      }
+    ], 
+    "tenderPeriod": {
+      "endDate": "2017-08-08T17:36:49.331754"
     }
+  }
 }
+
+
+201 Created
+Content-Type: application/json; charset=UTF-8
+Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/e5d1cd890bd54669972755ca7e8604de
+
+{
+  "access": {
+    "token": "1a6350b26a094a39adf455ee9a495f6c"
+  }, 
+  "data": {
+    "procurementMethod": "open", 
+    "features": [
+      {
+        "code": "OCDS-123454-AIR-INTAKE", 
+        "description": "Ефективна потужність всмоктування пилососа, в ватах (аероватах)", 
+        "title": "Потужність всмоктування", 
+        "enum": [
+          {
+            "value": 0.1, 
+            "title": "До 1000 Вт"
+          }, 
+          {
+            "value": 0.15, 
+            "title": "Більше 1000 Вт"
+          }
+        ], 
+        "title_en": "Air Intake", 
+        "relatedItem": "e214fbd9ed204c9bb42f9e1f628109f8", 
+        "featureOf": "item"
+      }, 
+      {
+        "code": "OCDS-123454-YEARS", 
+        "description": "Кількість років, які організація учасник працює на ринку", 
+        "title": "Років на ринку", 
+        "enum": [
+          {
+            "value": 0.05, 
+            "title": "До 3 років"
+          }, 
+          {
+            "value": 0.1, 
+            "title": "Більше 3 років, менше 5 років"
+          }, 
+          {
+            "value": 0.15, 
+            "title": "Більше 5 років"
+          }
+        ], 
+        "title_en": "Years trading", 
+        "featureOf": "tenderer"
+      }
+    ], 
+    "enquiryPeriod": {
+      "startDate": "2017-07-25T17:36:55.784983+03:00", 
+      "endDate": "2017-08-01T17:36:49.331754+03:00"
+    }, 
+    "submissionMethod": "electronicAuction", 
+    "next_check": "2017-08-01T17:36:49.331754+03:00", 
+    "awardCriteria": "lowestCost", 
+    "owner": "broker", 
+    "id": "e5d1cd890bd54669972755ca7e8604de", 
+    "title": "[ТЕСТУВАННЯ] футляри до державних нагород", 
+    "tenderID": "UA-2017-07-25-000002", 
+    "dateModified": "2017-07-25T17:36:55.787215+03:00", 
+    "status": "active.enquiries", 
+    "tenderPeriod": {
+      "startDate": "2017-08-01T17:36:49.331754+03:00", 
+      "endDate": "2017-08-08T17:36:49.331754+03:00"
+    }, 
+    "procurementMethodType": "belowThreshold", 
+    "title_en": "[TESTING] Cases with state awards", 
+    "date": "2017-07-25T17:36:55.785011+03:00", 
+    "minimalStep": {
+      "currency": "UAH", 
+      "amount": 35.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "items": [
+      {
+        "description": "футляри до державних нагород", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Cartons", 
+          "id": "44617100-9"
+        }, 
+        "description_en": "Cases with state awards", 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "папір і картон гофровані, паперова й картонна тара"
+          }
+        ], 
+        "description_ru": "футляры к государственным наградам", 
+        "id": "e214fbd9ed204c9bb42f9e1f628109f8", 
+        "unit": {
+          "code": "44617100-9", 
+          "name": "item"
+        }, 
+        "quantity": 5
+      }
+    ], 
+    "value": {
+      "currency": "UAH", 
+      "amount": 500.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "mode": "test", 
+    "title_ru": "[ТЕСТИРОВАНИЕ] футляры к государственным наградам", 
+    "procuringEntity": {
+      "contactPoint": {
+        "name": "Державне управління справами", 
+        "telephone": "0440000000"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "00037256", 
+        "uri": "http://www.dus.gov.ua/"
+      }, 
+      "name": "Державне управління справами", 
+      "kind": "general", 
+      "address": {
+        "postalCode": "01220", 
+        "countryName": "Україна", 
+        "streetAddress": "вул. Банкова, 11, корпус 1", 
+        "region": "м. Київ", 
+        "locality": "м. Київ"
+      }
+    }
+  }
+}
+

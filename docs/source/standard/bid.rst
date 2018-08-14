@@ -23,11 +23,9 @@ Schema
     string
 
     Possible values are:
-    
+
     * `draft`
     * `active`
-    * `invalid`
-    * `deleted`
 
 :value:
     :ref:`Value`, required
@@ -37,21 +35,6 @@ Schema
     * `amount` should be less than `Tender.value.amout`
     * `currency` should either be absent or match `Tender.value.currency`
     * `valueAddedTaxIncluded` should either be absent or match `Tender.value.valueAddedTaxIncluded`
-
-:selfEligible:
-    True, required
-
-    Confirms compliance of eligibility criteria set by the procuring entity in the tendering documents.
-
-:selfQualified:
-    True, required
-
-    Confirms the absence of grounds for refusal to participate in accordance with Article 17 of the Law of Ukraine "On Public Procurement".
-
-:subcontractingDetails:
-    string
-
-    When submitting proposals, participant can fill in the text field of any length about subcontractor.
 
 :documents:
     List of :ref:`Document` objects
@@ -109,11 +92,6 @@ Schema
 
 :date:
     string, :ref:`date`, auto-generated
-
-:subcontractingDetails:
-    string
-
-    When submitting proposals, participant can fill in the text field of any length about subcontractor.
 
 :participationUrl:
     url

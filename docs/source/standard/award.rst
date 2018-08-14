@@ -32,17 +32,7 @@ Schema
     
     |ocdsDescription|
     Award description.
-
-:eligible:
-    bool
-
-    Confirms compliance of eligibility criteria set by the procuring entity in the tendering documents.
-
-:qualified:
-    bool
-
-    Confirms the absence of grounds for refusal to participate in accordance with Article 17 of the Law of Ukraine "On Public Procurement".
-
+    
 :status:
     string
     
@@ -52,7 +42,7 @@ Schema
     Possible values are:
 
     * `pending` - the award is under review of qualification committee
-    * `unsuccessful` - the award has been rejected by qualification comittee
+    * `unsuccessful` - the award has been rejected by qualification committee
     * `active` - the tender is awarded to the bidder from the `bid_id`
     * `cancelled` - the award has been cancelled by complaint review body
 
@@ -63,7 +53,7 @@ Schema
     The date of the contract award.
     
 :value:
-    List of :ref:`Value` objects, auto-generated, read-only
+    `Value` object, auto-generated, read-only
     
     |ocdsDescription|
     The total value of this award.

@@ -1,0 +1,278 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openprocurement.api 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-14 13:08+0300\n"
+"PO-Revision-Date: 2016-03-21 16:18+0200\n"
+"Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
+"Language: uk\n"
+"Language-Team: Ukrainian <support@quintagroup.com>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/openua/standard/item.rst:9
+msgid "Item"
+msgstr "Item"
+
+#: ../../source/openua/standard/item.rst:12
+#: ../../source/openua/standard/item.rst:94
+#: ../../source/openua/standard/item.rst:131
+msgid "Schema"
+msgstr "Схема"
+
+#: ../../source/openua/standard/item.rst
+msgid "id"
+msgstr ""
+
+#: ../../source/openua/standard/item.rst:15
+msgid "string, auto-generated"
+msgstr "рядок, генерується автоматично"
+
+#: ../../source/openua/standard/item.rst
+msgid "description"
+msgstr ""
+
+#: ../../source/openua/standard/item.rst:18
+msgid "string, multilingual, required"
+msgstr "рядок, багатомовний, обов’язковий"
+
+#: ../../source/openua/standard/item.rst:20
+msgid "|ocdsDescription| A description of the goods, services to be provided."
+msgstr "|ocdsDescription| Опис товарів та послуг, які повинні бути надані."
+
+#: ../../source/openua/standard/item.rst
+#, fuzzy
+msgid "classification"
+msgstr "Classification"
+
+#: ../../source/openua/standard/item.rst:24
+msgid ":ref:`Classification`"
+msgstr ":ref:`Classification`"
+
+#: ../../source/openua/standard/item.rst:26
+msgid ""
+"|ocdsDescription| The primary classification for the item. See the "
+"itemClassificationScheme to identify preferred classification lists, "
+"including CPV and GSIN."
+msgstr ""
+"|ocdsDescription| Початкова класифікація елемента. Дивіться у "
+"itemClassificationScheme, щоб визначити бажані списки класифікації, "
+"включно з CPV та GSIN."
+
+#: ../../source/openua/standard/item.rst:31
+msgid ""
+"It is mandatory for `classification.scheme` to be `CPV`. The "
+"`classification.id` should be valid CPV code."
+msgstr ""
+"Класифікація `classification.scheme` обов’язково повинна бути `CPV`.  "
+"`classification.id` повинно бути дійсним CPV кодом."
+
+#: ../../source/openua/standard/item.rst
+#, fuzzy
+msgid "additionalClassifications"
+msgstr "Classification"
+
+#: ../../source/openua/standard/item.rst:35
+msgid "List of :ref:`Classification` objects"
+msgstr "Список об’єктів :ref:`Classification`"
+
+#: ../../source/openua/standard/item.rst:37
+msgid ""
+"|ocdsDescription| An array of additional classifications for the item. "
+"See the itemClassificationScheme codelist for common options to use in "
+"OCDS. This may also be used to present codes from an internal "
+"classification scheme."
+msgstr ""
+"|ocdsDescription| Масив додаткових класифікацій для елемента. Дивіться у "
+"список кодів itemClassificationScheme, щоб використати поширені варіанти "
+"в OCDS. Також можна використовувати для представлення кодів з внутрішньої"
+" схеми класифікації."
+
+#: ../../source/openua/standard/item.rst:43
+msgid "It is mandatory to have at least one item with `ДКПП` as `scheme`."
+msgstr "Обов’язково мати хоча б один елемент з `ДКПП` у стрічці `scheme`."
+
+#: ../../source/openua/standard/item.rst
+#, fuzzy
+msgid "unit"
+msgstr "Unit"
+
+#: ../../source/openua/standard/item.rst:46
+msgid ":ref:`Unit`"
+msgstr ":ref:`Unit`"
+
+#: ../../source/openua/standard/item.rst:48
+msgid ""
+"|ocdsDescription| Description of the unit which the good comes in e.g.  "
+"hours, kilograms. Made up of a unit name, and the value of a single unit."
+msgstr ""
+"|ocdsDescription| Опис одиниці виміру товару, наприклад, години, "
+"кілограми. Складається з назви одиниці та значення однієї одиниці."
+
+#: ../../source/openua/standard/item.rst
+msgid "quantity"
+msgstr ""
+
+#: ../../source/openua/standard/item.rst:53
+msgid "integer"
+msgstr "ціле число"
+
+#: ../../source/openua/standard/item.rst:55
+msgid "|ocdsDescription| The number of units required"
+msgstr "|ocdsDescription| Кількість необхідних одиниць."
+
+#: ../../source/openua/standard/item.rst
+msgid "deliveryDate"
+msgstr ""
+
+#: ../../source/openua/standard/item.rst:59
+msgid ":ref:`Period`, required"
+msgstr ":ref:`Period`, обов’язково"
+
+#: ../../source/openua/standard/item.rst:61
+msgid "Period during which the item should be delivered."
+msgstr "Період, протягом якого елемент повинен бути доставлений."
+
+#: ../../source/openua/standard/item.rst
+msgid "deliveryAddress"
+msgstr ""
+
+#: ../../source/openua/standard/item.rst:64
+msgid ":ref:`Address`, required"
+msgstr ":ref:`Address`, обов’язково"
+
+#: ../../source/openua/standard/item.rst:66
+msgid "Address, where the item should be delivered."
+msgstr "Адреса місця, куди елемент повинен бути доставлений."
+
+#: ../../source/openua/standard/item.rst
+msgid "deliveryLocation"
+msgstr ""
+
+#: ../../source/openua/standard/item.rst:69
+msgid "dictionary"
+msgstr "словник"
+
+#: ../../source/openua/standard/item.rst:71
+msgid ""
+"Geographical coordinates of delivery location. Element consist of the "
+"following items:"
+msgstr "Географічні координати місця доставки. Складається з таких компонентів:"
+
+#: ../../source/openua/standard/item.rst
+msgid "latitude"
+msgstr ""
+
+#: ../../source/openua/standard/item.rst:74
+#: ../../source/openua/standard/item.rst:76
+#: ../../source/openua/standard/item.rst:134
+msgid "string, required"
+msgstr "рядок, обов’язковий"
+
+#: ../../source/openua/standard/item.rst
+msgid "longitude"
+msgstr ""
+
+#: ../../source/openua/standard/item.rst
+msgid "elevation"
+msgstr ""
+
+#: ../../source/openua/standard/item.rst:78
+msgid "string, optional, usually not used"
+msgstr "стрічка, не обов’язково, переважно не використовується"
+
+#: ../../source/openua/standard/item.rst:80
+msgid ""
+"`deliveryLocation` usually takes precedence over `deliveryAddress` if "
+"both are present."
+msgstr ""
+"`deliveryLocation` зазвичай має вищий пріоритет ніж `deliveryAddress`, "
+"якщо вони обидва вказані."
+
+#: ../../source/openua/standard/item.rst
+msgid "relatedLot"
+msgstr ""
+
+#: ../../source/openua/standard/item.rst:83
+#: ../../source/openua/standard/item.rst:97
+#: ../../source/openua/standard/item.rst:106
+#: ../../source/openua/standard/item.rst:112
+#: ../../source/openua/standard/item.rst:139
+msgid "string"
+msgstr "рядок"
+
+#: ../../source/openua/standard/item.rst:85
+msgid "Id of related :ref:`lot`."
+msgstr "ID пов’язаного :ref:`lot`."
+
+#: ../../source/openua/standard/item.rst:91
+msgid "Classification"
+msgstr "Classification"
+
+#: ../../source/openua/standard/item.rst
+#, fuzzy
+msgid "scheme"
+msgstr "Схема"
+
+#: ../../source/openua/standard/item.rst:99
+msgid ""
+"|ocdsDescription| A classification should be drawn from an existing "
+"scheme or list of codes.  This field is used to indicate the "
+"scheme/codelist from which the classification is drawn.  For line item "
+"classifications, this value should represent a known Item Classification "
+"Scheme wherever possible."
+msgstr ""
+"|ocdsDescription| Класифікація повинна бути взята з існуючої схеми або "
+"списку кодів. Це поле використовується, щоб вказати схему/список кодів, з"
+" яких буде братись класифікація. Для класифікацій лінійних елементів це "
+"значення повинно представляти відому Схему Класифікації Елементів, де це "
+"можливо."
+
+#: ../../source/openua/standard/item.rst:108
+msgid "|ocdsDescription| The classification code drawn from the selected scheme."
+msgstr "|ocdsDescription| Код класифікації взятий з вибраної схеми."
+
+#: ../../source/openua/standard/item.rst:114
+msgid "|ocdsDescription| A textual description or title for the code."
+msgstr "|ocdsDescription| Текстовий опис або назва коду."
+
+#: ../../source/openua/standard/item.rst
+#: ../../source/openua/standard/item.rst:118
+msgid "uri"
+msgstr "uri"
+
+#: ../../source/openua/standard/item.rst:120
+msgid ""
+"|ocdsDescription| A URI to identify the code. In the event individual "
+"URIs are not available for items in the identifier scheme this value "
+"should be left blank."
+msgstr ""
+"|ocdsDescription| URI для ідентифікації коду. Якщо індивідуальні URI не "
+"доступні для елементів у схемі ідентифікації це значення треба залишити "
+"пустим."
+
+#: ../../source/openua/standard/item.rst:128
+msgid "Unit"
+msgstr "Unit"
+
+#: ../../source/openua/standard/item.rst
+msgid "code"
+msgstr ""
+
+#: ../../source/openua/standard/item.rst:136
+msgid "UN/CEFACT Recommendation 20 unit code."
+msgstr "Код одиниці в UN/CEFACT Recommendation 20."
+
+#: ../../source/openua/standard/item.rst
+msgid "name"
+msgstr ""
+
+#: ../../source/openua/standard/item.rst:141
+msgid "|ocdsDescription| Name of the unit"
+msgstr "|ocdsDescription| Назва одиниці"
+

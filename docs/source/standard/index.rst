@@ -14,7 +14,6 @@ areas that were not covered by it.
 
    tender
    organization
-   procuringentity
    item
    document
    lot
@@ -26,3 +25,4 @@ areas that were not covered by it.
    util
    cancellation
    feature
+   procuringentity

@@ -33,7 +33,7 @@ Error states that no `data` has been found in JSON body.
 Creating tender
 ---------------
 
-Let's provide the data attribute in the submitted body :
+Let's create tender with the minimal (only required) data set:
 
 .. include:: tutorial/tender-post-attempt-json-data.http
    :code:
@@ -43,10 +43,8 @@ and `Location` response header reports the location of the created object.  The
 body of response reveals the information about the created tender: its internal
 `id` (that matches the `Location` segment), its official `tenderID` and
 `dateModified` datestamp stating the moment in time when tender was last
-modified.  Note that tender is created with `active.tendering` status.
-
-The peculiarity of the Open UA procedure is that ``procurementMethodType`` was changed from ``belowThreshold`` to ``aboveThresholdUA``.
-Also there is no opportunity to set up ``enquiryPeriod``, it will be assigned automatically.
+modified. Pay attention to the `procurementMethodType`. Note that tender is
+created with `active.enquiries` status.
 
 Let's access the URL of the created object (the `Location` header of the response):
 
@@ -59,10 +57,26 @@ We can see the same response we got after creating tender.
 
 Let's see what listing of tenders reveals us:
 
-.. include:: tutorial/tender-listing-no-auth.http
+.. include:: tutorial/initial-tender-listing.http
    :code:
 
 We do see the internal `id` of a tender (that can be used to construct full URL by prepending `http://api-sandbox.openprocurement.org/api/0/tenders/`) and its `dateModified` datestamp.
+
+The previous tender contained only required fields. Let's try creating tender with more data
+(tender has status `created`):
+
+.. include:: tutorial/create-tender-procuringEntity.http
+   :code:
+
+And again we have `201 Created` response code, `Location` header and body with extra `id`, `tenderID`, and `dateModified` properties.
+
+Let's check what tender registry contains:
+
+.. include:: tutorial/tender-listing-after-procuringEntity.http
+   :code:
+
+And indeed we have 2 tenders now.
+
 
 Modifying tender
 ----------------
@@ -79,17 +93,6 @@ We see the added properies have merged with existing tender data. Additionally, 
 Checking the listing again reflects the new modification date:
 
 .. include:: tutorial/tender-listing-after-patch.http
-   :code:
-
-
-Procuring entity can not change tender if there are less than 7 days before tenderPeriod ends. Changes will not be accepted by API.
-
-.. include:: tutorial/update-tender-after-enqiery.http
-   :code:
-
-That is why tenderPeriod has to be extended by 7 days.
-
-.. include:: tutorial/update-tender-after-enqiery-with-update-periods.http
    :code:
 
 Procuring entity can set bid guarantee:
@@ -126,6 +129,20 @@ And again we can confirm that there are two documents uploaded.
 .. include:: tutorial/tender-documents-2.http
    :code:
 
+Let’s add new `documentType` field with `technicalSpecifications` parameter to the previously uploaded document:
+
+.. include:: tutorial/tender-document-add-documentType.http
+   :code:
+
+Success! Response code is `200 OK` and it confirms that `documentType` field with `technicalSpecifications` parameter was added .
+
+Now let’s try to modify any field in our document. For example, `description`:
+
+.. include:: tutorial/tender-document-edit-docType-desc.http
+   :code:
+
+`200 OK` response was returned. The description was modified successfully.
+
 In case we made an error, we can reupload the document over the older version:
 
 .. include:: tutorial/update-award-criteria.http
@@ -142,7 +159,7 @@ And we can see that it is overriding the original version:
 Enquiries
 ---------
 
-When tender has ``active.tendering`` status and ``Tender.enqueryPeriod.endDate``  hasn't come yet, interested parties can ask questions:
+When tender is in `active.enquiry` status, interested parties can ask questions:
 
 .. include:: tutorial/ask-question.http
    :code:
@@ -152,20 +169,14 @@ Procuring entity can answer them:
 .. include:: tutorial/answer-question.http
    :code:
 
-One can retrieve either questions list:
+And one can retrieve the questions list:
 
 .. include:: tutorial/list-question.http
    :code:
 
-or individual answer:
+And individual answer:
 
 .. include:: tutorial/get-answer.http
-   :code:
-
-
-Enquiries can be made only during ``Tender.enqueryPeriod``
-
-.. include:: tutorial/ask-question-after-enquiry-period.http
    :code:
 
 
@@ -174,9 +185,12 @@ Enquiries can be made only during ``Tender.enqueryPeriod``
 Registering bid
 ---------------
 
-Tender status ``active.tendering`` allows registration of bids.
+Step-by-step registration
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Bidder can register a bid with ``draft`` status:
+When ``Tender.tenderingPeriod.startDate`` comes, Tender switches to `active.tendering` status that allows registration of bids.
+
+Bidder can register a bid in `draft` status:
 
 .. include:: tutorial/register-bidder.http
    :code:
@@ -186,10 +200,7 @@ And activate a bid:
 .. include:: tutorial/activate-bidder.http
    :code:
 
-Proposal Uploading
-~~~~~~~~~~~~~~~~~~
-
-Then bidder should upload proposal document(s):
+And upload proposal document:
 
 .. include:: tutorial/upload-bid-proposal.http
    :code:
@@ -199,23 +210,10 @@ It is possible to check the uploaded documents:
 .. include:: tutorial/bidder-documents.http
    :code:
 
-Bid invalidation
-~~~~~~~~~~~~~~~~
+Batch-mode registration
+~~~~~~~~~~~~~~~~~~~~~~~
 
-If tender is modified, status of all bid proposals will be changed to ``invalid``. Bid proposal will look the following way after tender has been modified:
-
-.. include:: tutorial/bidder-after-changing-tender.http
-   :code:
-
-Bid confirmation
-~~~~~~~~~~~~~~~~
-
-Bidder should confirm bid proposal:
-
-.. include:: tutorial/bidder-activate-after-changing-tender.http
-   :code:
-
-Open UA procedure demands at least two bidders, so there should be at least two bid proposals registered to move to auction stage:
+Register bid with documents using one request:
 
 .. include:: tutorial/register-2nd-bidder.http
    :code:
@@ -231,7 +229,7 @@ After auction is scheduled anybody can visit it to watch. The auction can be rea
 .. include:: tutorial/auction-url.http
    :code:
 
-Bidders can find out their participation URLs via their bids:
+And bidders can find out their participation URLs via their bids:
 
 .. include:: tutorial/bidder-participation-url.http
    :code:
@@ -244,13 +242,13 @@ See the `Bid.participationUrl` in the response. Similar, but different, URL can 
 Confirming qualification
 ------------------------
 
-Qualification commission registers its decision via the following call:
+Qualification comission registers its decision via the following call:
 
 .. include:: tutorial/confirm-qualification.http
    :code:
 
-Setting contract value
-----------------------
+Setting  contract value
+-----------------------
 
 By default contract value is set based on the award, but there is a possibility to set custom contract value. 
 
@@ -282,28 +280,55 @@ Setting contract validity period is optional, but if it is needed, you can set a
 Uploading contract documentation
 --------------------------------
 
-You can upload contract documents for the OpenUA procedure.
-
-Let's upload contract document:
+You can upload contract documents. Let's upload contract document:
 
 .. include:: tutorial/tender-contract-upload-document.http
    :code:
 
-`201 Created` response code and `Location` header confirm that this document was added.
+`201 Created` response code and `Location` header confirm document was added.
 
-Let's view the uploaded contract document:
+Let's see the list of contract documents:
 
-.. include:: tutorial/tender-contract-get.http
+.. include:: tutorial/tender-contract-get-documents.http
+   :code:
+
+We can add another contract document:
+
+.. include:: tutorial/tender-contract-upload-second-document.http
+   :code:
+
+`201 Created` response code and `Location` header confirm second document was uploaded.
+
+Let's see the list of all added contract documents:
+
+.. include:: tutorial/tender-contract-get-documents-again.http
+   :code:
+
+Set contract signature date
+---------------------------
+
+There is a possibility to set custom contract signature date.
+If the date is not set it will be generated on contract registration.
+
+.. include:: tutorial/tender-contract-sign-date.http
+   :code:
+
+Contract registration
+---------------------
+
+.. include:: tutorial/tender-contract-sign.http
    :code:
 
 Cancelling tender
 -----------------
 
-Tender creator can cancel tender anytime. The following steps should be applied:
+Tender creator can cancel tender anytime (except when tender has terminal status e.g. `usuccesfull`, `canceled`, `complete`).
 
-1. Prepare cancellation request.
-2. Fill it with the protocol describing the cancellation reasons.
-3. Cancel the tender with the prepared reasons.
+The following steps should be applied:
+
+1. Prepare cancellation request
+2. Fill it with the protocol describing the cancellation reasons
+3. Cancel the tender with the reasons prepared.
 
 Only the request that has been activated (3rd step above) has power to
 cancel tender.  I.e.  you have to not only prepare cancellation request but
@@ -314,42 +339,33 @@ See :ref:`cancellation` data structure for details.
 Preparing the cancellation request
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You should pass `reason`, `status` defaults to `pending`.
+You should pass `reason`, `status` defaults to `pending`. `id` is
+autogenerated and passed in the `Location` header of response.
 
-`id` is autogenerated and passed in the `Location` header of response.
-
-.. include::  tutorial/prepare-cancellation.http
+.. include:: tutorial/prepare-cancellation.http
    :code:
-   
-There are two possible types of cancellation reason - tender was `cancelled` or `unsuccessful`. By default ``reasonType`` value is `cancelled`.
 
-You can change ``reasonType`` value to `unsuccessful`.
-
-.. include::  tutorial/update-cancellation-reasonType.http
-     :code:
 
 Filling cancellation with protocol and supplementary documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Upload the file contents
 
-.. include::  tutorial/upload-cancellation-doc.http
+.. include:: tutorial/upload-cancellation-doc.http
    :code:
 
 Change the document description and other properties
 
-
-.. include::  tutorial/patch-cancellation.http
+.. include:: tutorial/patch-cancellation.http
    :code:
 
 Upload new version of the document
 
-
-.. include::  tutorial/update-cancellation-doc.http
+.. include:: tutorial/update-cancellation-doc.http
    :code:
 
 Activating the request and cancelling tender
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. include::  tutorial/active-cancellation.http
+.. include:: tutorial/active-cancellation.http
    :code:

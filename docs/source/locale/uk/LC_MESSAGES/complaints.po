@@ -1,19 +1,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: openprocurement.tender.openua 0.1\n"
+"Project-Id-Version: openprocurement.api 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-27 11:55+0200\n"
-"PO-Revision-Date: 2016-07-25 11:56+0200\n"
+"POT-Creation-Date: 2018-08-14 13:08+0300\n"
+"PO-Revision-Date: 2016-01-13 13:57+0200\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
-"Language-Team: Ukrainian <support@quintagroup.com>\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
 "Language: uk\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"Generated-By: Babel 2.2.0\n"
-"X-Generator: Lokalize 2.0\n"
+"Language-Team: Ukrainian <info@quintagroup.com>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
 
 #: ../../source/complaints.rst:11
 msgid "Complaint Workflow"
@@ -31,86 +31,155 @@ msgstr ""
 msgid "Tender Conditions Claims/Complaints"
 msgstr "Вимоги/Скарги на умови закупівлі"
 
-#: ../../source/complaints.rst:90
+#: ../../source/complaints.rst:24
+msgid "Tender Award Claims/Complaints"
+msgstr "Вимоги/Скарги на визначення переможця"
+
+#: ../../source/complaints.rst:33
+msgid "Workflow"
+msgstr "Схема роботи"
+
+#: ../../source/complaints.rst:54
 msgid "Roles"
 msgstr "Ролі"
 
-#: ../../source/complaints.rst:93
+#: ../../source/complaints.rst
+#, fuzzy
+msgid "Complainant"
+msgstr "звичайна лінія"
+
+#: ../../source/complaints.rst:57
 msgid "dashed"
 msgstr "пунктирна лінія"
 
-#: ../../source/complaints.rst:96
+#: ../../source/complaints.rst
+#, fuzzy
+msgid "Procuring entity"
+msgstr "Замовник залишив вимогу без відповіді."
+
+#: ../../source/complaints.rst:60
 msgid "plain"
 msgstr "звичайна лінія"
 
-#: ../../source/complaints.rst:99
-msgid "bold"
-msgstr "жирна лінія"
+#: ../../source/complaints.rst
+msgid "Chronograph"
+msgstr ""
 
-#: ../../source/complaints.rst:102
+#: ../../source/complaints.rst:63
 msgid "dotted"
-msgstr "пунктирна лінія з крапками"
+msgstr "лінія з крапками"
 
-#: ../../source/complaints.rst:105
+#: ../../source/complaints.rst:66
 msgid "Statuses"
 msgstr "Статуси"
 
-#: ../../source/complaints.rst:108
+#: ../../source/complaints.rst
+msgid "draft"
+msgstr ""
+
+#: ../../source/complaints.rst:69
 msgid "Initial status"
 msgstr "Початковий статус"
 
-#: ../../source/complaints.rst:110
+#: ../../source/complaints.rst:71
 msgid ""
-"Complainant can submit claim, upload documents, cancel claim, and re-submit "
-"it."
+"Complainant can submit claim, upload documents, cancel claim, and re-"
+"submit it."
 msgstr ""
 "На цьому етапі скаржник може подати вимогу, завантажити документи, "
 "відкликати вимогу та подати її знову."
 
-#: ../../source/complaints.rst:113
+#: ../../source/complaints.rst
+#, fuzzy
+msgid "claim"
+msgstr "звичайна лінія"
+
+#: ../../source/complaints.rst:74
 msgid "Procuring entity can upload documents and answer to claim."
 msgstr "Замовник може завантажити документи та відповісти на вимогу."
 
-#: ../../source/complaints.rst:115 ../../source/complaints.rst:123
+#: ../../source/complaints.rst:76 ../../source/complaints.rst:84
 msgid "Complainant can cancel claim."
 msgstr "Скаржник може відкликати вимогу."
 
-#: ../../source/complaints.rst:118
-msgid ""
-"Complainant can cancel claim, upload documents, accept solution or escalate "
-"claim to complaint."
+#: ../../source/complaints.rst
+msgid "answered"
 msgstr ""
-"Скаржник може відкликати вимогу, завантажити документи, погодитись з "
-"вирішенням або перетворити вимогу на скаргу."
 
-#: ../../source/complaints.rst:121
+#: ../../source/complaints.rst:79
+msgid ""
+"Complainant can cancel claim, upload documents, agree or disagree with "
+"decision."
+msgstr ""
+"Скаржник може відкликати вимогу, завантажити документи, згодитись або не "
+"згодитись з вирішенням."
+
+#: ../../source/complaints.rst
+msgid "pending"
+msgstr ""
+
+#: ../../source/complaints.rst:82
 msgid "Reviewer can upload documents and review complaint."
 msgstr "Орган оскарження може завантажувати документи та розглядати скарги."
 
-#: ../../source/complaints.rst:126 ../../source/complaints.rst:131
-#: ../../source/complaints.rst:136 ../../source/complaints.rst:141
+#: ../../source/complaints.rst
+msgid "invalid"
+msgstr ""
+
+#: ../../source/complaints.rst:87 ../../source/complaints.rst:92
+#: ../../source/complaints.rst:97 ../../source/complaints.rst:102
+#: ../../source/complaints.rst:107
 msgid "Terminal status"
 msgstr "Кінцевий статус"
 
-#: ../../source/complaints.rst:128
-msgid "Complaint recognized as invalid."
-msgstr "Скаргу визнано недійсною."
+#: ../../source/complaints.rst:89
+msgid "Claim recognized as invalid."
+msgstr "Вимогу визнано недійсною."
 
-#: ../../source/complaints.rst:133
-msgid "Complaint recognized as declined."
-msgstr "Скаргу визнано відхиленою."
+#: ../../source/complaints.rst
+msgid "declined"
+msgstr ""
 
-#: ../../source/complaints.rst:138
-msgid "Complaint recognized as resolved."
-msgstr "Скаргу визнано вирішеною."
+#: ../../source/complaints.rst:94
+msgid "Claim recognized as declined."
+msgstr "Вимогу визнано відхиленою."
 
-#: ../../source/complaints.rst:143
-msgid "Complaint cancelled by complainant."
-msgstr "Скаргу відкликано скаржником."
+#: ../../source/complaints.rst
+msgid "resolved"
+msgstr ""
 
-#: ../../source/complaints.rst:55
-msgid "Tender Award Claims/Complaints"
-msgstr "Звернення/Скарги на визначення переможця"
+#: ../../source/complaints.rst:99
+msgid "Claim recognized as resolved."
+msgstr "Вимогу визнано вирішеною."
 
+#: ../../source/complaints.rst
+msgid "cancelled"
+msgstr ""
 
+#: ../../source/complaints.rst:104
+msgid "Claim cancelled by complainant."
+msgstr "Вимогу відкликано скаржником."
+
+#: ../../source/complaints.rst
+msgid "ignored"
+msgstr ""
+
+#: ../../source/complaints.rst:109
+msgid "Claim ignored by procuring entity."
+msgstr "Замовник залишив вимогу без відповіді."
+
+#~ msgid "bold"
+#~ msgstr "жирна лінія"
+
+#~ msgid "Complaint recognized as invalid."
+#~ msgstr "Скаргу визнано недійсною."
+
+#~ msgid "Complaint recognized as declined."
+#~ msgstr "Скаргу визнано відхиленою."
+
+#~ msgid "Complaint recognized as resolved."
+#~ msgstr "Скаргу визнано вирішеною."
+
+#~ msgid "Complaint cancelled by complainant."
+#~ msgstr "Скаргу відкликано скаржником."
 

@@ -33,11 +33,6 @@ Schema
    |ocdsDescription|
    TenderID should always be the same as the OCID. It is included to make the flattened data structure more convenient.
 
-:procurementMethodType:
-    string
-
-    value: ``aboveThresholdUA``
-
 :procuringEntity:
    :ref:`ProcuringEntity`, required
 
@@ -59,6 +54,9 @@ Schema
 
     Bid guarantee
 
+:date:
+    string, :ref:`date`, auto-generated
+    
 :items:
    list of :ref:`item` objects, required
 
@@ -116,16 +114,10 @@ Schema
 :enquiryPeriod:
    :ref:`period`, required
 
+   Period when questions are allowed. At least `endDate` has to be provided.
+
    |ocdsDescription|
-   The period during which enquiries may be made.
-   
-   Period when questions are allowed.
-   
-   `enquiryPeriod` has additional fields:
-   
-   * ``invalidationDate`` - date of the last tender conditions modification, when all bid proposals became `invalid`. Broker (eMall) should take action in order for bids to be activated or re-submitted.
-   
-   * ``clarificationsUntil`` - time before which answers for questions and claims can be provided. After this time the procedure will be blocked.
+   The period during which enquiries may be made and will be answered.
 
 :tenderPeriod:
    :ref:`period`, required
@@ -156,6 +148,8 @@ Schema
 :status:
    string
 
+   :`active.enquiries`:
+       Enquiries period (enquiries)
    :`active.tendering`:
        Tendering period (tendering)
    :`active.auction`:
@@ -185,6 +179,13 @@ Schema
 
    The :ref:`cancellation` object describes the reason of tender cancellation contains accompanying
    documents  if any.
+
+:funders:
+  List of :ref:`organization` objects.
+
+  Optional field.
+
+  The funder is an entity providing money or finance for contracting process.
 
 :revisions:
    List of :ref:`revision` objects, auto-generated

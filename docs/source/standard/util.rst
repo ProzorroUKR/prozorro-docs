@@ -17,7 +17,7 @@ Schema
     The start date for the period.
 
 :endDate:
-    string, :ref:`date`, required
+    string, :ref:`date`
 
     |ocdsDescription|
     The end date for the period.
@@ -73,6 +73,7 @@ Schema
 
 :changes:
     List of `Change` objects
+
 
 .. _guarantee:
 

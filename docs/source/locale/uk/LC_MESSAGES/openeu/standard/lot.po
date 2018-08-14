@@ -1,0 +1,188 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openprocurement.tender.openeu 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-14 13:08+0300\n"
+"PO-Revision-Date: 2016-03-21 10:55+0200\n"
+"Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
+"Language: uk\n"
+"Language-Team: Ukrainian <support@quintagroup.com>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/openeu/standard/lot.rst:9
+msgid "Lot"
+msgstr "Lot"
+
+#: ../../source/openeu/standard/lot.rst:12
+msgid "Schema"
+msgstr "Схема"
+
+#: ../../source/openeu/standard/lot.rst
+msgid "id"
+msgstr ""
+
+#: ../../source/openeu/standard/lot.rst:15
+msgid "string, auto-generated"
+msgstr "рядок, генерується автоматично"
+
+#: ../../source/openeu/standard/lot.rst
+msgid "title"
+msgstr ""
+
+#: ../../source/openeu/standard/lot.rst:18
+#: ../../source/openeu/standard/lot.rst:23
+msgid "string, multilingual"
+msgstr "рядок, багатомовний"
+
+#: ../../source/openeu/standard/lot.rst:20
+msgid "The name of the tender lot."
+msgstr "Назва лота закупівлі."
+
+#: ../../source/openeu/standard/lot.rst
+msgid "description"
+msgstr ""
+
+#: ../../source/openeu/standard/lot.rst:25
+msgid "Detailed description of tender lot."
+msgstr "Детальний опис лота закупівлі."
+
+#: ../../source/openeu/standard/lot.rst
+msgid "value"
+msgstr ""
+
+#: ../../source/openeu/standard/lot.rst:28
+#: ../../source/openeu/standard/lot.rst:38
+msgid ":ref:`value`, required"
+msgstr ":ref:`value`, обов’язково"
+
+#: ../../source/openeu/standard/lot.rst:30
+msgid ""
+"Total available tender lot budget. Bids greater then ``value`` will be "
+"rejected."
+msgstr ""
+"Повний доступний бюджет лота закупівлі. Цінові пропозиції, більші ніж "
+"``value``, будуть відхилені."
+
+#: ../../source/openeu/standard/lot.rst
+#, fuzzy
+msgid "guarantee"
+msgstr "Забезпечення тендерної пропозиції"
+
+#: ../../source/openeu/standard/lot.rst:33
+msgid ":ref:`Guarantee`"
+msgstr ":ref:`Guarantee`"
+
+#: ../../source/openeu/standard/lot.rst:35
+msgid "Bid guarantee"
+msgstr "Забезпечення тендерної пропозиції"
+
+#: ../../source/openeu/standard/lot.rst
+msgid "minimalStep"
+msgstr ""
+
+#: ../../source/openeu/standard/lot.rst:40
+msgid "The minimal step of auction (reduction). Validation rules:"
+msgstr "Мінімальний крок аукціону (редукціону). Правила валідації:"
+
+#: ../../source/openeu/standard/lot.rst:42
+msgid "`amount` should be less then `Lot.value.amount`"
+msgstr "`amount` повинно бути меншим, ніж `Lot.value.amount`"
+
+#: ../../source/openeu/standard/lot.rst:43
+msgid "`currency` should either be absent or match `Lot.value.currency`"
+msgstr ""
+"`currency` повинно або бути відсутнім, або відповідати "
+"`Lot.value.currency`"
+
+#: ../../source/openeu/standard/lot.rst:44
+msgid ""
+"`valueAddedTaxIncluded` should either be absent or match "
+"`Lot.value.valueAddedTaxIncluded`"
+msgstr ""
+"`valueAddedTaxIncluded` повинно або бути відсутнім, або відповідати "
+"`Lot.value.valueAddedTaxIncluded`"
+
+#: ../../source/openeu/standard/lot.rst
+msgid "auctionPeriod"
+msgstr ""
+
+#: ../../source/openeu/standard/lot.rst:47
+msgid ":ref:`period`, read-only"
+msgstr ""
+"`valueAddedTaxIncluded` повинно або бути відсутнім, або відповідати "
+"`Lot.value.valueAddedTaxIncluded`"
+
+#: ../../source/openeu/standard/lot.rst:49
+msgid "Period when Auction is conducted."
+msgstr "Період проведення аукціону."
+
+#: ../../source/openeu/standard/lot.rst
+msgid "auctionUrl"
+msgstr ""
+
+#: ../../source/openeu/standard/lot.rst:52
+msgid "url"
+msgstr "URL-адреса"
+
+#: ../../source/openeu/standard/lot.rst:54
+msgid "A web address for view auction."
+msgstr "Веб-адреса для перегляду аукціону."
+
+#: ../../source/openeu/standard/lot.rst
+msgid "status"
+msgstr ""
+
+#: ../../source/openeu/standard/lot.rst:57
+msgid "string"
+msgstr "рядок"
+
+#: ../../source/openeu/standard/lot.rst
+msgid "`active`"
+msgstr ""
+
+#: ../../source/openeu/standard/lot.rst:60
+msgid "Active tender lot"
+msgstr "Активний лот закупівлі"
+
+#: ../../source/openeu/standard/lot.rst
+msgid "`unsuccessful`"
+msgstr ""
+
+#: ../../source/openeu/standard/lot.rst:62
+msgid "Unsuccessful tender lot"
+msgstr "Неуспішний лот закупівлі"
+
+#: ../../source/openeu/standard/lot.rst
+msgid "`complete`"
+msgstr ""
+
+#: ../../source/openeu/standard/lot.rst:64
+msgid "Completed tender lot"
+msgstr "Завершений лот закупівлі"
+
+#: ../../source/openeu/standard/lot.rst
+msgid "`cancelled`"
+msgstr ""
+
+#: ../../source/openeu/standard/lot.rst:66
+msgid "Cancelled tender lot"
+msgstr "Відмінений лот закупівлі"
+
+#: ../../source/openeu/standard/lot.rst:68
+msgid "Status of the Lot."
+msgstr "Статус лота."
+
+#: ../../source/openeu/standard/lot.rst:71
+msgid "Workflow"
+msgstr "Схема роботи"
+
+#: ../../source/openeu/standard/lot.rst:85
+msgid "\\* marks initial state"
+msgstr "\\* позначає початковий стан"
+

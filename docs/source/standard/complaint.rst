@@ -70,7 +70,6 @@ Schema
     * `declined`
     * `resolved`
     * `cancelled`
-    * `accepted`
 
 :type:
     string
@@ -126,32 +125,3 @@ Schema
     string, :ref:`date`, auto-generated
 
     Date of tenderer action.
-
-:acceptance:
-    bool
-
-    Claim is satisfied?
-
-:rejectReason:
-    string
-
-    Possible values of reject reason are:
-
-    * `lawNonСompliance` - law non compliance
-    * `noPaymentReceived` - no payment received
-    * `buyerViolationsСorrected` - violations were corrected by Procuring entity
-
-:rejectReasonDescription:
-    string
-
-    Reject reason description.
-
-:reviewDate:
-    string, :ref:`date`, auto-generated
-
-    Date of review.
-
-:reviewPlace:
-    string
-
-    Place of review.
