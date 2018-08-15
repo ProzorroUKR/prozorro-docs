@@ -1,4 +1,4 @@
-PATCH /api/2.4/contracts/fac3a341fed1428487268fa4dec62bc4?acc_token=5abc0448690540ee9c29b65a1751bd12 HTTP/1.0
+PATCH /api/2.4/contracts/822ae0edf19348bbbd3ea104577bae4b?acc_token=b1b01ccd4f61456db571e7b698d88d57 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 1160
 Content-Type: application/json
@@ -29,10 +29,10 @@ DATA:
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2018-08-17T09:33:33.199849+03:00", 
-          "endDate": "2018-08-20T09:33:33.199849+03:00"
+          "startDate": "2018-08-17T09:42:45.817675+03:00", 
+          "endDate": "2018-08-20T09:42:45.817675+03:00"
         }, 
-        "id": "56b0e90ebf974a9994d624336979f02c", 
+        "id": "50288dab657f4bbd905ed5a358400ffd", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -56,13 +56,13 @@ Content-Type: application/json; charset=UTF-8
     "documents": [
       {
         "title": "contract_changes.doc", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.4/contracts/fac3a341fed1428487268fa4dec62bc4/documents/12e7d265b45744d891a7b1107c15a44f?download=e51aece47f894d278817be05aab52547", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.4/contracts/822ae0edf19348bbbd3ea104577bae4b/documents/5c90416d4f9743008566f7ec8efb9c47?download=ddb14781ffa04039b4545acce76e0c05", 
         "format": "application/msword", 
         "documentOf": "change", 
-        "datePublished": "2018-08-15T09:33:37.468935+03:00", 
-        "id": "12e7d265b45744d891a7b1107c15a44f", 
-        "relatedItem": "20b34613fd124ee2a20dd1c83c7e4fb4", 
-        "dateModified": "2018-08-15T09:33:37.468958+03:00"
+        "datePublished": "2018-08-15T09:42:50.214489+03:00", 
+        "id": "5c90416d4f9743008566f7ec8efb9c47", 
+        "relatedItem": "298fe4c4fa6b4503830e7bf9ddbafce5", 
+        "dateModified": "2018-08-15T09:42:50.214518+03:00"
       }
     ], 
     "items": [
@@ -88,10 +88,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2018-08-17T09:33:33.199849+03:00", 
-          "endDate": "2018-08-20T09:33:33.199849+03:00"
+          "startDate": "2018-08-17T09:42:45.817675+03:00", 
+          "endDate": "2018-08-20T09:42:45.817675+03:00"
         }, 
-        "id": "56b0e90ebf974a9994d624336979f02c", 
+        "id": "50288dab657f4bbd905ed5a358400ffd", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -121,11 +121,11 @@ Content-Type: application/json; charset=UTF-8
       }
     ], 
     "period": {
-      "startDate": "2018-08-15T09:33:37.639564+03:00", 
-      "endDate": "2018-09-14T09:33:37.639596+03:00"
+      "startDate": "2018-08-15T09:42:50.387669+03:00", 
+      "endDate": "2018-09-14T09:42:50.387699+03:00"
     }, 
-    "dateSigned": "2018-08-15T09:33:36.503470+03:00", 
-    "id": "fac3a341fed1428487268fa4dec62bc4", 
+    "dateSigned": "2018-08-15T09:42:49.228257+03:00", 
+    "id": "822ae0edf19348bbbd3ea104577bae4b", 
     "procuringEntity": {
       "contactPoint": {
         "name": "Державне управління справами", 
@@ -148,7 +148,7 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "contractID": "UA-2018-08-15-000001-1", 
     "owner": "broker", 
-    "awardID": "c2bf05db778c44fb8a9d96a2e05e5946", 
+    "awardID": "0ff87b205e1c46f081c932f73814678b", 
     "changes": [
       {
         "status": "pending", 
@@ -158,12 +158,12 @@ Content-Type: application/json; charset=UTF-8
         ], 
         "rationale_en": "Contract change cause", 
         "rationale": "Друга і третя поставка має бути розфасована", 
-        "date": "2018-08-15T09:33:37.170721+03:00", 
-        "id": "20b34613fd124ee2a20dd1c83c7e4fb4"
+        "date": "2018-08-15T09:42:49.911106+03:00", 
+        "id": "298fe4c4fa6b4503830e7bf9ddbafce5"
       }
     ], 
-    "dateModified": "2018-08-15T09:33:37.948117+03:00", 
-    "tender_id": "3e8ba83dce454a4ba5f2c3172639642f"
+    "dateModified": "2018-08-15T09:42:50.713924+03:00", 
+    "tender_id": "56f1a8890aa740d2b7600a03c14e2128"
   }
 }
 
