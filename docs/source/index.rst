@@ -32,7 +32,7 @@ Contents:
    openua/index
    openeu/index
    limited/index
-   defence/index
+   defense/index
    contracting/index
 
 Indices and tables
