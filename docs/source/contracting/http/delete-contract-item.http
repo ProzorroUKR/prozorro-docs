@@ -1,4 +1,4 @@
-PATCH /api/2.3/contracts/bebdbaf7777d4bd39756f3e8872c1f46?acc_token=2f1294ae618e49219d85607d17afabf6 HTTP/1.0
+PATCH /api/2.4/contracts/fac3a341fed1428487268fa4dec62bc4?acc_token=5abc0448690540ee9c29b65a1751bd12 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 1160
 Content-Type: application/json
@@ -29,10 +29,10 @@ DATA:
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-06-23T17:53:02.070092+03:00", 
-          "endDate": "2017-06-26T17:53:02.070092+03:00"
+          "startDate": "2018-08-17T09:33:33.199849+03:00", 
+          "endDate": "2018-08-20T09:33:33.199849+03:00"
         }, 
-        "id": "f8a311c2c9a34ff08bdf59bbc8092348", 
+        "id": "56b0e90ebf974a9994d624336979f02c", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -56,13 +56,13 @@ Content-Type: application/json; charset=UTF-8
     "documents": [
       {
         "title": "contract_changes.doc", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/contracts/bebdbaf7777d4bd39756f3e8872c1f46/documents/853ad85f888c403eb64b3db2ce16fed7?download=6b9d115c4fa94edb8d1f07615ed5b85c", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.4/contracts/fac3a341fed1428487268fa4dec62bc4/documents/12e7d265b45744d891a7b1107c15a44f?download=e51aece47f894d278817be05aab52547", 
         "format": "application/msword", 
         "documentOf": "change", 
-        "datePublished": "2017-06-21T17:53:05.477533+03:00", 
-        "id": "853ad85f888c403eb64b3db2ce16fed7", 
-        "relatedItem": "c382f2a7da3647bbb4e8fea2af514157", 
-        "dateModified": "2017-06-21T17:53:05.477575+03:00"
+        "datePublished": "2018-08-15T09:33:37.468935+03:00", 
+        "id": "12e7d265b45744d891a7b1107c15a44f", 
+        "relatedItem": "20b34613fd124ee2a20dd1c83c7e4fb4", 
+        "dateModified": "2018-08-15T09:33:37.468958+03:00"
       }
     ], 
     "items": [
@@ -88,10 +88,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-06-23T17:53:02.070092+03:00", 
-          "endDate": "2017-06-26T17:53:02.070092+03:00"
+          "startDate": "2018-08-17T09:33:33.199849+03:00", 
+          "endDate": "2018-08-20T09:33:33.199849+03:00"
         }, 
-        "id": "f8a311c2c9a34ff08bdf59bbc8092348", 
+        "id": "56b0e90ebf974a9994d624336979f02c", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -121,11 +121,11 @@ Content-Type: application/json; charset=UTF-8
       }
     ], 
     "period": {
-      "startDate": "2017-06-21T17:53:05.582663+03:00", 
-      "endDate": "2017-07-21T17:53:05.582718+03:00"
+      "startDate": "2018-08-15T09:33:37.639564+03:00", 
+      "endDate": "2018-09-14T09:33:37.639596+03:00"
     }, 
-    "dateSigned": "2017-06-21T17:53:04.594612+03:00", 
-    "id": "bebdbaf7777d4bd39756f3e8872c1f46", 
+    "dateSigned": "2018-08-15T09:33:36.503470+03:00", 
+    "id": "fac3a341fed1428487268fa4dec62bc4", 
     "procuringEntity": {
       "contactPoint": {
         "name": "Державне управління справами", 
@@ -146,9 +146,9 @@ Content-Type: application/json; charset=UTF-8
         "locality": "м. Київ"
       }
     }, 
-    "contractID": "UA-2017-06-21-000001-1", 
+    "contractID": "UA-2018-08-15-000001-1", 
     "owner": "broker", 
-    "awardID": "2f549474497c475b8023d51845cbb2bd", 
+    "awardID": "c2bf05db778c44fb8a9d96a2e05e5946", 
     "changes": [
       {
         "status": "pending", 
@@ -158,12 +158,12 @@ Content-Type: application/json; charset=UTF-8
         ], 
         "rationale_en": "Contract change cause", 
         "rationale": "Друга і третя поставка має бути розфасована", 
-        "date": "2017-06-21T17:53:05.109702+03:00", 
-        "id": "c382f2a7da3647bbb4e8fea2af514157"
+        "date": "2018-08-15T09:33:37.170721+03:00", 
+        "id": "20b34613fd124ee2a20dd1c83c7e4fb4"
       }
     ], 
-    "dateModified": "2017-06-21T17:53:05.942313+03:00", 
-    "tender_id": "7dc086c4a213492ab9c43b95b43bd817"
+    "dateModified": "2018-08-15T09:33:37.948117+03:00", 
+    "tender_id": "3e8ba83dce454a4ba5f2c3172639642f"
   }
 }
 
