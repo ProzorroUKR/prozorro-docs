@@ -1,4 +1,4 @@
-GET /api/2.3/tenders/97dd0ca9a0f741a6ad5628c6873d1de9/contracts/c7cf2c266b524616bac79e27f7eef475?acc_token=4da34917776743398aa0bb0b7a639d70 HTTP/1.0
+GET /api/2.4/tenders/22e87e1eab6c4c7aac50c27b4f7ea426/contracts/1c6d41a8804747c28183fec03b372e76?acc_token=dc4b67578f404c6594c38bd2b8a77daf HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: api-sandbox.openprocurement.org
 
@@ -10,11 +10,12 @@ Content-Type: application/json; charset=UTF-8
     "documents": [
       {
         "title": "contract_document.doc", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/97dd0ca9a0f741a6ad5628c6873d1de9/contracts/c7cf2c266b524616bac79e27f7eef475/documents/cb09b38bf7824c42a1524feb5b89924d?download=fa84f06ca8cf4503bce422717ca1b169", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/22e87e1eab6c4c7aac50c27b4f7ea426/contracts/1c6d41a8804747c28183fec03b372e76/documents/a320ee1fdea342cf897fa1e1226e2c6b?download=e2fdf8fb05a54707b28a13bcca3a1a68", 
         "format": "application/msword", 
-        "datePublished": "2017-06-21T15:53:23.528314+03:00", 
-        "dateModified": "2017-06-21T15:53:23.528351+03:00", 
-        "id": "cb09b38bf7824c42a1524feb5b89924d"
+        "documentOf": "tender", 
+        "datePublished": "2018-08-15T10:51:42.637641+03:00", 
+        "id": "a320ee1fdea342cf897fa1e1226e2c6b", 
+        "dateModified": "2018-08-15T10:51:42.637666+03:00"
       }
     ], 
     "items": [
@@ -40,10 +41,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-11T15:53:06.068598+03:00", 
-          "endDate": "2017-08-10T15:53:06.068650+03:00"
+          "startDate": "2018-09-04T10:51:24.884191+03:00", 
+          "endDate": "2018-10-04T10:51:24.884232+03:00"
         }, 
-        "id": "fc733ce56c434220bb9e7418b0de6162", 
+        "id": "17cd4064a081473faba712b32f5fe0f5", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -74,18 +75,18 @@ Content-Type: application/json; charset=UTF-8
       }
     ], 
     "period": {
-      "startDate": "2017-06-21T15:53:23.281777+03:00", 
-      "endDate": "2018-06-21T15:53:23.281840+03:00"
+      "startDate": "2018-08-15T10:51:42.419885+03:00", 
+      "endDate": "2019-08-15T10:51:42.419921+03:00"
     }, 
-    "dateSigned": "2017-06-21T15:53:23.113026+03:00", 
+    "dateSigned": "2018-08-15T10:51:42.285744+03:00", 
     "value": {
       "currency": "UAH", 
       "amount": 238.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "awardID": "62e97a4e15234f899c0ecc9c56860603", 
-    "id": "c7cf2c266b524616bac79e27f7eef475", 
-    "contractID": "UA-2017-06-21-000001-1"
+    "awardID": "225604e0daf84ab4b76041e2e5478e2a", 
+    "id": "1c6d41a8804747c28183fec03b372e76", 
+    "contractID": "UA-2018-08-15-000001-1"
   }
 }
 
