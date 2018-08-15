@@ -1,4 +1,4 @@
-PATCH /api/2.4/tenders/6b2b340d30d64178904847faf7a8267c/contracts/ab219593631e45fca5a252c07da78a6e?acc_token=d69b27ddef504218bdab3ec5a4370294 HTTP/1.0
+PATCH /api/2.4/tenders/286e5a0cef9143858208497fd628fc24/contracts/40b5bfa8eb9a46fca23a8d495e8a4127?acc_token=9547545aca8640c8bb7887b26b1e46b3 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 60
 Content-Type: application/json
@@ -6,7 +6,7 @@ Host: api-sandbox.openprocurement.org
 DATA:
 {
   "data": {
-    "dateSigned": "2018-08-15T11:03:27.942734+03:00"
+    "dateSigned": "2018-08-15T17:58:49.221496+03:00"
   }
 }
 
@@ -17,17 +17,18 @@ Content-Type: application/json; charset=UTF-8
     "status": "pending", 
     "items": [
       {
-        "description": "Послуги шкільних їдалень", 
+        "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
-          "description": "Test", 
-          "id": "37810000-9"
+          "description": "Cartons", 
+          "id": "44617100-9"
         }, 
+        "description_en": "Cases for state awards", 
         "additionalClassifications": [
           {
             "scheme": "ДКПП", 
             "id": "17.21.1", 
-            "description": "Послуги шкільних їдалень"
+            "description": "папір і картон гофровані, паперова й картонна тара"
           }
         ], 
         "deliveryAddress": {
@@ -38,15 +39,15 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2018-09-04T11:03:10.728924+03:00", 
-          "endDate": "2018-10-04T11:03:10.728965+03:00"
+          "startDate": "2018-08-17T17:58:31.082579+03:00", 
+          "endDate": "2018-08-20T17:58:31.082579+03:00"
         }, 
-        "id": "cafa2a24418a404d90cae296c2859892", 
+        "id": "3c303fdd8e6440b798989a96860c5c73", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
-        "quantity": 1
+        "quantity": 5
       }
     ], 
     "suppliers": [
@@ -71,14 +72,14 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "dateSigned": "2018-08-15T11:03:27.942734+03:00", 
+    "dateSigned": "2018-08-15T17:58:49.221496+03:00", 
     "value": {
       "currency": "UAH", 
       "amount": 238.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "awardID": "bf0219eb1acd48088067d5eb9f8655dc", 
-    "id": "ab219593631e45fca5a252c07da78a6e", 
+    "awardID": "be44da879a7b4816829994da832ccc95", 
+    "id": "40b5bfa8eb9a46fca23a8d495e8a4127", 
     "contractID": "UA-2018-08-15-000001-1"
   }
 }

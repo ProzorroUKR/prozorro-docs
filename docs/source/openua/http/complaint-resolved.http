@@ -1,4 +1,4 @@
-PATCH /api/2.4/tenders/f0ffe8dd6bf647cc80ffb44c3eec86bc/complaints/d12a70c659e74c6bafc1c93c855ebcea?acc_token=5c3db5b44bb3461985263354e8ce3747 HTTP/1.0
+PATCH /api/2.4/tenders/518e55607ba84504b873d4f336903ded/complaints/42f95590d44a4e1197c9434193e5c391?acc_token=831aed93b0aa4e1b918cb43ccf3aae1a HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 145
 Content-Type: application/json
@@ -16,27 +16,27 @@ Content-Type: application/json; charset=UTF-8
 {
   "data": {
     "status": "resolved", 
-    "dateDecision": "2018-08-15T11:03:22.090664+03:00", 
+    "dateDecision": "2018-08-15T17:58:42.890231+03:00", 
     "documents": [
       {
         "author": "complaint_owner", 
         "title": "Complaint_Attachement.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/f0ffe8dd6bf647cc80ffb44c3eec86bc/complaints/d12a70c659e74c6bafc1c93c855ebcea/documents/5b71ee27defd4296bda4c7d5d6988c59?download=f7a7378175cf43b1b6a9f7169695448d", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/518e55607ba84504b873d4f336903ded/complaints/42f95590d44a4e1197c9434193e5c391/documents/655811e4c69246c7b82afa90afced1d9?download=848ae6c7e16a45b092b9685431f62624", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2018-08-15T11:03:19.616622+03:00", 
-        "id": "5b71ee27defd4296bda4c7d5d6988c59", 
-        "dateModified": "2018-08-15T11:03:19.616645+03:00"
+        "datePublished": "2018-08-15T17:58:40.456772+03:00", 
+        "id": "655811e4c69246c7b82afa90afced1d9", 
+        "dateModified": "2018-08-15T17:58:40.456794+03:00"
       }, 
       {
         "author": "aboveThresholdReviewers", 
         "title": "ComplaintResolution.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/f0ffe8dd6bf647cc80ffb44c3eec86bc/complaints/d12a70c659e74c6bafc1c93c855ebcea/documents/fcff11b5c46d4e28b05b54e2b82c57dc?download=29ec1f484d21401bad21223bf59d8576", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/518e55607ba84504b873d4f336903ded/complaints/42f95590d44a4e1197c9434193e5c391/documents/0daa32f9c6e74d6d8fa218758eab5cfa?download=ba0f0866606e40e792c65eab807782d2", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2018-08-15T11:03:21.929837+03:00", 
-        "id": "fcff11b5c46d4e28b05b54e2b82c57dc", 
-        "dateModified": "2018-08-15T11:03:21.929860+03:00"
+        "datePublished": "2018-08-15T17:58:42.732874+03:00", 
+        "id": "0daa32f9c6e74d6d8fa218758eab5cfa", 
+        "dateModified": "2018-08-15T17:58:42.732897+03:00"
       }
     ], 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
@@ -63,14 +63,14 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "title": "Недостатньо інформації", 
     "tendererAction": "Умови виправлено", 
-    "tendererActionDate": "2018-08-15T11:03:22.568059+03:00", 
-    "dateSubmitted": "2018-08-15T11:03:20.226487+03:00", 
+    "tendererActionDate": "2018-08-15T17:58:43.361197+03:00", 
+    "dateSubmitted": "2018-08-15T17:58:41.057038+03:00", 
     "complaintID": "UA-2018-08-15-000001.1", 
-    "date": "2018-08-15T11:03:22.572455+03:00", 
+    "date": "2018-08-15T17:58:43.365370+03:00", 
     "acceptance": true, 
     "type": "complaint", 
-    "id": "d12a70c659e74c6bafc1c93c855ebcea", 
-    "dateAccepted": "2018-08-15T11:03:21.337678+03:00"
+    "id": "42f95590d44a4e1197c9434193e5c391", 
+    "dateAccepted": "2018-08-15T17:58:42.151403+03:00"
   }
 }
 

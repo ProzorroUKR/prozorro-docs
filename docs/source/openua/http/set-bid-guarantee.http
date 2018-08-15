@@ -1,4 +1,4 @@
-PATCH /api/2.4/tenders/6b2b340d30d64178904847faf7a8267c?acc_token=d69b27ddef504218bdab3ec5a4370294 HTTP/1.0
+PATCH /api/2.4/tenders/286e5a0cef9143858208497fd628fc24?acc_token=9547545aca8640c8bb7887b26b1e46b3 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 57
 Content-Type: application/json
@@ -24,8 +24,8 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
-      "startDate": "2018-08-15T11:03:24.226784+03:00", 
-      "endDate": "2018-08-30T11:03:34.472161+03:00"
+      "startDate": "2018-08-15T17:58:45.427608+03:00", 
+      "endDate": "2018-08-30T17:58:55.684231+03:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -35,17 +35,18 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "items": [
       {
-        "description": "Послуги шкільних їдалень", 
+        "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
-          "description": "Test", 
-          "id": "37810000-9"
+          "description": "Cartons", 
+          "id": "44617100-9"
         }, 
+        "description_en": "Cases for state awards", 
         "additionalClassifications": [
           {
             "scheme": "ДКПП", 
             "id": "17.21.1", 
-            "description": "Послуги шкільних їдалень"
+            "description": "папір і картон гофровані, паперова й картонна тара"
           }
         ], 
         "deliveryAddress": {
@@ -56,19 +57,19 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2018-09-04T11:03:10.728924+03:00", 
-          "endDate": "2018-10-04T11:03:10.728965+03:00"
+          "startDate": "2018-08-17T17:58:31.082579+03:00", 
+          "endDate": "2018-08-20T17:58:31.082579+03:00"
         }, 
-        "id": "cafa2a24418a404d90cae296c2859892", 
+        "id": "3c303fdd8e6440b798989a96860c5c73", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
-        "quantity": 1
+        "quantity": 5
       }
     ], 
     "complaintPeriod": {
-      "startDate": "2018-08-15T11:03:24.226784+03:00", 
+      "startDate": "2018-08-15T17:58:45.427608+03:00", 
       "endDate": "2018-08-26T00:00:00+03:00"
     }, 
     "procurementMethodType": "aboveThresholdUA", 
@@ -78,42 +79,41 @@ Content-Type: application/json; charset=UTF-8
       "valueAddedTaxIncluded": true
     }, 
     "submissionMethod": "electronicAuction", 
-    "date": "2018-08-15T11:03:24.319020+03:00", 
-    "next_check": "2018-08-30T11:03:34.472161+03:00", 
+    "date": "2018-08-15T17:58:45.530889+03:00", 
+    "next_check": "2018-08-30T17:58:55.684231+03:00", 
     "procuringEntity": {
       "contactPoint": {
-        "url": "http://sch10.edu.vn.ua/", 
-        "name": "Куца Світлана Валентинівна", 
-        "telephone": "+380 (432) 46-53-02"
+        "name": "Державне управління справами", 
+        "telephone": "0440000000"
       }, 
       "identifier": {
         "scheme": "UA-EDR", 
-        "id": "21725150", 
-        "legalName": "Заклад \"Загальноосвітня школа І-ІІІ ступенів № 10 Вінницької міської ради\""
+        "id": "00037256", 
+        "uri": "http://www.dus.gov.ua/"
       }, 
-      "name": "ЗОСШ #10 м.Вінниці", 
-      "kind": "special", 
+      "name": "Державне управління справами", 
+      "kind": "general", 
       "address": {
-        "postalCode": "21027", 
+        "postalCode": "01220", 
         "countryName": "Україна", 
-        "streetAddress": "вул. Стахурського. 22", 
-        "region": "м. Вінниця", 
-        "locality": "м. Вінниця"
+        "streetAddress": "вул. Банкова, 11, корпус 1", 
+        "region": "м. Київ", 
+        "locality": "м. Київ"
       }
     }, 
     "enquiryPeriod": {
-      "startDate": "2018-08-15T11:03:24.226784+03:00", 
-      "clarificationsUntil": "2018-08-23T11:03:34.472161+03:00", 
-      "endDate": "2018-08-20T11:03:34.472161+03:00", 
-      "invalidationDate": "2018-08-15T11:03:24.669855+03:00"
+      "startDate": "2018-08-15T17:58:45.427608+03:00", 
+      "clarificationsUntil": "2018-08-23T17:58:55.684231+03:00", 
+      "endDate": "2018-08-20T17:58:55.684231+03:00", 
+      "invalidationDate": "2018-08-15T17:58:45.892209+03:00"
     }, 
     "owner": "broker", 
-    "dateModified": "2018-08-15T11:03:24.671558+03:00", 
+    "dateModified": "2018-08-15T17:58:45.893930+03:00", 
     "guarantee": {
       "currency": "USD", 
       "amount": 8.0
     }, 
-    "id": "6b2b340d30d64178904847faf7a8267c", 
+    "id": "286e5a0cef9143858208497fd628fc24", 
     "tenderID": "UA-2018-08-15-000001"
   }
 }

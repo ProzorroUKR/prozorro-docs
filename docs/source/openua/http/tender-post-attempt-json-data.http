@@ -1,13 +1,13 @@
 POST /api/2.4/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 2508
+Content-Length: 2345
 Content-Type: application/json
 Host: api-sandbox.openprocurement.org
 DATA:
 {
   "data": {
     "tenderPeriod": {
-      "endDate": "2018-08-31T11:03:10.728981+03:00"
+      "endDate": "2018-08-31T17:58:31.082579"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -16,17 +16,18 @@ DATA:
     }, 
     "items": [
       {
-        "description": "Послуги шкільних їдалень", 
+        "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
-          "id": "37810000-9", 
-          "description": "Test"
+          "id": "44617100-9", 
+          "description": "Cartons"
         }, 
+        "description_en": "Cases for state awards", 
         "additionalClassifications": [
           {
             "scheme": "ДКПП", 
             "id": "17.21.1", 
-            "description": "Послуги шкільних їдалень"
+            "description": "папір і картон гофровані, паперова й картонна тара"
           }
         ], 
         "deliveryAddress": {
@@ -37,14 +38,14 @@ DATA:
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2018-09-04T11:03:10.728924+03:00", 
-          "endDate": "2018-10-04T11:03:10.728965+03:00"
+          "startDate": "2018-08-17T17:58:31.082579", 
+          "endDate": "2018-08-20T17:58:31.082579"
         }, 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
-        "quantity": 1
+        "quantity": 5
       }
     ], 
     "procurementMethodType": "aboveThresholdUA", 
@@ -53,43 +54,42 @@ DATA:
       "amount": 500
     }, 
     "procuringEntity": {
-      "kind": "special", 
+      "contactPoint": {
+        "name": "Державне управління справами", 
+        "telephone": "0440000000"
+      }, 
       "identifier": {
         "scheme": "UA-EDR", 
-        "id": "21725150", 
-        "legalName": "Заклад \"Загальноосвітня школа І-ІІІ ступенів № 10 Вінницької міської ради\""
+        "id": "00037256", 
+        "uri": "http://www.dus.gov.ua/"
       }, 
-      "contactPoint": {
-        "url": "http://sch10.edu.vn.ua/", 
-        "name": "Куца Світлана Валентинівна", 
-        "telephone": "+380 (432) 46-53-02"
-      }, 
+      "name": "Державне управління справами", 
+      "kind": "general", 
       "address": {
         "countryName": "Україна", 
-        "postalCode": "21027", 
-        "region": "м. Вінниця", 
-        "streetAddress": "вул. Стахурського. 22", 
-        "locality": "м. Вінниця"
-      }, 
-      "name": "ЗОСШ #10 м.Вінниці"
+        "postalCode": "01220", 
+        "region": "м. Київ", 
+        "streetAddress": "вул. Банкова, 11, корпус 1", 
+        "locality": "м. Київ"
+      }
     }
   }
 }
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/a498cf19300e4259931468bdd6ae757b
+Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/7cc258291b994964aff73fb6be82bfc0
 {
   "access": {
-    "token": "3bbba814e4204a19ac2d612607a931b6"
+    "token": "7e09d7a6d9d0459db51fc8efdef36f80"
   }, 
   "data": {
     "procurementMethod": "open", 
     "status": "active.tendering", 
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
-      "startDate": "2018-08-15T11:03:29.420775+03:00", 
-      "endDate": "2018-08-31T11:03:10.728981+03:00"
+      "startDate": "2018-08-15T17:58:50.603562+03:00", 
+      "endDate": "2018-08-31T17:58:31.082579+03:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -98,12 +98,12 @@ Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/a498cf19300e425
       "valueAddedTaxIncluded": true
     }, 
     "enquiryPeriod": {
-      "startDate": "2018-08-15T11:03:29.420775+03:00", 
-      "clarificationsUntil": "2018-08-28T11:03:10.728981+03:00", 
-      "endDate": "2018-08-21T11:03:10.728981+03:00"
+      "startDate": "2018-08-15T17:58:50.603562+03:00", 
+      "clarificationsUntil": "2018-08-28T17:58:31.082579+03:00", 
+      "endDate": "2018-08-21T17:58:31.082579+03:00"
     }, 
     "complaintPeriod": {
-      "startDate": "2018-08-15T11:03:29.420775+03:00", 
+      "startDate": "2018-08-15T17:58:50.603562+03:00", 
       "endDate": "2018-08-27T00:00:00+03:00"
     }, 
     "procurementMethodType": "aboveThresholdUA", 
@@ -113,47 +113,47 @@ Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/a498cf19300e425
       "valueAddedTaxIncluded": true
     }, 
     "submissionMethod": "electronicAuction", 
-    "date": "2018-08-15T11:03:29.510931+03:00", 
-    "next_check": "2018-08-31T11:03:10.728981+03:00", 
+    "date": "2018-08-15T17:58:50.694627+03:00", 
+    "next_check": "2018-08-31T17:58:31.082579+03:00", 
     "procuringEntity": {
       "contactPoint": {
-        "url": "http://sch10.edu.vn.ua/", 
-        "name": "Куца Світлана Валентинівна", 
-        "telephone": "+380 (432) 46-53-02"
+        "name": "Державне управління справами", 
+        "telephone": "0440000000"
       }, 
       "identifier": {
         "scheme": "UA-EDR", 
-        "id": "21725150", 
-        "legalName": "Заклад \"Загальноосвітня школа І-ІІІ ступенів № 10 Вінницької міської ради\""
+        "id": "00037256", 
+        "uri": "http://www.dus.gov.ua/"
       }, 
-      "name": "ЗОСШ #10 м.Вінниці", 
-      "kind": "special", 
+      "name": "Державне управління справами", 
+      "kind": "general", 
       "address": {
-        "postalCode": "21027", 
+        "postalCode": "01220", 
         "countryName": "Україна", 
-        "streetAddress": "вул. Стахурського. 22", 
-        "region": "м. Вінниця", 
-        "locality": "м. Вінниця"
+        "streetAddress": "вул. Банкова, 11, корпус 1", 
+        "region": "м. Київ", 
+        "locality": "м. Київ"
       }
     }, 
     "auctionPeriod": {
       "shouldStartAfter": "2018-09-01T00:00:00+03:00"
     }, 
     "owner": "broker", 
-    "dateModified": "2018-08-15T11:03:29.513505+03:00", 
+    "dateModified": "2018-08-15T17:58:50.697190+03:00", 
     "items": [
       {
-        "description": "Послуги шкільних їдалень", 
+        "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
-          "description": "Test", 
-          "id": "37810000-9"
+          "description": "Cartons", 
+          "id": "44617100-9"
         }, 
+        "description_en": "Cases for state awards", 
         "additionalClassifications": [
           {
             "scheme": "ДКПП", 
             "id": "17.21.1", 
-            "description": "Послуги шкільних їдалень"
+            "description": "папір і картон гофровані, паперова й картонна тара"
           }
         ], 
         "deliveryAddress": {
@@ -164,18 +164,18 @@ Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/a498cf19300e425
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2018-09-04T11:03:10.728924+03:00", 
-          "endDate": "2018-10-04T11:03:10.728965+03:00"
+          "startDate": "2018-08-17T17:58:31.082579+03:00", 
+          "endDate": "2018-08-20T17:58:31.082579+03:00"
         }, 
-        "id": "d39d50842e85428dae2133b1de9418f5", 
+        "id": "9a6da601c3474dc4a9f407d4c6d48236", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
-        "quantity": 1
+        "quantity": 5
       }
     ], 
-    "id": "a498cf19300e4259931468bdd6ae757b", 
+    "id": "7cc258291b994964aff73fb6be82bfc0", 
     "tenderID": "UA-2018-08-15-000002"
   }
 }
