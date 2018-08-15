@@ -1,4 +1,4 @@
-POST /api/2.3/tenders?opt_pretty=1 HTTP/1.0
+POST /api/2.4/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 3197
 Content-Type: application/json
@@ -58,8 +58,8 @@ Host: api-sandbox.openprocurement.org
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-09-16T19:39:39.580353", 
-          "endDate": "2017-09-19T19:39:39.580353"
+          "startDate": "2018-08-17T10:28:21.528967", 
+          "endDate": "2018-08-20T10:28:21.528967"
         }, 
         "description_ru": "Услуги школьных столовых", 
         "id": "2dc54675d6364e2baffbc0f8e74432ac"
@@ -77,10 +77,10 @@ Host: api-sandbox.openprocurement.org
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/d014500a9769491a81f3f1cecc1004f3
+Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/233d6809342d4f118e5ae90c58a50d0e
 {
   "access": {
-    "token": "0b5ecdd3b42e4a3eb9f4c05235bdbbfa"
+    "token": "0d1a3368e41f487da8cb7ca4474c715c"
   }, 
   "data": {
     "procurementMethod": "limited", 
@@ -110,8 +110,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/d014500a9769491
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-09-16T19:39:39.580353+03:00", 
-          "endDate": "2017-09-19T19:39:39.580353+03:00"
+          "startDate": "2018-08-17T10:28:21.528967+03:00", 
+          "endDate": "2018-08-20T10:28:21.528967+03:00"
         }, 
         "description_ru": "Услуги школьных столовых", 
         "id": "2dc54675d6364e2baffbc0f8e74432ac"
@@ -123,7 +123,7 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/d014500a9769491
       "amount": 500000.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "dateModified": "2017-09-14T19:39:50.901336+03:00", 
+    "dateModified": "2018-08-15T10:28:24.704327+03:00", 
     "procuringEntity": {
       "contactPoint": {
         "url": "http://sch10.edu.vn.ua/", 
@@ -145,14 +145,14 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/d014500a9769491
         "locality": "м. Вінниця"
       }
     }, 
-    "date": "2017-09-14T19:39:50.894891+03:00", 
+    "date": "2018-08-15T10:28:24.702616+03:00", 
     "procurementMethodType": "reporting", 
     "description_en": "Services in school canteens", 
     "title_ru": "Услуги школьных столовых", 
     "owner": "broker", 
     "description_ru": "Услуги школьных столовых", 
-    "id": "d014500a9769491a81f3f1cecc1004f3", 
-    "tenderID": "UA-2017-09-14-000001"
+    "id": "233d6809342d4f118e5ae90c58a50d0e", 
+    "tenderID": "UA-2018-08-15-000001"
   }
 }
 
