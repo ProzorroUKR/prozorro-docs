@@ -10,7 +10,6 @@
 Complaint Workflow
 ==================
 
-For more detailed information read `Complaints <http://openprocurement.org/en/complaints.html>`_.
 
 Tender Conditions Claims/Complaints
 -----------------------------------

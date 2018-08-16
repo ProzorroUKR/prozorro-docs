@@ -81,7 +81,7 @@ Reading the tender documents list
 
 Example request:
 
-.. include:: http/tutorial/tender-documents-2.http
+.. include:: ../http/tutorial/tender-documents-2.http
    :code:
 
 Reading the tender document
