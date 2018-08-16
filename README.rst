@@ -5,6 +5,7 @@ Prozorro Documentation for openprocurement.api
     :alt: Documentation Status
 
 This docs are also built from http-files after travis runs of the following reps:
+
 openprocurement.api
 
 .. image:: https://travis-ci.org/ProzorroUKR/openprocurement.api.svg?branch=master
