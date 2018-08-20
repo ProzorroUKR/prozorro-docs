@@ -33,6 +33,8 @@ Schema
     :ref:`Guarantee`
 
     Bid guarantee
+
+    Absent in :ref:`limited`
     
 :date:
     string, :ref:`date`, auto-generated
@@ -46,15 +48,21 @@ Schema
    * `currency` should either be absent or match `Lot.value.currency`
    * `valueAddedTaxIncluded` should either be absent or match `Lot.value.valueAddedTaxIncluded`
 
+   Absent in :ref:`limited`
+
 :auctionPeriod:
    :ref:`period`, read-only
 
    Period when Auction is conducted.
 
+   Absent in :ref:`limited`
+
 :auctionUrl:
     url
 
     A web address for view auction.
+
+    Absent in :ref:`limited`
 
 :status:
    string
@@ -69,3 +77,21 @@ Schema
        Cancelled tender lot (cancelled)
 
    Status of the Lot.
+
+
+Workflow in :ref:`limited` and :ref:`openeu`
+--------------------------------------------
+
+.. graphviz::
+
+    digraph G {
+        A [ label="active*" ]
+        B [ label="complete"]
+        C [ label="cancelled"]
+        D [ label="unsuccessful"]
+         A -> B;
+         A -> C;
+         A -> D;
+    }
+
+\* marks initial state

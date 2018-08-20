@@ -1,13 +1,13 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: openprocurement.api 0.3\n"
+"Project-Id-Version: openprocurement.tender.openeu 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-16 14:29+0300\n"
-"PO-Revision-Date: 2018-08-17 15:17+0300\n"
-"Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
+"POT-Creation-Date: 2018-08-14 13:08+0300\n"
+"PO-Revision-Date: 2018-08-17 15:16+0300\n"
+"Last-Translator: sorenabell <sorenabell@quintagroup.com>\n"
 "Language: uk\n"
-"Language-Team: Ukrainian <info@quintagroup.com>\n"
+"Language-Team: Ukrainian <support@quintagroup.com>\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 "
 "&& (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
@@ -16,41 +16,45 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 "X-Generator: Poedit 2.1.1\n"
 
-#: ../../source/standard/document.rst:9
-msgid "Document"
-msgstr "Document"
+#: ../../source/openeu/standard/confidentialdocument.rst:9
+msgid "ConfidentialDocument"
+msgstr "ConfidentialDocument"
 
-#: ../../source/standard/document.rst:12
+#: ../../source/openeu/standard/confidentialdocument.rst:12
 msgid "Schema"
 msgstr "Схема"
 
-#: ../../source/standard/document.rst
+#: ../../source/openeu/standard/confidentialdocument.rst
 msgid "id"
 msgstr ""
 
-#: ../../source/standard/document.rst:15 ../../source/standard/document.rst:129
+#: ../../source/openeu/standard/confidentialdocument.rst:15
+#: ../../source/openeu/standard/confidentialdocument.rst:133
 msgid "string, auto-generated"
 msgstr "рядок, генерується автоматично"
 
-#: ../../source/standard/document.rst
+#: ../../source/openeu/standard/confidentialdocument.rst
 msgid "documentType"
 msgstr ""
 
-#: ../../source/standard/document.rst:18 ../../source/standard/document.rst:123
-#: ../../source/standard/document.rst:147 ../../source/standard/document.rst:160
-#: ../../source/standard/document.rst:171
+#: ../../source/openeu/standard/confidentialdocument.rst:18
+#: ../../source/openeu/standard/confidentialdocument.rst:127
+#: ../../source/openeu/standard/confidentialdocument.rst:139
+#: ../../source/openeu/standard/confidentialdocument.rst:147
+#: ../../source/openeu/standard/confidentialdocument.rst:176
+#: ../../source/openeu/standard/confidentialdocument.rst:185
 msgid "string"
 msgstr "рядок"
 
-#: ../../source/standard/document.rst:20
+#: ../../source/openeu/standard/confidentialdocument.rst:20
 msgid "Possible values for :ref:`tender`"
 msgstr "Можливі значення для :ref:`tender`"
 
-#: ../../source/standard/document.rst:23
+#: ../../source/openeu/standard/confidentialdocument.rst:23
 msgid "`notice` - **Tender notice**"
 msgstr "`notice` - **Повідомлення про закупівлю**"
 
-#: ../../source/standard/document.rst:25
+#: ../../source/openeu/standard/confidentialdocument.rst:25
 msgid ""
 "The formal notice that gives details of a tender. This may be a link to a "
 "downloadable document, to a web page, or to an official gazette in which the "
@@ -59,11 +63,11 @@ msgstr ""
 "Офіційне повідомлення, що містить деталі закупівлі. Це може бути посилання на "
 "документ, веб-сторінку, чи на офіційний бюлетень, де розміщено повідомлення."
 
-#: ../../source/standard/document.rst:27
+#: ../../source/openeu/standard/confidentialdocument.rst:27
 msgid "`biddingDocuments` - **Bidding Documents**"
 msgstr "`biddingDocuments` - **Документи закупівлі**"
 
-#: ../../source/standard/document.rst:29
+#: ../../source/openeu/standard/confidentialdocument.rst:29
 msgid ""
 "Information for potential suppliers, describing the goals of the contract (e.g. "
 "goods and services to be procured), and the bidding process."
@@ -71,56 +75,56 @@ msgstr ""
 "Інформація для потенційних постачальників, що описує цілі договору (наприклад, "
 "товари та послуги, які будуть закуплені) і процес торгів."
 
-#: ../../source/standard/document.rst:31
+#: ../../source/openeu/standard/confidentialdocument.rst:31
 msgid "`technicalSpecifications` - **Technical Specifications**"
 msgstr "`technicalSpecifications` - **Технічні специфікації**"
 
-#: ../../source/standard/document.rst:33
+#: ../../source/openeu/standard/confidentialdocument.rst:33
 msgid "Detailed technical information about goods or services to be provided."
 msgstr ""
 "Детальна технічна інформація про товари або послуги, що повинні бути надані."
 
-#: ../../source/standard/document.rst:35
+#: ../../source/openeu/standard/confidentialdocument.rst:35
 msgid "`evaluationCriteria` - **Evaluation Criteria**"
 msgstr "`evaluationCriteria` - **Критерії оцінки**"
 
-#: ../../source/standard/document.rst:37
+#: ../../source/openeu/standard/confidentialdocument.rst:37
 msgid "Information about how bids will be evaluated."
 msgstr "Інформація про те, як будуть оцінюватись пропозиції."
 
-#: ../../source/standard/document.rst:39
+#: ../../source/openeu/standard/confidentialdocument.rst:39
 msgid "`clarifications` - **Clarifications to bidders questions**"
 msgstr "`clarifications` - **Пояснення до питань заданих учасниками**"
 
-#: ../../source/standard/document.rst:41
+#: ../../source/openeu/standard/confidentialdocument.rst:41
 msgid "Including replies to issues raised in pre-bid conferences."
 msgstr "Включає відповіді на питання, підняті на передтендерних конференціях."
 
-#: ../../source/standard/document.rst:43
+#: ../../source/openeu/standard/confidentialdocument.rst:43
 msgid "`eligibilityCriteria` - **Eligibility Criteria**"
 msgstr "`eligibilityCriteria` - **Критерії прийнятності**"
 
-#: ../../source/standard/document.rst:45
+#: ../../source/openeu/standard/confidentialdocument.rst:45
 msgid "Detailed documents about the eligibility of bidders."
 msgstr "Докладні документи про критерії відбору."
 
-#: ../../source/standard/document.rst:47
+#: ../../source/openeu/standard/confidentialdocument.rst:47
 msgid "`shortlistedFirms` - **Shortlisted Firms**"
 msgstr "`shortlistedFirms` - **Фірми у короткому списку**"
 
-#: ../../source/standard/document.rst:49
+#: ../../source/openeu/standard/confidentialdocument.rst:49
 msgid "`riskProvisions` - **Provisions for management of risks and liabilities**"
 msgstr "`riskProvisions` - **Положення для управління ризиками та зобов'язаннями**"
 
-#: ../../source/standard/document.rst:51
+#: ../../source/openeu/standard/confidentialdocument.rst:51
 msgid "`billOfQuantity` - **Bill Of Quantity**"
 msgstr "`billOfQuantity` - **Кошторис**"
 
-#: ../../source/standard/document.rst:53
+#: ../../source/openeu/standard/confidentialdocument.rst:53
 msgid "`bidders` - **Information on bidders**"
 msgstr "`bidders` - **Інформація про учасників**"
 
-#: ../../source/standard/document.rst:55
+#: ../../source/openeu/standard/confidentialdocument.rst:55
 msgid ""
 "Information on bidders or participants, their validation documents and any "
 "procedural exemptions for which they qualify."
@@ -128,27 +132,23 @@ msgstr ""
 "Інформація про учасників, їхні документи для перевірки та будь-які процесуальні "
 "пільги, на які вони можуть претендувати."
 
-#: ../../source/standard/document.rst:57
+#: ../../source/openeu/standard/confidentialdocument.rst:57
 msgid "`conflictOfInterest` - **Conflicts of interest uncovered**"
 msgstr "`conflictOfInterest` - **Виявлені конфлікти інтересів**"
 
-#: ../../source/standard/document.rst:59
+#: ../../source/openeu/standard/confidentialdocument.rst:59
 msgid "`debarments` - **Debarments issued**"
 msgstr "`debarments` - **Відмова у допуску до закупівлі**"
 
-#: ../../source/standard/document.rst:61
-msgid "`contractProforma` - **Draft contract**"
-msgstr "`contractProforma` - **Проект договору**"
-
-#: ../../source/standard/document.rst:64
+#: ../../source/openeu/standard/confidentialdocument.rst:62
 msgid "Possible values for :ref:`award`"
 msgstr "Можливі значення для :ref:`award`"
 
-#: ../../source/standard/document.rst:67
+#: ../../source/openeu/standard/confidentialdocument.rst:65
 msgid "`notice` - **Award Notice**"
 msgstr "`notice` - **Повідомлення про рішення**"
 
-#: ../../source/standard/document.rst:69
+#: ../../source/openeu/standard/confidentialdocument.rst:67
 msgid ""
 "The formal notice that gives details of the contract award. This may be a link "
 "to a downloadable document, to a web page, or to an official gazette in which "
@@ -158,11 +158,11 @@ msgstr ""
 "може бути посилання на документ, веб-сторінку, чи на офіційний бюлетень, де "
 "розміщено повідомлення."
 
-#: ../../source/standard/document.rst:71
+#: ../../source/openeu/standard/confidentialdocument.rst:69
 msgid "`evaluationReports` - **Evaluation report**"
 msgstr "`evaluationReports` - **Звіт про оцінку**"
 
-#: ../../source/standard/document.rst:73
+#: ../../source/openeu/standard/confidentialdocument.rst:71
 msgid ""
 "Report on the evaluation of the bids and the application of the evaluation "
 "criteria, including the justification fo the award."
@@ -170,23 +170,23 @@ msgstr ""
 "Звіт про оцінку пропозицій і застосування критеріїв оцінки, у тому числі, "
 "обґрунтування рішення про визначення переможця."
 
-#: ../../source/standard/document.rst:75
+#: ../../source/openeu/standard/confidentialdocument.rst:73
 msgid "`winningBid` - **Winning Bid**"
 msgstr "`winningBid` - **Пропозиція, що перемогла**"
 
-#: ../../source/standard/document.rst:77
+#: ../../source/openeu/standard/confidentialdocument.rst:75
 msgid "`complaints` - **Complaints and decisions**"
 msgstr "`complaints` - **Скарги та рішення**"
 
-#: ../../source/standard/document.rst:80
+#: ../../source/openeu/standard/confidentialdocument.rst:78
 msgid "Possible values for :ref:`contract`"
 msgstr "Можливі значення для :ref:`contract`"
 
-#: ../../source/standard/document.rst:83
+#: ../../source/openeu/standard/confidentialdocument.rst:81
 msgid "`notice` - **Contract notice**"
 msgstr "`notice` - **Повідомлення про договір**"
 
-#: ../../source/standard/document.rst:85
+#: ../../source/openeu/standard/confidentialdocument.rst:83
 msgid ""
 "The formal notice that gives details of a contract being signed and valid to "
 "start implementation. This may be a link to a downloadable document, to a web "
@@ -196,65 +196,91 @@ msgstr ""
 "реалізації. Це може бути посилання на документ, веб-сторінку, чи на офіційний "
 "бюлетень, де розміщено повідомлення."
 
-#: ../../source/standard/document.rst:87
+#: ../../source/openeu/standard/confidentialdocument.rst:85
 msgid "`contractSigned` - **Signed Contract**"
 msgstr "`contractSigned` - **Підписаний договір**"
 
-#: ../../source/standard/document.rst:89
+#: ../../source/openeu/standard/confidentialdocument.rst:87
 msgid "`contractArrangements` - **Arrangements for ending contract**"
 msgstr "`contractArrangements` - **Заходи для припинення договору**"
 
-#: ../../source/standard/document.rst:91
+#: ../../source/openeu/standard/confidentialdocument.rst:89
 msgid "`contractSchedule` - **Schedules and milestones**"
 msgstr "`contractSchedule` - **Розклад та етапи**"
 
-#: ../../source/standard/document.rst:93
+#: ../../source/openeu/standard/confidentialdocument.rst:91
 msgid "`contractAnnexe` - **Annexes to the Contract**"
 msgstr "`contractAnnexe` - **Додатки до договору**"
 
-#: ../../source/standard/document.rst:95
+#: ../../source/openeu/standard/confidentialdocument.rst:93
 msgid "`contractGuarantees` - **Guarantees**"
-msgstr "`contractGuarantees` - **Забезпечення тендерних пропозицій**"
+msgstr "`contractGuarantees` - **Гарантії**"
 
-#: ../../source/standard/document.rst:97
+#: ../../source/openeu/standard/confidentialdocument.rst:95
 msgid "`subContract` - **Subcontracts**"
 msgstr "`subContract` - **Субпідряд**"
 
-#: ../../source/standard/document.rst:100
+#: ../../source/openeu/standard/confidentialdocument.rst:98
 msgid "Possible values for :ref:`bid`"
-msgstr "Можливі значення для :ref:`bid`"
+msgstr "Можливі значення :ref:`bid`"
 
-#: ../../source/standard/document.rst:103
+#: ../../source/openeu/standard/confidentialdocument.rst:101
 msgid "`commercialProposal` - **Сommercial proposal**"
 msgstr "`commercialProposal` - **Цінова пропозиція**"
 
-#: ../../source/standard/document.rst:105
+#: ../../source/openeu/standard/confidentialdocument.rst:103
+msgid ""
+"For Open EU procedure `commercialProposal` should be contained in "
+"`financialDocuments` envelope. See :ref:`bid`."
+msgstr ""
+"Для процедури відкритих торгів з публікацією англ. мовою документи типу "
+"`commercialProposal` повинні міститись у конверті `financialDocuments`. Див. :"
+"ref:`bid`."
+
+#: ../../source/openeu/standard/confidentialdocument.rst:105
 msgid "`qualificationDocuments` - **Qualification documents**"
 msgstr "`qualificationDocuments` - **Документи, що підтверджують кваліфікацію**"
 
-#: ../../source/standard/document.rst:107
-msgid "`eligibilityDocuments` - **Eligibility documents**"
+#: ../../source/openeu/standard/confidentialdocument.rst:107
+msgid ""
+"For Open EU procedure `qualificationDocuments` should be contained in "
+"`documents` envelope. See :ref:`bid`."
 msgstr ""
-"`eligibilityDocuments` - **Документи, що підтверджують відповідність** (в тому "
-"числі, відповідність вимогам ст. 17)"
+"Кваліфікаційні документи. Для процедури відкритих торгів з публікацією англ. "
+"мовою документ типу `qualificationDocuments` повинен міститись у конверті "
+"`documents`. Див. :ref:`bid`."
 
-#: ../../source/standard/document.rst
+#: ../../source/openeu/standard/confidentialdocument.rst:109
+msgid "`eligibilityDocuments` - **Eligibility documents**"
+msgstr "`eligibilityDocuments` - **Документи, що підтверджують відповідність**"
+
+#: ../../source/openeu/standard/confidentialdocument.rst:111
+msgid ""
+"For Open EU procedure `eligibilityDocuments` should be contained in "
+"`eligibilityDocuments` envelope. See :ref:`bid`."
+msgstr ""
+"Для процедури відкритих торгів з публікацією англ. мовою документи типу "
+"`eligibilityDocuments`  повинні міститись у конверті `eligibilityDocuments`. "
+"Див. :ref:`bid`."
+
+#: ../../source/openeu/standard/confidentialdocument.rst
 msgid "title"
 msgstr ""
 
-#: ../../source/standard/document.rst:111 ../../source/standard/document.rst:117
+#: ../../source/openeu/standard/confidentialdocument.rst:115
+#: ../../source/openeu/standard/confidentialdocument.rst:121
 msgid "string, multilingual"
 msgstr "рядок, багатомовний"
 
-#: ../../source/standard/document.rst:113
+#: ../../source/openeu/standard/confidentialdocument.rst:117
 msgid "|ocdsDescription| The document title."
 msgstr "|ocdsDescription| Назва документа."
 
-#: ../../source/standard/document.rst
+#: ../../source/openeu/standard/confidentialdocument.rst
 msgid "description"
 msgstr ""
 
-#: ../../source/standard/document.rst:119
+#: ../../source/openeu/standard/confidentialdocument.rst:123
 msgid ""
 "|ocdsDescription| A short description of the document. In the event the document "
 "is not accessible online, the description field can be used to describe "
@@ -264,11 +290,11 @@ msgstr ""
 "онлайн, то поле опису можна використати для вказання способу отримання копії "
 "документа."
 
-#: ../../source/standard/document.rst
+#: ../../source/openeu/standard/confidentialdocument.rst
 msgid "format"
 msgstr ""
 
-#: ../../source/standard/document.rst:125
+#: ../../source/openeu/standard/confidentialdocument.rst:129
 msgid ""
 "|ocdsDescription| The format of the document taken from the `IANA Media Types "
 "code list <http://www.iana.org/assignments/media-types/>`_, with the addition of "
@@ -280,55 +306,82 @@ msgstr ""
 "print', що буде використовуватись, коли запис цього документа використовується "
 "для опису офлайнової публікації документа."
 
-#: ../../source/standard/document.rst
+#: ../../source/openeu/standard/confidentialdocument.rst
 msgid "url"
 msgstr ""
 
-#: ../../source/standard/document.rst:131
+#: ../../source/openeu/standard/confidentialdocument.rst:135
 msgid "|ocdsDescription| Direct link to the document or attachment."
-msgstr "|ocdsDescription| Пряме посилання на документ чи додаток."
+msgstr "|ocdsDescription| Пряме посилання на документ або додаток."
 
-#: ../../source/standard/document.rst
-msgid "datePublished"
+#: ../../source/openeu/standard/confidentialdocument.rst
+msgid "confidentiality"
 msgstr ""
 
-#: ../../source/standard/document.rst:135 ../../source/standard/document.rst:141
-msgid "string, :ref:`date`"
-msgstr "рядок, :ref:`date`"
-
-#: ../../source/standard/document.rst:137
-msgid "|ocdsDescription| The date on which the document was first published."
-msgstr "|ocdsDescription| Дата, коли документ був опублікований вперше."
-
-#: ../../source/standard/document.rst
-msgid "dateModified"
-msgstr ""
-
-#: ../../source/standard/document.rst:143
-msgid "|ocdsDescription| Date that the document was last modified"
-msgstr "|ocdsDescription| Дата, коли документ був змінений востаннє."
-
-#: ../../source/standard/document.rst
-msgid "language"
-msgstr ""
-
-#: ../../source/standard/document.rst:149 ../../source/standard/document.rst:162
+#: ../../source/openeu/standard/confidentialdocument.rst:141
+#: ../../source/openeu/standard/confidentialdocument.rst:166
+#: ../../source/openeu/standard/confidentialdocument.rst:178
 msgid "Possible values are:"
 msgstr "Можливі значення:"
 
-#: ../../source/standard/document.rst:151
+#: ../../source/openeu/standard/confidentialdocument.rst:143
+msgid "`public`"
+msgstr "`public` - публічний документ"
+
+#: ../../source/openeu/standard/confidentialdocument.rst:144
+msgid "`buyerOnly`"
+msgstr "`buyerOnly` - приватний документ"
+
+#: ../../source/openeu/standard/confidentialdocument.rst
+msgid "confidentialityRationale"
+msgstr ""
+
+#: ../../source/openeu/standard/confidentialdocument.rst:149
+msgid "Reasons for confidentiality of documents."
+msgstr "Причина для конфіденційності документів."
+
+#: ../../source/openeu/standard/confidentialdocument.rst
+msgid "datePublished"
+msgstr ""
+
+#: ../../source/openeu/standard/confidentialdocument.rst:152
+#: ../../source/openeu/standard/confidentialdocument.rst:158
+msgid "string, :ref:`date`"
+msgstr "рядок, :ref:`date`"
+
+#: ../../source/openeu/standard/confidentialdocument.rst:154
+msgid "|ocdsDescription| The date on which the document was first published."
+msgstr "|ocdsDescription| Дата, коли документ був опублікований вперше."
+
+#: ../../source/openeu/standard/confidentialdocument.rst
+msgid "dateModified"
+msgstr ""
+
+#: ../../source/openeu/standard/confidentialdocument.rst:160
+msgid "|ocdsDescription| Date that the document was last modified"
+msgstr "|ocdsDescription| Дата, коли документ був змінений востаннє"
+
+#: ../../source/openeu/standard/confidentialdocument.rst
+msgid "language"
+msgstr ""
+
+#: ../../source/openeu/standard/confidentialdocument.rst:164
+msgid "string, default = `uk`"
+msgstr "рядок, значення за замовчуванням - `uk`"
+
+#: ../../source/openeu/standard/confidentialdocument.rst:168
 msgid "`uk`"
-msgstr ""
+msgstr "`uk`"
 
-#: ../../source/standard/document.rst:152
+#: ../../source/openeu/standard/confidentialdocument.rst:169
 msgid "`en`"
-msgstr ""
+msgstr "`en`"
 
-#: ../../source/standard/document.rst:153
+#: ../../source/openeu/standard/confidentialdocument.rst:170
 msgid "`ru`"
-msgstr ""
+msgstr "`ru`"
 
-#: ../../source/standard/document.rst:156
+#: ../../source/openeu/standard/confidentialdocument.rst:172
 msgid ""
 "|ocdsDescription| Specifies the language of the linked document using either two-"
 "digit `ISO 639-1 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`_, or "
@@ -339,34 +392,26 @@ msgstr ""
 "639-1 <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`_, або розширений "
 "`BCP47 language tags <http://www.w3.org/International/articles/language-tags/>`_."
 
-#: ../../source/standard/document.rst
+#: ../../source/openeu/standard/confidentialdocument.rst
 msgid "documentOf"
 msgstr ""
 
-#: ../../source/standard/document.rst:164
+#: ../../source/openeu/standard/confidentialdocument.rst:180
 msgid "`tender`"
 msgstr "`tender`"
 
-#: ../../source/standard/document.rst:165
-msgid "`contract`"
-msgstr ""
-
-#: ../../source/standard/document.rst:166
-msgid "`change`"
-msgstr ""
-
-#: ../../source/standard/document.rst:167
+#: ../../source/openeu/standard/confidentialdocument.rst:181
 msgid "`item`"
 msgstr "`item`"
 
-#: ../../source/standard/document.rst:168
+#: ../../source/openeu/standard/confidentialdocument.rst:182
 msgid "`lot`"
 msgstr "`lot`"
 
-#: ../../source/standard/document.rst
+#: ../../source/openeu/standard/confidentialdocument.rst
 msgid "relatedItem"
 msgstr ""
 
-#: ../../source/standard/document.rst:173
-msgid "Id of related :ref:`contract`, :ref:`change`, :ref:`lot` or :ref:`item`."
-msgstr "ID пов’язаних :ref:`contract`, :ref:`change`, :ref:`lot` або :ref:`item`."
+#: ../../source/openeu/standard/confidentialdocument.rst:187
+msgid "ID of related :ref:`lot` or :ref:`item`."
+msgstr "Ідентифікатор пов'язаних об'єктів :ref:`lot` або :ref:`item`."

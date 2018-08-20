@@ -1,4 +1,4 @@
-.. _mulitlot_tutorial:
+.. _limited_mulitlot_tutorial:
 
 Multiple Lots Tutorial
 ======================

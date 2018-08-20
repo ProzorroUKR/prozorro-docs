@@ -3,17 +3,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.api 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-14 13:08+0300\n"
-"PO-Revision-Date: 2016-03-16 10:51+0200\n"
+"POT-Creation-Date: 2018-08-17 12:08+0300\n"
+"PO-Revision-Date: 2018-08-17 15:48+0300\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
 "Language: uk\n"
 "Language-Team: Ukrainian <info@quintagroup.com>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"X-Generator: Poedit 2.1.1\n"
 
 #: ../../source/standard/util.rst:8
 msgid "Period"
@@ -21,6 +21,7 @@ msgstr "Period"
 
 #: ../../source/standard/util.rst:11 ../../source/standard/util.rst:41
 #: ../../source/standard/util.rst:67 ../../source/standard/util.rst:84
+#: ../../source/standard/util.rst:107
 msgid "Schema"
 msgstr "Схема"
 
@@ -29,7 +30,7 @@ msgid "startDate"
 msgstr ""
 
 #: ../../source/standard/util.rst:14 ../../source/standard/util.rst:20
-#: ../../source/standard/util.rst:70
+#: ../../source/standard/util.rst:70 ../../source/standard/util.rst:166
 msgid "string, :ref:`date`"
 msgstr "рядок, :ref:`date`"
 
@@ -81,7 +82,7 @@ msgstr "Повинно бути додатнім."
 msgid "currency"
 msgstr ""
 
-#: ../../source/standard/util.rst:52
+#: ../../source/standard/util.rst:52 ../../source/standard/util.rst:172
 msgid "string, required"
 msgstr "рядок, обов’язковий"
 
@@ -126,3 +127,404 @@ msgstr "Guarantee"
 msgid "string, required, default = `UAH`"
 msgstr "рядок, обов’язковий, за замовчуванням = `UAH`"
 
+#: ../../source/standard/util.rst:104
+msgid "Change"
+msgstr ""
+
+#: ../../source/standard/util.rst
+msgid "id"
+msgstr ""
+
+#: ../../source/standard/util.rst:110
+msgid "uid, auto-generated"
+msgstr "uid, генерується автоматично"
+
+#: ../../source/standard/util.rst:112
+msgid "The identifier for this Change."
+msgstr "Ідентифікатор для цієї зміни."
+
+#: ../../source/standard/util.rst
+msgid "rationale"
+msgstr ""
+
+#: ../../source/standard/util.rst:115
+msgid "string, multilingual, required"
+msgstr "рядок, багатомовний, обов’язковий"
+
+#: ../../source/standard/util.rst:117
+msgid "Reason for contract change"
+msgstr "Причина зміни контракту"
+
+#: ../../source/standard/util.rst
+msgid "rationaleTypes"
+msgstr ""
+
+#: ../../source/standard/util.rst:120
+msgid "List of strings, required"
+msgstr "Список рядків, обов’язковий"
+
+#: ../../source/standard/util.rst:122
+msgid "Type of the rationale behind contract change"
+msgstr "Тип причини додання змін до договору"
+
+#: ../../source/standard/util.rst:124
+msgid "Changes to the contract can be made in cases described in the 4th part of Article 36 of the Law “On the Public Procurement”."
+msgstr "Внесення змін до істотних умов договору можливі у випадках, описаних частиною четвертою статті 36 Закону України “Про публічні закупівлі”."
+
+#: ../../source/standard/util.rst:126
+msgid "Possible string values are:"
+msgstr "Можливі значення:"
+
+#: ../../source/standard/util.rst:128
+msgid "`volumeCuts` - Reduction of the procurement’s volume"
+msgstr "`volumeCuts` - Зменшення обсягів закупівлі"
+
+#: ../../source/standard/util.rst:130
+msgid "reduction of the procurement’s volume, particularly taking into account the actual expenditures of the procuring entity;"
+msgstr "зменшення обсягів закупівлі, зокрема з урахуванням фактичного обсягу видатків замовника;"
+
+#: ../../source/standard/util.rst:132
+msgid "`itemPriceVariation` - Change in the unit’s price"
+msgstr "`itemPriceVariation` - Зміна ціни за одиницю товару"
+
+#: ../../source/standard/util.rst:134
+msgid "change in the unit’s price (no more than 10%) due to product’s price fluctuations on the market, provided that the said change will not increase the sum of money specified in the contract;"
+msgstr "зміна ціни за одиницю товару не більше ніж на 10 відсотків у разі коливання ціни такого товару на ринку, за умови, що зазначена зміна не призведе до збільшення суми, визначеної в договорі;"
+
+#: ../../source/standard/util.rst:136
+msgid "`qualityImprovement` - Improvement of the procurement item’s quality"
+msgstr "`qualityImprovement` - Покращення якості предмета закупівлі"
+
+#: ../../source/standard/util.rst:138
+msgid "improvement of the item's quality, provided that such improvement will not increase the sum of money specified in the contract;"
+msgstr "покращення якості предмета закупівлі за умови, що таке покращення не призведе до збільшення суми, визначеної в договорі;"
+
+#: ../../source/standard/util.rst:140
+msgid "`durationExtension` - Extension of the period of the contract duration (due to documented objective circumstances)"
+msgstr "`durationExtension` - Продовження строку дії договору (через документально підтверджені об’єктивні обставини)"
+
+#: ../../source/standard/util.rst:142
+msgid "extension of the period of the contract duration and obligations fulfilment regarding the transfer of goods, implementation of works and provision of services in case of documented objective circumstances that led to such extension, including force majeure, delays in funding of procuring entity’s  expenditures, provided that such changes will not increase the sum of money specified in the contract;"
+msgstr "продовження строку дії договору та виконання зобов’язань щодо передання товару, виконання робіт, надання послуг у разі виникнення документально підтверджених об’єктивних обставин, що спричинили таке продовження, у тому числі непереборної сили, затримки фінансування витрат замовника, за умови, що такі зміни не призведуть до збільшення суми, визначеної в договорі;"
+
+#: ../../source/standard/util.rst:144
+msgid "`priceReduction` - Coordinated price reduction"
+msgstr "`priceReduction` - Узгоджене зменшення ціни"
+
+#: ../../source/standard/util.rst:146
+msgid "coordinated downward price change (without changing the quantity (volume) and quality of goods, works, and services);"
+msgstr "узгоджена зміна ціни в бік зменшення (без зміни кількості (обсягу) та якості товарів, робіт і послуг);"
+
+#: ../../source/standard/util.rst:148
+msgid "`taxRate` - Price changes due to changes in tax rates and fees"
+msgstr "`taxRate` - Зміна ціни у зв’язку із зміною ставок податків і зборів"
+
+#: ../../source/standard/util.rst:150
+msgid "price changes due to changes in tax rates and fees in proportion to changes of those rates;"
+msgstr "зміна ціни у зв’язку із зміною ставок податків і зборів пропорційно до змін таких ставок;"
+
+#: ../../source/standard/util.rst:152
+msgid "`thirdParty` - Change of the third-party indicators (rate, indices...)"
+msgstr "`thirdParty` - Зміна сторонніх показників (курсу, тарифів…)"
+
+#: ../../source/standard/util.rst:154
+msgid "changes of established under the law by the State Statistics Service consumer price index, changes in foreign currency, changes in stock prices or Platts indices, regulated prices (rates) and standards that are used in the procurement contract if the price change order is specified in the procurement contract;"
+msgstr "зміна встановленого згідно із законодавством органами державної статистики індексу споживчих цін, зміни курсу іноземної валюти, зміни біржових котирувань або показників Platts, регульованих цін (тарифів) і нормативів, які застосовуються в договорі про закупівлю, у разі встановлення в договорі про закупівлю порядку зміни ціни;"
+
+#: ../../source/standard/util.rst:156
+msgid "`fiscalYearExtension` - Extension of the period of the contract duration to the next year"
+msgstr "`fiscalYearExtension` - Продовження строку дії договору на наступний рік"
+
+#: ../../source/standard/util.rst:158
+msgid "changes in contract terms according to the provisions of part 5 of Article 36."
+msgstr "зміна умов у зв’язку із застосуванням положень частини п’ятої статті 36."
+
+#: ../../source/standard/util.rst:160
+#, python-format
+msgid "Article 36 Part 5. Effect of the procurement contract may be continued for a period sufficient for conduction of the procurement procedure at the beginning of the next year in volume that does not exceed 20% of the sum specified in the contract concluded in the previous year, if expenditures for this purpose are approved in the prescribed manner."
+msgstr "Стаття 36 Частина 5: Дія договору про закупівлю може продовжуватися на строк, достатній для проведення процедури закупівлі на початку наступного року, в обсязі, що не перевищує 20 відсотків суми, визначеної в договорі, укладеному в попередньому році, якщо видатки на цю мету затверджено в установленому порядку."
+
+#: ../../source/standard/util.rst:163
+msgid "string, :ref:`date`, auto-generated"
+msgstr "рядок, :ref:`date`, генерується автоматично"
+
+#: ../../source/standard/util.rst
+msgid "dateSigned"
+msgstr ""
+
+#: ../../source/standard/util.rst
+msgid "contractNumber"
+msgstr ""
+
+#: ../../source/standard/util.rst:169
+msgid "string"
+msgstr "рядок"
+
+#: ../../source/standard/util.rst
+msgid "status"
+msgstr ""
+
+#: ../../source/standard/util.rst:174
+msgid "The current status of the change."
+msgstr "Поточний стан зміни."
+
+#: ../../source/standard/util.rst:176
+msgid "Possible values are:"
+msgstr "Можливі значення:"
+
+#: ../../source/standard/util.rst:178
+msgid "`pending` - this change has been added."
+msgstr "`очікування` - ця зміна була додана."
+
+#: ../../source/standard/util.rst:179
+msgid "`active` - this change has been confirmed."
+msgstr "`активний` - ця зміна підтверджена."
+
+#: ../../source/standard/util.rst:182
+msgid "Workflow"
+msgstr "Робочий процес"
+
+#: ../../source/standard/util.rst:192
+msgid "\\* marks initial state"
+msgstr "\\* позначає початковий стан"
+
+#~ msgid "Change"
+#~ msgstr "Change"
+
+#~ msgid "id"
+#~ msgstr ""
+
+#~ msgid "uid, auto-generated"
+#~ msgstr "uid, генерується автоматично"
+
+#~ msgid "The identifier for this Change."
+#~ msgstr "Ідентифікатор цієї зміни."
+
+#~ msgid "rationale"
+#~ msgstr ""
+
+#~ msgid "string, multilingual, required"
+#~ msgstr "рядок, багатомовний, обов’язковий"
+
+#~ msgid "Reason for contract change"
+#~ msgstr "Опис причини змін договору"
+
+#~ msgid "rationaleTypes"
+#~ msgstr ""
+
+#~ msgid "List of strings, required"
+#~ msgstr "Список рядків, обов’язково"
+
+#~ msgid "Type of the rationale behind contract change"
+#~ msgstr "Тип причини додання змін до договору"
+
+#~ msgid ""
+#~ "Changes to the contract can be "
+#~ "made in cases described in the 4th"
+#~ " part of Article 36 of the Law"
+#~ " “On the Public Procurement”."
+#~ msgstr ""
+#~ "Внесення змін до істотних умов договору"
+#~ " можливі у випадках, описаних частиною "
+#~ "четвертою статті 36 Закону України “Про"
+#~ " публічні закупівлі”."
+
+#~ msgid "Possible string values are:"
+#~ msgstr "Можливі значення рядка:"
+
+#~ msgid "`volumeCuts` - Reduction of the procurement’s volume"
+#~ msgstr "`volumeCuts` - Зменшення обсягів закупівлі"
+
+#~ msgid ""
+#~ "reduction of the procurement’s volume, "
+#~ "particularly taking into account the "
+#~ "actual expenditures of the procuring "
+#~ "entity;"
+#~ msgstr ""
+#~ "зменшення обсягів закупівлі, зокрема з "
+#~ "урахуванням фактичного обсягу видатків "
+#~ "замовника;"
+
+#~ msgid "`itemPriceVariation` - Change in the unit’s price"
+#~ msgstr "`itemPriceVariation` - Зміна ціни за одиницю товару"
+
+#~ msgid ""
+#~ "change in the unit’s price (no "
+#~ "more than 10%) due to product’s "
+#~ "price fluctuations on the market, "
+#~ "provided that the said change will "
+#~ "not increase the sum of money "
+#~ "specified in the contract;"
+#~ msgstr ""
+#~ "зміна ціни за одиницю товару не "
+#~ "більше ніж на 10 відсотків у разі"
+#~ " коливання ціни такого товару на "
+#~ "ринку, за умови, що зазначена зміна "
+#~ "не призведе до збільшення суми, "
+#~ "визначеної в договорі;"
+
+#~ msgid "`qualityImprovement` - Improvement of the procurement item’s quality"
+#~ msgstr "`qualityImprovement` - Покращення якості предмета закупівлі"
+
+#~ msgid ""
+#~ "improvement of the item's quality, "
+#~ "provided that such improvement will not"
+#~ " increase the sum of money specified"
+#~ " in the contract;"
+#~ msgstr ""
+#~ "покращення якості предмета закупівлі за "
+#~ "умови, що таке покращення не призведе"
+#~ " до збільшення суми, визначеної в "
+#~ "договорі;"
+
+#~ msgid ""
+#~ "`durationExtension` - Extension of the "
+#~ "period of the contract duration (due "
+#~ "to documented objective circumstances)"
+#~ msgstr ""
+#~ "`durationExtension` - Продовження строку дії"
+#~ " договору (через документально підтверджені "
+#~ "об’єктивні обставини)"
+
+#~ msgid ""
+#~ "extension of the period of the "
+#~ "contract duration and obligations fulfilment"
+#~ " regarding the transfer of goods, "
+#~ "implementation of works and provision of"
+#~ " services in case of documented "
+#~ "objective circumstances that led to such"
+#~ " extension, including force majeure, delays"
+#~ " in funding of procuring entity’s  "
+#~ "expenditures, provided that such changes "
+#~ "will not increase the sum of money"
+#~ " specified in the contract;"
+#~ msgstr ""
+#~ "продовження строку дії договору та "
+#~ "виконання зобов’язань щодо передання товару,"
+#~ " виконання робіт, надання послуг у "
+#~ "разі виникнення документально підтверджених "
+#~ "об’єктивних обставин, що спричинили таке "
+#~ "продовження, у тому числі непереборної "
+#~ "сили, затримки фінансування витрат замовника,"
+#~ " за умови, що такі зміни не "
+#~ "призведуть до збільшення суми, визначеної "
+#~ "в договорі;"
+
+#~ msgid "`priceReduction` - Coordinated price reduction"
+#~ msgstr "`priceReduction` - Узгоджене зменшення ціни"
+
+#~ msgid ""
+#~ "coordinated downward price change (without "
+#~ "changing the quantity (volume) and "
+#~ "quality of goods, works, and services);"
+#~ msgstr ""
+#~ "узгоджена зміна ціни в бік зменшення "
+#~ "(без зміни кількості (обсягу) та якості"
+#~ " товарів, робіт і послуг);"
+
+#~ msgid "`taxRate` - Price changes due to changes in tax rates and fees"
+#~ msgstr "`taxRate` - Зміна ціни у зв’язку із зміною ставок податків і зборів"
+
+#~ msgid ""
+#~ "price changes due to changes in "
+#~ "tax rates and fees in proportion "
+#~ "to changes of those rates;"
+#~ msgstr ""
+#~ "зміна ціни у зв’язку із зміною "
+#~ "ставок податків і зборів пропорційно до"
+#~ " змін таких ставок;"
+
+#~ msgid "`thirdParty` - Change of the third-party indicators (rate, indices...)"
+#~ msgstr "`thirdParty` - Зміна сторонніх показників (курсу, тарифів...)"
+
+#~ msgid ""
+#~ "changes of established under the law "
+#~ "by the State Statistics Service consumer"
+#~ " price index, changes in foreign "
+#~ "currency, changes in stock prices or "
+#~ "Platts indices, regulated prices (rates) "
+#~ "and standards that are used in the"
+#~ " procurement contract if the price "
+#~ "change order is specified in the "
+#~ "procurement contract;"
+#~ msgstr ""
+#~ "зміна встановленого згідно із законодавством"
+#~ " органами державної статистики індексу "
+#~ "споживчих цін, зміни курсу іноземної "
+#~ "валюти, зміни біржових котирувань або "
+#~ "показників Platts, регульованих цін (тарифів)"
+#~ " і нормативів, які застосовуються в "
+#~ "договорі про закупівлю, у разі "
+#~ "встановлення в договорі про закупівлю "
+#~ "порядку зміни ціни;"
+
+#~ msgid ""
+#~ "`fiscalYearExtension` - Extension of the "
+#~ "period of the contract duration to "
+#~ "the next year"
+#~ msgstr ""
+#~ "`fiscalYearExtension` - Продовження строку дії"
+#~ " договору на наступний рік"
+
+#~ msgid ""
+#~ "changes in contract terms according to"
+#~ " the provisions of part 5 of "
+#~ "Article 36."
+#~ msgstr ""
+#~ "зміна умов у зв’язку із застосуванням"
+#~ " положень частини п'ятої статті 36."
+
+#~ msgid ""
+#~ "Article 36 Part 5. Effect of the"
+#~ " procurement contract may be continued "
+#~ "for a period sufficient for conduction"
+#~ " of the procurement procedure at the"
+#~ " beginning of the next year in "
+#~ "volume that does not exceed 20% of"
+#~ " the sum specified in the contract"
+#~ " concluded in the previous year, if"
+#~ " expenditures for this purpose are "
+#~ "approved in the prescribed manner."
+#~ msgstr ""
+#~ "Стаття 36 Частина 5: Дія договору "
+#~ "про закупівлю може продовжуватися на "
+#~ "строк, достатній для проведення процедури "
+#~ "закупівлі на початку наступного року, в"
+#~ " обсязі, що не перевищує 20 відсотків"
+#~ " суми, визначеної в договорі, укладеному"
+#~ " в попередньому році, якщо видатки на"
+#~ " цю мету затверджено в установленому "
+#~ "порядку."
+
+#~ msgid "string, :ref:`date`, auto-generated"
+#~ msgstr "рядок, :ref:`date`, генерується автоматично"
+
+#~ msgid "dateSigned"
+#~ msgstr ""
+
+#~ msgid "contractNumber"
+#~ msgstr ""
+
+#~ msgid "string"
+#~ msgstr "рядок"
+
+#~ msgid "status"
+#~ msgstr ""
+
+#~ msgid "The current status of the change."
+#~ msgstr "Поточний статус зміни."
+
+#~ msgid "Possible values are:"
+#~ msgstr "Можливі значення:"
+
+#~ msgid "`pending` - this change has been added."
+#~ msgstr "`pending` - ця зміна додана."
+
+#~ msgid "`active` - this change has been confirmed."
+#~ msgstr "`active` - ця зміна підтверджена/застосована."
+
+#~ msgid "Workflow"
+#~ msgstr "Схема роботи"
+
+#~ msgid "\\* marks initial state"
+#~ msgstr "\\* позначає початковий стан"

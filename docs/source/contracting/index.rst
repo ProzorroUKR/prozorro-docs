@@ -9,6 +9,5 @@ Contents:
    :maxdepth: 2
 
    overview
-   standard/index
    tutorial
 

@@ -20,7 +20,7 @@ Business logic
 
 The approach to Open UA procedure is different from core Open Procurement API
 procedure (that is used for below threshold procurements) mainly in
-:ref:`stage that precedes <tendering>` auction.  Differences are in the
+:ref:`stage that precedes <openua_tendering>` auction.  Differences are in the
 following aspects:
 
 1) Tender can be edited through the whole tenderPeriod (while in

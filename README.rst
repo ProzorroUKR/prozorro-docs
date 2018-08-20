@@ -1,6 +1,37 @@
-Prozorro Documentation files for openprocurement.api
-====================================================
+Prozorro Documentation for openprocurement.api
+==============================================
+.. image:: https://readthedocs.org/projects/prozorro-api-docs/badge/?version=latest
+    :target: https://prozorro-api-docs.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
 
+This docs are also built from http-files after travis runs of the following reps:
+
+openprocurement.api
+
+.. image:: https://travis-ci.org/ProzorroUKR/openprocurement.api.svg?branch=master
+    :target: https://travis-ci.org/ProzorroUKR/openprocurement.api
+openprocurement.tender.openua
+
+.. image:: https://travis-ci.org/ProzorroUKR/openprocurement.tender.openua.svg?branch=master
+    :target: https://travis-ci.org/ProzorroUKR/openprocurement.tender.openua
+openprocurement.tender.openuadefense
+
+.. image:: https://travis-ci.org/ProzorroUKR/openprocurement.tender.openuadefense.svg?branch=master
+    :target: https://travis-ci.org/ProzorroUKR/openprocurement.tender.openuadefense
+openprocurement.tender.openeu
+
+.. image:: https://travis-ci.org/ProzorroUKR/openprocurement.tender.openeu.svg?branch=master
+    :target: https://travis-ci.org/ProzorroUKR/openprocurement.tender.openeu
+openprocurement.tender.limited
+
+.. image:: https://travis-ci.org/ProzorroUKR/openprocurement.tender.limited.svg?branch=master
+    :target: https://travis-ci.org/ProzorroUKR/openprocurement.tender.limited
+openprocurement.contracting.api
+
+.. image:: https://travis-ci.org/ProzorroUKR/openprocurement.contracting.api.svg?branch=master
+    :target: https://travis-ci.org/ProzorroUKR/openprocurement.contracting.api
+
+----------------------------------------------
 
 Install for the docs development::
 
@@ -28,8 +59,4 @@ For translation into *uk* (2 letter ISO language code), you have to follow the s
  4. Compile the translation::
 
       ../../bin/sphinx-intl build
-
- 5. Build translated documentations::
-
-     ../../bin/sphinxbuilder
 

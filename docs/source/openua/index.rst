@@ -11,5 +11,4 @@ Contents:
    overview
    tendering
    tutorial
-   standard/index
    complaints

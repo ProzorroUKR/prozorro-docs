@@ -13,6 +13,10 @@ Schema
 
 :name:
     string, multilingual
+
+    Additionally in :ref:`openeu`:
+
+    uk (title) and en (title_en) translations are required
     
     |ocdsDescription|
     The common name of the organization.
@@ -25,10 +29,17 @@ Schema
     
 :additionalIdentifiers:
     List of :ref:`identifier` objects
+
 :address:
     :ref:`Address`, required
+
 :contactPoint:
     :ref:`ContactPoint`, required
+
+Additionally in :ref:`openeu`:
+
+:additionalContactPoints:
+    List of :ref:`ContactPoint` objects
 
 
 .. index:: Company, id
@@ -146,6 +157,8 @@ Schema
     
     |ocdsDescription|
     The telephone number of the contact point/person. This should include the international dialling code.
+
+    Either `email` or `telephone` field has to be provided.
     
 :faxNumber:
     string
@@ -158,6 +171,20 @@ Schema
     
     |ocdsDescription|
     A web address for the contact point/person.
+
+
+Additional fields for :ref:`contracting` and :ref:`openeu`
+
+:availableLanguage:
+    string
+
+    Possible values are:
+
+    * `uk`
+    * `en`
+    * `ru`
+
+    Specifies the language of communication.
     
 
-Either `email` or `telephone` field has to be provided.
+

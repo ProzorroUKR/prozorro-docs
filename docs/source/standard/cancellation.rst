@@ -39,14 +39,46 @@ Schema
     Cancellation date.
 
 :cancellationOf:
-    string
+    string, required, default `tender`
 
     Possible values are:
 
     * `tender`
     * `lot`
 
+    Possible values in :ref:`limited`:
+    * `tender`
+
 :relatedLot:
     string
 
     Id of related :ref:`lot`.
+
+
+Additionally in :ref:`openeu` and :ref:`openua`:
+
+:reasonType:
+    string
+
+    There are two possible types of cancellation reason set by procuring entity:
+
+     :`cancelled`:
+       Default. Tender was cancelled.
+
+     :`unsuccessful`:
+       Tender was unsuccessful.
+
+Cancellation workflow in :ref:`limited` and :ref:`openeu`
+---------------------------------------------------------
+
+.. graphviz::
+
+    digraph G {
+        A [ label="pending*" ]
+        B [ label="active"]
+         A -> B;
+    }
+
+\* marks initial state
+
+

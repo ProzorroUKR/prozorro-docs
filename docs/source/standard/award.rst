@@ -20,6 +20,8 @@ Schema
     string, auto-generated, read-only
 
     The Id of a bid that the award relates to.
+
+    absent in :ref:`limited`:
     
 :title:
     string, multilingual
@@ -53,11 +55,19 @@ Schema
     The date of the contract award.
     
 :value:
-    `Value` object, auto-generated, read-only
-    
+    :ref:`Value` object, auto-generated, read-only
+
     |ocdsDescription|
     The total value of this award.
-    
+
+    Differences in :ref:`defense`, :ref:`openua` and :ref:`openeu`:
+
+    List of :ref:`Value` objects, auto-generated, read-only
+
+    Differences in :ref:`limited`:
+
+    `Value` object
+
 :suppliers:
     List of :ref:`Organization` objects, auto-generated, read-only
     
@@ -88,3 +98,69 @@ Schema
     string
 
     Id of related :ref:`lot`.
+
+    Differences in :ref:`limited`:
+    Id of related :ref:`lot`. Only if `tender.procurementMethodType` is `negotiation` or `negotiation.quick`.
+
+
+Additionally in :ref:`defense`, :ref:`openua` and :ref:`openeu`:
+
+:eligible:
+    bool
+
+    Confirms compliance of eligibility criteria set by the procuring entity in the tendering documents.
+
+:qualified:
+    bool
+
+    Confirms the absence of grounds for refusal to participate in accordance with Article 17 of the Law of Ukraine "On Public Procurement".
+
+
+Additionally in :ref:`limited`:
+
+:subcontractingDetails:
+    string
+
+    The text field of any length that contains information about subcontractor.
+
+:qualified:
+    bool
+
+    Confirms that Procuring entity has no grounds to reject a participant in accordance with Article 17 of the Law of Ukraine "On Public Procurement".
+
+
+Award workflow in :ref:`limited`:
+---------------------------------
+
+.. graphviz::
+
+    digraph G {
+        A [ label="pending*" ]
+        B [ label="active"]
+        C [ label="cancelled"]
+        D [ label="unsuccessful"]
+         A -> B;
+         A -> D;
+         B -> C;
+    }
+
+\* marks initial state
+
+
+Workflow in :ref:`openeu`:
+--------------------------
+
+.. graphviz::
+
+    digraph G {
+        A [ label="pending*" ]
+        B [ label="active"]
+        C [ label="cancelled"]
+        D [ label="unsuccessful"]
+         A -> B;
+         A -> D;
+         B -> C;
+         D -> C;
+    }
+
+\* marks initial state

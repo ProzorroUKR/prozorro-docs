@@ -14,26 +14,19 @@ Contents:
    errors
    options
    dates
-   upload
    tutorial
+   basic-actions/index
    standard/index
-   tenders
-   procuring
-   bidding
-   meat
-   lots
-   qualification
-   questions
-   complaints
-   performance
-   cluster
-   2pc
-   acceleration
    openua/index
    openeu/index
    limited/index
    defense/index
    contracting/index
+   performance
+   cluster
+   2pc
+   acceleration
+
 
 Indices and tables
 ==================

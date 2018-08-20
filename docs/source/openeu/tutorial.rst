@@ -1,4 +1,4 @@
-.. _tutorial:
+.. _openeu_tutorial:
 
 Tutorial
 ========
@@ -182,7 +182,8 @@ Bidder can register a bid with `draft` status:
 
 .. include:: http/tutorial/register-bidder.http
    :code:
-anjd approve to pending status:
+
+and approve to pending status:
 
 .. include:: http/tutorial/activate-bidder.http
    :code:

@@ -71,6 +71,18 @@ Schema
     * `resolved`
     * `cancelled`
 
+    Possible values in :ref:`defense`, :ref:`openua` and :ref:`openeu` are:
+
+    * `draft`
+    * `claim`
+    * `answered`
+    * `pending`
+    * `invalid`
+    * `declined`
+    * `resolved`
+    * `cancelled`
+    * `accepted`
+
 :type:
     string
 
@@ -125,3 +137,40 @@ Schema
     string, :ref:`date`, auto-generated
 
     Date of tenderer action.
+
+Additionally in :ref:`defense`, :ref:`openua` and :ref:`openeu`:
+
+    :acceptance:
+        bool
+
+        Claim is satisfied?
+
+    :rejectReason:
+        string
+
+        Possible values of reject reason in :ref:`defense` are:
+
+        * `lawNonСompliance` - law non compliance
+        * `noPaymentReceived` - no payment received
+        * `buyerViolationsСorrected` - violations were corrected by Procuring entity
+
+        Possible values of reject reason in :ref:`openeu` are:
+
+        * `law`
+        * `payment`
+        * `fixed`
+
+    :rejectReasonDescription:
+        string
+
+        Reject reason description.
+
+    :reviewDate:
+        string, :ref:`date`, auto-generated
+
+        Date of review.
+
+    :reviewPlace:
+        string
+
+        Place of review.

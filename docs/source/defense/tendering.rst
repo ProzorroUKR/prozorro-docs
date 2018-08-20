@@ -1,5 +1,5 @@
 
-.. _tendering:
+.. _defense_tendering:
 
 Tendering
 =========
