@@ -3,17 +3,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.api 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-14 13:08+0300\n"
-"PO-Revision-Date: 2016-03-14 16:27+0200\n"
+"POT-Creation-Date: 2018-08-17 12:08+0300\n"
+"PO-Revision-Date: 2018-08-17 14:42+0300\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
 "Language: uk\n"
 "Language-Team: Ukrainian <info@quintagroup.com>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"X-Generator: Poedit 2.1.1\n"
 
 #: ../../source/standard/award.rst:8
 msgid "Award"
@@ -41,17 +41,21 @@ msgstr ""
 
 #: ../../source/standard/award.rst:22
 msgid "The Id of a bid that the award relates to."
-msgstr "ID пропозиції, що виграла закупівлю"
+msgstr "ID пропозиції, що виграла закупівлю."
+
+#: ../../source/standard/award.rst:24
+msgid "absent in :ref:`limited`:"
+msgstr "відсутній у :ref:`limited`:"
 
 #: ../../source/standard/award.rst
 msgid "title"
 msgstr ""
 
-#: ../../source/standard/award.rst:25 ../../source/standard/award.rst:31
+#: ../../source/standard/award.rst:27 ../../source/standard/award.rst:33
 msgid "string, multilingual"
 msgstr "рядок, багатомовний"
 
-#: ../../source/standard/award.rst:27
+#: ../../source/standard/award.rst:29
 msgid "|ocdsDescription| Award title."
 msgstr "|ocdsDescription| Назва рішення."
 
@@ -59,7 +63,7 @@ msgstr "|ocdsDescription| Назва рішення."
 msgid "description"
 msgstr ""
 
-#: ../../source/standard/award.rst:33
+#: ../../source/standard/award.rst:35
 msgid "|ocdsDescription| Award description."
 msgstr "|ocdsDescription| Опис рішення."
 
@@ -67,35 +71,32 @@ msgstr "|ocdsDescription| Опис рішення."
 msgid "status"
 msgstr ""
 
-#: ../../source/standard/award.rst:37 ../../source/standard/award.rst:88
+#: ../../source/standard/award.rst:39 ../../source/standard/award.rst:98
+#: ../../source/standard/award.rst:122
 msgid "string"
 msgstr "рядок"
 
-#: ../../source/standard/award.rst:39
-msgid ""
-"|ocdsDescription| The current status of the award drawn from the "
-"`awardStatus` codelist."
-msgstr ""
-"|ocdsDescription| Поточний статус рішення, взятий зі списку кодів "
-"`awardStatus`."
+#: ../../source/standard/award.rst:41
+msgid "|ocdsDescription| The current status of the award drawn from the `awardStatus` codelist."
+msgstr "|ocdsDescription| Поточний статус рішення, взятий зі списку кодів `awardStatus`."
 
-#: ../../source/standard/award.rst:42
+#: ../../source/standard/award.rst:44
 msgid "Possible values are:"
 msgstr "Можливі значення:"
 
-#: ../../source/standard/award.rst:44
+#: ../../source/standard/award.rst:46
 msgid "`pending` - the award is under review of qualification committee"
 msgstr "`pending` - переможець розглядається кваліфікаційною комісією"
 
-#: ../../source/standard/award.rst:45
+#: ../../source/standard/award.rst:47
 msgid "`unsuccessful` - the award has been rejected by qualification committee"
 msgstr "`unsuccessful` - кваліфікаційна комісія відмовила переможцю"
 
-#: ../../source/standard/award.rst:46
+#: ../../source/standard/award.rst:48
 msgid "`active` - the tender is awarded to the bidder from the `bid_id`"
 msgstr "`active` - закупівлю виграв учасник з пропозицією `bid_id`"
 
-#: ../../source/standard/award.rst:47
+#: ../../source/standard/award.rst:49
 msgid "`cancelled` - the award has been cancelled by complaint review body"
 msgstr "`cancelled` - орган, що розглядає скарги, відмінив результати закупівлі"
 
@@ -103,11 +104,11 @@ msgstr "`cancelled` - орган, що розглядає скарги, відм
 msgid "date"
 msgstr ""
 
-#: ../../source/standard/award.rst:50
+#: ../../source/standard/award.rst:52
 msgid "string, :ref:`Date`, auto-generated, read-only"
 msgstr "рядок, :ref:`Date`, генерується автоматично, лише для читання"
 
-#: ../../source/standard/award.rst:52
+#: ../../source/standard/award.rst:54
 msgid "|ocdsDescription| The date of the contract award."
 msgstr "|ocdsDescription| Дата рішення про підписання договору."
 
@@ -115,69 +116,71 @@ msgstr "|ocdsDescription| Дата рішення про підписання д
 msgid "value"
 msgstr ""
 
-#: ../../source/standard/award.rst:56
-msgid "`Value` object, auto-generated, read-only"
+#: ../../source/standard/award.rst:58
+msgid ":ref:`Value` object, auto-generated, read-only"
 msgstr "О’єкт :ref:`Value`, генерується автоматично, лише для читання"
 
-#: ../../source/standard/award.rst:58
+#: ../../source/standard/award.rst:60
 msgid "|ocdsDescription| The total value of this award."
 msgstr "|ocdsDescription| Загальна вартість згідно цього рішення."
+
+#: ../../source/standard/award.rst:63
+msgid "Differences in :ref:`defense`, :ref:`openua` and :ref:`openeu`:"
+msgstr "Відмінності в :ref:`defense`, :ref:`openua` and :ref:`openeu`:"
+
+#: ../../source/standard/award.rst:65
+msgid "List of :ref:`Value` objects, auto-generated, read-only"
+msgstr "Список :ref:`Value` об’єктів, генерується автоматично, лише для читання"
+
+#: ../../source/standard/award.rst:67
+msgid "Differences in :ref:`limited`:"
+msgstr "Відмінності у :ref:`limited`:"
+
+#: ../../source/standard/award.rst:69
+msgid "`Value` object"
+msgstr ""
 
 #: ../../source/standard/award.rst
 msgid "suppliers"
 msgstr ""
 
-#: ../../source/standard/award.rst:62
+#: ../../source/standard/award.rst:72
 msgid "List of :ref:`Organization` objects, auto-generated, read-only"
-msgstr ""
-"Список об’єктів :ref:`Organization`, генерується автоматично, лише для "
-"читання"
+msgstr "Список об’єктів :ref:`Organization`, генерується автоматично, лише для читання"
 
-#: ../../source/standard/award.rst:64
+#: ../../source/standard/award.rst:74
 msgid "|ocdsDescription| The suppliers awarded with this award."
-msgstr ""
-"|ocdsDescription| Постачальники, що були визнані переможцями згідно цього"
-" рішення."
+msgstr "|ocdsDescription| Постачальники, що були визнані переможцями згідно цього рішення."
 
 #: ../../source/standard/award.rst
 msgid "items"
 msgstr ""
 
-#: ../../source/standard/award.rst:68
+#: ../../source/standard/award.rst:78
 msgid "List of :ref:`Item` objects, auto-generated, read-only"
 msgstr "Список об’єктів :ref:`Item`, генерується автоматично, лише для читання"
 
-#: ../../source/standard/award.rst:70
-msgid ""
-"|ocdsDescription| The goods and services awarded in this award, broken "
-"into line items wherever possible. Items should not be duplicated, but "
-"the quantity specified instead."
-msgstr ""
-"|ocdsDescription| Товари та послуги, що розглядались цим рішенням, "
-"поділені на окремі рядки, де це можливо. Елементи не повинні бути "
-"продубльовані, а повинні мати вказану кількість."
+#: ../../source/standard/award.rst:80
+msgid "|ocdsDescription| The goods and services awarded in this award, broken into line items wherever possible. Items should not be duplicated, but the quantity specified instead."
+msgstr "|ocdsDescription| Товари та послуги, що розглядались цим рішенням, поділені на окремі рядки, де це можливо. Елементи не повинні бути продубльовані, а повинні мати вказану кількість."
 
 #: ../../source/standard/award.rst
 msgid "documents"
 msgstr ""
 
-#: ../../source/standard/award.rst:74
+#: ../../source/standard/award.rst:84
 msgid "List of :ref:`Document` objects"
 msgstr "Список об’єктів :ref:`Document`"
 
-#: ../../source/standard/award.rst:76
-msgid ""
-"|ocdsDescription| All documents and attachments related to the award, "
-"including any notices."
-msgstr ""
-"|ocdsDescription| Усі документи та додатки пов’язані з рішенням, включно "
-"з будь-якими повідомленнями."
+#: ../../source/standard/award.rst:86
+msgid "|ocdsDescription| All documents and attachments related to the award, including any notices."
+msgstr "|ocdsDescription| Усі документи та додатки пов’язані з рішенням, включно з будь-якими повідомленнями."
 
 #: ../../source/standard/award.rst
 msgid "complaints"
 msgstr ""
 
-#: ../../source/standard/award.rst:80
+#: ../../source/standard/award.rst:90
 msgid "List of :ref:`Complaint` objects"
 msgstr "Список об’єктів :ref:`Complaint`"
 
@@ -185,11 +188,11 @@ msgstr "Список об’єктів :ref:`Complaint`"
 msgid "complaintPeriod"
 msgstr ""
 
-#: ../../source/standard/award.rst:83
+#: ../../source/standard/award.rst:93
 msgid ":ref:`period`"
 msgstr ":ref:`period`"
 
-#: ../../source/standard/award.rst:85
+#: ../../source/standard/award.rst:95
 msgid "The timeframe when complaints can be submitted."
 msgstr "Період часу, під час якого можна подавати скарги."
 
@@ -197,7 +200,85 @@ msgstr "Період часу, під час якого можна подава�
 msgid "lotID"
 msgstr ""
 
-#: ../../source/standard/award.rst:90
+#: ../../source/standard/award.rst:100
 msgid "Id of related :ref:`lot`."
 msgstr "ID пов’язаного :ref:`lot`."
 
+#: ../../source/standard/award.rst:102
+msgid "Differences in :ref:`limited`: Id of related :ref:`lot`. Only if `tender.procurementMethodType` is `negotiation` or `negotiation.quick`."
+msgstr "Відмінності у :ref:`limited`: Id of related :ref:`lot`. Тільки якщо `tender.procurementMethodType` є `negotiation` або `negotiation.quick`."
+
+#: ../../source/standard/award.rst:106
+msgid "Additionally in :ref:`defense`, :ref:`openua` and :ref:`openeu`:"
+msgstr "Додатково у :ref:`defense`, :ref:`openua` and :ref:`openeu`:"
+
+#: ../../source/standard/award.rst
+msgid "eligible"
+msgstr ""
+
+#: ../../source/standard/award.rst:109 ../../source/standard/award.rst:114
+#: ../../source/standard/award.rst:127
+msgid "bool"
+msgstr ""
+
+#: ../../source/standard/award.rst:111
+msgid "Confirms compliance of eligibility criteria set by the procuring entity in the tendering documents."
+msgstr "Підтверджує відповідність критеріям прийнятності, встановлених замовником в тендерній документації."
+
+#: ../../source/standard/award.rst
+msgid "qualified"
+msgstr ""
+
+#: ../../source/standard/award.rst:116
+msgid "Confirms the absence of grounds for refusal to participate in accordance with Article 17 of the Law of Ukraine \"On Public Procurement\"."
+msgstr "Підтверджує відсутність підстав для відмови від участі відповідно до статті 17 Закону України ”Про державні закупівлі”."
+
+#: ../../source/standard/award.rst:119
+msgid "Additionally in :ref:`limited`:"
+msgstr "Додатково :ref:`limited`:"
+
+#: ../../source/standard/award.rst
+msgid "subcontractingDetails"
+msgstr ""
+
+#: ../../source/standard/award.rst:124
+msgid "The text field of any length that contains information about subcontractor."
+msgstr "Текстове поле будь-якої довжини, що містить інформацію про субпідрядника."
+
+#: ../../source/standard/award.rst:129
+msgid "Confirms that Procuring entity has no grounds to reject a participant in accordance with Article 17 of the Law of Ukraine \"On Public Procurement\"."
+msgstr "Підтверджує відсутність підстав для відмови від участі відповідно до статті 17 Закону України ”Про державні закупівлі”."
+
+#: ../../source/standard/award.rst:133
+msgid "Award workflow in :ref:`limited`:"
+msgstr "Робочий процес нагороди в :ref:`limited`:"
+
+#: ../../source/standard/award.rst:147 ../../source/standard/award.rst:166
+msgid "\\* marks initial state"
+msgstr "\\* marks initial state"
+
+#: ../../source/standard/award.rst:151
+msgid "Workflow in :ref:`openeu`:"
+msgstr "Робочий процес у in :ref:`openeu`:"
+
+#~ msgid "List of :ref:`Value` objects, auto-generated, read-only"
+#~ msgstr "Список об’єктів :ref:`Value`, генерується автоматично, лише для читання"
+
+#~ msgid ""
+#~ "Confirms compliance of eligibility criteria"
+#~ " set by the procuring entity in "
+#~ "the tendering documents."
+#~ msgstr ""
+#~ "Підтверджує відповідність критеріям прийнятності,"
+#~ " встановлених замовником в тендерній "
+#~ "документації."
+
+#~ msgid ""
+#~ "Confirms the absence of grounds for "
+#~ "refusal to participate in accordance "
+#~ "with Article 17 of the Law of "
+#~ "Ukraine \"On Public Procurement\"."
+#~ msgstr ""
+#~ "Підтверджує відсутність підстав для відмови"
+#~ " від участі відповідно до статті 17"
+#~ " Закону України \"Про державні закупівлі\"."

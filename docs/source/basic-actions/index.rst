@@ -11,7 +11,7 @@ Contents:
    upload
    questions
    tenders
-   qualification
+   qualifications
    complaints
    procuring
    lots

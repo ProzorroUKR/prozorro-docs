@@ -1,5 +1,4 @@
-.. Kicking page rebuild 2014-10-30 17:00:08
-.. _qualification:
+.. _qualifications:
 
 Qualification Operations
 ========================

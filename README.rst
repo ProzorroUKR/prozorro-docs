@@ -53,7 +53,3 @@ For translation into *uk* (2 letter ISO language code), you have to follow the s
 
       ../../bin/sphinx-intl build
 
- 5. Build translated documentations::
-
-     ../../bin/sphinxbuilder
-

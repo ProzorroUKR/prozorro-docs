@@ -1,4 +1,4 @@
-.. _tutorial:
+.. _contracting_tutorial:
 
 Tutorial
 ========

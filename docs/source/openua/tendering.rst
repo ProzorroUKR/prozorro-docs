@@ -1,5 +1,5 @@
 
-.. _tendering:
+.. _openua_tendering:
 
 Tendering
 =========

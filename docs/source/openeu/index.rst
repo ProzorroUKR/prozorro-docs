@@ -9,7 +9,6 @@ Contents:
    :maxdepth: 2
 
    overview
-   standard/index
    tutorial
    multiple_lots_tutorial
    complaints

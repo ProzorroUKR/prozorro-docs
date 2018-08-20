@@ -1,4 +1,4 @@
-.. _tutorial:
+.. _limited_tutorial:
 
 Tutorial
 ========

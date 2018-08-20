@@ -5,7 +5,7 @@
    :depth: 2
    :local:
 
-.. _complaint_workflow:
+.. _openeu_complaint_workflow:
 
 Complaint Workflow
 ==================

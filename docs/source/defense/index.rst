@@ -1,4 +1,4 @@
-.. _defence
+.. _defense:
 
 Defense open tender
 ===================
@@ -11,5 +11,4 @@ Contents:
    overview
    tendering
    tutorial
-   standard/index
    complaints

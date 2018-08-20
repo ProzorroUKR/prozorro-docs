@@ -10,7 +10,5 @@ Contents:
 
    overview
    tutorial
-   standard/index
    multiple_lots_tutorial
    complaints
-   acceleration

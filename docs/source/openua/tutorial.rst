@@ -1,4 +1,4 @@
-.. _tutorial:
+.. _openua_tutorial:
 
 Tutorial
 ========

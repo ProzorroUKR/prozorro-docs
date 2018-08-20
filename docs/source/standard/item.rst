@@ -140,3 +140,10 @@ Schema
 
     |ocdsDescription|
     Name of the unit
+
+Additionally in :ref:`limited`:
+
+:value:
+    :ref:`Value`
+
+    Price per unit.
