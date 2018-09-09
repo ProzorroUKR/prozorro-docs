@@ -194,11 +194,11 @@ For contract value with `valueAddedTaxIncluded` set to `true`:
 For contract value with `valueAddedTaxIncluded` set to `false`:
 
 +-------------+--------------------------------------------------------------+
-| `amount`    | Should be greater or equal to ``award:value:amount``         |
+| `amount`    | Should be greater or equal to ``award.value.amount``         |
 +             +--------------------------------------------------------------+
-|             | Can be greater than ``contract:value:amountNet`` for 20% max |
+|             | Can be greater than ``contract.value.amountNet`` for 20% max |
 +-------------+--------------------------------------------------------------+
-| `amountNet` | Should be less or equal to ``award:value:amount``            |
+| `amountNet` | Should be less or equal to ``award.value.amount``            |
 +-------------+--------------------------------------------------------------+
 
 Let's set contract contract value with next request:
