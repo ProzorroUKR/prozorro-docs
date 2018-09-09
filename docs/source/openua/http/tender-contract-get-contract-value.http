@@ -1,14 +1,6 @@
-PATCH /api/2.4/tenders/f7ad52167e254b68b4853789533f7feb/contracts/c11a20a209f040f6b026dcf9a59c1a4e?acc_token=df5d9b3e4f2d403a92957987a8f4a9f9 HTTP/1.0
+GET /api/2.4/tenders/f7ad52167e254b68b4853789533f7feb/contracts/c11a20a209f040f6b026dcf9a59c1a4e HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 60
-Content-Type: application/json
 Host: api-sandbox.openprocurement.org
-DATA:
-{
-  "data": {
-    "dateSigned": "2018-09-09T20:29:38.962754+03:00"
-  }
-}
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
@@ -73,11 +65,10 @@ Content-Type: application/json; charset=UTF-8
     ], 
     "value": {
       "currency": "UAH", 
-      "amount": 238.0, 
-      "amountNet": 230.0, 
+      "amount": 499.0, 
+      "amountNet": 499.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "dateSigned": "2018-09-09T20:29:38.962754+03:00", 
     "date": "2018-09-09T20:29:38.281830+03:00", 
     "awardID": "e34f82b638154959b9599c8a97e541d6", 
     "id": "c11a20a209f040f6b026dcf9a59c1a4e", 
