@@ -369,12 +369,44 @@ Qualification commission registers its decision via the following call:
 .. include:: http/tutorial/confirm-qualification.http
    :code:
 
-Setting  contract value
------------------------
+Setting contract value
+----------------------
 
-By default contract value is set based on the award, but there is a possibility to set custom contract value.
+Let's see the created contract with next request:
 
-If you want to **lower contract value**, you can insert new one into the `amount` field.
+.. include:: http/tutorial/tender-contract-get-contract-value.http
+   :code:
+
+By default contract value `amount` and `amountNet` is set based on the award value `amount`, but there is a possibility to set custom contract value.
+
+You can update `amount` and `amountNet` following next rules:
+
++-------------------------------------------------------+
+| Value `amountNet` should be less or equal to `amount` |
++-------------------------------------------------------+
+
+For contract value with `valueAddedTaxIncluded` set to `true`:
+
+
++-------------+--------------------------------------------------------+
+| `amount`    | Should be less or equal to ``award.value.amount``      |
++-------------+--------------------------------------------------------+
+| `amountNet` | Should be less or equal to ``award.value.amount``      |
++             +--------------------------------------------------------+
+|             | Can be less than ``contract.value.amount`` for 20% max |
++-------------+--------------------------------------------------------+
+
+For contract value with `valueAddedTaxIncluded` set to `false`:
+
++-------------+--------------------------------------------------------------+
+| `amount`    | Should be greater or equal to ``award:value:amount``         |
++             +--------------------------------------------------------------+
+|             | Can be greater than ``contract:value:amountNet`` for 20% max |
++-------------+--------------------------------------------------------------+
+| `amountNet` | Should be less or equal to ``award:value:amount``            |
++-------------+--------------------------------------------------------------+
+
+Let's set contract contract value with next request:
 
 .. include:: http/tutorial/tender-contract-set-contract-value.http
    :code:

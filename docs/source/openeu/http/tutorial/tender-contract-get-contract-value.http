@@ -1,17 +1,6 @@
-PATCH /api/2.4/tenders/20a0dca396fe4af29bf2f49051d36ec7/contracts/a78be9359ffe4189a3da6c22f92bf0b0?acc_token=ccfe307a7ddc41d49143f329067ae414 HTTP/1.0
+GET /api/2.4/tenders/20a0dca396fe4af29bf2f49051d36ec7/contracts/a78be9359ffe4189a3da6c22f92bf0b0 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 118
-Content-Type: application/json
 Host: api-sandbox.openprocurement.org
-DATA:
-{
-  "data": {
-    "period": {
-      "startDate": "2018-09-09T23:40:40.682909+03:00", 
-      "endDate": "2019-09-09T23:40:40.683009+03:00"
-    }
-  }
-}
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
@@ -108,16 +97,10 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "contractNumber": "contract#1", 
-    "period": {
-      "startDate": "2018-09-09T23:40:40.682909+03:00", 
-      "endDate": "2019-09-09T23:40:40.683009+03:00"
-    }, 
-    "dateSigned": "2018-09-09T23:40:40.174517+03:00", 
     "value": {
       "currency": "UAH", 
-      "amount": 238.0, 
-      "amountNet": 230.0, 
+      "amount": 499.0, 
+      "amountNet": 499.0, 
       "valueAddedTaxIncluded": true
     }, 
     "date": "2018-09-09T23:40:38.983957+03:00", 
