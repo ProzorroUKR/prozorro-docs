@@ -31,6 +31,40 @@ Date
 
 Date/time in :ref:`date-format`.
 
+.. index:: ContractValue, Value, Currency, VAT
+.. _ContractValue:
+
+ContractValue
+=============
+
+Schema
+------
+
+:amount:
+    float, required
+
+    |ocdsDescription|
+    Amount as a number.
+
+    Should be positive.
+
+:amountNet:
+    float
+
+    |ocdsDescription|
+    Amount as a number.
+
+    Should be positive.
+
+:currency:
+    string, required
+
+    |ocdsDescription|
+    The currency in 3-letter ISO 4217 format.
+
+:valueAddedTaxIncluded:
+    bool, required
+
 .. index:: Value, Currency, VAT
 .. _value:
 

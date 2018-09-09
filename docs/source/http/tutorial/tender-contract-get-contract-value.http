@@ -1,14 +1,6 @@
-PATCH /api/2.4/tenders/16873c1122b54ba29b5b450904d9c659/contracts/199eaa0d62614fe994695d8a7c579200?acc_token=1fdd8971eef14852a98fb3a6bcf43a71 HTTP/1.0
+GET /api/2.4/tenders/16873c1122b54ba29b5b450904d9c659/contracts/199eaa0d62614fe994695d8a7c579200 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 30
-Content-Type: application/json
 Host: api-sandbox.openprocurement.org
-
-{
-  "data": {
-    "status": "active"
-  }
-}
 
 
 200 OK
@@ -16,29 +8,7 @@ Content-Type: application/json; charset=UTF-8
 
 {
   "data": {
-    "status": "active", 
-    "documents": [
-      {
-        "hash": "md5:00000000000000000000000000000000", 
-        "title": "contract_first_document.doc", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/c91ca65d582946458d7602d419249b3e?KeyID=c377f0f1&Signature=281NZeZ7EQ%252BC6j21WJtinxGhR1J3BPhFhxa7sSPcbHEZTvnPtjOpmpyTbGg7%252B29mDN%2FxhaQtowIBdzuX%252B6C8AA%253D%253D", 
-        "format": "application/msword", 
-        "documentOf": "tender", 
-        "datePublished": "2018-09-05T03:22:17.244415+03:00", 
-        "id": "6605493830124d0c839d254495e253b5", 
-        "dateModified": "2018-09-05T03:22:17.244433+03:00"
-      }, 
-      {
-        "hash": "md5:00000000000000000000000000000000", 
-        "title": "contract_second_document.doc", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/d53f07fe2e3443de86fbf525cd94cf6f?KeyID=c377f0f1&Signature=bFu9AQwR%252BtwduTY%252B4BhQE6A%252BHjdl8vTdpZ0MiBcVgffu593oIC7T79l39b1ZVCOJ7DzMyjCzZWSKZbWt%2FZWxDQ%253D%253D", 
-        "format": "application/msword", 
-        "documentOf": "tender", 
-        "datePublished": "2018-09-05T03:22:17.498289+03:00", 
-        "id": "92055800ae4145b2b6a87a806b5f5606", 
-        "dateModified": "2018-09-05T03:22:17.498304+03:00"
-      }
-    ], 
+    "status": "pending", 
     "items": [
       {
         "description": "футляри до державних нагород", 
@@ -95,19 +65,13 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "contractNumber": "contract #13111", 
-    "period": {
-      "startDate": "2018-09-05T03:22:02.467133+03:00", 
-      "endDate": "2019-09-05T03:22:02.467133+03:00"
-    }, 
-    "dateSigned": "2018-09-05T03:22:17.664720+03:00", 
     "value": {
       "currency": "UAH", 
-      "amount": 238.0, 
-      "amountNet": 230.0, 
+      "amount": 499.0, 
+      "amountNet": 499.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2018-09-05T03:22:18.015149+03:00", 
+    "date": "2018-09-05T03:22:16.449062+03:00", 
     "awardID": "af8dbd8c321b4b4ca6877461d22ba897", 
     "id": "199eaa0d62614fe994695d8a7c579200", 
     "contractID": "UA-2018-09-05-000001-1"
