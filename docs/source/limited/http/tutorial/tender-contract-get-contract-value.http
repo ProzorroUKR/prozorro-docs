@@ -1,22 +1,6 @@
-PATCH /api/2.4/tenders/a79e49cd9f8d490d8c967946e2225acd/contracts/b8e0200e0e29453fa680c19a938f652b?acc_token=3f3e1edda3b04f9faf7a9805d933b110 HTTP/1.0
+GET /api/2.4/tenders/a79e49cd9f8d490d8c967946e2225acd/contracts/b8e0200e0e29453fa680c19a938f652b HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 58
-Content-Type: application/json
 Host: api-sandbox.openprocurement.org
-
-{
-  "data": {
-    "items": [
-      {
-        "unit": {
-          "value": {
-            "amount": 12
-          }
-        }
-      }
-    ]
-  }
-}
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
@@ -54,12 +38,7 @@ Content-Type: application/json; charset=UTF-8
         "id": "2dc54675d6364e2baffbc0f8e74432ac", 
         "unit": {
           "code": "MON", 
-          "name": "month", 
-          "value": {
-            "currency": "UAH", 
-            "amount": 12.0, 
-            "valueAddedTaxIncluded": true
-          }
+          "name": "month"
         }, 
         "quantity": 9
       }
@@ -89,11 +68,11 @@ Content-Type: application/json; charset=UTF-8
     ], 
     "value": {
       "currency": "UAH", 
-      "amount": 238.0, 
-      "amountNet": 230.0, 
+      "amount": 475000.0, 
+      "amountNet": 475000.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2018-09-10T01:01:49.790664+03:00", 
+    "date": "2018-09-10T01:01:49.119009+03:00", 
     "awardID": "7c95c0dc44194ef5a31d8df957164852", 
     "id": "b8e0200e0e29453fa680c19a938f652b", 
     "contractID": "UA-2018-09-10-000001-1"
