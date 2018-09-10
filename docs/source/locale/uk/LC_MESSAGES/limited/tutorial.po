@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.tender.limited 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-14 13:08+0300\n"
+"POT-Creation-Date: 2018-09-10 02:51+0300\n"
 "PO-Revision-Date: 2016-03-31 10:57+0300\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
 "Language: uk\n"
@@ -233,7 +233,7 @@ msgstr ""
 "рішення про визначення переможця буде підтверджено. Спробуємо додати "
 "такий документ:"
 
-#: ../../source/limited/tutorial.rst:125 ../../source/limited/tutorial.rst:214
+#: ../../source/limited/tutorial.rst:125 ../../source/limited/tutorial.rst:246
 msgid ""
 "`201 Created` response code and `Location` header confirm that document "
 "has been added."
@@ -249,7 +249,7 @@ msgstr "Переглянемо документи пов’язані із ви�
 msgid "We can add another award document:"
 msgstr "Тепер спробуємо додати ще один документ щодо визначення переможця:"
 
-#: ../../source/limited/tutorial.rst:137 ../../source/limited/tutorial.rst:226
+#: ../../source/limited/tutorial.rst:137 ../../source/limited/tutorial.rst:258
 msgid ""
 "`201 Created` response code and `Location` header confirm second document"
 " has been added."
@@ -298,45 +298,90 @@ msgstr ""
 "потребою** становить 5 днів."
 
 #: ../../source/limited/tutorial.rst:168
-msgid "Setting  contract value"
+#, fuzzy
+msgid "Setting contract value"
 msgstr "Встановлення вартості угоди"
 
 #: ../../source/limited/tutorial.rst:170
+#, fuzzy
+msgid "Let's see the created contract with next request:"
+msgstr "Переглянемо список завантажених документів:"
+
+#: ../../source/limited/tutorial.rst:175
+#, fuzzy
 msgid ""
-"By default contract value is set based on the award, but there is a "
-"possibility to set custom contract value."
+"By default contract value `amount` and `amountNet` is set based on the "
+"award value `amount`, but there is a possibility to set custom contract "
+"value."
 msgstr ""
 "За замовчуванням вартість угоди встановлюється на основі рішення про "
 "визначення переможця, але є можливість змінити це значення."
 
-#: ../../source/limited/tutorial.rst:172
-msgid ""
-"If you want to **lower contract value**, you can insert new one into the "
-"`amount` field."
-msgstr ""
-"Якщо ви хочете **знизити вартість угоди**, ви можете встановити нове "
-"значення для поля `amount`."
-
 #: ../../source/limited/tutorial.rst:177
+msgid "You can update `amount` and `amountNet` following next rules:"
+msgstr ""
+
+#: ../../source/limited/tutorial.rst:180
+msgid "Value `amountNet` should be less or equal to `amount`"
+msgstr ""
+
+#: ../../source/limited/tutorial.rst:183
+msgid "For contract value with `valueAddedTaxIncluded` set to `true`:"
+msgstr ""
+
+#: ../../source/limited/tutorial.rst:187 ../../source/limited/tutorial.rst:197
+msgid "`amount`"
+msgstr ""
+
+#: ../../source/limited/tutorial.rst:187 ../../source/limited/tutorial.rst:189
+#: ../../source/limited/tutorial.rst:201
+msgid "Should be less or equal to ``award.value.amount``"
+msgstr ""
+
+#: ../../source/limited/tutorial.rst:189 ../../source/limited/tutorial.rst:201
+msgid "`amountNet`"
+msgstr ""
+
+#: ../../source/limited/tutorial.rst:191
+msgid "Can be less than ``contract.value.amount`` for 20% max"
+msgstr ""
+
+#: ../../source/limited/tutorial.rst:194
+msgid "For contract value with `valueAddedTaxIncluded` set to `false`:"
+msgstr ""
+
+#: ../../source/limited/tutorial.rst:197
+msgid "Should be greater or equal to ``award.value.amount``"
+msgstr ""
+
+#: ../../source/limited/tutorial.rst:199
+msgid "Can be greater than ``contract.value.amountNet`` for 20% max"
+msgstr ""
+
+#: ../../source/limited/tutorial.rst:204
+msgid "Let's set contract contract value with next request:"
+msgstr ""
+
+#: ../../source/limited/tutorial.rst:209
 msgid "`200 OK` response was returned. The value was modified successfully."
 msgstr "Було повернуто код відповіді `200 OK`. Значення змінено успішно."
 
-#: ../../source/limited/tutorial.rst:180
+#: ../../source/limited/tutorial.rst:212
 msgid "Setting value per item's unit"
 msgstr ""
 
-#: ../../source/limited/tutorial.rst:185
+#: ../../source/limited/tutorial.rst:217
 #, fuzzy
 msgid ""
 "`200 OK` response was returned with successfully set item.unit.value "
 "structure."
 msgstr "Було повернуто код відповіді `200 OK`. Значення змінено успішно."
 
-#: ../../source/limited/tutorial.rst:189
+#: ../../source/limited/tutorial.rst:221
 msgid "Setting contract signature date"
 msgstr "Встановлення дати підписання угоди"
 
-#: ../../source/limited/tutorial.rst:191
+#: ../../source/limited/tutorial.rst:223
 msgid ""
 "There is a possibility to set custom contract signature date. You can "
 "insert appropriate date into the `dateSigned` field."
@@ -344,7 +389,7 @@ msgstr ""
 "Є можливість встановити дату підписання угоди. Для цього вставте "
 "відповідну дату в поле `dateSigned`."
 
-#: ../../source/limited/tutorial.rst:193
+#: ../../source/limited/tutorial.rst:225
 msgid ""
 "If this date is not set, it will be auto-generated on the date of "
 "contract registration."
@@ -352,11 +397,11 @@ msgstr ""
 "Якщо ви не встановите дату підписання, то вона буде згенерована "
 "автоматично під час реєстрації угоди."
 
-#: ../../source/limited/tutorial.rst:199
+#: ../../source/limited/tutorial.rst:231
 msgid "Setting contract validity period"
 msgstr "Встановлення терміну дії угоди"
 
-#: ../../source/limited/tutorial.rst:201
+#: ../../source/limited/tutorial.rst:233
 msgid ""
 "Setting contract validity period is optional, but if it is needed, you "
 "can set appropriate `startDate` and `endDate`."
@@ -365,11 +410,11 @@ msgstr ""
 "ви можете встановити відповідну дату початку `startDate` та кінця "
 "`endDate` терміну дії."
 
-#: ../../source/limited/tutorial.rst:207
+#: ../../source/limited/tutorial.rst:239
 msgid "Uploading contract documentation"
 msgstr "Завантаження документів щодо укладання угоди"
 
-#: ../../source/limited/tutorial.rst:209
+#: ../../source/limited/tutorial.rst:241
 msgid ""
 "Contract documents can be uploaded only up until conclusion of the "
 "agreement. Let's add contract document:"
@@ -377,23 +422,23 @@ msgstr ""
 "Документи пов’язані з угодою можна завантажувати лише до укладання угоди."
 " Спробуємо додати такий документ:"
 
-#: ../../source/limited/tutorial.rst:216
+#: ../../source/limited/tutorial.rst:248
 msgid "Let's see the list of contract documents:"
 msgstr "Переглянемо список завантажених документів:"
 
-#: ../../source/limited/tutorial.rst:221
+#: ../../source/limited/tutorial.rst:253
 msgid "We can add another contract document:"
 msgstr "Тепер спробуємо додати ще один документ щодо укладанням угоди:"
 
-#: ../../source/limited/tutorial.rst:228
+#: ../../source/limited/tutorial.rst:260
 msgid "Let's see the list of all uploaded contract documents:"
 msgstr "Тепер переглянемо знову усі документи пов’язані із укладанням угоди:"
 
-#: ../../source/limited/tutorial.rst:234
+#: ../../source/limited/tutorial.rst:266
 msgid "Contract registration"
 msgstr "Реєстрація угоди"
 
-#: ../../source/limited/tutorial.rst:236
+#: ../../source/limited/tutorial.rst:268
 msgid ""
 "**Reporting** tender contract can be registered immediately after award "
 "confirmation:"
@@ -401,7 +446,7 @@ msgstr ""
 "Угода про закупівлю за процедурою **звітування про укладений договір** "
 "може бути зареєстрована одразу після підтвердження визначення переможця:"
 
-#: ../../source/limited/tutorial.rst:241
+#: ../../source/limited/tutorial.rst:273
 msgid ""
 "**Negotiation** tender contract can be registered only after the stand-"
 "still (10 day period after the award confirmation):"
@@ -410,7 +455,7 @@ msgstr ""
 "зареєстрована одразу після `періоду очікування скарг` (десятиденний "
 "період після підтвердження визначення переможця):"
 
-#: ../../source/limited/tutorial.rst:246
+#: ../../source/limited/tutorial.rst:278
 msgid ""
 "**Negotiation.quick** tender contract can be registered after the stand-"
 "still (5 day period after the award confirmation):"
@@ -419,11 +464,11 @@ msgstr ""
 "може бути зареєстрована одразу після `періоду очікування скарг` "
 "(п’ятиденний період після підтвердження визначення переможця):"
 
-#: ../../source/limited/tutorial.rst:252
+#: ../../source/limited/tutorial.rst:284
 msgid "Cancelling tender"
 msgstr "Скасування закупівлі"
 
-#: ../../source/limited/tutorial.rst:254
+#: ../../source/limited/tutorial.rst:286
 msgid ""
 "Procuring entity can cancel tender anytime. The following steps should be"
 " applied:"
@@ -431,19 +476,19 @@ msgstr ""
 "Замовник може скасувати закупівлю у будь-який момент. Для цього потрібно "
 "виконати наступні кроки:"
 
-#: ../../source/limited/tutorial.rst:256
+#: ../../source/limited/tutorial.rst:288
 msgid "Prepare cancellation request"
 msgstr "Приготуйте запит на скасування"
 
-#: ../../source/limited/tutorial.rst:257
+#: ../../source/limited/tutorial.rst:289
 msgid "Fill it with the protocol describing the cancellation reasons"
 msgstr "Заповніть його протоколом про причини скасування"
 
-#: ../../source/limited/tutorial.rst:258
+#: ../../source/limited/tutorial.rst:290
 msgid "Cancel the tender with the reasons prepared."
 msgstr "Скасуйте закупівлю через подані причини"
 
-#: ../../source/limited/tutorial.rst:260
+#: ../../source/limited/tutorial.rst:292
 msgid ""
 "Only the request that has been activated (3rd step above) has power to "
 "cancel tender. I.e. you have to not only prepare cancellation request but"
@@ -453,25 +498,25 @@ msgstr ""
 "сили, тобто, для скасування закупівлі є обов’язковим не тільки створити "
 "запит, але і активувати його."
 
-#: ../../source/limited/tutorial.rst:264
+#: ../../source/limited/tutorial.rst:296
 msgid "See :ref:`cancellation` data structure for details."
 msgstr "Див. структуру запиту :ref:`cancellation` для більш детальної інформації."
 
-#: ../../source/limited/tutorial.rst:267
+#: ../../source/limited/tutorial.rst:299
 msgid "Preparing the cancellation request"
 msgstr "Формування запиту на скасування"
 
-#: ../../source/limited/tutorial.rst:269
+#: ../../source/limited/tutorial.rst:301
 msgid "You should pass `reason`, `status` defaults to `pending`."
 msgstr "Потрібно передати змінні `reason`, `status` у стані `pending`."
 
-#: ../../source/limited/tutorial.rst:271
+#: ../../source/limited/tutorial.rst:303
 msgid "`id` is autogenerated and passed in the `Location` header of response."
 msgstr ""
 "`id` генерується автоматично і повертається у додатковому заголовку "
 "відповіді `Location`:"
 
-#: ../../source/limited/tutorial.rst:276
+#: ../../source/limited/tutorial.rst:308
 msgid ""
 "There are two possible types of cancellation reason - tender was "
 "`cancelled` or `unsuccessful`. By default ``reasonType`` value is "
@@ -481,27 +526,26 @@ msgstr ""
 "торги відмінені - `cancelled`, або торги не відбулися - `unsuccessful`. "
 "За замовчуванням, значення ``reasonType`` рівне `cancelled`."
 
-#: ../../source/limited/tutorial.rst:279
+#: ../../source/limited/tutorial.rst:311
 msgid "You can change ``reasonType`` value to `unsuccessful`."
 msgstr "Ви можете виправити тип на `unsuccessful` (торги не відбулися)."
 
-#: ../../source/limited/tutorial.rst:286
+#: ../../source/limited/tutorial.rst:318
 msgid "Filling cancellation with protocol and supplementary documentation"
 msgstr "Наповнення протоколом та іншою супровідною документацією"
 
-#: ../../source/limited/tutorial.rst:288
+#: ../../source/limited/tutorial.rst:320
 msgid "Upload the file contents"
 msgstr "Завантажте зміст файлу"
 
-#: ../../source/limited/tutorial.rst:293
+#: ../../source/limited/tutorial.rst:325
 msgid "Change the document description and other properties"
 msgstr "Якщо потрібно, змініть опис документа та інші властивості"
 
-#: ../../source/limited/tutorial.rst:299
+#: ../../source/limited/tutorial.rst:331
 msgid "Upload new version of the document"
 msgstr "Завантажте нову версію документа"
 
-#: ../../source/limited/tutorial.rst:306
+#: ../../source/limited/tutorial.rst:338
 msgid "Activating the request and cancelling tender"
 msgstr "Активація запиту та скасування закупівлі"
-
