@@ -61,11 +61,38 @@ The difference between ``startDate`` and ``endDate`` in ``complaintPeriod`` reco
 Setting  contract value
 -----------------------
 
-By default contract value is set based on the award, but there is a possibility to set custom contract value.
+By default contract value `amount` and `amountNet` is set based on the award value `amount`, but there is a possibility to set custom contract value.
 
-If you want to **lower contract value**, you can insert new one into the `amount` field.
+You can update `amount` and `amountNet` following next rules:
 
-.. include:: http/multiple_lots_tutorial/tender-contract-set-contract-value.http
++-------------------------------------------------------+
+| Value `amountNet` should be less or equal to `amount` |
++-------------------------------------------------------+
+
+For contract value with `valueAddedTaxIncluded` set to `true`:
+
+
++-------------+--------------------------------------------------------+
+| `amount`    | Should be less or equal to ``award.value.amount``      |
++-------------+--------------------------------------------------------+
+| `amountNet` | Should be less or equal to ``award.value.amount``      |
++             +--------------------------------------------------------+
+|             | Can be less than ``contract.value.amount`` for 20% max |
++-------------+--------------------------------------------------------+
+
+For contract value with `valueAddedTaxIncluded` set to `false`:
+
++-------------+--------------------------------------------------------------+
+| `amount`    | Should be greater or equal to ``award.value.amount``         |
++             +--------------------------------------------------------------+
+|             | Can be greater than ``contract.value.amountNet`` for 20% max |
++-------------+--------------------------------------------------------------+
+| `amountNet` | Should be less or equal to ``award.value.amount``            |
++-------------+--------------------------------------------------------------+
+
+Let's set contract contract value with next request:
+
+.. include:: http/tutorial/tender-contract-set-contract-value.http
    :code:
 
 `200 OK` response was returned. The value was modified successfully.
