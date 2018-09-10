@@ -254,7 +254,7 @@ Setting contract value
 
 Let's see the created contract with next request:
 
-.. include:: http/tutorial/tender-contract-get-contract-value.http
+.. include:: http/tender-contract-get-contract-value.http
    :code:
 
 By default contract value `amount` and `amountNet` is set based on the award value `amount`, but there is a possibility to set custom contract value.
@@ -288,7 +288,7 @@ For contract value with `valueAddedTaxIncluded` set to `false`:
 
 Let's set contract contract value with next request:
 
-.. include:: http/tutorial/tender-contract-set-contract-value.http
+.. include:: http/tender-contract-set-contract-value.http
    :code:
 
 `200 OK` response was returned. The value was modified successfully.
