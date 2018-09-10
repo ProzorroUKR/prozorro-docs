@@ -3,17 +3,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.tender.openeu 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-17 12:08+0300\n"
-"PO-Revision-Date: 2016-09-16 12:48+0200\n"
+"POT-Creation-Date: 2018-09-10 02:51+0300\n"
+"PO-Revision-Date: 2018-09-10 03:16+0300\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
 "Language: uk\n"
 "Language-Team: Ukrainian <support@quintagroup.com>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"X-Generator: Poedit 1.8.7.1\n"
 
 #: ../../source/openeu/tutorial.rst:4
 msgid "Tutorial"
@@ -56,39 +56,15 @@ msgid "Let's provide the data attribute in the submitted body :"
 msgstr "Введемо data атрибут у поданому тілі:"
 
 #: ../../source/openeu/tutorial.rst:41
-msgid ""
-"Success! Now we can see that new object was created. Response code is "
-"`201` and `Location` response header reports the location of the created "
-"object.  The body of response reveals the information about the created "
-"tender: its internal `id` (that matches the `Location` segment), its "
-"official `tenderID` and `dateModified` datestamp stating the moment in "
-"time when tender was last modified.  Note that tender is created with "
-"`active.tendering` status."
-msgstr ""
-"Успіх! Тепер ми бачимо, що новий об’єкт було створено. Код відповіді "
-"`201` та заголовок відповіді `Location` вказує місцерозташування "
-"створеного об’єкта. Тіло відповіді показує інформацію про створену "
-"закупівлю, її внутрішнє `id` (яке співпадає з сегментом `Location`), її "
-"офіційне `tenderID` та `dateModified` дату, що показує час, коли "
-"закупівля востаннє модифікувалась. Зверніть увагу, що закупівля "
-"створюється зі статусом `active.tendering`."
+msgid "Success! Now we can see that new object was created. Response code is `201` and `Location` response header reports the location of the created object.  The body of response reveals the information about the created tender: its internal `id` (that matches the `Location` segment), its official `tenderID` and `dateModified` datestamp stating the moment in time when tender was last modified.  Note that tender is created with `active.tendering` status."
+msgstr "Успіх! Тепер ми бачимо, що новий об’єкт було створено. Код відповіді `201` та заголовок відповіді `Location` вказує місцерозташування створеного об’єкта. Тіло відповіді показує інформацію про створену закупівлю, її внутрішнє `id` (яке співпадає з сегментом `Location`), її офіційне `tenderID` та `dateModified` дату, що показує час, коли закупівля востаннє модифікувалась. Зверніть увагу, що закупівля створюється зі статусом `active.tendering`."
 
 #: ../../source/openeu/tutorial.rst:48
-msgid ""
-"The peculiarity of the Open EU procedure is that "
-"``procurementMethodType`` was changed from ``belowThreshold`` to "
-"``aboveThresholdEU``. Also there is no opportunity to set up "
-"``enquiryPeriod``, it will be assigned automatically."
-msgstr ""
-"Особливість відкритих торгів з публікацією англ. мовою в тому, що "
-"``procurementMethodType`` було змінено з ``belowThreshold`` на "
-"``aboveThresholdEU``.  Також тут неможливо встановити ``enquiryPeriod``, "
-"бо він буде призначений автоматично."
+msgid "The peculiarity of the Open EU procedure is that ``procurementMethodType`` was changed from ``belowThreshold`` to ``aboveThresholdEU``. Also there is no opportunity to set up ``enquiryPeriod``, it will be assigned automatically."
+msgstr "Особливість відкритих торгів з публікацією англ. мовою в тому, що ``procurementMethodType`` було змінено з ``belowThreshold`` на ``aboveThresholdEU``.  Також тут неможливо встановити ``enquiryPeriod``, бо він буде призначений автоматично."
 
 #: ../../source/openeu/tutorial.rst:51
-msgid ""
-"Let's access the URL of the created object (the `Location` header of the "
-"response):"
+msgid "Let's access the URL of the created object (the `Location` header of the response):"
 msgstr "Використаємо URL створеного об’єкта (заголовок відповіді `Location`):"
 
 #: ../../source/openeu/tutorial.rst:58
@@ -100,53 +76,32 @@ msgid "Let's see what listing of tenders reveals us:"
 msgstr "Подивимось, що показує список закупівель:"
 
 #: ../../source/openeu/tutorial.rst:65
-msgid ""
-"We do see the internal `id` of a tender (that can be used to construct "
-"full URL by prepending `http://api-"
-"sandbox.openprocurement.org/api/0/tenders/`) and its `dateModified` "
-"datestamp."
-msgstr ""
-"Ми бачимо внутрішнє `id` закупівлі (що може бути використано для побудови"
-" повної URL-адреси, якщо додати `http://api-"
-"sandbox.openprocurement.org/api/0/tenders/`) та її `dateModified` дату."
+msgid "We do see the internal `id` of a tender (that can be used to construct full URL by prepending `http://api-sandbox.openprocurement.org/api/0/tenders/`) and its `dateModified` datestamp."
+msgstr "Ми бачимо внутрішнє `id` закупівлі (що може бути використано для побудови повної URL-адреси, якщо додати `http://api-sandbox.openprocurement.org/api/0/tenders/`) та її `dateModified` дату."
 
 #: ../../source/openeu/tutorial.rst:68
 msgid "Modifying tender"
 msgstr "Редагування закупівлі"
 
 #: ../../source/openeu/tutorial.rst:70
-msgid ""
-"Let's update tender by supplementing it with all other essential "
-"properties:"
+msgid "Let's update tender by supplementing it with all other essential properties:"
 msgstr "Оновимо закупівлю шляхом надання їй усіх інших важливих властивостей:"
 
 #: ../../source/openeu/tutorial.rst:77
-msgid ""
-"We see the added properies have merged with existing tender data. "
-"Additionally, the `dateModified` property was updated to reflect the last"
-" modification datestamp."
-msgstr ""
-"Ми бачимо, що додаткові властивості об’єднані з існуючими даними "
-"закупівлі. Додатково оновлена властивість `dateModified`, щоб відображати"
-" останню дату модифікації."
+msgid "We see the added properies have merged with existing tender data. Additionally, the `dateModified` property was updated to reflect the last modification datestamp."
+msgstr "Ми бачимо, що додаткові властивості об’єднані з існуючими даними закупівлі. Додатково оновлена властивість `dateModified`, щоб відображати останню дату модифікації."
 
 #: ../../source/openeu/tutorial.rst:79
 msgid "Checking the listing again reflects the new modification date:"
 msgstr "Ще одна перевірка списку відображає нову дату модифікації:"
 
 #: ../../source/openeu/tutorial.rst:84
-msgid ""
-"Procuring entity can not change tender if there are less than 7 days "
-"before tenderPeriod ends. Changes will not be accepted by API."
-msgstr ""
-"Замовник не може редагувати закупівлю, якщо залишилось менше 7 днів до "
-"завершення періоду подання пропозицій. API таких змін не прийме."
+msgid "Procuring entity can not change tender if there are less than 7 days before tenderPeriod ends. Changes will not be accepted by API."
+msgstr "Замовник не може редагувати закупівлю, якщо залишилось менше 7 днів до завершення періоду подання пропозицій. API таких змін не прийме."
 
 #: ../../source/openeu/tutorial.rst:89
 msgid "That is why tenderPeriod has to be extended by 7 days."
-msgstr ""
-"Ось чому потрібно продовжити період подання пропозицій (`tenderPeriod`) "
-"на 7 днів."
+msgstr "Ось чому потрібно продовжити період подання пропозицій (`tenderPeriod`) на 7 днів."
 
 #: ../../source/openeu/tutorial.rst:94
 msgid "Procuring entity can set bid guarantee:"
@@ -157,42 +112,24 @@ msgid "Uploading documentation"
 msgstr "Завантаження документів"
 
 #: ../../source/openeu/tutorial.rst:105
-msgid ""
-"Procuring entity can upload PDF files into the created tender. Uploading "
-"should follow the :ref:`upload` rules."
-msgstr ""
-"Замовник може завантажити PDF файл у створену закупівлю. Завантаження "
-"повинно відбуватись згідно правил :ref:`upload`."
+msgid "Procuring entity can upload PDF files into the created tender. Uploading should follow the :ref:`upload` rules."
+msgstr "Замовник може завантажити PDF файл у створену закупівлю. Завантаження повинно відбуватись згідно правил :ref:`upload`."
 
 #: ../../source/openeu/tutorial.rst:111
-msgid ""
-"`201 Created` response code and `Location` header confirm document "
-"creation. We can additionally query the `documents` collection API "
-"endpoint to confirm the action:"
-msgstr ""
-"Код відповіді `201 Created` та заголовок `Location` підтверджують, що "
-"документ було створено. Додатково можна зробити запит точки входу API "
-"колекції документів (`documents`), щоб підтвердити дію:"
+msgid "`201 Created` response code and `Location` header confirm document creation. We can additionally query the `documents` collection API endpoint to confirm the action:"
+msgstr "Код відповіді `201 Created` та заголовок `Location` підтверджують, що документ було створено. Додатково можна зробити запит точки входу API колекції документів (`documents`), щоб підтвердити дію:"
 
 #: ../../source/openeu/tutorial.rst:118
-msgid ""
-"The single array element describes the uploaded document. We can upload "
-"more documents:"
-msgstr ""
-"Один елемент масиву описує завантажений документ. Ми можемо завантажити "
-"більше документів:"
+msgid "The single array element describes the uploaded document. We can upload more documents:"
+msgstr "Один елемент масиву описує завантажений документ. Ми можемо завантажити більше документів:"
 
 #: ../../source/openeu/tutorial.rst:123
 msgid "And again we can confirm that there are two documents uploaded."
 msgstr "І знову можна перевірити, що є два завантажених документа."
 
 #: ../../source/openeu/tutorial.rst:128
-msgid ""
-"In case we made an error, we can reupload the document over the older "
-"version:"
-msgstr ""
-"Якщо сталась помилка, ми можемо ще раз завантажити документ поверх старої"
-" версії:"
+msgid "In case we made an error, we can reupload the document over the older version:"
+msgstr "Якщо сталась помилка, ми можемо ще раз завантажити документ поверх старої версії:"
 
 #: ../../source/openeu/tutorial.rst:133
 msgid "And we can see that it is overriding the original version:"
@@ -203,15 +140,8 @@ msgid "Enquiries"
 msgstr "Уточнення і запитання"
 
 #: ../../source/openeu/tutorial.rst:144
-msgid ""
-"When tender has ``active.tendering`` status and "
-"``Tender.enqueryPeriod.endDate``  hasn't come yet, interested parties can"
-" ask questions:"
-msgstr ""
-"Якщо закупівля має статус ``active.tendering`` та дата завершення періоду"
-" подання пропозицій ``Tender.enqueryPeriod.endDate`` ще не прийшла , то "
-"зацікавлені учасники можуть задавати питання чи просити уточнень умов "
-"закупівлі:"
+msgid "When tender has ``active.tendering`` status and ``Tender.enqueryPeriod.endDate``  hasn't come yet, interested parties can ask questions:"
+msgstr "Якщо закупівля має статус ``active.tendering`` та дата завершення періоду подання пропозицій ``Tender.enqueryPeriod.endDate`` ще не прийшла , то зацікавлені учасники можуть задавати питання чи просити уточнень умов закупівлі:"
 
 #: ../../source/openeu/tutorial.rst:149
 msgid "Procuring entity can answer them:"
@@ -227,9 +157,7 @@ msgstr "або окрему відповідь:"
 
 #: ../../source/openeu/tutorial.rst:165
 msgid "Enquiries can be made only during ``Tender.enqueryPeriod``"
-msgstr ""
-"Запитання можна задавати лише протягом періоду уточнень "
-"``Tender.enqueryPeriod``."
+msgstr "Запитання можна задавати лише протягом періоду уточнень ``Tender.enqueryPeriod``."
 
 #: ../../source/openeu/tutorial.rst:174
 msgid "Registering bid"
@@ -244,12 +172,10 @@ msgid "Tender status ``active.tendering`` allows registration of bids."
 msgstr "Статус закупівлі ``active.tendering`` дозволяє подання пропозицій."
 
 #: ../../source/openeu/tutorial.rst:181
-#, fuzzy
 msgid "Bidder can register a bid with `draft` status:"
-msgstr "Учасник може зареєструвати ставку із статусом ``draft`` (чернетка):"
+msgstr "Учасник може зареєструвати пропозицію зі статусом ``draft`` (чернетка):"
 
 #: ../../source/openeu/tutorial.rst:186
-#, fuzzy
 msgid "and approve to pending status:"
 msgstr "і підтвердити її, перевівши у ``pending`` статус:"
 
@@ -270,71 +196,40 @@ msgid "Documents can be either public or private:"
 msgstr "Документи можуть бути або публічними, або приватними:"
 
 #: ../../source/openeu/tutorial.rst:204
-msgid ""
-"Privacy settings can be changed only for the latest version of the "
-"document."
+msgid "Privacy settings can be changed only for the latest version of the document."
 msgstr "Приватність документа можна змінити тільки для останньої версії."
 
 #: ../../source/openeu/tutorial.rst:205
-msgid ""
-"When you upload new version of the document, privacy settings are copied "
-"from the previous version."
-msgstr ""
-"При завантаженні нової версії, налаштування приватності копіюються з "
-"попередньої версії документа."
+msgid "When you upload new version of the document, privacy settings are copied from the previous version."
+msgstr "При завантаженні нової версії, налаштування приватності копіюються з попередньої версії документа."
 
 #: ../../source/openeu/tutorial.rst:206
-msgid ""
-"Privacy settings can be changed only during `tenderPeriod` (with "
-"`active.tendering` status)."
-msgstr ""
-"Налаштування приватності можна міняти тільки під час періоду подання "
-"пропозицій (зі статусом `active.tendering`)."
+msgid "Privacy settings can be changed only during `tenderPeriod` (with `active.tendering` status)."
+msgstr "Налаштування приватності можна міняти тільки під час періоду подання пропозицій (зі статусом `active.tendering`)."
 
 #: ../../source/openeu/tutorial.rst:207
-msgid ""
-"If tender has status `active.qualification` winner can upload only public"
-" documents."
-msgstr ""
-"Якщо закупівля має статус `active.qualification`, переможець може "
-"завантажувати тільки публічні документи."
+msgid "If tender has status `active.qualification` winner can upload only public documents."
+msgstr "Якщо закупівля має статус `active.qualification`, переможець може завантажувати тільки публічні документи."
 
 #: ../../source/openeu/tutorial.rst:209
 msgid "Let's upload private document:"
 msgstr "Завантажимо приватний документ:"
 
 #: ../../source/openeu/tutorial.rst:214
-msgid ""
-"To define the document as \"private\" - `confidentiality` and "
-"`confidentialityRationale` fields should be set."
-msgstr ""
-"Щоб зробити документ \"приватним\", потрібно встановити поля "
-"`confidentiality` та `confidentialityRationale`."
+msgid "To define the document as \"private\" - `confidentiality` and `confidentialityRationale` fields should be set."
+msgstr "Щоб зробити документ \"приватним\", потрібно встановити поля `confidentiality` та `confidentialityRationale`."
 
 #: ../../source/openeu/tutorial.rst:216
-msgid ""
-"`confidentiality` field value can be either `buyerOnly` (document is "
-"private) or `public` (document is publicly accessible)."
-msgstr ""
-"Значенням поля `confidentiality` може бути або `buyerOnly` - документ "
-"приватний, або `public` - документ публічно доступний."
+msgid "`confidentiality` field value can be either `buyerOnly` (document is private) or `public` (document is publicly accessible)."
+msgstr "Значенням поля `confidentiality` може бути або `buyerOnly` - документ приватний, або `public` - документ публічно доступний."
 
 #: ../../source/openeu/tutorial.rst:218
-msgid ""
-"Content of private documents (`buyerOnly`) can be accessed only by "
-"procuring entity or by participant who uploaded them."
-msgstr ""
-"Вміст приватних документів (`buyerOnly`) закритий для всіх крім замовника"
-" і учасника, який подав ці документи."
+msgid "Content of private documents (`buyerOnly`) can be accessed only by procuring entity or by participant who uploaded them."
+msgstr "Вміст приватних документів (`buyerOnly`) закритий для всіх крім замовника і учасника, який подав ці документи."
 
 #: ../../source/openeu/tutorial.rst:220
-msgid ""
-"`confidentialityRationale` field is required only for private documents "
-"and should contain at least 30 characters."
-msgstr ""
-"Поле `confidentialityRationale` необхідне лише для приватних документів. "
-"Його значенням має бути пояснення причини конфіденційності документа (не "
-"менше ніж 30 символів)."
+msgid "`confidentialityRationale` field is required only for private documents and should contain at least 30 characters."
+msgstr "Поле `confidentialityRationale` необхідне лише для приватних документів. Його значенням має бути пояснення причини конфіденційності документа (не менше ніж 30 символів)."
 
 #: ../../source/openeu/tutorial.rst:222
 msgid "Let's mark the document as \"private\":"
@@ -346,86 +241,47 @@ msgstr "Можна перевірити завантажені документ�
 
 #: ../../source/openeu/tutorial.rst:235
 msgid "Financial, eligibility and qualification documents uploading"
-msgstr ""
-"Завантаження документів, що підтверджують відповідність, фінансових та "
-"кваліфікаційних документів."
+msgstr "Завантаження документів, що підтверджують відповідність, фінансових та кваліфікаційних документів."
 
 #: ../../source/openeu/tutorial.rst:237
-msgid ""
-"Financial, eligibility and qualification documents are also a part of Bid"
-" but are located in different end-points."
-msgstr ""
-"Документи, що підтверджують відповідність, фінансові та кваліфікаційні "
-"документи також є частиною пропозиції, але зберігаються в різних точках "
-"входу."
+msgid "Financial, eligibility and qualification documents are also a part of Bid but are located in different end-points."
+msgstr "Документи, що підтверджують відповідність, фінансові та кваліфікаційні документи також є частиною пропозиції, але зберігаються в різних точках входу."
 
 #: ../../source/openeu/tutorial.rst:239
-msgid ""
-"In order to create and/or get financial document ``financial_documents`` "
-"end-point should be used:"
-msgstr ""
-"Для того, щоб створити і/або отримати фінансові документи потрібно "
-"використати точку входу ``financial_documents``:"
+msgid "In order to create and/or get financial document ``financial_documents`` end-point should be used:"
+msgstr "Для того, щоб створити і/або отримати фінансові документи потрібно використати точку входу ``financial_documents``:"
 
 #: ../../source/openeu/tutorial.rst:244
 msgid "Get financial documents:"
 msgstr "Отримати фінансові документи:"
 
 #: ../../source/openeu/tutorial.rst:249
-msgid ""
-"In order to create and/or get eligibility document "
-"``eligibility_documents`` end-point should be used:"
-msgstr ""
-"Для того, щоб створити і/або отримати документи, що підтверджують "
-"відповідність потрібно використати точку входу ``eligibility_documents``:"
+msgid "In order to create and/or get eligibility document ``eligibility_documents`` end-point should be used:"
+msgstr "Для того, щоб створити і/або отримати документи, що підтверджують відповідність потрібно використати точку входу ``eligibility_documents``:"
 
 #: ../../source/openeu/tutorial.rst:254
-msgid ""
-"In order to create and/or get qualification document "
-"``qualification_documents`` end-point should be used:"
-msgstr ""
-"Для того, щоб створити і/або отримати документи, що підтверджують "
-"кваліфікацію, потрібно використати точку входу "
-"``qualification_documents``:"
+msgid "In order to create and/or get qualification document ``qualification_documents`` end-point should be used:"
+msgstr "Для того, щоб створити і/або отримати документи, що підтверджують кваліфікацію, потрібно використати точку входу ``qualification_documents``:"
 
 #: ../../source/openeu/tutorial.rst:260
-msgid ""
-"`Financial` and `qualification` documents will be publicly accessible "
-"after the auction. `Eligibility` documents will become publicly "
-"accessible starting from tender pre-qualification period."
-msgstr ""
-"`Фінансові` та `кваліфікаційні` документи будуть публічно доступні після "
-"аукціону. Документи, `що підтверджують відповідність`, будуть публічно "
-"доступні на етапі прекваліфікації."
+msgid "`Financial` and `qualification` documents will be publicly accessible after the auction. `Eligibility` documents will become publicly accessible starting from tender pre-qualification period."
+msgstr "`Фінансові` та `кваліфікаційні` документи будуть публічно доступні після аукціону. Документи, `що підтверджують відповідність`, будуть публічно доступні на етапі прекваліфікації."
 
 #: ../../source/openeu/tutorial.rst:263
 msgid "Here is bidder proposal with all documents."
 msgstr "Пропозиція учасника зі всіма документами:"
 
 #: ../../source/openeu/tutorial.rst:268
-msgid ""
-"Note that financial, eligibility, and qualification documents are stored "
-"in `financialDocuments`, `eligibilityDocuments`, and "
-"`qualificationDocuments` attributes of :ref:`Bid`."
-msgstr ""
-"Зверніть увагу, що документи, що підтверджують відповідність, фінансові "
-"та кваліфікаційні документи зберігаються у `eligibilityDocuments`, "
-"`financialDocuments` та  `qualificationDocuments` атрибутах :ref:`Bid` "
-"відповідно."
+msgid "Note that financial, eligibility, and qualification documents are stored in `financialDocuments`, `eligibilityDocuments`, and `qualificationDocuments` attributes of :ref:`Bid`."
+msgstr "Зверніть увагу, що документи, що підтверджують відповідність, фінансові та кваліфікаційні документи зберігаються у `eligibilityDocuments`, `financialDocuments` та  `qualificationDocuments` атрибутах :ref:`Bid` відповідно."
 
 #: ../../source/openeu/tutorial.rst:272
 msgid "Bid invalidation"
 msgstr "Пропозиція стає недійсною"
 
 #: ../../source/openeu/tutorial.rst:274
-msgid ""
-"If tender is modified, status of all bid proposals will be changed to "
-"``invalid``. Bid proposal will look the following way after tender has "
-"been modified:"
-msgstr ""
-"Якщо закупівля була модифікована, статус всіх пропозицій змінюється на "
-"``invalid`` (недійсний). Ось так пропозиція буде виглядати після "
-"редагування закупівлі:"
+msgid "If tender is modified, status of all bid proposals will be changed to ``invalid``. Bid proposal will look the following way after tender has been modified:"
+msgstr "Якщо закупівля була модифікована, статус всіх пропозицій змінюється на ``invalid`` (недійсний). Ось так пропозиція буде виглядати після редагування закупівлі:"
 
 #: ../../source/openeu/tutorial.rst:280
 msgid "Bid confirmation"
@@ -436,13 +292,8 @@ msgid "Bidder should confirm bid proposal:"
 msgstr "Учасник повинен підтвердити свою пропозицію:"
 
 #: ../../source/openeu/tutorial.rst:287
-msgid ""
-"Open EU procedure demands at least two bidders, so there should be at "
-"least two bid proposals registered to move to auction stage:"
-msgstr ""
-"Для того, щоб процедура відкритих торгів з публікацією англ. мовою "
-"відбулась, необхідно хоча б два учасника, тобто хоча б дві пропозиції "
-"повинні бути зареєстровані до початку аукціону:"
+msgid "Open EU procedure demands at least two bidders, so there should be at least two bid proposals registered to move to auction stage:"
+msgstr "Для того, щоб процедура відкритих торгів з публікацією англ. мовою відбулась, необхідно хоча б два учасника, тобто хоча б дві пропозиції повинні бути зареєстровані до початку аукціону:"
 
 #: ../../source/openeu/tutorial.rst:293
 msgid "Batch-mode bid registration"
@@ -450,9 +301,7 @@ msgstr "Пакетний режим реєстрації"
 
 #: ../../source/openeu/tutorial.rst:295
 msgid "Register one more bid with documents using single request (batch-mode):"
-msgstr ""
-"У пакетному режимі (batch-mode) є можливість зареєструвати пропозицію "
-"одним запитом. Зареєструйте ще одну пропозицію:"
+msgstr "У пакетному режимі (batch-mode) є можливість зареєструвати пропозицію одним запитом. Зареєструйте ще одну пропозицію:"
 
 #: ../../source/openeu/tutorial.rst:304
 msgid "Bid Qualification"
@@ -460,9 +309,7 @@ msgstr "Кваліфікація пропозицій"
 
 #: ../../source/openeu/tutorial.rst:306
 msgid "Open EU procedure requires bid qualification."
-msgstr ""
-"Для відкритих торгів з публікацією англ. мовою необхідна кваліфікація "
-"пропозицій."
+msgstr "Для відкритих торгів з публікацією англ. мовою необхідна кваліфікація пропозицій."
 
 #: ../../source/openeu/tutorial.rst:308
 msgid "Let's list qualifications:"
@@ -478,9 +325,7 @@ msgstr "Можна відхилити пропозицію:"
 
 #: ../../source/openeu/tutorial.rst:327
 msgid "And check that qualified bids are switched to `active`:"
-msgstr ""
-"Та перевірити, що вже кваліфіковані пропозиції переключені в стан "
-"`active`:"
+msgstr "Та перевірити, що вже кваліфіковані пропозиції переключені в стан `active`:"
 
 #: ../../source/openeu/tutorial.rst:332
 msgid "Rejected bid is not shown in `bids/` listing."
@@ -496,35 +341,23 @@ msgstr "Замовник підтверджує кваліфікацію пер�
 
 #: ../../source/openeu/tutorial.rst:344
 msgid "You may notice 10 day stand-still time set in `qualificationPeriod`."
-msgstr ""
-"Зверніть увагу на період блокування в 10 днів під час "
-"`qualificationPeriod`."
+msgstr "Зверніть увагу на період блокування в 10 днів під час `qualificationPeriod`."
 
 #: ../../source/openeu/tutorial.rst:347
 msgid "Auction"
 msgstr "Аукціон"
 
 #: ../../source/openeu/tutorial.rst:349
-msgid ""
-"After auction is scheduled anybody can visit it to watch. The auction can"
-" be reached at `Tender.auctionUrl`:"
-msgstr ""
-"Після того, як аукціон заплановано, будь-хто може його відвідати для "
-"перегляду. Аукціон можна подивитись за допомогою `Tender.auctionUrl`:"
+msgid "After auction is scheduled anybody can visit it to watch. The auction can be reached at `Tender.auctionUrl`:"
+msgstr "Після того, як аукціон заплановано, будь-хто може його відвідати для перегляду. Аукціон можна подивитись за допомогою `Tender.auctionUrl`:"
 
 #: ../../source/openeu/tutorial.rst:354
 msgid "Bidders can find out their participation URLs via their bids:"
-msgstr ""
-"Учасники можуть дізнатись свої URL-адреси для участі через свої "
-"пропозиції:"
+msgstr "Учасники можуть дізнатись свої URL-адреси для участі через свої пропозиції:"
 
 #: ../../source/openeu/tutorial.rst:359
-msgid ""
-"See the `Bid.participationUrl` in the response. Similar, but different, "
-"URL can be retrieved for other participants:"
-msgstr ""
-"Дивіться на `Bid.participationUrl` у відповіді. Схожу, але іншу, "
-"URL-адресу можна отримати для інших учасників."
+msgid "See the `Bid.participationUrl` in the response. Similar, but different, URL can be retrieved for other participants:"
+msgstr "Дивіться на `Bid.participationUrl` у відповіді. Схожу, але іншу, URL-адресу можна отримати для інших учасників."
 
 #: ../../source/openeu/tutorial.rst:365
 msgid "Confirming qualification"
@@ -535,228 +368,190 @@ msgid "Qualification commission registers its decision via the following call:"
 msgstr "Кваліфікаційна комісія реєструє своє рішення:"
 
 #: ../../source/openeu/tutorial.rst:373
-msgid "Setting  contract value"
+msgid "Setting contract value"
 msgstr "Встановлення вартості угоди"
 
 #: ../../source/openeu/tutorial.rst:375
-msgid ""
-"By default contract value is set based on the award, but there is a "
-"possibility to set custom contract value."
-msgstr ""
-"За замовчуванням вартість угоди встановлюється на основі рішення про "
-"визначення переможця, але є можливість змінити це значення."
+msgid "Let's see the created contract with next request:"
+msgstr "Переглянемо створену угоду використовуючи наступній запит:"
 
-#: ../../source/openeu/tutorial.rst:377
-msgid ""
-"If you want to **lower contract value**, you can insert new one into the "
-"`amount` field."
-msgstr ""
-"Якщо ви хочете **знизити вартість угоди**, ви можете встановити нове "
-"значення для поля `amount`."
+#: ../../source/openeu/tutorial.rst:380
+msgid "By default contract value `amount` and `amountNet` is set based on the award value `amount`, but there is a possibility to set custom contract value."
+msgstr "За замовчуванням вартість угоди з/без урахування ПДВ встановлюється на основі рішення про визначення переможця, але є можливість змінити це значення."
 
 #: ../../source/openeu/tutorial.rst:382
+msgid "You can update `amount` and `amountNet` following next rules:"
+msgstr "Ви можете встановити нове значення для полів `amount` та `amountNet` керуючись наступними правилами:"
+
+#: ../../source/openeu/tutorial.rst:385
+msgid "Value `amountNet` should be less or equal to `amount`"
+msgstr "Значення поля `amountNet` має бути <= значення поля `amount`"
+
+#: ../../source/openeu/tutorial.rst:388
+msgid "For contract value with `valueAddedTaxIncluded` set to `true`:"
+msgstr "За умови що для поля `valueAddedTaxIncluded` встановлено значення `true`:"
+
+#: ../../source/openeu/tutorial.rst:392 ../../source/openeu/tutorial.rst:402
+msgid "`amount`"
+msgstr ""
+
+#: ../../source/openeu/tutorial.rst:392 ../../source/openeu/tutorial.rst:394
+#: ../../source/openeu/tutorial.rst:406
+msgid "Should be less or equal to ``award.value.amount``"
+msgstr "Встановлене значення поля має бути <= ``award.value.amount``"
+
+#: ../../source/openeu/tutorial.rst:394 ../../source/openeu/tutorial.rst:406
+msgid "`amountNet`"
+msgstr ""
+
+#: ../../source/openeu/tutorial.rst:396
+msgid "Can be less than ``contract.value.amount`` for 20% max"
+msgstr "Внесене значення має бути <= ``contract.value.amount``, але не більше ніж на 20%"
+
+#: ../../source/openeu/tutorial.rst:399
+msgid "For contract value with `valueAddedTaxIncluded` set to `false`:"
+msgstr "За умови що для поля `valueAddedTaxIncluded` встановлено значення `false`:"
+
+#: ../../source/openeu/tutorial.rst:402
+msgid "Should be greater or equal to ``award.value.amount``"
+msgstr "Встановлене значення поля має бути >= ``award.value.amount``"
+
+#: ../../source/openeu/tutorial.rst:404
+msgid "Can be greater than ``contract.value.amountNet`` for 20% max"
+msgstr "Внесене значення має бути >= ``contract.value.amountNet``, але не більше ніж на 20%"
+
+#: ../../source/openeu/tutorial.rst:409
+msgid "Let's set contract contract value with next request:"
+msgstr "Встановимо нові значення для поля `value` використовуючи наступний запит:"
+
+#: ../../source/openeu/tutorial.rst:414
 msgid "`200 OK` response was returned. The value was modified successfully."
 msgstr "Було повернуто код відповіді `200 OK`. Значення змінено успішно."
 
-#: ../../source/openeu/tutorial.rst:385
+#: ../../source/openeu/tutorial.rst:417
 msgid "Setting contract signature date"
 msgstr "Встановлення дати підписання угоди"
 
-#: ../../source/openeu/tutorial.rst:387
-msgid ""
-"There is a possibility to set custom contract signature date. You can "
-"insert appropriate date into the `dateSigned` field."
-msgstr ""
-"Є можливість встановити дату підписання угоди. Для цього вставте "
-"відповідну дату в поле `dateSigned`."
+#: ../../source/openeu/tutorial.rst:419
+msgid "There is a possibility to set custom contract signature date. You can insert appropriate date into the `dateSigned` field."
+msgstr "Є можливість встановити дату підписання угоди. Для цього вставте відповідну дату в поле `dateSigned`."
 
-#: ../../source/openeu/tutorial.rst:389
-msgid ""
-"If this date is not set, it will be auto-generated on the date of "
-"contract registration."
-msgstr ""
-"Якщо ви не встановите дату підписання, то вона буде згенерована "
-"автоматично під час реєстрації угоди."
+#: ../../source/openeu/tutorial.rst:421
+msgid "If this date is not set, it will be auto-generated on the date of contract registration."
+msgstr "Якщо ви не встановите дату підписання, то вона буде згенерована автоматично під час реєстрації угоди."
 
-#: ../../source/openeu/tutorial.rst:395
+#: ../../source/openeu/tutorial.rst:427
 msgid "Setting contract validity period"
 msgstr "Встановлення терміну дії угоди"
 
-#: ../../source/openeu/tutorial.rst:397
-msgid ""
-"Setting contract validity period is optional, but if it is needed, you "
-"can set appropriate `startDate` and `endDate`."
-msgstr ""
-"Встановлення терміну дії угоди необов’язкове, але, якщо є необхідність, "
-"ви можете встановити відповідну дату початку `startDate` та кінця "
-"`endDate` терміну дії."
+#: ../../source/openeu/tutorial.rst:429
+msgid "Setting contract validity period is optional, but if it is needed, you can set appropriate `startDate` and `endDate`."
+msgstr "Встановлення терміну дії угоди необов’язкове, але, якщо є необхідність, ви можете встановити відповідну дату початку `startDate` та кінця `endDate` терміну дії."
 
-#: ../../source/openeu/tutorial.rst:403
+#: ../../source/openeu/tutorial.rst:435
 msgid "Uploading contract documentation"
 msgstr "Завантаження документації по угоді"
 
-#: ../../source/openeu/tutorial.rst:405
+#: ../../source/openeu/tutorial.rst:437
 msgid "You can upload contract documents for the OpenEU procedure."
-msgstr ""
-"Ви можете завантажити документи угоди для відкритих торгів з публікацією "
-"англ. мовою."
+msgstr "Ви можете завантажити документи угоди для відкритих торгів з публікацією англ. мовою."
 
-#: ../../source/openeu/tutorial.rst:407
+#: ../../source/openeu/tutorial.rst:439
 msgid "Let's upload contract document:"
 msgstr "Завантажимо документ угоди:"
 
-#: ../../source/openeu/tutorial.rst:412
-msgid ""
-"`201 Created` response code and `Location` header confirm that this "
-"document was added."
-msgstr ""
-"Код відповіді `201 Created` та заголовок `Location` підтверджують, що "
-"документ було додано."
+#: ../../source/openeu/tutorial.rst:444
+msgid "`201 Created` response code and `Location` header confirm that this document was added."
+msgstr "Код відповіді `201 Created` та заголовок `Location` підтверджують, що документ було додано."
 
-#: ../../source/openeu/tutorial.rst:414
+#: ../../source/openeu/tutorial.rst:446
 msgid "Let's see the list of contract documents:"
 msgstr "Подивимось на список документів пов’язаних з угодою:"
 
-#: ../../source/openeu/tutorial.rst:419
+#: ../../source/openeu/tutorial.rst:451
 msgid "We can upload another contract document:"
 msgstr "Можна завантажити ще один документ угоди:"
 
-#: ../../source/openeu/tutorial.rst:424
-msgid ""
-"`201 Created` response code and `Location` header confirm that the second"
-" document was uploaded."
-msgstr ""
-"Код відповіді `201 Created` та заголовок `Location` підтверджують, що ще "
-"один документ було додано."
+#: ../../source/openeu/tutorial.rst:456
+msgid "`201 Created` response code and `Location` header confirm that the second document was uploaded."
+msgstr "Код відповіді `201 Created` та заголовок `Location` підтверджують, що ще один документ було додано."
 
-#: ../../source/openeu/tutorial.rst:426
-msgid ""
-"By default, document language is Ukrainian. You can can change it and set"
-" another language for the document by assigning appropriate language code"
-" to the `language` field (available options: ``uk``, ``en``, ``ru``). You"
-" can also set document's title (e.g. `title_en`) and description (e.g. "
-"`description_en`) fields. See :ref:`Document` data structure for details."
-msgstr ""
-"За замовчуванням мовою документа є українська. Ви можете змінити це і "
-"встановити іншу мову для документа, призначивши відповідний код мови полю"
-" `language` (можливі варіанти: ``uk``, ``en``, ``ru``). Ви можете також "
-"додати поля назви (наприклад, `title_en`) та опису (наприклад, "
-"`description_en`). Див. структуру даних :ref:`Document` для більш "
-"детальної інформації."
+#: ../../source/openeu/tutorial.rst:458
+msgid "By default, document language is Ukrainian. You can can change it and set another language for the document by assigning appropriate language code to the `language` field (available options: ``uk``, ``en``, ``ru``). You can also set document's title (e.g. `title_en`) and description (e.g. `description_en`) fields. See :ref:`Document` data structure for details."
+msgstr "За замовчуванням мовою документа є українська. Ви можете змінити це і встановити іншу мову для документа, призначивши відповідний код мови полю `language` (можливі варіанти: ``uk``, ``en``, ``ru``). Ви можете також додати поля назви (наприклад, `title_en`) та опису (наприклад, `description_en`). Див. структуру даних :ref:`Document` для більш детальної інформації."
 
-#: ../../source/openeu/tutorial.rst:431
+#: ../../source/openeu/tutorial.rst:463
 msgid "Let's see the list of all added contract documents:"
 msgstr "Подивимось список усіх доданих документів угоди:"
 
-#: ../../source/openeu/tutorial.rst:436
+#: ../../source/openeu/tutorial.rst:468
 msgid "Let's view separate contract document:"
 msgstr "Переглянемо окремий документ угоди:"
 
-#: ../../source/openeu/tutorial.rst:442
+#: ../../source/openeu/tutorial.rst:474
 msgid "Cancelling tender"
 msgstr "Скасування закупівлі"
 
-#: ../../source/openeu/tutorial.rst:444
-msgid ""
-"Tender creator can cancel tender anytime. The following steps should be "
-"applied:"
-msgstr ""
-"Замовник може скасувати закупівлю у будь-який момент. Для цього виконайте"
-" наступні кроки:"
+#: ../../source/openeu/tutorial.rst:476
+msgid "Tender creator can cancel tender anytime. The following steps should be applied:"
+msgstr "Замовник може скасувати закупівлю у будь-який момент. Для цього виконайте наступні кроки:"
 
-#: ../../source/openeu/tutorial.rst:446
+#: ../../source/openeu/tutorial.rst:478
 msgid "Prepare cancellation request."
 msgstr "Приготуйте запит на скасування."
 
-#: ../../source/openeu/tutorial.rst:447
+#: ../../source/openeu/tutorial.rst:479
 msgid "Fill it with the protocol describing the cancellation reasons."
 msgstr "Наповніть його протоколом про причини скасування."
 
-#: ../../source/openeu/tutorial.rst:448
+#: ../../source/openeu/tutorial.rst:480
 msgid "Cancel the tender with the prepared reasons."
 msgstr "Скасуйте закупівлю через подані причини."
 
-#: ../../source/openeu/tutorial.rst:450
-msgid ""
-"Only the request that has been activated (3rd step above) has power to "
-"cancel tender.  I.e.  you have to not only prepare cancellation request "
-"but to activate it as well."
-msgstr ""
-"Запит на скасування, який не пройшов активації (3-й крок), не матиме "
-"сили, тобто, для скасування закупівлі буде обов’язковим не тільки "
-"створити заявку, але і активувати її."
+#: ../../source/openeu/tutorial.rst:482
+msgid "Only the request that has been activated (3rd step above) has power to cancel tender.  I.e.  you have to not only prepare cancellation request but to activate it as well."
+msgstr "Запит на скасування, який не пройшов активації (3-й крок), не матиме сили, тобто, для скасування закупівлі буде обов’язковим не тільки створити заявку, але і активувати її."
 
-#: ../../source/openeu/tutorial.rst:454
+#: ../../source/openeu/tutorial.rst:486
 msgid "See :ref:`cancellation` data structure for details."
-msgstr ""
-"Дивіться структуру запиту :ref:`cancellation` для більш детальної "
-"інформації."
+msgstr "Дивіться структуру запиту :ref:`cancellation` для більш детальної інформації."
 
-#: ../../source/openeu/tutorial.rst:457
+#: ../../source/openeu/tutorial.rst:489
 msgid "Preparing the cancellation request"
 msgstr "Формування запиту на скасування"
 
-#: ../../source/openeu/tutorial.rst:459
+#: ../../source/openeu/tutorial.rst:491
 msgid "You should pass `reason`, `status` defaults to `pending`."
 msgstr "Ви повинні передати змінні `reason`, `status` у стані `pending`."
 
-#: ../../source/openeu/tutorial.rst:461
+#: ../../source/openeu/tutorial.rst:493
 msgid "`id` is autogenerated and passed in the `Location` header of response."
-msgstr ""
-"`id` генерується автоматично і повертається у додатковому заголовку "
-"відповіді `Location`:"
+msgstr "`id` генерується автоматично і повертається у додатковому заголовку відповіді `Location`:"
 
-#: ../../source/openeu/tutorial.rst:466
-msgid ""
-"There are two possible types of cancellation reason: tender was "
-"`cancelled` or `unsuccessful`. By default ``reasonType`` value is "
-"`cancelled`."
-msgstr ""
-"При скасуванні, замовник має визначити один з двох типів ``reasonType``: "
-"торги відмінені - `cancelled`, або торги не відбулися - `unsuccessful`. "
-"За замовчуванням, значення ``reasonType`` рівне `cancelled`."
+#: ../../source/openeu/tutorial.rst:498
+msgid "There are two possible types of cancellation reason: tender was `cancelled` or `unsuccessful`. By default ``reasonType`` value is `cancelled`."
+msgstr "При скасуванні, замовник має визначити один з двох типів ``reasonType``: торги відмінені - `cancelled`, або торги не відбулися - `unsuccessful`. За замовчуванням, значення ``reasonType`` рівне `cancelled`."
 
-#: ../../source/openeu/tutorial.rst:468
+#: ../../source/openeu/tutorial.rst:500
 msgid "You can change ``reasonType`` value to `unsuccessful`."
 msgstr "Ви можете виправити тип на `unsuccessful` (торги не відбулися)."
 
-#: ../../source/openeu/tutorial.rst:474
+#: ../../source/openeu/tutorial.rst:506
 msgid "Filling cancellation with protocol and supplementary documentation"
 msgstr "Наповнення протоколом та іншою супровідною документацією"
 
-#: ../../source/openeu/tutorial.rst:476
+#: ../../source/openeu/tutorial.rst:508
 msgid "Upload the file contents"
 msgstr "Завантажте вміст файлу"
 
-#: ../../source/openeu/tutorial.rst:481
+#: ../../source/openeu/tutorial.rst:513
 msgid "Change the document description and other properties"
 msgstr "Змініть опис документа та інші властивості"
 
-#: ../../source/openeu/tutorial.rst:487
+#: ../../source/openeu/tutorial.rst:519
 msgid "Upload new version of the document"
 msgstr "Завантажте нову версію документа"
 
-#: ../../source/openeu/tutorial.rst:494
+#: ../../source/openeu/tutorial.rst:526
 msgid "Activating the request and cancelling tender"
 msgstr "Активація запиту та скасування закупівлі"
-
-#~ msgid "You may notice 10 day stand-still time set in `qualificationPeriod`."
-#~ msgstr ""
-#~ "Зверніть увагу на період блокування в"
-#~ " 10 днів під час `qualificationPeriod`."
-
-#~ msgid "<<<<<<< HEAD .. _tutorial:"
-#~ msgstr ""
-
-#~ msgid "and then approve bid by changing status to ``pending``:"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "If qualification has been cancelled, new"
-#~ " `Qualification` object is generated for"
-#~ " this participant."
-#~ msgstr ""
-#~ "Якщо кваліфікацію було скасовано, то для"
-#~ " учасника генерується новий об'єкт "
-#~ "кваліфікації."
-
