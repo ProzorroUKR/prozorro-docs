@@ -185,3 +185,11 @@ Schema
     string
 
     ID of related :ref:`lot` or :ref:`item`.
+
+Additionally in :ref:`competitivedialogue` (first stage):
+
+:isDescriptionDecision:
+    bool
+
+    |ocdsDescription|
+    Make document "Description of the decision to purchase".

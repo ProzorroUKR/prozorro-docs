@@ -71,7 +71,7 @@ Schema
     * `resolved`
     * `cancelled`
 
-    Possible values in :ref:`defense`, :ref:`openua` and :ref:`openeu` are:
+    Possible values in :ref:`defense`, :ref:`esco`, :ref:`openua` and :ref:`openeu` are:
 
     * `draft`
     * `claim`
@@ -138,7 +138,7 @@ Schema
 
     Date of tenderer action.
 
-Additionally in :ref:`defense`, :ref:`openua` and :ref:`openeu`:
+Additionally in :ref:`defense`, :ref:`esco`, :ref:`openua` and :ref:`openeu`:
 
     :acceptance:
         bool
