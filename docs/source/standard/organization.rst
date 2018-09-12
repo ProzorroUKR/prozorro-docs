@@ -14,7 +14,7 @@ Schema
 :name:
     string, multilingual
 
-    Additionally in :ref:`openeu`:
+    Additionally in :ref:`openeu` and :ref:`esco`:
 
     uk (title) and en (title_en) translations are required
     
@@ -173,7 +173,7 @@ Schema
     A web address for the contact point/person.
 
 
-Additional fields for :ref:`contracting` and :ref:`openeu`
+Additionally in :ref:`contracting`, :ref:`openeu` and :ref:`competitivedialogue`:
 
 :availableLanguage:
     string

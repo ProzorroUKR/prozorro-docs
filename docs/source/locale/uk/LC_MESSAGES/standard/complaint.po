@@ -3,18 +3,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.api 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-17 12:08+0300\n"
+"POT-Creation-Date: 2018-09-12 11:30+0300\n"
 "PO-Revision-Date: 2018-08-17 14:48+0300\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
 "Language: uk\n"
 "Language-Team: Ukrainian <info@quintagroup.com>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 "
-"&& (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
-"X-Generator: Poedit 2.1.1\n"
 
 #: ../../source/standard/complaint.rst:9
 msgid "Complaint"
@@ -72,10 +71,14 @@ msgstr "Опис запитання."
 msgid "date"
 msgstr ""
 
-#: ../../source/standard/complaint.rst:31 ../../source/standard/complaint.rst:36
-#: ../../source/standard/complaint.rst:41 ../../source/standard/complaint.rst:46
-#: ../../source/standard/complaint.rst:51 ../../source/standard/complaint.rst:56
-#: ../../source/standard/complaint.rst:137 ../../source/standard/complaint.rst:169
+#: ../../source/standard/complaint.rst:31
+#: ../../source/standard/complaint.rst:36
+#: ../../source/standard/complaint.rst:41
+#: ../../source/standard/complaint.rst:46
+#: ../../source/standard/complaint.rst:51
+#: ../../source/standard/complaint.rst:56
+#: ../../source/standard/complaint.rst:137
+#: ../../source/standard/complaint.rst:169
 msgid "string, :ref:`date`, auto-generated"
 msgstr "рядок, :ref:`date`, генерується автоматично"
 
@@ -127,11 +130,16 @@ msgstr "Дата відхилення."
 msgid "status"
 msgstr ""
 
-#: ../../source/standard/complaint.rst:61 ../../source/standard/complaint.rst:87
-#: ../../source/standard/complaint.rst:95 ../../source/standard/complaint.rst:100
-#: ../../source/standard/complaint.rst:114 ../../source/standard/complaint.rst:119
-#: ../../source/standard/complaint.rst:127 ../../source/standard/complaint.rst:132
-#: ../../source/standard/complaint.rst:149 ../../source/standard/complaint.rst:164
+#: ../../source/standard/complaint.rst:61
+#: ../../source/standard/complaint.rst:87
+#: ../../source/standard/complaint.rst:95
+#: ../../source/standard/complaint.rst:100
+#: ../../source/standard/complaint.rst:114
+#: ../../source/standard/complaint.rst:119
+#: ../../source/standard/complaint.rst:127
+#: ../../source/standard/complaint.rst:132
+#: ../../source/standard/complaint.rst:149
+#: ../../source/standard/complaint.rst:164
 #: ../../source/standard/complaint.rst:174
 msgid "string"
 msgstr "рядок"
@@ -140,44 +148,55 @@ msgstr "рядок"
 msgid "Possible values are:"
 msgstr "Можливі значення:"
 
-#: ../../source/standard/complaint.rst:65 ../../source/standard/complaint.rst:76
+#: ../../source/standard/complaint.rst:65
+#: ../../source/standard/complaint.rst:76
 msgid "`draft`"
 msgstr "`draft` - чорновик, початковий етап"
 
-#: ../../source/standard/complaint.rst:66 ../../source/standard/complaint.rst:77
+#: ../../source/standard/complaint.rst:66
+#: ../../source/standard/complaint.rst:77
 #: ../../source/standard/complaint.rst:91
 msgid "`claim`"
 msgstr "`claim` - вимога"
 
-#: ../../source/standard/complaint.rst:67 ../../source/standard/complaint.rst:78
+#: ../../source/standard/complaint.rst:67
+#: ../../source/standard/complaint.rst:78
 msgid "`answered`"
 msgstr "`answered` - дано відповідь"
 
-#: ../../source/standard/complaint.rst:68 ../../source/standard/complaint.rst:79
+#: ../../source/standard/complaint.rst:68
+#: ../../source/standard/complaint.rst:79
 msgid "`pending`"
 msgstr "`pending` - не вирішено, ще обробляється"
 
-#: ../../source/standard/complaint.rst:69 ../../source/standard/complaint.rst:80
+#: ../../source/standard/complaint.rst:69
+#: ../../source/standard/complaint.rst:80
 #: ../../source/standard/complaint.rst:104
 msgid "`invalid`"
 msgstr "`invalid` - недійсно"
 
-#: ../../source/standard/complaint.rst:70 ../../source/standard/complaint.rst:81
+#: ../../source/standard/complaint.rst:70
+#: ../../source/standard/complaint.rst:81
 #: ../../source/standard/complaint.rst:105
 msgid "`declined`"
 msgstr "`declined` - відхилено"
 
-#: ../../source/standard/complaint.rst:71 ../../source/standard/complaint.rst:82
+#: ../../source/standard/complaint.rst:71
+#: ../../source/standard/complaint.rst:82
 #: ../../source/standard/complaint.rst:106
 msgid "`resolved`"
 msgstr "`resolved` - вирішено"
 
-#: ../../source/standard/complaint.rst:72 ../../source/standard/complaint.rst:83
+#: ../../source/standard/complaint.rst:72
+#: ../../source/standard/complaint.rst:83
 msgid "`cancelled`"
 msgstr "`cancelled` - відхилено"
 
 #: ../../source/standard/complaint.rst:74
-msgid "Possible values in :ref:`defense`, :ref:`openua` and :ref:`openeu` are:"
+#, fuzzy
+msgid ""
+"Possible values in :ref:`defense`, :ref:`esco`, :ref:`openua` and "
+":ref:`openeu` are:"
 msgstr "Можливі значення у :ref:`defense`, :ref:`openua` та :ref:`openeu`:"
 
 #: ../../source/standard/complaint.rst:84
@@ -216,11 +235,13 @@ msgstr "Можливі значення типу вирішення:"
 msgid "satisfied"
 msgstr ""
 
-#: ../../source/standard/complaint.rst:109 ../../source/standard/complaint.rst:144
+#: ../../source/standard/complaint.rst:109
+#: ../../source/standard/complaint.rst:144
 msgid "bool"
 msgstr "булеве значення"
 
-#: ../../source/standard/complaint.rst:111 ../../source/standard/complaint.rst:146
+#: ../../source/standard/complaint.rst:111
+#: ../../source/standard/complaint.rst:146
 msgid "Claim is satisfied?"
 msgstr "Вимога задовільнена?"
 
@@ -273,7 +294,10 @@ msgid "Date of tenderer action."
 msgstr "Дата дії учасника."
 
 #: ../../source/standard/complaint.rst:141
-msgid "Additionally in :ref:`defense`, :ref:`openua` and :ref:`openeu`:"
+#, fuzzy
+msgid ""
+"Additionally in :ref:`defense`, :ref:`esco`, :ref:`openua` and "
+":ref:`openeu`:"
 msgstr "Можливі значення у :ref:`defense`, :ref:`openua` and :ref:`openeu`:"
 
 #: ../../source/standard/complaint.rst
@@ -339,3 +363,4 @@ msgstr ""
 #: ../../source/standard/complaint.rst:176
 msgid "Place of review."
 msgstr "Місце розгляду."
+

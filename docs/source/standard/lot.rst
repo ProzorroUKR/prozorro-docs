@@ -29,6 +29,8 @@ Schema
 
    Total available tender lot budget. Bids greater then ``value`` will be rejected.
 
+   Absent in :ref:`esco`
+
 :guarantee:
     :ref:`Guarantee`
 
@@ -48,7 +50,7 @@ Schema
    * `currency` should either be absent or match `Lot.value.currency`
    * `valueAddedTaxIncluded` should either be absent or match `Lot.value.valueAddedTaxIncluded`
 
-   Absent in :ref:`limited`
+   Absent in :ref:`limited` and :ref:`esco`
 
 :auctionPeriod:
    :ref:`period`, read-only
@@ -78,9 +80,40 @@ Schema
 
    Status of the Lot.
 
+Additionally in :ref:`esco`:
 
-Workflow in :ref:`limited` and :ref:`openeu`
---------------------------------------------
+:minimalStepPercentage:
+   float, required
+
+  Minimum step increment of the energy service contract performance indicator during auction that is calculated on participant’s bid. Possible values: from 0.005 to 0.03 (from 0.5% to 3% respectively) with 3-digit precision after comma.
+
+:fundingKind:
+    string, required
+
+:Lot funding source:
+
+    Possible values:
+
+    * budget -  Budget funding.
+    * other - Supplier funding.
+
+    Default value: other
+
+:yearlyPaymentsPercentageRange:
+    float, required
+
+    Fixed percentage of participant's cost reduction sum, with 3-digit precision after comma.
+
+    Possible values:
+
+   * from 0.8 to 1 (from 80% to 100% respectively) if lot:fundingKind:other.
+   * from 0 to 0.8 (from 0% to 80% respectively) if lot:fundingKind:budget.
+
+     Input precision - 3 digits after comma.
+
+
+Workflow in :ref:`limited`, :ref:`esco` and :ref:`openeu`
+---------------------------------------------------------
 
 .. graphviz::
 

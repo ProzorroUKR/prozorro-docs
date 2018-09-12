@@ -55,7 +55,7 @@ Schema
     Id of related :ref:`lot`.
 
 
-Additionally in :ref:`openeu` and :ref:`openua`:
+Additionally in :ref:`openeu`, :ref:`openua` and :ref:`esco`:
 
 :reasonType:
     string
