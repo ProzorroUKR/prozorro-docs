@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/97dd0ca9a0f741a6ad5628c6873d1de9?acc_token=4da34917776743398aa0bb0b7a639d70 HTTP/1.0
+PATCH /api/2.4/tenders/e925b9a969c14e6e91dc2236fb288798?acc_token=da27ac85a9134c97b2ae4cc678001521 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 120
 Content-Type: application/json
@@ -7,7 +7,7 @@ DATA:
 {
   "data": {
     "tenderPeriod": {
-      "endDate": "2017-06-29T15:53:21.108184+03:00"
+      "endDate": "2018-08-23T17:58:56.939049+03:00"
     }, 
     "value": {
       "currency": "UAH", 
@@ -22,51 +22,50 @@ Content-Type: application/json; charset=UTF-8
   "data": {
     "procurementMethod": "open", 
     "complaintPeriod": {
-      "startDate": "2017-06-08T15:53:20.921360+03:00", 
-      "endDate": "2017-06-25T00:00:00+03:00"
+      "startDate": "2018-08-02T17:58:56.641700+03:00", 
+      "endDate": "2018-08-19T00:00:00+03:00"
     }, 
     "enquiryPeriod": {
-      "startDate": "2017-06-08T15:53:20.921360+03:00", 
-      "clarificationsUntil": "2017-06-22T15:53:21.108184+03:00", 
-      "endDate": "2017-06-19T15:53:21.108184+03:00", 
-      "invalidationDate": "2017-06-21T15:53:21.220290+03:00"
+      "startDate": "2018-08-02T17:58:56.641700+03:00", 
+      "clarificationsUntil": "2018-08-16T17:58:56.939049+03:00", 
+      "endDate": "2018-08-13T17:58:56.939049+03:00", 
+      "invalidationDate": "2018-08-15T17:58:57.043798+03:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "next_check": "2017-06-29T15:53:21.108184+03:00", 
+    "next_check": "2018-08-23T17:58:56.939049+03:00", 
     "procuringEntity": {
       "contactPoint": {
-        "url": "http://sch10.edu.vn.ua/", 
-        "name": "Куца Світлана Валентинівна", 
-        "telephone": "+380 (432) 46-53-02"
+        "name": "Державне управління справами", 
+        "telephone": "0440000000"
       }, 
       "identifier": {
         "scheme": "UA-EDR", 
-        "id": "21725150", 
-        "legalName": "Заклад \"Загальноосвітня школа І-ІІІ ступенів № 10 Вінницької міської ради\""
+        "id": "00037256", 
+        "uri": "http://www.dus.gov.ua/"
       }, 
-      "name": "ЗОСШ #10 м.Вінниці", 
-      "kind": "special", 
+      "name": "Державне управління справами", 
+      "kind": "general", 
       "address": {
-        "postalCode": "21027", 
+        "postalCode": "01220", 
         "countryName": "Україна", 
-        "streetAddress": "вул. Стахурського. 22", 
-        "region": "м. Вінниця", 
-        "locality": "м. Вінниця"
+        "streetAddress": "вул. Банкова, 11, корпус 1", 
+        "region": "м. Київ", 
+        "locality": "м. Київ"
       }
     }, 
     "questions": [
       {
         "description": "Просимо додати таблицю потрібної калорійності харчування", 
-        "dateAnswered": "2017-06-21T15:53:20.818993+03:00", 
+        "dateAnswered": "2018-08-15T17:58:56.473550+03:00", 
         "title": "Калорійність", 
-        "date": "2017-06-21T15:53:20.738523+03:00", 
+        "date": "2018-08-15T17:58:56.354569+03:00", 
         "answer": "Таблицю додано в файлі \"Kalorijnist.xslx\"", 
-        "id": "d490583bca4b41d68e36b2b53a5f4caf", 
+        "id": "fc3418947a9247c394f3484ad8d6fe3a", 
         "questionOf": "tender"
       }
     ], 
     "owner": "broker", 
-    "id": "97dd0ca9a0f741a6ad5628c6873d1de9", 
+    "id": "e925b9a969c14e6e91dc2236fb288798", 
     "guarantee": {
       "currency": "USD", 
       "amount": 8.0
@@ -75,48 +74,48 @@ Content-Type: application/json; charset=UTF-8
       {
         "author": "tender_owner", 
         "title": "Notice.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/97dd0ca9a0f741a6ad5628c6873d1de9/documents/834ae499148f4eb7996d8db7dcd8fd14?download=6f58464f57364eff809716a21346d568", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/e925b9a969c14e6e91dc2236fb288798/documents/69a1c55e7e3c49f5941b4838b90bf4e9?download=e2c3826b90064bd488205cf7ebd8d036", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T15:53:20.439891+03:00", 
-        "id": "834ae499148f4eb7996d8db7dcd8fd14", 
-        "dateModified": "2017-06-21T15:53:20.439925+03:00"
+        "datePublished": "2018-08-15T17:58:55.949710+03:00", 
+        "id": "69a1c55e7e3c49f5941b4838b90bf4e9", 
+        "dateModified": "2018-08-15T17:58:55.949732+03:00"
       }, 
       {
         "author": "tender_owner", 
         "title": "AwardCriteria.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/97dd0ca9a0f741a6ad5628c6873d1de9/documents/8eb8c964d53342919cf982b74ce28eee?download=1b5689bd04d94e68813052edcc6e9eaa", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/e925b9a969c14e6e91dc2236fb288798/documents/5427fc3cb6ae4f1393cefdfbb3bac98f?download=7df71e5090514708979edbbd10d12ac1", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T15:53:20.531460+03:00", 
-        "id": "8eb8c964d53342919cf982b74ce28eee", 
-        "dateModified": "2017-06-21T15:53:20.531494+03:00"
+        "datePublished": "2018-08-15T17:58:56.087768+03:00", 
+        "id": "5427fc3cb6ae4f1393cefdfbb3bac98f", 
+        "dateModified": "2018-08-15T17:58:56.087788+03:00"
       }, 
       {
         "author": "tender_owner", 
         "title": "AwardCriteria-2.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/97dd0ca9a0f741a6ad5628c6873d1de9/documents/8eb8c964d53342919cf982b74ce28eee?download=70093c4ab022423eb1acf14a6a34ca4b", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/e925b9a969c14e6e91dc2236fb288798/documents/5427fc3cb6ae4f1393cefdfbb3bac98f?download=704ce2f92abd4e8a95e96caf8d91eeef", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T15:53:20.531460+03:00", 
-        "id": "8eb8c964d53342919cf982b74ce28eee", 
-        "dateModified": "2017-06-21T15:53:20.635230+03:00"
+        "datePublished": "2018-08-15T17:58:56.087768+03:00", 
+        "id": "5427fc3cb6ae4f1393cefdfbb3bac98f", 
+        "dateModified": "2018-08-15T17:58:56.223267+03:00"
       }
     ], 
     "title": "футляри до державних нагород", 
-    "tenderID": "UA-2017-06-21-000001", 
-    "dateModified": "2017-06-21T15:53:21.224504+03:00", 
+    "tenderID": "UA-2018-08-15-000001", 
+    "dateModified": "2018-08-15T17:58:57.046537+03:00", 
     "status": "active.tendering", 
     "tenderPeriod": {
-      "startDate": "2017-06-08T15:53:20.921360+03:00", 
-      "endDate": "2017-06-29T15:53:21.108184+03:00"
+      "startDate": "2018-08-02T17:58:56.641700+03:00", 
+      "endDate": "2018-08-23T17:58:56.939049+03:00"
     }, 
     "auctionPeriod": {
-      "startDate": "2017-06-23T15:53:20.921360+03:00", 
-      "shouldStartAfter": "2017-06-30T00:00:00+03:00"
+      "startDate": "2018-08-17T17:58:56.641700+03:00", 
+      "shouldStartAfter": "2018-08-24T00:00:00+03:00"
     }, 
     "procurementMethodType": "aboveThresholdUA", 
-    "date": "2017-06-21T15:53:20.034093+03:00", 
+    "date": "2018-08-15T17:58:55.504856+03:00", 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35.0, 
@@ -124,17 +123,18 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "items": [
       {
-        "description": "Послуги шкільних їдалень", 
+        "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
-          "description": "Test", 
-          "id": "37810000-9"
+          "description": "Cartons", 
+          "id": "44617100-9"
         }, 
+        "description_en": "Cases for state awards", 
         "additionalClassifications": [
           {
             "scheme": "ДКПП", 
             "id": "17.21.1", 
-            "description": "Послуги шкільних їдалень"
+            "description": "папір і картон гофровані, паперова й картонна тара"
           }
         ], 
         "deliveryAddress": {
@@ -145,15 +145,15 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-11T15:53:06.068598+03:00", 
-          "endDate": "2017-08-10T15:53:06.068650+03:00"
+          "startDate": "2018-08-17T17:58:40.937227+03:00", 
+          "endDate": "2018-08-20T17:58:40.937227+03:00"
         }, 
-        "id": "fc733ce56c434220bb9e7418b0de6162", 
+        "id": "ffca05abb6ae44e1b2074ee5fca2f20c", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
-        "quantity": 1
+        "quantity": 5
       }
     ], 
     "value": {

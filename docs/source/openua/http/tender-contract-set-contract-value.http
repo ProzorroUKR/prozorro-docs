@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/97dd0ca9a0f741a6ad5628c6873d1de9/contracts/c7cf2c266b524616bac79e27f7eef475?acc_token=4da34917776743398aa0bb0b7a639d70 HTTP/1.0
+PATCH /api/2.4/tenders/e925b9a969c14e6e91dc2236fb288798/contracts/9267fdc2c1084827829950dff410b71c?acc_token=da27ac85a9134c97b2ae4cc678001521 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 36
 Content-Type: application/json
@@ -19,17 +19,18 @@ Content-Type: application/json; charset=UTF-8
     "status": "pending", 
     "items": [
       {
-        "description": "Послуги шкільних їдалень", 
+        "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
-          "description": "Test", 
-          "id": "37810000-9"
+          "description": "Cartons", 
+          "id": "44617100-9"
         }, 
+        "description_en": "Cases for state awards", 
         "additionalClassifications": [
           {
             "scheme": "ДКПП", 
             "id": "17.21.1", 
-            "description": "Послуги шкільних їдалень"
+            "description": "папір і картон гофровані, паперова й картонна тара"
           }
         ], 
         "deliveryAddress": {
@@ -40,15 +41,15 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-11T15:53:06.068598+03:00", 
-          "endDate": "2017-08-10T15:53:06.068650+03:00"
+          "startDate": "2018-08-17T17:58:40.937227+03:00", 
+          "endDate": "2018-08-20T17:58:40.937227+03:00"
         }, 
-        "id": "fc733ce56c434220bb9e7418b0de6162", 
+        "id": "ffca05abb6ae44e1b2074ee5fca2f20c", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
-        "quantity": 1
+        "quantity": 5
       }
     ], 
     "suppliers": [
@@ -78,9 +79,9 @@ Content-Type: application/json; charset=UTF-8
       "amount": 238.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "awardID": "62e97a4e15234f899c0ecc9c56860603", 
-    "id": "c7cf2c266b524616bac79e27f7eef475", 
-    "contractID": "UA-2017-06-21-000001-1"
+    "awardID": "719d15146bb84fbcaf717031f8e7a0c7", 
+    "id": "9267fdc2c1084827829950dff410b71c", 
+    "contractID": "UA-2018-08-15-000001-1"
   }
 }
 

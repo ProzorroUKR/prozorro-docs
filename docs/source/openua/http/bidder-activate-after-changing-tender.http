@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/97dd0ca9a0f741a6ad5628c6873d1de9/bids/f489e65e56b646f4a5948df764a5a2f7?acc_token=dc58fc5e3b344a5db77a71f006efff76 HTTP/1.0
+PATCH /api/2.4/tenders/e925b9a969c14e6e91dc2236fb288798/bids/8cec98f2d2d44fe8998058ffb468c0a9?acc_token=e38a8938755d4a508ac112fff25a327c HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 30
 Content-Type: application/json
@@ -18,16 +18,16 @@ Content-Type: application/json; charset=UTF-8
     "documents": [
       {
         "title": "Proposal.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/97dd0ca9a0f741a6ad5628c6873d1de9/bids/f489e65e56b646f4a5948df764a5a2f7/documents/85a461ee170a40d2bc84045c973b57b6?download=be65bb83b7124b4e8af2e2d230eb0f53", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/e925b9a969c14e6e91dc2236fb288798/bids/8cec98f2d2d44fe8998058ffb468c0a9/documents/18c799f08ed34e009a0f8827a12f62cb?download=8e6e36aeb19e4819ba190c831e802b03", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T15:53:21.485925+03:00", 
-        "id": "85a461ee170a40d2bc84045c973b57b6", 
-        "dateModified": "2017-06-21T15:53:21.485962+03:00"
+        "datePublished": "2018-08-15T17:58:57.333678+03:00", 
+        "id": "18c799f08ed34e009a0f8827a12f62cb", 
+        "dateModified": "2018-08-15T17:58:57.333697+03:00"
       }
     ], 
     "selfEligible": true, 
-    "id": "f489e65e56b646f4a5948df764a5a2f7", 
+    "id": "8cec98f2d2d44fe8998058ffb468c0a9", 
     "value": {
       "currency": "UAH", 
       "amount": 500.0, 
@@ -56,7 +56,7 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "date": "2017-06-21T15:53:21.328392+03:00", 
+    "date": "2018-08-15T17:58:57.130210+03:00", 
     "selfQualified": true
   }
 }

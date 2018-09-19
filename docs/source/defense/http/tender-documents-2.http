@@ -1,4 +1,4 @@
-GET /api/2.3/tenders/d3dba9240047439492b162acda141abd/documents?acc_token=4d2022f0685446d6ab06c53b51e10410 HTTP/1.0
+GET /api/2.4/tenders/a7482daaaa934bffb176efde3bf39072/documents?acc_token=26683abba0f94098a6efc1ac8109f06a HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: api-sandbox.openprocurement.org
 
@@ -7,22 +7,24 @@ Content-Type: application/json; charset=UTF-8
 {
   "data": [
     {
+      "author": "tender_owner", 
       "title": "Notice.pdf", 
-      "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/d3dba9240047439492b162acda141abd/documents/31049c2f5b9144868d88a0160c934d60?download=636b9b3d3667402fa489569bf305f564", 
+      "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/a7482daaaa934bffb176efde3bf39072/documents/bfab620c868c49169cb34cddb5e8992c?download=ddb4897818ab4e44a1d63cd022f48242", 
       "format": "application/pdf", 
       "documentOf": "tender", 
-      "datePublished": "2017-06-21T16:09:25.183718+03:00", 
-      "id": "31049c2f5b9144868d88a0160c934d60", 
-      "dateModified": "2017-06-21T16:09:25.183751+03:00"
+      "datePublished": "2018-08-15T10:18:10.328259+03:00", 
+      "id": "bfab620c868c49169cb34cddb5e8992c", 
+      "dateModified": "2018-08-15T10:18:10.328281+03:00"
     }, 
     {
+      "author": "tender_owner", 
       "title": "AwardCriteria.pdf", 
-      "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/d3dba9240047439492b162acda141abd/documents/9560b6640681409fa8a6038826443683?download=62864d28d1564434b77f6a964f1123fb", 
+      "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/a7482daaaa934bffb176efde3bf39072/documents/49bc86cd3cfc4e82bf8f2bc6af524f4e?download=bf0247b2938e489ba4da11e95a584a20", 
       "format": "application/pdf", 
       "documentOf": "tender", 
-      "datePublished": "2017-06-21T16:09:25.274380+03:00", 
-      "id": "9560b6640681409fa8a6038826443683", 
-      "dateModified": "2017-06-21T16:09:25.274416+03:00"
+      "datePublished": "2018-08-15T10:18:10.458464+03:00", 
+      "id": "49bc86cd3cfc4e82bf8f2bc6af524f4e", 
+      "dateModified": "2018-08-15T10:18:10.458485+03:00"
     }
   ]
 }
