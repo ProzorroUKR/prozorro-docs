@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2015, Quintagroup, Ltd
+# This file is distributed under the same license as the openprocurement.api
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: openprocurement.api 2.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-20 08:23+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/cfaua/source/acceleration.rst:4
+msgid "Acceleration mode for sandbox"
+msgstr ""
+
+#: ../../source/cfaua/source/acceleration.rst:6
+msgid ""
+"Acceleration mode was developed to enable procedures' testing in the "
+"sandbox and to reduce time frames of these procedures."
+msgstr ""
+
+#: ../../source/cfaua/source/acceleration.rst:8
+msgid "**This mode will work only in the sandbox**."
+msgstr ""
+
+#: ../../source/cfaua/source/acceleration.rst:10
+msgid "To enable acceleration mode you will need to:"
+msgstr ""
+
+#: ../../source/cfaua/source/acceleration.rst:12
+msgid "add additional parameter `mode` with a value ``test``;"
+msgstr ""
+
+#: ../../source/cfaua/source/acceleration.rst:13
+msgid ""
+"set ``quick, accelerator=1440`` as text value for "
+"`procurementMethodDetails`. This parameter will accelerate auction "
+"periods. The number 1440 shows that restrictions and time frames will be "
+"reduced in 1440 times."
+msgstr ""
+
+#: ../../source/cfaua/source/acceleration.rst:14
+msgid ""
+"set ``quick`` as a value for `submissionMethodDetails`. This parameter "
+"works only with ``mode = \"test\"`` and will speed up auction start date."
+msgstr ""
+
+#: ../../source/cfaua/source/acceleration.rst:18
+msgid "Additional options"
+msgstr ""
+
+#: ../../source/cfaua/source/acceleration.rst:20
+msgid "**no-auction option**"
+msgstr ""
+
+#: ../../source/cfaua/source/acceleration.rst:22
+msgid ""
+"To enable this option: set ``quick(mode:no-auction)`` as a value for "
+"`submissionMethodDetails`."
+msgstr ""
+
+#: ../../source/cfaua/source/acceleration.rst:24
+msgid ""
+"``no-auction`` option allows conducting tender excluding auction stage. "
+"This means that `active.auction` stage will be completed based on the "
+"primary bid proposals; `auctionURL` will not be created, so auction can "
+"not be viewed."
+msgstr ""
+
+#: ../../source/cfaua/source/acceleration.rst:26
+msgid "**fast-forward option**"
+msgstr ""
+
+#: ../../source/cfaua/source/acceleration.rst:28
+msgid ""
+"To enable this option: set ``quick(mode:fast-forward)`` as a value for "
+"`submissionMethodDetails`."
+msgstr ""
+
+#: ../../source/cfaua/source/acceleration.rst:30
+msgid ""
+"``fast-forward`` option allows skipping auction stage. This means that "
+"`active.auction` stage will be completed based on the primary bid "
+"proposals; although `auctionURL` will be created and auction can be "
+"viewed."
+msgstr ""
+

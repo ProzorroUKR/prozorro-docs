@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2015, Quintagroup, Ltd
+# This file is distributed under the same license as the openprocurement.api
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: openprocurement.api 2.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-20 08:23+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/cfaua/source/tenders.rst:5
+msgid "Retrieving Tender Information"
+msgstr ""
+
+#: ../../source/cfaua/source/tenders.rst:8
+msgid "Getting list of all tenders"
+msgstr ""
+
+#: ../../source/cfaua/source/tenders.rst:18
+msgid "Sorting"
+msgstr ""
+
+#: ../../source/cfaua/source/tenders.rst:19
+msgid "Tenders retuned are sorted by modification time."
+msgstr ""
+
+#: ../../source/cfaua/source/tenders.rst:22
+msgid "Limiting number of Tenders returned"
+msgstr ""
+
+#: ../../source/cfaua/source/tenders.rst:24
+msgid ""
+"You can control the number of `data` entries in the tenders feed (batch "
+"size) with `limit` parameter. If not specified, data is being returned in"
+" batches of 100 elements."
+msgstr ""
+
+#: ../../source/cfaua/source/tenders.rst:29
+msgid "Batching"
+msgstr ""
+
+#: ../../source/cfaua/source/tenders.rst:31
+msgid "The response contains `next_page` element with the following properties:"
+msgstr ""
+
+#: ../../source/cfaua/source/tenders.rst
+msgid "offset"
+msgstr ""
+
+#: ../../source/cfaua/source/tenders.rst:34
+msgid ""
+"This is the parameter you have to add to the original request you made to"
+" get next page."
+msgstr ""
+
+#: ../../source/cfaua/source/tenders.rst
+msgid "path"
+msgstr ""
+
+#: ../../source/cfaua/source/tenders.rst:38
+msgid ""
+"This is path section of URL with original parameters and `offset` "
+"parameter added/replaced above."
+msgstr ""
+
+#: ../../source/cfaua/source/tenders.rst
+msgid "uri"
+msgstr ""
+
+#: ../../source/cfaua/source/tenders.rst:42
+msgid "The full version of URL for next page."
+msgstr ""
+
+#: ../../source/cfaua/source/tenders.rst:44
+msgid ""
+"If next page request returns no data (i.e. empty array) then there is "
+"little sense in fetching further pages."
+msgstr ""
+
+#: ../../source/cfaua/source/tenders.rst:48
+msgid "Synchronizing"
+msgstr ""
+
+#: ../../source/cfaua/source/tenders.rst:50
+msgid ""
+"It is often necessary to be able to syncronize central database changes "
+"with other database (we'll call it \"local\").  The default sorting \"by "
+"modification date\" together with Batching mechanism allows one to "
+"implement synchronization effectively.  The synchronization process can "
+"go page by page until there is no new data returned.  Then the "
+"synchronizer has to pause for a while to let central database register "
+"some changes and attempt fetching subsequent page.  The `next_page` "
+"guarantees that all changes from the last request are included in the new"
+" batch."
+msgstr ""
+
+#: ../../source/cfaua/source/tenders.rst:59
+msgid "The safe frequency of synchronization requests is once per 5 minutes."
+msgstr ""
+
+#: ../../source/cfaua/source/tenders.rst:62
+msgid "Reading the individual tender information"
+msgstr ""
+
+#: ../../source/cfaua/source/tenders.rst:72
+msgid "Reading the tender documents list"
+msgstr ""
+
+#: ../../source/cfaua/source/tenders.rst:82
+msgid "Example request:"
+msgstr ""
+
+#: ../../source/cfaua/source/tenders.rst:88
+msgid "Reading the tender document"
+msgstr ""
+
+#: ../../source/cfaua/source/tenders.rst:90
+msgid ""
+"The document can be retrieved by requesting the url returned in "
+"structures from document list request in `data[*].url`.  It is safe to "
+"provide the download URL to end user for download."
+msgstr ""
+

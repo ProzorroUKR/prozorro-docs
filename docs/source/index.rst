@@ -21,6 +21,7 @@ Contents:
    openeu/index
    limited/index
    defense/index
+   cfaua/index
    contracting/index
    performance
    cluster

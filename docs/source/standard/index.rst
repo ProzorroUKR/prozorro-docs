@@ -10,6 +10,7 @@ areas that were not covered by it.
 .. toctree::
    :maxdepth: 1
 
+   agreement
    award
    bid
    cancellation
@@ -25,4 +26,5 @@ areas that were not covered by it.
    question
    procuringentity
    tender
+   unitPrice
    util

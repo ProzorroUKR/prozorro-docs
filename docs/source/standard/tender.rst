@@ -146,6 +146,11 @@ Schema
 
     All qualifications (disqualifications and awards).
 
+:agreements:
+    List of :ref:`Agreement` objects
+
+    Only in :ref:`cfaua`
+
 :contracts:
     List of :ref:`Contract` objects
 
@@ -292,12 +297,49 @@ Schema
    :`cancelled`:
        Cancelled tender (cancelled)
 
+   Different in :ref:`cfaua`:
+
+   :`active.tendering`:
+       Tendering period (tendering)
+   :`active.pre-qualification`: 
+       Pre-qualification period (pre-qualification)
+   :`active.pre-qualification.stand-still`: 
+       Standstill before auction
+   :`active.auction`:
+       Auction period (auction)
+   :`active.qualification`:
+       Winners qualification (qualification)
+   :`active.qualification.stand-still`:
+       Standstill before contract signing
+   :`active.awarded`:
+       Standstill period (standstill)
+   :`unsuccessful`:
+       Unsuccessful tender (unsuccessful)
+   :`complete`:
+       Complete tender (complete)
+   :`cancelled`:
+       Cancelled tender (cancelled)
+
 :lots:
    List of :ref:`lot` objects.
 
    Contains all tender lots.
 
    In :ref:`limited`: Only if `tender.procurementMethodType` is `negotiation` or `negotiation.quick`.
+
+:agreementDuration:
+   string, required
+   
+   Duration of agreement. Maximum 4 years. Format ISO8601 (PnYnMnDTnHnMnS)
+
+   Only in :ref:`cfaua`
+
+:maxAwardsCount:
+   string, required
+   
+   Maximum number of required Awards
+
+   Only in :ref:`cfaua`
 
 :qualifications:
 
