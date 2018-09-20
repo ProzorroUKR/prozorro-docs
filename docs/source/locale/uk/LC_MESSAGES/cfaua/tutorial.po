@@ -1,0 +1,627 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2015, Quintagroup, Ltd
+# This file is distributed under the same license as the openprocurement.api
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: openprocurement.api 2.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-20 10:24+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/cfaua/tutorial.rst:4
+msgid "Tutorial"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:7
+msgid "Exploring basic rules"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:9
+msgid "Let's try exploring the `/tenders` endpoint:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:14
+msgid "Just invoking it reveals empty set."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:16
+msgid "Now let's attempt creating some tender:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:21
+msgid "Error states that the only accepted Content-Type is `application/json`."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:23
+msgid "Let's satisfy the Content-type requirement:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:28
+msgid "Error states that no `data` has been found in JSON body."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:36
+msgid "Creating tender"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:38
+msgid "Let's create tender with the minimal (only required) data set:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:43
+msgid ""
+"Success! Now we can see that new object was created. Response code is "
+"`201` and `Location` response header reports the location of the created "
+"object.  The body of response reveals the information about the created "
+"tender: its internal `id` (that matches the `Location` segment), its "
+"official `tenderID` and `dateModified` datestamp stating the moment in "
+"time when tender was last modified. Pay attention to the "
+"`procurementMethodType`. Note that tender is created with "
+"`active.enquiries` status."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:51
+msgid ""
+"Let's access the URL of the created object (the `Location` header of the "
+"response):"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:53
+msgid ""
+"The peculiarity of the Close FrameworkAgreement UA procedure is that "
+"``procurementMethodType`` was changed from ``belowThreshold`` to "
+"``closeFrameworkAgreementUA``. Also there is no opportunity to set up "
+"``enquiryPeriod``, it will be assigned automatically."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:62
+msgid "We can see the same response we got after creating tender."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:64
+msgid "Let's see what listing of tenders reveals us:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:69
+msgid ""
+"We do see the internal `id` of a tender (that can be used to construct "
+"full URL by prepending `http://api-"
+"sandbox.openprocurement.org/api/0/tenders/`) and its `dateModified` "
+"datestamp."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:74
+msgid "Modifying tender"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:76
+msgid ""
+"Let's update tender by supplementing it with all other essential "
+"properties:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:83
+msgid ""
+"We see the added properies have merged with existing tender data. "
+"Additionally, the `dateModified` property was updated to reflect the last"
+" modification datestamp."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:85
+msgid "Checking the listing again reflects the new modification date:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:90
+msgid "Procuring entity can set bid guarantee:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:100
+msgid "Uploading documentation"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:102
+msgid ""
+"Procuring entity can upload PDF files into the created tender. Uploading "
+"should follow the :ref:`upload` rules."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:108
+msgid ""
+"`201 Created` response code and `Location` header confirm document "
+"creation. We can additionally query the `documents` collection API "
+"endpoint to confirm the action:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:115
+msgid ""
+"The single array element describes the uploaded document. We can upload "
+"more documents:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:120
+msgid "And again we can confirm that there are two documents uploaded."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:125
+msgid ""
+"In case we made an error, we can reupload the document over the older "
+"version:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:130
+msgid "And we can see that it is overriding the original version:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:142
+msgid "Enquiries"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:144
+msgid ""
+"When tender has ``active.tendering`` status and "
+"``Tender.enqueryPeriod.endDate`` hasn't come yet, interested parties can "
+"ask questions:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:150
+msgid "Procuring entity can answer them:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:155
+msgid "And one can retrieve the questions list:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:160
+msgid "And individual answer:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:166
+msgid "Enquiries can be made only during ``Tender.enqueryPeriod``"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:178
+msgid "Registering bid"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:181
+msgid "Step-by-step registration"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:183
+msgid "Tender status ``active.tendering`` allows registration of bids."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:185
+msgid "Bidder can register a bid in `draft` status:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:190
+msgid "And activate a bid:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:196
+msgid "Proposal Uploading"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:198
+msgid "Then bidder should upload proposal technical document(s):"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:204
+msgid "Confidentiality"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:206
+msgid "Documents can be either public or private:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:208
+msgid ""
+"Privacy settings can be changed only for the latest version of the "
+"document."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:209
+msgid ""
+"When you upload new version of the document, privacy settings are copied "
+"from the previous version."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:210
+msgid ""
+"Privacy settings can be changed only during `tenderPeriod` (with "
+"`active.tendering` status)."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:211
+msgid ""
+"If tender has status `active.qualification` winner can upload only public"
+" documents."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:213
+msgid "Let's upload private document:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:218
+msgid ""
+"To define the document as \"private\" - `confidentiality` and "
+"`confidentialityRationale` fields should be set."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:220
+msgid ""
+"`confidentiality` field value can be either `buyerOnly` (document is "
+"private) or `public` (document is publicly accessible)."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:222
+msgid ""
+"Content of private documents (`buyerOnly`) can be accessed only by "
+"procuring entity or by participant who uploaded them."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:224
+msgid ""
+"`confidentialityRationale` field is required only for private documents "
+"and should contain at least 30 characters."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:226
+msgid "Let's mark the document as \"private\":"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:231
+msgid "It is possible to check the uploaded documents:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:239
+msgid "Financial, eligibility and qualification documents uploading"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:241
+msgid ""
+"Financial, eligibility and qualification documents are also a part of Bid"
+" but are located in different end-points."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:243
+msgid ""
+"In order to create and/or get financial document ``financial_documents`` "
+"end-point should be used:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:248
+msgid "Get financial documents:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:253
+msgid ""
+"In order to create and/or get eligibility document "
+"``eligibility_documents`` end-point should be used:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:258
+msgid ""
+"In order to create and/or get qualification document "
+"``qualification_documents`` end-point should be used:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:264
+msgid ""
+"`Financial` and `qualification` documents will be publicly accessible "
+"after the auction. `Eligibility` documents will become publicly "
+"accessible starting from tender pre-qualification period."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:267
+msgid "Here is bidder proposal with all documents."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:272
+msgid ""
+"Note that financial, eligibility, and qualification documents are stored "
+"in `financialDocuments`, `eligibilityDocuments`, and "
+"`qualificationDocuments` attributes of :ref:`Bid`."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:277
+msgid "Bid invalidation"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:279
+msgid ""
+"If tender is modified, status of all bid proposals will be changed to "
+"``invalid``. Bid proposal will look the following way after tender has "
+"been modified:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:286
+msgid "Bid confirmation"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:288
+msgid "Bidder should confirm bid proposal:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:293
+msgid ""
+"Close FrameworkAgreement UA procedure demands at least three bidders, so "
+"there should be at least three bid proposals registered to move to "
+"auction stage:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:301
+msgid "Batch-mode registration"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:303
+msgid "Register bid with documents using one request:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:315
+msgid "Bid Qualification"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:317
+msgid "Close FrameworkAgreement UA procedure requires bid qualification."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:319
+msgid "Let's list qualifications:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:325
+msgid "Approve three bids through qualification objects:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:336
+msgid "We can also reject bid:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:341
+msgid "And check that qualified bids are switched to `active`:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:346
+msgid "Rejected bid is not shown in `bids/` listing."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:348
+msgid "We can access rejected bid by id:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:353
+msgid "Procuring entity approves qualifications by switching to next status:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:358
+msgid "You may notice 10 day stand-still time set in `qualificationPeriod`."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:363
+msgid "Auction"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:365
+msgid ""
+"After auction is scheduled anybody can visit it to watch. The auction can"
+" be reached at `Tender.lot.auctionUrl`:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:370
+msgid "And bidders can find out their participation URLs via their bids:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:375
+msgid ""
+"See the `Bid.lotValues.participationUrl` in the response. Similar, but "
+"different, URL can be retrieved for other participants:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:386
+msgid "Confirming qualification"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:388
+msgid "Qualification board receives the qualifications list"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:393
+msgid "And registers its decisions via the following call per award:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:398
+msgid ""
+"The board may also disqualify the award winner by calling ``{'data': "
+"{'status': 'unsuccessful'}}``"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:404
+msgid "Uploading document with unit price per item"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:406
+msgid ""
+"When tender transfers to status `active.awarded` then :ref:`Agreement` is"
+" created and the awarded participants are given 5 business days to upload"
+" the itemized price list with unit price per every 'item'"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:412
+msgid "Entering prices per item by the ordering party"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:414
+msgid "The object list :ref:`Agreement` can be obtained via the following call"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:419
+msgid "Only one contract is created per each qualified award winner"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:421
+msgid ""
+"The object list :ref:`Contract` to enter prices per item can be obtained "
+"by the ordering party via the following call"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:426
+msgid "Entering unit prices is allowed only for all 'items' taken together"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:437
+msgid ""
+"Also the ordering party is allowed to exclude a winner from the framework"
+" agreement by setting the contract to ``{'data': {'status': "
+"'unsuccessful'}}``"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:440
+msgid ""
+"For a successful signing of a Framework agreement not less than 3 active "
+"contracts are needed"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:442
+msgid ""
+"A Framework agreement can be signed only when "
+"`agreement.contractPeriod.clarificationsUntil` is reached"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:446
+msgid "Uploading agreement documentation"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:448
+msgid "You can upload agreement documents. Let's upload agreement document:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:453
+msgid ""
+"`201 Created` response code and `Location` header confirm that this "
+"document was added."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:455
+msgid "Let's see the list of agreement documents:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:460
+msgid "We can add another agreement document:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:465
+msgid ""
+"`201 Created` response code and `Location` header confirm that the second"
+" document was uploaded."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:467
+msgid ""
+"By default, document language is Ukrainian. You can can change it and set"
+" another language for the document by assigning appropriate language code"
+" to the `language` field (available options: ``uk``, ``en``, ``ru``). You"
+" can also set document's title (e.g. `title_en`) and description (e.g. "
+"`description_en`) fields. See :ref:`Document` data structure for details."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:475
+msgid "Let's see the list of all added agreement documents:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:480
+msgid "Let's view separate contract document:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:487
+msgid "Set agreement signature date"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:489
+msgid ""
+"There is a possibility to set custom agreement signature date. If the "
+"date is not set it will be generated on agreement registration."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:496
+msgid "Agreement registration"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:502
+msgid "Cancelling tender"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:504
+msgid ""
+"Tender creator can cancel tender anytime (except when tender has terminal"
+" status e.g. `usuccesfull`, `canceled`, `complete`)."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:506
+msgid "The following steps should be applied:"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:508
+msgid "Prepare cancellation request"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:509
+msgid "Fill it with the protocol describing the cancellation reasons"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:510
+msgid "Cancel the tender with the reasons prepared."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:512
+msgid ""
+"Only the request that has been activated (3rd step above) has power to "
+"cancel tender.  I.e.  you have to not only prepare cancellation request "
+"but to activate it as well."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:516
+msgid "See :ref:`cancellation` data structure for details."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:519
+msgid "Preparing the cancellation request"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:521
+msgid ""
+"You should pass `reason`, `status` defaults to `pending`. `id` is "
+"autogenerated and passed in the `Location` header of response."
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:529
+msgid "Filling cancellation with protocol and supplementary documentation"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:531
+msgid "Upload the file contents"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:536
+msgid "Change the document description and other properties"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:541
+msgid "Upload new version of the document"
+msgstr ""
+
+#: ../../source/cfaua/tutorial.rst:547
+msgid "Activating the request and cancelling tender"
+msgstr ""
+

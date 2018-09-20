@@ -409,7 +409,7 @@ When tender transfers to status `active.awarded` then :ref:`Agreement` is create
    :code:
 
 Entering prices per item by the ordering party
-------------------------------------
+----------------------------------------------
 
 The object list :ref:`Agreement` can be obtained via the following call
 

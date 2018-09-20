@@ -44,7 +44,7 @@ Schema
 :documents:
     List of :ref:`Document` objects
     
-     |ocdsDescription|
+    |ocdsDescription|
     All documents and attachments related to the agreement, including any notices.
 
 :items:
@@ -89,6 +89,18 @@ Schema
     Agreement title
     
 Workflow
-------
+--------
 
-.. image:: images/agreementstatus.png
+.. graphviz::
+
+    digraph G {
+        A [ label="pending" ]
+        B [ label="active" ]
+        C [ label="cancelled" ]
+        D [ label="unsuccessful"]
+         A -> B;
+         A -> C;
+         A -> D;
+    }
+
+\* marks initial state
