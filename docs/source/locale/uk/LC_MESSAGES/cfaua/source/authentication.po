@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2015, Quintagroup, Ltd
+# This file is distributed under the same license as the openprocurement.api
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: openprocurement.api 2.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-20 08:23+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/cfaua/source/authentication.rst:4
+msgid "Authentication"
+msgstr ""
+
+#: ../../source/cfaua/source/authentication.rst:6
+msgid ""
+"Some of the API requests (especially the ones that are read-only GET "
+"requests) do not require any authenication.  The other ones, that modify "
+"data into the database, require broker authentication via API key.  "
+"Additionally, owner tokens are issued to facilitate multiple actor roles "
+"upon object creation."
+msgstr ""
+
+#: ../../source/cfaua/source/authentication.rst:12
+msgid "API keys"
+msgstr ""
+
+#: ../../source/cfaua/source/authentication.rst:14
+msgid ""
+"API key is username to use with Basic Authenication scheme (see "
+":rfc:`2617#section-2`)."
+msgstr ""
+
+#: ../../source/cfaua/source/authentication.rst:17
+msgid "Owner tokens"
+msgstr ""
+
+#: ../../source/cfaua/source/authentication.rst:20
+msgid "Getting token"
+msgstr ""
+
+#: ../../source/cfaua/source/authentication.rst:22
+msgid "The token is issued when object is created in the database:"
+msgstr ""
+
+#: ../../source/cfaua/source/authentication.rst:27
+msgid ""
+"You can see the `access` with `token` in response.  Its value can be used"
+" to modify objects further under \"Owner role\"."
+msgstr ""
+
+#: ../../source/cfaua/source/authentication.rst:31
+msgid "Using token"
+msgstr ""
+
+#: ../../source/cfaua/source/authentication.rst:33
+msgid "You can pass access token in the following ways:"
+msgstr ""
+
+#: ../../source/cfaua/source/authentication.rst:35
+msgid "`acc_token` URL query string parameter"
+msgstr ""
+
+#: ../../source/cfaua/source/authentication.rst:36
+msgid "`X-Access-Token` HTTP request header"
+msgstr ""
+
+#: ../../source/cfaua/source/authentication.rst:37
+msgid "`access.token` in the body of POST/PUT/PATCH request"
+msgstr ""
+
+#: ../../source/cfaua/source/authentication.rst:39
+msgid "See the example of the action with token passed as URL query string:"
+msgstr ""
+

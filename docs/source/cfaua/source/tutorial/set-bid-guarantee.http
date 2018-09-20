@@ -1,0 +1,44 @@
+PATCH /api/2.4/tenders/0eba7509160946dd8439ca46baa56801/lots/f70782e4693042cca51ec2dda36d5f15?acc_token=61955a7cfb50471faf87533f4371d20c HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 57
+Content-Type: application/json
+Host: api-sandbox.openprocurement.org
+DATA:
+{
+  "data": {
+    "guarantee": {
+      "currency": "USD", 
+      "amount": 8
+    }
+  }
+}
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "status": "active", 
+    "description": "Опис Лот №1", 
+    "title": "Лот №1", 
+    "minimalStep": {
+      "currency": "UAH", 
+      "amount": 35.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "auctionPeriod": {
+      "shouldStartAfter": "2018-11-10T00:00:00+03:00"
+    }, 
+    "value": {
+      "currency": "UAH", 
+      "amount": 500.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "date": "2018-09-05T14:24:23.825365+03:00", 
+    "id": "f70782e4693042cca51ec2dda36d5f15", 
+    "guarantee": {
+      "currency": "USD", 
+      "amount": 8.0
+    }
+  }
+}
+

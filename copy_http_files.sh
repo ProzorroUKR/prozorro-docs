@@ -44,3 +44,10 @@ TARGET_DIR='docs/source/openua/http'
 rm -rf "$TARGET_DIR"
 mkdir -p "$TARGET_DIR"
 cp -R "$SOURCES" "$TARGET_DIR"
+
+
+SOURCES="src/openprocurement.tender.cfaua/docs/source"
+TARGET_DIR='docs/source/cfaua'
+rm -rf "$TARGET_DIR"
+mkdir -p "$TARGET_DIR"
+cp -R "$SOURCES" "$TARGET_DIR"
