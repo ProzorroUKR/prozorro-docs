@@ -380,9 +380,7 @@ By default contract value `amountNet` is set based on the award value `amount`, 
 You can update `amountNet` following next rules:
 
 +-------------+--------------------------------------------------------+
-| `amountNet` | Should be less or equal to ``award.value.amount``      |
-+             +--------------------------------------------------------+
-|             | Can be less than ``contract.value.amount`` for 20% max |
+| `amountNet` | Can be less than ``contract.value.amount`` for 20% max |
 +-------------+--------------------------------------------------------+
 
 Let's set contract contract value with next request:
