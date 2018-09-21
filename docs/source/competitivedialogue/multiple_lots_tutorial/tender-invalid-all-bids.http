@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/c9fa44b1c65d4e59b5db6ebaad408a9d/lots/6868e864385a42c0a731970504b26a8f?acc_token=4b1685b4a7cd43e1b0ecc72647662f48 HTTP/1.0
+PATCH /api/2.4/tenders/aaa82d074ff7415589f1142ca32078b1/lots/1b3cdb1e408e4cc7a1faa7ebd5b1c662?acc_token=d2c08c036e8d4bbeb2763f3c5282a99f HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 36
 Content-Type: application/json
@@ -13,7 +13,7 @@ DATA:
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "active", 
@@ -29,8 +29,8 @@ Content-Type: application/json; charset=UTF-8
       "amount": 400.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2017-06-21T17:05:00.933209+03:00", 
-    "id": "6868e864385a42c0a731970504b26a8f"
+    "date": "2018-09-21T05:23:56.192531+03:00", 
+    "id": "1b3cdb1e408e4cc7a1faa7ebd5b1c662"
   }
 }
 

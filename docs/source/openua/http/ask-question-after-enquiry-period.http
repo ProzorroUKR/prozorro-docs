@@ -1,4 +1,4 @@
-POST /api/2.3/tenders/97dd0ca9a0f741a6ad5628c6873d1de9/questions HTTP/1.0
+POST /api/2.4/tenders/7d413660f66643638984a728c325ba28/questions HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 1506
 Content-Type: application/json
@@ -33,7 +33,7 @@ DATA:
 }
 
 Response: 403 Forbidden
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "status": "error", 
   "errors": [

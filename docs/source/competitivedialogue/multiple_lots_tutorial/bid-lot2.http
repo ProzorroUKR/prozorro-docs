@@ -1,4 +1,4 @@
-POST /api/2.3/tenders/c9fa44b1c65d4e59b5db6ebaad408a9d/bids HTTP/1.0
+POST /api/2.4/tenders/aaa82d074ff7415589f1142ca32078b1/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 975
 Content-Type: application/json
@@ -10,10 +10,10 @@ DATA:
     "selfQualified": true, 
     "lotValues": [
       {
-        "relatedLot": "064dcd27e2cd4789a5b57519ad77c250"
+        "relatedLot": "5eecb2ade4d34b0ebb6ce28a02225580"
       }, 
       {
-        "relatedLot": "6868e864385a42c0a731970504b26a8f", 
+        "relatedLot": "1b3cdb1e408e4cc7a1faa7ebd5b1c662", 
         "subcontractingDetails": "ДКП «Укр Прінт», Україна"
       }
     ], 
@@ -43,24 +43,24 @@ DATA:
 }
 
 Response: 201 Created
-Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/c9fa44b1c65d4e59b5db6ebaad408a9d/bids/f534ae7310424dbdac38109faa4b2327
+Content-Type: application/json
+Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/aaa82d074ff7415589f1142ca32078b1/bids/9c37d7e4135f45ce98b26319853a11b2
 {
   "access": {
-    "token": "b7ffa465c80e4485b61a592adafd4ebc"
+    "token": "5136f1ce3c1c4cf09044adbdbf6ba360"
   }, 
   "data": {
     "status": "pending", 
     "selfEligible": true, 
     "lotValues": [
       {
-        "relatedLot": "064dcd27e2cd4789a5b57519ad77c250", 
-        "date": "2017-06-21T17:05:01.501565+03:00", 
+        "relatedLot": "5eecb2ade4d34b0ebb6ce28a02225580", 
+        "date": "2018-09-21T05:23:56.928503+03:00", 
         "status": "pending"
       }, 
       {
-        "relatedLot": "6868e864385a42c0a731970504b26a8f", 
-        "date": "2017-06-21T17:05:01.501971+03:00", 
+        "relatedLot": "1b3cdb1e408e4cc7a1faa7ebd5b1c662", 
+        "date": "2018-09-21T05:23:56.929007+03:00", 
         "status": "pending", 
         "subcontractingDetails": "ДКП «Укр Прінт», Україна"
       }
@@ -88,8 +88,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/c9fa44b1c65d4e5
         }
       }
     ], 
-    "date": "2017-06-21T17:05:01.500939+03:00", 
-    "id": "f534ae7310424dbdac38109faa4b2327"
+    "date": "2018-09-21T05:23:56.927846+03:00", 
+    "id": "9c37d7e4135f45ce98b26319853a11b2"
   }
 }
 

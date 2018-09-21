@@ -1,25 +1,25 @@
-GET /api/2.3/tenders/97dd0ca9a0f741a6ad5628c6873d1de9 HTTP/1.0
+GET /api/2.4/tenders/7d413660f66643638984a728c325ba28 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: api-sandbox.openprocurement.org
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "procurementMethod": "open", 
     "complaintPeriod": {
-      "startDate": "2017-06-05T15:53:05.318541+03:00", 
-      "endDate": "2017-06-17T00:00:00+03:00"
+      "startDate": "2018-09-05T05:27:42.637354+03:00", 
+      "endDate": "2018-09-17T00:00:00+03:00"
     }, 
-    "auctionUrl": "http://auction-sandbox.openprocurement.org/tenders/97dd0ca9a0f741a6ad5628c6873d1de9", 
+    "auctionUrl": "http://auction-sandbox.openprocurement.org/tenders/7d413660f66643638984a728c325ba28", 
     "enquiryPeriod": {
-      "startDate": "2017-06-05T15:53:05.318541+03:00", 
-      "clarificationsUntil": "2017-06-15T00:00:00+03:00", 
-      "endDate": "2017-06-11T15:53:05.318541+03:00", 
-      "invalidationDate": "2017-06-21T15:53:21.710428+03:00"
+      "startDate": "2018-09-05T05:27:42.637354+03:00", 
+      "clarificationsUntil": "2018-09-14T05:27:42.637354+03:00", 
+      "endDate": "2018-09-11T05:27:42.637354+03:00", 
+      "invalidationDate": "2018-09-21T05:28:12.111778+03:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "next_check": "2017-06-21T16:29:05.318541+03:00", 
+    "next_check": "2018-09-21T06:03:42.637354+03:00", 
     "procuringEntity": {
       "contactPoint": {
         "url": "http://sch10.edu.vn.ua/", 
@@ -44,16 +44,16 @@ Content-Type: application/json; charset=UTF-8
     "questions": [
       {
         "description": "Просимо додати таблицю потрібної калорійності харчування", 
-        "dateAnswered": "2017-06-21T15:53:20.818993+03:00", 
+        "dateAnswered": "2018-09-21T05:28:10.476269+03:00", 
         "title": "Калорійність", 
-        "date": "2017-06-21T15:53:20.738523+03:00", 
+        "date": "2018-09-21T05:28:10.336949+03:00", 
         "answer": "Таблицю додано в файлі \"Kalorijnist.xslx\"", 
-        "id": "d490583bca4b41d68e36b2b53a5f4caf", 
+        "id": "d6634bd5cf324257bd972a65718e64e7", 
         "questionOf": "tender"
       }
     ], 
     "owner": "broker", 
-    "id": "97dd0ca9a0f741a6ad5628c6873d1de9", 
+    "id": "7d413660f66643638984a728c325ba28", 
     "guarantee": {
       "currency": "USD", 
       "amount": 8.0
@@ -62,48 +62,48 @@ Content-Type: application/json; charset=UTF-8
       {
         "author": "tender_owner", 
         "title": "Notice.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/97dd0ca9a0f741a6ad5628c6873d1de9/documents/834ae499148f4eb7996d8db7dcd8fd14?download=6f58464f57364eff809716a21346d568", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/7d413660f66643638984a728c325ba28/documents/913a4397604e49ee9c22d470d97f244b?download=f1ae977049ec4ed197214adbbdc0460c", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T15:53:20.439891+03:00", 
-        "id": "834ae499148f4eb7996d8db7dcd8fd14", 
-        "dateModified": "2017-06-21T15:53:20.439925+03:00"
+        "datePublished": "2018-09-21T05:28:09.833605+03:00", 
+        "id": "913a4397604e49ee9c22d470d97f244b", 
+        "dateModified": "2018-09-21T05:28:09.833682+03:00"
       }, 
       {
         "author": "tender_owner", 
         "title": "AwardCriteria.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/97dd0ca9a0f741a6ad5628c6873d1de9/documents/8eb8c964d53342919cf982b74ce28eee?download=1b5689bd04d94e68813052edcc6e9eaa", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/7d413660f66643638984a728c325ba28/documents/e1d30b308f164673a9f0e006557b17d2?download=b24487e279064bd09e1c7e3e76f51eff", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T15:53:20.531460+03:00", 
-        "id": "8eb8c964d53342919cf982b74ce28eee", 
-        "dateModified": "2017-06-21T15:53:20.531494+03:00"
+        "datePublished": "2018-09-21T05:28:09.993184+03:00", 
+        "id": "e1d30b308f164673a9f0e006557b17d2", 
+        "dateModified": "2018-09-21T05:28:09.993266+03:00"
       }, 
       {
         "author": "tender_owner", 
         "title": "AwardCriteria-2.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/97dd0ca9a0f741a6ad5628c6873d1de9/documents/8eb8c964d53342919cf982b74ce28eee?download=70093c4ab022423eb1acf14a6a34ca4b", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/7d413660f66643638984a728c325ba28/documents/e1d30b308f164673a9f0e006557b17d2?download=90179cf24eba477b98687ae3a29f8788", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T15:53:20.531460+03:00", 
-        "id": "8eb8c964d53342919cf982b74ce28eee", 
-        "dateModified": "2017-06-21T15:53:20.635230+03:00"
+        "datePublished": "2018-09-21T05:28:09.993184+03:00", 
+        "id": "e1d30b308f164673a9f0e006557b17d2", 
+        "dateModified": "2018-09-21T05:28:10.182366+03:00"
       }
     ], 
     "title": "футляри до державних нагород", 
-    "tenderID": "UA-2017-06-21-000001", 
-    "dateModified": "2017-06-21T15:53:22.246710+03:00", 
+    "tenderID": "UA-2018-09-21-000001", 
+    "dateModified": "2018-09-21T05:28:13.121419+03:00", 
     "status": "active.auction", 
     "tenderPeriod": {
-      "startDate": "2017-06-05T15:53:05.318541+03:00", 
-      "endDate": "2017-06-21T15:53:05.318541+03:00"
+      "startDate": "2018-09-05T05:27:42.637354+03:00", 
+      "endDate": "2018-09-21T05:27:42.637354+03:00"
     }, 
     "auctionPeriod": {
-      "startDate": "2017-06-21T15:53:05.318541+03:00", 
-      "shouldStartAfter": "2017-06-22T00:00:00+03:00"
+      "startDate": "2018-09-21T05:27:42.637354+03:00", 
+      "shouldStartAfter": "2018-09-22T00:00:00+03:00"
     }, 
     "procurementMethodType": "aboveThresholdUA", 
-    "date": "2017-06-21T15:53:20.034093+03:00", 
+    "date": "2018-09-21T05:28:09.183193+03:00", 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35.0, 
@@ -132,10 +132,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-11T15:53:06.068598+03:00", 
-          "endDate": "2017-08-10T15:53:06.068650+03:00"
+          "startDate": "2018-10-11T05:27:43.715555+03:00", 
+          "endDate": "2018-11-10T05:27:43.715641+03:00"
         }, 
-        "id": "fc733ce56c434220bb9e7418b0de6162", 
+        "id": "22531809dd7540aeb9e266b4e6754b79", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"

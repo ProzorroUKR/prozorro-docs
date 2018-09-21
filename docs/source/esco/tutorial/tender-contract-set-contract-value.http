@@ -1,6 +1,6 @@
-PATCH /api/2.4/tenders/124f329e5db34bb9876f677dfef46269/contracts/40ed143312f14665ad3fd617303cd936?acc_token=ef4a720d81564f5b875f1106395fc1f2 HTTP/1.0
+PATCH /api/2.4/tenders/6c51b2b430784297b2ce60215c18535f/contracts/982f86631e124d7688fdfd50f3cdcff4?acc_token=d5ed31fb489d4729a424b512f9b723f0 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 125
+Content-Length: 75
 Content-Type: application/json
 Host: api-sandbox.openprocurement.org
 DATA:
@@ -8,12 +8,136 @@ DATA:
   "data": {
     "contractNumber": "contract#1", 
     "value": {
-      "amount": 11089.1232877, 
-      "contractDuration": {
-        "days": 100, 
-        "years": 5
-      }
+      "amountNet": 9382.42
     }
+  }
+}
+
+Response: 200 OK
+Content-Type: application/json
+{
+  "data": {
+    "status": "pending", 
+    "items": [
+      {
+        "description": "Послуги шкільних їдалень", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Test", 
+          "id": "37810000-9"
+        }, 
+        "description_en": "Services in school canteens", 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "Послуги шкільних їдалень"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "id": "6126441c568849ada199c622631c0eb9", 
+        "unit": {
+          "code": "44617100-9", 
+          "name": "item"
+        }
+      }, 
+      {
+        "description": "Послуги шкільних їдалень", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Test", 
+          "id": "37810000-9"
+        }, 
+        "description_en": "Services in school canteens", 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "Послуги шкільних їдалень"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "id": "94d047f95d01448fae2ff9fcc9c5c7a1", 
+        "unit": {
+          "code": "44617100-9", 
+          "name": "item"
+        }
+      }
+    ], 
+    "suppliers": [
+      {
+        "contactPoint": {
+          "email": "soleksuk@gmail.com", 
+          "telephone": "+380 (432) 21-69-30", 
+          "name": "Сергій Олексюк"
+        }, 
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "00137256", 
+          "uri": "http://www.sc.gov.ua/"
+        }, 
+        "name": "ДКП «Школяр»", 
+        "address": {
+          "postalCode": "21100", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Островського, 33", 
+          "region": "м. Вінниця", 
+          "locality": "м. Вінниця"
+        }
+      }
+    ], 
+    "contractNumber": "contract#1", 
+    "value": {
+      "yearlyPaymentsPercentage": 0.9, 
+      "amountNet": 9382.42, 
+      "amountPerformance": 860.12, 
+      "currency": "UAH", 
+      "amount": 9383.42, 
+      "contractDuration": {
+        "days": 74, 
+        "years": 10
+      }, 
+      "valueAddedTaxIncluded": true, 
+      "annualCostsReduction": [
+        500.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0
+      ]
+    }, 
+    "date": "2018-09-21T05:47:20.018026+03:00", 
+    "awardID": "12ebea488ed74e3a8ca7a9a0ab9b6147", 
+    "id": "982f86631e124d7688fdfd50f3cdcff4", 
+    "contractID": "UA-2018-09-21-000001-1"
   }
 }
 

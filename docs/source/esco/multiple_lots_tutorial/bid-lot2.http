@@ -1,4 +1,4 @@
-POST /api/2.4/tenders/b204841c7ee844019a1038571b96b55a/bids HTTP/1.0
+POST /api/2.4/tenders/924cca868371469cac978bd088aab46a/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 1454
 Content-Type: application/json
@@ -10,7 +10,7 @@ DATA:
     "selfQualified": true, 
     "lotValues": [
       {
-        "relatedLot": "0b447ad702e64138b2c550dfe583c7f2", 
+        "relatedLot": "b95d552463884b6db822a57c4242db3d", 
         "value": {
           "contractDuration": {
             "years": 7
@@ -42,7 +42,7 @@ DATA:
         }
       }, 
       {
-        "relatedLot": "e550e623efa7415aa6b5954f451af303", 
+        "relatedLot": "79259e73f9cc4b4baacc326e2e6e8f8e", 
         "value": {
           "contractDuration": {
             "years": 9
@@ -101,30 +101,30 @@ DATA:
 }
 
 Response: 201 Created
-Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/b204841c7ee844019a1038571b96b55a/bids/abb1c9abb2e6488987c80753bcb459cb
+Content-Type: application/json
+Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/924cca868371469cac978bd088aab46a/bids/40e444895cf5484597aad433b5af63f8
 {
   "access": {
-    "token": "0f07d2f141674cb68732cab78505f75e"
+    "token": "dae3506208d3444194d0587c3171e3dc"
   }, 
   "data": {
     "status": "pending", 
     "selfEligible": true, 
     "lotValues": [
       {
-        "relatedLot": "0b447ad702e64138b2c550dfe583c7f2", 
-        "date": "2017-10-03T11:18:05.877920+03:00", 
+        "relatedLot": "b95d552463884b6db822a57c4242db3d", 
+        "date": "2018-09-21T05:47:29.614328+03:00", 
         "status": "pending", 
         "value": {
           "yearlyPaymentsPercentage": 0.9, 
           "valueAddedTaxIncluded": true, 
           "currency": "UAH", 
-          "amount": 10358.876712328767, 
+          "amount": 10311.53, 
           "contractDuration": {
             "days": 0, 
             "years": 7
           }, 
-          "amountPerformance": 2248.494981287916, 
+          "amountPerformance": 2082.16, 
           "annualCostsReduction": [
             700.0, 
             1600.0, 
@@ -151,19 +151,19 @@ Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/b204841c7ee8440
         }
       }, 
       {
-        "relatedLot": "e550e623efa7415aa6b5954f451af303", 
-        "date": "2017-10-03T11:18:05.878810+03:00", 
+        "relatedLot": "79259e73f9cc4b4baacc326e2e6e8f8e", 
+        "date": "2018-09-21T05:47:29.616432+03:00", 
         "status": "pending", 
         "value": {
           "yearlyPaymentsPercentage": 0.96, 
           "valueAddedTaxIncluded": true, 
           "currency": "UAH", 
-          "amount": 10663.101369863014, 
+          "amount": 10625.23, 
           "contractDuration": {
             "days": 0, 
             "years": 9
           }, 
-          "amountPerformance": 1002.9313299048181, 
+          "amountPerformance": 914.87, 
           "annualCostsReduction": [
             600.0, 
             1200.0, 
@@ -214,8 +214,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/b204841c7ee8440
         }
       }
     ], 
-    "date": "2017-10-03T11:18:05.877346+03:00", 
-    "id": "abb1c9abb2e6488987c80753bcb459cb"
+    "date": "2018-09-21T05:47:29.613685+03:00", 
+    "id": "40e444895cf5484597aad433b5af63f8"
   }
 }
 

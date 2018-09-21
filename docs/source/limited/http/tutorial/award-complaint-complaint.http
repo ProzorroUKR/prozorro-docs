@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/e564a943c46a443497a81bcdac928861/awards/13e739fca10d4715839fb7544af40491/complaints/c272a954052d4a93a04ad483b84213d2?acc_token=36fbcc2339d7457fab861a20496ec5be HTTP/1.0
+PATCH /api/2.4/tenders/e69456ad48d24ef3897ea666d6dc691a/awards/fbfdbeb2319d45e88dadfdbf62dbc017/complaints/a627c8793f9145b2b885db15617bc3db?acc_token=8c02c6b1b8854065bae4b9303c3bc2df HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 31
 Content-Type: application/json
@@ -11,7 +11,7 @@ Host: api-sandbox.openprocurement.org
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "pending", 
@@ -19,12 +19,12 @@ Content-Type: application/json; charset=UTF-8
       {
         "author": "complaint_owner", 
         "title": "Complaint_Attachement.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/e564a943c46a443497a81bcdac928861/awards/13e739fca10d4715839fb7544af40491/complaints/c272a954052d4a93a04ad483b84213d2/documents/349f815d819b481d8bd0dcffd5221681?download=27cb1024cf30489fafd038a7c33a036f", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/e69456ad48d24ef3897ea666d6dc691a/awards/fbfdbeb2319d45e88dadfdbf62dbc017/complaints/a627c8793f9145b2b885db15617bc3db/documents/777e70768e114ca7a2f2a462228034e7?download=e8d7c0b9c6f84133811582113bf0cb6e", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-09-14T19:40:30.809507+03:00", 
-        "id": "349f815d819b481d8bd0dcffd5221681", 
-        "dateModified": "2017-09-14T19:40:30.809589+03:00"
+        "datePublished": "2018-09-21T05:26:27.801671+03:00", 
+        "id": "777e70768e114ca7a2f2a462228034e7", 
+        "dateModified": "2018-09-21T05:26:27.801728+03:00"
       }
     ], 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
@@ -50,11 +50,11 @@ Content-Type: application/json; charset=UTF-8
         "locality": "м. Вінниця"
       }
     }, 
-    "dateSubmitted": "2017-09-14T19:40:31.233167+03:00", 
-    "complaintID": "UA-2017-09-14-000001.1", 
-    "date": "2017-09-14T19:40:31.249254+03:00", 
+    "dateSubmitted": "2018-09-21T05:26:27.995689+03:00", 
+    "complaintID": "UA-2018-09-21-000001.1", 
+    "date": "2018-09-21T05:26:27.999735+03:00", 
     "type": "complaint", 
-    "id": "c272a954052d4a93a04ad483b84213d2"
+    "id": "a627c8793f9145b2b885db15617bc3db"
   }
 }
 

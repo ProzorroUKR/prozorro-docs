@@ -1,4 +1,4 @@
-PATCH /api/2.4/tenders/16873c1122b54ba29b5b450904d9c659/contracts/199eaa0d62614fe994695d8a7c579200?acc_token=1fdd8971eef14852a98fb3a6bcf43a71 HTTP/1.0
+PATCH /api/2.4/tenders/2208281bd1694de2a6f4b2fa36d47a52/contracts/a7a897a41257418a8f4e24d924064278?acc_token=96e4d8f1b0524eae8883e050dace84d7 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 60
 Content-Type: application/json
@@ -6,13 +6,13 @@ Host: api-sandbox.openprocurement.org
 
 {
   "data": {
-    "dateSigned": "2018-09-05T03:22:17.664720+03:00"
+    "dateSigned": "2018-09-21T05:23:19.431117+03:00"
   }
 }
 
 
 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 
 {
   "data": {
@@ -21,22 +21,22 @@ Content-Type: application/json; charset=UTF-8
       {
         "hash": "md5:00000000000000000000000000000000", 
         "title": "contract_first_document.doc", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/c91ca65d582946458d7602d419249b3e?KeyID=c377f0f1&Signature=281NZeZ7EQ%252BC6j21WJtinxGhR1J3BPhFhxa7sSPcbHEZTvnPtjOpmpyTbGg7%252B29mDN%2FxhaQtowIBdzuX%252B6C8AA%253D%253D", 
+        "url": "http://public.docs-sandbox.openprocurement.org/get/59abca459c004898a474c75849fb6c10?KeyID=2c53b94d&Signature=GNLxuhgLybzFl1AyPy0XVXYkS5tOPu6C1NSnGe7Tumf38IWeSrXgnp4coMZ%2FSDIlLxP85N2s5TKDcUp%2F%2FozzAQ%253D%253D", 
         "format": "application/msword", 
         "documentOf": "tender", 
-        "datePublished": "2018-09-05T03:22:17.244415+03:00", 
-        "id": "6605493830124d0c839d254495e253b5", 
-        "dateModified": "2018-09-05T03:22:17.244433+03:00"
+        "datePublished": "2018-09-21T05:23:18.934645+03:00", 
+        "id": "a37a9448e61e4ee28aae28e2ebbf2441", 
+        "dateModified": "2018-09-21T05:23:18.934687+03:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
         "title": "contract_second_document.doc", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/d53f07fe2e3443de86fbf525cd94cf6f?KeyID=c377f0f1&Signature=bFu9AQwR%252BtwduTY%252B4BhQE6A%252BHjdl8vTdpZ0MiBcVgffu593oIC7T79l39b1ZVCOJ7DzMyjCzZWSKZbWt%2FZWxDQ%253D%253D", 
+        "url": "http://public.docs-sandbox.openprocurement.org/get/946a2b69548645e3859634786e32f906?KeyID=2c53b94d&Signature=7odaLPUvquUu9fiCgqPzNjkckEDnzwra4fvtgkmKHY9L40R3SM0omBVpv6pFqAPqg07ZkXfd2ECC3ygF2f12BA%253D%253D", 
         "format": "application/msword", 
         "documentOf": "tender", 
-        "datePublished": "2018-09-05T03:22:17.498289+03:00", 
-        "id": "92055800ae4145b2b6a87a806b5f5606", 
-        "dateModified": "2018-09-05T03:22:17.498304+03:00"
+        "datePublished": "2018-09-21T05:23:19.239420+03:00", 
+        "id": "1c9a7a1fae514fe59fc327804cff2128", 
+        "dateModified": "2018-09-21T05:23:19.239464+03:00"
       }
     ], 
     "items": [
@@ -62,10 +62,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2018-09-07T03:22:02.453878+03:00", 
-          "endDate": "2018-09-10T03:22:02.453878+03:00"
+          "startDate": "2018-09-23T05:22:56.321617+03:00", 
+          "endDate": "2018-09-26T05:22:56.321617+03:00"
         }, 
-        "id": "7bc6adfc389848eda0876cefcc0d0244", 
+        "id": "379f7b47fc5a4a1094b2ce88b68eab58", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -97,20 +97,20 @@ Content-Type: application/json; charset=UTF-8
     ], 
     "contractNumber": "contract #13111", 
     "period": {
-      "startDate": "2018-09-05T03:22:02.467133+03:00", 
-      "endDate": "2019-09-05T03:22:02.467133+03:00"
+      "startDate": "2018-09-21T05:22:56.353072+03:00", 
+      "endDate": "2019-09-21T05:22:56.353072+03:00"
     }, 
-    "dateSigned": "2018-09-05T03:22:17.664720+03:00", 
+    "dateSigned": "2018-09-21T05:23:19.431117+03:00", 
     "value": {
       "currency": "UAH", 
       "amount": 238.0, 
       "amountNet": 230.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2018-09-05T03:22:16.449062+03:00", 
-    "awardID": "af8dbd8c321b4b4ca6877461d22ba897", 
-    "id": "199eaa0d62614fe994695d8a7c579200", 
-    "contractID": "UA-2018-09-05-000001-1"
+    "date": "2018-09-21T05:23:17.853704+03:00", 
+    "awardID": "4108fea15d8345cc8dc01f40bd66c504", 
+    "id": "a7a897a41257418a8f4e24d924064278", 
+    "contractID": "UA-2018-09-21-000001-1"
   }
 }
 

@@ -1,4 +1,4 @@
-PATCH /api/2.3/contracts/bebdbaf7777d4bd39756f3e8872c1f46?acc_token=2f1294ae618e49219d85607d17afabf6 HTTP/1.0
+PATCH /api/2.4/contracts/62b3738a8ea24260bb7a1f314c62a5b1?acc_token=d932f98848404f9394e477485d638ced HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 1160
 Content-Type: application/json
@@ -29,10 +29,10 @@ DATA:
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-06-23T17:53:02.070092+03:00", 
-          "endDate": "2017-06-26T17:53:02.070092+03:00"
+          "startDate": "2018-09-23T05:22:42.118232+03:00", 
+          "endDate": "2018-09-26T05:22:42.118232+03:00"
         }, 
-        "id": "f8a311c2c9a34ff08bdf59bbc8092348", 
+        "id": "5a44a463d0844b96a84bb44d5d6d3ae2", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -44,25 +44,20 @@ DATA:
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "active", 
-    "value": {
-      "currency": "UAH", 
-      "amount": 438.0, 
-      "valueAddedTaxIncluded": true
-    }, 
     "documents": [
       {
         "title": "contract_changes.doc", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/contracts/bebdbaf7777d4bd39756f3e8872c1f46/documents/853ad85f888c403eb64b3db2ce16fed7?download=6b9d115c4fa94edb8d1f07615ed5b85c", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.4/contracts/62b3738a8ea24260bb7a1f314c62a5b1/documents/2bd1172367bb480c8ae9c2c1be66c87f?download=bc995730e72a496782bf32f9dc8d5795", 
         "format": "application/msword", 
         "documentOf": "change", 
-        "datePublished": "2017-06-21T17:53:05.477533+03:00", 
-        "id": "853ad85f888c403eb64b3db2ce16fed7", 
-        "relatedItem": "c382f2a7da3647bbb4e8fea2af514157", 
-        "dateModified": "2017-06-21T17:53:05.477575+03:00"
+        "datePublished": "2018-09-21T05:22:48.267194+03:00", 
+        "id": "2bd1172367bb480c8ae9c2c1be66c87f", 
+        "relatedItem": "1c60b17f46b844b0876dd93859764bcc", 
+        "dateModified": "2018-09-21T05:22:48.267303+03:00"
       }
     ], 
     "items": [
@@ -88,10 +83,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-06-23T17:53:02.070092+03:00", 
-          "endDate": "2017-06-26T17:53:02.070092+03:00"
+          "startDate": "2018-09-23T05:22:42.118232+03:00", 
+          "endDate": "2018-09-26T05:22:42.118232+03:00"
         }, 
-        "id": "f8a311c2c9a34ff08bdf59bbc8092348", 
+        "id": "5a44a463d0844b96a84bb44d5d6d3ae2", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -121,11 +116,16 @@ Content-Type: application/json; charset=UTF-8
       }
     ], 
     "period": {
-      "startDate": "2017-06-21T17:53:05.582663+03:00", 
-      "endDate": "2017-07-21T17:53:05.582718+03:00"
+      "startDate": "2018-09-21T05:22:48.423330+03:00", 
+      "endDate": "2018-10-21T05:22:48.423392+03:00"
     }, 
-    "dateSigned": "2017-06-21T17:53:04.594612+03:00", 
-    "id": "bebdbaf7777d4bd39756f3e8872c1f46", 
+    "value": {
+      "currency": "UAH", 
+      "amount": 438.0, 
+      "amountNet": 430.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "dateModified": "2018-09-21T05:22:48.971784+03:00", 
     "procuringEntity": {
       "contactPoint": {
         "name": "Державне управління справами", 
@@ -146,9 +146,10 @@ Content-Type: application/json; charset=UTF-8
         "locality": "м. Київ"
       }
     }, 
-    "contractID": "UA-2017-06-21-000001-1", 
+    "dateSigned": "2018-09-21T05:22:47.057256+03:00", 
+    "contractID": "UA-2018-09-21-000001-1", 
     "owner": "broker", 
-    "awardID": "2f549474497c475b8023d51845cbb2bd", 
+    "awardID": "d4c8d86605fd41a8837fadc7160e382e", 
     "changes": [
       {
         "status": "pending", 
@@ -158,12 +159,12 @@ Content-Type: application/json; charset=UTF-8
         ], 
         "rationale_en": "Contract change cause", 
         "rationale": "Друга і третя поставка має бути розфасована", 
-        "date": "2017-06-21T17:53:05.109702+03:00", 
-        "id": "c382f2a7da3647bbb4e8fea2af514157"
+        "date": "2018-09-21T05:22:47.828132+03:00", 
+        "id": "1c60b17f46b844b0876dd93859764bcc"
       }
     ], 
-    "dateModified": "2017-06-21T17:53:05.942313+03:00", 
-    "tender_id": "7dc086c4a213492ab9c43b95b43bd817"
+    "id": "62b3738a8ea24260bb7a1f314c62a5b1", 
+    "tender_id": "d12d2b2ffd664ac7b2883de29b1257c0"
   }
 }
 

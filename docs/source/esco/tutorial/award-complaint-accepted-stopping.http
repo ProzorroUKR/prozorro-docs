@@ -1,4 +1,4 @@
-PATCH /api/2.4/tenders/375f459c5c8f4631b79147ce20a7a37c/awards/1e1c219ef69946e5857eb0c6127d576b/complaints/7b30dcd41da04723a35f622012846bc0?acc_token=3f07e8fa1c14489988c4242546f734d9 HTTP/1.0
+PATCH /api/2.4/tenders/37704dbce00e43b29b51748e4276a5c3/awards/b486cdd6577b4e90a14870655b8f5c38/complaints/b7b3292615fc427991562604174c3c80?acc_token=a5e913a0b86e4bcab15dee64b404b6d2 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 228
 Content-Type: application/json
@@ -12,7 +12,7 @@ DATA:
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "stopping", 
@@ -40,14 +40,14 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "acceptance": true, 
     "cancellationReason": "Тендер скасовується замовником", 
-    "dateCanceled": "2017-10-11T17:20:08.164137+03:00", 
-    "dateAccepted": "2017-10-11T17:20:05.194169+03:00", 
-    "dateSubmitted": "2017-10-11T17:19:56.810340+03:00", 
-    "complaintID": "UA-2017-10-11-000001.4", 
-    "date": "2017-10-11T17:20:08.206688+03:00", 
+    "dateCanceled": "2018-09-21T05:46:52.498580+03:00", 
+    "dateAccepted": "2018-09-21T05:46:47.600884+03:00", 
+    "dateSubmitted": "2018-09-21T05:46:41.182770+03:00", 
+    "complaintID": "UA-2018-09-21-000001.4", 
+    "date": "2018-09-21T05:46:52.575572+03:00", 
     "title": "Недостатньо інформації", 
     "type": "complaint", 
-    "id": "7b30dcd41da04723a35f622012846bc0"
+    "id": "b7b3292615fc427991562604174c3c80"
   }
 }
 

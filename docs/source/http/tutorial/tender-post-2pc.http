@@ -1,4 +1,4 @@
-POST /api/2.3/tenders?opt_pretty=1 HTTP/1.0
+POST /api/2.4/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 2378
 Content-Type: application/json
@@ -8,7 +8,7 @@ Host: api-sandbox.openprocurement.org
   "data": {
     "status": "draft", 
     "tenderPeriod": {
-      "endDate": "2017-08-08T17:36:49.306344"
+      "endDate": "2018-10-05T05:22:56.321617"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -16,7 +16,7 @@ Host: api-sandbox.openprocurement.org
       "amount": 35
     }, 
     "enquiryPeriod": {
-      "endDate": "2017-08-01T17:36:49.306344"
+      "endDate": "2018-09-28T05:22:56.321617"
     }, 
     "procurementMethodType": "belowThreshold", 
     "value": {
@@ -66,8 +66,8 @@ Host: api-sandbox.openprocurement.org
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-27T17:36:49.306344", 
-          "endDate": "2017-07-30T17:36:49.306344"
+          "startDate": "2018-09-23T05:22:56.321617", 
+          "endDate": "2018-09-26T05:22:56.321617"
         }, 
         "unit": {
           "code": "44617100-9", 
@@ -81,20 +81,20 @@ Host: api-sandbox.openprocurement.org
 
 
 201 Created
-Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/e66dcc48a19e498984e3e5e51131ad68
+Content-Type: application/json
+Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/179d8cc82fa74f77af3fc0ae44511eb5
 
 {
   "access": {
-    "token": "75424b9a8c2842d0a9c24e477ccef649"
+    "token": "ef5da9d092d64b9eb8e65ed0adae9991"
   }, 
   "data": {
     "procurementMethod": "open", 
     "status": "draft", 
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
-      "startDate": "2017-08-01T17:36:49.306344+03:00", 
-      "endDate": "2017-08-08T17:36:49.306344+03:00"
+      "startDate": "2018-09-28T05:22:56.321617+03:00", 
+      "endDate": "2018-10-05T05:22:56.321617+03:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -125,10 +125,10 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/e66dcc48a19e498
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-27T17:36:49.306344+03:00", 
-          "endDate": "2017-07-30T17:36:49.306344+03:00"
+          "startDate": "2018-09-23T05:22:56.321617+03:00", 
+          "endDate": "2018-09-26T05:22:56.321617+03:00"
         }, 
-        "id": "3e25bda8806e4d27a03dc5f9e4805f5e", 
+        "id": "9504acc8e4ef402ab9b71bf357162bed", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -143,7 +143,7 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/e66dcc48a19e498
       "valueAddedTaxIncluded": true
     }, 
     "submissionMethod": "electronicAuction", 
-    "date": "2017-07-25T17:36:50.226421+03:00", 
+    "date": "2018-09-21T05:22:59.543095+03:00", 
     "procuringEntity": {
       "contactPoint": {
         "name": "Державне управління справами", 
@@ -165,13 +165,13 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/e66dcc48a19e498
       }
     }, 
     "enquiryPeriod": {
-      "startDate": "2017-07-25T17:36:50.226395+03:00", 
-      "endDate": "2017-08-01T17:36:49.306344+03:00"
+      "startDate": "2018-09-21T05:22:59.542995+03:00", 
+      "endDate": "2018-09-28T05:22:56.321617+03:00"
     }, 
     "owner": "broker", 
-    "dateModified": "2017-07-25T17:36:50.228135+03:00", 
-    "id": "e66dcc48a19e498984e3e5e51131ad68", 
-    "tenderID": "UA-2017-07-25-000001"
+    "dateModified": "2018-09-21T05:22:59.550168+03:00", 
+    "id": "179d8cc82fa74f77af3fc0ae44511eb5", 
+    "tenderID": "UA-2018-09-21-000001"
   }
 }
 

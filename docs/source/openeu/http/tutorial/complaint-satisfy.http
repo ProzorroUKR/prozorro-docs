@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/c6fd33d038b643b294284b182652113b/complaints/2bd82bd89119437b8952f73998aecf1b?acc_token=f6798e5e76fe4fa7aec7d3b7103a4463 HTTP/1.0
+PATCH /api/2.4/tenders/34eccb56914f4c4dac23d97aad014c27/complaints/d0e15489bf6b40d999cea421dd7d8070?acc_token=aee98a020c354b9da4ce864eeac457bc HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 51
 Content-Type: application/json
@@ -12,7 +12,7 @@ DATA:
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "resolved", 
@@ -21,12 +21,12 @@ Content-Type: application/json; charset=UTF-8
     "resolutionType": "resolved", 
     "type": "claim", 
     "satisfied": true, 
-    "dateAnswered": "2017-06-21T16:02:49.155374+03:00", 
-    "dateSubmitted": "2017-06-21T16:02:48.707655+03:00", 
-    "complaintID": "UA-2017-06-21-000001.2", 
-    "date": "2017-06-21T16:02:49.385673+03:00", 
+    "dateAnswered": "2018-09-21T05:27:03.205272+03:00", 
+    "dateSubmitted": "2018-09-21T05:27:02.563005+03:00", 
+    "complaintID": "UA-2018-09-21-000001.2", 
+    "date": "2018-09-21T05:27:03.528686+03:00", 
     "resolution": "Виправлено неконкурентні умови", 
-    "id": "2bd82bd89119437b8952f73998aecf1b"
+    "id": "d0e15489bf6b40d999cea421dd7d8070"
   }
 }
 

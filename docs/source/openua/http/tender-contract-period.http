@@ -1,4 +1,4 @@
-PATCH /api/2.4/tenders/f7ad52167e254b68b4853789533f7feb/contracts/c11a20a209f040f6b026dcf9a59c1a4e?acc_token=df5d9b3e4f2d403a92957987a8f4a9f9 HTTP/1.0
+PATCH /api/2.4/tenders/7d413660f66643638984a728c325ba28/contracts/c344e3ea1b514da9a759de539371408f?acc_token=12e688f20b5f44fe8d28c3d67582799c HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 118
 Content-Type: application/json
@@ -7,14 +7,14 @@ DATA:
 {
   "data": {
     "period": {
-      "startDate": "2018-09-09T20:29:39.252920+03:00", 
-      "endDate": "2019-09-09T20:29:39.253002+03:00"
+      "startDate": "2018-09-21T05:28:15.119102+03:00", 
+      "endDate": "2019-09-21T05:28:15.119178+03:00"
     }
   }
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "pending", 
@@ -41,10 +41,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2018-09-29T20:29:08.202510+03:00", 
-          "endDate": "2018-10-29T20:29:08.202595+03:00"
+          "startDate": "2018-10-11T05:27:43.715555+03:00", 
+          "endDate": "2018-11-10T05:27:43.715641+03:00"
         }, 
-        "id": "057a074077a74c0585e340aae1406f5b", 
+        "id": "22531809dd7540aeb9e266b4e6754b79", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -75,8 +75,8 @@ Content-Type: application/json; charset=UTF-8
       }
     ], 
     "period": {
-      "startDate": "2018-09-09T20:29:39.252920+03:00", 
-      "endDate": "2019-09-09T20:29:39.253002+03:00"
+      "startDate": "2018-09-21T05:28:15.119102+03:00", 
+      "endDate": "2019-09-21T05:28:15.119178+03:00"
     }, 
     "value": {
       "currency": "UAH", 
@@ -84,11 +84,11 @@ Content-Type: application/json; charset=UTF-8
       "amountNet": 230.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "dateSigned": "2018-09-09T20:29:38.962754+03:00", 
-    "date": "2018-09-09T20:29:38.281830+03:00", 
-    "awardID": "e34f82b638154959b9599c8a97e541d6", 
-    "id": "c11a20a209f040f6b026dcf9a59c1a4e", 
-    "contractID": "UA-2018-09-09-000001-1"
+    "dateSigned": "2018-09-21T05:28:14.819909+03:00", 
+    "date": "2018-09-21T05:28:14.028956+03:00", 
+    "awardID": "0968800ca6d043738a6b4cc3974a3ff1", 
+    "id": "c344e3ea1b514da9a759de539371408f", 
+    "contractID": "UA-2018-09-21-000001-1"
   }
 }
 

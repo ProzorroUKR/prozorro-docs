@@ -1,4 +1,4 @@
-PATCH /api/2.4/tenders/b204841c7ee844019a1038571b96b55a/lots/e550e623efa7415aa6b5954f451af303?acc_token=8f76350634a34ab7bcb1c24149296e88 HTTP/1.0
+PATCH /api/2.4/tenders/924cca868371469cac978bd088aab46a/lots/79259e73f9cc4b4baacc326e2e6e8f8e?acc_token=3503d77e5e194549816da4b6afeae452 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 39
 Content-Type: application/json
@@ -13,7 +13,7 @@ DATA:
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "active", 
@@ -21,7 +21,7 @@ Content-Type: application/json; charset=UTF-8
     "fundingKind": "other", 
     "title": "Лот №2", 
     "auctionPeriod": {
-      "shouldStartAfter": "2017-12-08T11:17:21.274494+03:00"
+      "shouldStartAfter": "2018-11-27T00:00:00+03:00"
     }, 
     "minValue": {
       "currency": "UAH", 
@@ -30,8 +30,8 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "minimalStepPercentage": 0.006, 
     "yearlyPaymentsPercentageRange": 0.8, 
-    "date": "2017-10-03T11:18:05.407838+03:00", 
-    "id": "e550e623efa7415aa6b5954f451af303"
+    "date": "2018-09-21T05:47:28.828530+03:00", 
+    "id": "79259e73f9cc4b4baacc326e2e6e8f8e"
   }
 }
 

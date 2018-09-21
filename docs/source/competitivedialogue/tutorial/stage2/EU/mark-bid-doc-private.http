@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/2332d7f2a08e47d7a9d115ad1fee1eb8/bids/b20022ca69d243eb917e5ff3217b6690/documents/91b40d8996d24aee9836d57ea3285451?acc_token=6924864ccd3c4ab7a63cfad5f123b5f1 HTTP/1.0
+PATCH /api/2.4/tenders/a9ac809f24974fdba733fa494d18448a/bids/eb2aa540c0eb4af9a42863e297432cd6/documents/6ca368ade82e403bb286017e7ebbcde9?acc_token=7caf31981dea4aaaa28e226850a8c39c HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 120
 Content-Type: application/json
@@ -12,20 +12,20 @@ DATA:
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "confidentiality": "buyerOnly", 
     "language": "uk", 
     "format": "application/pdf", 
-    "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/2332d7f2a08e47d7a9d115ad1fee1eb8/bids/b20022ca69d243eb917e5ff3217b6690/documents/91b40d8996d24aee9836d57ea3285451?download=cfc5737256d04935bfd99398ec7b861c", 
+    "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/a9ac809f24974fdba733fa494d18448a/bids/eb2aa540c0eb4af9a42863e297432cd6/documents/6ca368ade82e403bb286017e7ebbcde9?download=9804332b6f7a4168bce0335b19c640e9", 
     "confidentialityRationale": "Only our company sells badgers with pink hair.", 
     "title": "Proposal_top_secrets.pdf", 
     "documentOf": "tender", 
-    "datePublished": "2017-06-21T17:05:23.847161+03:00", 
-    "id": "91b40d8996d24aee9836d57ea3285451", 
-    "dateModified": "2017-06-21T17:05:23.847195+03:00"
+    "datePublished": "2018-09-21T05:24:29.260514+03:00", 
+    "id": "6ca368ade82e403bb286017e7ebbcde9", 
+    "dateModified": "2018-09-21T05:24:29.260559+03:00"
   }
 }
 

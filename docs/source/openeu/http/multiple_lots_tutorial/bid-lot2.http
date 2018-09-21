@@ -1,4 +1,4 @@
-POST /api/2.3/tenders/bcfa4c735e7c48efac20aa4542534c10/bids HTTP/1.0
+POST /api/2.4/tenders/075de19924234564b210c1381d471141/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 1047
 Content-Type: application/json
@@ -10,13 +10,13 @@ DATA:
     "selfQualified": true, 
     "lotValues": [
       {
-        "relatedLot": "be0820de82f94afd887c4715ce9bcd8c", 
+        "relatedLot": "d72fe832965043cf88e349d2822dd45b", 
         "value": {
           "amount": 500
         }
       }, 
       {
-        "relatedLot": "784edfb267f747f896f021ac41e71c3e", 
+        "relatedLot": "6321e70901b245d9af010e1f2d319663", 
         "value": {
           "amount": 500
         }, 
@@ -49,19 +49,19 @@ DATA:
 }
 
 Response: 201 Created
-Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/bcfa4c735e7c48efac20aa4542534c10/bids/4591f98295f34607bda8972ad6582fa0
+Content-Type: application/json
+Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/075de19924234564b210c1381d471141/bids/1b4526cdb602475d8ffdc3088822877c
 {
   "access": {
-    "token": "7722e81271054642ae2464d3840272a6"
+    "token": "5ecd4bb96d07468e9e6f11774743b1e5"
   }, 
   "data": {
     "status": "pending", 
     "selfEligible": true, 
     "lotValues": [
       {
-        "relatedLot": "be0820de82f94afd887c4715ce9bcd8c", 
-        "date": "2017-06-21T16:03:04.657261+03:00", 
+        "relatedLot": "d72fe832965043cf88e349d2822dd45b", 
+        "date": "2018-09-21T05:27:25.141793+03:00", 
         "status": "pending", 
         "value": {
           "currency": "UAH", 
@@ -70,8 +70,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/bcfa4c735e7c48e
         }
       }, 
       {
-        "relatedLot": "784edfb267f747f896f021ac41e71c3e", 
-        "date": "2017-06-21T16:03:04.657833+03:00", 
+        "relatedLot": "6321e70901b245d9af010e1f2d319663", 
+        "date": "2018-09-21T05:27:25.142811+03:00", 
         "status": "pending", 
         "value": {
           "currency": "UAH", 
@@ -104,8 +104,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/bcfa4c735e7c48e
         }
       }
     ], 
-    "date": "2017-06-21T16:03:04.656556+03:00", 
-    "id": "4591f98295f34607bda8972ad6582fa0"
+    "date": "2018-09-21T05:27:25.140473+03:00", 
+    "id": "1b4526cdb602475d8ffdc3088822877c"
   }
 }
 

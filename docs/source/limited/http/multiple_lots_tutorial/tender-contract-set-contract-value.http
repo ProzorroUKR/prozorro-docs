@@ -1,4 +1,4 @@
-PATCH /api/2.4/tenders/fcb2bff2ac9f422f88ff56712bcdac00/contracts/bd626856425a4d2cbc9a300ba423d588?acc_token=97ababe6bb6040a8a0877435dda74313 HTTP/1.0
+PATCH /api/2.4/tenders/3bbba56136a34a209049e5d0f966bd9e/contracts/89f3e4399f0f47ab8ef5f986c1620ffe?acc_token=68be8616f9b641a8a6e60a9ceaf5cd88 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 54
 Content-Type: application/json
@@ -14,13 +14,13 @@ Host: api-sandbox.openprocurement.org
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "pending", 
     "items": [
       {
-        "relatedLot": "8474237fc8544218bd0b763f5e6b06a5", 
+        "relatedLot": "e1c72b9d0e314e5187a06a75265eac9c", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -43,8 +43,8 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2018-09-12T01:01:40.890962+03:00", 
-          "endDate": "2018-09-15T01:01:40.890962+03:00"
+          "startDate": "2018-09-23T05:26:01.267704+03:00", 
+          "endDate": "2018-09-26T05:26:01.267704+03:00"
         }, 
         "description_ru": "Услуги школьных столовых", 
         "id": "2dc54675d6364e2baffbc0f8e74432ac"
@@ -79,10 +79,10 @@ Content-Type: application/json; charset=UTF-8
       "amountNet": 230.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2018-09-10T01:02:26.791530+03:00", 
-    "awardID": "930c8c9986634931a2b1e1b6eea6e918", 
-    "id": "bd626856425a4d2cbc9a300ba423d588", 
-    "contractID": "UA-2018-09-10-000001-1"
+    "date": "2018-09-21T05:26:40.785251+03:00", 
+    "awardID": "222dfd45db0d4027849ce76ff3976adf", 
+    "id": "89f3e4399f0f47ab8ef5f986c1620ffe", 
+    "contractID": "UA-2018-09-21-000001-1"
   }
 }
 

@@ -1,18 +1,18 @@
-GET /api/2.3/plans HTTP/1.0
+GET /api/2.4/plans HTTP/1.0
 Host: api-sandbox.openprocurement.org
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "next_page": {
-    "path": "/api/2.3/plans?offset=2017-06-21T17%3A41%3A40.588719%2B03%3A00", 
-    "uri": "http://api-sandbox.openprocurement.org/api/2.3/plans?offset=2017-06-21T17%3A41%3A40.588719%2B03%3A00", 
-    "offset": "2017-06-21T17:41:40.588719+03:00"
+    "path": "/api/2.4/plans?offset=2018-09-21T05%3A22%3A53.934994%2B03%3A00", 
+    "uri": "http://api-sandbox.openprocurement.org/api/2.4/plans?offset=2018-09-21T05%3A22%3A53.934994%2B03%3A00", 
+    "offset": "2018-09-21T05:22:53.934994+03:00"
   }, 
   "data": [
     {
-      "id": "52862ec099ff4debbf9f26a0980f27f3", 
-      "dateModified": "2017-06-21T17:41:40.588719+03:00"
+      "id": "9acca76c7124420e86d3b12019a99fd5", 
+      "dateModified": "2018-09-21T05:22:53.934994+03:00"
     }
   ]
 }

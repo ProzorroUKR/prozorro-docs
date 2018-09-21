@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/a77ccbd6834d44a4a8107cffc9a04406/awards/49251d72bb734eb3a947394cbb42bccb/complaints/bfa2c6a998a84382b629817e1fd9f941?acc_token=20ba5c58e5e24c80bab2b29359c51020 HTTP/1.0
+PATCH /api/2.4/tenders/2cde8ec7c2104c50a25e86879ab6305c/awards/c50549b4223c480badf1e0d497dafd61/complaints/65d575b29fa44aa88048d5fea13d7b7a?acc_token=2799a4f843cb4e01ba8701ced9cc5de8 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 31
 Content-Type: application/json
@@ -11,7 +11,7 @@ DATA:
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "pending", 
@@ -21,12 +21,12 @@ Content-Type: application/json; charset=UTF-8
         "author": "complaint_owner", 
         "language": "uk", 
         "title": "Complaint_Attachement.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/d34b1d61a6204a14b9c12b1fa58e22cc?KeyID=6bef7d96&Signature=aKrJh88ytDsNALh15%2F7mbKqegxkMgulRbIRK8lNcoJIZ3js6ISy6iOZsuOzg%2Fvz%2F1r8YmJ9FVeXGu%252B%252BeFBgWCA%253D%253D", 
+        "url": "http://public.docs-sandbox.openprocurement.org/get/ab822103f9174e48b4ff547c17045195?KeyID=9b0df68a&Signature=KNf6kIWEw4zpBdH%252BloLIg3lFaGjiDPEiQxSgrno4VBjbMAoJgq3vGzO2icNzy8fJ79nrVsSMrI0T9gyp5P0YBg%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T16:02:39.744386+03:00", 
-        "id": "e3855eee03df4b22b662e540fa71f2c7", 
-        "dateModified": "2017-06-21T16:02:39.744431+03:00"
+        "datePublished": "2018-09-21T05:26:51.247633+03:00", 
+        "id": "e8338cdc572046aeab6719d2fa3250ae", 
+        "dateModified": "2018-09-21T05:26:51.247717+03:00"
       }
     ], 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
@@ -52,11 +52,11 @@ Content-Type: application/json; charset=UTF-8
       }
     }, 
     "title": "Недостатньо інформації", 
-    "dateSubmitted": "2017-06-21T16:02:39.921652+03:00", 
-    "complaintID": "UA-2017-06-21-000001.1", 
-    "date": "2017-06-21T16:02:39.930654+03:00", 
+    "dateSubmitted": "2018-09-21T05:26:51.485822+03:00", 
+    "complaintID": "UA-2018-09-21-000001.1", 
+    "date": "2018-09-21T05:26:51.497008+03:00", 
     "type": "complaint", 
-    "id": "bfa2c6a998a84382b629817e1fd9f941"
+    "id": "65d575b29fa44aa88048d5fea13d7b7a"
   }
 }
 

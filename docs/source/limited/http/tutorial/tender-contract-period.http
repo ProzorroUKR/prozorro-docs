@@ -1,4 +1,4 @@
-PATCH /api/2.4/tenders/a79e49cd9f8d490d8c967946e2225acd/contracts/b8e0200e0e29453fa680c19a938f652b?acc_token=3f3e1edda3b04f9faf7a9805d933b110 HTTP/1.0
+PATCH /api/2.4/tenders/277e62dfb09742939184a9c5082f5ab1/contracts/4f5dd9b08b3948d9bd1186d2ef9c788d?acc_token=e8509ae132974f299912390eb918c9d8 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 106
 Content-Type: application/json
@@ -7,14 +7,14 @@ Host: api-sandbox.openprocurement.org
 {
   "data": {
     "period": {
-      "startDate": "2018-09-10T01:01:40.890962", 
-      "endDate": "2019-09-10T01:01:40.890962"
+      "startDate": "2018-09-21T05:26:01.267704", 
+      "endDate": "2019-09-21T05:26:01.267704"
     }
   }
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "pending", 
@@ -42,8 +42,8 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2018-09-12T01:01:40.890962+03:00", 
-          "endDate": "2018-09-15T01:01:40.890962+03:00"
+          "startDate": "2018-09-23T05:26:01.267704+03:00", 
+          "endDate": "2018-09-26T05:26:01.267704+03:00"
         }, 
         "description_ru": "Услуги школьных столовых", 
         "id": "2dc54675d6364e2baffbc0f8e74432ac", 
@@ -83,8 +83,8 @@ Content-Type: application/json; charset=UTF-8
       }
     ], 
     "period": {
-      "startDate": "2018-09-10T01:01:40.890962+03:00", 
-      "endDate": "2019-09-10T01:01:40.890962+03:00"
+      "startDate": "2018-09-21T05:26:01.267704+03:00", 
+      "endDate": "2019-09-21T05:26:01.267704+03:00"
     }, 
     "value": {
       "currency": "UAH", 
@@ -92,11 +92,11 @@ Content-Type: application/json; charset=UTF-8
       "amountNet": 230.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "dateSigned": "2018-09-10T01:01:40.890962+03:00", 
-    "date": "2018-09-10T01:01:50.231435+03:00", 
-    "awardID": "7c95c0dc44194ef5a31d8df957164852", 
-    "id": "b8e0200e0e29453fa680c19a938f652b", 
-    "contractID": "UA-2018-09-10-000001-1"
+    "dateSigned": "2018-09-21T05:26:01.267704+03:00", 
+    "date": "2018-09-21T05:26:09.727858+03:00", 
+    "awardID": "1679700b65d241c49623ee53205f6a3b", 
+    "id": "4f5dd9b08b3948d9bd1186d2ef9c788d", 
+    "contractID": "UA-2018-09-21-000001-1"
   }
 }
 

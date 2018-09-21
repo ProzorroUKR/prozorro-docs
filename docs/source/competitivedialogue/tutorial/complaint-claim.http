@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/111752fdb517426483c683295a0787a1/complaints/84f1fc9bbaec46d4b471df796dfc1d9f?acc_token=59f60f90907f44e59423914bb0febb72 HTTP/1.0
+PATCH /api/2.4/tenders/0bb5330bac844b2eb6dd5f4ecccc6e0c/complaints/3b53ae9424264ba0be645c5310925412?acc_token=9096443de95d4238a14589f6f0dc1d65 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 29
 Content-Type: application/json
@@ -11,7 +11,7 @@ DATA:
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "claim", 
@@ -21,21 +21,21 @@ Content-Type: application/json; charset=UTF-8
         "author": "complaint_owner", 
         "language": "uk", 
         "title": "Complaint_Attachement.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/3f4b03701cb34f339a4d2121e1233654?KeyID=36a84cbf&Signature=tWC8i3ByCQuWPoOsVS1UyzZvtLpBba1%2FX%252Bd2HRJJk3t3j5np8BQ5lSbQr84OsyhD3P4UIpYnkr9pc3D%2Fk%252BedDg%253D%253D", 
+        "url": "http://public.docs-sandbox.openprocurement.org/get/76005741af8c4ebabb960567a903a9c5?KeyID=f8b501ef&Signature=CsCdU4GbpMUfdJi1TU3aHHNemhAHWSplgdu6fJx8UsQMJzhqYrO2BO4%252B%2F6I%252BZNYuz4ElPRXr5Y2RmEf4qxM8AQ%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T17:04:55.519407+03:00", 
-        "id": "e2d830cefdf24e9abc0c1c3e328c7d29", 
-        "dateModified": "2017-06-21T17:04:55.519445+03:00"
+        "datePublished": "2018-09-21T05:23:48.225359+03:00", 
+        "id": "f5dc03079bb1409e8f34e11e3386fb10", 
+        "dateModified": "2018-09-21T05:23:48.225413+03:00"
       }
     ], 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
     "title": "Недостатньо інформації", 
-    "dateSubmitted": "2017-06-21T17:04:55.607582+03:00", 
-    "complaintID": "UA-2017-06-21-000001.1", 
-    "date": "2017-06-21T17:04:55.612005+03:00", 
+    "dateSubmitted": "2018-09-21T05:23:48.368707+03:00", 
+    "complaintID": "UA-2018-09-21-000001.1", 
+    "date": "2018-09-21T05:23:48.373006+03:00", 
     "type": "claim", 
-    "id": "84f1fc9bbaec46d4b471df796dfc1d9f"
+    "id": "3b53ae9424264ba0be645c5310925412"
   }
 }
 

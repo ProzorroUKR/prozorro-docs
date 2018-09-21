@@ -1,4 +1,4 @@
-PATCH /api/2.4/tenders/5a12aa2342aa4042bf6980a62d52669b/contracts/14592124eee847cc86f970c2e238626d?acc_token=c882469d40054373bf95c9ab87c9249f HTTP/1.0
+PATCH /api/2.4/tenders/6c51b2b430784297b2ce60215c18535f/contracts/982f86631e124d7688fdfd50f3cdcff4?acc_token=d5ed31fb489d4729a424b512f9b723f0 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 118
 Content-Type: application/json
@@ -7,14 +7,14 @@ DATA:
 {
   "data": {
     "period": {
-      "startDate": "2017-10-11T17:20:26.559997+03:00", 
-      "endDate": "2018-10-11T17:20:26.560051+03:00"
+      "startDate": "2018-09-21T05:47:21.559438+03:00", 
+      "endDate": "2019-09-21T05:47:21.559522+03:00"
     }
   }
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "pending", 
@@ -41,7 +41,7 @@ Content-Type: application/json; charset=UTF-8
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "a73f68d005d244fd8972480d9fffe56a", 
+        "id": "6126441c568849ada199c622631c0eb9", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -69,7 +69,7 @@ Content-Type: application/json; charset=UTF-8
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "885400cdaccf4fa0b174b5c17f7b4cba", 
+        "id": "94d047f95d01448fae2ff9fcc9c5c7a1", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -98,20 +98,23 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
+    "contractNumber": "contract#1", 
     "period": {
-      "startDate": "2017-10-11T17:20:26.559997+03:00", 
-      "endDate": "2018-10-11T17:20:26.560051+03:00"
+      "startDate": "2018-09-21T05:47:21.559438+03:00", 
+      "endDate": "2019-09-21T05:47:21.559522+03:00"
     }, 
+    "dateSigned": "2018-09-21T05:47:21.040093+03:00", 
     "value": {
       "yearlyPaymentsPercentage": 0.9, 
-      "valueAddedTaxIncluded": true, 
+      "amountNet": 9382.42, 
+      "amountPerformance": 860.12, 
       "currency": "UAH", 
-      "amount": 9432.74, 
+      "amount": 9383.42, 
       "contractDuration": {
         "days": 74, 
         "years": 10
       }, 
-      "amountPerformance": 865.24, 
+      "valueAddedTaxIncluded": true, 
       "annualCostsReduction": [
         500.0, 
         1000.0, 
@@ -136,10 +139,10 @@ Content-Type: application/json; charset=UTF-8
         1000.0
       ]
     }, 
-    "dateSigned": "2017-10-11T17:20:26.159568+03:00", 
-    "awardID": "7d531ab11c7c4f56ae13f1edc0bf2061", 
-    "id": "14592124eee847cc86f970c2e238626d", 
-    "contractID": "UA-2017-10-11-000001-1"
+    "date": "2018-09-21T05:47:20.018026+03:00", 
+    "awardID": "12ebea488ed74e3a8ca7a9a0ab9b6147", 
+    "id": "982f86631e124d7688fdfd50f3cdcff4", 
+    "contractID": "UA-2018-09-21-000001-1"
   }
 }
 

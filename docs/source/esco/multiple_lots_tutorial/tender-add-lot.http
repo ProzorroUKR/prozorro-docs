@@ -1,4 +1,4 @@
-POST /api/2.4/tenders/b204841c7ee844019a1038571b96b55a/lots?acc_token=8f76350634a34ab7bcb1c24149296e88 HTTP/1.0
+POST /api/2.4/tenders/924cca868371469cac978bd088aab46a/lots?acc_token=3503d77e5e194549816da4b6afeae452 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 175
 Content-Type: application/json
@@ -14,8 +14,8 @@ DATA:
 }
 
 Response: 201 Created
-Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/b204841c7ee844019a1038571b96b55a/lots/0b447ad702e64138b2c550dfe583c7f2
+Content-Type: application/json
+Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/924cca868371469cac978bd088aab46a/lots/b95d552463884b6db822a57c4242db3d
 {
   "data": {
     "status": "active", 
@@ -23,7 +23,7 @@ Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/b204841c7ee8440
     "fundingKind": "other", 
     "title": "Лот №1", 
     "auctionPeriod": {
-      "shouldStartAfter": "2017-12-08T11:17:21.274494+03:00"
+      "shouldStartAfter": "2018-11-27T00:00:00+03:00"
     }, 
     "minValue": {
       "currency": "UAH", 
@@ -32,8 +32,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/b204841c7ee8440
     }, 
     "minimalStepPercentage": 0.006, 
     "yearlyPaymentsPercentageRange": 0.8, 
-    "date": "2017-10-03T11:18:05.345041+03:00", 
-    "id": "0b447ad702e64138b2c550dfe583c7f2"
+    "date": "2018-09-21T05:47:28.713741+03:00", 
+    "id": "b95d552463884b6db822a57c4242db3d"
   }
 }
 

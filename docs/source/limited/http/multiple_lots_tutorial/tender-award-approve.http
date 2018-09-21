@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/a464e40a3bc54b91b508bf995be294d7/awards/080bbf4ba60048dda6519ff97071be4f?acc_token=327c6a6852614356871347e875519e06 HTTP/1.0
+PATCH /api/2.4/tenders/3bbba56136a34a209049e5d0f966bd9e/awards/222dfd45db0d4027849ce76ff3976adf?acc_token=68be8616f9b641a8a6e60a9ceaf5cd88 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 49
 Content-Type: application/json
@@ -12,14 +12,14 @@ Host: api-sandbox.openprocurement.org
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "active", 
-    "lotID": "562ba1a0d97e476b8138c042691c4931", 
+    "lotID": "e1c72b9d0e314e5187a06a75265eac9c", 
     "complaintPeriod": {
-      "startDate": "2017-06-21T16:19:11.800561+03:00", 
-      "endDate": "2017-06-27T00:00:00+03:00"
+      "startDate": "2018-09-21T05:26:40.454958+03:00", 
+      "endDate": "2018-09-27T00:00:00+03:00"
     }, 
     "suppliers": [
       {
@@ -50,8 +50,8 @@ Content-Type: application/json; charset=UTF-8
       "valueAddedTaxIncluded": true
     }, 
     "qualified": true, 
-    "date": "2017-06-21T16:19:11.888247+03:00", 
-    "id": "080bbf4ba60048dda6519ff97071be4f"
+    "date": "2018-09-21T05:26:40.579643+03:00", 
+    "id": "222dfd45db0d4027849ce76ff3976adf"
   }
 }
 

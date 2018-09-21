@@ -1,4 +1,4 @@
-PATCH /api/2.4/tenders/5a12aa2342aa4042bf6980a62d52669b?acc_token=c882469d40054373bf95c9ab87c9249f HTTP/1.0
+PATCH /api/2.4/tenders/6c51b2b430784297b2ce60215c18535f?acc_token=d5ed31fb489d4729a424b512f9b723f0 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 57
 Content-Type: application/json
@@ -14,22 +14,22 @@ DATA:
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "procurementMethod": "open", 
     "complaintPeriod": {
-      "startDate": "2017-10-11T17:20:16.421908+03:00", 
-      "endDate": "2017-11-06T00:00:00+02:00"
+      "startDate": "2018-09-21T05:47:07.243700+03:00", 
+      "endDate": "2018-10-17T00:00:00+03:00"
     }, 
     "enquiryPeriod": {
-      "startDate": "2017-10-11T17:20:16.421908+03:00", 
-      "clarificationsUntil": "2017-11-03T17:20:26.653070+03:00", 
-      "endDate": "2017-10-31T17:20:26.653070+03:00", 
-      "invalidationDate": "2017-10-11T17:20:16.890878+03:00"
+      "startDate": "2018-09-21T05:47:07.243700+03:00", 
+      "clarificationsUntil": "2018-10-17T05:47:17.561799+03:00", 
+      "endDate": "2018-10-11T05:47:17.561799+03:00", 
+      "invalidationDate": "2018-09-21T05:47:07.886859+03:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "next_check": "2017-11-10T16:20:26.653070+02:00", 
+    "next_check": "2018-10-21T05:47:17.561799+03:00", 
     "procuringEntity": {
       "kind": "general", 
       "name": "ЗОСШ #10 м.Вінниці", 
@@ -57,26 +57,26 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "owner": "broker", 
     "title_en": "Services in school canteens", 
-    "id": "5a12aa2342aa4042bf6980a62d52669b", 
+    "id": "6c51b2b430784297b2ce60215c18535f", 
     "guarantee": {
       "currency": "USD", 
       "amount": 8.0
     }, 
     "title": "Послуги шкільних їдалень", 
-    "tenderID": "UA-2017-10-11-000001", 
+    "tenderID": "UA-2018-09-21-000001", 
     "minimalStepPercentage": 0.006, 
     "yearlyPaymentsPercentageRange": 0.8, 
-    "dateModified": "2017-10-11T17:20:16.894304+03:00", 
+    "dateModified": "2018-09-21T05:47:07.893715+03:00", 
     "status": "active.tendering", 
     "tenderPeriod": {
-      "startDate": "2017-10-11T17:20:16.421908+03:00", 
-      "endDate": "2017-11-10T17:20:26.653070+03:00"
+      "startDate": "2018-09-21T05:47:07.243700+03:00", 
+      "endDate": "2018-10-21T05:47:17.561799+03:00"
     }, 
     "auctionPeriod": {
-      "shouldStartAfter": "2017-12-16T00:00:00+03:00"
+      "shouldStartAfter": "2018-11-26T00:00:00+03:00"
     }, 
     "procurementMethodType": "esco", 
-    "date": "2017-10-11T17:20:16.454423+03:00", 
+    "date": "2018-09-21T05:47:07.319289+03:00", 
     "NBUdiscountRate": 0.22986, 
     "minValue": {
       "currency": "UAH", 
@@ -107,7 +107,7 @@ Content-Type: application/json; charset=UTF-8
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "a73f68d005d244fd8972480d9fffe56a", 
+        "id": "6126441c568849ada199c622631c0eb9", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -135,14 +135,14 @@ Content-Type: application/json; charset=UTF-8
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "885400cdaccf4fa0b174b5c17f7b4cba", 
+        "id": "94d047f95d01448fae2ff9fcc9c5c7a1", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }
       }
     ], 
-    "noticePublicationDate": "2017-10-11T17:20:16.434661+03:00", 
+    "noticePublicationDate": "2018-09-21T05:47:07.258403+03:00", 
     "awardCriteria": "ratedCriteria"
   }
 }

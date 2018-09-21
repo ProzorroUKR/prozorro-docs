@@ -1,4 +1,4 @@
-PATCH /api/2.4/tenders/5a12aa2342aa4042bf6980a62d52669b/bids/90968d627c5844b5bfbfb37fd1e8267f?acc_token=1ab5d30c28ca485cb0d7dba5d46aa131 HTTP/1.0
+PATCH /api/2.4/tenders/6c51b2b430784297b2ce60215c18535f/bids/496679c775144b1ba6c266e3b51accb4?acc_token=8d096c9f4162412a9e66d1dc23e09f0e HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 31
 Content-Type: application/json
@@ -11,7 +11,7 @@ DATA:
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "pending", 
@@ -19,12 +19,12 @@ Content-Type: application/json; charset=UTF-8
       "yearlyPaymentsPercentage": 0.9, 
       "valueAddedTaxIncluded": true, 
       "currency": "UAH", 
-      "amount": 9432.74, 
+      "amount": 9383.42, 
       "contractDuration": {
         "days": 74, 
         "years": 10
       }, 
-      "amountPerformance": 865.24, 
+      "amountPerformance": 860.12, 
       "annualCostsReduction": [
         500.0, 
         1000.0, 
@@ -72,8 +72,8 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "date": "2017-10-11T17:20:18.389185+03:00", 
-    "id": "90968d627c5844b5bfbfb37fd1e8267f"
+    "date": "2018-09-21T05:47:09.690597+03:00", 
+    "id": "496679c775144b1ba6c266e3b51accb4"
   }
 }
 

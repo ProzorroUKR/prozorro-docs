@@ -1,4 +1,4 @@
-PATCH /api/2.3/plans/52862ec099ff4debbf9f26a0980f27f3?acc_token=fc9c0f555bf24dffa2b855ed618bc81c HTTP/1.0
+PATCH /api/2.4/plans/9acca76c7124420e86d3b12019a99fd5?acc_token=b01a3931f7d744b197bf3ca8ea4a7185 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 652
 Content-Type: application/json
@@ -35,7 +35,7 @@ Host: api-sandbox.openprocurement.org
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "classification": {
@@ -61,7 +61,7 @@ Content-Type: application/json; charset=UTF-8
         "deliveryDate": {
           "endDate": "2016-06-01T23:06:30.023018+03:00"
         }, 
-        "id": "f8173e5bf8754aec89a47a624b3cefd1", 
+        "id": "ba6ae2c8de3b49e58bd8c3a545023ea8", 
         "unit": {
           "code": "KGM", 
           "name": "кг"
@@ -69,7 +69,7 @@ Content-Type: application/json; charset=UTF-8
         "quantity": 5000
       }
     ], 
-    "planID": "UA-P-2017-06-21-000001", 
+    "planID": "UA-P-2018-09-21-000001", 
     "budget": {
       "amountNet": 12222.0, 
       "description": "budget_description", 
@@ -81,12 +81,12 @@ Content-Type: application/json; charset=UTF-8
       "amount": 10000.0, 
       "id": "12303111000-2"
     }, 
-    "datePublished": "2017-06-21T17:41:40.564867+03:00", 
+    "datePublished": "2018-09-21T05:22:53.881879+03:00", 
     "tender": {
       "procurementMethod": "open", 
       "procurementMethodType": "belowThreshold", 
       "tenderPeriod": {
-        "startDate": "2017-06-28T17:41:39.677983+03:00"
+        "startDate": "2018-09-28T05:22:51.999229+03:00"
       }
     }, 
     "additionalClassifications": [
@@ -105,8 +105,8 @@ Content-Type: application/json; charset=UTF-8
       "name": "ДУС"
     }, 
     "owner": "broker", 
-    "dateModified": "2017-06-21T17:41:40.747307+03:00", 
-    "id": "52862ec099ff4debbf9f26a0980f27f3"
+    "dateModified": "2018-09-21T05:22:54.183873+03:00", 
+    "id": "9acca76c7124420e86d3b12019a99fd5"
   }
 }
 

@@ -1,21 +1,22 @@
-GET /api/2.3/tenders/c91cc0e7dffc4bc7b59cf53d9bbfd0bf?acc_token=1c073921ab5f4a30a693936b569bfa3b HTTP/1.0
+GET /api/2.4/tenders/d72e2cfe05454662b4b0a96b587436ef?acc_token=0d11f7c340f04eb68da346a7b621ccc5 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: api-sandbox.openprocurement.org
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "procurementMethod": "open", 
+    "status": "active.stage2.pending", 
     "complaintPeriod": {
-      "startDate": "2017-05-11T17:04:37.384821+03:00", 
-      "endDate": "2017-06-07T00:00:00+03:00"
+      "startDate": "2018-08-11T05:23:23.418725+03:00", 
+      "endDate": "2018-09-07T00:00:00+03:00"
     }, 
     "enquiryPeriod": {
-      "startDate": "2017-05-11T17:04:37.384821+03:00", 
-      "clarificationsUntil": "2017-06-07T17:04:37.384821+03:00", 
-      "endDate": "2017-06-01T17:04:37.384821+03:00", 
-      "invalidationDate": "2017-06-21T17:05:15.690468+03:00"
+      "startDate": "2018-08-11T05:23:23.418725+03:00", 
+      "clarificationsUntil": "2018-09-06T00:00:00+03:00", 
+      "endDate": "2018-09-01T05:23:23.418725+03:00", 
+      "invalidationDate": "2018-09-21T05:24:17.446315+03:00"
     }, 
     "submissionMethod": "electronicAuction", 
     "procuringEntity": {
@@ -68,16 +69,16 @@ Content-Type: application/json; charset=UTF-8
           }
         }, 
         "title": "Калорійність", 
-        "date": "2017-06-21T17:05:13.985479+03:00", 
+        "date": "2018-09-21T05:24:14.841381+03:00", 
         "answer": "Таблицю додано в файлі \"Kalorijnist.xslx\"", 
-        "dateAnswered": "2017-06-21T17:05:14.073811+03:00", 
-        "id": "785c0ae40d5847b2875308789645e310", 
+        "dateAnswered": "2018-09-21T05:24:14.970351+03:00", 
+        "id": "490d85ae17f7415599576e76100a9c83", 
         "questionOf": "tender"
       }
     ], 
     "owner": "broker", 
     "title_en": "Services in school canteens", 
-    "id": "c91cc0e7dffc4bc7b59cf53d9bbfd0bf", 
+    "id": "d72e2cfe05454662b4b0a96b587436ef", 
     "guarantee": {
       "currency": "USD", 
       "amount": 8.0
@@ -85,86 +86,89 @@ Content-Type: application/json; charset=UTF-8
     "documents": [
       {
         "hash": "md5:00000000000000000000000000000000", 
+        "author": "tender_owner", 
         "language": "uk", 
         "title": "Notice.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/65c65623b2e74904832de0f87b92f7e5?KeyID=ee3bcdd8&Signature=XZNyxgQ4q%2Fe%2Fx90i46m%2FppB1F0lROjiTdHBGN2DDWnziWsIX9hHKrR6pWib4oBs4kQxPmv8vaEbCwppRsVx6DQ%253D%253D", 
+        "url": "http://public.docs-sandbox.openprocurement.org/get/bb9ebac07fcb405b9dcb58b24d1125a2?KeyID=b2351eac&Signature=KBKw8HLtQ2QMbReuT3qxDOZfznfj%2FDBsNxg4f3J4Bs7D3owiV2JADSwvWN8cLty%252BXOQM0gboJNpncdvB2xxzAg%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T17:05:13.666862+03:00", 
-        "id": "8a6e4ab4338b434294b6a2eba1615813", 
-        "dateModified": "2017-06-21T17:05:13.666896+03:00"
+        "datePublished": "2018-09-21T05:24:14.312205+03:00", 
+        "id": "83a79169fe12488bb32a6de37c52e453", 
+        "dateModified": "2018-09-21T05:24:14.312254+03:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
+        "author": "tender_owner", 
         "language": "uk", 
         "title": "AwardCriteria.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/ac4aae70844b4bfd99b2bd87259d7397?KeyID=ee3bcdd8&Signature=2vhWd%252B98VFz%2FczwNxsga5A94Tp0fRxPuFtUSpAy4R%2F3b9ofHGkF3HIfMYA19wqDFIe0vkDSV4wTsR3VmkkUlBQ%253D%253D", 
+        "url": "http://public.docs-sandbox.openprocurement.org/get/5f1362258dd94c999ed1b4381dd42b6e?KeyID=b2351eac&Signature=BC%252BiYAropPp40ozjWV76SkpBFMmjGB6wkxpEqARXEd%252BZFPHlP54JwVtn5BdKR7v5FQ3SY5yq1lPW1MC5RdNsBQ%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T17:05:13.767519+03:00", 
-        "id": "a111e6a58c5e4068b154c7aee1f02795", 
-        "dateModified": "2017-06-21T17:05:13.767551+03:00"
+        "datePublished": "2018-09-21T05:24:14.515656+03:00", 
+        "id": "1f9e9ac97f124f9bac712938a8c0b8bd", 
+        "dateModified": "2018-09-21T05:24:14.515702+03:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
+        "author": "tender_owner", 
         "language": "uk", 
         "title": "AwardCriteria-2.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/85d023737f00442aa17a71b8edb9b875?KeyID=ee3bcdd8&Signature=xDhrDd0TFVKo3WaL98%252B230xJwf5gcX7N091sxyL%2F9rcJl2gdikFbdgwmn92avDIt8oXludvHXQFx1xwogFlBBw%253D%253D", 
+        "url": "http://public.docs-sandbox.openprocurement.org/get/c8c94ef7c45545c18e4b56eb2e42f269?KeyID=b2351eac&Signature=AwfRrKC5YcmHZLsF4lCzjQkS7fAvcjthVAyd3Bz%252BFAvo6R63l5a4C1P3Hw6M0Ls8bD45w3W%2FrN4GNpWNmBZ1DA%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T17:05:13.767519+03:00", 
-        "id": "a111e6a58c5e4068b154c7aee1f02795", 
-        "dateModified": "2017-06-21T17:05:13.875883+03:00"
+        "datePublished": "2018-09-21T05:24:14.515656+03:00", 
+        "id": "1f9e9ac97f124f9bac712938a8c0b8bd", 
+        "dateModified": "2018-09-21T05:24:14.681650+03:00"
       }
     ], 
     "title": "Послуги шкільних їдалень", 
     "qualificationPeriod": {
-      "startDate": "2017-06-11T17:04:37.384821+03:00", 
-      "endDate": "2017-06-21T17:04:37.384821+03:00"
+      "startDate": "2018-09-11T05:23:23.418725+03:00", 
+      "endDate": "2018-09-21T05:23:23.418725+03:00"
     }, 
-    "tenderID": "UA-2017-06-21-000001", 
-    "dateModified": "2017-06-21T17:05:18.638951+03:00", 
-    "status": "active.stage2.pending", 
+    "tenderID": "UA-2018-09-21-000001", 
+    "dateModified": "2018-09-21T05:24:21.323339+03:00", 
+    "numberOfBids": 3, 
     "tenderPeriod": {
-      "startDate": "2017-05-11T17:04:37.384821+03:00", 
-      "endDate": "2017-06-11T17:04:37.384821+03:00"
+      "startDate": "2018-08-11T05:23:23.418725+03:00", 
+      "endDate": "2018-09-11T05:23:23.418725+03:00"
     }, 
     "qualifications": [
       {
         "status": "active", 
         "eligible": true, 
         "qualified": true, 
-        "bidID": "2b73ea4bdef34b6481601d7f4049d3f0", 
-        "date": "2017-06-21T17:05:17.081635+03:00", 
-        "id": "c6090db9cd7c4420b4e5f55df3057f53"
+        "bidID": "b5767f4d83754df8bfc04bd54e3dd5a0", 
+        "date": "2018-09-21T05:24:19.233336+03:00", 
+        "id": "990ce8fb4a3343e98425d97a5363f591"
       }, 
       {
         "status": "active", 
         "eligible": true, 
         "qualified": true, 
-        "bidID": "99d190d9f85547d0af5ecb28779f5ec2", 
-        "date": "2017-06-21T17:05:17.254556+03:00", 
-        "id": "aeb9cda738bd4eeeb87da9ff9ac2bd6a"
+        "bidID": "551d2116a66948fdae44b93c84c53b2b", 
+        "date": "2018-09-21T05:24:19.450643+03:00", 
+        "id": "4388a6e9cf6b47dc8544d020224099b4"
       }, 
       {
         "status": "unsuccessful", 
         "eligible": false, 
         "qualified": false, 
-        "bidID": "b017ee1976de45118f59fd0e27b3ecf1", 
-        "date": "2017-06-21T17:05:17.435731+03:00", 
-        "id": "dc6d256011744635a08150bc9779145e"
+        "bidID": "07dcf485aa474632a79339aca20d0dd3", 
+        "date": "2018-09-21T05:24:19.685722+03:00", 
+        "id": "4b76e828831e4e1caeb6259ac7e6441f"
       }, 
       {
         "status": "active", 
         "eligible": true, 
         "qualified": true, 
-        "bidID": "7918119aa7584a10b19cfa71e47b1288", 
-        "date": "2017-06-21T17:05:17.609634+03:00", 
-        "id": "6b1cbdb28e8b446396acbdff58a7a0d0"
+        "bidID": "ec4dccb11d954f329d6fb8f2443c20c5", 
+        "date": "2018-09-21T05:24:19.928139+03:00", 
+        "id": "4597544504b1463a8522c1bd0a7ff742"
       }
     ], 
     "procurementMethodType": "competitiveDialogueEU", 
-    "date": "2017-06-21T17:05:18.638951+03:00", 
+    "date": "2018-09-21T05:24:21.323339+03:00", 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35.0, 
@@ -194,10 +198,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-11T17:04:37.418546+03:00", 
-          "endDate": "2017-08-10T17:04:37.418606+03:00"
+          "startDate": "2018-10-11T05:23:23.453649+03:00", 
+          "endDate": "2018-11-10T05:23:23.453757+03:00"
         }, 
-        "id": "ce277c854b1443028376f6af6900b29c", 
+        "id": "17450abf040b4175bc20d32d08751636", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -227,15 +231,192 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-11T17:04:37.418636+03:00", 
-          "endDate": "2017-08-10T17:04:37.418662+03:00"
+          "startDate": "2018-10-11T05:23:23.453794+03:00", 
+          "endDate": "2018-11-10T05:23:23.453817+03:00"
         }, 
-        "id": "9585d44eb74548e3b05d7aea37f16600", 
+        "id": "c8fd2d6a12924049a184a27b678d4f14", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
         "quantity": 1
+      }
+    ], 
+    "bids": [
+      {
+        "status": "active", 
+        "documents": [
+          {
+            "hash": "md5:00000000000000000000000000000000", 
+            "confidentiality": "public", 
+            "language": "uk", 
+            "title": "Proposal.pdf", 
+            "url": "http://public.docs-sandbox.openprocurement.org/get/601166d26167465992ac99a64cdc2f1d?KeyID=b2351eac&Signature=s97Kqu%2FBoD7nLvtYf58ZyHIF9%252BOIxOQzxsrErAzzyAUTuc4Ub7zuVpeUWKpKdyz%2FCvhjmdCJrMkj4yd5cUR%252BDA%253D%253D", 
+            "format": "application/pdf", 
+            "isDescriptionDecision": false, 
+            "documentOf": "tender", 
+            "datePublished": "2018-09-21T05:24:16.279340+03:00", 
+            "id": "6833acfe1e5c4f29b78cca7f43eb5d40", 
+            "dateModified": "2018-09-21T05:24:16.279382+03:00"
+          }, 
+          {
+            "hash": "md5:00000000000000000000000000000000", 
+            "confidentiality": "buyerOnly", 
+            "language": "uk", 
+            "title": "DescriptiveProposal.pdf", 
+            "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/d72e2cfe05454662b4b0a96b587436ef/bids/b5767f4d83754df8bfc04bd54e3dd5a0/documents/cb78fcf969614c249a778ad09364a810?download=113863eddfb846fd8b20d58ca923d0e3", 
+            "format": "application/pdf", 
+            "isDescriptionDecision": true, 
+            "documentOf": "tender", 
+            "datePublished": "2018-09-21T05:24:16.439513+03:00", 
+            "id": "cb78fcf969614c249a778ad09364a810", 
+            "dateModified": "2018-09-21T05:24:16.439564+03:00"
+          }, 
+          {
+            "hash": "md5:00000000000000000000000000000000", 
+            "confidentiality": "buyerOnly", 
+            "language": "uk", 
+            "format": "application/pdf", 
+            "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/d72e2cfe05454662b4b0a96b587436ef/bids/b5767f4d83754df8bfc04bd54e3dd5a0/documents/3d60e2a7b9574e6b8282f544255b8ac1?download=2a6a97b9257a4d4190e9bfe76920c474", 
+            "confidentialityRationale": "Only our company sells badgers with pink hair.", 
+            "title": "Proposal_top_secrets.pdf", 
+            "isDescriptionDecision": false, 
+            "documentOf": "tender", 
+            "datePublished": "2018-09-21T05:24:16.760020+03:00", 
+            "id": "3d60e2a7b9574e6b8282f544255b8ac1", 
+            "dateModified": "2018-09-21T05:24:16.760064+03:00"
+          }
+        ], 
+        "id": "b5767f4d83754df8bfc04bd54e3dd5a0", 
+        "tenderers": [
+          {
+            "contactPoint": {
+              "email": "soleksuk@gmail.com", 
+              "telephone": "+380 (432) 21-69-30", 
+              "name": "Сергій Олексюк"
+            }, 
+            "identifier": {
+              "scheme": "UA-EDR", 
+              "id": "00137256", 
+              "uri": "http://www.sc.gov.ua/"
+            }, 
+            "name": "ДКП «Школяр»", 
+            "address": {
+              "postalCode": "21100", 
+              "countryName": "Україна", 
+              "streetAddress": "вул. Островського, 33", 
+              "region": "м. Вінниця", 
+              "locality": "м. Вінниця"
+            }
+          }
+        ]
+      }, 
+      {
+        "status": "active", 
+        "id": "551d2116a66948fdae44b93c84c53b2b", 
+        "tenderers": [
+          {
+            "contactPoint": {
+              "email": "aagt@gmail.com", 
+              "telephone": "+380 (322) 91-69-30", 
+              "name": "Андрій Олексюк"
+            }, 
+            "identifier": {
+              "scheme": "UA-EDR", 
+              "id": "00137226", 
+              "uri": "http://www.sc.gov.ua/"
+            }, 
+            "name": "ДКП «Книга»", 
+            "address": {
+              "postalCode": "79013", 
+              "countryName": "Україна", 
+              "streetAddress": "вул. Островського, 34", 
+              "region": "м. Львів", 
+              "locality": "м. Львів"
+            }
+          }
+        ]
+      }, 
+      {
+        "status": "unsuccessful", 
+        "id": "07dcf485aa474632a79339aca20d0dd3", 
+        "tenderers": [
+          {
+            "contactPoint": {
+              "email": "fake@mail.com", 
+              "telephone": "+380 (322) 12-34-56", 
+              "name": "Іван Іваненко"
+            }, 
+            "identifier": {
+              "scheme": "UA-EDR", 
+              "id": "00137227", 
+              "uri": "http://www.sc.gov.ua/"
+            }, 
+            "name": "«Снігур»", 
+            "address": {
+              "postalCode": "79013", 
+              "countryName": "Україна", 
+              "streetAddress": "вул. Островського, 35", 
+              "region": "м. Львів", 
+              "locality": "м. Львів"
+            }
+          }
+        ]
+      }, 
+      {
+        "status": "active", 
+        "documents": [
+          {
+            "hash": "md5:00000000000000000000000000000000", 
+            "confidentiality": "public", 
+            "language": "uk", 
+            "title": "Proposal_part1.pdf", 
+            "url": "http://public.docs-sandbox.openprocurement.org/get/0d00cb7a43f74d3a955c74dce3338fa4?KeyID=b2351eac&Signature=Qtk8npKy4KUxdJzicv8W9s0KnC7n7kiqt0PnL8h8cAIskwdNb3VeMT9Yj%252Bmy5zFGak6yjehHRw16w1MibNH1Bg%253D%253D", 
+            "format": "application/pdf", 
+            "isDescriptionDecision": false, 
+            "documentOf": "tender", 
+            "datePublished": "2018-09-21T05:24:18.256293+03:00", 
+            "id": "e5bffdc3e8d64e48970be21d95f92d2b", 
+            "dateModified": "2018-09-21T05:24:18.256329+03:00"
+          }, 
+          {
+            "hash": "md5:00000000000000000000000000000000", 
+            "confidentiality": "buyerOnly", 
+            "language": "uk", 
+            "format": "application/pdf", 
+            "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/d72e2cfe05454662b4b0a96b587436ef/bids/ec4dccb11d954f329d6fb8f2443c20c5/documents/5799bb944c9a4450be71dfc5211be58c?download=2a0936ed77d143fbbaf43252c7f6703e", 
+            "confidentialityRationale": "Only our company sells badgers with pink hair.", 
+            "title": "Proposal_part2.pdf", 
+            "isDescriptionDecision": false, 
+            "documentOf": "tender", 
+            "datePublished": "2018-09-21T05:24:18.257337+03:00", 
+            "id": "5799bb944c9a4450be71dfc5211be58c", 
+            "dateModified": "2018-09-21T05:24:18.257372+03:00"
+          }
+        ], 
+        "id": "ec4dccb11d954f329d6fb8f2443c20c5", 
+        "tenderers": [
+          {
+            "contactPoint": {
+              "email": "fake@mail.com", 
+              "telephone": "+380 (322) 12-34-56", 
+              "name": "Іван Карпенко"
+            }, 
+            "identifier": {
+              "scheme": "UA-EDR", 
+              "id": "00137228", 
+              "uri": "http://www.sc.gov.ua/"
+            }, 
+            "name": "«Кенгуру»", 
+            "address": {
+              "postalCode": "79013", 
+              "countryName": "Україна", 
+              "streetAddress": "вул. Коцюбинського, 15", 
+              "region": "м. Запоріжжя", 
+              "locality": "м. Запоріжя"
+            }
+          }
+        ]
       }
     ], 
     "value": {

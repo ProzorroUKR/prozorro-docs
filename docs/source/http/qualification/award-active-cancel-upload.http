@@ -1,12 +1,12 @@
-POST /api/2.3/tenders/6e33b56945624315afece8e75af7193c/awards/3ff474e4f3a843fba101c561e5cffb14/documents?acc_token=e96bd05708744828a13d48aa6e282cb9 HTTP/1.0
+POST /api/2.4/tenders/5723be5db56f4853b0a5f6ae6153b82f/awards/19653b947d40489e9c61437f69e605f4/documents?acc_token=cf589104745044fd8a7236860c147500 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 341
+Content-Length: 339
 Content-Type: application/json
 Host: api-sandbox.openprocurement.org
 
 {
   "data": {
-    "url": "http://public.docs-sandbox.openprocurement.org/get/6bd74e04745d4eeb99b4806f1dae82c9?KeyID=1a1ebb61&Signature=LAgDr%2B6y5LMCNb6bB7UPlkjL7JhiesqZ5QFPxZCHsPpJX5xpFFyc%2FYBKfYPhiDlHGcR6l9ObYpar4lpbkJ%2BBDw%3D%3D", 
+    "url": "http://public.docs-sandbox.openprocurement.org/get/6ce47f6fa9e44cd3940389fc6ec37ce5?KeyID=4972d1e3&Signature=8gyxQnExYVAuOMRe4W7dkJUkA%2FgYdjJ6s6BV7NzsY1dunC5CADyFMEwav0lvfTHYxJ6swu3UIfiibS%2FDTuCtCQ%3D%3D", 
     "title": "Cancellation_Reason.pdf", 
     "hash": "md5:00000000000000000000000000000000", 
     "format": "application/pdf"
@@ -15,20 +15,20 @@ Host: api-sandbox.openprocurement.org
 
 
 201 Created
-Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/6e33b56945624315afece8e75af7193c/awards/3ff474e4f3a843fba101c561e5cffb14/documents/6eec6788a5cb494589a9f3cab1661d99
+Content-Type: application/json
+Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/5723be5db56f4853b0a5f6ae6153b82f/awards/19653b947d40489e9c61437f69e605f4/documents/b6e63cd3b6654463aa2314536d701f8b
 
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "author": "tender_owner", 
     "title": "Cancellation_Reason.pdf", 
-    "url": "http://public.docs-sandbox.openprocurement.org/get/6bd74e04745d4eeb99b4806f1dae82c9?KeyID=1a1ebb61&Signature=qtr%252BRVTvbXo%2F%252BEsVgsfE%2Ff385WPW6pMjiTja4cwoCt2koVF19VA6%2FiSzHzcY5JvG7UmUl04wQa%2FBZSAmUVTcBw%253D%253D", 
+    "url": "http://public.docs-sandbox.openprocurement.org/get/6ce47f6fa9e44cd3940389fc6ec37ce5?KeyID=4972d1e3&Signature=APpx1xEm4Wm0qC9RpbisVHxNdJlU7bfXVa1GMhYGbFIvEFnpUP0sf4ftjZmWq6UD%252BI6J%252B3VFnuORYOWERjN8CA%253D%253D", 
     "format": "application/pdf", 
     "documentOf": "tender", 
-    "datePublished": "2017-07-25T17:36:52.594571+03:00", 
-    "id": "6eec6788a5cb494589a9f3cab1661d99", 
-    "dateModified": "2017-07-25T17:36:52.594591+03:00"
+    "datePublished": "2018-09-21T05:23:06.729146+03:00", 
+    "id": "b6e63cd3b6654463aa2314536d701f8b", 
+    "dateModified": "2018-09-21T05:23:06.729194+03:00"
   }
 }
 

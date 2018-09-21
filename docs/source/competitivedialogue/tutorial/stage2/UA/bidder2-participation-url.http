@@ -1,9 +1,9 @@
-GET /api/2.3/tenders/92ad8804586d4edbb98cdb5c7c79412f/bids/388af60857fa4ac69f9a53214dea400a?acc_token=6f7d1089d007420cbdad36dbfe02a2c9 HTTP/1.0
+GET /api/2.4/tenders/3b55cefa2396418db56d896da668b1cb/bids/9f1bfacc9b744b62a43ad0cfd879694d?acc_token=fbc106ab86374a2f9216ab2e65244bba HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: api-sandbox.openprocurement.org
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "active", 
@@ -11,12 +11,12 @@ Content-Type: application/json; charset=UTF-8
       {
         "hash": "md5:00000000000000000000000000000000", 
         "title": "Proposal_part1.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/92ad8804586d4edbb98cdb5c7c79412f/bids/388af60857fa4ac69f9a53214dea400a/documents/cd12e1eb7a9647a69c2695a87d612d6d?download=33748309e27e4d45a9982fd6fa9a7746", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/3b55cefa2396418db56d896da668b1cb/bids/9f1bfacc9b744b62a43ad0cfd879694d/documents/f255db79c9544942b540fb56737de1ba?download=773a4d7f2d654f479eaa182ab2704ff1", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T17:05:37.145285+03:00", 
-        "id": "cd12e1eb7a9647a69c2695a87d612d6d", 
-        "dateModified": "2017-06-21T17:05:37.145317+03:00"
+        "datePublished": "2018-09-21T05:24:48.332853+03:00", 
+        "id": "f255db79c9544942b540fb56737de1ba", 
+        "dateModified": "2018-09-21T05:24:48.332890+03:00"
       }
     ], 
     "selfEligible": true, 
@@ -25,7 +25,7 @@ Content-Type: application/json; charset=UTF-8
       "amount": 499.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "id": "388af60857fa4ac69f9a53214dea400a", 
+    "id": "9f1bfacc9b744b62a43ad0cfd879694d", 
     "tenderers": [
       {
         "contactPoint": {
@@ -48,9 +48,9 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "date": "2017-06-21T17:05:37.144235+03:00", 
+    "date": "2018-09-21T05:24:48.331547+03:00", 
     "selfQualified": true, 
-    "participationUrl": "http://auction-sandbox.openprocurement.org/tenders/92ad8804586d4edbb98cdb5c7c79412f?key_for_bid=388af60857fa4ac69f9a53214dea400a"
+    "participationUrl": "http://auction-sandbox.openprocurement.org/tenders/3b55cefa2396418db56d896da668b1cb?key_for_bid=9f1bfacc9b744b62a43ad0cfd879694d"
   }
 }
 

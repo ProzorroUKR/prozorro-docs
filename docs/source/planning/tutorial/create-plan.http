@@ -1,4 +1,4 @@
-POST /api/2.3/plans?opt_pretty=1 HTTP/1.0
+POST /api/2.4/plans?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 2454
 Content-Type: application/json
@@ -27,7 +27,7 @@ Host: api-sandbox.openprocurement.org
           }
         ], 
         "deliveryDate": {
-          "endDate": "2017-07-06T17:41:39.677983"
+          "endDate": "2018-10-06T05:22:51.999229"
         }, 
         "unit": {
           "code": "KGM", 
@@ -50,7 +50,7 @@ Host: api-sandbox.openprocurement.org
           }
         ], 
         "deliveryDate": {
-          "endDate": "2017-07-07T17:41:39.677983"
+          "endDate": "2018-10-07T05:22:51.999229"
         }, 
         "unit": {
           "code": "KGM", 
@@ -73,7 +73,7 @@ Host: api-sandbox.openprocurement.org
           }
         ], 
         "deliveryDate": {
-          "endDate": "2017-07-08T17:41:39.677983"
+          "endDate": "2018-10-08T05:22:51.999229"
         }, 
         "unit": {
           "code": "KGM", 
@@ -112,18 +112,18 @@ Host: api-sandbox.openprocurement.org
       "procurementMethod": "open", 
       "procurementMethodType": "belowThreshold", 
       "tenderPeriod": {
-        "startDate": "2017-06-28T17:41:39.677983"
+        "startDate": "2018-09-28T05:22:51.999229"
       }
     }
   }
 }
 
 Response: 201 Created
-Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.3/plans/52862ec099ff4debbf9f26a0980f27f3
+Content-Type: application/json
+Location: http://api-sandbox.openprocurement.org/api/2.4/plans/9acca76c7124420e86d3b12019a99fd5
 {
   "access": {
-    "token": "fc9c0f555bf24dffa2b855ed618bc81c"
+    "token": "b01a3931f7d744b197bf3ca8ea4a7185"
   }, 
   "data": {
     "classification": {
@@ -147,9 +147,9 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/plans/52862ec099ff4debb
           }
         ], 
         "deliveryDate": {
-          "endDate": "2017-07-06T17:41:39.677983+03:00"
+          "endDate": "2018-10-06T05:22:51.999229+03:00"
         }, 
-        "id": "f8173e5bf8754aec89a47a624b3cefd1", 
+        "id": "ba6ae2c8de3b49e58bd8c3a545023ea8", 
         "unit": {
           "code": "KGM", 
           "name": "кг"
@@ -171,9 +171,9 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/plans/52862ec099ff4debb
           }
         ], 
         "deliveryDate": {
-          "endDate": "2017-07-07T17:41:39.677983+03:00"
+          "endDate": "2018-10-07T05:22:51.999229+03:00"
         }, 
-        "id": "3b0208637aa44a99b388a9b540533a1c", 
+        "id": "a001e2ed3c9148c2b6ed5b4a3635ad00", 
         "unit": {
           "code": "KGM", 
           "name": "кг"
@@ -195,9 +195,9 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/plans/52862ec099ff4debb
           }
         ], 
         "deliveryDate": {
-          "endDate": "2017-07-08T17:41:39.677983+03:00"
+          "endDate": "2018-10-08T05:22:51.999229+03:00"
         }, 
-        "id": "7266c3c7b95246718021ab671207335e", 
+        "id": "8c27f0318fa44631bec1c16a2c2c2441", 
         "unit": {
           "code": "KGM", 
           "name": "кг"
@@ -205,7 +205,7 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/plans/52862ec099ff4debb
         "quantity": 3000
       }
     ], 
-    "planID": "UA-P-2017-06-21-000001", 
+    "planID": "UA-P-2018-09-21-000001", 
     "budget": {
       "amountNet": 12222.0, 
       "description": "budget_description", 
@@ -217,12 +217,12 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/plans/52862ec099ff4debb
       "amount": 10000.0, 
       "id": "12303111000-2"
     }, 
-    "datePublished": "2017-06-21T17:41:40.564867+03:00", 
+    "datePublished": "2018-09-21T05:22:53.881879+03:00", 
     "tender": {
       "procurementMethod": "open", 
       "procurementMethodType": "belowThreshold", 
       "tenderPeriod": {
-        "startDate": "2017-06-28T17:41:39.677983+03:00"
+        "startDate": "2018-09-28T05:22:51.999229+03:00"
       }
     }, 
     "additionalClassifications": [
@@ -241,8 +241,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/plans/52862ec099ff4debb
       "name": "ДУС"
     }, 
     "owner": "broker", 
-    "dateModified": "2017-06-21T17:41:40.588719+03:00", 
-    "id": "52862ec099ff4debbf9f26a0980f27f3"
+    "dateModified": "2018-09-21T05:22:53.934994+03:00", 
+    "id": "9acca76c7124420e86d3b12019a99fd5"
   }
 }
 

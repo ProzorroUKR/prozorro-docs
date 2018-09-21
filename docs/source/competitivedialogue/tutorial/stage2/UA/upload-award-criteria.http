@@ -1,23 +1,24 @@
-POST /api/2.3/tenders/92ad8804586d4edbb98cdb5c7c79412f/documents?acc_token=415d188e59964730bee17aae7ed1f7ab HTTP/1.0
+POST /api/2.4/tenders/3b55cefa2396418db56d896da668b1cb/documents?acc_token=e2b35e341f364e91bb36f36f85d37ce2 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 193
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy202162386733$
+Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy738642661891$
 Host: api-sandbox.openprocurement.org
 
 
 Response: 201 Created
-Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/92ad8804586d4edbb98cdb5c7c79412f/documents/1c08a9569f2a4c40bcb74b28b648049a
+Content-Type: application/json
+Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/3b55cefa2396418db56d896da668b1cb/documents/356295eb75d444f18e29fd3ede7900c6
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
+    "author": "tender_owner", 
     "title": "AwardCriteria.pdf", 
-    "url": "http://public.docs-sandbox.openprocurement.org/get/731c49a1d81f43299abc2cabdd4e970c?KeyID=1b00d854&Signature=gCItXqKPoAbTJeE%2F0uR9tAzH8PKFFjids72nj5ePSiqnihT4FfrpTFnF1AHbJoG1olbxfdxUHlyZ3BMitaVrBQ%253D%253D", 
+    "url": "http://public.docs-sandbox.openprocurement.org/get/8af182c767f44e0fbee810feb46a4356?KeyID=b0f44a83&Signature=a890QyHlqd%252BewbyvrbvaMptDuamQlTuAamicGir%252Bu0mmfAY%2FmOJAaHLK%252BklidejzwrV62sDXxumvp0hi4%252BJBBg%253D%253D", 
     "format": "application/pdf", 
     "documentOf": "tender", 
-    "datePublished": "2017-06-21T17:05:35.549749+03:00", 
-    "id": "1c08a9569f2a4c40bcb74b28b648049a", 
-    "dateModified": "2017-06-21T17:05:35.549783+03:00"
+    "datePublished": "2018-09-21T05:24:45.692136+03:00", 
+    "id": "356295eb75d444f18e29fd3ede7900c6", 
+    "dateModified": "2018-09-21T05:24:45.692189+03:00"
   }
 }
 

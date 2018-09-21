@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/e564a943c46a443497a81bcdac928861/awards/16c53b598ce94c89b62facc41375ec4d/complaints/a8ea9f5eb37d41beb4d108ca801a767c?acc_token=a5ae706a62cc4da492541009706e7656 HTTP/1.0
+PATCH /api/2.4/tenders/e69456ad48d24ef3897ea666d6dc691a/awards/7a7a1cc9cb9b49d6aa425c6c2442ac45/complaints/3fd2b801929b4e7aad96b9a7ed193ffc?acc_token=5e96abd885674c86843b9b9ea5ec5b92 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 150
 Content-Type: application/json
@@ -12,7 +12,7 @@ Host: api-sandbox.openprocurement.org
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "cancelled", 
@@ -40,11 +40,11 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "title": "Недостатньо інформації", 
     "cancellationReason": "Умови виправлено", 
-    "dateCanceled": "2017-09-14T19:40:48.419690+03:00", 
-    "complaintID": "UA-2017-09-14-000001.7", 
-    "date": "2017-09-14T19:40:48.457679+03:00", 
+    "dateCanceled": "2018-09-21T05:26:33.117829+03:00", 
+    "complaintID": "UA-2018-09-21-000001.7", 
+    "date": "2018-09-21T05:26:33.126898+03:00", 
     "type": "complaint", 
-    "id": "a8ea9f5eb37d41beb4d108ca801a767c"
+    "id": "3fd2b801929b4e7aad96b9a7ed193ffc"
   }
 }
 
