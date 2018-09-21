@@ -44,3 +44,25 @@ TARGET_DIR='docs/source/openua/http'
 rm -rf "$TARGET_DIR"
 mkdir -p "$TARGET_DIR"
 cp -R "$SOURCES" "$TARGET_DIR"
+
+
+SOURCE="src/openprocurement.tender.competitivedialogue/docs/source"
+TARGET_DIR='docs/source/competitivedialogue'
+rm -rf "$TARGET_DIR"
+mkdir -p "$TARGET_DIR"
+cp -R "$SOURCE/tutorial" "$TARGET_DIR"
+cp -R "$SOURCE/multiple_lots_tutorial" "$TARGET_DIR"
+
+
+SOURCE="src/openprocurement.tender.esco/docs/source"
+TARGET_DIR='docs/source/esco'
+rm -rf "$TARGET_DIR"
+mkdir -p "$TARGET_DIR"
+cp -R "$SOURCE/tutorial" "$TARGET_DIR"
+cp -R "$SOURCE/multiple_lots_tutorial" "$TARGET_DIR"
+
+SOURCE="src/openprocurement.planning.api/docs/source/tutorial/."
+TARGET_DIR='docs/source/planning/tutorial'
+rm -rf "$TARGET_DIR"
+mkdir -p "$TARGET_DIR"
+cp -R "$SOURCE" "$TARGET_DIR"
