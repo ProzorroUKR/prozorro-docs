@@ -60,7 +60,7 @@ Schema
     |ocdsDescription|
     The total value of this award.
 
-    Differences in :ref:`defense`, :ref:`openua` and :ref:`openeu`:
+    Differences in :ref:`defense`, :ref:`esco`, :ref:`openua` and :ref:`openeu`:
 
     List of :ref:`Value` objects, auto-generated, read-only
 
@@ -100,10 +100,11 @@ Schema
     Id of related :ref:`lot`.
 
     Differences in :ref:`limited`:
-    Id of related :ref:`lot`. Only if `tender.procurementMethodType` is `negotiation` or `negotiation.quick`.
+
+        Id of related :ref:`lot`. Only if `tender.procurementMethodType` is `negotiation` or `negotiation.quick`.
 
 
-Additionally in :ref:`defense`, :ref:`openua` and :ref:`openeu`:
+Additionally in :ref:`defense`, :ref:`esco`, :ref:`openua` and :ref:`openeu`:
 
 :eligible:
     bool
@@ -147,8 +148,8 @@ Award workflow in :ref:`limited`:
 \* marks initial state
 
 
-Workflow in :ref:`openeu`:
---------------------------
+Workflow in :ref:`openeu` and :ref:`esco`:
+------------------------------------------
 
 .. graphviz::
 

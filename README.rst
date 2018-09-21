@@ -60,3 +60,27 @@ For translation into *uk* (2 letter ISO language code), you have to follow the s
 
       ../../bin/sphinx-intl build
 
+
+-------------------------------------------------
+
+Alternative install (+http-files generation)::
+
+  ./bootstrap.sh
+  ./bin/buildout -c develop.cfg
+
+
+To update http-files::
+
+    1. Checkout sources to your feature-branch
+
+        ./checkout_src.sh feature/my-branch
+
+    2. Run tests
+
+        ./run_docs_tests.sh
+
+    3. Copy files to sources dir
+
+        ./copy_http_files.sh
+
+Each from the steps above can be done manually.

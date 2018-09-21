@@ -55,10 +55,14 @@ Schema
     |ocdsDescription|
     The number of units required
 
+    Absent in :ref:`esco`
+
 :deliveryDate:
     :ref:`Period`
 
     Period during which the item should be delivered.
+
+    Absent in :ref:`esco`
 
 :deliveryAddress:
     :ref:`Address`

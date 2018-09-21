@@ -49,6 +49,8 @@ Schema
     * `riskProvisions` - **Provisions for management of risks and liabilities**
     
     * `billOfQuantity` - **Bill Of Quantity**
+
+        For Open EU procedure `billOfQuantity` should be contained in `financialDocuments` envelope. See :ref:`bid`.
     
     * `bidders` - **Information on bidders**
     
@@ -100,11 +102,17 @@ Schema
     Possible values for :ref:`bid`
     
 
-    * `commercialProposal` - **Сommercial proposal**    
+    * `commercialProposal` - **Сommercial proposal**
+
+        For Open EU procedure `commercialProposal` should be contained in `financialDocuments` envelope. See :ref:`bid`.
     
     * `qualificationDocuments` - **Qualification documents**
+
+        For Open EU procedure `qualificationDocuments` should be contained in `documents` envelope. See :ref:`bid`.
     
     * `eligibilityDocuments` - **Eligibility documents**
+
+        For Open EU procedure `eligibilityDocuments` should be contained in `eligibilityDocuments` envelope. See :ref:`bid`.
     
 
 :title:

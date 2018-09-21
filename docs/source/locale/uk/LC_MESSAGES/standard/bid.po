@@ -3,25 +3,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.api 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-17 12:08+0300\n"
+"POT-Creation-Date: 2018-09-12 11:30+0300\n"
 "PO-Revision-Date: 2018-08-17 14:12+0300\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
 "Language: uk\n"
 "Language-Team: Ukrainian <info@quintagroup.com>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
-"X-Generator: Poedit 2.1.1\n"
 
 #: ../../source/standard/bid.rst:8
 msgid "Bid"
 msgstr "Bid"
 
-#: ../../source/standard/bid.rst:11 ../../source/standard/bid.rst:105
-#: ../../source/standard/bid.rst:123
+#: ../../source/standard/bid.rst:11 ../../source/standard/bid.rst:117
+#: ../../source/standard/bid.rst:135
 msgid "Schema"
 msgstr "Схема"
 
@@ -37,7 +36,7 @@ msgstr "Список об’єктів :ref:`Organization` "
 msgid "date"
 msgstr ""
 
-#: ../../source/standard/bid.rst:17 ../../source/standard/bid.rst:140
+#: ../../source/standard/bid.rst:17 ../../source/standard/bid.rst:152
 msgid "string, :ref:`date`, auto-generated"
 msgstr "рядок, :ref:`date`, генерується автоматично"
 
@@ -53,8 +52,8 @@ msgstr "uid, генерується автоматично"
 msgid "status"
 msgstr ""
 
-#: ../../source/standard/bid.rst:23 ../../source/standard/bid.rst:82
-#: ../../source/standard/bid.rst:135 ../../source/standard/bid.rst:152
+#: ../../source/standard/bid.rst:23 ../../source/standard/bid.rst:94
+#: ../../source/standard/bid.rst:147 ../../source/standard/bid.rst:164
 msgid "string"
 msgstr "рядок"
 
@@ -63,12 +62,12 @@ msgid "Possible values are:"
 msgstr "Можливі значення:"
 
 #: ../../source/standard/bid.rst:27 ../../source/standard/bid.rst:32
-#: ../../source/standard/bid.rst:39
+#: ../../source/standard/bid.rst:39 ../../source/standard/bid.rst:48
 msgid "`draft`"
 msgstr "`draft`"
 
 #: ../../source/standard/bid.rst:28 ../../source/standard/bid.rst:33
-#: ../../source/standard/bid.rst:41
+#: ../../source/standard/bid.rst:41 ../../source/standard/bid.rst:50
 msgid "`active`"
 msgstr "`active`"
 
@@ -77,18 +76,21 @@ msgid "Possible values in :ref:`defense` and :ref:`openua`:"
 msgstr "Можливі значення у :ref:`defense` and :ref:`openua`:"
 
 #: ../../source/standard/bid.rst:34 ../../source/standard/bid.rst:42
+#: ../../source/standard/bid.rst:51
 msgid "`invalid`"
 msgstr ""
 
 #: ../../source/standard/bid.rst:35 ../../source/standard/bid.rst:44
+#: ../../source/standard/bid.rst:52
 msgid "`deleted`"
 msgstr ""
 
 #: ../../source/standard/bid.rst:37
-msgid "Possible values in :ref:`openeu`:"
-msgstr "Можливі значення у :ref:`openeu`:"
+#, fuzzy
+msgid "Possible values in :ref:`openeu` and :ref:`esco`:"
+msgstr "Можливі значення у :ref:`defense` and :ref:`openua`:"
 
-#: ../../source/standard/bid.rst:40
+#: ../../source/standard/bid.rst:40 ../../source/standard/bid.rst:49
 msgid "`pending`"
 msgstr ""
 
@@ -96,32 +98,38 @@ msgstr ""
 msgid "`invalid.pre-qualification`"
 msgstr ""
 
+#: ../../source/standard/bid.rst:46
+#, fuzzy
+msgid "Possible values in :ref:`competitivedialogue`:"
+msgstr "Можливі значення у :ref:`openeu`:"
+
 #: ../../source/standard/bid.rst
 msgid "value"
 msgstr ""
 
-#: ../../source/standard/bid.rst:47 ../../source/standard/bid.rst:126
+#: ../../source/standard/bid.rst:55 ../../source/standard/bid.rst:138
 msgid ":ref:`Value`, required"
 msgstr ":ref:`Value`, обов’язково"
 
-#: ../../source/standard/bid.rst:49 ../../source/standard/bid.rst:128
+#: ../../source/standard/bid.rst:57 ../../source/standard/bid.rst:140
 msgid "Validation rules:"
 msgstr "Правила валідації:"
 
-#: ../../source/standard/bid.rst:51
-msgid "`amount` should be less than `Tender.value.amout`"
+#: ../../source/standard/bid.rst:59
+#, fuzzy
+msgid "`amount` should be less than `Tender.value.amount`"
 msgstr "Значення `amount` повинно бути меншим за `Tender.value.amout`"
 
-#: ../../source/standard/bid.rst:52
+#: ../../source/standard/bid.rst:60
 msgid "`currency` should either be absent or match `Tender.value.currency`"
 msgstr ""
-"Значення `currency` повинно бути або відсутнім, або співпадати з `Tender."
-"value.currency`"
+"Значення `currency` повинно бути або відсутнім, або співпадати з "
+"`Tender.value.currency`"
 
-#: ../../source/standard/bid.rst:53
+#: ../../source/standard/bid.rst:61
 msgid ""
-"`valueAddedTaxIncluded` should either be absent or match `Tender.value."
-"valueAddedTaxIncluded`"
+"`valueAddedTaxIncluded` should either be absent or match "
+"`Tender.value.valueAddedTaxIncluded`"
 msgstr ""
 "Значення `valueAddedTaxIncluded` повинно бути або відсутнім, або "
 "співпадати з `Tender.value.valueAddedTaxIncluded`"
@@ -130,15 +138,26 @@ msgstr ""
 msgid "documents"
 msgstr ""
 
-#: ../../source/standard/bid.rst:56
+#: ../../source/standard/bid.rst:64
 msgid "List of :ref:`Document` objects"
 msgstr "Список об’єктів :ref:`Document`"
+
+#: ../../source/standard/bid.rst:66
+msgid "Differences in :ref:`competitivedialogue` and :ref:`esco`:"
+msgstr ""
+
+#: ../../source/standard/bid.rst:68
+msgid ""
+"List of :ref:`ConfidentialDocument` objects. This envelope has to contain"
+" only technical part of proposal (`technicalSpecifications` and "
+"`qualificationDocuments`). It is revealed at pre-qualification."
+msgstr ""
 
 #: ../../source/standard/bid.rst
 msgid "parameters"
 msgstr ""
 
-#: ../../source/standard/bid.rst:59
+#: ../../source/standard/bid.rst:71
 msgid "List of :ref:`Parameter` objects"
 msgstr "Список об’єктів :ref:`Parameter`"
 
@@ -146,7 +165,7 @@ msgstr "Список об’єктів :ref:`Parameter`"
 msgid "lotValues"
 msgstr ""
 
-#: ../../source/standard/bid.rst:62
+#: ../../source/standard/bid.rst:74
 msgid "List of :ref:`LotValue` objects"
 msgstr "Список об’єктів :ref:`LotValue`"
 
@@ -154,39 +173,42 @@ msgstr "Список об’єктів :ref:`LotValue`"
 msgid "participationUrl"
 msgstr ""
 
-#: ../../source/standard/bid.rst:65 ../../source/standard/bid.rst:144
+#: ../../source/standard/bid.rst:77 ../../source/standard/bid.rst:156
 msgid "url"
 msgstr "URL-адреса"
 
-#: ../../source/standard/bid.rst:67 ../../source/standard/bid.rst:146
+#: ../../source/standard/bid.rst:79 ../../source/standard/bid.rst:158
 msgid "A web address for participation in auction."
 msgstr "Веб-адреса для участі в аукціоні."
 
-#: ../../source/standard/bid.rst:69 ../../source/standard/bid.rst:149
-msgid "Additionally in :ref:`defense`, :ref:`openua` and :ref:`openeu`:"
+#: ../../source/standard/bid.rst:81
+#, fuzzy
+msgid ""
+"Additionally in :ref:`defense`, :ref:`openua`, :ref:`openeu`, :ref:`esco`"
+" and :ref:`competitivedialogue`:"
 msgstr "Додатково у :ref:`defense`, :ref:`openua` and :ref:`openeu`:"
 
 #: ../../source/standard/bid.rst
 msgid "selfEligible'"
 msgstr ""
 
-#: ../../source/standard/bid.rst:72 ../../source/standard/bid.rst:77
+#: ../../source/standard/bid.rst:84 ../../source/standard/bid.rst:89
 msgid "True, required"
 msgstr "рядок, обов’язковий"
 
-#: ../../source/standard/bid.rst:74
+#: ../../source/standard/bid.rst:86
 msgid ""
 "Confirms compliance of eligibility criteria set by the procuring entity "
 "in the tendering documents."
 msgstr ""
-"Підтверджує відповідність критеріям прийнятності, встановлених "
-"замовником в тендерній документації."
+"Підтверджує відповідність критеріям прийнятності, встановлених замовником"
+" в тендерній документації."
 
 #: ../../source/standard/bid.rst
 msgid "selfQualified"
 msgstr ""
 
-#: ../../source/standard/bid.rst:79
+#: ../../source/standard/bid.rst:91
 msgid ""
 "Confirms the absence of grounds for refusal to participate in accordance "
 "with Article 17 of the Law of Ukraine \"On Public Procurement\"."
@@ -198,7 +220,7 @@ msgstr ""
 msgid "subcontractingDetails"
 msgstr ""
 
-#: ../../source/standard/bid.rst:84 ../../source/standard/bid.rst:154
+#: ../../source/standard/bid.rst:96 ../../source/standard/bid.rst:166
 msgid ""
 "While submitting bid proposal, participant can fill in the text field of "
 "any length about subcontractor."
@@ -206,10 +228,11 @@ msgstr ""
 "При поданні пропозиції учасник може додати інформацію про субпідрядника, "
 "заповнивши текстове поле довільної довжини."
 
-#: ../../source/standard/bid.rst:87
+#: ../../source/standard/bid.rst:99
+#, fuzzy
 msgid ""
 "There are additional `envelopes` - document containers that manage time "
-"when their information will be revealed in :ref:`openeu`:"
+"when their information will be revealed in :ref:`openeu` and :ref:`esco`:"
 msgstr ""
 "Є декілька конвертів- контейнерів з документами, що регулюють час "
 "відкриття даних у :ref:`openeu`:"
@@ -218,7 +241,7 @@ msgstr ""
 msgid "financialDocuments"
 msgstr ""
 
-#: ../../source/standard/bid.rst:90
+#: ../../source/standard/bid.rst:102
 msgid ""
 "List of :ref:`ConfidentialDocument` objects. This envelope can contain "
 "financial part of proposal (`commercialProposal` and `billOfQuantity`). "
@@ -232,7 +255,7 @@ msgstr ""
 msgid "eligibilityDocuments"
 msgstr ""
 
-#: ../../source/standard/bid.rst:93
+#: ../../source/standard/bid.rst:105
 msgid ""
 "List of :ref:`ConfidentialDocument` objects. This envelope can contain "
 "`eligibilityDocuments` document type. It is revealed at pre-"
@@ -246,15 +269,15 @@ msgstr ""
 msgid "qualificationDocuments"
 msgstr ""
 
-#: ../../source/standard/bid.rst:96
+#: ../../source/standard/bid.rst:108
 msgid ""
-"List of :ref:`ConfidentialDocument` objects. This envelope is revealed "
-"at post-qualification."
+"List of :ref:`ConfidentialDocument` objects. This envelope is revealed at"
+" post-qualification."
 msgstr ""
 "Список об’єктів :ref:`ConfidentialDocument`. Розкривається на "
 "посткваліфікації."
 
-#: ../../source/standard/bid.rst:102
+#: ../../source/standard/bid.rst:114
 msgid "Parameter"
 msgstr "Parameter"
 
@@ -262,56 +285,67 @@ msgstr "Parameter"
 msgid "code"
 msgstr ""
 
-#: ../../source/standard/bid.rst:108
+#: ../../source/standard/bid.rst:120
 msgid "string, required"
 msgstr "рядок, обов’язковий"
 
-#: ../../source/standard/bid.rst:110
+#: ../../source/standard/bid.rst:122
 msgid "Code of the feature."
 msgstr "Код критерію."
 
-#: ../../source/standard/bid.rst:113
+#: ../../source/standard/bid.rst:125
 msgid "float, required"
 msgstr "float, обов’язково"
 
-#: ../../source/standard/bid.rst:115
+#: ../../source/standard/bid.rst:127
 msgid "Value of the feature."
 msgstr "Значення критерію."
 
-#: ../../source/standard/bid.rst:120
+#: ../../source/standard/bid.rst:132
 msgid "LotValue"
 msgstr "LotValue"
 
-#: ../../source/standard/bid.rst:130
+#: ../../source/standard/bid.rst:142
 msgid "`amount` should be less than `Lot.value.amout`"
 msgstr "`amount` повинно бути меншим, ніж `Lot.value.amount`"
 
-#: ../../source/standard/bid.rst:131
+#: ../../source/standard/bid.rst:143
 msgid "`currency` should either be absent or match `Lot.value.currency`"
 msgstr ""
-"`currency` повинно або бути відсутнім, або відповідати `Lot.value."
-"currency`"
+"`currency` повинно або бути відсутнім, або відповідати "
+"`Lot.value.currency`"
 
-#: ../../source/standard/bid.rst:132
+#: ../../source/standard/bid.rst:144
 msgid ""
-"`valueAddedTaxIncluded` should either be absent or match `Lot.value."
-"valueAddedTaxIncluded`"
+"`valueAddedTaxIncluded` should either be absent or match "
+"`Lot.value.valueAddedTaxIncluded`"
 msgstr ""
-"`valueAddedTaxIncluded` повинно або бути відсутнім, або відповідати `Lot."
-"value.valueAddedTaxIncluded`"
+"`valueAddedTaxIncluded` повинно або бути відсутнім, або відповідати "
+"`Lot.value.valueAddedTaxIncluded`"
 
 #: ../../source/standard/bid.rst
 msgid "relatedLot"
 msgstr ""
 
-#: ../../source/standard/bid.rst:137
+#: ../../source/standard/bid.rst:149
 msgid "Id of related :ref:`lot`."
 msgstr "ID пов’язаного :ref:`lot`."
 
-#: ../../source/standard/bid.rst:159
-msgid "Workflow in :ref:`openeu`"
-msgstr "Робочий процес у :ref:`openeu`"
+#: ../../source/standard/bid.rst:161
+#, fuzzy
+msgid ""
+"Additionally in :ref:`defense`, :ref:`openua`, :ref:`openeu` and "
+":ref:`competitivedialogue`:"
+msgstr "Додатково у :ref:`defense`, :ref:`openua` and :ref:`openeu`:"
 
-#: ../../source/standard/bid.rst:182
+#: ../../source/standard/bid.rst:171
+msgid "Workflow in :ref:`openeu`, :ref:`esco` and :ref:`competitivedialogue`"
+msgstr ""
+
+#: ../../source/standard/bid.rst:194
 msgid "\\* marks initial state"
 msgstr ""
+
+#~ msgid "Workflow in :ref:`openeu`"
+#~ msgstr "Робочий процес у :ref:`openeu`"
+

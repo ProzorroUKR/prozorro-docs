@@ -17,8 +17,11 @@ Contents:
    tutorial
    basic-actions/index
    standard/index
+   planning/index
    openua/index
    openeu/index
+   competitivedialogue/index
+   esco/index
    limited/index
    defense/index
    contracting/index

@@ -34,7 +34,7 @@ Schema
     * `invalid`
     * `deleted`
 
-    Possible values in :ref:`openeu`:
+    Possible values in :ref:`openeu` and :ref:`esco`:
 
     * `draft`
     * `pending`
@@ -43,17 +43,29 @@ Schema
     * `invalid.pre-qualification`
     * `deleted`
 
+    Possible values in :ref:`competitivedialogue`:
+
+    * `draft`
+    * `pending`
+    * `active`
+    * `invalid`
+    * `deleted`
+
 :value:
     :ref:`Value`, required
 
     Validation rules:
 
-    * `amount` should be less than `Tender.value.amout`
+    * `amount` should be less than `Tender.value.amount`
     * `currency` should either be absent or match `Tender.value.currency`
     * `valueAddedTaxIncluded` should either be absent or match `Tender.value.valueAddedTaxIncluded`
 
 :documents:
     List of :ref:`Document` objects
+
+    Differences in :ref:`competitivedialogue` and :ref:`esco`:
+
+        List of :ref:`ConfidentialDocument` objects. This envelope has to contain only technical part of proposal (`technicalSpecifications` and `qualificationDocuments`). It is revealed at pre-qualification.
 
 :parameters:
     List of :ref:`Parameter` objects
@@ -66,7 +78,7 @@ Schema
 
     A web address for participation in auction.
 
-Additionally in :ref:`defense`, :ref:`openua` and :ref:`openeu`:
+Additionally in :ref:`defense`, :ref:`openua`, :ref:`openeu`, :ref:`esco` and :ref:`competitivedialogue`:
 
     :selfEligible':
         True, required
@@ -84,7 +96,7 @@ Additionally in :ref:`defense`, :ref:`openua` and :ref:`openeu`:
         While submitting bid proposal, participant can fill in the text field of any length about subcontractor.
 
 
-There are additional `envelopes` - document containers that manage time when their information will be revealed in :ref:`openeu`:
+There are additional `envelopes` - document containers that manage time when their information will be revealed in :ref:`openeu` and :ref:`esco`:
 
     :financialDocuments:
         List of :ref:`ConfidentialDocument` objects. This envelope can contain financial part of proposal (`commercialProposal` and `billOfQuantity`). It is revealed at post-qualification.
@@ -146,7 +158,7 @@ Schema
     A web address for participation in auction.
 
 
-Additionally in :ref:`defense`, :ref:`openua` and :ref:`openeu`:
+Additionally in :ref:`defense`, :ref:`openua`, :ref:`openeu` and :ref:`competitivedialogue`:
 
 :subcontractingDetails:
     string
@@ -155,8 +167,8 @@ Additionally in :ref:`defense`, :ref:`openua` and :ref:`openeu`:
 
 
 
-Workflow in :ref:`openeu`
--------------------------
+Workflow in :ref:`openeu`, :ref:`esco` and :ref:`competitivedialogue`
+---------------------------------------------------------------------
 
 .. graphviz::
 
