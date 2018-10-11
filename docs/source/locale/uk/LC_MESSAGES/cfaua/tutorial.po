@@ -20,43 +20,43 @@ msgstr ""
 
 #: ../../source/cfaua/tutorial.rst:4
 msgid "Tutorial"
-msgstr ""
+msgstr "Туторіал"
 
 #: ../../source/cfaua/tutorial.rst:7
 msgid "Exploring basic rules"
-msgstr ""
+msgstr "Розгляньмо основні правила"
 
 #: ../../source/cfaua/tutorial.rst:9
 msgid "Let's try exploring the `/tenders` endpoint:"
-msgstr ""
+msgstr "Подивімось, як працює точка входу `/tenders`"
 
 #: ../../source/cfaua/tutorial.rst:14
 msgid "Just invoking it reveals empty set."
-msgstr ""
+msgstr "Командою виклику отримуємо пустий набір "
 
 #: ../../source/cfaua/tutorial.rst:16
 msgid "Now let's attempt creating some tender:"
-msgstr ""
+msgstr "Спробуймо створити нову тендерну пропозицію "
 
 #: ../../source/cfaua/tutorial.rst:21
 msgid "Error states that the only accepted Content-Type is `application/json`."
-msgstr ""
+msgstr "Помилка вказує, що єдиний прийнятний тип вмісту це `application/json`"
 
 #: ../../source/cfaua/tutorial.rst:23
 msgid "Let's satisfy the Content-type requirement:"
-msgstr ""
+msgstr "Треба задовольнити вимоги щодо типу вмісту"
 
 #: ../../source/cfaua/tutorial.rst:28
 msgid "Error states that no `data` has been found in JSON body."
-msgstr ""
+msgstr "Помилка вказує, що `data` не знайдено у тілі JSON "
 
 #: ../../source/cfaua/tutorial.rst:36
 msgid "Creating tender"
-msgstr ""
+msgstr "Створення тендерної пропозиції"
 
 #: ../../source/cfaua/tutorial.rst:38
 msgid "Let's create tender with the minimal (only required) data set:"
-msgstr ""
+msgstr "Створімо тендерну пропозицію з мінімальним (обов'язковим для внесення) набором даних"
 
 #: ../../source/cfaua/tutorial.rst:43
 msgid ""
@@ -68,13 +68,20 @@ msgid ""
 "time when tender was last modified. Pay attention to the "
 "`procurementMethodType`. Note that tender is created with "
 "`active.enquiries` status."
-msgstr ""
+msgstr "Вийшло! Тепер бачимо, що створено новий об'єкт. Код відповіді - "
+"`201` а заголовок відповіді `Location` вказує на місцезнаходження створеного "
+"об'єкта. Тіло відповіді показує інформацію про створену тендерну "
+"пропозицію: її внутрішнє `id` (що співпадає з сегментом `Location`), її "
+"офіційне `tenderID` та мітку дати `dateModified`, що вказує час, "
+"коли до тендерної пропозиції востаннє вносились зміни. Зверніть увагу на "
+"`procurementMethodType`. Важливо, що тендерна пропозиція створюється зі "
+"статусом `active.enquiries`."
 
 #: ../../source/cfaua/tutorial.rst:51
 msgid ""
 "Let's access the URL of the created object (the `Location` header of the "
 "response):"
-msgstr ""
+msgstr "Використаємо URL створеного об'єкта (заголовок відповіді `Location` "
 
 #: ../../source/cfaua/tutorial.rst:53
 msgid ""
@@ -82,15 +89,18 @@ msgid ""
 "``procurementMethodType`` was changed from ``belowThreshold`` to "
 "``closeFrameworkAgreementUA``. Also there is no opportunity to set up "
 "``enquiryPeriod``, it will be assigned automatically."
-msgstr ""
+msgstr "Особливість процедури Закритої Рамкової Угоди UA  полягає в тому, що "
+"``procurementMethodType`` було змінено з ``belowThreshold`` на "
+"``closeFrameworkAgreementUA``. Також тут немає можливості встановити "
+"``enquiryPeriod``, оскільки він призначається автоматично. "
 
 #: ../../source/cfaua/tutorial.rst:62
 msgid "We can see the same response we got after creating tender."
-msgstr ""
+msgstr "Бачимо ту ж відповідь. що й після створення тендерної пропозиції."
 
 #: ../../source/cfaua/tutorial.rst:64
 msgid "Let's see what listing of tenders reveals us:"
-msgstr ""
+msgstr "Гляньмо, що показує нам список тендерних пропозицій:"
 
 #: ../../source/cfaua/tutorial.rst:69
 msgid ""
@@ -98,257 +108,287 @@ msgid ""
 "full URL by prepending `http://api-"
 "sandbox.openprocurement.org/api/0/tenders/`) and its `dateModified` "
 "datestamp."
-msgstr ""
+msgstr "Ми бачимо внутрішнє `id` тендерної пропозиції (що можна використати для побудови "
+"повної URL-адреси коли додамо `http://api- "
+"sandbox.openprocurement.org/api/0/tenders/`) та її мітку дати `dateModified`. "
 
 #: ../../source/cfaua/tutorial.rst:74
 msgid "Modifying tender"
-msgstr ""
+msgstr "Внесення змін до тендерної пропозиції"
 
 #: ../../source/cfaua/tutorial.rst:76
 msgid ""
 "Let's update tender by supplementing it with all other essential "
 "properties:"
-msgstr ""
+msgstr "Оновімо тендерну пропозицію, додаючи інші важливі "
+"властивості: "
 
 #: ../../source/cfaua/tutorial.rst:83
 msgid ""
 "We see the added properies have merged with existing tender data. "
 "Additionally, the `dateModified` property was updated to reflect the last"
 " modification datestamp."
-msgstr ""
+msgstr "Бачимо, що додані властивості об'єдналися з наявними даними щодо тенденої пропозиції. "
+"Також оновилась властивість `dateModified` і тепер відображає "
+"мітку дати останнього внесення змін. "
 
 #: ../../source/cfaua/tutorial.rst:85
 msgid "Checking the listing again reflects the new modification date:"
-msgstr ""
+msgstr "Знову перевіряємо список і бачимо нову дату внесення змін:"
 
 #: ../../source/cfaua/tutorial.rst:90
 msgid "Procuring entity can set bid guarantee:"
-msgstr ""
+msgstr "Замовник може втановити тендерну гарантію: "
 
 #: ../../source/cfaua/tutorial.rst:100
 msgid "Uploading documentation"
-msgstr ""
+msgstr "Завантаження документації"
 
 #: ../../source/cfaua/tutorial.rst:102
 msgid ""
 "Procuring entity can upload PDF files into the created tender. Uploading "
 "should follow the :ref:`upload` rules."
-msgstr ""
+msgstr "Замовник може завантажити PDF файли у створену тендерну пропозицію. Завантаження "
+"має відбуватись згідно з правилами :ref:`upload`. " 
 
 #: ../../source/cfaua/tutorial.rst:108
 msgid ""
 "`201 Created` response code and `Location` header confirm document "
 "creation. We can additionally query the `documents` collection API "
 "endpoint to confirm the action:"
-msgstr ""
+msgstr "Код відповіді `201 Created` та заголовок `Location` підтверджують, "
+"що документ створено. Можна додатково здійснити запит точки входу API колекції "
+"`documents`, щоб підтвердити дію: "
 
 #: ../../source/cfaua/tutorial.rst:115
 msgid ""
 "The single array element describes the uploaded document. We can upload "
 "more documents:"
-msgstr ""
+msgstr "Єдиний елемент масиву описує завантажений документ. Можна завантажити "
+"більше документів:"
 
 #: ../../source/cfaua/tutorial.rst:120
 msgid "And again we can confirm that there are two documents uploaded."
-msgstr ""
+msgstr "Знову можна підтвердити, що завантажено два документа."
 
 #: ../../source/cfaua/tutorial.rst:125
 msgid ""
 "In case we made an error, we can reupload the document over the older "
 "version:"
-msgstr ""
+msgstr "Якщо сталася помилка, ми можемо ще раз завантажити документ поверх старої "
+"версії."
 
 #: ../../source/cfaua/tutorial.rst:130
 msgid "And we can see that it is overriding the original version:"
-msgstr ""
+msgstr "І бачимо, що він замінив початкову версію документа: "
 
 #: ../../source/cfaua/tutorial.rst:142
 msgid "Enquiries"
-msgstr ""
+msgstr "Запитання"
 
 #: ../../source/cfaua/tutorial.rst:144
 msgid ""
 "When tender has ``active.tendering`` status and "
 "``Tender.enqueryPeriod.endDate`` hasn't come yet, interested parties can "
 "ask questions:"
-msgstr ""
+msgstr "Поки тендерна пропозиція має статус ``active.tendering``, а "
+"момент ``Tender.enqueryPeriod.endDate`` ще не настав, зацікавлені сторони "
+"можуть ставити записання:"
 
 #: ../../source/cfaua/tutorial.rst:150
 msgid "Procuring entity can answer them:"
-msgstr ""
+msgstr "Замовник може на них відповідати:"
 
 #: ../../source/cfaua/tutorial.rst:155
 msgid "And one can retrieve the questions list:"
-msgstr ""
+msgstr "Можна отримати список запитань:"
 
 #: ../../source/cfaua/tutorial.rst:160
 msgid "And individual answer:"
-msgstr ""
+msgstr "та окрему відповідь:"
 
 #: ../../source/cfaua/tutorial.rst:166
 msgid "Enquiries can be made only during ``Tender.enqueryPeriod``"
-msgstr ""
+msgstr "Запитання можна задавати лише під час ``Tender.enqueryPeriod``"
 
 #: ../../source/cfaua/tutorial.rst:178
 msgid "Registering bid"
-msgstr ""
+msgstr "Реєстрація цінової заявки"
 
 #: ../../source/cfaua/tutorial.rst:181
 msgid "Step-by-step registration"
-msgstr ""
+msgstr "Покрокова реєстрація"
 
 #: ../../source/cfaua/tutorial.rst:183
 msgid "Tender status ``active.tendering`` allows registration of bids."
-msgstr ""
+msgstr "Коли тендерна пропозиція перебуває в статусі ``active.tendering``, "
+"можна реєструвати цінові заявки."
 
 #: ../../source/cfaua/tutorial.rst:185
 msgid "Bidder can register a bid in `draft` status:"
-msgstr ""
+msgstr "Учасник може зареєструвати заявку зі статусом `draft`:"
 
 #: ../../source/cfaua/tutorial.rst:190
 msgid "And activate a bid:"
-msgstr ""
+msgstr "Та активувати заявку:"
 
 #: ../../source/cfaua/tutorial.rst:196
 msgid "Proposal Uploading"
-msgstr ""
+msgstr "Завантаження документу пропозиції"
 
 #: ../../source/cfaua/tutorial.rst:198
 msgid "Then bidder should upload proposal technical document(s):"
-msgstr ""
+msgstr "Учасник повинен завантажити технічний(і) документ(и) пропозиції:"
 
 #: ../../source/cfaua/tutorial.rst:204
 msgid "Confidentiality"
-msgstr ""
+msgstr "Конфіденційність"
 
 #: ../../source/cfaua/tutorial.rst:206
 msgid "Documents can be either public or private:"
-msgstr ""
+msgstr "Документи можуть мати як публічний, так і приватний доступ:"
 
 #: ../../source/cfaua/tutorial.rst:208
 msgid ""
 "Privacy settings can be changed only for the latest version of the "
 "document."
-msgstr ""
+msgstr "Налаштування приватності можна змінити лише для отанньої версії "
+"документу. "
 
 #: ../../source/cfaua/tutorial.rst:209
 msgid ""
 "When you upload new version of the document, privacy settings are copied "
 "from the previous version."
-msgstr ""
+msgstr "Коли ви завантажуєте нову версію документу, налаштування приватності "
+"дублюються з попередньої версії. "
 
 #: ../../source/cfaua/tutorial.rst:210
 msgid ""
 "Privacy settings can be changed only during `tenderPeriod` (with "
 "`active.tendering` status)."
-msgstr ""
+msgstr "Налаштування приватності можна змінити лише під час `tenderPeriod` "
+"(у статусі `active.tendering`). "
 
 #: ../../source/cfaua/tutorial.rst:211
 msgid ""
 "If tender has status `active.qualification` winner can upload only public"
 " documents."
-msgstr ""
+msgstr "Якщо тендерна пропозиція має статус `active.qualification`, то переможець "
+"може завантажити лише документи з публічним доступом. "
 
 #: ../../source/cfaua/tutorial.rst:213
 msgid "Let's upload private document:"
-msgstr ""
+msgstr "Спробуймо завантажити документ з приватним доступом:"
 
 #: ../../source/cfaua/tutorial.rst:218
 msgid ""
 "To define the document as \"private\" - `confidentiality` and "
 "`confidentialityRationale` fields should be set."
-msgstr ""
+msgstr "Щоб документ визначався як \"private\", потрібно налаштувати поля "
+"`confidentiality` та `confidentialityRationale`. "
 
 #: ../../source/cfaua/tutorial.rst:220
 msgid ""
 "`confidentiality` field value can be either `buyerOnly` (document is "
 "private) or `public` (document is publicly accessible)."
-msgstr ""
+msgstr "Значення поля `confidentiality` може бути `buyerOnly` (документ лише "
+"з приватним доступом) або `public` (документ з публічним доступом). "
 
 #: ../../source/cfaua/tutorial.rst:222
 msgid ""
 "Content of private documents (`buyerOnly`) can be accessed only by "
 "procuring entity or by participant who uploaded them."
-msgstr ""
+msgstr "Вміст приватних документів (`buyerOnly`) може бути доступним лише для "
+"замовника чи учасника, який їх завантажив."
 
 #: ../../source/cfaua/tutorial.rst:224
 msgid ""
 "`confidentialityRationale` field is required only for private documents "
 "and should contain at least 30 characters."
-msgstr ""
+msgstr "Поле `confidentialityRationale` є обов'язковим до заповнення лише для приватних документів "
+"і повинне містити щонайменше 30 символів."
 
 #: ../../source/cfaua/tutorial.rst:226
 msgid "Let's mark the document as \"private\":"
-msgstr ""
+msgstr "Позначмо документ як \"private\":"
 
 #: ../../source/cfaua/tutorial.rst:231
 msgid "It is possible to check the uploaded documents:"
-msgstr ""
+msgstr "Є можливість перевірити завантажені документи:"
 
 #: ../../source/cfaua/tutorial.rst:239
 msgid "Financial, eligibility and qualification documents uploading"
-msgstr ""
+msgstr "Завантаження документів, що стосуються вартості, терміну дії та кваліфікації "
 
 #: ../../source/cfaua/tutorial.rst:241
 msgid ""
 "Financial, eligibility and qualification documents are also a part of Bid"
 " but are located in different end-points."
-msgstr ""
+msgstr "Документи, що стосуються вартості і терміну дії угоди та підтвердження кваліфікації також є частиною Заявки "
+"але знаходяться в інших точках входу."
 
 #: ../../source/cfaua/tutorial.rst:243
 msgid ""
 "In order to create and/or get financial document ``financial_documents`` "
 "end-point should be used:"
-msgstr ""
+msgstr "Щоб створити і/або отримати документ щодо вартості угоди, потрібно використати "
+"точку входу ``financial_documents``:"
 
 #: ../../source/cfaua/tutorial.rst:248
 msgid "Get financial documents:"
-msgstr ""
+msgstr "Отримуємо документи щодо вартості:"
 
 #: ../../source/cfaua/tutorial.rst:253
 msgid ""
 "In order to create and/or get eligibility document "
 "``eligibility_documents`` end-point should be used:"
-msgstr ""
+msgstr "Щоб створити і/або отримати документ щодо терміну дії угоди, потрібно використати "
+"точку входу ``eligibility_documents``:"
 
 #: ../../source/cfaua/tutorial.rst:258
 msgid ""
 "In order to create and/or get qualification document "
 "``qualification_documents`` end-point should be used:"
-msgstr ""
+msgstr "Щоб створити і/або отримати документ щодо підтвердження кваліфікації, потрібно використати "
+"точку входу ``qualification_documents``:"
 
 #: ../../source/cfaua/tutorial.rst:264
 msgid ""
 "`Financial` and `qualification` documents will be publicly accessible "
 "after the auction. `Eligibility` documents will become publicly "
 "accessible starting from tender pre-qualification period."
-msgstr ""
+msgstr "Документація `Financial`та `qualification` стане загальнодоступною після "
+"закінчення аукціону. Документація щодо `Eligibility` стане загальнодоступною "
+"з початком прекваліфікаційного періоду."
 
 #: ../../source/cfaua/tutorial.rst:267
 msgid "Here is bidder proposal with all documents."
-msgstr ""
+msgstr "Тут бачимо пропозицію учасника з усіма документами."
 
 #: ../../source/cfaua/tutorial.rst:272
 msgid ""
 "Note that financial, eligibility, and qualification documents are stored "
 "in `financialDocuments`, `eligibilityDocuments`, and "
 "`qualificationDocuments` attributes of :ref:`Bid`."
-msgstr ""
+msgstr "Зверніть увагу, що документи, що стосуються вартості і терміну дії угоди "
+"та підтвердження кваліфікації зберігаються в атрибутах :ref:`Bid`."
 
 #: ../../source/cfaua/tutorial.rst:277
 msgid "Bid invalidation"
-msgstr ""
+msgstr "Скасування заявки"
 
 #: ../../source/cfaua/tutorial.rst:279
 msgid ""
 "If tender is modified, status of all bid proposals will be changed to "
 "``invalid``. Bid proposal will look the following way after tender has "
 "been modified:"
-msgstr ""
+msgstr "Якщо до тендерної пропозиції вносяться зміни, то статуси усіх цінових заявок "
+"зміниться на ``invalid``. Так виглядатиме заявка учасника торгів після внесення змін до " 
+"тендерної пропозиції:"
 
 #: ../../source/cfaua/tutorial.rst:286
 msgid "Bid confirmation"
-msgstr ""
+msgstr "Підтвердження заявки"
 
 #: ../../source/cfaua/tutorial.rst:288
 msgid "Bidder should confirm bid proposal:"
@@ -359,173 +399,188 @@ msgid ""
 "Close FrameworkAgreement UA procedure demands at least three bidders, so "
 "there should be at least three bid proposals registered to move to "
 "auction stage:"
-msgstr ""
+msgstr "Процедура Закритої Рамкової Угоди UA вимагає щонайменше трьох учасників "
+"торгів, тож має бути зареєстровано щонайменше три цінові заявки, щоб перейти до "
+"етапу аукціону:"
 
 #: ../../source/cfaua/tutorial.rst:301
 msgid "Batch-mode registration"
-msgstr ""
+msgstr "Пакетний режим реєстрації"
 
 #: ../../source/cfaua/tutorial.rst:303
 msgid "Register bid with documents using one request:"
-msgstr ""
+msgstr "Можна зареєструвати заявку з документами одним запитом"
 
 #: ../../source/cfaua/tutorial.rst:315
 msgid "Bid Qualification"
-msgstr ""
+msgstr "Кваліфікація заявок"
 
 #: ../../source/cfaua/tutorial.rst:317
 msgid "Close FrameworkAgreement UA procedure requires bid qualification."
-msgstr ""
+msgstr "Процедура Закритої Рамкової Угоди UA вимагає кваліфікації заявок."
 
 #: ../../source/cfaua/tutorial.rst:319
 msgid "Let's list qualifications:"
-msgstr ""
+msgstr "Складемо список кваліфікаційних вимог:"
 
 #: ../../source/cfaua/tutorial.rst:325
 msgid "Approve three bids through qualification objects:"
-msgstr ""
+msgstr "Схвалюємо три заявки з допомогою об'єктів кваліфікації:"
 
 #: ../../source/cfaua/tutorial.rst:336
 msgid "We can also reject bid:"
-msgstr ""
+msgstr "Також можна відхилити заявку:"
 
 #: ../../source/cfaua/tutorial.rst:341
 msgid "And check that qualified bids are switched to `active`:"
-msgstr ""
+msgstr "І перевірити чи заявки, що пройшли кваліфікацію, переведені в статус `active`:"
 
 #: ../../source/cfaua/tutorial.rst:346
 msgid "Rejected bid is not shown in `bids/` listing."
-msgstr ""
+msgstr "Відхилена заявка не відображається у списку `bids/`."
 
 #: ../../source/cfaua/tutorial.rst:348
 msgid "We can access rejected bid by id:"
-msgstr ""
+msgstr "Можемо знайти відхилену заявку за її id:"
 
 #: ../../source/cfaua/tutorial.rst:353
 msgid "Procuring entity approves qualifications by switching to next status:"
-msgstr ""
+msgstr "Замовник схвалює кваліфікацію заявок, перейшовши в наступний статус: "
 
 #: ../../source/cfaua/tutorial.rst:358
 msgid "You may notice 10 day stand-still time set in `qualificationPeriod`."
-msgstr ""
+msgstr "Можна зауважити, що термін простою `qualificationPeriod` встановлюється на 10 днів "
 
 #: ../../source/cfaua/tutorial.rst:363
 msgid "Auction"
-msgstr ""
+msgstr "Аукціон"
 
 #: ../../source/cfaua/tutorial.rst:365
 msgid ""
 "After auction is scheduled anybody can visit it to watch. The auction can"
 " be reached at `Tender.lot.auctionUrl`:"
-msgstr ""
+msgstr "Коли оголошується час проведення аукціону, будь-хто може подивитись, як він проходить. "
+"На аукціон можна зайти за адресою `Tender.lot.auctionUrl`:"
 
 #: ../../source/cfaua/tutorial.rst:370
 msgid "And bidders can find out their participation URLs via their bids:"
-msgstr ""
+msgstr "Учасники торгів можуть отримати свої URL для доступу на аукціон через свої заявки :"
 
 #: ../../source/cfaua/tutorial.rst:375
 msgid ""
 "See the `Bid.lotValues.participationUrl` in the response. Similar, but "
 "different, URL can be retrieved for other participants:"
-msgstr ""
+msgstr "`Bid.lotValues.participationUrl` має з'явитись у відповіді. Подібні але "
+"інші URL можна витягнути й для решти учасників."
 
 #: ../../source/cfaua/tutorial.rst:386
 msgid "Confirming qualification"
-msgstr ""
+msgstr "Підтвердження кваліфікації"
 
 #: ../../source/cfaua/tutorial.rst:388
 msgid "Qualification board receives the qualifications list"
-msgstr ""
+msgstr "Кваліфікаційна комісія отримає список претендентів до кваліфікації"
 
 #: ../../source/cfaua/tutorial.rst:393
 msgid "And registers its decisions via the following call per award:"
-msgstr ""
+msgstr "І реєструє своє рішення через такий виклик на кожного переможця:"
 
 #: ../../source/cfaua/tutorial.rst:398
 msgid ""
 "The board may also disqualify the award winner by calling ``{'data': "
 "{'status': 'unsuccessful'}}``"
-msgstr ""
+msgstr "Комісія також може дискваліфікувати переможця викликом ``{'data': "
+"{'status': 'unsuccessful'}}``"
 
 #: ../../source/cfaua/tutorial.rst:404
 msgid "Uploading document with unit price per item"
-msgstr ""
+msgstr "Завантаження документу з переліком цін за одиницю товару."
 
 #: ../../source/cfaua/tutorial.rst:406
 msgid ""
 "When tender transfers to status `active.awarded` then :ref:`Agreement` is"
 " created and the awarded participants are given 5 business days to upload"
 " the itemized price list with unit price per every 'item'"
-msgstr ""
+msgstr "Коли тендерна пропозиція переходить в статус `active.awarded`, створюється "
+":ref:`Agreement`, і переможцям аукціону надається п'ять робочих днів на завантаження "
+"переліку цін за одиницю кожного предмету закупівлі."
 
 #: ../../source/cfaua/tutorial.rst:412
 msgid "Entering prices per item by the ordering party"
-msgstr ""
+msgstr "Внесення цін за предмет закупівлі стороною замовника"
 
 #: ../../source/cfaua/tutorial.rst:414
 msgid "The object list :ref:`Agreement` can be obtained via the following call"
-msgstr ""
+msgstr "Список об'єктів :ref:`Agreement` можна отримати з допомогою цього виклику "
 
 #: ../../source/cfaua/tutorial.rst:419
 msgid "Only one contract is created per each qualified award winner"
-msgstr ""
+msgstr "Лише один контракт створюється на одного переможця аукціону, що пройшов кваліфікацію."
 
 #: ../../source/cfaua/tutorial.rst:421
 msgid ""
 "The object list :ref:`Contract` to enter prices per item can be obtained "
 "by the ordering party via the following call"
-msgstr ""
+msgstr " Сторона замовника може отримати список об'єктів :ref:`Contract` " 
+"для внесення цін за предмет закупівлі з допомогою такого виклику "
 
 #: ../../source/cfaua/tutorial.rst:426
 msgid "Entering unit prices is allowed only for all 'items' taken together"
-msgstr ""
+msgstr "Внесення цін за одиницю товару можливе лише для всіх предметів закупівлі 'items' разом "
 
 #: ../../source/cfaua/tutorial.rst:437
 msgid ""
 "Also the ordering party is allowed to exclude a winner from the framework"
 " agreement by setting the contract to ``{'data': {'status': "
 "'unsuccessful'}}``"
-msgstr ""
+msgstr "Також стороні замовника дозволено виключити переможця з рамкової "
+"угоди, перевівши контракт в статус ``{'data': {'status': "
+"'unsuccessful'}}``"
 
 #: ../../source/cfaua/tutorial.rst:440
 msgid ""
 "For a successful signing of a Framework agreement not less than 3 active "
 "contracts are needed"
-msgstr ""
+msgstr "Для успішного підписання Рамкової угоди необхідно щонайменше 3 "
+"активних контракта."
 
 #: ../../source/cfaua/tutorial.rst:442
 msgid ""
 "A Framework agreement can be signed only when "
 "`agreement.contractPeriod.clarificationsUntil` is reached"
-msgstr ""
+msgstr "Рамкову угоду можна підписати лише з настанням моменту "
+"`agreement.contractPeriod.clarificationsUntil`. "
 
 #: ../../source/cfaua/tutorial.rst:446
 msgid "Uploading agreement documentation"
-msgstr ""
+msgstr "Завантаження документації щодо угоди"
 
 #: ../../source/cfaua/tutorial.rst:448
 msgid "You can upload agreement documents. Let's upload agreement document:"
-msgstr ""
+msgstr "Тепер можна завантажити документацію, що стосується угоди. Спробуймо завантажити "
+"документ, що стосується угоди: "
 
 #: ../../source/cfaua/tutorial.rst:453
 msgid ""
 "`201 Created` response code and `Location` header confirm that this "
 "document was added."
-msgstr ""
+msgstr "Код відповіді `201 Created` і заголовок `Location` підтверджують, що "
+"цей документ було додано."
 
 #: ../../source/cfaua/tutorial.rst:455
 msgid "Let's see the list of agreement documents:"
-msgstr ""
+msgstr "Перегляньмо список документів стосовно угоди:"
 
 #: ../../source/cfaua/tutorial.rst:460
 msgid "We can add another agreement document:"
-msgstr ""
+msgstr "Можемо додати ще один документ стосовно угоди:"
 
 #: ../../source/cfaua/tutorial.rst:465
 msgid ""
 "`201 Created` response code and `Location` header confirm that the second"
 " document was uploaded."
-msgstr ""
+msgstr "Код відповіді `201 Created` і заголовок `Location` підтверджують, що "
+"другий документ також було додано."
 
 #: ../../source/cfaua/tutorial.rst:467
 msgid ""
@@ -534,94 +589,103 @@ msgid ""
 " to the `language` field (available options: ``uk``, ``en``, ``ru``). You"
 " can also set document's title (e.g. `title_en`) and description (e.g. "
 "`description_en`) fields. See :ref:`Document` data structure for details."
-msgstr ""
+msgstr "За замовчуванням, мова документації - українська. Це можна змінити і "
+"встановити іншу мову для документу, встановивши відповідний мовнй код в полі "
+"`language` (доступні варіанти: ``uk``, ``en``, ``ru``). Можна також встановити " 
+"поля назви документа (наприклад, `title_en`) та його опису (наприклад, "
+"`description_en`). Детальніше в структурі запиту :ref:`Document`. "
 
 #: ../../source/cfaua/tutorial.rst:475
 msgid "Let's see the list of all added agreement documents:"
-msgstr ""
+msgstr "Перегляньмо список усіх доданих документів стосовно угоди:"
 
 #: ../../source/cfaua/tutorial.rst:480
 msgid "Let's view separate contract document:"
-msgstr ""
+msgstr "Подивімося на окремий документ щодо угоди:"
 
 #: ../../source/cfaua/tutorial.rst:487
 msgid "Set agreement signature date"
-msgstr ""
+msgstr "Встановлення дати підписання угоди"
 
 #: ../../source/cfaua/tutorial.rst:489
 msgid ""
 "There is a possibility to set custom agreement signature date. If the "
 "date is not set it will be generated on agreement registration."
-msgstr ""
+msgstr "Є можливість встановити потрібну дату підписання угоди. Якщо дата "
+"не встановлена, то вона буде згенерована під час реєстрації угоди"
 
 #: ../../source/cfaua/tutorial.rst:496
 msgid "Agreement registration"
-msgstr ""
+msgstr "Реєстрація угоди"
 
 #: ../../source/cfaua/tutorial.rst:502
 msgid "Cancelling tender"
-msgstr ""
+msgstr "Скасування тендерної пропозиції"
 
 #: ../../source/cfaua/tutorial.rst:504
 msgid ""
 "Tender creator can cancel tender anytime (except when tender has terminal"
 " status e.g. `usuccesfull`, `canceled`, `complete`)."
-msgstr ""
+msgstr "Замовник може скасувати тендерну пропозицію у будь-який момент (окрім випадків, "
+"коли тендерна пропозиція має кінцевий статус, наприклад `usuccesfull`, `canceled`, `complete`)."
 
 #: ../../source/cfaua/tutorial.rst:506
 msgid "The following steps should be applied:"
-msgstr ""
+msgstr "Для цього потрібно виконати такі кроки:"
 
 #: ../../source/cfaua/tutorial.rst:508
 msgid "Prepare cancellation request"
-msgstr ""
+msgstr "Приготуйте запит на скасування"
 
 #: ../../source/cfaua/tutorial.rst:509
 msgid "Fill it with the protocol describing the cancellation reasons"
-msgstr ""
+msgstr "Наповніть його протоколом про причини скасування"
 
 #: ../../source/cfaua/tutorial.rst:510
 msgid "Cancel the tender with the reasons prepared."
-msgstr ""
+msgstr "Скасуйте тендерну пропозицію через подані причини"
 
 #: ../../source/cfaua/tutorial.rst:512
 msgid ""
 "Only the request that has been activated (3rd step above) has power to "
 "cancel tender.  I.e.  you have to not only prepare cancellation request "
 "but to activate it as well."
-msgstr ""
+msgstr "Тендерну пропозицію можна скасувати лише тим запитом, що пройшов "
+"активацію (3 крок вище). Тобто, потрібно не просто створити запит на скасування," 
+"а й активувати його."
 
 #: ../../source/cfaua/tutorial.rst:516
 msgid "See :ref:`cancellation` data structure for details."
-msgstr ""
+msgstr "Детальніше в структурі запиту :ref:`cancellation`."
 
 #: ../../source/cfaua/tutorial.rst:519
 msgid "Preparing the cancellation request"
-msgstr ""
+msgstr "Формування запиту на скасування"
 
 #: ../../source/cfaua/tutorial.rst:521
 msgid ""
 "You should pass `reason`, `status` defaults to `pending`. `id` is "
 "autogenerated and passed in the `Location` header of response."
-msgstr ""
+msgstr "Потрібно перевести змінні `reason`, `status` в стан `pending`. `id` "
+"генерується автоматично і передається у заголовку відповіді `Location`."
 
 #: ../../source/cfaua/tutorial.rst:529
 msgid "Filling cancellation with protocol and supplementary documentation"
-msgstr ""
+msgstr "Наповнення запиту на скасування протоколом та супровідною документацією"
 
 #: ../../source/cfaua/tutorial.rst:531
 msgid "Upload the file contents"
-msgstr ""
+msgstr "Завантажуємо вміст файлу"
 
 #: ../../source/cfaua/tutorial.rst:536
 msgid "Change the document description and other properties"
-msgstr ""
+msgstr "Змінюємо опис документу та інші властивості"
 
 #: ../../source/cfaua/tutorial.rst:541
 msgid "Upload new version of the document"
-msgstr ""
+msgstr "Завантажуємо нову версію документа"
 
 #: ../../source/cfaua/tutorial.rst:547
 msgid "Activating the request and cancelling tender"
-msgstr ""
+msgstr "Активуємо запит і скасовуємо тендерну пропозицію"
 
