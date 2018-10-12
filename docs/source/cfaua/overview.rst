@@ -121,7 +121,7 @@ Released: 2015-03-13
  - Added upload tender documents by auction user
  - Closing tender by registering contract
  - Strict mode for patching operation
- - Cancalling active award
+ - Cancelling active award
 
  Modifications:
 
