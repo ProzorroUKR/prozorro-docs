@@ -243,8 +243,8 @@ Workflow in :ref:`cfaua`
 .. graphviz::
 
     digraph G {
-        B [ label="active"]
-        C [ label="unsuccessful"]
+        A [ label="active"]
+        B [ label="unsuccessful"]
          A -> B;
          B -> A;
     }
