@@ -1,3 +1,5 @@
+.. include:: defs.hrst
+
 .. index:: Agreement
 .. _agreement:
 
