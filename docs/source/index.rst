@@ -24,6 +24,7 @@ Contents:
    esco/index
    limited/index
    defense/index
+   medicines-registry/index
    contracting/index
    performance
    cluster
