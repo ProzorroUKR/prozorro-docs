@@ -203,9 +203,6 @@ Schema
 :awardID:
     string, auto-generated, read-only
 
-:bidID:
-    string
-
 :parameters:
     List of :ref:`Parameter` objects, auto-generated, read-only
 
