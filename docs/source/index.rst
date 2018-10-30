@@ -22,6 +22,7 @@ Contents:
    limited/index
    defense/index
    cfaua/index
+   agreementcfaua/index
    contracting/index
    performance
    cluster

@@ -76,6 +76,12 @@ Schema
     * `unsuccessful` - the agreement has not been signed between procuring entity and :ref:`Contract`
     * `active` - the agreement is signed between procuring entity and :ref:`Contract`
     * `cancelled` - the agreement has been cancelled within cancellation of tender/lot.
+
+     Different in `agreement` container:
+
+    * `active` - the agreement is active and can be used for creating `selection` procedure
+    * `terminated` - the agreement is cannot be used, for creating `selection` procedure
+
     
 :contracts:
     List of :ref:`Contract` objects

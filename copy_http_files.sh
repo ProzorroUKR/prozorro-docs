@@ -51,3 +51,10 @@ TARGET_DIR='docs/source/cfaua/tutorial'
 rm -rf "$TARGET_DIR"
 mkdir -p "$TARGET_DIR"
 cp -R "$SOURCES" "$TARGET_DIR"
+
+
+SOURCES="src/openprocurement.agreement.cfaua/docs/source/tutorial/."
+TARGET_DIR='docs/source/agreementcfaua/tutorial'
+rm -rf "$TARGET_DIR"
+mkdir -p "$TARGET_DIR"
+cp -R "$SOURCES" "$TARGET_DIR"
