@@ -14,6 +14,7 @@ areas that were not covered by it.
    award
    bid
    cancellation
+   change
    complaint
    confidentialdocument
    contract

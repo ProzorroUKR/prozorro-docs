@@ -18,6 +18,11 @@ Schema
 :agreementNumber:
     string
 
+:changes:
+    List of :ref:`ChangeTaxRate`, :ref:`ChangeItemPriceVariation`, :ref:`ChangePartyWithdrawal` or :ref:`ChangeThirdParty` objects.
+
+    Only in `agreements` container.
+
 :date:
     string, :ref:`date`, auto-generated, read-only
     
@@ -103,6 +108,17 @@ Workflow
          A -> B;
          A -> C;
          A -> D;
+    }
+
+Workflow in agreement container
+-------------------------------
+
+.. graphviz::
+
+    digraph G {
+        A [ label="active*" ]
+        B [ label="terminated"]
+         A -> B;
     }
 
 \* marks initial state
