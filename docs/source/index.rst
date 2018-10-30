@@ -23,6 +23,7 @@ Contents:
    defense/index
    cfaua/index
    agreementcfaua/index
+   cfaselectionua/index
    contracting/index
    performance
    cluster

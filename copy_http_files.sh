@@ -45,9 +45,10 @@ rm -rf "$TARGET_DIR"
 mkdir -p "$TARGET_DIR"
 cp -R "$SOURCES" "$TARGET_DIR"
 
-
+# copy directories content -> tutorials
 ARRAY=("array=('src/openprocurement.tender.cfaua/docs/source/tutorial/.' 'docs/source/cfaua/tutorial')"
-       "array=('src/openprocurement.agreement.cfaua/docs/source/tutorial/.' 'docs/source/agreementcfaua/tutorial')")
+       "array=('src/openprocurement.agreement.cfaua/docs/source/tutorial/.' 'docs/source/agreementcfaua/tutorial')"
+       "array=('src/openprocurement.tender.cfaselectionua/docs/source/tutorial/.' 'docs/source/cfaselectionua/tutorial')")
 for element in "${ARRAY[@]}"; do
     eval $element
     SOURCES=${array[0]}
@@ -57,7 +58,7 @@ for element in "${ARRAY[@]}"; do
     cp -R "$SOURCES" "$TARGET_DIR"
 done
 
-
+# copy files
 ARRAYFILES=("array=('src/openprocurement.agreement.cfaua/docs/source/tutorial.rst' 'docs/source/agreementcfaua/tutorial.rst')"
        "array=('src/openprocurement.agreement.cfaua/docs/source/locale/uk/LC_MESSAGES/tutorial.mo' 'docs/source/locale/uk/LC_MESSAGES/agreementcfaua/tutorial.mo')"
        "array=('src/openprocurement.agreement.cfaua/docs/source/locale/uk/LC_MESSAGES/tutorial.po' 'docs/source/locale/uk/LC_MESSAGES/agreementcfaua/tutorial.po')"
@@ -66,7 +67,13 @@ ARRAYFILES=("array=('src/openprocurement.agreement.cfaua/docs/source/tutorial.rs
        "array=('src/openprocurement.agreement.cfaua/docs/source/locale/uk/LC_MESSAGES/standard/base_change.po' 'docs/source/locale/uk/LC_MESSAGES/standard/base_change.po')"
        "array=('src/openprocurement.agreement.cfaua/docs/source/standard/change.rst' 'docs/source/standard/change.rst')"
        "array=('src/openprocurement.agreement.cfaua/docs/source/locale/uk/LC_MESSAGES/standard/change.mo' 'docs/source/locale/uk/LC_MESSAGES/standard/change.mo')"
-       "array=('src/openprocurement.agreement.cfaua/docs/source/locale/uk/LC_MESSAGES/standard/change.po' 'docs/source/locale/uk/LC_MESSAGES/standard/change.po')")
+       "array=('src/openprocurement.agreement.cfaua/docs/source/locale/uk/LC_MESSAGES/standard/change.po' 'docs/source/locale/uk/LC_MESSAGES/standard/change.po')"
+       "array=('src/openprocurement.tender.cfaselectionua/docs/source/tutorial.rst' 'docs/source/cfaselectionua/tutorial.rst')"
+       "array=('src/openprocurement.tender.cfaselectionua/docs/source/locale/uk/LC_MESSAGES/tutorial.mo' 'docs/source/locale/uk/LC_MESSAGES/cfaselectionua/tutorial.mo')"
+       "array=('src/openprocurement.tender.cfaselectionua/docs/source/locale/uk/LC_MESSAGES/tutorial.po' 'docs/source/locale/uk/LC_MESSAGES/cfaselectionua/tutorial.po')"
+       "array=('src/openprocurement.tender.cfaselectionua/docs/source/overview.rst' 'docs/source/cfaselectionua/overview.rst')"
+       "array=('src/openprocurement.tender.cfaselectionua/docs/source/locale/uk/LC_MESSAGES/overview.mo' 'docs/source/locale/uk/LC_MESSAGES/cfaselectionua/overview.mo')"
+       "array=('src/openprocurement.tender.cfaselectionua/docs/source/locale/uk/LC_MESSAGES/overview.po' 'docs/source/locale/uk/LC_MESSAGES/cfaselectionua/overview.po')")
 
 
 for element in "${ARRAYFILES[@]}"; do

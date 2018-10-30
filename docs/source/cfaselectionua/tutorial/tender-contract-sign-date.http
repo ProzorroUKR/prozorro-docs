@@ -1,0 +1,113 @@
+PATCH /api/2.4/tenders/6d7003b9a21648d6a15690d754fb581a/contracts/707671a220104ea9b7c8389194fe386c?acc_token=8d1191f02e8643b29e9765b21d0a6b9b HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 60
+Content-Type: application/json
+Host: api-sandbox.openprocurement.org
+
+{
+  "data": {
+    "dateSigned": "2018-10-10T13:22:24.304297+03:00"
+  }
+}
+
+
+200 OK
+Content-Type: application/json; charset=UTF-8
+
+{
+  "data": {
+    "status": "pending", 
+    "documents": [
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "title": "contract_first_document.doc", 
+        "url": "http://public.docs-sandbox.openprocurement.org/get/09927f2f4f914fb997c6a75ccbfd21e8?KeyID=12eebbc2&Signature=9SPZkIdsbOx9Imm3Yan2tZao%2FbwYuS3M%252Bb9VNe18iHNmbhJxOZ14YKHqPwIOFfbzgSTNm0QyMXJVrwVi2TBuCA%253D%253D", 
+        "format": "application/msword", 
+        "datePublished": "2018-10-10T13:22:23.614363+03:00", 
+        "id": "216890c8371548ef872b1795095cae80", 
+        "dateModified": "2018-10-10T13:22:23.614388+03:00"
+      }, 
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "title": "contract_second_document.doc", 
+        "url": "http://public.docs-sandbox.openprocurement.org/get/8930d15f8bd44e21a1fe55ea6c97c182?KeyID=12eebbc2&Signature=vasZo9iEAri6kSXeJ7XiIw9L5rls2KzENGyabHmJUoCZCtWB%252B2WKlk%2FqeJQA5tZn020pY4KQNS%252BtaoeKGAj0AA%253D%253D", 
+        "format": "application/msword", 
+        "datePublished": "2018-10-10T13:22:24.002066+03:00", 
+        "id": "2168c8f9cfb54b09a18a0503bbe433aa", 
+        "dateModified": "2018-10-10T13:22:24.002092+03:00"
+      }
+    ], 
+    "items": [
+      {
+        "relatedLot": "cbfd2a8fd3f64080ab872d00a2059faf", 
+        "description": "футляри до державних нагород", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Cartons", 
+          "id": "44617100-9"
+        }, 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "папір і картон гофровані, паперова й картонна тара"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "deliveryDate": {
+          "startDate": "2018-10-12T13:22:14.571237+03:00", 
+          "endDate": "2018-10-15T13:22:14.571237+03:00"
+        }, 
+        "id": "1662b0e1d59f4e2f8e2c5bd48e03a7bc", 
+        "unit": {
+          "code": "44617100-9", 
+          "name": "item"
+        }, 
+        "quantity": 5
+      }
+    ], 
+    "suppliers": [
+      {
+        "contactPoint": {
+          "name": "Державне управління справами", 
+          "telephone": "0440000000"
+        }, 
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "00037257", 
+          "uri": "http://www.dus.gov.ua/"
+        }, 
+        "name": "Державне управління справами", 
+        "address": {
+          "postalCode": "01220", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова, 11, корпус 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }
+      }
+    ], 
+    "contractNumber": "contract #13111", 
+    "period": {
+      "startDate": "2018-10-10T13:22:14.609418+03:00", 
+      "endDate": "2019-10-10T13:22:14.609418+03:00"
+    }, 
+    "dateSigned": "2018-10-10T13:22:24.304297+03:00", 
+    "value": {
+      "currency": "UAH", 
+      "amount": 238.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "date": "2018-10-10T13:22:22.224234+03:00", 
+    "awardID": "c9620f60d7b34501995a191e586b79ac", 
+    "id": "707671a220104ea9b7c8389194fe386c", 
+    "contractID": "UA-2018-10-10-000001-1"
+  }
+}
+
