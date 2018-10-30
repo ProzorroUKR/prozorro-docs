@@ -46,15 +46,13 @@ mkdir -p "$TARGET_DIR"
 cp -R "$SOURCES" "$TARGET_DIR"
 
 
-SOURCES="src/openprocurement.tender.cfaua/docs/source/tutorial/."
-TARGET_DIR='docs/source/cfaua/tutorial'
-rm -rf "$TARGET_DIR"
-mkdir -p "$TARGET_DIR"
-cp -R "$SOURCES" "$TARGET_DIR"
-
-
-SOURCES="src/openprocurement.agreement.cfaua/docs/source/tutorial/."
-TARGET_DIR='docs/source/agreementcfaua/tutorial'
-rm -rf "$TARGET_DIR"
-mkdir -p "$TARGET_DIR"
-cp -R "$SOURCES" "$TARGET_DIR"
+ARRAY=("array=('src/openprocurement.tender.cfaua/docs/source/tutorial/.' 'docs/source/cfaua/tutorial')"
+       "array=('src/openprocurement.agreement.cfaua/docs/source/tutorial/.' 'docs/source/agreementcfaua/tutorial')")
+for element in "${ARRAY[@]}"; do
+    eval $element
+    SOURCES=${array[0]}
+    TARGET_DIR=${array[1]}
+    rm -rf "$TARGET_DIR"
+    mkdir -p "$TARGET_DIR"
+    cp -R "$SOURCES" "$TARGET_DIR"
+done

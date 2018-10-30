@@ -78,6 +78,8 @@ Schema
     :`negotiation.quick`:
         negotiation.quick procedure indentifier
 
+    :`closeFrameworkAgreementUA`:
+        closeframeworkagreementua procedure indentifier
 
 :value:
    :ref:`value`, required
