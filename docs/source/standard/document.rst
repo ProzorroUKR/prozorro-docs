@@ -106,6 +106,25 @@ Schema
     
     * `eligibilityDocuments` - **Eligibility documents**
     
+    
+    Possible values for :ref:`agreement`
+    
+    
+    * `notice` - **Contract notice**
+    
+      The formal notice that gives details of a contract being signed and valid to start implementation. This may be a link to a downloadable document, to a web page, or to an official gazette in which the notice is contained.
+    
+    * `contractSigned` - **Signed Contract**
+    
+    * `contractArrangements` - **Arrangements for ending contract**
+    
+    * `contractSchedule` - **Schedules and milestones**
+    
+    * `contractAnnexe` - **Annexes to the Contract**
+    
+    * `contractGuarantees` - **Guarantees**
+    
+    * `subContract` - **Subcontracts**
 
 :title:
     string, multilingual
