@@ -1,0 +1,50 @@
+PATCH /api/2.4/tenders/6d7003b9a21648d6a15690d754fb581a/cancellations/3d8142b9586e4f7c8286dbafcb1f2adf?acc_token=8d1191f02e8643b29e9765b21d0a6b9b HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 30
+Content-Type: application/json
+Host: api-sandbox.openprocurement.org
+
+{
+  "data": {
+    "status": "active"
+  }
+}
+
+
+200 OK
+Content-Type: application/json; charset=UTF-8
+
+{
+  "data": {
+    "status": "active", 
+    "documents": [
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "description": "Changed description", 
+        "title": "Notice.pdf", 
+        "url": "http://public.docs-sandbox.openprocurement.org/get/cf7eb4bd731d43d282c9bebb16b59690?KeyID=12eebbc2&Signature=dalyKTZ3bI0w0zg%252Ba5p6O14stmK3mDychQzXmhq7oJFVFG2uFSuv8%2FIRpa0dTxAORWqdppVyfFmGLc4ceSv1Dw%253D%253D", 
+        "format": "application/pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2018-10-10T13:22:25.556218+03:00", 
+        "id": "360a0ca737cb481389e4404372ad83e5", 
+        "dateModified": "2018-10-10T13:22:25.556243+03:00"
+      }, 
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "description": "Changed description", 
+        "title": "Notice-2.pdf", 
+        "url": "http://public.docs-sandbox.openprocurement.org/get/3247be4725354c46934fe0e24291f171?KeyID=12eebbc2&Signature=rkrBkhMcU%252Bsq3%252B1IF%252B9aztwxfafiMAqtt5ibIW9KMUtg01VkNyf1JuII4Aik2RfKUE4nc38kOMeZj8REFg3rDg%253D%253D", 
+        "format": "application/pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2018-10-10T13:22:25.556218+03:00", 
+        "id": "360a0ca737cb481389e4404372ad83e5", 
+        "dateModified": "2018-10-10T13:22:26.266484+03:00"
+      }
+    ], 
+    "reason": "cancellation reason", 
+    "date": "2018-10-10T13:22:26.657497+03:00", 
+    "cancellationOf": "tender", 
+    "id": "3d8142b9586e4f7c8286dbafcb1f2adf"
+  }
+}
+

@@ -18,6 +18,11 @@ Schema
 :agreementNumber:
     string
 
+:changes:
+    List of :ref:`ChangeTaxRate`, :ref:`ChangeItemPriceVariation`, :ref:`ChangePartyWithdrawal` or :ref:`ChangeThirdParty` objects.
+
+    Only in `agreements` container.
+
 :date:
     string, :ref:`date`, auto-generated, read-only
     
@@ -71,6 +76,12 @@ Schema
     * `unsuccessful` - the agreement has not been signed between procuring entity and :ref:`Contract`
     * `active` - the agreement is signed between procuring entity and :ref:`Contract`
     * `cancelled` - the agreement has been cancelled within cancellation of tender/lot.
+
+     Different in `agreement` container:
+
+    * `active` - the agreement is active and can be used for creating `selection` procedure
+    * `terminated` - the agreement is cannot be used, for creating `selection` procedure
+
     
 :contracts:
     List of :ref:`Contract` objects
@@ -103,6 +114,17 @@ Workflow
          A -> B;
          A -> C;
          A -> D;
+    }
+
+Workflow in agreement container
+-------------------------------
+
+.. graphviz::
+
+    digraph G {
+        A [ label="active*" ]
+        B [ label="terminated"]
+         A -> B;
     }
 
 \* marks initial state

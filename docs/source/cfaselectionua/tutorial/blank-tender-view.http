@@ -1,0 +1,112 @@
+GET /api/2.4/tenders/6d7003b9a21648d6a15690d754fb581a HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Host: api-sandbox.openprocurement.org
+
+
+200 OK
+Content-Type: application/json; charset=UTF-8
+
+{
+  "data": {
+    "status": "draft", 
+    "procurementMethod": "selective", 
+    "awardCriteria": "lowestCost", 
+    "tenderPeriod": {
+      "startDate": "2018-10-11T13:22:14.571237+03:00", 
+      "endDate": "2018-10-24T13:22:14.571237+03:00"
+    }, 
+    "title": "футляри до державних нагород", 
+    "minimalStep": {
+      "currency": "UAH", 
+      "amount": 35.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "procurementMethodDetails": "quick, accelerator=1440", 
+    "procurementMethodType": "closeFrameworkAgreementSelectionUA", 
+    "submissionMethod": "electronicAuction", 
+    "procuringEntity": {
+      "contactPoint": {
+        "name": "Державне управління справами", 
+        "telephone": "0440000000"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "00037256", 
+        "uri": "http://www.dus.gov.ua/"
+      }, 
+      "name": "Державне управління справами", 
+      "kind": "general", 
+      "address": {
+        "postalCode": "01220", 
+        "countryName": "Україна", 
+        "streetAddress": "вул. Банкова, 11, корпус 1", 
+        "region": "м. Київ", 
+        "locality": "м. Київ"
+      }
+    }, 
+    "date": "2018-10-10T13:22:16.101369+03:00", 
+    "tenderID": "UA-2018-10-10-000001", 
+    "lots": [
+      {
+        "status": "active", 
+        "description": "lot description", 
+        "title": "lot title", 
+        "minimalStep": {
+          "currency": "UAH", 
+          "amount": 35.0, 
+          "valueAddedTaxIncluded": true
+        }, 
+        "date": "2018-10-10T13:22:16.101369+03:00", 
+        "id": "cbfd2a8fd3f64080ab872d00a2059faf"
+      }
+    ], 
+    "enquiryPeriod": {
+      "startDate": "2018-10-10T13:22:16.101229+03:00", 
+      "endDate": "2018-10-11T13:22:14.571237+03:00"
+    }, 
+    "owner": "broker", 
+    "dateModified": "2018-10-10T13:22:16.108606+03:00", 
+    "items": [
+      {
+        "relatedLot": "cbfd2a8fd3f64080ab872d00a2059faf", 
+        "description": "футляри до державних нагород", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Cartons", 
+          "id": "44617100-9"
+        }, 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "папір і картон гофровані, паперова й картонна тара"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "deliveryDate": {
+          "startDate": "2018-10-12T13:22:14.571237+03:00", 
+          "endDate": "2018-10-15T13:22:14.571237+03:00"
+        }, 
+        "id": "1662b0e1d59f4e2f8e2c5bd48e03a7bc", 
+        "unit": {
+          "code": "44617100-9", 
+          "name": "item"
+        }, 
+        "quantity": 5
+      }
+    ], 
+    "id": "6d7003b9a21648d6a15690d754fb581a", 
+    "agreements": [
+      {
+        "id": "3fcce235dc804be1b6bcb3d729648a0f"
+      }
+    ]
+  }
+}
+
