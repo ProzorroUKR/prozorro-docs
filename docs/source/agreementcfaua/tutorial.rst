@@ -1,4 +1,4 @@
-.. _agreement_tutorial:
+.. _tutorial:
 
 Tutorial
 ========

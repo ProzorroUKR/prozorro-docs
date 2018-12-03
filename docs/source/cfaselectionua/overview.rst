@@ -6,4 +6,4 @@ The Open Procurement closeFrameworkAgreementSelectionUA procedure is plugin to O
 
 Next steps
 ----------
-You might find it helpful to look at the :ref:`cfaselectionua_tutorial`.
+You might find it helpful to look at the :ref:`tutorial`.
