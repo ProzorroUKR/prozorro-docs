@@ -1,0 +1,89 @@
+POST /api/2.4/tenders/73b999ec9e514b479c237a2977938195/bids HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 929
+Content-Type: application/json
+Host: api-sandbox.openprocurement.org
+
+{
+  "data": {
+    "status": "draft", 
+    "lotValues": [
+      {
+        "relatedLot": "f8c9f018979648e4a299cc86497f2988", 
+        "value": {
+          "amount": 500
+        }
+      }
+    ], 
+    "tenderers": [
+      {
+        "contactPoint": {
+          "name": "Державне управління справами", 
+          "telephone": "0440000000"
+        }, 
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "00037256", 
+          "uri": "http://www.dus.gov.ua/"
+        }, 
+        "name": "Державне управління справами", 
+        "address": {
+          "postalCode": "01220", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова, 11, корпус 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }
+      }
+    ]
+  }
+}
+
+
+201 Created
+Content-Type: application/json; charset=UTF-8
+Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/73b999ec9e514b479c237a2977938195/bids/a13dbd15d0424913bfd4e67dfdba0520
+
+{
+  "access": {
+    "token": "b6c220e169bf461e9a2c18dcbbbc2fe9"
+  }, 
+  "data": {
+    "date": "2018-11-26T15:41:15.030059+02:00", 
+    "status": "draft", 
+    "id": "a13dbd15d0424913bfd4e67dfdba0520", 
+    "lotValues": [
+      {
+        "relatedLot": "f8c9f018979648e4a299cc86497f2988", 
+        "date": "2018-11-26T15:41:15.030019+02:00", 
+        "value": {
+          "currency": "UAH", 
+          "amount": 500.0, 
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ], 
+    "tenderers": [
+      {
+        "contactPoint": {
+          "name": "Державне управління справами", 
+          "telephone": "0440000000"
+        }, 
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "00037256", 
+          "uri": "http://www.dus.gov.ua/"
+        }, 
+        "name": "Державне управління справами", 
+        "address": {
+          "postalCode": "01220", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова, 11, корпус 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }
+      }
+    ]
+  }
+}
+

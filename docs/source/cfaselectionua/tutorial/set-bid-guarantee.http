@@ -1,0 +1,43 @@
+PATCH /api/2.4/tenders/73b999ec9e514b479c237a2977938195/lots/f8c9f018979648e4a299cc86497f2988?acc_token=5965a05480fc47d5934b0b04d00c19a9 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 57
+Content-Type: application/json
+Host: api-sandbox.openprocurement.org
+
+{
+  "data": {
+    "guarantee": {
+      "currency": "USD", 
+      "amount": 8
+    }
+  }
+}
+
+
+200 OK
+Content-Type: application/json; charset=UTF-8
+
+{
+  "data": {
+    "status": "active", 
+    "description": "lot description", 
+    "title": "lot title", 
+    "minimalStep": {
+      "currency": "UAH", 
+      "amount": 3.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "value": {
+      "currency": "UAH", 
+      "amount": 600.666, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "date": "2018-11-26T15:41:13.516556+02:00", 
+    "id": "f8c9f018979648e4a299cc86497f2988", 
+    "guarantee": {
+      "currency": "USD", 
+      "amount": 8.0
+    }
+  }
+}
+
