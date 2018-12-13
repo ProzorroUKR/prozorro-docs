@@ -105,6 +105,8 @@ Schema
     * `qualificationDocuments` - **Qualification documents**
     
     * `eligibilityDocuments` - **Eligibility documents**
+
+    * `winningBid` - **Documentation of the winning bid**, including, wherever applicable, a full copy of the proposal received.
     
     
     Possible values for :ref:`agreement`
