@@ -15,3 +15,4 @@ Contents:
 
    overview
    tutorial
+   qualification
