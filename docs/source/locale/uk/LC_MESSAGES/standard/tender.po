@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.api 0.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-12 11:30+0300\n"
-"PO-Revision-Date: 2018-09-12 16:49+0300\n"
+"POT-Creation-Date: 2018-11-20 09:43+0200\n"
+"PO-Revision-Date: 2018-11-20 10:27+0200\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
 "Language: uk\n"
 "Language-Team: Ukrainian <info@quintagroup.com>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../source/standard/tender.rst:8
 msgid "Tender"
@@ -77,7 +77,7 @@ msgstr "Детальний опис закупівлі."
 msgid "tenderID"
 msgstr ""
 
-#: ../../source/standard/tender.rst:33 ../../source/standard/tender.rst:383
+#: ../../source/standard/tender.rst:33 ../../source/standard/tender.rst:387
 msgid "string, auto-generated, read-only"
 msgstr "рядок, генерується автоматично, лише для читання"
 
@@ -140,8 +140,8 @@ msgstr ""
 msgid "Procurement Method of the Tender."
 msgstr "Метод закупівлі тендеру."
 
-#: ../../source/standard/tender.rst:57 ../../source/standard/tender.rst:373
-#: ../../source/standard/tender.rst:380
+#: ../../source/standard/tender.rst:57 ../../source/standard/tender.rst:377
+#: ../../source/standard/tender.rst:384
 msgid "Only in :ref:`limited`"
 msgstr "Тільки у :ref:`limited`"
 
@@ -150,7 +150,7 @@ msgid "procurementMethodType"
 msgstr ""
 
 #: ../../source/standard/tender.rst:61 ../../source/standard/tender.rst:229
-#: ../../source/standard/tender.rst:244
+#: ../../source/standard/tender.rst:248
 msgid "string"
 msgstr "рядок"
 
@@ -604,6 +604,14 @@ msgid ""
 msgstr "|ocdsDescription| Основна категорія, що описує основний об'єкт тендеру."
 
 #: ../../source/standard/tender.rst
+msgid "milestones"
+msgstr ""
+
+#: ../../source/standard/tender.rst:245
+msgid "List of :ref:`Milestone` objects."
+msgstr "Список об’єктів :ref:`Milestone`."
+
+#: ../../source/standard/tender.rst
 msgid "status"
 msgstr ""
 
@@ -611,7 +619,7 @@ msgstr ""
 msgid "`active.enquiries`"
 msgstr ""
 
-#: ../../source/standard/tender.rst:247
+#: ../../source/standard/tender.rst:251
 msgid "Enquiries period (enquiries)"
 msgstr "Період уточнень (уточнення)"
 
@@ -619,7 +627,7 @@ msgstr "Період уточнень (уточнення)"
 msgid "`active.tendering`"
 msgstr ""
 
-#: ../../source/standard/tender.rst:249 ../../source/standard/tender.rst:268
+#: ../../source/standard/tender.rst:253 ../../source/standard/tender.rst:272
 msgid "Tendering period (tendering)"
 msgstr "Очікування пропозицій (пропозиції)"
 
@@ -627,8 +635,8 @@ msgstr "Очікування пропозицій (пропозиції)"
 msgid "`active.auction`"
 msgstr ""
 
-#: ../../source/standard/tender.rst:251 ../../source/standard/tender.rst:270
-#: ../../source/standard/tender.rst:302
+#: ../../source/standard/tender.rst:255 ../../source/standard/tender.rst:274
+#: ../../source/standard/tender.rst:306
 msgid "Auction period (auction)"
 msgstr "Період аукціону (аукціон)"
 
@@ -636,8 +644,8 @@ msgstr "Період аукціону (аукціон)"
 msgid "`active.qualification`"
 msgstr ""
 
-#: ../../source/standard/tender.rst:253 ../../source/standard/tender.rst:272
-#: ../../source/standard/tender.rst:304
+#: ../../source/standard/tender.rst:257 ../../source/standard/tender.rst:276
+#: ../../source/standard/tender.rst:308
 msgid "Winner qualification (qualification)"
 msgstr "Кваліфікація переможця (кваліфікація)"
 
@@ -645,8 +653,8 @@ msgstr "Кваліфікація переможця (кваліфікація)"
 msgid "`active.awarded`"
 msgstr ""
 
-#: ../../source/standard/tender.rst:255 ../../source/standard/tender.rst:274
-#: ../../source/standard/tender.rst:306
+#: ../../source/standard/tender.rst:259 ../../source/standard/tender.rst:278
+#: ../../source/standard/tender.rst:310
 msgid "Standstill period (standstill)"
 msgstr "Пропозиції розглянуто (розглянуто)"
 
@@ -654,8 +662,8 @@ msgstr "Пропозиції розглянуто (розглянуто)"
 msgid "`unsuccessful`"
 msgstr ""
 
-#: ../../source/standard/tender.rst:257 ../../source/standard/tender.rst:276
-#: ../../source/standard/tender.rst:310
+#: ../../source/standard/tender.rst:261 ../../source/standard/tender.rst:280
+#: ../../source/standard/tender.rst:314
 msgid "Unsuccessful tender (unsuccessful)"
 msgstr "Закупівля не відбулась (не відбулась)"
 
@@ -663,8 +671,8 @@ msgstr "Закупівля не відбулась (не відбулась)"
 msgid "`complete`"
 msgstr ""
 
-#: ../../source/standard/tender.rst:259 ../../source/standard/tender.rst:278
-#: ../../source/standard/tender.rst:308
+#: ../../source/standard/tender.rst:263 ../../source/standard/tender.rst:282
+#: ../../source/standard/tender.rst:312
 msgid "Complete tender (complete)"
 msgstr "Завершена закупівля (завершена)"
 
@@ -672,23 +680,23 @@ msgstr "Завершена закупівля (завершена)"
 msgid "`cancelled`"
 msgstr ""
 
-#: ../../source/standard/tender.rst:261 ../../source/standard/tender.rst:280
-#: ../../source/standard/tender.rst:312
+#: ../../source/standard/tender.rst:265 ../../source/standard/tender.rst:284
+#: ../../source/standard/tender.rst:316
 msgid "Cancelled tender (cancelled)"
 msgstr "Відмінена закупівля (відмінена)"
 
-#: ../../source/standard/tender.rst:263
+#: ../../source/standard/tender.rst:267
 msgid "Status of the Tender."
 msgstr "Статус Закупівлі."
 
-#: ../../source/standard/tender.rst:265
+#: ../../source/standard/tender.rst:269
 msgid ""
 "Different in :ref:`defense`, :ref:`openua` and and :ref:`competitivedialogue` "
 "(UA):"
 msgstr ""
 "Відмінності у :ref:`defense`, :ref:`openua` та :ref:`competitivedialogue` (UA):"
 
-#: ../../source/standard/tender.rst:282
+#: ../../source/standard/tender.rst:286
 msgid "Different in :ref:`limited`:"
 msgstr "Відмінності у :ref:`limited`:"
 
@@ -696,29 +704,29 @@ msgstr "Відмінності у :ref:`limited`:"
 msgid "`active`"
 msgstr ""
 
-#: ../../source/standard/tender.rst:285
+#: ../../source/standard/tender.rst:289
 msgid "Active tender (default)"
 msgstr "Активний тендер (за умовчанням)"
 
-#: ../../source/standard/tender.rst:287
+#: ../../source/standard/tender.rst:291
 msgid "Completed tender"
 msgstr "Завершений тендер"
 
-#: ../../source/standard/tender.rst:289
+#: ../../source/standard/tender.rst:293
 msgid "Cancelled tender"
 msgstr "Відмінена закупівля (відмінена)"
 
-#: ../../source/standard/tender.rst:291
+#: ../../source/standard/tender.rst:295
 msgid "Unsuccessful tender"
 msgstr "Закупівля не відбулась (не відбулась)"
 
-#: ../../source/standard/tender.rst:293
+#: ../../source/standard/tender.rst:297
 msgid ""
 "Different in :ref:`openeu`, :ref:`esco` and :ref:`competitivedialogue` (EU):"
 msgstr ""
 "Відмінності в :ref:`openeu`, :ref:`esco` та :ref:`competitivedialogue` (EU):"
 
-#: ../../source/standard/tender.rst:296
+#: ../../source/standard/tender.rst:300
 msgid "Enquiries and tendering period"
 msgstr "Період подання пропозицій та уточнень"
 
@@ -726,7 +734,7 @@ msgstr "Період подання пропозицій та уточнень"
 msgid "`active.pre-qualification`"
 msgstr ""
 
-#: ../../source/standard/tender.rst:298
+#: ../../source/standard/tender.rst:302
 msgid "Pre qulification period"
 msgstr "Перед-кваліфікаційний період"
 
@@ -734,7 +742,7 @@ msgstr "Перед-кваліфікаційний період"
 msgid "`active.pre-qualification.stand-still`"
 msgstr ""
 
-#: ../../source/standard/tender.rst:300
+#: ../../source/standard/tender.rst:304
 msgid "Standstill before auction"
 msgstr "Блокування перед аукціоном"
 
@@ -742,15 +750,15 @@ msgstr "Блокування перед аукціоном"
 msgid "lots"
 msgstr ""
 
-#: ../../source/standard/tender.rst:315
+#: ../../source/standard/tender.rst:319
 msgid "List of :ref:`lot` objects."
 msgstr "Список об’єктів :ref:`lot`."
 
-#: ../../source/standard/tender.rst:317
+#: ../../source/standard/tender.rst:321
 msgid "Contains all tender lots."
 msgstr "Містить всі лоти закупівлі."
 
-#: ../../source/standard/tender.rst:319
+#: ../../source/standard/tender.rst:323
 msgid ""
 "In :ref:`limited`: Only if `tender.procurementMethodType` is `negotiation` or "
 "`negotiation.quick`."
@@ -762,15 +770,15 @@ msgstr ""
 msgid "qualifications"
 msgstr ""
 
-#: ../../source/standard/tender.rst:323
+#: ../../source/standard/tender.rst:327
 msgid "List of :ref:`Qualification` objects."
 msgstr "Список об’єктів :ref:`Qualification`."
 
-#: ../../source/standard/tender.rst:325
+#: ../../source/standard/tender.rst:329
 msgid "Contains all tender qualifications."
 msgstr "Містить усі тендерні кваліфікації."
 
-#: ../../source/standard/tender.rst:327
+#: ../../source/standard/tender.rst:331
 msgid "Only in :ref:`openeu` and :ref:`competitivedialogue`"
 msgstr "Тільки у :ref:`openeu` та :ref:`competitivedialogue`"
 
@@ -778,16 +786,16 @@ msgstr "Тільки у :ref:`openeu` та :ref:`competitivedialogue`"
 msgid "cancellations"
 msgstr ""
 
-#: ../../source/standard/tender.rst:330
+#: ../../source/standard/tender.rst:334
 msgid "List of :ref:`cancellation` objects."
 msgstr "Список об’єктів :ref:`cancellation`."
 
-#: ../../source/standard/tender.rst:332
+#: ../../source/standard/tender.rst:336
 msgid "Contains 1 object with `active` status in case of cancelled Tender."
 msgstr ""
 "Містить 1 об’єкт зі статусом `active` на випадок, якщо закупівлю буде відмінено."
 
-#: ../../source/standard/tender.rst:334
+#: ../../source/standard/tender.rst:338
 msgid ""
 "The :ref:`cancellation` object describes the reason of tender cancellation "
 "contains accompanying documents  if any."
@@ -799,15 +807,15 @@ msgstr ""
 msgid "funders"
 msgstr ""
 
-#: ../../source/standard/tender.rst:338
+#: ../../source/standard/tender.rst:342
 msgid "List of :ref:`organization` objects."
 msgstr "Список об’єктів :ref:`organization`."
 
-#: ../../source/standard/tender.rst:340
+#: ../../source/standard/tender.rst:344
 msgid "Optional field."
 msgstr "Необов’язкове поле."
 
-#: ../../source/standard/tender.rst:342
+#: ../../source/standard/tender.rst:346
 msgid "The funder is an entity providing money or finance for contracting process."
 msgstr ""
 "Фінансування - суб’єкт, який надає грошові кошти або фінансує процес укладення "
@@ -817,11 +825,11 @@ msgstr ""
 msgid "revisions"
 msgstr ""
 
-#: ../../source/standard/tender.rst:345
+#: ../../source/standard/tender.rst:349
 msgid "List of :ref:`revision` objects, auto-generated"
 msgstr "Список об’єктів :ref:`revision`, генерується автоматично, лише для читання"
 
-#: ../../source/standard/tender.rst:347
+#: ../../source/standard/tender.rst:351
 msgid "Historical changes to Tender object properties."
 msgstr "Зміни властивостей об’єктів Закупівлі."
 
@@ -829,7 +837,7 @@ msgstr "Зміни властивостей об’єктів Закупівлі
 msgid "cause"
 msgstr ""
 
-#: ../../source/standard/tender.rst:351
+#: ../../source/standard/tender.rst:355
 msgid ""
 "string, required for **negotiation** procedure/ optional for **negotiation."
 "quick** procedure"
@@ -837,7 +845,7 @@ msgstr ""
 "рядок, обов’язковий для **переговорної процедури** / необов’язковий для "
 "**переговорної процедури за нагальною потребою**"
 
-#: ../../source/standard/tender.rst:353
+#: ../../source/standard/tender.rst:357
 msgid ""
 "Causes for using negotiation or negotiation.quick procedures. For more details "
 "see Article 35 of the Law of Ukraine \"On Public Procurement\"."
@@ -846,27 +854,27 @@ msgstr ""
 "процедури за нагальною потребою. Для більш детальної інформації дивіться статтю "
 "35 Закону України \\”Про публічні закупівлі\\”."
 
-#: ../../source/standard/tender.rst:355
+#: ../../source/standard/tender.rst:359
 msgid "Possible values for **negotiation** and **negotiation.quick** procedures:"
 msgstr ""
 "Можливи значення для **переговорною** та **переговорної процедури за нагальною "
 "потребою** процедури:"
 
-#: ../../source/standard/tender.rst:357
+#: ../../source/standard/tender.rst:361
 msgid "`artContestIP` Purchase of art or intellectual property"
 msgstr ""
 "`artContestIP`  cт. 35, п. 1 Закупівля творів мистецтва або закупівля, пов’язана "
 "із захистом прав інтелектуальної власності, або укладення договору про закупівлю "
 "з переможцем архітектурного чи мистецького конкурсу"
 
-#: ../../source/standard/tender.rst:359
+#: ../../source/standard/tender.rst:363
 msgid "`noCompetition` Lack of competition"
 msgstr ""
 "`noCompetition` cт. 35, п. 2 Відсутність конкуренції (у тому числі з технічних "
 "причин) на відповідному ринку, внаслідок чого договір про закупівлю може бути "
 "укладено лише з одним постачальником, за відсутності при цьому альтернативи"
 
-#: ../../source/standard/tender.rst:361
+#: ../../source/standard/tender.rst:365
 msgid ""
 "`twiceUnsuccessful` Two tenders have already been cancelled due to lack of "
 "participants"
@@ -876,7 +884,7 @@ msgstr ""
 "його технічні та якісні характеристики, а також вимоги до учасника не повинні "
 "відрізнятися від вимог, що були визначені замовником у тедерній документації"
 
-#: ../../source/standard/tender.rst:363
+#: ../../source/standard/tender.rst:367
 msgid ""
 "`additionalPurchase` Need to use the same supplier for unification, "
 "standardization, etc."
@@ -888,7 +896,7 @@ msgstr ""
 "несумісності або виникнення проблем технічного характеру, пов’язаних з "
 "експлуатацією та обслуговуванням."
 
-#: ../../source/standard/tender.rst:365
+#: ../../source/standard/tender.rst:369
 msgid "`additionalConstruction` Need of additional construction works"
 msgstr ""
 "`additionalConstruction` cт. 35, п. 6 Необхідність проведення додаткових "
@@ -899,7 +907,7 @@ msgstr ""
 "вартість додаткових робіт не перевищує 50 відсотків вартості головного "
 "(первинного) договору"
 
-#: ../../source/standard/tender.rst:367
+#: ../../source/standard/tender.rst:371
 msgid ""
 "`stateLegalServices` Purchase of legal services connected with protection of "
 "rights and interests of Ukraine"
@@ -911,11 +919,11 @@ msgstr ""
 "підставі рішення Кабінету Міністрів України або введених в дію відповідно до "
 "закону рішень Ради національної безпеки і оборони України"
 
-#: ../../source/standard/tender.rst:369
+#: ../../source/standard/tender.rst:373
 msgid "Possible values for **negotiation.quick** procedure:"
 msgstr "Можливі значення для **переговорної процедури за нагальною потребою**:"
 
-#: ../../source/standard/tender.rst:371
+#: ../../source/standard/tender.rst:375
 msgid "`quick` Procurement is urgent"
 msgstr ""
 "`quick` cт. 35, п. 3 Нагальна потреба у здійсненні закупівлі у зв’язку з "
@@ -930,7 +938,7 @@ msgstr ""
 msgid "causeDescription"
 msgstr ""
 
-#: ../../source/standard/tender.rst:376
+#: ../../source/standard/tender.rst:380
 msgid ""
 "string, multilingual, required for **negotiation** and **negotiation.quick** "
 "procedures"
@@ -938,7 +946,7 @@ msgstr ""
 "рядок, багатомовний, обов’язковий для **переговорної** процедури та "
 "**переговорної процедури за нагальною потребою** "
 
-#: ../../source/standard/tender.rst:378
+#: ../../source/standard/tender.rst:382
 msgid "Reasoning behind usage of negotiation or negotiation.quick procedures."
 msgstr ""
 "Обгрунтування використання \\”звичайної\\” переговорної процедури або "
@@ -948,11 +956,11 @@ msgstr ""
 msgid "stage2TenderID"
 msgstr ""
 
-#: ../../source/standard/tender.rst:385
+#: ../../source/standard/tender.rst:389
 msgid "The tender identifier on second stage"
 msgstr ""
 
-#: ../../source/standard/tender.rst:387
+#: ../../source/standard/tender.rst:391
 msgid "Only in :ref:`competitivedialogue` stage1"
 msgstr "Тільки у :ref:`competitivedialogue` stage1"
 
@@ -960,20 +968,20 @@ msgstr "Тільки у :ref:`competitivedialogue` stage1"
 msgid "shortlistedFirms"
 msgstr ""
 
-#: ../../source/standard/tender.rst:391
+#: ../../source/standard/tender.rst:395
 msgid ":ref:`shortlistedFirms`, auto-generated, read-only"
 msgstr ":ref:`shortlistedFirms`, генерується автоматично, лише для читання"
 
-#: ../../source/standard/tender.rst:393
+#: ../../source/standard/tender.rst:397
 msgid "|ocdsDescription| List of firm which can register bid on tender"
 msgstr ""
 "|ocdsDescription| Список усіх компаній, які подали заявки для участі у закупівлі"
 
-#: ../../source/standard/tender.rst:396
+#: ../../source/standard/tender.rst:400
 msgid "Only in :ref:`competitivedialogue` stage2"
 msgstr "Тільки у :ref:`competitivedialogue` stage2"
 
-#: ../../source/standard/tender.rst:398
+#: ../../source/standard/tender.rst:402
 msgid "Additionally in :ref:`esco`:"
 msgstr "Додатково у :ref:`esco`:"
 
@@ -981,11 +989,11 @@ msgstr "Додатково у :ref:`esco`:"
 msgid "NBUdiscountRate"
 msgstr ""
 
-#: ../../source/standard/tender.rst:401 ../../source/standard/tender.rst:422
+#: ../../source/standard/tender.rst:405 ../../source/standard/tender.rst:426
 msgid "float, required"
 msgstr "float, обов’язково"
 
-#: ../../source/standard/tender.rst:403
+#: ../../source/standard/tender.rst:407
 #, python-format
 msgid ""
 "NBU Discount Rate as of tender notice publication date. Possible values: from 0 "
@@ -997,11 +1005,11 @@ msgstr ""
 msgid "minimalStepPercentage"
 msgstr ""
 
-#: ../../source/standard/tender.rst:407
+#: ../../source/standard/tender.rst:411
 msgid ":ref:`value`, Float, required."
 msgstr ":ref:`value`, Float, обов’язково."
 
-#: ../../source/standard/tender.rst:409
+#: ../../source/standard/tender.rst:413
 msgid ""
 "Minimum step increment of the energy service contract performance indicator "
 "during auction that is calculated from  participant’s bid. Possible values: from "
@@ -1012,23 +1020,23 @@ msgstr ""
 msgid "fundingKind"
 msgstr ""
 
-#: ../../source/standard/tender.rst:413
+#: ../../source/standard/tender.rst:417
 msgid "string, required."
 msgstr "рядок, обов’язковий."
 
-#: ../../source/standard/tender.rst:417
+#: ../../source/standard/tender.rst:421
 msgid "Tender funding source. Possible values:"
 msgstr ""
 
-#: ../../source/standard/tender.rst:416
+#: ../../source/standard/tender.rst:420
 msgid "budget -  Budget funding."
 msgstr ""
 
-#: ../../source/standard/tender.rst:417
+#: ../../source/standard/tender.rst:421
 msgid "other - exclusively supplier’s funding."
 msgstr ""
 
-#: ../../source/standard/tender.rst:419
+#: ../../source/standard/tender.rst:423
 msgid "Default value: other"
 msgstr ""
 
@@ -1036,18 +1044,18 @@ msgstr ""
 msgid "yearlyPaymentsPercentageRange"
 msgstr ""
 
-#: ../../source/standard/tender.rst:424
+#: ../../source/standard/tender.rst:428
 msgid ""
 "Fixed percentage of participant's cost reduction sum, with 3-digit precision "
 "after comma. Possible values:"
 msgstr ""
 
-#: ../../source/standard/tender.rst:427
+#: ../../source/standard/tender.rst:431
 #, python-format
 msgid "from 0.8 to 1 (from 80% to 100% respectively) if tender:fundingKind:other."
 msgstr ""
 
-#: ../../source/standard/tender.rst:428
+#: ../../source/standard/tender.rst:432
 #, python-format
 msgid ""
 "from 0 to x, where x can vary from 0 to 0.8 (from 0% to x% respectively) if "
@@ -1058,46 +1066,46 @@ msgstr ""
 msgid "noticePublicationDate"
 msgstr ""
 
-#: ../../source/standard/tender.rst:431
+#: ../../source/standard/tender.rst:435
 msgid "string, :ref:`date`"
 msgstr "рядок, :ref:`date`"
 
-#: ../../source/standard/tender.rst:433
+#: ../../source/standard/tender.rst:437
 msgid "Read-only, autogenerated."
 msgstr "Генерується автоматично, лише для читання."
 
-#: ../../source/standard/tender.rst:435
+#: ../../source/standard/tender.rst:439
 msgid "Date of tender announcement."
 msgstr ""
 
-#: ../../source/standard/tender.rst:440
+#: ../../source/standard/tender.rst:444
 msgid "The Tender dates should be sequential:"
 msgstr "Дати закупівлі повинні бути послідовними:"
 
-#: ../../source/standard/tender.rst:442
+#: ../../source/standard/tender.rst:446
 msgid "Current time"
 msgstr "Поточний час"
 
-#: ../../source/standard/tender.rst:443
+#: ../../source/standard/tender.rst:447
 msgid "`enquiryPeriod.startDate`"
 msgstr "`enquiryPeriod.startDate`"
 
-#: ../../source/standard/tender.rst:444
+#: ../../source/standard/tender.rst:448
 msgid "`enquiryPeriod.endDate`"
 msgstr "`enquiryPeriod.endDate`"
 
-#: ../../source/standard/tender.rst:445
+#: ../../source/standard/tender.rst:449
 msgid "`tenderPeriod.startDate`"
 msgstr "`tenderPeriod.startDate`"
 
-#: ../../source/standard/tender.rst:446
+#: ../../source/standard/tender.rst:450
 msgid "`tenderPeriod.endDate`"
 msgstr "`tenderPeriod.endDate`"
 
-#: ../../source/standard/tender.rst:450
+#: ../../source/standard/tender.rst:454
 msgid "Tender workflow :ref:`limited`"
 msgstr "Робочий процес у :ref:`limited`"
 
-#: ../../source/standard/tender.rst:462
+#: ../../source/standard/tender.rst:466
 msgid "\\* marks initial state"
 msgstr "\\* позначає початковий стан"

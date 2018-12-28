@@ -240,6 +240,10 @@ Schema
    |ocdsDescription|
    The primary category describing the main object of the tender.
 
+:milestones:
+
+   List of :ref:`Milestone` objects.
+
 :status:
    string
 
