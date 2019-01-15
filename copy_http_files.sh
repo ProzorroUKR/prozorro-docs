@@ -7,6 +7,7 @@ mkdir -p "$TARGET_DIR"
 cp -R "$SOURCE/tutorial" "$TARGET_DIR"
 cp -R "$SOURCE/qualification" "$TARGET_DIR"
 cp -R "$SOURCE/complaints" "$TARGET_DIR"
+cp -R "$SOURCE/milestones" "$TARGET_DIR"
 
 
 SOURCE="src/openprocurement.contracting.api/docs/source/tutorial/."

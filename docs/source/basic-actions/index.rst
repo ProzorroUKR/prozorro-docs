@@ -17,4 +17,5 @@ Contents:
    lots
    bidding
    meat
+   milestones
 
