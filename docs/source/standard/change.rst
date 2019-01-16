@@ -4,8 +4,8 @@
 
 .. _ChangeTaxRate:
 
-ChangeTaxRate
-=============
+ChangeTaxRate in :ref:`cfaua`
+=============================
 
 Schema
 ------
@@ -25,8 +25,8 @@ Schema
 
 .. _ChangeItemPriceVariation:
 
-ChangeItemPriceVariation
-========================
+ChangeItemPriceVariation in :ref:`cfaua`
+========================================
 
 Schema
 ------
@@ -46,8 +46,8 @@ Schema
 
 .. _ChangeThirdParty:
 
-ChangeThirdParty
-================
+ChangeThirdParty in :ref:`cfaua`
+================================
 
 Schema
 ------
@@ -67,8 +67,8 @@ Schema
 
 .. _ChangePartyWithdrawal:
 
-ChangePartyWithdrawal
-=====================
+ChangePartyWithdrawal in :ref:`cfaua`
+=====================================
 
 Schema
 ------
@@ -86,8 +86,8 @@ Schema
 
 .. _UnitPriceModification:
 
-UnitPriceModification
-=====================
+UnitPriceModification in :ref:`cfaua`
+=====================================
 
 Schema
 ------
@@ -111,8 +111,8 @@ Schema
 
 .. _ContractModification:
 
-ContractModification
-====================
+ContractModification in :ref:`cfaua`
+====================================
 
 Schema
 ------

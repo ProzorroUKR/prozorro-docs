@@ -3,8 +3,8 @@
 .. index:: Agreement
 .. _agreement:
 
-Agreement
-=========
+Agreement in :ref:`cfaua`
+=========================
 
 Schema
 ------
