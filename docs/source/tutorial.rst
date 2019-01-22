@@ -77,7 +77,7 @@ Let's check what tender registry contains:
 
 And indeed we have 2 tenders now.
 
-Also we can create tender with `funders` data:
+We can create tender with optional `funders` field:
 
 .. include:: http/tutorial/create-tender-funders.http
    :code:
@@ -105,7 +105,7 @@ Procuring entity can set bid guarantee:
 .. include:: http/tutorial/set-bid-guarantee.http
    :code:
 
-Also we can modify tender by adding `funders` data:
+Also we can modify tender by adding `funders` field data:
 
 .. include:: http/tutorial/patch-tender-funders.http
    :code:
