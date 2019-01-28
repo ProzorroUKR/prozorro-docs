@@ -25,6 +25,9 @@ Contents:
    limited/index
    defense/index
    medicines-registry/index
+   cfaua/index
+   agreementcfaua/index
+   cfaselectionua/index
    contracting/index
    performance
    cluster

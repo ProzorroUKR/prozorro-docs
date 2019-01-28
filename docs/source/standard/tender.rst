@@ -81,6 +81,13 @@ Schema
     :`esco`:
         esco procedure indentifier
 
+    :`closeFrameworkAgreementUA`:
+        closeframeworkagreementua procedure indentifier
+
+    :`closeFrameworkAgreementSelectionUA`:
+        closeframeworkagreementua.selection procedure indentifier
+
+
     Possible values in :ref:`competitivedialogue` stage1:
 
     :`competitiveDialogueEU`:
@@ -164,6 +171,11 @@ Schema
     List of :ref:`award` objects
 
     All qualifications (disqualifications and awards).
+
+:agreements:
+    List of :ref:`Agreement` objects
+
+    Only in :ref:`cfaua` or :ref:`cfaselectionua`
 
 :contracts:
     List of :ref:`Contract` objects
@@ -315,12 +327,74 @@ Schema
    :`cancelled`:
        Cancelled tender (cancelled)
 
+   Different in :ref:`cfaua`:
+
+   :`active.tendering`:
+       Tendering period (tendering)
+   :`active.pre-qualification`:
+       Pre-qualification period (pre-qualification)
+   :`active.pre-qualification.stand-still`:
+       Standstill before auction
+   :`active.auction`:
+       Auction period (auction)
+   :`active.qualification`:
+       Winners qualification (qualification)
+   :`active.qualification.stand-still`:
+       Standstill before contract signing
+   :`active.awarded`:
+       Standstill period (standstill)
+   :`unsuccessful`:
+       Unsuccessful tender (unsuccessful)
+   :`complete`:
+       Complete tender (complete)
+   :`cancelled`:
+       Cancelled tender (cancelled)
+
+   Different in :ref:`cfaselectionua`:
+
+   :`draft`:
+       ProcuringEntity creats draft of procedure, where should be specified procurementMethodType - closeFrameworkAgreementSelectionUA, procurementMethod - selective. One lot structure procedure. Also ProcuringEntity should specify agreement:id, items, title, description and features, if needed.
+   :`draft.pending`:
+       ProcuringEntity changes status of procedure from 'draft' to 'draft.pending' to make the system check provided information and pull up necassery information from :ref:`Agreement`.
+   :`draft.unsuccessful`:
+       Terminal status. System moves procedure to 'draft.unsuccessful' status if at least one of the checks is failed.
+   :`active.enquiries`:
+       Enquiries period (enquiries)
+   :`active.tendering`:
+       Tendering period (tendering)
+   :`active.auction`:
+       Auction period (auction)
+   :`active.qualification`:
+       Winner qualification (qualification)
+   :`active.awarded`:
+       Standstill period (standstill)
+   :`unsuccessful`:
+       Unsuccessful tender (unsuccessful)
+   :`complete`:
+       Complete tender (complete)
+   :`cancelled`:
+       Cancelled tender (cancelled)
+
 :lots:
    List of :ref:`lot` objects.
 
    Contains all tender lots.
 
    In :ref:`limited`: Only if `tender.procurementMethodType` is `negotiation` or `negotiation.quick`.
+
+:agreementDuration:
+   string, required
+
+   Duration of agreement. Maximum 4 years. Format ISO8601 (PnYnMnDTnHnMnS)
+
+   Only in :ref:`cfaua`
+
+:maxAwardsCount:
+   string, required
+
+   Maximum number of required Awards
+
+   Only in :ref:`cfaua`
 
 :qualifications:
 

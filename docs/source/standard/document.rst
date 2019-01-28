@@ -51,7 +51,7 @@ Schema
     * `billOfQuantity` - **Bill Of Quantity**
 
         For Open EU procedure `billOfQuantity` should be contained in `financialDocuments` envelope. See :ref:`bid`.
-    
+
     * `bidders` - **Information on bidders**
     
       Information on bidders or participants, their validation documents and any procedural exemptions for which they qualify.
@@ -109,11 +109,33 @@ Schema
     * `qualificationDocuments` - **Qualification documents**
 
         For Open EU procedure `qualificationDocuments` should be contained in `documents` envelope. See :ref:`bid`.
-    
+
     * `eligibilityDocuments` - **Eligibility documents**
 
         For Open EU procedure `eligibilityDocuments` should be contained in `eligibilityDocuments` envelope. See :ref:`bid`.
-    
+
+
+    * `winningBid` - **Documentation of the winning bid**, including, wherever applicable, a full copy of the proposal received.
+
+
+    Possible values for :ref:`agreement`
+
+
+    * `notice` - **Contract notice**
+
+      The formal notice that gives details of a contract being signed and valid to start implementation. This may be a link to a downloadable document, to a web page, or to an official gazette in which the notice is contained.
+
+    * `contractSigned` - **Signed Contract**
+
+    * `contractArrangements` - **Arrangements for ending contract**
+
+    * `contractSchedule` - **Schedules and milestones**
+
+    * `contractAnnexe` - **Annexes to the Contract**
+
+    * `contractGuarantees` - **Guarantees**
+
+    * `subContract` - **Subcontracts**
 
 :title:
     string, multilingual
@@ -178,4 +200,4 @@ Schema
     string
 
     Id of related :ref:`contract`, :ref:`change`, :ref:`lot` or :ref:`item`.
-    
+
