@@ -1,8 +1,8 @@
 .. index:: UnitPrice
 .. _UnitPrice:
 
-UnitPrice
-=========
+UnitPrice in :ref:`cfaua`
+=========================
 
 Schema
 ------
