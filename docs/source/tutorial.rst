@@ -77,6 +77,11 @@ Let's check what tender registry contains:
 
 And indeed we have 2 tenders now.
 
+We can create tender with optional `funders` field:
+
+.. include:: http/tutorial/create-tender-funders.http
+   :code:
+
 
 Modifying tender
 ----------------
@@ -98,6 +103,11 @@ Checking the listing again reflects the new modification date:
 Procuring entity can set bid guarantee:
 
 .. include:: http/tutorial/set-bid-guarantee.http
+   :code:
+
+Also we can modify tender by adding `funders` field data:
+
+.. include:: http/tutorial/patch-tender-funders.http
    :code:
 
 

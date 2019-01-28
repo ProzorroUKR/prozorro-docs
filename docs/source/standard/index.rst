@@ -22,6 +22,7 @@ areas that were not covered by it.
    feature
    item
    lot
+   milestone
    organization
    qualification
    question
