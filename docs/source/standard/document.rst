@@ -121,21 +121,21 @@ Schema
     Possible values for :ref:`agreement`
 
 
-    * `notice` - **Contract notice**
+        * `notice` - **Framework agreement notice**
 
-      The formal notice that gives details of a contract being signed and valid to start implementation. This may be a link to a downloadable document, to a web page, or to an official gazette in which the notice is contained.
+          The formal notice that gives details of a contract being signed and valid to start implementation. This may be a link to a downloadable document, to a web page, or to an official gazette in which the notice is contained.
 
-    * `contractSigned` - **Signed Contract**
+        * `contractSigned` - **Signed Framework agreement**
 
-    * `contractArrangements` - **Arrangements for ending contract**
+        * `contractArrangements` - **Arrangements for ending Framework agreement**
 
-    * `contractSchedule` - **Schedules and milestones**
+        * `contractSchedule` - **Schedules and milestones**
 
-    * `contractAnnexe` - **Annexes to the Contract**
+        * `contractAnnexe` - **Annexes to the Framework agreement**
 
-    * `contractGuarantees` - **Guarantees**
+        * `contractGuarantees` - **Guarantees**
 
-    * `subContract` - **Subcontracts**
+        * `subContract` - **Subcontracts**
 
 :title:
     string, multilingual
