@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/e66dcc48a19e498984e3e5e51131ad68?acc_token=75424b9a8c2842d0a9c24e477ccef649 HTTP/1.0
+PATCH /api/2.4/tenders/323e3d39d5124a15b9436ac56175d34e?acc_token=a8cd885d301c4c9084a11af32ff0e21d HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 40
 Content-Type: application/json
@@ -12,7 +12,7 @@ Host: api-sandbox.openprocurement.org
 
 
 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 
 {
   "data": {
@@ -20,8 +20,8 @@ Content-Type: application/json; charset=UTF-8
     "status": "active.enquiries", 
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
-      "startDate": "2017-08-01T17:36:49.306344+03:00", 
-      "endDate": "2017-08-08T17:36:49.306344+03:00"
+      "startDate": "2019-02-13T06:09:42.495419+02:00", 
+      "endDate": "2019-02-20T06:09:42.495419+02:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -52,10 +52,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-27T17:36:49.306344+03:00", 
-          "endDate": "2017-07-30T17:36:49.306344+03:00"
+          "startDate": "2019-02-08T06:09:42.495419+02:00", 
+          "endDate": "2019-02-11T06:09:42.495419+02:00"
         }, 
-        "id": "3e25bda8806e4d27a03dc5f9e4805f5e", 
+        "id": "22f09abcd49744aabe5a20079b833ab4", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -70,8 +70,8 @@ Content-Type: application/json; charset=UTF-8
       "valueAddedTaxIncluded": true
     }, 
     "submissionMethod": "electronicAuction", 
-    "date": "2017-07-25T17:36:50.255342+03:00", 
-    "next_check": "2017-08-01T17:36:49.306344+03:00", 
+    "date": "2019-02-06T06:09:43.449714+02:00", 
+    "next_check": "2019-02-13T06:09:42.495419+02:00", 
     "procuringEntity": {
       "contactPoint": {
         "name": "Державне управління справами", 
@@ -93,13 +93,13 @@ Content-Type: application/json; charset=UTF-8
       }
     }, 
     "enquiryPeriod": {
-      "startDate": "2017-07-25T17:36:50.226395+03:00", 
-      "endDate": "2017-08-01T17:36:49.306344+03:00"
+      "startDate": "2019-02-06T06:09:43.420762+02:00", 
+      "endDate": "2019-02-13T06:09:42.495419+02:00"
     }, 
     "owner": "broker", 
-    "dateModified": "2017-07-25T17:36:50.255342+03:00", 
-    "id": "e66dcc48a19e498984e3e5e51131ad68", 
-    "tenderID": "UA-2017-07-25-000001"
+    "dateModified": "2019-02-06T06:09:43.449714+02:00", 
+    "id": "323e3d39d5124a15b9436ac56175d34e", 
+    "tenderID": "UA-2019-02-06-000001"
   }
 }
 

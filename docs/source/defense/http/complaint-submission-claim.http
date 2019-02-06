@@ -1,6 +1,6 @@
-POST /api/2.3/tenders/95406b89097549e48c364931fcf50fc9/complaints HTTP/1.0
+POST /api/2.4/tenders/8b900d0ee61b42a7ba150e5716aa7e1d/complaints HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 1701
+Content-Length: 1719
 Content-Type: application/json
 Host: api-sandbox.openprocurement.org
 DATA:
@@ -15,13 +15,14 @@ DATA:
         "name": "Сергій Олексюк", 
         "email": "soleksuk@gmail.com"
       }, 
+      "scale": "micro", 
+      "name": "ДКП «Школяр»", 
       "identifier": {
         "scheme": "UA-EDR", 
         "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
         "id": "13313462", 
         "uri": "http://sch10.edu.vn.ua/"
       }, 
-      "name": "ДКП «Школяр»", 
       "address": {
         "countryName": "Україна", 
         "postalCode": "21100", 
@@ -34,11 +35,11 @@ DATA:
 }
 
 Response: 201 Created
-Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/95406b89097549e48c364931fcf50fc9/complaints/0373c139d1164fa3afd41a4677e13bda
+Content-Type: application/json
+Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/8b900d0ee61b42a7ba150e5716aa7e1d/complaints/4bc6dbbb0734472c80b3b4b2af13914f
 {
   "access": {
-    "token": "fc5c888a84014dadb442d694574075a9"
+    "token": "077c8cc4f6de47e783728aeb1c66d4b2"
   }, 
   "data": {
     "status": "claim", 
@@ -49,13 +50,14 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/95406b89097549e
         "telephone": "+380 (432) 21-69-30", 
         "name": "Сергій Олексюк"
       }, 
+      "scale": "micro", 
+      "name": "ДКП «Школяр»", 
       "identifier": {
         "scheme": "UA-EDR", 
         "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
         "id": "13313462", 
         "uri": "http://sch10.edu.vn.ua/"
       }, 
-      "name": "ДКП «Школяр»", 
       "address": {
         "postalCode": "21100", 
         "countryName": "Україна", 
@@ -65,10 +67,10 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/95406b89097549e
       }
     }, 
     "title": "Недостатньо інформації", 
-    "complaintID": "UA-2017-06-21-000001.2", 
-    "date": "2017-06-21T16:09:20.990024+03:00", 
+    "complaintID": "UA-2019-02-06-000001.2", 
+    "date": "2019-02-06T06:11:57.516840+02:00", 
     "type": "claim", 
-    "id": "0373c139d1164fa3afd41a4677e13bda"
+    "id": "4bc6dbbb0734472c80b3b4b2af13914f"
   }
 }
 

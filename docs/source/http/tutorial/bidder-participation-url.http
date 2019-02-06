@@ -1,10 +1,10 @@
-GET /api/2.3/tenders/f3641d0ba0f042e8b49de06d5c7921af/bids/ba18d19f2a3948deb997a7a55dd2f194?acc_token=1570f17a0a084e29aad2dc9a600e5589 HTTP/1.0
+GET /api/2.4/tenders/a9fa8c33df924d25b648931e89bd8ea8/bids/4a5bf6492edf42fe9ce033a3fa41d34b?acc_token=7edac3fc9b9345e9a946ee103e429838 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: api-sandbox.openprocurement.org
 
 
 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 
 {
   "data": {
@@ -13,12 +13,12 @@ Content-Type: application/json; charset=UTF-8
       {
         "hash": "md5:00000000000000000000000000000000", 
         "title": "Proposal.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/f3641d0ba0f042e8b49de06d5c7921af/bids/ba18d19f2a3948deb997a7a55dd2f194/documents/2d439b94c3de42e28bb10c9d9576fd27?download=9dbee8d173ea4ce0a507c196ee39bf54", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/a9fa8c33df924d25b648931e89bd8ea8/bids/4a5bf6492edf42fe9ce033a3fa41d34b/documents/30b1005e793041de88db8f1ec6d7ce09?download=319f61f7109c4847a1a9532b67c21d90", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-07-25T17:36:56.467858+03:00", 
-        "id": "2d439b94c3de42e28bb10c9d9576fd27", 
-        "dateModified": "2017-07-25T17:36:56.467877+03:00"
+        "datePublished": "2019-02-06T06:09:49.194370+02:00", 
+        "id": "30b1005e793041de88db8f1ec6d7ce09", 
+        "dateModified": "2019-02-06T06:09:49.194385+02:00"
       }
     ], 
     "value": {
@@ -33,12 +33,13 @@ Content-Type: application/json; charset=UTF-8
           "telephone": "+380 (432) 21-69-30", 
           "name": "Сергій Олексюк"
         }, 
+        "scale": "micro", 
+        "name": "ДКП «Школяр»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137256", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "ДКП «Школяр»", 
         "address": {
           "postalCode": "21100", 
           "countryName": "Україна", 
@@ -48,9 +49,9 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "date": "2017-07-25T17:36:56.363108+03:00", 
-    "id": "ba18d19f2a3948deb997a7a55dd2f194", 
-    "participationUrl": "http://auction-sandbox.openprocurement.org/tenders/f3641d0ba0f042e8b49de06d5c7921af?key_for_bid=ba18d19f2a3948deb997a7a55dd2f194"
+    "date": "2019-02-06T06:09:49.110221+02:00", 
+    "id": "4a5bf6492edf42fe9ce033a3fa41d34b", 
+    "participationUrl": "http://auction-sandbox.openprocurement.org/tenders/a9fa8c33df924d25b648931e89bd8ea8?key_for_bid=4a5bf6492edf42fe9ce033a3fa41d34b"
   }
 }
 

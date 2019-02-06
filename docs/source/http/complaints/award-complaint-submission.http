@@ -1,6 +1,6 @@
-POST /api/2.3/tenders/6e33b56945624315afece8e75af7193c/awards/aec061c3b3234a9981a292ae161d2ece/complaints?acc_token=86ff28dee48646b58ef3021c532d26fc HTTP/1.0
+POST /api/2.4/tenders/811652d707394b568daf079e30ca0192/awards/fb1b61d35ca54e5fadd9ccf851c44d37/complaints?acc_token=1a7b727a62c04089bd39e45386caed2e HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 775
+Content-Length: 793
 Content-Type: application/json
 Host: api-sandbox.openprocurement.org
 
@@ -14,12 +14,13 @@ Host: api-sandbox.openprocurement.org
         "name": "Сергій Олексюк", 
         "email": "soleksuk@gmail.com"
       }, 
+      "scale": "micro", 
+      "name": "ДКП «Школяр»", 
       "identifier": {
         "scheme": "UA-EDR", 
         "id": "00137256", 
         "uri": "http://www.sc.gov.ua/"
       }, 
-      "name": "ДКП «Школяр»", 
       "address": {
         "countryName": "Україна", 
         "postalCode": "21100", 
@@ -33,12 +34,12 @@ Host: api-sandbox.openprocurement.org
 
 
 201 Created
-Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/6e33b56945624315afece8e75af7193c/awards/aec061c3b3234a9981a292ae161d2ece/complaints/fc1eef6ef50d4656b981aae8bb181467
+Content-Type: application/json
+Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/811652d707394b568daf079e30ca0192/awards/fb1b61d35ca54e5fadd9ccf851c44d37/complaints/5e9d1eaeeb9e4c479956c79664a3921b
 
 {
   "access": {
-    "token": "3df7c9a8797747c0b56aa8ac54c8ac87"
+    "token": "28e2e0bc4caa42c5b72418385d206825"
   }, 
   "data": {
     "status": "draft", 
@@ -50,12 +51,13 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/6e33b5694562431
         "telephone": "+380 (432) 21-69-30", 
         "name": "Сергій Олексюк"
       }, 
+      "scale": "micro", 
+      "name": "ДКП «Школяр»", 
       "identifier": {
         "scheme": "UA-EDR", 
         "id": "00137256", 
         "uri": "http://www.sc.gov.ua/"
       }, 
-      "name": "ДКП «Школяр»", 
       "address": {
         "postalCode": "21100", 
         "countryName": "Україна", 
@@ -64,10 +66,10 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/6e33b5694562431
         "locality": "м. Вінниця"
       }
     }, 
-    "complaintID": "UA-2017-07-25-000001.5", 
-    "date": "2017-07-25T17:36:52.885993+03:00", 
+    "complaintID": "UA-2019-02-06-000001.5", 
+    "date": "2019-02-06T06:09:45.734535+02:00", 
     "type": "claim", 
-    "id": "fc1eef6ef50d4656b981aae8bb181467"
+    "id": "5e9d1eaeeb9e4c479956c79664a3921b"
   }
 }
 

@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/e564a943c46a443497a81bcdac928861/awards/13e739fca10d4715839fb7544af40491/complaints/9b496a6845ab4817ac3b41ec54ebd194?acc_token=9e89d9871d0540a99027b84677fa399b HTTP/1.0
+PATCH /api/2.4/tenders/444a3230914b45558d9f9ef5e63a535f/awards/5665e11eaa654fd3ab497e2eef35bb42/complaints/8d764e02390c4290852d3545b2a13bb6?acc_token=2471d09633674cc69156d37d58a69d0d HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 228
 Content-Type: application/json
@@ -12,7 +12,7 @@ Host: api-sandbox.openprocurement.org
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "stopping", 
@@ -23,13 +23,14 @@ Content-Type: application/json; charset=UTF-8
         "telephone": "+380 (432) 21-69-30", 
         "name": "Сергій Олексюк"
       }, 
+      "scale": "micro", 
+      "name": "ДКП «Школяр»", 
       "identifier": {
         "scheme": "UA-EDR", 
         "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
         "id": "13313462", 
         "uri": "http://sch10.edu.vn.ua/"
       }, 
-      "name": "ДКП «Школяр»", 
       "address": {
         "postalCode": "21100", 
         "countryName": "Україна", 
@@ -40,14 +41,14 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "acceptance": true, 
     "cancellationReason": "Тендер скасовується замовником", 
-    "dateCanceled": "2017-09-14T19:40:43.651500+03:00", 
-    "dateAccepted": "2017-09-14T19:40:35.945168+03:00", 
-    "dateSubmitted": "2017-09-14T19:40:32.596679+03:00", 
-    "complaintID": "UA-2017-09-14-000001.4", 
-    "date": "2017-09-14T19:40:43.681555+03:00", 
+    "dateCanceled": "2019-02-06T06:11:19.340838+02:00", 
+    "dateAccepted": "2019-02-06T06:11:18.564636+02:00", 
+    "dateSubmitted": "2019-02-06T06:11:18.216301+02:00", 
+    "complaintID": "UA-2019-02-06-000001.4", 
+    "date": "2019-02-06T06:11:19.344677+02:00", 
     "title": "Недостатньо інформації", 
     "type": "complaint", 
-    "id": "9b496a6845ab4817ac3b41ec54ebd194"
+    "id": "8d764e02390c4290852d3545b2a13bb6"
   }
 }
 

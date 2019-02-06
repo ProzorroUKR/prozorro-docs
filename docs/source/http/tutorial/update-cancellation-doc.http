@@ -1,12 +1,12 @@
-PUT /api/2.3/tenders/f3641d0ba0f042e8b49de06d5c7921af/cancellations/8e1908a8ada64ae19ebfa4f2fdd7d873/documents/56d80bbae8ab41e196922d137c87e20d?acc_token=2ef61fa89e8a451ba4149d2f8e31173b HTTP/1.0
+PUT /api/2.4/tenders/a9fa8c33df924d25b648931e89bd8ea8/cancellations/d3c1e450803344efac7a043a970da163/documents/2d9fdd89b40d4158b65fdcc0b03e5c99?acc_token=b3696ab04e114fd79a1f01177d689f22 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 328
+Content-Length: 324
 Content-Type: application/json
 Host: api-sandbox.openprocurement.org
 
 {
   "data": {
-    "url": "http://public.docs-sandbox.openprocurement.org/get/d19863828f684b8393cd9907f2bcb84c?KeyID=459f8ecf&Signature=g6c3S5r43owtO3ERE72E0X6gFjUH9IXXqDEYEAjtDEV3qjaZ7OObLssBCsOg2bZ79nq%2FBZ2H9kmdC7ViVhK%2BAQ%3D%3D", 
+    "url": "http://public.docs-sandbox.openprocurement.org/get/35c8a4b1fbd142909d31b43ebb4d89c2?KeyID=dfcba93d&Signature=QrSec8wfbnbCZwWh5edg5K68zMrzRuxQ1869nE3NyDtArFr5jNQvNtGyYcqZOnuN9JrWgR0gDaTvhNHJz3uUBA%3D%3D", 
     "title": "Notice-2.pdf", 
     "hash": "md5:00000000000000000000000000000000", 
     "format": "application/pdf"
@@ -15,19 +15,19 @@ Host: api-sandbox.openprocurement.org
 
 
 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "description": "Changed description", 
     "title": "Notice-2.pdf", 
-    "url": "http://public.docs-sandbox.openprocurement.org/get/d19863828f684b8393cd9907f2bcb84c?KeyID=459f8ecf&Signature=OQ48HntXEVhqTjhaHm0k7h7hcQ1fjG0otkUT%2F31%252Bz4gToAobjILCREgVN14ja5Pa0Y3t3o%2FMjeDLaI7V77fRCw%253D%253D", 
+    "url": "http://public.docs-sandbox.openprocurement.org/get/35c8a4b1fbd142909d31b43ebb4d89c2?KeyID=dfcba93d&Signature=6ANDmdw6PWfUFv%252B62tPIW0t0p3liWsoDDw%252BvvFBVg0%252BFol1O7LotHn%252BARRO5AjSWTQSwN9XpXIBYlJPY7%2FnyDw%253D%253D", 
     "format": "application/pdf", 
     "documentOf": "tender", 
-    "datePublished": "2017-07-25T17:36:58.123830+03:00", 
-    "id": "56d80bbae8ab41e196922d137c87e20d", 
-    "dateModified": "2017-07-25T17:36:58.317900+03:00"
+    "datePublished": "2019-02-06T06:09:50.440864+02:00", 
+    "id": "2d9fdd89b40d4158b65fdcc0b03e5c99", 
+    "dateModified": "2019-02-06T06:09:50.590125+02:00"
   }
 }
 

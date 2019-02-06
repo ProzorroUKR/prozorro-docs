@@ -1,6 +1,6 @@
-POST /api/2.3/tenders/78941caa5f6b4c8380b2eebdfceac04f/qualifications/72bbc4d0fa6044c994346054d7070802/complaints?acc_token=801c416e120e4d2c95f43306d6fb8ac9 HTTP/1.0
+POST /api/2.4/tenders/c350ba8d5ad345efa77ca5a89d0040fb/qualifications/59787b64390c41c6a5b71a0a2166fb1b/complaints?acc_token=524c067e707f4039b9c3d7edaa264065 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 1682
+Content-Length: 1700
 Content-Type: application/json
 Host: api-sandbox.openprocurement.org
 DATA:
@@ -12,13 +12,14 @@ DATA:
         "name": "Сергій Олексюк", 
         "email": "soleksuk@gmail.com"
       }, 
+      "scale": "micro", 
+      "name": "ДКП «Школяр»", 
       "identifier": {
         "scheme": "UA-EDR", 
         "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
         "id": "13313462", 
         "uri": "http://sch10.edu.vn.ua/"
       }, 
-      "name": "ДКП «Школяр»", 
       "address": {
         "countryName": "Україна", 
         "postalCode": "21100", 
@@ -33,21 +34,21 @@ DATA:
 }
 
 Response: 201 Created
-Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/78941caa5f6b4c8380b2eebdfceac04f/qualifications/72bbc4d0fa6044c994346054d7070802/complaints/8a97aff577b14b8899e0d82f8622cfad
+Content-Type: application/json
+Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/c350ba8d5ad345efa77ca5a89d0040fb/qualifications/59787b64390c41c6a5b71a0a2166fb1b/complaints/3f1fb65ceeb04c0e8327840274c014c2
 {
   "access": {
-    "token": "8157bf88398948cba02246502e54d7b0"
+    "token": "c8e6307371d9426c9171308761e6ef13"
   }, 
   "data": {
     "status": "draft", 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
     "title": "Недостатньо інформації", 
-    "bid_id": "f851154f0a4a4a869dfc56386a5858ad", 
-    "complaintID": "UA-2017-06-21-000001.1", 
-    "date": "2017-06-21T16:03:07.581215+03:00", 
+    "bid_id": "4dfd381981884891bc649b46392b0393", 
+    "complaintID": "UA-2019-02-06-000001.1", 
+    "date": "2019-02-06T06:11:37.969202+02:00", 
     "type": "claim", 
-    "id": "8a97aff577b14b8899e0d82f8622cfad"
+    "id": "3f1fb65ceeb04c0e8327840274c014c2"
   }
 }
 

@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/9eaa2f3beb554dd5b22ba7ab74f89d1f/awards/bdda4791877a4e7ca0d3ba4f00fa28c6/complaints/1b4482bd1b1b49edb528a3da071c6fb4?acc_token=48751f79d26642a1809eab01db03aae4 HTTP/1.0
+PATCH /api/2.4/tenders/cdc3e4d286314bb48fa05dc8fb3c4638/awards/6f3b5588dd6347dbbffb633d81bb4e6c/complaints/f10211f3f4424af8bf3b9813a92a3e2a?acc_token=826bbd74acc94a4495dff408097ce33b HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 29
 Content-Type: application/json
@@ -11,7 +11,7 @@ DATA:
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "claim", 
@@ -22,13 +22,14 @@ Content-Type: application/json; charset=UTF-8
         "telephone": "+380 (432) 21-69-30", 
         "name": "Сергій Олексюк"
       }, 
+      "scale": "micro", 
+      "name": "ДКП «Школяр»", 
       "identifier": {
         "scheme": "UA-EDR", 
         "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
         "id": "13313462", 
         "uri": "http://sch10.edu.vn.ua/"
       }, 
-      "name": "ДКП «Школяр»", 
       "address": {
         "postalCode": "21100", 
         "countryName": "Україна", 
@@ -38,11 +39,11 @@ Content-Type: application/json; charset=UTF-8
       }
     }, 
     "title": "Недостатньо інформації", 
-    "dateSubmitted": "2017-06-21T15:53:10.824785+03:00", 
-    "complaintID": "UA-2017-06-21-000001.8", 
-    "date": "2017-06-21T15:53:10.836631+03:00", 
+    "dateSubmitted": "2019-02-06T06:11:44.675133+02:00", 
+    "complaintID": "UA-2019-02-06-000001.8", 
+    "date": "2019-02-06T06:11:44.680450+02:00", 
     "type": "claim", 
-    "id": "1b4482bd1b1b49edb528a3da071c6fb4"
+    "id": "f10211f3f4424af8bf3b9813a92a3e2a"
   }
 }
 

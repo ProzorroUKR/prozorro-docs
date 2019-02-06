@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/f3641d0ba0f042e8b49de06d5c7921af/contracts/54a174a38f174fb3802e573a9adc66ef?acc_token=2ef61fa89e8a451ba4149d2f8e31173b HTTP/1.0
+PATCH /api/2.4/tenders/a9fa8c33df924d25b648931e89bd8ea8/contracts/2773dd7c20af4e7e83ff45104ee38463?acc_token=b3696ab04e114fd79a1f01177d689f22 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 60
 Content-Type: application/json
@@ -6,13 +6,13 @@ Host: api-sandbox.openprocurement.org
 
 {
   "data": {
-    "dateSigned": "2017-07-25T17:36:57.724072+03:00"
+    "dateSigned": "2019-02-06T06:09:50.129183+02:00"
   }
 }
 
 
 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 
 {
   "data": {
@@ -21,22 +21,22 @@ Content-Type: application/json; charset=UTF-8
       {
         "hash": "md5:00000000000000000000000000000000", 
         "title": "contract_first_document.doc", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/c2f1cfdef4ac4d9d9bc34f5cad1ce25d?KeyID=459f8ecf&Signature=8jHN%2FRFnicVD3L77%2FK3DG57f5TUp7JT3YSJNVADYk3Jukk1ixxVF%2FxEFfWn5OAxgea9TjRZipM1RVdany7pNBw%253D%253D", 
+        "url": "http://public.docs-sandbox.openprocurement.org/get/783b337b07374355b6fda62eaa88bc36?KeyID=dfcba93d&Signature=CMLy%2FCYonoDN7i%252BJRp6SCcbmcfb2mYEzQ46wjki2zZ2%2F%252BnO50ji7pgbhqol2SvgSs9c5m9Kufo5pAOKLmlaDDQ%253D%253D", 
         "format": "application/msword", 
         "documentOf": "tender", 
-        "datePublished": "2017-07-25T17:36:57.534210+03:00", 
-        "id": "7fbb37c72038487ea8e66c27da3dac2b", 
-        "dateModified": "2017-07-25T17:36:57.534229+03:00"
+        "datePublished": "2019-02-06T06:09:49.959722+02:00", 
+        "id": "d3ad1d37f3a54f05870a6fe20a3b2240", 
+        "dateModified": "2019-02-06T06:09:49.959735+02:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
         "title": "contract_second_document.doc", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/978e15c1b71f48b3a271b8390b86ce80?KeyID=459f8ecf&Signature=sfBQXr48pj4%2FqodFIsxDFzY%2FIkbD7uMFkmZ%2F95OfLvQvtVbVfV056nR%252BbuchmaYFApJfmspyVFlVWRwNSB6rDA%253D%253D", 
+        "url": "http://public.docs-sandbox.openprocurement.org/get/1fe83ab1b257418d900de1461da18c50?KeyID=dfcba93d&Signature=E1DF%2FMMSbSa7aUhhCGDJEU5PQ9Nurot9z99fuTB%2FyW6jD%2FdxJWBGZRx3nRhpauYBgqzEnmXY10MEs8S7CmdHAQ%253D%253D", 
         "format": "application/msword", 
         "documentOf": "tender", 
-        "datePublished": "2017-07-25T17:36:57.643439+03:00", 
-        "id": "402f10f3b56f47168f47abfd075676c8", 
-        "dateModified": "2017-07-25T17:36:57.643460+03:00"
+        "datePublished": "2019-02-06T06:09:50.057317+02:00", 
+        "id": "c04eeccc238a4051a628f1347c9a205f", 
+        "dateModified": "2019-02-06T06:09:50.057331+02:00"
       }
     ], 
     "items": [
@@ -62,10 +62,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-27T17:36:49.306344+03:00", 
-          "endDate": "2017-07-30T17:36:49.306344+03:00"
+          "startDate": "2019-02-08T06:09:42.495419+02:00", 
+          "endDate": "2019-02-11T06:09:42.495419+02:00"
         }, 
-        "id": "4ee2b0431a064e0eb155eeb650bdfdd0", 
+        "id": "f3eb6ded8773482cb1f1e837f84965ba", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -80,12 +80,13 @@ Content-Type: application/json; charset=UTF-8
           "telephone": "+380 (322) 91-69-30", 
           "name": "Андрій Олексюк"
         }, 
+        "scale": "micro", 
+        "name": "ДКП «Книга»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137226", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "ДКП «Книга»", 
         "address": {
           "postalCode": "79013", 
           "countryName": "Україна", 
@@ -97,19 +98,19 @@ Content-Type: application/json; charset=UTF-8
     ], 
     "contractNumber": "contract #13111", 
     "period": {
-      "startDate": "2017-07-25T17:36:49.331754+03:00", 
-      "endDate": "2018-07-25T17:36:49.331754+03:00"
+      "startDate": "2019-02-06T06:09:42.534031+02:00", 
+      "endDate": "2020-02-06T06:09:42.534031+02:00"
     }, 
+    "dateSigned": "2019-02-06T06:09:50.129183+02:00", 
     "value": {
       "currency": "UAH", 
       "amount": 238.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "dateSigned": "2017-07-25T17:36:57.724072+03:00", 
-    "date": "2017-07-25T17:36:57.134377+03:00", 
-    "awardID": "f81f540a2df94c529cdea7cf197b5038", 
-    "id": "54a174a38f174fb3802e573a9adc66ef", 
-    "contractID": "UA-2017-07-25-000001-1"
+    "date": "2019-02-06T06:09:49.645671+02:00", 
+    "awardID": "29a8f3118a6b4e03add227da7b71a44f", 
+    "id": "2773dd7c20af4e7e83ff45104ee38463", 
+    "contractID": "UA-2019-02-06-000001-1"
   }
 }
 

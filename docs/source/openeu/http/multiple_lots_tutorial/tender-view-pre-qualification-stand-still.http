@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/bcfa4c735e7c48efac20aa4542534c10?acc_token=f4d2262d4f0f4d93af5daf1de01836d7 HTTP/1.0
+PATCH /api/2.4/tenders/f3bc07ebff534a04b13c6d3f0c02dd37?acc_token=dfe9fbd2e3124ddc9b381da8ea4b19fc HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 60
 Content-Type: application/json
@@ -11,23 +11,23 @@ DATA:
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "procurementMethod": "open", 
     "status": "active.pre-qualification.stand-still", 
     "complaintPeriod": {
-      "startDate": "2017-05-22T16:03:05.134720+03:00", 
-      "endDate": "2017-06-17T00:00:00+03:00"
+      "startDate": "2019-01-07T06:11:36.846015+02:00", 
+      "endDate": "2019-02-02T00:00:00+02:00"
     }, 
     "enquiryPeriod": {
-      "startDate": "2017-05-22T16:03:05.134720+03:00", 
-      "clarificationsUntil": "2017-06-15T00:00:00+03:00", 
-      "endDate": "2017-06-11T16:03:05.134720+03:00", 
-      "invalidationDate": "2017-06-21T16:03:04.775393+03:00"
+      "startDate": "2019-01-07T06:11:36.846015+02:00", 
+      "clarificationsUntil": "2019-01-31T00:00:00+02:00", 
+      "endDate": "2019-01-27T06:11:36.846015+02:00", 
+      "invalidationDate": "2019-02-06T06:11:36.688921+02:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "next_check": "2017-06-27T00:00:00+03:00", 
+    "next_check": "2019-02-12T00:00:00+02:00", 
     "procuringEntity": {
       "kind": "general", 
       "name": "ЗОСШ #10 м.Вінниці", 
@@ -55,7 +55,7 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "owner": "broker", 
     "title_en": "Services in school canteens", 
-    "id": "bcfa4c735e7c48efac20aa4542534c10", 
+    "id": "f3bc07ebff534a04b13c6d3f0c02dd37", 
     "title": "Послуги шкільних їдалень", 
     "lots": [
       {
@@ -68,15 +68,15 @@ Content-Type: application/json; charset=UTF-8
           "valueAddedTaxIncluded": true
         }, 
         "auctionPeriod": {
-          "shouldStartAfter": "2017-06-27T00:00:00+03:00"
+          "shouldStartAfter": "2019-02-12T00:00:00+02:00"
         }, 
         "value": {
           "currency": "UAH", 
           "amount": 500.0, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2017-06-21T16:03:04.166654+03:00", 
-        "id": "be0820de82f94afd887c4715ce9bcd8c"
+        "date": "2019-02-06T06:11:36.445874+02:00", 
+        "id": "1f77a97485ca4fb3bebeaf5802a8609b"
       }, 
       {
         "status": "unsuccessful", 
@@ -92,43 +92,43 @@ Content-Type: application/json; charset=UTF-8
           "amount": 400.0, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2017-06-21T16:03:05.314705+03:00", 
-        "id": "784edfb267f747f896f021ac41e71c3e"
+        "date": "2019-02-06T06:11:36.923628+02:00", 
+        "id": "68ad49b12e45406abbe0613330389c44"
       }
     ], 
     "qualificationPeriod": {
-      "startDate": "2017-06-21T16:03:05.305817+03:00", 
-      "endDate": "2017-06-27T00:00:00+03:00"
+      "startDate": "2019-02-06T06:11:36.919040+02:00", 
+      "endDate": "2019-02-12T00:00:00+02:00"
     }, 
-    "tenderID": "UA-2017-06-21-000001", 
-    "dateModified": "2017-06-21T16:03:05.884288+03:00", 
+    "tenderID": "UA-2019-02-06-000001", 
+    "dateModified": "2019-02-06T06:11:37.173239+02:00", 
     "numberOfBids": 2, 
     "tenderPeriod": {
-      "startDate": "2017-05-22T16:03:05.134720+03:00", 
-      "endDate": "2017-06-21T16:03:05.134720+03:00"
+      "startDate": "2019-01-07T06:11:36.846015+02:00", 
+      "endDate": "2019-02-06T06:11:36.846015+02:00"
     }, 
     "qualifications": [
       {
         "status": "active", 
-        "lotID": "be0820de82f94afd887c4715ce9bcd8c", 
+        "lotID": "1f77a97485ca4fb3bebeaf5802a8609b", 
         "eligible": true, 
         "qualified": true, 
-        "bidID": "6ca5cd60e5ba40ab9cf0a3264ff8fe5b", 
-        "date": "2017-06-21T16:03:05.529457+03:00", 
-        "id": "03d4e1fa486f4499931f322a63a056c1"
+        "bidID": "6f69f4be052946f1acfcbc837fd6e65a", 
+        "date": "2019-02-06T06:11:37.017208+02:00", 
+        "id": "a107881eba2d45b1bdd660edcb95d7b1"
       }, 
       {
         "status": "active", 
-        "lotID": "be0820de82f94afd887c4715ce9bcd8c", 
+        "lotID": "1f77a97485ca4fb3bebeaf5802a8609b", 
         "eligible": true, 
         "qualified": true, 
-        "bidID": "4591f98295f34607bda8972ad6582fa0", 
-        "date": "2017-06-21T16:03:05.643075+03:00", 
-        "id": "92c010ec91b24b09a18838cf7ffc448e"
+        "bidID": "1382efc006d740038b0a02b096c12c2b", 
+        "date": "2019-02-06T06:11:37.068125+02:00", 
+        "id": "ef19e29b142d4fbda7093b4f54f18b5e"
       }
     ], 
     "procurementMethodType": "aboveThresholdEU", 
-    "date": "2017-06-21T16:03:05.884288+03:00", 
+    "date": "2019-02-06T06:11:37.173239+02:00", 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35.0, 
@@ -136,7 +136,7 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "items": [
       {
-        "relatedLot": "be0820de82f94afd887c4715ce9bcd8c", 
+        "relatedLot": "1f77a97485ca4fb3bebeaf5802a8609b", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -159,10 +159,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-11T16:02:36.221241+03:00", 
-          "endDate": "2017-08-10T16:02:36.221295+03:00"
+          "startDate": "2019-02-26T06:11:23.713218+02:00", 
+          "endDate": "2019-03-28T06:11:23.713246+02:00"
         }, 
-        "id": "8c692c42982b495c9c29355890303a01", 
+        "id": "54bf9471339844b0b8aeca8b2503c97f", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -170,7 +170,7 @@ Content-Type: application/json; charset=UTF-8
         "quantity": 1
       }, 
       {
-        "relatedLot": "784edfb267f747f896f021ac41e71c3e", 
+        "relatedLot": "68ad49b12e45406abbe0613330389c44", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -193,10 +193,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-11T16:02:36.221327+03:00", 
-          "endDate": "2017-08-10T16:02:36.221351+03:00"
+          "startDate": "2019-02-26T06:11:23.713256+02:00", 
+          "endDate": "2019-03-28T06:11:23.713263+02:00"
         }, 
-        "id": "a36d899ae230472eac851baaa7d765b4", 
+        "id": "df3ed2c568ce43058386580ebf7d6fe0", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -207,7 +207,7 @@ Content-Type: application/json; charset=UTF-8
     "bids": [
       {
         "status": "active", 
-        "id": "6ca5cd60e5ba40ab9cf0a3264ff8fe5b", 
+        "id": "6f69f4be052946f1acfcbc837fd6e65a", 
         "tenderers": [
           {
             "contactPoint": {
@@ -215,12 +215,13 @@ Content-Type: application/json; charset=UTF-8
               "telephone": "+380 (432) 21-69-30", 
               "name": "Сергій Олексюк"
             }, 
+            "scale": "micro", 
+            "name": "ДКП «Школяр»", 
             "identifier": {
               "scheme": "UA-EDR", 
               "id": "00137256", 
               "uri": "http://www.sc.gov.ua/"
             }, 
-            "name": "ДКП «Школяр»", 
             "address": {
               "postalCode": "21100", 
               "countryName": "Україна", 
@@ -233,7 +234,7 @@ Content-Type: application/json; charset=UTF-8
       }, 
       {
         "status": "active", 
-        "id": "4591f98295f34607bda8972ad6582fa0", 
+        "id": "1382efc006d740038b0a02b096c12c2b", 
         "tenderers": [
           {
             "contactPoint": {
@@ -241,12 +242,13 @@ Content-Type: application/json; charset=UTF-8
               "telephone": "+380 (322) 91-69-30", 
               "name": "Андрій Олексюк"
             }, 
+            "scale": "micro", 
+            "name": "ДКП «Книга»", 
             "identifier": {
               "scheme": "UA-EDR", 
               "id": "00137226", 
               "uri": "http://www.sc.gov.ua/"
             }, 
-            "name": "ДКП «Книга»", 
             "address": {
               "postalCode": "79013", 
               "countryName": "Україна", 

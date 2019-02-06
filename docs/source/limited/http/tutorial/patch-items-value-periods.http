@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/d014500a9769491a81f3f1cecc1004f3?acc_token=0b5ecdd3b42e4a3eb9f4c05235bdbbfa HTTP/1.0
+PATCH /api/2.4/tenders/c7142ef0e3664a588fba9e0ebc1e8daf?acc_token=c1f06501277b4865aba01383c849bfce HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 80
 Content-Type: application/json
@@ -19,7 +19,7 @@ Host: api-sandbox.openprocurement.org
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "procurementMethod": "limited", 
@@ -49,8 +49,8 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-09-16T19:39:39.580353+03:00", 
-          "endDate": "2017-09-19T19:39:39.580353+03:00"
+          "startDate": "2019-02-08T06:11:10.398079+02:00", 
+          "endDate": "2019-02-11T06:11:10.398079+02:00"
         }, 
         "description_ru": "Услуги школьных столовых", 
         "id": "2dc54675d6364e2baffbc0f8e74432ac", 
@@ -67,7 +67,7 @@ Content-Type: application/json; charset=UTF-8
       "amount": 500000.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "dateModified": "2017-09-14T19:39:51.180812+03:00", 
+    "dateModified": "2019-02-06T06:11:12.275928+02:00", 
     "procuringEntity": {
       "contactPoint": {
         "url": "http://sch10.edu.vn.ua/", 
@@ -89,14 +89,14 @@ Content-Type: application/json; charset=UTF-8
         "locality": "м. Вінниця"
       }
     }, 
-    "date": "2017-09-14T19:39:50.894891+03:00", 
+    "date": "2019-02-06T06:11:12.238182+02:00", 
     "procurementMethodType": "reporting", 
     "description_en": "Services in school canteens", 
     "title_ru": "Услуги школьных столовых", 
     "owner": "broker", 
     "description_ru": "Услуги школьных столовых", 
-    "id": "d014500a9769491a81f3f1cecc1004f3", 
-    "tenderID": "UA-2017-09-14-000001"
+    "id": "c7142ef0e3664a588fba9e0ebc1e8daf", 
+    "tenderID": "UA-2019-02-06-000001"
   }
 }
 

@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/6e33b56945624315afece8e75af7193c/awards/4983c533470d473aa5769ba399849cb0?acc_token=e96bd05708744828a13d48aa6e282cb9 HTTP/1.0
+PATCH /api/2.4/tenders/811652d707394b568daf079e30ca0192/awards/c47bf1bde752415c974c2d0eb9fb9344?acc_token=19a08594e4c14b54b8abcf0f6005bb7c HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 33
 Content-Type: application/json
@@ -12,15 +12,15 @@ Host: api-sandbox.openprocurement.org
 
 
 200 OK
-Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/6e33b56945624315afece8e75af7193c/awards/3ff474e4f3a843fba101c561e5cffb14
+Content-Type: application/json
+Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/811652d707394b568daf079e30ca0192/awards/770fc588435940529b395de191e0092c
 
 {
   "data": {
     "status": "cancelled", 
     "complaintPeriod": {
-      "startDate": "2017-07-25T17:36:52.186270+03:00", 
-      "endDate": "2017-07-25T17:36:52.456668+03:00"
+      "startDate": "2019-02-06T06:09:45.188347+02:00", 
+      "endDate": "2019-02-06T06:09:45.421058+02:00"
     }, 
     "suppliers": [
       {
@@ -28,12 +28,13 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/6e33b5694562431
           "name": "Державне управління справами", 
           "telephone": "0440000000"
         }, 
+        "scale": "micro", 
+        "name": "Державне управління справами", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00037256", 
           "uri": "http://www.dus.gov.ua/"
         }, 
-        "name": "Державне управління справами", 
         "address": {
           "postalCode": "01220", 
           "countryName": "Україна", 
@@ -43,14 +44,14 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/6e33b5694562431
         }
       }
     ], 
-    "bid_id": "39481e7f97894915832b3b882afdade4", 
+    "bid_id": "60e3913480144d9599739a06c60dc6fe", 
     "value": {
       "currency": "UAH", 
       "amount": 469.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2017-07-25T17:36:52.463690+03:00", 
-    "id": "4983c533470d473aa5769ba399849cb0"
+    "date": "2019-02-06T06:09:45.427120+02:00", 
+    "id": "c47bf1bde752415c974c2d0eb9fb9344"
   }
 }
 

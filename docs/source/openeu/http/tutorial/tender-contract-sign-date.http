@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/aa0cd6b584d543848108968ea24a7891/contracts/624361c4840644079b02fe204e68954e?acc_token=ef9c0578dbdd435ab058ee3eef53e1b7 HTTP/1.0
+PATCH /api/2.4/tenders/d93f62e755b94ccbaaf86790df865507/contracts/b499603da0f34800bff0d5745d06a9cb?acc_token=6a891e76951f47fe929173f74e9e4168 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 60
 Content-Type: application/json
@@ -6,12 +6,12 @@ Host: api-sandbox.openprocurement.org
 DATA:
 {
   "data": {
-    "dateSigned": "2017-06-21T16:03:00.108024+03:00"
+    "dateSigned": "2019-02-06T06:11:34.580654+02:00"
   }
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "pending", 
@@ -39,10 +39,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-11T16:02:36.221241+03:00", 
-          "endDate": "2017-08-10T16:02:36.221295+03:00"
+          "startDate": "2019-02-26T06:11:23.713218+02:00", 
+          "endDate": "2019-03-28T06:11:23.713246+02:00"
         }, 
-        "id": "bb438534444d47eea7b1bd2fe84e58fb", 
+        "id": "518ac62cbf534b5b975dc50432805280", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -72,10 +72,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-11T16:02:36.221327+03:00", 
-          "endDate": "2017-08-10T16:02:36.221351+03:00"
+          "startDate": "2019-02-26T06:11:23.713256+02:00", 
+          "endDate": "2019-03-28T06:11:23.713263+02:00"
         }, 
-        "id": "962bd32f921c4e8a8335c59a3e6f0fd6", 
+        "id": "27ea1f28dac04f2cb470cd69a552e378", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -90,12 +90,13 @@ Content-Type: application/json; charset=UTF-8
           "telephone": "+380 (322) 91-69-30", 
           "name": "Андрій Олексюк"
         }, 
+        "scale": "micro", 
+        "name": "ДКП «Книга»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137226", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "ДКП «Книга»", 
         "address": {
           "postalCode": "79013", 
           "countryName": "Україна", 
@@ -111,10 +112,10 @@ Content-Type: application/json; charset=UTF-8
       "amount": 238.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "dateSigned": "2017-06-21T16:03:00.108024+03:00", 
-    "awardID": "abb108bc37ee4eccaafded21c379db45", 
-    "id": "624361c4840644079b02fe204e68954e", 
-    "contractID": "UA-2017-06-21-000001-1"
+    "dateSigned": "2019-02-06T06:11:34.580654+02:00", 
+    "awardID": "54ffc8f330734f149a068a132227772a", 
+    "id": "b499603da0f34800bff0d5745d06a9cb", 
+    "contractID": "UA-2019-02-06-000001-1"
   }
 }
 

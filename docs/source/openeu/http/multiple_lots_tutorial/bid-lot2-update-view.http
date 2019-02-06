@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/bcfa4c735e7c48efac20aa4542534c10/bids/4591f98295f34607bda8972ad6582fa0?acc_token=7722e81271054642ae2464d3840272a6 HTTP/1.0
+PATCH /api/2.4/tenders/f3bc07ebff534a04b13c6d3f0c02dd37/bids/1382efc006d740038b0a02b096c12c2b?acc_token=496b062d4be549a6957d41f5fa21f8e7 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 124
 Content-Type: application/json
@@ -9,7 +9,7 @@ DATA:
     "status": "pending", 
     "lotValues": [
       {
-        "relatedLot": "be0820de82f94afd887c4715ce9bcd8c", 
+        "relatedLot": "1f77a97485ca4fb3bebeaf5802a8609b", 
         "value": {
           "amount": 500
         }
@@ -19,15 +19,15 @@ DATA:
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "pending", 
     "selfEligible": true, 
     "lotValues": [
       {
-        "relatedLot": "be0820de82f94afd887c4715ce9bcd8c", 
-        "date": "2017-06-21T16:03:04.657261+03:00", 
+        "relatedLot": "1f77a97485ca4fb3bebeaf5802a8609b", 
+        "date": "2019-02-06T06:11:36.639498+02:00", 
         "status": "pending", 
         "value": {
           "currency": "UAH", 
@@ -44,12 +44,13 @@ Content-Type: application/json; charset=UTF-8
           "telephone": "+380 (322) 91-69-30", 
           "name": "Андрій Олексюк"
         }, 
+        "scale": "micro", 
+        "name": "ДКП «Книга»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137226", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "ДКП «Книга»", 
         "address": {
           "postalCode": "79013", 
           "countryName": "Україна", 
@@ -59,8 +60,8 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "date": "2017-06-21T16:03:04.656556+03:00", 
-    "id": "4591f98295f34607bda8972ad6582fa0"
+    "date": "2019-02-06T06:11:36.639228+02:00", 
+    "id": "1382efc006d740038b0a02b096c12c2b"
   }
 }
 

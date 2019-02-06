@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/6e33b56945624315afece8e75af7193c/awards/aec061c3b3234a9981a292ae161d2ece/complaints/d9f8daa198f44112b4ec51a00598d823?acc_token=3dbf343519cf4f26a01caf880b2d6536 HTTP/1.0
+PATCH /api/2.4/tenders/811652d707394b568daf079e30ca0192/awards/fb1b61d35ca54e5fadd9ccf851c44d37/complaints/1691c5443f524c258adb6c689dbd2317?acc_token=7a9488d96c94423ebe4f76471bd3cafa HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 52
 Content-Type: application/json
@@ -13,7 +13,7 @@ Host: api-sandbox.openprocurement.org
 
 
 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 
 {
   "data": {
@@ -28,12 +28,13 @@ Content-Type: application/json; charset=UTF-8
         "telephone": "+380 (432) 21-69-30", 
         "name": "Сергій Олексюк"
       }, 
+      "scale": "micro", 
+      "name": "ДКП «Школяр»", 
       "identifier": {
         "scheme": "UA-EDR", 
         "id": "00137256", 
         "uri": "http://www.sc.gov.ua/"
       }, 
-      "name": "ДКП «Школяр»", 
       "address": {
         "postalCode": "21100", 
         "countryName": "Україна", 
@@ -43,12 +44,12 @@ Content-Type: application/json; charset=UTF-8
       }
     }, 
     "satisfied": false, 
-    "dateAnswered": "2017-07-25T17:36:53.730015+03:00", 
-    "dateSubmitted": "2017-07-25T17:36:53.245113+03:00", 
-    "complaintID": "UA-2017-07-25-000001.6", 
-    "date": "2017-07-25T17:36:53.871088+03:00", 
+    "dateAnswered": "2019-02-06T06:09:46.490270+02:00", 
+    "dateSubmitted": "2019-02-06T06:09:46.069383+02:00", 
+    "complaintID": "UA-2019-02-06-000001.6", 
+    "date": "2019-02-06T06:09:46.619695+02:00", 
     "resolution": "Виправлено неконкурентні умови", 
-    "id": "d9f8daa198f44112b4ec51a00598d823"
+    "id": "1691c5443f524c258adb6c689dbd2317"
   }
 }
 

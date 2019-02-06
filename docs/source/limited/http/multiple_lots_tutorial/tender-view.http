@@ -1,8 +1,8 @@
-GET /api/2.3/tenders/a464e40a3bc54b91b508bf995be294d7 HTTP/1.0
+GET /api/2.4/tenders/1c3503bb54724a1da48c0212e68dfc8c HTTP/1.0
 Host: api-sandbox.openprocurement.org
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "procurementMethod": "limited", 
@@ -19,13 +19,13 @@ Content-Type: application/json; charset=UTF-8
           "amount": 500000.0, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2017-06-21T16:19:11.538726+03:00", 
-        "id": "562ba1a0d97e476b8138c042691c4931"
+        "date": "2019-02-06T06:11:21.436758+02:00", 
+        "id": "6ade06998f2a42f999943af5c6a16883"
       }
     ], 
     "items": [
       {
-        "relatedLot": "562ba1a0d97e476b8138c042691c4931", 
+        "relatedLot": "6ade06998f2a42f999943af5c6a16883", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -48,8 +48,8 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-06-23T16:18:46.759393+03:00", 
-          "endDate": "2017-06-26T16:18:46.759393+03:00"
+          "startDate": "2019-02-08T06:11:10.398079+02:00", 
+          "endDate": "2019-02-11T06:11:10.398079+02:00"
         }, 
         "description_ru": "Услуги школьных столовых", 
         "id": "2dc54675d6364e2baffbc0f8e74432ac"
@@ -61,9 +61,9 @@ Content-Type: application/json; charset=UTF-8
       "amount": 500000.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "dateModified": "2017-06-21T16:19:11.622512+03:00", 
+    "dateModified": "2019-02-06T06:11:21.470899+02:00", 
     "causeDescription_ru": "оригинальный тендер не получился дважды", 
-    "date": "2017-06-21T16:19:11.489687+03:00", 
+    "date": "2019-02-06T06:11:21.418209+02:00", 
     "causeDescription_en": "original tender has failed twice", 
     "description_ru": "Услуги школьных столовых", 
     "description_en": "Services in school canteens", 
@@ -91,8 +91,8 @@ Content-Type: application/json; charset=UTF-8
       }
     }, 
     "title_en": "Services in school canteens", 
-    "id": "a464e40a3bc54b91b508bf995be294d7", 
-    "tenderID": "UA-2017-06-21-000001"
+    "id": "1c3503bb54724a1da48c0212e68dfc8c", 
+    "tenderID": "UA-2019-02-06-000001"
   }
 }
 

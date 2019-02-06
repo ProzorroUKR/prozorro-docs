@@ -1,25 +1,25 @@
-GET /api/2.3/tenders/97dd0ca9a0f741a6ad5628c6873d1de9/bids/f489e65e56b646f4a5948df764a5a2f7?acc_token=dc58fc5e3b344a5db77a71f006efff76 HTTP/1.0
+GET /api/2.4/tenders/6ade0a2779c442fb8ebc0f7e8867eec0/bids/54c05795c0404f9f840937339ac3819e?acc_token=91192505a6aa43779e88d313955903cc HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: api-sandbox.openprocurement.org
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "active", 
     "documents": [
       {
         "title": "Proposal.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/97dd0ca9a0f741a6ad5628c6873d1de9/bids/f489e65e56b646f4a5948df764a5a2f7/documents/85a461ee170a40d2bc84045c973b57b6?download=be65bb83b7124b4e8af2e2d230eb0f53", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/6ade0a2779c442fb8ebc0f7e8867eec0/bids/54c05795c0404f9f840937339ac3819e/documents/adf27194727d4a99bedafad014c12227?download=abefb0fd53a64deb99a860f2270b40ae", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T15:53:21.485925+03:00", 
-        "id": "85a461ee170a40d2bc84045c973b57b6", 
-        "dateModified": "2017-06-21T15:53:21.485962+03:00"
+        "datePublished": "2019-02-06T06:11:49.439517+02:00", 
+        "id": "adf27194727d4a99bedafad014c12227", 
+        "dateModified": "2019-02-06T06:11:49.439530+02:00"
       }
     ], 
     "selfEligible": true, 
-    "id": "f489e65e56b646f4a5948df764a5a2f7", 
+    "id": "54c05795c0404f9f840937339ac3819e", 
     "value": {
       "currency": "UAH", 
       "amount": 500.0, 
@@ -33,12 +33,13 @@ Content-Type: application/json; charset=UTF-8
           "telephone": "+380 (432) 21-69-30", 
           "name": "Сергій Олексюк"
         }, 
+        "scale": "micro", 
+        "name": "ДКП «Школяр»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137256", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "ДКП «Школяр»", 
         "address": {
           "postalCode": "21100", 
           "countryName": "Україна", 
@@ -48,9 +49,9 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "date": "2017-06-21T15:53:21.328392+03:00", 
+    "date": "2019-02-06T06:11:49.372401+02:00", 
     "selfQualified": true, 
-    "participationUrl": "http://auction-sandbox.openprocurement.org/tenders/97dd0ca9a0f741a6ad5628c6873d1de9?key_for_bid=f489e65e56b646f4a5948df764a5a2f7"
+    "participationUrl": "http://auction-sandbox.openprocurement.org/tenders/6ade0a2779c442fb8ebc0f7e8867eec0?key_for_bid=54c05795c0404f9f840937339ac3819e"
   }
 }
 

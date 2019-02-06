@@ -1,6 +1,6 @@
-POST /api/2.3/tenders/6e33b56945624315afece8e75af7193c/complaints HTTP/1.0
+POST /api/2.4/tenders/811652d707394b568daf079e30ca0192/complaints HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 775
+Content-Length: 793
 Content-Type: application/json
 Host: api-sandbox.openprocurement.org
 
@@ -14,12 +14,13 @@ Host: api-sandbox.openprocurement.org
         "name": "Сергій Олексюк", 
         "email": "soleksuk@gmail.com"
       }, 
+      "scale": "micro", 
+      "name": "ДКП «Школяр»", 
       "identifier": {
         "scheme": "UA-EDR", 
         "id": "00137256", 
         "uri": "http://www.sc.gov.ua/"
       }, 
-      "name": "ДКП «Школяр»", 
       "address": {
         "countryName": "Україна", 
         "postalCode": "21100", 
@@ -33,12 +34,12 @@ Host: api-sandbox.openprocurement.org
 
 
 201 Created
-Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/6e33b56945624315afece8e75af7193c/complaints/3b36519c7e994663a75935a29c0ddbcf
+Content-Type: application/json
+Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/811652d707394b568daf079e30ca0192/complaints/3edf52be2e014cbca720ed710ed749d7
 
 {
   "access": {
-    "token": "6c52536fdb1b4e0a83ce6b486d2cfd0c"
+    "token": "74bcdebb161b4e7096392f2d87a2bcbe"
   }, 
   "data": {
     "status": "draft", 
@@ -50,12 +51,13 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/6e33b5694562431
         "telephone": "+380 (432) 21-69-30", 
         "name": "Сергій Олексюк"
       }, 
+      "scale": "micro", 
+      "name": "ДКП «Школяр»", 
       "identifier": {
         "scheme": "UA-EDR", 
         "id": "00137256", 
         "uri": "http://www.sc.gov.ua/"
       }, 
-      "name": "ДКП «Школяр»", 
       "address": {
         "postalCode": "21100", 
         "countryName": "Україна", 
@@ -64,10 +66,10 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/6e33b5694562431
         "locality": "м. Вінниця"
       }
     }, 
-    "complaintID": "UA-2017-07-25-000001.1", 
-    "date": "2017-07-25T17:36:50.723953+03:00", 
+    "complaintID": "UA-2019-02-06-000001.1", 
+    "date": "2019-02-06T06:09:43.871582+02:00", 
     "type": "claim", 
-    "id": "3b36519c7e994663a75935a29c0ddbcf"
+    "id": "3edf52be2e014cbca720ed710ed749d7"
   }
 }
 

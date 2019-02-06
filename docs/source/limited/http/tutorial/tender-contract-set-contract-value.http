@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/d014500a9769491a81f3f1cecc1004f3/contracts/3dbc3c6138fa47c6a655ea74daa706dc?acc_token=0b5ecdd3b42e4a3eb9f4c05235bdbbfa HTTP/1.0
+PATCH /api/2.4/tenders/c7142ef0e3664a588fba9e0ebc1e8daf/contracts/b73e108a05b843a39dd83e0a51b116ee?acc_token=c1f06501277b4865aba01383c849bfce HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 36
 Content-Type: application/json
@@ -13,7 +13,7 @@ Host: api-sandbox.openprocurement.org
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "pending", 
@@ -41,8 +41,8 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-09-16T19:39:39.580353+03:00", 
-          "endDate": "2017-09-19T19:39:39.580353+03:00"
+          "startDate": "2019-02-08T06:11:10.398079+02:00", 
+          "endDate": "2019-02-11T06:11:10.398079+02:00"
         }, 
         "description_ru": "Услуги школьных столовых", 
         "id": "2dc54675d6364e2baffbc0f8e74432ac", 
@@ -60,13 +60,14 @@ Content-Type: application/json; charset=UTF-8
           "telephone": "+380 (432) 21-69-30", 
           "name": "Сергій Олексюк"
         }, 
+        "scale": "micro", 
+        "name": "ДКП «Школяр»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
           "id": "13313462", 
           "uri": "http://sch10.edu.vn.ua/"
         }, 
-        "name": "ДКП «Школяр»", 
         "address": {
           "postalCode": "21100", 
           "countryName": "Україна", 
@@ -81,10 +82,10 @@ Content-Type: application/json; charset=UTF-8
       "amount": 238.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2017-09-14T19:39:54.013630+03:00", 
-    "awardID": "fad3d99dace64fb4b61d9c1713165c1a", 
-    "id": "3dbc3c6138fa47c6a655ea74daa706dc", 
-    "contractID": "UA-2017-09-14-000001-1"
+    "date": "2019-02-06T06:11:12.625513+02:00", 
+    "awardID": "d61e08fe6d63442f8e98e6e46a33a36d", 
+    "id": "b73e108a05b843a39dd83e0a51b116ee", 
+    "contractID": "UA-2019-02-06-000001-1"
   }
 }
 

@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/6e33b56945624315afece8e75af7193c/complaints/3382f6727fc94edc947ff016fcedad11?acc_token=463edbad1cd743ad842e367ec778d835 HTTP/1.0
+PATCH /api/2.4/tenders/811652d707394b568daf079e30ca0192/complaints/5cb1b745827f4165aacc7795c1b0a2f1?acc_token=6f71b89529874df18ae989cb4844517f HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 52
 Content-Type: application/json
@@ -13,7 +13,7 @@ Host: api-sandbox.openprocurement.org
 
 
 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 
 {
   "data": {
@@ -23,12 +23,12 @@ Content-Type: application/json; charset=UTF-8
     "resolutionType": "resolved", 
     "type": "claim", 
     "satisfied": false, 
-    "dateAnswered": "2017-07-25T17:36:51.045464+03:00", 
-    "dateSubmitted": "2017-07-25T17:36:50.854956+03:00", 
-    "complaintID": "UA-2017-07-25-000001.2", 
-    "date": "2017-07-25T17:36:51.100829+03:00", 
+    "dateAnswered": "2019-02-06T06:09:44.202842+02:00", 
+    "dateSubmitted": "2019-02-06T06:09:44.035426+02:00", 
+    "complaintID": "UA-2019-02-06-000001.2", 
+    "date": "2019-02-06T06:09:44.249497+02:00", 
     "resolution": "Виправлено неконкурентні умови", 
-    "id": "3382f6727fc94edc947ff016fcedad11"
+    "id": "5cb1b745827f4165aacc7795c1b0a2f1"
   }
 }
 

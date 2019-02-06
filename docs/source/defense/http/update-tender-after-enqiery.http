@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/d3dba9240047439492b162acda141abd?acc_token=4d2022f0685446d6ab06c53b51e10410 HTTP/1.0
+PATCH /api/2.4/tenders/2262b66765a443d99a994aaa48fa9b36?acc_token=4d201ddaac3e4898afb848bd28191241 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 38
 Content-Type: application/json
@@ -13,7 +13,7 @@ DATA:
 }
 
 Response: 403 Forbidden
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "status": "error", 
   "errors": [

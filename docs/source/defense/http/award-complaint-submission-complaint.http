@@ -1,6 +1,6 @@
-POST /api/2.3/tenders/7e137f2a666348cc89438625519e4438/awards/3430a774ec1c41f480b2fb9294d2a0f3/complaints?acc_token=23a62f05b22b4a9e975b97206d0b5276 HTTP/1.0
+POST /api/2.4/tenders/9cd95216cbd74c4c9e268142351d73b7/awards/0281ac2f39d64312bf5e53b9807e5549/complaints?acc_token=f13569faa55d48c4bd2f530c45d63959 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 1703
+Content-Length: 1721
 Content-Type: application/json
 Host: api-sandbox.openprocurement.org
 DATA:
@@ -15,13 +15,14 @@ DATA:
         "name": "Сергій Олексюк", 
         "email": "soleksuk@gmail.com"
       }, 
+      "scale": "micro", 
+      "name": "ДКП «Школяр»", 
       "identifier": {
         "scheme": "UA-EDR", 
         "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
         "id": "13313462", 
         "uri": "http://sch10.edu.vn.ua/"
       }, 
-      "name": "ДКП «Школяр»", 
       "address": {
         "countryName": "Україна", 
         "postalCode": "21100", 
@@ -34,11 +35,11 @@ DATA:
 }
 
 Response: 201 Created
-Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/7e137f2a666348cc89438625519e4438/awards/3430a774ec1c41f480b2fb9294d2a0f3/complaints/37d082b804054e3dba05b313b218c94d
+Content-Type: application/json
+Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/9cd95216cbd74c4c9e268142351d73b7/awards/0281ac2f39d64312bf5e53b9807e5549/complaints/79d38540c4f840bea1be584882b29989
 {
   "access": {
-    "token": "497e3a53c9fc4dbabfd69a7146d30b43"
+    "token": "ac708c9f6ee240189cd4b86b7e48f8c7"
   }, 
   "data": {
     "status": "pending", 
@@ -49,13 +50,14 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/7e137f2a666348c
         "telephone": "+380 (432) 21-69-30", 
         "name": "Сергій Олексюк"
       }, 
+      "scale": "micro", 
+      "name": "ДКП «Школяр»", 
       "identifier": {
         "scheme": "UA-EDR", 
         "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
         "id": "13313462", 
         "uri": "http://sch10.edu.vn.ua/"
       }, 
-      "name": "ДКП «Школяр»", 
       "address": {
         "postalCode": "21100", 
         "countryName": "Україна", 
@@ -65,11 +67,11 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/7e137f2a666348c
       }
     }, 
     "title": "Недостатньо інформації", 
-    "dateSubmitted": "2017-06-21T16:09:13.456287+03:00", 
-    "complaintID": "UA-2017-06-21-000001.2", 
-    "date": "2017-06-21T16:09:13.456110+03:00", 
+    "dateSubmitted": "2019-02-06T06:11:54.055950+02:00", 
+    "complaintID": "UA-2019-02-06-000001.2", 
+    "date": "2019-02-06T06:11:54.055814+02:00", 
     "type": "complaint", 
-    "id": "37d082b804054e3dba05b313b218c94d"
+    "id": "79d38540c4f840bea1be584882b29989"
   }
 }
 

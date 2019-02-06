@@ -1,4 +1,4 @@
-POST /api/2.3/tenders?opt_pretty=1 HTTP/1.0
+POST /api/2.4/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 2516
 Content-Type: application/json
@@ -7,7 +7,7 @@ DATA:
 {
   "data": {
     "tenderPeriod": {
-      "endDate": "2017-07-07T16:09:10.869858+03:00"
+      "endDate": "2019-02-22T06:11:52.563922+02:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -37,8 +37,8 @@ DATA:
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-11T16:09:10.869776+03:00", 
-          "endDate": "2017-08-10T16:09:10.869828+03:00"
+          "startDate": "2019-02-26T06:11:52.563885+02:00", 
+          "endDate": "2019-03-28T06:11:52.563912+02:00"
         }, 
         "unit": {
           "code": "44617100-9", 
@@ -77,19 +77,19 @@ DATA:
 }
 
 Response: 201 Created
-Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/b5b4dee8452445ef902b1612220155c2
+Content-Type: application/json
+Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/c0cbcee1f5f8440abc81c05c4edd5a53
 {
   "access": {
-    "token": "edebc6f9e6f34451b32cc4b2bcca9a92"
+    "token": "3bba3a9a05954f32af9aa544fa0302d0"
   }, 
   "data": {
     "procurementMethod": "open", 
     "status": "active.tendering", 
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
-      "startDate": "2017-06-21T16:09:29.299343+03:00", 
-      "endDate": "2017-07-07T16:09:10.869858+03:00"
+      "startDate": "2019-02-06T06:12:01.213316+02:00", 
+      "endDate": "2019-02-22T06:11:52.563922+02:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -98,13 +98,13 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/b5b4dee8452445e
       "valueAddedTaxIncluded": true
     }, 
     "enquiryPeriod": {
-      "startDate": "2017-06-21T16:09:29.299343+03:00", 
-      "clarificationsUntil": "2017-07-06T16:09:10.869858+03:00", 
-      "endDate": "2017-07-04T16:09:10.869858+03:00"
+      "startDate": "2019-02-06T06:12:01.213316+02:00", 
+      "clarificationsUntil": "2019-02-21T06:11:52.563922+02:00", 
+      "endDate": "2019-02-19T06:11:52.563922+02:00"
     }, 
     "complaintPeriod": {
-      "startDate": "2017-06-21T16:09:29.299343+03:00", 
-      "endDate": "2017-07-05T00:00:00+03:00"
+      "startDate": "2019-02-06T06:12:01.213316+02:00", 
+      "endDate": "2019-02-20T00:00:00+02:00"
     }, 
     "procurementMethodType": "aboveThresholdUA.defense", 
     "value": {
@@ -113,8 +113,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/b5b4dee8452445e
       "valueAddedTaxIncluded": true
     }, 
     "submissionMethod": "electronicAuction", 
-    "date": "2017-06-21T16:09:29.334491+03:00", 
-    "next_check": "2017-07-07T16:09:10.869858+03:00", 
+    "date": "2019-02-06T06:12:01.227502+02:00", 
+    "next_check": "2019-02-22T06:11:52.563922+02:00", 
     "procuringEntity": {
       "contactPoint": {
         "url": "http://sch10.edu.vn.ua/", 
@@ -137,10 +137,10 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/b5b4dee8452445e
       "name": "ЗОСШ #10 м.Вінниці"
     }, 
     "auctionPeriod": {
-      "shouldStartAfter": "2017-07-08T00:00:00+03:00"
+      "shouldStartAfter": "2019-02-23T00:00:00+02:00"
     }, 
     "owner": "broker", 
-    "dateModified": "2017-06-21T16:09:29.338833+03:00", 
+    "dateModified": "2019-02-06T06:12:01.229546+02:00", 
     "items": [
       {
         "description": "Послуги шкільних їдалень", 
@@ -164,10 +164,10 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/b5b4dee8452445e
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-11T16:09:10.869776+03:00", 
-          "endDate": "2017-08-10T16:09:10.869828+03:00"
+          "startDate": "2019-02-26T06:11:52.563885+02:00", 
+          "endDate": "2019-03-28T06:11:52.563912+02:00"
         }, 
-        "id": "25213fedc82c4366ad4a865ab3d3f9b3", 
+        "id": "fec5c8b28ee846079bc90436ca3833e2", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -175,8 +175,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/b5b4dee8452445e
         "quantity": 1
       }
     ], 
-    "id": "b5b4dee8452445ef902b1612220155c2", 
-    "tenderID": "UA-2017-06-21-000002"
+    "id": "c0cbcee1f5f8440abc81c05c4edd5a53", 
+    "tenderID": "UA-2019-02-06-000002"
   }
 }
 

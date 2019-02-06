@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/a464e40a3bc54b91b508bf995be294d7/contracts/b747b91eedba4bdb90671dbc5bebb6ee?acc_token=327c6a6852614356871347e875519e06 HTTP/1.0
+PATCH /api/2.4/tenders/1c3503bb54724a1da48c0212e68dfc8c/contracts/9b91d54230b14c1abbb991e2718dc8d4?acc_token=b7d1633a38824873bc5c63f43462e1ef HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 36
 Content-Type: application/json
@@ -13,13 +13,13 @@ Host: api-sandbox.openprocurement.org
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "pending", 
     "items": [
       {
-        "relatedLot": "562ba1a0d97e476b8138c042691c4931", 
+        "relatedLot": "6ade06998f2a42f999943af5c6a16883", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -42,8 +42,8 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-06-23T16:18:46.759393+03:00", 
-          "endDate": "2017-06-26T16:18:46.759393+03:00"
+          "startDate": "2019-02-08T06:11:10.398079+02:00", 
+          "endDate": "2019-02-11T06:11:10.398079+02:00"
         }, 
         "description_ru": "Услуги школьных столовых", 
         "id": "2dc54675d6364e2baffbc0f8e74432ac"
@@ -56,13 +56,14 @@ Content-Type: application/json; charset=UTF-8
           "telephone": "+380 (432) 21-69-30", 
           "name": "Сергій Олексюк"
         }, 
+        "scale": "micro", 
+        "name": "ДКП «Школяр»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
           "id": "13313462", 
           "uri": "http://sch10.edu.vn.ua/"
         }, 
-        "name": "ДКП «Школяр»", 
         "address": {
           "postalCode": "21100", 
           "countryName": "Україна", 
@@ -77,10 +78,10 @@ Content-Type: application/json; charset=UTF-8
       "amount": 238.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2017-06-21T16:19:12.018047+03:00", 
-    "awardID": "080bbf4ba60048dda6519ff97071be4f", 
-    "id": "b747b91eedba4bdb90671dbc5bebb6ee", 
-    "contractID": "UA-2017-06-21-000001-1"
+    "date": "2019-02-06T06:11:21.596176+02:00", 
+    "awardID": "f77d4802601e4d3486973338d563e10a", 
+    "id": "9b91d54230b14c1abbb991e2718dc8d4", 
+    "contractID": "UA-2019-02-06-000001-1"
   }
 }
 

@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/a77ccbd6834d44a4a8107cffc9a04406/awards/49251d72bb734eb3a947394cbb42bccb/complaints/bfa2c6a998a84382b629817e1fd9f941 HTTP/1.0
+PATCH /api/2.4/tenders/b0dfd651d301416497ae59a6232999ac/awards/f398068f0fef4265973fd479443fe5a9/complaints/dc48b5c660374da986822b091b397e25 HTTP/1.0
 Authorization: Basic cmV2aWV3ZXI6
 Content-Length: 33
 Content-Type: application/json
@@ -11,35 +11,35 @@ DATA:
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "satisfied", 
-    "dateDecision": "2017-06-21T16:02:44.482976+03:00", 
+    "dateDecision": "2019-02-06T06:11:27.683051+02:00", 
     "documents": [
       {
         "hash": "md5:00000000000000000000000000000000", 
         "author": "complaint_owner", 
         "language": "uk", 
         "title": "Complaint_Attachement.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/d34b1d61a6204a14b9c12b1fa58e22cc?KeyID=6bef7d96&Signature=aKrJh88ytDsNALh15%2F7mbKqegxkMgulRbIRK8lNcoJIZ3js6ISy6iOZsuOzg%2Fvz%2F1r8YmJ9FVeXGu%252B%252BeFBgWCA%253D%253D", 
+        "url": "http://public.docs-sandbox.openprocurement.org/get/2cdfe9d4983d46f4859fee935216e882?KeyID=c29532e0&Signature=Qxg3rXqFxR%252BbaVR1xphTEVMUWXpSocfJ7H0uWmNgDgpkDzLO0NKgQReUsCyqijFRtJ8o%252BxbXAniZNvattVX4CA%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T16:02:39.744386+03:00", 
-        "id": "e3855eee03df4b22b662e540fa71f2c7", 
-        "dateModified": "2017-06-21T16:02:39.744431+03:00"
+        "datePublished": "2019-02-06T06:11:25.528800+02:00", 
+        "id": "7946d7f2282b4979900b5de0aeef2a52", 
+        "dateModified": "2019-02-06T06:11:25.528814+02:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
         "author": "aboveThresholdReviewers", 
         "language": "uk", 
         "title": "ComplaintResolution.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/1c5df2778ef04da1af5ec414c11f7961?KeyID=6bef7d96&Signature=%2FA2Mp1YTx%252BUXE2c7byq3FbzFdWsZ9wDc0JTBU%252B73JWkOU8VsfNvztKcm38ViWxgWta6nX3ZlNZrN7AWdGVboDg%253D%253D", 
+        "url": "http://public.docs-sandbox.openprocurement.org/get/d38cfedc5e114526bd4b7cc7126593bc?KeyID=c29532e0&Signature=8FixsbQGClFUBOM4aZtBqF8RbDn687K1ngkKdEfnjv3ua8l%2FADdPdHlkjRslG6IlW5SK0h1RBOEqqlna5wQUAw%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T16:02:44.201525+03:00", 
-        "id": "9d904a4d7e9a459386912caae9ffeeb0", 
-        "dateModified": "2017-06-21T16:02:44.201563+03:00"
+        "datePublished": "2019-02-06T06:11:27.557883+02:00", 
+        "id": "4332c1b259cd4e238de810604c12954d", 
+        "dateModified": "2019-02-06T06:11:27.557897+02:00"
       }
     ], 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
@@ -49,13 +49,14 @@ Content-Type: application/json; charset=UTF-8
         "telephone": "+380 (432) 21-69-30", 
         "name": "Сергій Олексюк"
       }, 
+      "scale": "micro", 
+      "name": "ДКП «Школяр»", 
       "identifier": {
         "scheme": "UA-EDR", 
         "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
         "id": "13313462", 
         "uri": "http://sch10.edu.vn.ua/"
       }, 
-      "name": "ДКП «Школяр»", 
       "address": {
         "postalCode": "21100", 
         "countryName": "Україна", 
@@ -65,13 +66,13 @@ Content-Type: application/json; charset=UTF-8
       }
     }, 
     "acceptance": true, 
-    "dateAccepted": "2017-06-21T16:02:43.072607+03:00", 
-    "dateSubmitted": "2017-06-21T16:02:39.921652+03:00", 
-    "complaintID": "UA-2017-06-21-000001.1", 
-    "date": "2017-06-21T16:02:44.496792+03:00", 
+    "dateAccepted": "2019-02-06T06:11:27.023487+02:00", 
+    "dateSubmitted": "2019-02-06T06:11:25.609328+02:00", 
+    "complaintID": "UA-2019-02-06-000001.1", 
+    "date": "2019-02-06T06:11:27.689852+02:00", 
     "title": "Недостатньо інформації", 
     "type": "complaint", 
-    "id": "bfa2c6a998a84382b629817e1fd9f941"
+    "id": "dc48b5c660374da986822b091b397e25"
   }
 }
 

@@ -1,9 +1,9 @@
-GET /api/2.3/tenders/aa0cd6b584d543848108968ea24a7891/bids/104ca60911244497bc15d941e239ead6?acc_token=ef9c0578dbdd435ab058ee3eef53e1b7 HTTP/1.0
+GET /api/2.4/tenders/d93f62e755b94ccbaaf86790df865507/bids/0635bac67c744cda9761b4a94e9a8c00?acc_token=6a891e76951f47fe929173f74e9e4168 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: api-sandbox.openprocurement.org
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "unsuccessful", 
@@ -13,25 +13,25 @@ Content-Type: application/json; charset=UTF-8
         "confidentiality": "public", 
         "language": "uk", 
         "title": "Proposal_part1.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/c8b8a27dd53b4a7385e546ac44743e5a?KeyID=bc8341ee&Signature=QZtlXQQORKC2AXMxsAJn1zuUC5mse27y%2FcUH3j6EH1P7cMxLurjDkBgNqeih9DUmJmuzhdjQyYiy7Z6NC%2F1WCg%253D%253D", 
+        "url": "http://public.docs-sandbox.openprocurement.org/get/0d83c072f9ac4798aed63be5bd4bb584?KeyID=9333ae90&Signature=5UEGaUvoV3TqP3IYf1V6lNIOBRpoz1UbPr1Ji33xzuaQ8FQ1%252B19OiKqbppqX7GaZ4Kq%252BfQTgF6UszIWy9Q7cCg%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T16:02:56.195576+03:00", 
-        "id": "ef9a9600108941d59e4c75108fa36e91", 
-        "dateModified": "2017-06-21T16:02:56.195607+03:00"
+        "datePublished": "2019-02-06T06:11:32.914156+02:00", 
+        "id": "62de3e7d358548f1ac70ee8bbae94a99", 
+        "dateModified": "2019-02-06T06:11:32.914168+02:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
         "confidentiality": "buyerOnly", 
         "language": "uk", 
         "format": "application/pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/aa0cd6b584d543848108968ea24a7891/bids/104ca60911244497bc15d941e239ead6/documents/8648068d095345b2b82b01ff63051db5?download=ff3f2c1c9f89435f8f3d434f72d5ae91", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/d93f62e755b94ccbaaf86790df865507/bids/0635bac67c744cda9761b4a94e9a8c00/documents/952473b052fd4fd98a046ed852540864?download=c02d049f7bce4a3a8ce7c1d049a61337", 
         "confidentialityRationale": "Only our company sells badgers with pink hair.", 
         "title": "Proposal_part2.pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T16:02:56.196490+03:00", 
-        "id": "8648068d095345b2b82b01ff63051db5", 
-        "dateModified": "2017-06-21T16:02:56.196521+03:00"
+        "datePublished": "2019-02-06T06:11:32.914540+02:00", 
+        "id": "952473b052fd4fd98a046ed852540864", 
+        "dateModified": "2019-02-06T06:11:32.914552+02:00"
       }
     ], 
     "eligibilityDocuments": [
@@ -40,12 +40,12 @@ Content-Type: application/json; charset=UTF-8
         "confidentiality": "public", 
         "language": "uk", 
         "title": "eligibility_doc.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/138f72f02ac747519001bbe1494086b0?KeyID=bc8341ee&Signature=Hj3mHq3QozlMIvnuKMe6PullY3zx1KDYeiv89HGeT%2Fv3B7Ytw0mVBmpn7%252BBCQtJxxReNabaaLC0bgOcS8770BQ%253D%253D", 
+        "url": "http://public.docs-sandbox.openprocurement.org/get/d85454be01bb42c08eaf5cd3c13c8334?KeyID=9333ae90&Signature=H8ZsZqH3r4B6NDZ56a%2FdCrZmj26Kz1gG1AjGXcvmvcEF%252Bsvq3iQlypHkPAXD5bVvvt6vApjrV0iQjG1kjZvQAw%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T16:02:56.198375+03:00", 
-        "id": "22a8c144ada441e9804ae888d31d6771", 
-        "dateModified": "2017-06-21T16:02:56.198407+03:00"
+        "datePublished": "2019-02-06T06:11:32.915267+02:00", 
+        "id": "c769d8154579464eac6af720aa1d509e", 
+        "dateModified": "2019-02-06T06:11:32.915278+02:00"
       }
     ], 
     "selfEligible": true, 
@@ -57,12 +57,13 @@ Content-Type: application/json; charset=UTF-8
           "telephone": "+380 (322) 12-34-56", 
           "name": "Іван Іваненко"
         }, 
+        "scale": "micro", 
+        "name": "«Снігур»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137226", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "«Снігур»", 
         "address": {
           "postalCode": "79013", 
           "countryName": "Україна", 
@@ -72,7 +73,7 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "id": "104ca60911244497bc15d941e239ead6"
+    "id": "0635bac67c744cda9761b4a94e9a8c00"
   }
 }
 

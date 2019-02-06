@@ -1,9 +1,9 @@
-GET /api/2.3/tenders/aa0cd6b584d543848108968ea24a7891/bids/7d25598434a040129a4513bc053945dc?acc_token=93531d18c9e84278acdf290bd72a0f4b HTTP/1.0
+GET /api/2.4/tenders/d93f62e755b94ccbaaf86790df865507/bids/5871fff20085491c9226568240f7b49d?acc_token=99628b3e08d247279f7b39f6dc4199ba HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: api-sandbox.openprocurement.org
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "active", 
@@ -21,12 +21,13 @@ Content-Type: application/json; charset=UTF-8
           "telephone": "+380 (322) 91-69-30", 
           "name": "Андрій Олексюк"
         }, 
+        "scale": "micro", 
+        "name": "ДКП «Книга»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137226", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "ДКП «Книга»", 
         "address": {
           "postalCode": "79013", 
           "countryName": "Україна", 
@@ -36,9 +37,9 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "date": "2017-06-21T16:02:56.027580+03:00", 
-    "id": "7d25598434a040129a4513bc053945dc", 
-    "participationUrl": "http://auction-sandbox.openprocurement.org/tenders/aa0cd6b584d543848108968ea24a7891?key_for_bid=7d25598434a040129a4513bc053945dc"
+    "date": "2019-02-06T06:11:32.841671+02:00", 
+    "id": "5871fff20085491c9226568240f7b49d", 
+    "participationUrl": "http://auction-sandbox.openprocurement.org/tenders/d93f62e755b94ccbaaf86790df865507?key_for_bid=5871fff20085491c9226568240f7b49d"
   }
 }
 

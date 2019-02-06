@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/78941caa5f6b4c8380b2eebdfceac04f/qualifications/72bbc4d0fa6044c994346054d7070802/complaints/30520a56a7fe4353b7e319906924050a HTTP/1.0
+PATCH /api/2.4/tenders/c350ba8d5ad345efa77ca5a89d0040fb/qualifications/59787b64390c41c6a5b71a0a2166fb1b/complaints/5f85df3bc766493096a78e4d1e6ab8cb HTTP/1.0
 Authorization: Basic cmV2aWV3ZXI6
 Content-Length: 217
 Content-Type: application/json
@@ -12,31 +12,32 @@ DATA:
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "stopped", 
-    "dateDecision": "2017-06-21T16:03:13.338714+03:00", 
+    "dateDecision": "2019-02-06T06:11:40.533600+02:00", 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
     "title": "Недостатньо інформації", 
     "decision": "Тендер скасовується замовником", 
     "acceptance": true, 
     "cancellationReason": "Тендер скасовується замовником", 
-    "dateCanceled": "2017-06-21T16:03:13.086186+03:00", 
-    "dateAccepted": "2017-06-21T16:03:11.341908+03:00", 
+    "dateCanceled": "2019-02-06T06:11:40.426515+02:00", 
+    "dateAccepted": "2019-02-06T06:11:39.672911+02:00", 
     "author": {
       "contactPoint": {
         "email": "soleksuk@gmail.com", 
         "telephone": "+380 (432) 21-69-30", 
         "name": "Сергій Олексюк"
       }, 
+      "scale": "micro", 
+      "name": "ДКП «Школяр»", 
       "identifier": {
         "scheme": "UA-EDR", 
         "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
         "id": "13313462", 
         "uri": "http://sch10.edu.vn.ua/"
       }, 
-      "name": "ДКП «Школяр»", 
       "address": {
         "postalCode": "21100", 
         "countryName": "Україна", 
@@ -45,11 +46,11 @@ Content-Type: application/json; charset=UTF-8
         "locality": "м. Вінниця"
       }
     }, 
-    "dateSubmitted": "2017-06-21T16:03:08.231038+03:00", 
-    "complaintID": "UA-2017-06-21-000001.4", 
-    "date": "2017-06-21T16:03:13.354077+03:00", 
+    "dateSubmitted": "2019-02-06T06:11:38.244194+02:00", 
+    "complaintID": "UA-2019-02-06-000001.4", 
+    "date": "2019-02-06T06:11:40.539232+02:00", 
     "type": "complaint", 
-    "id": "30520a56a7fe4353b7e319906924050a"
+    "id": "5f85df3bc766493096a78e4d1e6ab8cb"
   }
 }
 

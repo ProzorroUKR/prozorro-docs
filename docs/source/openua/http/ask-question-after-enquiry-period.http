@@ -1,6 +1,6 @@
-POST /api/2.3/tenders/97dd0ca9a0f741a6ad5628c6873d1de9/questions HTTP/1.0
+POST /api/2.4/tenders/6ade0a2779c442fb8ebc0f7e8867eec0/questions HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 1506
+Content-Length: 1524
 Content-Type: application/json
 Host: api-sandbox.openprocurement.org
 DATA:
@@ -12,13 +12,14 @@ DATA:
         "name": "Сергій Олексюк", 
         "email": "soleksuk@gmail.com"
       }, 
+      "scale": "micro", 
+      "name": "ДКП «Школяр»", 
       "identifier": {
         "scheme": "UA-EDR", 
         "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
         "id": "00137226", 
         "uri": "http://sch10.edu.vn.ua/"
       }, 
-      "name": "ДКП «Школяр»", 
       "address": {
         "countryName": "Україна", 
         "postalCode": "21100", 
@@ -33,7 +34,7 @@ DATA:
 }
 
 Response: 403 Forbidden
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "status": "error", 
   "errors": [

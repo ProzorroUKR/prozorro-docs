@@ -1,10 +1,10 @@
-GET /api/2.3/tenders/f3641d0ba0f042e8b49de06d5c7921af/bids/bfa4b4a0f47f4270b5f139307e217ec3?acc_token=22d01413f6604999a61b174fabe6ffe2 HTTP/1.0
+GET /api/2.4/tenders/a9fa8c33df924d25b648931e89bd8ea8/bids/ab6a1288ecdc4e9f92f3b8b5f58886bc?acc_token=1f6118873f2842eabdc0631f3480a85a HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: api-sandbox.openprocurement.org
 
 
 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 
 {
   "data": {
@@ -13,22 +13,22 @@ Content-Type: application/json; charset=UTF-8
       {
         "hash": "md5:00000000000000000000000000000000", 
         "title": "Proposal_part1.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/f3641d0ba0f042e8b49de06d5c7921af/bids/bfa4b4a0f47f4270b5f139307e217ec3/documents/df9dd9b2c3a94843872c990a919137b7?download=331460f91e944a2d83136dee00b94f0f", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/a9fa8c33df924d25b648931e89bd8ea8/bids/ab6a1288ecdc4e9f92f3b8b5f58886bc/documents/b91cec6313f24ee2b703ec9ee3fc580d?download=ec55690ed3aa499fb14f4cd946133c7c", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-07-25T17:36:56.537226+03:00", 
-        "id": "df9dd9b2c3a94843872c990a919137b7", 
-        "dateModified": "2017-07-25T17:36:56.537243+03:00"
+        "datePublished": "2019-02-06T06:09:49.256269+02:00", 
+        "id": "b91cec6313f24ee2b703ec9ee3fc580d", 
+        "dateModified": "2019-02-06T06:09:49.256281+02:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
         "title": "Proposal_part2.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/f3641d0ba0f042e8b49de06d5c7921af/bids/bfa4b4a0f47f4270b5f139307e217ec3/documents/89daa7ea804c40febcbc83bed93587ea?download=3bfc49d63bd44e9488e1270003e52178", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/a9fa8c33df924d25b648931e89bd8ea8/bids/ab6a1288ecdc4e9f92f3b8b5f58886bc/documents/19b04667aa364811a7fc52885c0a675a?download=1041255a75614b1a9bb3b619148caf1a", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-07-25T17:36:56.537686+03:00", 
-        "id": "89daa7ea804c40febcbc83bed93587ea", 
-        "dateModified": "2017-07-25T17:36:56.537703+03:00"
+        "datePublished": "2019-02-06T06:09:49.256653+02:00", 
+        "id": "19b04667aa364811a7fc52885c0a675a", 
+        "dateModified": "2019-02-06T06:09:49.256664+02:00"
       }
     ], 
     "value": {
@@ -43,12 +43,13 @@ Content-Type: application/json; charset=UTF-8
           "telephone": "+380 (322) 91-69-30", 
           "name": "Андрій Олексюк"
         }, 
+        "scale": "micro", 
+        "name": "ДКП «Книга»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137226", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "ДКП «Книга»", 
         "address": {
           "postalCode": "79013", 
           "countryName": "Україна", 
@@ -58,9 +59,9 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "date": "2017-07-25T17:36:56.536644+03:00", 
-    "id": "bfa4b4a0f47f4270b5f139307e217ec3", 
-    "participationUrl": "http://auction-sandbox.openprocurement.org/tenders/f3641d0ba0f042e8b49de06d5c7921af?key_for_bid=bfa4b4a0f47f4270b5f139307e217ec3"
+    "date": "2019-02-06T06:09:49.255879+02:00", 
+    "id": "ab6a1288ecdc4e9f92f3b8b5f58886bc", 
+    "participationUrl": "http://auction-sandbox.openprocurement.org/tenders/a9fa8c33df924d25b648931e89bd8ea8?key_for_bid=ab6a1288ecdc4e9f92f3b8b5f58886bc"
   }
 }
 

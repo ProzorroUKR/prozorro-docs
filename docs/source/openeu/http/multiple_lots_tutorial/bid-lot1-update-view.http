@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/bcfa4c735e7c48efac20aa4542534c10/bids/6ca5cd60e5ba40ab9cf0a3264ff8fe5b?acc_token=081480f988614244b6d5d5e7ea8db526 HTTP/1.0
+PATCH /api/2.4/tenders/f3bc07ebff534a04b13c6d3f0c02dd37/bids/6f69f4be052946f1acfcbc837fd6e65a?acc_token=b31755c006a64495adcddb09191e6139 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 214
 Content-Type: application/json
@@ -9,7 +9,7 @@ DATA:
     "status": "pending", 
     "lotValues": [
       {
-        "relatedLot": "be0820de82f94afd887c4715ce9bcd8c", 
+        "relatedLot": "1f77a97485ca4fb3bebeaf5802a8609b", 
         "value": {
           "amount": 500
         }, 
@@ -20,15 +20,15 @@ DATA:
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "pending", 
     "selfEligible": true, 
     "lotValues": [
       {
-        "relatedLot": "be0820de82f94afd887c4715ce9bcd8c", 
-        "date": "2017-06-21T16:03:04.561532+03:00", 
+        "relatedLot": "1f77a97485ca4fb3bebeaf5802a8609b", 
+        "date": "2019-02-06T06:11:36.596316+02:00", 
         "status": "pending", 
         "value": {
           "currency": "UAH", 
@@ -46,12 +46,13 @@ Content-Type: application/json; charset=UTF-8
           "telephone": "+380 (432) 21-69-30", 
           "name": "Сергій Олексюк"
         }, 
+        "scale": "micro", 
+        "name": "ДКП «Школяр»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137256", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "ДКП «Школяр»", 
         "address": {
           "postalCode": "21100", 
           "countryName": "Україна", 
@@ -61,8 +62,8 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "date": "2017-06-21T16:03:04.560540+03:00", 
-    "id": "6ca5cd60e5ba40ab9cf0a3264ff8fe5b"
+    "date": "2019-02-06T06:11:36.596032+02:00", 
+    "id": "6f69f4be052946f1acfcbc837fd6e65a"
   }
 }
 

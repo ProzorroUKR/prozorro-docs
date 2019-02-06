@@ -1,4 +1,4 @@
-PATCH /api/2.3/contracts/bebdbaf7777d4bd39756f3e8872c1f46?acc_token=2f1294ae618e49219d85607d17afabf6 HTTP/1.0
+PATCH /api/2.4/contracts/84b1fa2009b74666be5f5e2b42e3c4e2?acc_token=3e24559cb3e34354a6d06b7c04020cc9 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 1160
 Content-Type: application/json
@@ -29,10 +29,10 @@ DATA:
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-06-23T17:53:02.070092+03:00", 
-          "endDate": "2017-06-26T17:53:02.070092+03:00"
+          "startDate": "2019-02-08T06:09:37.139139+02:00", 
+          "endDate": "2019-02-11T06:09:37.139139+02:00"
         }, 
-        "id": "f8a311c2c9a34ff08bdf59bbc8092348", 
+        "id": "97758d645abc4a6a87d93d9c0af8d292", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -44,7 +44,7 @@ DATA:
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "active", 
@@ -56,13 +56,13 @@ Content-Type: application/json; charset=UTF-8
     "documents": [
       {
         "title": "contract_changes.doc", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/contracts/bebdbaf7777d4bd39756f3e8872c1f46/documents/853ad85f888c403eb64b3db2ce16fed7?download=6b9d115c4fa94edb8d1f07615ed5b85c", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.4/contracts/84b1fa2009b74666be5f5e2b42e3c4e2/documents/3b09da3187894540bfea252fd0159ecb?download=21163873f7b94149818001483ac6f106", 
         "format": "application/msword", 
         "documentOf": "change", 
-        "datePublished": "2017-06-21T17:53:05.477533+03:00", 
-        "id": "853ad85f888c403eb64b3db2ce16fed7", 
-        "relatedItem": "c382f2a7da3647bbb4e8fea2af514157", 
-        "dateModified": "2017-06-21T17:53:05.477575+03:00"
+        "datePublished": "2019-02-06T06:09:38.772359+02:00", 
+        "id": "3b09da3187894540bfea252fd0159ecb", 
+        "relatedItem": "e3eab877b54841a19dbd48e041eda515", 
+        "dateModified": "2019-02-06T06:09:38.772379+02:00"
       }
     ], 
     "items": [
@@ -88,10 +88,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-06-23T17:53:02.070092+03:00", 
-          "endDate": "2017-06-26T17:53:02.070092+03:00"
+          "startDate": "2019-02-08T06:09:37.139139+02:00", 
+          "endDate": "2019-02-11T06:09:37.139139+02:00"
         }, 
-        "id": "f8a311c2c9a34ff08bdf59bbc8092348", 
+        "id": "97758d645abc4a6a87d93d9c0af8d292", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -105,12 +105,13 @@ Content-Type: application/json; charset=UTF-8
           "name": "Державне управління справами", 
           "telephone": "0440000000"
         }, 
+        "scale": "micro", 
+        "name": "Державне управління справами", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00037256", 
           "uri": "http://www.dus.gov.ua/"
         }, 
-        "name": "Державне управління справами", 
         "address": {
           "postalCode": "01220", 
           "countryName": "Україна", 
@@ -121,11 +122,11 @@ Content-Type: application/json; charset=UTF-8
       }
     ], 
     "period": {
-      "startDate": "2017-06-21T17:53:05.582663+03:00", 
-      "endDate": "2017-07-21T17:53:05.582718+03:00"
+      "startDate": "2019-02-06T06:09:38.827633+02:00", 
+      "endDate": "2019-03-08T06:09:38.827653+02:00"
     }, 
-    "dateSigned": "2017-06-21T17:53:04.594612+03:00", 
-    "id": "bebdbaf7777d4bd39756f3e8872c1f46", 
+    "dateSigned": "2019-02-06T06:09:38.444721+02:00", 
+    "id": "84b1fa2009b74666be5f5e2b42e3c4e2", 
     "procuringEntity": {
       "contactPoint": {
         "name": "Державне управління справами", 
@@ -146,9 +147,9 @@ Content-Type: application/json; charset=UTF-8
         "locality": "м. Київ"
       }
     }, 
-    "contractID": "UA-2017-06-21-000001-1", 
+    "contractID": "UA-2019-02-06-000001-1", 
     "owner": "broker", 
-    "awardID": "2f549474497c475b8023d51845cbb2bd", 
+    "awardID": "b7816f28d6c94aa78a61e6ee3cb1915a", 
     "changes": [
       {
         "status": "pending", 
@@ -158,12 +159,12 @@ Content-Type: application/json; charset=UTF-8
         ], 
         "rationale_en": "Contract change cause", 
         "rationale": "Друга і третя поставка має бути розфасована", 
-        "date": "2017-06-21T17:53:05.109702+03:00", 
-        "id": "c382f2a7da3647bbb4e8fea2af514157"
+        "date": "2019-02-06T06:09:38.614619+02:00", 
+        "id": "e3eab877b54841a19dbd48e041eda515"
       }
     ], 
-    "dateModified": "2017-06-21T17:53:05.942313+03:00", 
-    "tender_id": "7dc086c4a213492ab9c43b95b43bd817"
+    "dateModified": "2019-02-06T06:09:38.978395+02:00", 
+    "tender_id": "a5ef631bfec641de992def8daef40fa6"
   }
 }
 

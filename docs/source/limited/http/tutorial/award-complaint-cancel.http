@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/e564a943c46a443497a81bcdac928861/awards/16c53b598ce94c89b62facc41375ec4d/complaints/a8ea9f5eb37d41beb4d108ca801a767c?acc_token=a5ae706a62cc4da492541009706e7656 HTTP/1.0
+PATCH /api/2.4/tenders/444a3230914b45558d9f9ef5e63a535f/awards/164da4d604384410939e007400f32562/complaints/7fd26cf1a9ab45a49e665a053507bf8d?acc_token=cedcc39931ad4b8d8784c71d04509c90 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 150
 Content-Type: application/json
@@ -12,7 +12,7 @@ Host: api-sandbox.openprocurement.org
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "cancelled", 
@@ -23,13 +23,14 @@ Content-Type: application/json; charset=UTF-8
         "telephone": "+380 (432) 21-69-30", 
         "name": "Сергій Олексюк"
       }, 
+      "scale": "micro", 
+      "name": "ДКП «Школяр»", 
       "identifier": {
         "scheme": "UA-EDR", 
         "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
         "id": "13313462", 
         "uri": "http://sch10.edu.vn.ua/"
       }, 
-      "name": "ДКП «Школяр»", 
       "address": {
         "postalCode": "21100", 
         "countryName": "Україна", 
@@ -40,11 +41,11 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "title": "Недостатньо інформації", 
     "cancellationReason": "Умови виправлено", 
-    "dateCanceled": "2017-09-14T19:40:48.419690+03:00", 
-    "complaintID": "UA-2017-09-14-000001.7", 
-    "date": "2017-09-14T19:40:48.457679+03:00", 
+    "dateCanceled": "2019-02-06T06:11:19.817101+02:00", 
+    "complaintID": "UA-2019-02-06-000001.7", 
+    "date": "2019-02-06T06:11:19.822291+02:00", 
     "type": "complaint", 
-    "id": "a8ea9f5eb37d41beb4d108ca801a767c"
+    "id": "7fd26cf1a9ab45a49e665a053507bf8d"
   }
 }
 

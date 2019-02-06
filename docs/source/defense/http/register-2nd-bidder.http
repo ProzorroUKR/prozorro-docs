@@ -1,6 +1,6 @@
-POST /api/2.3/tenders/d3dba9240047439492b162acda141abd/bids HTTP/1.0
+POST /api/2.4/tenders/2262b66765a443d99a994aaa48fa9b36/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 749
+Content-Length: 767
 Content-Type: application/json
 Host: api-sandbox.openprocurement.org
 DATA:
@@ -18,12 +18,13 @@ DATA:
           "name": "Андрій Олексюк", 
           "email": "aagt@gmail.com"
         }, 
+        "scale": "micro", 
+        "name": "ДКП «Книга»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137226", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "ДКП «Книга»", 
         "address": {
           "countryName": "Україна", 
           "postalCode": "79013", 
@@ -37,11 +38,11 @@ DATA:
 }
 
 Response: 201 Created
-Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/d3dba9240047439492b162acda141abd/bids/3a603e289a1b4c06ad023bd5705e03a2
+Content-Type: application/json
+Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/2262b66765a443d99a994aaa48fa9b36/bids/f278f92800ec49fca00188b5c10621f6
 {
   "access": {
-    "token": "c38be9af940b4fbb8a33e80d0beff7b2"
+    "token": "ab7c2e853ea34eafbce68ca54cc0fc08"
   }, 
   "data": {
     "status": "active", 
@@ -59,12 +60,13 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/d3dba9240047439
           "telephone": "+380 (322) 91-69-30", 
           "name": "Андрій Олексюк"
         }, 
+        "scale": "micro", 
+        "name": "ДКП «Книга»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137226", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "ДКП «Книга»", 
         "address": {
           "postalCode": "79013", 
           "countryName": "Україна", 
@@ -74,8 +76,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/d3dba9240047439
         }
       }
     ], 
-    "date": "2017-06-21T16:09:26.572193+03:00", 
-    "id": "3a603e289a1b4c06ad023bd5705e03a2"
+    "date": "2019-02-06T06:11:59.937828+02:00", 
+    "id": "f278f92800ec49fca00188b5c10621f6"
   }
 }
 

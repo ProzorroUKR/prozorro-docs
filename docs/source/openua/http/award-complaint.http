@@ -1,32 +1,32 @@
-GET /api/2.3/tenders/9eaa2f3beb554dd5b22ba7ab74f89d1f/awards/bdda4791877a4e7ca0d3ba4f00fa28c6/complaints/2e4cc336e8964ba5ada86f29c99e618f HTTP/1.0
+GET /api/2.4/tenders/cdc3e4d286314bb48fa05dc8fb3c4638/awards/6f3b5588dd6347dbbffb633d81bb4e6c/complaints/24da26d8e85b4f3b94490de291d15988 HTTP/1.0
 Host: api-sandbox.openprocurement.org
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "satisfied", 
-    "dateDecision": "2017-06-21T15:53:12.499278+03:00", 
+    "dateDecision": "2019-02-06T06:11:45.444603+02:00", 
     "documents": [
       {
         "author": "complaint_owner", 
         "title": "Complaint_Attachement.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/9eaa2f3beb554dd5b22ba7ab74f89d1f/awards/bdda4791877a4e7ca0d3ba4f00fa28c6/complaints/2e4cc336e8964ba5ada86f29c99e618f/documents/c2b960bd63864644ac4b037b72248938?download=f08fe6ae1cc64651a4563cb0ceca2bc9", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/cdc3e4d286314bb48fa05dc8fb3c4638/awards/6f3b5588dd6347dbbffb633d81bb4e6c/complaints/24da26d8e85b4f3b94490de291d15988/documents/2dfd117e21e342c299cdd4323e480431?download=66d85df29d074ad1a314c2996b194ac3", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T15:53:08.346179+03:00", 
-        "id": "c2b960bd63864644ac4b037b72248938", 
-        "dateModified": "2017-06-21T15:53:08.346231+03:00"
+        "datePublished": "2019-02-06T06:11:43.557687+02:00", 
+        "id": "2dfd117e21e342c299cdd4323e480431", 
+        "dateModified": "2019-02-06T06:11:43.557705+02:00"
       }, 
       {
         "author": "aboveThresholdReviewers", 
         "title": "ComplaintResolution.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/9eaa2f3beb554dd5b22ba7ab74f89d1f/awards/bdda4791877a4e7ca0d3ba4f00fa28c6/complaints/2e4cc336e8964ba5ada86f29c99e618f/documents/bd62cf6967734a8ab7f17cdc545b224f?download=141223be6b82484e9a9d81c399766b09", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/cdc3e4d286314bb48fa05dc8fb3c4638/awards/6f3b5588dd6347dbbffb633d81bb4e6c/complaints/24da26d8e85b4f3b94490de291d15988/documents/fc49c1d2f63544b7b766e61df1eff0ed?download=e395887423ee4eefaa33ded56816fd5e", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T15:53:12.249735+03:00", 
-        "id": "bd62cf6967734a8ab7f17cdc545b224f", 
-        "dateModified": "2017-06-21T15:53:12.249771+03:00"
+        "datePublished": "2019-02-06T06:11:45.325603+02:00", 
+        "id": "fc49c1d2f63544b7b766e61df1eff0ed", 
+        "dateModified": "2019-02-06T06:11:45.325636+02:00"
       }
     ], 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
@@ -37,13 +37,14 @@ Content-Type: application/json; charset=UTF-8
         "telephone": "+380 (432) 21-69-30", 
         "name": "Сергій Олексюк"
       }, 
+      "scale": "micro", 
+      "name": "ДКП «Школяр»", 
       "identifier": {
         "scheme": "UA-EDR", 
         "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
         "id": "13313462", 
         "uri": "http://sch10.edu.vn.ua/"
       }, 
-      "name": "ДКП «Школяр»", 
       "address": {
         "postalCode": "21100", 
         "countryName": "Україна", 
@@ -52,13 +53,13 @@ Content-Type: application/json; charset=UTF-8
         "locality": "м. Вінниця"
       }
     }, 
-    "dateAccepted": "2017-06-21T15:53:11.308002+03:00", 
-    "dateSubmitted": "2017-06-21T15:53:08.495937+03:00", 
-    "complaintID": "UA-2017-06-21-000001.1", 
-    "date": "2017-06-21T15:53:12.511002+03:00", 
+    "dateAccepted": "2019-02-06T06:11:44.890788+02:00", 
+    "dateSubmitted": "2019-02-06T06:11:43.627630+02:00", 
+    "complaintID": "UA-2019-02-06-000001.1", 
+    "date": "2019-02-06T06:11:45.449899+02:00", 
     "acceptance": true, 
     "type": "complaint", 
-    "id": "2e4cc336e8964ba5ada86f29c99e618f"
+    "id": "24da26d8e85b4f3b94490de291d15988"
   }
 }
 

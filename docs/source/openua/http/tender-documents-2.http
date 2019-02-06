@@ -1,30 +1,30 @@
-GET /api/2.3/tenders/97dd0ca9a0f741a6ad5628c6873d1de9/documents?acc_token=4da34917776743398aa0bb0b7a639d70 HTTP/1.0
+GET /api/2.4/tenders/6ade0a2779c442fb8ebc0f7e8867eec0/documents?acc_token=22a7b09d21b84b238536e554aa279dd4 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: api-sandbox.openprocurement.org
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": [
     {
       "author": "tender_owner", 
       "title": "Notice.pdf", 
-      "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/97dd0ca9a0f741a6ad5628c6873d1de9/documents/834ae499148f4eb7996d8db7dcd8fd14?download=6f58464f57364eff809716a21346d568", 
+      "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/6ade0a2779c442fb8ebc0f7e8867eec0/documents/c160e53c9c784526979f468379c949ef?download=c268a087e7ed4eddb5edc73bc5fa8234", 
       "format": "application/pdf", 
       "documentOf": "tender", 
-      "datePublished": "2017-06-21T15:53:20.439891+03:00", 
-      "id": "834ae499148f4eb7996d8db7dcd8fd14", 
-      "dateModified": "2017-06-21T15:53:20.439925+03:00"
+      "datePublished": "2019-02-06T06:11:49.008171+02:00", 
+      "id": "c160e53c9c784526979f468379c949ef", 
+      "dateModified": "2019-02-06T06:11:49.008185+02:00"
     }, 
     {
       "author": "tender_owner", 
       "title": "AwardCriteria.pdf", 
-      "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/97dd0ca9a0f741a6ad5628c6873d1de9/documents/8eb8c964d53342919cf982b74ce28eee?download=1b5689bd04d94e68813052edcc6e9eaa", 
+      "url": "http://api-sandbox.openprocurement.org/api/2.4/tenders/6ade0a2779c442fb8ebc0f7e8867eec0/documents/93678a35b8eb4b489893f40ba888c0de?download=6aa35af23c80470a9ecbbc275694b25e", 
       "format": "application/pdf", 
       "documentOf": "tender", 
-      "datePublished": "2017-06-21T15:53:20.531460+03:00", 
-      "id": "8eb8c964d53342919cf982b74ce28eee", 
-      "dateModified": "2017-06-21T15:53:20.531494+03:00"
+      "datePublished": "2019-02-06T06:11:49.045505+02:00", 
+      "id": "93678a35b8eb4b489893f40ba888c0de", 
+      "dateModified": "2019-02-06T06:11:49.045518+02:00"
     }
   ]
 }

@@ -1,6 +1,6 @@
-POST /api/2.3/tenders/f3641d0ba0f042e8b49de06d5c7921af/bids HTTP/1.0
+POST /api/2.4/tenders/a9fa8c33df924d25b648931e89bd8ea8/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 757
+Content-Length: 775
 Content-Type: application/json
 Host: api-sandbox.openprocurement.org
 
@@ -17,12 +17,13 @@ Host: api-sandbox.openprocurement.org
           "name": "Сергій Олексюк", 
           "email": "soleksuk@gmail.com"
         }, 
+        "scale": "micro", 
+        "name": "ДКП «Школяр»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137256", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "ДКП «Школяр»", 
         "address": {
           "countryName": "Україна", 
           "postalCode": "21100", 
@@ -37,17 +38,17 @@ Host: api-sandbox.openprocurement.org
 
 
 201 Created
-Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/f3641d0ba0f042e8b49de06d5c7921af/bids/ba18d19f2a3948deb997a7a55dd2f194
+Content-Type: application/json
+Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/a9fa8c33df924d25b648931e89bd8ea8/bids/4a5bf6492edf42fe9ce033a3fa41d34b
 
 {
   "access": {
-    "token": "1570f17a0a084e29aad2dc9a600e5589"
+    "token": "7edac3fc9b9345e9a946ee103e429838"
   }, 
   "data": {
-    "date": "2017-07-25T17:36:56.363108+03:00", 
+    "date": "2019-02-06T06:09:49.110221+02:00", 
     "status": "draft", 
-    "id": "ba18d19f2a3948deb997a7a55dd2f194", 
+    "id": "4a5bf6492edf42fe9ce033a3fa41d34b", 
     "value": {
       "currency": "UAH", 
       "amount": 500.0, 
@@ -60,12 +61,13 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/f3641d0ba0f042e
           "telephone": "+380 (432) 21-69-30", 
           "name": "Сергій Олексюк"
         }, 
+        "scale": "micro", 
+        "name": "ДКП «Школяр»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137256", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "ДКП «Школяр»", 
         "address": {
           "postalCode": "21100", 
           "countryName": "Україна", 

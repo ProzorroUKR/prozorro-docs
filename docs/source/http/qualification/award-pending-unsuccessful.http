@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/6e33b56945624315afece8e75af7193c/awards/aec061c3b3234a9981a292ae161d2ece?acc_token=e96bd05708744828a13d48aa6e282cb9 HTTP/1.0
+PATCH /api/2.4/tenders/811652d707394b568daf079e30ca0192/awards/fb1b61d35ca54e5fadd9ccf851c44d37?acc_token=19a08594e4c14b54b8abcf0f6005bb7c HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 36
 Content-Type: application/json
@@ -12,8 +12,8 @@ Host: api-sandbox.openprocurement.org
 
 
 200 OK
-Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/6e33b56945624315afece8e75af7193c/awards/4983c533470d473aa5769ba399849cb0
+Content-Type: application/json
+Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/811652d707394b568daf079e30ca0192/awards/c47bf1bde752415c974c2d0eb9fb9344
 
 {
   "data": {
@@ -23,17 +23,17 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/6e33b5694562431
         "hash": "md5:00000000000000000000000000000000", 
         "author": "tender_owner", 
         "title": "Unsuccessful_Reason.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/800261cb6def4a11bf3791e830befb3c?KeyID=1a1ebb61&Signature=PbVLwL3AMNy7I%2FnhEANHhLSNoOKKay2pvYsHnbBXD%252BBZM60nIqXTk3UDDN6TsctsZ2k0TtSk0XEwlEoFdbKRAQ%253D%253D", 
+        "url": "http://public.docs-sandbox.openprocurement.org/get/d4635a65730b44f2bb232f468fde3f15?KeyID=80443b20&Signature=ooHYBSH5mEQm%2FfB5sXthIqtDEAtkmtfdqejRHLjJi9wuJyBteYhrKXAVU4%252BKbTNs1758zAJSGJWvP5x3BDUdBg%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-07-25T17:36:52.098854+03:00", 
-        "id": "0ac19aedb5d2407598d91aa963d6a027", 
-        "dateModified": "2017-07-25T17:36:52.098871+03:00"
+        "datePublished": "2019-02-06T06:09:45.111257+02:00", 
+        "id": "8d16a9915dbf465094952b779bdb4287", 
+        "dateModified": "2019-02-06T06:09:45.111271+02:00"
       }
     ], 
     "complaintPeriod": {
-      "startDate": "2017-07-25T17:36:51.988435+03:00", 
-      "endDate": "2017-07-27T17:36:52.185900+03:00"
+      "startDate": "2019-02-06T06:09:45.012958+02:00", 
+      "endDate": "2019-02-08T06:09:45.187901+02:00"
     }, 
     "suppliers": [
       {
@@ -42,12 +42,13 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/6e33b5694562431
           "telephone": "+380 (432) 21-69-30", 
           "name": "Сергій Олексюк"
         }, 
+        "scale": "micro", 
+        "name": "ДКП «Школяр»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137256", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "ДКП «Школяр»", 
         "address": {
           "postalCode": "21100", 
           "countryName": "Україна", 
@@ -57,14 +58,14 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/6e33b5694562431
         }
       }
     ], 
-    "bid_id": "ee786a6e8a7d470196a751273f064e78", 
+    "bid_id": "9799e52b7da141cd88a26803a8bd00b2", 
     "value": {
       "currency": "UAH", 
       "amount": 450.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2017-07-25T17:36:52.191749+03:00", 
-    "id": "aec061c3b3234a9981a292ae161d2ece"
+    "date": "2019-02-06T06:09:45.193684+02:00", 
+    "id": "fb1b61d35ca54e5fadd9ccf851c44d37"
   }
 }
 

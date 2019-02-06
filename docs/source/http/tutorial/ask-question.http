@@ -1,6 +1,6 @@
-POST /api/2.3/tenders/f3641d0ba0f042e8b49de06d5c7921af/questions HTTP/1.0
+POST /api/2.4/tenders/a9fa8c33df924d25b648931e89bd8ea8/questions HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 1506
+Content-Length: 1524
 Content-Type: application/json
 Host: api-sandbox.openprocurement.org
 
@@ -12,13 +12,14 @@ Host: api-sandbox.openprocurement.org
         "name": "Сергій Олексюк", 
         "email": "soleksuk@gmail.com"
       }, 
+      "scale": "micro", 
+      "name": "ДКП «Школяр»", 
       "identifier": {
         "scheme": "UA-EDR", 
         "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
         "id": "00137226", 
         "uri": "http://sch10.edu.vn.ua/"
       }, 
-      "name": "ДКП «Школяр»", 
       "address": {
         "countryName": "Україна", 
         "postalCode": "21100", 
@@ -34,8 +35,8 @@ Host: api-sandbox.openprocurement.org
 
 
 201 Created
-Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/f3641d0ba0f042e8b49de06d5c7921af/questions/e2e6900f65434252a75741613fe0703b
+Content-Type: application/json
+Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/a9fa8c33df924d25b648931e89bd8ea8/questions/8056383366354156893656de1da60740
 
 {
   "data": {
@@ -46,13 +47,14 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/f3641d0ba0f042e
         "telephone": "+380 (432) 21-69-30", 
         "name": "Сергій Олексюк"
       }, 
+      "scale": "micro", 
+      "name": "ДКП «Школяр»", 
       "identifier": {
         "scheme": "UA-EDR", 
         "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
         "id": "00137226", 
         "uri": "http://sch10.edu.vn.ua/"
       }, 
-      "name": "ДКП «Школяр»", 
       "address": {
         "postalCode": "21100", 
         "countryName": "Україна", 
@@ -62,8 +64,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/f3641d0ba0f042e
       }
     }, 
     "title": "Калорійність", 
-    "date": "2017-07-25T17:36:56.229819+03:00", 
-    "id": "e2e6900f65434252a75741613fe0703b", 
+    "date": "2019-02-06T06:09:48.996896+02:00", 
+    "id": "8056383366354156893656de1da60740", 
     "questionOf": "tender"
   }
 }

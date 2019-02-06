@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/aa0cd6b584d543848108968ea24a7891?acc_token=ef9c0578dbdd435ab058ee3eef53e1b7 HTTP/1.0
+PATCH /api/2.4/tenders/d93f62e755b94ccbaaf86790df865507?acc_token=6a891e76951f47fe929173f74e9e4168 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 57
 Content-Type: application/json
@@ -14,43 +14,43 @@ DATA:
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "procurementMethod": "open", 
     "complaintPeriod": {
-      "startDate": "2017-06-21T16:02:52.741611+03:00", 
-      "endDate": "2017-07-17T00:00:00+03:00"
+      "startDate": "2019-02-06T06:11:31.430731+02:00", 
+      "endDate": "2019-03-04T00:00:00+02:00"
     }, 
     "enquiryPeriod": {
-      "startDate": "2017-06-21T16:02:52.741611+03:00", 
-      "clarificationsUntil": "2017-07-14T16:03:02.907054+03:00", 
-      "endDate": "2017-07-11T16:03:02.907054+03:00", 
-      "invalidationDate": "2017-06-21T16:02:53.158860+03:00"
+      "startDate": "2019-02-06T06:11:31.430731+02:00", 
+      "clarificationsUntil": "2019-03-01T06:11:41.482468+02:00", 
+      "endDate": "2019-02-26T06:11:41.482468+02:00", 
+      "invalidationDate": "2019-02-06T06:11:31.663012+02:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "next_check": "2017-07-21T16:03:02.907054+03:00", 
+    "next_check": "2019-03-08T06:11:41.482468+02:00", 
     "awardCriteria": "lowestCost", 
     "owner": "broker", 
     "title_en": "Services in school canteens", 
-    "id": "aa0cd6b584d543848108968ea24a7891", 
+    "id": "d93f62e755b94ccbaaf86790df865507", 
     "guarantee": {
       "currency": "USD", 
       "amount": 8.0
     }, 
     "title": "Послуги шкільних їдалень", 
-    "tenderID": "UA-2017-06-21-000001", 
-    "dateModified": "2017-06-21T16:02:53.162355+03:00", 
+    "tenderID": "UA-2019-02-06-000001", 
+    "dateModified": "2019-02-06T06:11:31.664803+02:00", 
     "status": "active.tendering", 
     "tenderPeriod": {
-      "startDate": "2017-06-21T16:02:52.741611+03:00", 
-      "endDate": "2017-07-21T16:03:02.907054+03:00"
+      "startDate": "2019-02-06T06:11:31.430731+02:00", 
+      "endDate": "2019-03-08T06:11:41.482468+02:00"
     }, 
     "auctionPeriod": {
-      "shouldStartAfter": "2017-08-26T00:00:00+03:00"
+      "shouldStartAfter": "2019-04-13T00:00:00+02:00"
     }, 
     "procurementMethodType": "aboveThresholdEU", 
-    "date": "2017-06-21T16:02:52.784188+03:00", 
+    "date": "2019-02-06T06:11:31.449221+02:00", 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35.0, 
@@ -80,10 +80,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-11T16:02:36.221241+03:00", 
-          "endDate": "2017-08-10T16:02:36.221295+03:00"
+          "startDate": "2019-02-26T06:11:23.713218+02:00", 
+          "endDate": "2019-03-28T06:11:23.713246+02:00"
         }, 
-        "id": "bb438534444d47eea7b1bd2fe84e58fb", 
+        "id": "518ac62cbf534b5b975dc50432805280", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -113,10 +113,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-11T16:02:36.221327+03:00", 
-          "endDate": "2017-08-10T16:02:36.221351+03:00"
+          "startDate": "2019-02-26T06:11:23.713256+02:00", 
+          "endDate": "2019-03-28T06:11:23.713263+02:00"
         }, 
-        "id": "962bd32f921c4e8a8335c59a3e6f0fd6", 
+        "id": "27ea1f28dac04f2cb470cd69a552e378", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"

@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/97dd0ca9a0f741a6ad5628c6873d1de9/awards/62e97a4e15234f899c0ecc9c56860603?acc_token=4da34917776743398aa0bb0b7a639d70 HTTP/1.0
+PATCH /api/2.4/tenders/6ade0a2779c442fb8ebc0f7e8867eec0/awards/73c8d495fc6b4cc5ba3fec2b8b58ed19?acc_token=22a7b09d21b84b238536e554aa279dd4 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 67
 Content-Type: application/json
@@ -13,7 +13,7 @@ DATA:
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "active", 
@@ -25,12 +25,13 @@ Content-Type: application/json; charset=UTF-8
           "telephone": "+380 (322) 91-69-30", 
           "name": "Андрій Олексюк"
         }, 
+        "scale": "micro", 
+        "name": "ДКП «Книга»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137226", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "ДКП «Книга»", 
         "address": {
           "postalCode": "79013", 
           "countryName": "Україна", 
@@ -41,18 +42,18 @@ Content-Type: application/json; charset=UTF-8
       }
     ], 
     "complaintPeriod": {
-      "startDate": "2017-06-21T15:53:22.597972+03:00", 
-      "endDate": "2017-07-02T00:00:00+03:00"
+      "startDate": "2019-02-06T06:11:49.959781+02:00", 
+      "endDate": "2019-02-17T00:00:00+02:00"
     }, 
-    "bid_id": "52419358b91442179b33c01e2a6f908d", 
+    "bid_id": "08316380bced4549989b2b158c4b2724", 
     "value": {
       "currency": "UAH", 
       "amount": 499.0, 
       "valueAddedTaxIncluded": true
     }, 
     "qualified": true, 
-    "date": "2017-06-21T15:53:22.785694+03:00", 
-    "id": "62e97a4e15234f899c0ecc9c56860603"
+    "date": "2019-02-06T06:11:50.042815+02:00", 
+    "id": "73c8d495fc6b4cc5ba3fec2b8b58ed19"
   }
 }
 

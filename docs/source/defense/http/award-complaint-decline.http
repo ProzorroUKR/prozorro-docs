@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/7e137f2a666348cc89438625519e4438/awards/3430a774ec1c41f480b2fb9294d2a0f3/complaints/1f5ea244b9dd46cc959b7c8946606b1d HTTP/1.0
+PATCH /api/2.4/tenders/9cd95216cbd74c4c9e268142351d73b7/awards/0281ac2f39d64312bf5e53b9807e5549/complaints/3d022835fb0c4dbbb6441f79a0500fa3 HTTP/1.0
 Authorization: Basic cmV2aWV3ZXI6
 Content-Length: 32
 Content-Type: application/json
@@ -11,11 +11,11 @@ DATA:
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "declined", 
-    "dateDecision": "2017-06-21T16:09:17.633526+03:00", 
+    "dateDecision": "2019-02-06T06:11:55.879405+02:00", 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
     "author": {
       "contactPoint": {
@@ -23,13 +23,14 @@ Content-Type: application/json; charset=UTF-8
         "telephone": "+380 (432) 21-69-30", 
         "name": "Сергій Олексюк"
       }, 
+      "scale": "micro", 
+      "name": "ДКП «Школяр»", 
       "identifier": {
         "scheme": "UA-EDR", 
         "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
         "id": "13313462", 
         "uri": "http://sch10.edu.vn.ua/"
       }, 
-      "name": "ДКП «Школяр»", 
       "address": {
         "postalCode": "21100", 
         "countryName": "Україна", 
@@ -39,13 +40,13 @@ Content-Type: application/json; charset=UTF-8
       }
     }, 
     "acceptance": true, 
-    "dateAccepted": "2017-06-21T16:09:16.440758+03:00", 
-    "dateSubmitted": "2017-06-21T16:09:13.600871+03:00", 
-    "complaintID": "UA-2017-06-21-000001.3", 
-    "date": "2017-06-21T16:09:17.645571+03:00", 
+    "dateAccepted": "2019-02-06T06:11:55.340270+02:00", 
+    "dateSubmitted": "2019-02-06T06:11:54.119148+02:00", 
+    "complaintID": "UA-2019-02-06-000001.3", 
+    "date": "2019-02-06T06:11:55.885084+02:00", 
     "title": "Недостатньо інформації", 
     "type": "complaint", 
-    "id": "1f5ea244b9dd46cc959b7c8946606b1d"
+    "id": "3d022835fb0c4dbbb6441f79a0500fa3"
   }
 }
 

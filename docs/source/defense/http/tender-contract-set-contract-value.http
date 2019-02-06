@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/d3dba9240047439492b162acda141abd/contracts/465353a6aab44e30861bda991f255702?acc_token=4d2022f0685446d6ab06c53b51e10410 HTTP/1.0
+PATCH /api/2.4/tenders/2262b66765a443d99a994aaa48fa9b36/contracts/e505b49ca76d49ebb8661bec238be968?acc_token=4d201ddaac3e4898afb848bd28191241 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 36
 Content-Type: application/json
@@ -13,7 +13,7 @@ DATA:
 }
 
 Response: 200 OK
-Content-Type: application/json; charset=UTF-8
+Content-Type: application/json
 {
   "data": {
     "status": "pending", 
@@ -40,10 +40,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-11T16:09:10.869776+03:00", 
-          "endDate": "2017-08-10T16:09:10.869828+03:00"
+          "startDate": "2019-02-26T06:11:52.563885+02:00", 
+          "endDate": "2019-03-28T06:11:52.563912+02:00"
         }, 
-        "id": "088c06079114432a868884642967dd98", 
+        "id": "280c564f9736451d89d1863b5384df21", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -58,12 +58,13 @@ Content-Type: application/json; charset=UTF-8
           "telephone": "+380 (322) 91-69-30", 
           "name": "Андрій Олексюк"
         }, 
+        "scale": "micro", 
+        "name": "ДКП «Книга»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137226", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "ДКП «Книга»", 
         "address": {
           "postalCode": "79013", 
           "countryName": "Україна", 
@@ -78,9 +79,9 @@ Content-Type: application/json; charset=UTF-8
       "amount": 238.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "awardID": "e3d40093a1cf4f438eb0915fbd77f847", 
-    "id": "465353a6aab44e30861bda991f255702", 
-    "contractID": "UA-2017-06-21-000001-1"
+    "awardID": "2ed6be868b7647b3976e1519d072aeac", 
+    "id": "e505b49ca76d49ebb8661bec238be968", 
+    "contractID": "UA-2019-02-06-000001-1"
   }
 }
 
