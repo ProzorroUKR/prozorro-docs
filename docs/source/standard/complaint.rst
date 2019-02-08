@@ -15,7 +15,7 @@ Schema
     uid, auto-generated
 
 :author:
-    :ref:`Organization`, required
+    :ref:`BusinessOrganization`, required
 
     Organization filing a complaint (contactPoint - person, identification - organization that person represents).
 

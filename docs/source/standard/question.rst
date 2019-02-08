@@ -13,7 +13,7 @@ Schema
     uid, auto-generated
 
 :author:
-    :ref:`Organization`, required
+    :ref:`BusinessOrganization`, required
 
     Who is asking a question (contactPoint - person, identification - organization that person represents).
 

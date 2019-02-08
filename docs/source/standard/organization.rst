@@ -41,19 +41,6 @@ Additionally in :ref:`openeu`:
 :additionalContactPoints:
     List of :ref:`ContactPoint` objects
 
-:scale:
-    string, required
-
-    Possible values are:
-
-    * `micro`
-    * `sme`
-    * `large`
-    * `mid`
-
-    |ocdsDescription|
-    The scale property can be used to indicate the size or scale of a commercial organization.
-
 
 .. index:: Company, id
 
