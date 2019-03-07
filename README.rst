@@ -1,42 +1,27 @@
 Prozorro Documentation for openprocurement.api
 ==============================================
+
 .. image:: https://readthedocs.org/projects/prozorro-api-docs/badge/?version=latest
     :target: https://prozorro-api-docs.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
 
-This docs are also built from http-files after travis runs of the following reps:
-
-openprocurement.api
-
-.. image:: https://travis-ci.org/ProzorroUKR/openprocurement.api.svg?branch=master
-    :target: https://travis-ci.org/ProzorroUKR/openprocurement.api
-openprocurement.tender.openua
-
-.. image:: https://travis-ci.org/ProzorroUKR/openprocurement.tender.openua.svg?branch=master
-    :target: https://travis-ci.org/ProzorroUKR/openprocurement.tender.openua
-openprocurement.tender.openuadefense
-
-.. image:: https://travis-ci.org/ProzorroUKR/openprocurement.tender.openuadefense.svg?branch=master
-    :target: https://travis-ci.org/ProzorroUKR/openprocurement.tender.openuadefense
-openprocurement.tender.openeu
-
-.. image:: https://travis-ci.org/ProzorroUKR/openprocurement.tender.openeu.svg?branch=master
-    :target: https://travis-ci.org/ProzorroUKR/openprocurement.tender.openeu
-openprocurement.tender.limited
-
-.. image:: https://travis-ci.org/ProzorroUKR/openprocurement.tender.limited.svg?branch=master
-    :target: https://travis-ci.org/ProzorroUKR/openprocurement.tender.limited
-openprocurement.contracting.api
-
-.. image:: https://travis-ci.org/ProzorroUKR/openprocurement.contracting.api.svg?branch=master
-    :target: https://travis-ci.org/ProzorroUKR/openprocurement.contracting.api
-
-----------------------------------------------
 
 Install for the docs development::
 
-  ./bootstrap.sh
-  ./bin/buildout
+    1) docker-compose up
+
+    2) wait until the installation ends
+    (all the services run within containers but the all files are shared with host)
+
+    3) docker-compose exec docs bash
+    (Now you can execute any of the commands below)
+
+
+Running tests to update http files::
+
+
+    ./bin/py.test tests  # all
+    ./bin/py.test tests/test_belowthreshold.py -k test_docs_milestones  # specific
 
 Run build::
 
@@ -60,27 +45,3 @@ For translation into *uk* (2 letter ISO language code), you have to follow the s
 
       ../../bin/sphinx-intl build
 
-
--------------------------------------------------
-
-Alternative install (+http-files generation)::
-
-  ./bootstrap.sh
-  ./bin/buildout -c develop.cfg
-
-
-To update http-files::
-
-    1. Checkout sources to your feature-branch
-
-        ./checkout_src.sh feature/my-branch
-
-    2. Run tests
-
-        ./run_docs_tests.sh
-
-    3. Copy files to sources dir
-
-        ./copy_http_files.sh
-
-Each from the steps above can be done manually.

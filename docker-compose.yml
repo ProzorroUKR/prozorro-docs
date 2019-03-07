@@ -1,0 +1,16 @@
+version: '3'
+services:
+
+  docs:
+    build: .
+    depends_on:
+      - couchdb
+    volumes:
+      - .:/app
+    entrypoint: /app/entrypoint.sh
+
+  couchdb:
+    image: "couchdb:1.6"
+    environment:
+      COUCHDB_USER: op
+      COUCHDB_PASSWORD: op
