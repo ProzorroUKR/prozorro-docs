@@ -8,13 +8,11 @@ Prozorro Documentation for openprocurement.api
 
 Install for the docs development::
 
-    1) docker-compose up
+    1) `./bootstrap.sh` install requirements
 
-    2) wait until the installation ends
-    (all the services run within containers but the all files are shared with host)
+    2) add "couchdb" to be resolved to localhost in /etc/hosts
 
-    3) docker-compose exec docs bash
-    (Now you can execute any of the commands below)
+    3) `docker-compose up -d` (to run couchdb if you don't have one)
 
 
 Running tests to update http files::
@@ -25,19 +23,22 @@ Running tests to update http files::
 
 Run build::
 
-    ./bin/sphinxbuilder
+    ./bin/sphinx-build docs/source/ html
+
+    or
+
+    cd docs; make html SPHINXBUILD=../bin/sphinx-build
 
 For translation into *uk* (2 letter ISO language code), you have to follow the scenario:
 
  1. Pull all translatable strings out of documentation::
 
-     cd docs/_build
-     make gettext
+     make gettext  SPHINXBUILD=../bin/sphinx-build
+
 
  2. Update translation with new/changed strings::
 
-     cd ../source
-     ../../bin/sphinx-intl update -p ../_build/locale -l uk
+     ../bin/sphinx-intl update -p build/locale -l uk
 
  3. Update updated/missing strings in `docs/source/locale/<lang>/LC_MESSAGES/*.po` with your-favorite-editor/poedit/transifex/pootle/etc. to have all translations complete/updated.
 
