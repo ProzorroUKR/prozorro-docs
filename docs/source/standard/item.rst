@@ -40,6 +40,13 @@ Schema
     This may also be used to present codes from an internal classification
     scheme.
 
+    Item wich classification.id starts with 336 and contains
+    additionalClassification objects have to contain no more than one
+    additionalClassifications with scheme=INN.
+
+    Item with classification.id=33600000-6 have to contain exactly one
+    additionalClassifications with scheme=INN.
+
     It is mandatory to have at least one item with `ДКПП` as `scheme`.
 
 :unit:
