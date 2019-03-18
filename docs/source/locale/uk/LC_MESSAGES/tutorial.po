@@ -335,17 +335,14 @@ msgid "Qualification comission registers its decision via the following call:"
 msgstr "Кваліфікаційна комісія реєструє своє рішення через такий виклик:"
 
 #: ../../source/tutorial.rst:263
-#, fuzzy
 msgid "Setting contract value"
 msgstr "Встановлення вартості угоди"
 
 #: ../../source/tutorial.rst:265
-#, fuzzy
 msgid "Let's see the created contract with next request:"
 msgstr "Переглянемо список завантажених документів:"
 
 #: ../../source/tutorial.rst:270
-#, fuzzy
 msgid ""
 "By default contract value `amount` and `amountNet` is set based on the "
 "award value `amount`, but there is a possibility to set custom contract "
@@ -357,14 +354,19 @@ msgstr ""
 #: ../../source/tutorial.rst:272
 msgid "You can update `amount` and `amountNet` following next rules:"
 msgstr ""
+"Ви можете встановити нове значення для полів `amount` та `amountNet` "
+"керуючись “\n"
+"“наступними правилами:"
 
 #: ../../source/tutorial.rst:275
 msgid "Value `amountNet` should be less or equal to `amount`"
-msgstr ""
+msgstr "Значення поля `amountNet` має бути <= значення поля `amount`"
 
 #: ../../source/tutorial.rst:278
 msgid "For contract value with `valueAddedTaxIncluded` set to `true`:"
 msgstr ""
+"За умови що для поля `valueAddedTaxIncluded` встановлено значення "
+"`true`:"
 
 #: ../../source/tutorial.rst:282 ../../source/tutorial.rst:292
 msgid "`amount`"
@@ -373,7 +375,7 @@ msgstr ""
 #: ../../source/tutorial.rst:282 ../../source/tutorial.rst:284
 #: ../../source/tutorial.rst:296
 msgid "Should be less or equal to ``award.value.amount``"
-msgstr ""
+msgstr "Встановлене значення поля має бути <= ``award.value.amount``"
 
 #: ../../source/tutorial.rst:284 ../../source/tutorial.rst:296
 msgid "`amountNet`"
@@ -382,22 +384,30 @@ msgstr ""
 #: ../../source/tutorial.rst:286
 msgid "Can be less than ``contract.value.amount`` for 20% max"
 msgstr ""
+"Внесене значення має бути <= ``contract.value.amount``, але не більше "
+"ніж на 20%"
 
 #: ../../source/tutorial.rst:289
 msgid "For contract value with `valueAddedTaxIncluded` set to `false`:"
 msgstr ""
+"За умови що для поля `valueAddedTaxIncluded` встановлено значення "
+"`false`:"
 
 #: ../../source/tutorial.rst:292
 msgid "Should be greater or equal to ``award.value.amount``"
-msgstr ""
+msgstr "Встановлене значення поля має бути >= ``award.value.amount``"
 
 #: ../../source/tutorial.rst:294
 msgid "Can be greater than ``contract.value.amountNet`` for 20% max"
 msgstr ""
+"Внесене значення має бути >= ``contract.value.amountNet``, але не "
+"більше ніж на 20%"
 
 #: ../../source/tutorial.rst:299
 msgid "Let's set contract contract value with next request:"
 msgstr ""
+"Встановимо нові значення для поля `value` використовуючи наступний "
+"запит:"
 
 #: ../../source/tutorial.rst:304
 msgid "`200 OK` response was returned. The value was modified successfully."
