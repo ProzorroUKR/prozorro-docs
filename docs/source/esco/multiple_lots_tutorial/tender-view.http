@@ -1,4 +1,4 @@
-GET /api/2.4/tenders/b204841c7ee844019a1038571b96b55a HTTP/1.0
+GET /api/2.5/tenders/8999a1d343ba4c6b8a32f33256fb9aa5 HTTP/1.0
 Host: api-sandbox.openprocurement.org
 
 Response: 200 OK
@@ -7,17 +7,17 @@ Content-Type: application/json; charset=UTF-8
   "data": {
     "procurementMethod": "open", 
     "complaintPeriod": {
-      "startDate": "2017-10-03T11:18:05.240484+03:00", 
-      "endDate": "2017-10-30T00:00:00+02:00"
+      "startDate": "2019-03-18T16:13:29.822793+02:00", 
+      "endDate": "2019-04-14T00:00:00+03:00"
     }, 
     "enquiryPeriod": {
-      "startDate": "2017-10-03T11:18:05.240484+03:00", 
-      "clarificationsUntil": "2017-10-27T11:17:21.274494+03:00", 
-      "endDate": "2017-10-24T11:17:21.274494+03:00", 
-      "invalidationDate": "2017-10-03T11:18:05.543993+03:00"
+      "startDate": "2019-03-18T16:13:29.822793+02:00", 
+      "clarificationsUntil": "2019-04-11T16:12:04.725903+02:00", 
+      "endDate": "2019-04-08T16:12:04.725903+02:00", 
+      "invalidationDate": "2019-03-18T16:13:30.502059+02:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "next_check": "2017-11-03T10:17:21.274494+02:00", 
+    "next_check": "2019-04-18T17:12:04.725903+03:00", 
     "procuringEntity": {
       "kind": "general", 
       "name": "ЗОСШ #10 м.Вінниці", 
@@ -45,7 +45,7 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "owner": "broker", 
     "title_en": "Services in school canteens", 
-    "id": "b204841c7ee844019a1038571b96b55a", 
+    "id": "8999a1d343ba4c6b8a32f33256fb9aa5", 
     "title": "Послуги шкільних їдалень", 
     "lots": [
       {
@@ -54,7 +54,7 @@ Content-Type: application/json; charset=UTF-8
         "fundingKind": "other", 
         "title": "Лот №1", 
         "auctionPeriod": {
-          "shouldStartAfter": "2017-12-08T11:17:21.274494+03:00"
+          "shouldStartAfter": "2019-05-24T00:00:00+02:00"
         }, 
         "minValue": {
           "currency": "UAH", 
@@ -63,8 +63,8 @@ Content-Type: application/json; charset=UTF-8
         }, 
         "minimalStepPercentage": 0.006, 
         "yearlyPaymentsPercentageRange": 0.8, 
-        "date": "2017-10-03T11:18:05.345041+03:00", 
-        "id": "0b447ad702e64138b2c550dfe583c7f2"
+        "date": "2019-03-18T16:13:30.054523+02:00", 
+        "id": "5b14a30befc1462385a1fe5aaa823e39"
       }, 
       {
         "status": "active", 
@@ -72,7 +72,7 @@ Content-Type: application/json; charset=UTF-8
         "fundingKind": "other", 
         "title": "Лот №2", 
         "auctionPeriod": {
-          "shouldStartAfter": "2017-12-08T11:17:21.274494+03:00"
+          "shouldStartAfter": "2019-05-24T00:00:00+02:00"
         }, 
         "minValue": {
           "currency": "UAH", 
@@ -81,32 +81,31 @@ Content-Type: application/json; charset=UTF-8
         }, 
         "minimalStepPercentage": 0.006, 
         "yearlyPaymentsPercentageRange": 0.8, 
-        "date": "2017-10-03T11:18:05.407838+03:00", 
-        "id": "e550e623efa7415aa6b5954f451af303"
+        "date": "2019-03-18T16:13:30.198753+02:00", 
+        "id": "6d27b81f6f0642469a135f3e154ed51a"
       }
     ], 
-    "tenderID": "UA-2017-10-03-000001", 
+    "tenderID": "UA-2019-03-18-000001", 
     "minimalStepPercentage": 0.006, 
     "yearlyPaymentsPercentageRange": 0.8, 
-    "dateModified": "2017-10-03T11:18:05.548511+03:00", 
+    "dateModified": "2019-03-18T16:13:30.513731+02:00", 
     "status": "active.tendering", 
     "tenderPeriod": {
-      "startDate": "2017-10-03T11:18:05.240484+03:00", 
-      "endDate": "2017-11-03T11:17:21.274494+03:00"
+      "startDate": "2019-03-18T16:13:29.822793+02:00", 
+      "endDate": "2019-04-18T16:12:04.725903+02:00"
     }, 
-    "NBUdiscountRate": 0.22, 
+    "NBUdiscountRate": 0.22986, 
     "procurementMethodType": "esco", 
-    "date": "2017-10-03T11:18:05.273080+03:00", 
+    "date": "2019-03-18T16:13:29.899714+02:00", 
     "minValue": {
       "currency": "UAH", 
       "amount": 0.0, 
       "valueAddedTaxIncluded": true
     }, 
     "fundingKind": "other", 
-    "submissionMethodDetails": "quick(mode:no-auction)", 
     "items": [
       {
-        "relatedLot": "0b447ad702e64138b2c550dfe583c7f2", 
+        "relatedLot": "5b14a30befc1462385a1fe5aaa823e39", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -128,14 +127,14 @@ Content-Type: application/json; charset=UTF-8
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "779582095d6f4c20a9f705b7e55ef02e", 
+        "id": "c4b006c6e5624067accf6391b481e96a", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }
       }, 
       {
-        "relatedLot": "e550e623efa7415aa6b5954f451af303", 
+        "relatedLot": "6d27b81f6f0642469a135f3e154ed51a", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -157,14 +156,14 @@ Content-Type: application/json; charset=UTF-8
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "14abfef3842a4d588cc60098edaefb7d", 
+        "id": "cafd934d9f9843c5b82551e03d9ae85f", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }
       }
     ], 
-    "noticePublicationDate": "2017-10-03T11:18:05.254162+03:00", 
+    "noticePublicationDate": "2019-03-18T16:13:29.854229+02:00", 
     "awardCriteria": "ratedCriteria"
   }
 }

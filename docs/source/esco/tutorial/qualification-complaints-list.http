@@ -1,4 +1,4 @@
-GET /api/2.4/tenders/7a02bad8eb4f4f7fb33fa5ff0f536b4c/qualifications/68a5f98b716f4fa4bf3be70c91d28fd7/complaints HTTP/1.0
+GET /api/2.5/tenders/0ca9713a8a8b4efb9233be1f445fb0d0/qualifications/b9d2f2f7775b4b6a9641dcad0abb8119/complaints HTTP/1.0
 Host: api-sandbox.openprocurement.org
 
 Response: 200 OK
@@ -7,8 +7,8 @@ Content-Type: application/json; charset=UTF-8
   "data": [
     {
       "status": "resolved", 
-      "dateDecision": "2017-10-11T17:20:46.900354+03:00", 
-      "tendererActionDate": "2017-10-11T17:20:47.850564+03:00", 
+      "dateDecision": "2019-03-18T16:13:58.419930+02:00", 
+      "tendererActionDate": "2019-03-18T16:13:58.894098+02:00", 
       "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
       "author": {
         "contactPoint": {
@@ -32,11 +32,11 @@ Content-Type: application/json; charset=UTF-8
         }
       }, 
       "title": "Недостатньо інформації", 
-      "id": "8e04096aa1b248c49fac8357fffe0e2f", 
+      "id": "5eb0d59c32ca4bfab60355a32c232d43", 
       "tendererAction": "Умови виправлено", 
-      "dateSubmitted": "2017-10-11T17:20:39.075599+03:00", 
-      "complaintID": "UA-2017-10-11-000001.1", 
-      "date": "2017-10-11T17:20:47.886716+03:00", 
+      "dateSubmitted": "2019-03-18T16:13:43.951010+02:00", 
+      "complaintID": "UA-2019-03-18-000001.1", 
+      "date": "2019-03-18T16:13:58.910248+02:00", 
       "acceptance": true, 
       "type": "complaint", 
       "documents": [
@@ -45,31 +45,31 @@ Content-Type: application/json; charset=UTF-8
           "author": "complaint_owner", 
           "language": "uk", 
           "title": "Complaint_Attachement.pdf", 
-          "url": "http://public.docs-sandbox.openprocurement.org/get/7b37a9d317b64f6f9db12bcc0d36d1b7?KeyID=ed8fe224&Signature=iOzSNlOXB1ihlKn8iv1Ta95Noc2HwRib4Sd%2FlpNzDOaiCRw9dykOUEDXigkYUZc%252BlWsWee331ZVO767dbTurAQ%253D%253D", 
+          "url": "http://public.docs-sandbox.openprocurement.org/get/ac07cb9ebe8743ee8e39c50e7a58e40c?KeyID=be3ff0fa&Signature=QqDAQ7X9IcajD7bf1YdAKRv8y1my%2FPGdkFZ0KAsGrGVjrcvqkrulC5STlY6nh9Engptld2N%252BM42QJ52aVKqHDQ%253D%253D", 
           "format": "application/pdf", 
           "documentOf": "tender", 
-          "datePublished": "2017-10-11T17:20:38.863853+03:00", 
-          "id": "8a36b28f33324d849d58d61d5f2dac60", 
-          "dateModified": "2017-10-11T17:20:38.863903+03:00"
+          "datePublished": "2019-03-18T16:13:43.115870+02:00", 
+          "id": "782614e358584e8cbd803cf873542a8d", 
+          "dateModified": "2019-03-18T16:13:43.116334+02:00"
         }, 
         {
           "hash": "md5:00000000000000000000000000000000", 
           "author": "aboveThresholdReviewers", 
           "language": "uk", 
           "title": "ComplaintResolution.pdf", 
-          "url": "http://public.docs-sandbox.openprocurement.org/get/637ff4e2a6774114888af07308a9245e?KeyID=ed8fe224&Signature=IsBPekVww%252B2JtuPvNdE8Tq2rq34z5XgCH9HxY3aqA%2FaF0s9WQKkQxFsW%2F9E3x%2FqCGrKMCRdbj9JJ5bw%252B7TvBCg%253D%253D", 
+          "url": "http://public.docs-sandbox.openprocurement.org/get/74758b0d2e01421b8e1ff2acf47affa2?KeyID=be3ff0fa&Signature=pm3gjp4a3Z8CPj7qJiBSrZVIkQEpMk%2FBYjLGAeEwx7%2FzFuh5wdLvayCrO9QARGFKpTrquPJ6bh0Y57E9LjY4Aw%253D%253D", 
           "format": "application/pdf", 
           "documentOf": "tender", 
-          "datePublished": "2017-10-11T17:20:46.585372+03:00", 
-          "id": "b1cfe511ad384ecea1a54efedfc2f369", 
-          "dateModified": "2017-10-11T17:20:46.585407+03:00"
+          "datePublished": "2019-03-18T16:13:58.235240+02:00", 
+          "id": "000966af0e2044829a234ad960273b5f", 
+          "dateModified": "2019-03-18T16:13:58.235262+02:00"
         }
       ], 
-      "dateAccepted": "2017-10-11T17:20:45.403957+03:00"
+      "dateAccepted": "2019-03-18T16:13:57.587027+02:00"
     }, 
     {
       "status": "invalid", 
-      "dateDecision": "2017-10-11T17:20:45.113845+03:00", 
+      "dateDecision": "2019-03-18T16:13:56.847497+02:00", 
       "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
       "author": {
         "contactPoint": {
@@ -93,16 +93,16 @@ Content-Type: application/json; charset=UTF-8
         }
       }, 
       "acceptance": false, 
-      "dateSubmitted": "2017-10-11T17:20:39.464065+03:00", 
-      "complaintID": "UA-2017-10-11-000001.2", 
-      "date": "2017-10-11T17:20:45.147849+03:00", 
+      "dateSubmitted": "2019-03-18T16:13:44.517953+02:00", 
+      "complaintID": "UA-2019-03-18-000001.2", 
+      "date": "2019-03-18T16:13:56.934705+02:00", 
       "title": "Недостатньо інформації", 
       "type": "complaint", 
-      "id": "3069755a8f2d41c2a44bee44852de828"
+      "id": "3b52d0901d2a43429c04e92171382a16"
     }, 
     {
       "status": "declined", 
-      "dateDecision": "2017-10-11T17:20:47.212802+03:00", 
+      "dateDecision": "2019-03-18T16:13:58.571089+02:00", 
       "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
       "author": {
         "contactPoint": {
@@ -126,24 +126,24 @@ Content-Type: application/json; charset=UTF-8
         }
       }, 
       "acceptance": true, 
-      "dateAccepted": "2017-10-11T17:20:45.701571+03:00", 
-      "dateSubmitted": "2017-10-11T17:20:39.675185+03:00", 
-      "complaintID": "UA-2017-10-11-000001.3", 
-      "date": "2017-10-11T17:20:47.248182+03:00", 
+      "dateAccepted": "2019-03-18T16:13:57.794610+02:00", 
+      "dateSubmitted": "2019-03-18T16:13:45.501231+02:00", 
+      "complaintID": "UA-2019-03-18-000001.3", 
+      "date": "2019-03-18T16:13:58.586922+02:00", 
       "title": "Недостатньо інформації", 
       "type": "complaint", 
-      "id": "89d12c298ab2423f8d703663569c460c"
+      "id": "3cc7804242264272b0619d9bce422caf"
     }, 
     {
       "status": "stopped", 
-      "dateDecision": "2017-10-11T17:20:48.488202+03:00", 
+      "dateDecision": "2019-03-18T16:13:59.203709+02:00", 
       "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
       "title": "Недостатньо інформації", 
       "decision": "Тендер скасовується замовником", 
       "acceptance": true, 
       "cancellationReason": "Тендер скасовується замовником", 
-      "dateCanceled": "2017-10-11T17:20:48.166686+03:00", 
-      "dateAccepted": "2017-10-11T17:20:45.993733+03:00", 
+      "dateCanceled": "2019-03-18T16:13:59.050626+02:00", 
+      "dateAccepted": "2019-03-18T16:13:57.942753+02:00", 
       "author": {
         "contactPoint": {
           "email": "soleksuk@gmail.com", 
@@ -165,21 +165,21 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Вінниця"
         }
       }, 
-      "dateSubmitted": "2017-10-11T17:20:39.892675+03:00", 
-      "complaintID": "UA-2017-10-11-000001.4", 
-      "date": "2017-10-11T17:20:48.523947+03:00", 
+      "dateSubmitted": "2019-03-18T16:13:46.244284+02:00", 
+      "complaintID": "UA-2019-03-18-000001.4", 
+      "date": "2019-03-18T16:13:59.220494+02:00", 
       "type": "complaint", 
-      "id": "7055dda839e14991a8a552e14dbea1a5"
+      "id": "491ee42cb3d6483c94cf34f62414e6e7"
     }, 
     {
       "status": "stopped", 
-      "dateDecision": "2017-10-11T17:20:47.526727+03:00", 
+      "dateDecision": "2019-03-18T16:13:58.733330+02:00", 
       "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
       "title": "Недостатньо інформації", 
       "decision": "Тендер скасовується замовником", 
       "acceptance": true, 
-      "dateCanceled": "2017-10-11T17:20:47.526761+03:00", 
-      "dateAccepted": "2017-10-11T17:20:46.287876+03:00", 
+      "dateCanceled": "2019-03-18T16:13:58.733358+02:00", 
+      "dateAccepted": "2019-03-18T16:13:58.093382+02:00", 
       "author": {
         "contactPoint": {
           "email": "soleksuk@gmail.com", 
@@ -201,11 +201,11 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Вінниця"
         }
       }, 
-      "dateSubmitted": "2017-10-11T17:20:40.131221+03:00", 
-      "complaintID": "UA-2017-10-11-000001.5", 
-      "date": "2017-10-11T17:20:47.562733+03:00", 
+      "dateSubmitted": "2019-03-18T16:13:47.376813+02:00", 
+      "complaintID": "UA-2019-03-18-000001.5", 
+      "date": "2019-03-18T16:13:58.749756+02:00", 
       "type": "complaint", 
-      "id": "1df412392527488ebfef89f1b267a5dd"
+      "id": "5550d2566ac14f38a8d7e87dbf8f55ad"
     }, 
     {
       "status": "answered", 
@@ -214,13 +214,13 @@ Content-Type: application/json; charset=UTF-8
       "resolutionType": "resolved", 
       "type": "claim", 
       "satisfied": true, 
-      "bid_id": "196fa18058da455f96e7b27e5a9bfd72", 
-      "dateAnswered": "2017-10-11T17:20:40.647674+03:00", 
-      "dateSubmitted": "2017-10-11T17:20:40.369964+03:00", 
-      "complaintID": "UA-2017-10-11-000001.6", 
-      "date": "2017-10-11T17:20:40.682455+03:00", 
+      "bid_id": "e7527052d38547768fb5655afc78b27b", 
+      "dateAnswered": "2019-03-18T16:13:49.855745+02:00", 
+      "dateSubmitted": "2019-03-18T16:13:48.703840+02:00", 
+      "complaintID": "UA-2019-03-18-000001.6", 
+      "date": "2019-03-18T16:13:50.006658+02:00", 
       "resolution": "Умови виправлено, вибір переможня буде розгянуто повторно", 
-      "id": "732cfde262584514b266e067ce2af1a2"
+      "id": "90bd460788074630a897ac7812e7fad8"
     }, 
     {
       "status": "answered", 
@@ -229,36 +229,36 @@ Content-Type: application/json; charset=UTF-8
       "resolutionType": "invalid", 
       "type": "claim", 
       "satisfied": false, 
-      "bid_id": "196fa18058da455f96e7b27e5a9bfd72", 
-      "dateAnswered": "2017-10-11T17:20:41.595209+03:00", 
-      "dateSubmitted": "2017-10-11T17:20:41.254212+03:00", 
-      "complaintID": "UA-2017-10-11-000001.7", 
-      "date": "2017-10-11T17:20:41.640764+03:00", 
+      "bid_id": "e7527052d38547768fb5655afc78b27b", 
+      "dateAnswered": "2019-03-18T16:13:52.699195+02:00", 
+      "dateSubmitted": "2019-03-18T16:13:51.942415+02:00", 
+      "complaintID": "UA-2019-03-18-000001.7", 
+      "date": "2019-03-18T16:13:52.827880+02:00", 
       "resolution": "Вимога не відповідає предмету закупівлі", 
-      "id": "9bf4ba960f534c67b1493d7fa3e8fbbb"
+      "id": "deb81bbcfba54eb7944e4f2ad2b137c3"
     }, 
     {
       "status": "claim", 
       "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
       "title": "Недостатньо інформації", 
-      "bid_id": "196fa18058da455f96e7b27e5a9bfd72", 
-      "dateSubmitted": "2017-10-11T17:20:42.557651+03:00", 
-      "complaintID": "UA-2017-10-11-000001.8", 
-      "date": "2017-10-11T17:20:42.592509+03:00", 
+      "bid_id": "e7527052d38547768fb5655afc78b27b", 
+      "dateSubmitted": "2019-03-18T16:13:54.805202+02:00", 
+      "complaintID": "UA-2019-03-18-000001.8", 
+      "date": "2019-03-18T16:13:54.866241+02:00", 
       "type": "claim", 
-      "id": "321a20f3c1664d3ab8f2a9fc45d4de5d"
+      "id": "e9c904c083f7417ebd1c087a4a6742d0"
     }, 
     {
       "status": "cancelled", 
       "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
       "title": "Недостатньо інформації", 
-      "bid_id": "196fa18058da455f96e7b27e5a9bfd72", 
+      "bid_id": "e7527052d38547768fb5655afc78b27b", 
       "cancellationReason": "Умови виправлено", 
-      "dateCanceled": "2017-10-11T17:20:44.385432+03:00", 
-      "complaintID": "UA-2017-10-11-000001.9", 
-      "date": "2017-10-11T17:20:44.420650+03:00", 
+      "dateCanceled": "2019-03-18T16:13:56.216184+02:00", 
+      "complaintID": "UA-2019-03-18-000001.9", 
+      "date": "2019-03-18T16:13:56.262867+02:00", 
       "type": "claim", 
-      "id": "d269913ce4a849b881f86b2ee6177e72"
+      "id": "3a4473650ade4d97aa45fac9d6a34688"
     }
   ]
 }
