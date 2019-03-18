@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/92ad8804586d4edbb98cdb5c7c79412f/contracts/2565e20d778242a0a9d27fdab2a68bb5?acc_token=415d188e59964730bee17aae7ed1f7ab HTTP/1.0
+PATCH /api/2.5/tenders/7ae73430bdc6461fbba58d7acfc04599/contracts/711b7ff3f02a44acbbb20bc619b87449?acc_token=b2324bfe62894781a05b58070c3634ac HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 118
 Content-Type: application/json
@@ -7,8 +7,8 @@ DATA:
 {
   "data": {
     "period": {
-      "startDate": "2017-06-21T17:05:38.597334+03:00", 
-      "endDate": "2018-06-21T17:05:38.597385+03:00"
+      "startDate": "2019-03-18T16:28:13.658935+02:00", 
+      "endDate": "2020-03-17T16:28:13.658978+02:00"
     }
   }
 }
@@ -41,15 +41,15 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-11T17:04:37.419004+03:00", 
-          "endDate": "2017-07-21T17:05:46.028866+03:00"
+          "startDate": "2019-04-07T16:25:23.281504+02:00", 
+          "endDate": "2019-04-17T16:28:17.738020+02:00"
         }, 
-        "id": "770e64d0f1ee48d2b468359361f14862", 
+        "id": "d6658ab689d24b40959208c96a062957", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
-        "quantity": 1
+        "quantity": 1.0
       }
     ], 
     "suppliers": [
@@ -75,18 +75,20 @@ Content-Type: application/json; charset=UTF-8
       }
     ], 
     "period": {
-      "startDate": "2017-06-21T17:05:38.597334+03:00", 
-      "endDate": "2018-06-21T17:05:38.597385+03:00"
+      "startDate": "2019-03-18T16:28:13.658935+02:00", 
+      "endDate": "2020-03-17T16:28:13.658978+02:00"
     }, 
     "value": {
       "currency": "UAH", 
       "amount": 238.0, 
+      "amountNet": 230.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "dateSigned": "2017-06-21T17:05:38.421602+03:00", 
-    "awardID": "2e46b74286c04dd6bb8625c2b6d2b39a", 
-    "id": "2565e20d778242a0a9d27fdab2a68bb5", 
-    "contractID": "UA-2017-06-21-000001-1"
+    "dateSigned": "2019-03-18T16:28:13.249370+02:00", 
+    "date": "2019-03-18T16:28:12.482284+02:00", 
+    "awardID": "cfba7af61823425d8b47dc1e94e725f2", 
+    "id": "711b7ff3f02a44acbbb20bc619b87449", 
+    "contractID": "UA-2019-03-18-000001-1"
   }
 }
 

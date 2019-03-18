@@ -1,4 +1,4 @@
-GET /api/2.3/tenders/92ad8804586d4edbb98cdb5c7c79412f HTTP/1.0
+GET /api/2.5/tenders/7ae73430bdc6461fbba58d7acfc04599 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: api-sandbox.openprocurement.org
 
@@ -9,18 +9,18 @@ Content-Type: application/json; charset=UTF-8
     "procurementMethod": "selective", 
     "status": "active.auction", 
     "complaintPeriod": {
-      "startDate": "2017-06-05T17:04:37.384821+03:00", 
-      "endDate": "2017-06-17T00:00:00+03:00"
+      "startDate": "2019-03-02T16:25:23.178144+02:00", 
+      "endDate": "2019-03-14T00:00:00+02:00"
     }, 
-    "auctionUrl": "http://auction-sandbox.openprocurement.org/tenders/92ad8804586d4edbb98cdb5c7c79412f", 
+    "auctionUrl": "http://auction-sandbox.openprocurement.org/tenders/7ae73430bdc6461fbba58d7acfc04599", 
     "enquiryPeriod": {
-      "startDate": "2017-06-05T17:04:37.384821+03:00", 
-      "clarificationsUntil": "2017-06-15T00:00:00+03:00", 
-      "endDate": "2017-06-11T17:04:37.384821+03:00", 
-      "invalidationDate": "2017-06-21T17:05:36.873254+03:00"
+      "startDate": "2019-03-02T16:25:23.178144+02:00", 
+      "clarificationsUntil": "2019-03-14T00:00:00+02:00", 
+      "endDate": "2019-03-08T16:25:23.178144+02:00", 
+      "invalidationDate": "2019-03-18T16:28:10.217405+02:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "next_check": "2017-06-21T17:40:37.384821+03:00", 
+    "next_check": "2019-03-18T17:01:23.178144+02:00", 
     "procuringEntity": {
       "contactPoint": {
         "url": "http://sch10.edu.vn.ua/", 
@@ -45,46 +45,49 @@ Content-Type: application/json; charset=UTF-8
     "questions": [
       {
         "description": "Просимо додати таблицю потрібної калорійності харчування", 
-        "dateAnswered": "2017-06-21T17:05:35.875664+03:00", 
+        "dateAnswered": "2019-03-18T16:28:07.243680+02:00", 
         "title": "Калорійність", 
-        "date": "2017-06-21T17:05:35.787600+03:00", 
+        "date": "2019-03-18T16:28:07.009723+02:00", 
         "answer": "Таблицю додано в файлі \"Kalorijnist.xslx\"", 
-        "id": "84585ae05ec44e988d3679413daca74c", 
+        "id": "028577f481dd44749b848544b740d85b", 
         "questionOf": "tender"
       }
     ], 
     "owner": "broker", 
-    "id": "92ad8804586d4edbb98cdb5c7c79412f", 
+    "id": "7ae73430bdc6461fbba58d7acfc04599", 
     "documents": [
       {
         "hash": "md5:00000000000000000000000000000000", 
+        "author": "tender_owner", 
         "title": "Notice.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/bcad7e91e01b47fc8a5706ab1b0486d8?KeyID=1b00d854&Signature=6yuqaSqnxCZj6t7BFRX%252BUNrOdmqWTSOGv4kljNuDGbZheM0LCK%252BKtblL1SwFUj%2Fi7P9p8osXbWmGNL8mksNzBw%253D%253D", 
+        "url": "http://public.docs-sandbox.openprocurement.org/get/d8ef13c0cd2e4d94b920a6f02a794b82?KeyID=649bd9e2&Signature=sN7SurpPRkom8YzdtPnAdCjzU23WaB%252BOvA5ZbL2NEPQfkcNeCDdOnVbp%252Bo1rnQhvF4aPpUCn189ClWPWCwa8Bw%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T17:05:35.461094+03:00", 
-        "id": "6d8849370f384999963d9182911d9313", 
-        "dateModified": "2017-06-21T17:05:35.461127+03:00"
+        "datePublished": "2019-03-18T16:28:06.194829+02:00", 
+        "id": "de0b481f798e4093903b7de007e6c9a7", 
+        "dateModified": "2019-03-18T16:28:06.194852+02:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
+        "author": "tender_owner", 
         "title": "AwardCriteria.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/731c49a1d81f43299abc2cabdd4e970c?KeyID=1b00d854&Signature=gCItXqKPoAbTJeE%2F0uR9tAzH8PKFFjids72nj5ePSiqnihT4FfrpTFnF1AHbJoG1olbxfdxUHlyZ3BMitaVrBQ%253D%253D", 
+        "url": "http://public.docs-sandbox.openprocurement.org/get/b1134d2179f64376a0bf69240c2a52f6?KeyID=649bd9e2&Signature=OsGWjcN3iFOVuATS%2F%2F4R5ly%2FYA49USzHvjNSXWcJQHeYNQDGtw7Nl1Tda9dXzWZEJ%252BpUbTjv3tLQ3W82gAH5Bg%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T17:05:35.549749+03:00", 
-        "id": "1c08a9569f2a4c40bcb74b28b648049a", 
-        "dateModified": "2017-06-21T17:05:35.549783+03:00"
+        "datePublished": "2019-03-18T16:28:06.394272+02:00", 
+        "id": "00356de29a624a66bc9505145b22431f", 
+        "dateModified": "2019-03-18T16:28:06.394299+02:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
+        "author": "tender_owner", 
         "title": "AwardCriteria-2.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/03d63cb7f7dc40418fc0754cda8d479c?KeyID=1b00d854&Signature=UL6VbRD6aqWZP8lS54wxuj%2Fl91FUGA8nt%252B6zslODMA4lK%2FXR93s5YSicIf6%252BYtnMaLxCYf9ZhtRND%2FPIeGHeCQ%253D%253D", 
+        "url": "http://public.docs-sandbox.openprocurement.org/get/bdb0cda22f98448aa58585677fe9cf7b?KeyID=649bd9e2&Signature=f2ccaxG1utF0dW1UZMgFe8CJmWuTAwq35F20g9qVoNXefTeh7nlXjnUgtSH%252BLlXP2gUjF3b%2FBMs%2FeJ2OPH0WBw%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T17:05:35.549749+03:00", 
-        "id": "1c08a9569f2a4c40bcb74b28b648049a", 
-        "dateModified": "2017-06-21T17:05:35.645217+03:00"
+        "datePublished": "2019-03-18T16:28:06.394272+02:00", 
+        "id": "00356de29a624a66bc9505145b22431f", 
+        "dateModified": "2019-03-18T16:28:06.597233+02:00"
       }
     ], 
     "title": "футляри до державних нагород", 
@@ -114,19 +117,19 @@ Content-Type: application/json; charset=UTF-8
         "name": "«Кенгуру»"
       }
     ], 
-    "tenderID": "UA-2017-06-21-000001", 
-    "dateModified": "2017-06-21T17:05:37.476786+03:00", 
+    "tenderID": "UA-2019-03-18-000001", 
+    "dateModified": "2019-03-18T16:28:11.473492+02:00", 
     "numberOfBids": 2, 
     "tenderPeriod": {
-      "startDate": "2017-06-05T17:04:37.384821+03:00", 
-      "endDate": "2017-06-21T17:04:37.384821+03:00"
+      "startDate": "2019-03-02T16:25:23.178144+02:00", 
+      "endDate": "2019-03-18T16:25:23.178144+02:00"
     }, 
     "auctionPeriod": {
-      "startDate": "2017-06-21T17:04:37.384821+03:00", 
-      "shouldStartAfter": "2017-06-22T00:00:00+03:00"
+      "startDate": "2019-03-18T16:25:23.178144+02:00", 
+      "shouldStartAfter": "2019-03-19T00:00:00+02:00"
     }, 
     "procurementMethodType": "competitiveDialogueUA.stage2", 
-    "date": "2017-06-21T17:05:35.349169+03:00", 
+    "date": "2019-03-18T16:28:06.072275+02:00", 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35.0, 
@@ -155,15 +158,15 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-11T17:04:37.419004+03:00", 
-          "endDate": "2017-07-21T17:05:46.028866+03:00"
+          "startDate": "2019-04-07T16:25:23.281504+02:00", 
+          "endDate": "2019-04-17T16:28:17.738020+02:00"
         }, 
-        "id": "770e64d0f1ee48d2b468359361f14862", 
+        "id": "d6658ab689d24b40959208c96a062957", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
-        "quantity": 1
+        "quantity": 1.0
       }
     ], 
     "value": {

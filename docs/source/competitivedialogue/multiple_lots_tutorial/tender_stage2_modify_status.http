@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/b2f65ddea9624e6dad58e88f99c61bb6?acc_token=19b7a8b14e4c4edc90fbe0bc4c73d5ce HTTP/1.0
+PATCH /api/2.5/tenders/184103734dab411bb82825f6d09bd241?acc_token=be0988edbb994fa288dcaea8f7e20870 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 40
 Content-Type: application/json
@@ -16,20 +16,20 @@ Content-Type: application/json; charset=UTF-8
   "data": {
     "procurementMethod": "selective", 
     "complaintPeriod": {
-      "startDate": "2017-06-21T17:05:03.984241+03:00", 
-      "endDate": "2017-07-17T00:00:00+03:00"
+      "startDate": "2019-03-18T16:26:22.724393+02:00", 
+      "endDate": "2019-04-13T00:00:00+03:00"
     }, 
     "enquiryPeriod": {
-      "startDate": "2017-06-21T17:05:03.984241+03:00", 
-      "clarificationsUntil": "2017-07-14T17:05:03.984241+03:00", 
-      "endDate": "2017-07-11T17:05:03.984241+03:00", 
-      "invalidationDate": "2017-06-21T17:05:04.495221+03:00"
+      "startDate": "2019-03-18T16:26:22.724393+02:00", 
+      "clarificationsUntil": "2019-04-11T00:00:00+02:00", 
+      "endDate": "2019-04-07T16:26:22.724393+02:00", 
+      "invalidationDate": "2019-03-18T16:26:24.127978+02:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "next_check": "2017-07-21T17:05:03.984241+03:00", 
+    "next_check": "2019-04-17T17:26:22.724393+03:00", 
     "awardCriteria": "lowestCost", 
     "owner": "broker", 
-    "id": "b2f65ddea9624e6dad58e88f99c61bb6", 
+    "id": "184103734dab411bb82825f6d09bd241", 
     "title": "Послуги шкільних їдалень", 
     "lots": [
       {
@@ -42,15 +42,15 @@ Content-Type: application/json; charset=UTF-8
           "valueAddedTaxIncluded": true
         }, 
         "auctionPeriod": {
-          "shouldStartAfter": "2017-08-26T00:00:00+03:00"
+          "shouldStartAfter": "2019-05-23T00:00:00+02:00"
         }, 
         "value": {
           "currency": "UAH", 
           "amount": 500.0, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2017-06-21T17:05:04.494845+03:00", 
-        "id": "064dcd27e2cd4789a5b57519ad77c250"
+        "date": "2019-03-18T16:26:24.127616+02:00", 
+        "id": "e0b3133acf604b108de4823789caca6e"
       }, 
       {
         "status": "active", 
@@ -62,22 +62,22 @@ Content-Type: application/json; charset=UTF-8
           "valueAddedTaxIncluded": true
         }, 
         "auctionPeriod": {
-          "shouldStartAfter": "2017-08-26T00:00:00+03:00"
+          "shouldStartAfter": "2019-05-23T00:00:00+02:00"
         }, 
         "value": {
           "currency": "UAH", 
           "amount": 400.0, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2017-06-21T17:05:04.494845+03:00", 
-        "id": "6868e864385a42c0a731970504b26a8f"
+        "date": "2019-03-18T16:26:24.127616+02:00", 
+        "id": "60821104ce234bb8ae3295cfd87e2aee"
       }
     ], 
     "shortlistedFirms": [
       {
         "lots": [
           {
-            "id": "064dcd27e2cd4789a5b57519ad77c250"
+            "id": "e0b3133acf604b108de4823789caca6e"
           }
         ], 
         "identifier": {
@@ -90,10 +90,10 @@ Content-Type: application/json; charset=UTF-8
       {
         "lots": [
           {
-            "id": "064dcd27e2cd4789a5b57519ad77c250"
+            "id": "e0b3133acf604b108de4823789caca6e"
           }, 
           {
-            "id": "6868e864385a42c0a731970504b26a8f"
+            "id": "60821104ce234bb8ae3295cfd87e2aee"
           }
         ], 
         "identifier": {
@@ -106,10 +106,10 @@ Content-Type: application/json; charset=UTF-8
       {
         "lots": [
           {
-            "id": "064dcd27e2cd4789a5b57519ad77c250"
+            "id": "e0b3133acf604b108de4823789caca6e"
           }, 
           {
-            "id": "6868e864385a42c0a731970504b26a8f"
+            "id": "60821104ce234bb8ae3295cfd87e2aee"
           }
         ], 
         "identifier": {
@@ -120,16 +120,16 @@ Content-Type: application/json; charset=UTF-8
         "name": "«Кенгуру»"
       }
     ], 
-    "tenderID": "UA-2017-06-21-000002", 
-    "dateModified": "2017-06-21T17:05:04.501370+03:00", 
+    "tenderID": "UA-2019-03-18-000002", 
+    "dateModified": "2019-03-18T16:26:24.155759+02:00", 
     "status": "active.tendering", 
     "tenderPeriod": {
-      "startDate": "2017-06-21T17:05:03.984241+03:00", 
-      "endDate": "2017-07-21T17:05:03.984241+03:00"
+      "startDate": "2019-03-18T16:26:22.724393+02:00", 
+      "endDate": "2019-04-17T16:26:22.724393+02:00"
     }, 
     "title_en": "Services in school canteens", 
     "procurementMethodType": "competitiveDialogueEU.stage2", 
-    "date": "2017-06-21T17:05:04.494845+03:00", 
+    "date": "2019-03-18T16:26:24.127616+02:00", 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35.0, 
@@ -137,7 +137,7 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "items": [
       {
-        "relatedLot": "064dcd27e2cd4789a5b57519ad77c250", 
+        "relatedLot": "e0b3133acf604b108de4823789caca6e", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -160,18 +160,18 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-11T17:04:37.418546+03:00", 
-          "endDate": "2017-08-10T17:04:37.418606+03:00"
+          "startDate": "2019-04-07T16:25:23.279560+02:00", 
+          "endDate": "2019-05-07T16:25:23.279783+02:00"
         }, 
-        "id": "86e73d6393ce4d299ec22102839d5a57", 
+        "id": "135b27e1cc984d29a59dd36c9c01817d", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
-        "quantity": 1
+        "quantity": 1.0
       }, 
       {
-        "relatedLot": "6868e864385a42c0a731970504b26a8f", 
+        "relatedLot": "60821104ce234bb8ae3295cfd87e2aee", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -194,15 +194,15 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-11T17:04:37.418636+03:00", 
-          "endDate": "2017-08-10T17:04:37.418662+03:00"
+          "startDate": "2019-04-07T16:25:23.279854+02:00", 
+          "endDate": "2019-05-07T16:25:23.279919+02:00"
         }, 
-        "id": "c42ed791c4ec450686660281c2a263ce", 
+        "id": "18ddb94db5164c01be749aa960dca6fa", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
-        "quantity": 1
+        "quantity": 1.0
       }
     ], 
     "value": {
