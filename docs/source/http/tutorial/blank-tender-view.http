@@ -1,4 +1,4 @@
-GET /api/2.3/tenders/f3641d0ba0f042e8b49de06d5c7921af HTTP/1.0
+GET /api/2.5/tenders/c144d0002ce84223b070a0f3dd0e4b96 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: api-sandbox.openprocurement.org
 
@@ -12,8 +12,8 @@ Content-Type: application/json; charset=UTF-8
     "status": "active.enquiries", 
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
-      "startDate": "2017-08-01T17:36:49.306344+03:00", 
-      "endDate": "2017-08-08T17:36:49.306344+03:00"
+      "startDate": "2019-03-25T09:26:15.267842+02:00", 
+      "endDate": "2019-04-01T09:26:15.267842+03:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -44,15 +44,47 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-27T17:36:49.306344+03:00", 
-          "endDate": "2017-07-30T17:36:49.306344+03:00"
+          "startDate": "2019-03-20T09:26:15.267842+02:00", 
+          "endDate": "2019-03-23T09:26:15.267842+02:00"
         }, 
-        "id": "4ee2b0431a064e0eb155eeb650bdfdd0", 
+        "id": "0a8503018b1d477a953f6c0666dc66dc", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
-        "quantity": 5
+        "quantity": 5.0
+      }, 
+      {
+        "description": "футляри до державних нагород", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Cartons", 
+          "id": "44617100-9"
+        }, 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "папір і картон гофровані, паперова й картонна тара"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "deliveryDate": {
+          "startDate": "2019-03-20T09:26:15.267842+02:00", 
+          "endDate": "2019-03-23T09:26:15.267842+02:00"
+        }, 
+        "id": "57ab505c29004d7797c055e405f774a7", 
+        "unit": {
+          "code": "44617100-9", 
+          "name": "item"
+        }, 
+        "quantity": 5.0
       }
     ], 
     "procurementMethodType": "belowThreshold", 
@@ -62,8 +94,8 @@ Content-Type: application/json; charset=UTF-8
       "valueAddedTaxIncluded": true
     }, 
     "submissionMethod": "electronicAuction", 
-    "date": "2017-07-25T17:36:55.659566+03:00", 
-    "next_check": "2017-08-01T17:36:49.306344+03:00", 
+    "date": "2019-03-18T09:26:26.125997+02:00", 
+    "next_check": "2019-03-25T09:26:15.267842+02:00", 
     "procuringEntity": {
       "contactPoint": {
         "name": "Державне управління справами", 
@@ -85,13 +117,13 @@ Content-Type: application/json; charset=UTF-8
       }
     }, 
     "enquiryPeriod": {
-      "startDate": "2017-07-25T17:36:55.659520+03:00", 
-      "endDate": "2017-08-01T17:36:49.306344+03:00"
+      "startDate": "2019-03-18T09:26:26.125946+02:00", 
+      "endDate": "2019-03-25T09:26:15.267842+02:00"
     }, 
     "owner": "broker", 
-    "dateModified": "2017-07-25T17:36:55.662421+03:00", 
-    "id": "f3641d0ba0f042e8b49de06d5c7921af", 
-    "tenderID": "UA-2017-07-25-000001"
+    "dateModified": "2019-03-18T09:26:26.128696+02:00", 
+    "id": "c144d0002ce84223b070a0f3dd0e4b96", 
+    "tenderID": "UA-2019-03-18-000001"
   }
 }
 

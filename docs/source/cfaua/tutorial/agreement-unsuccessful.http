@@ -1,4 +1,4 @@
-PATCH /api/2.4/tenders/4e095f899aea431dade658804787b2aa/agreements/c86d058766c04c53821802d789ddd3a4?acc_token=8a38796ad4814abcaf75da2c44b5c6cc HTTP/1.0
+PATCH /api/2.5/tenders/a27a2edadf6a442eb7f17020c7d789fd/agreements/ab2aaef988ce4ddea2bc472e2f27f9d4?acc_token=21b8da1c2cfe46e0b009093843400d60 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 36
 Content-Type: application/json
@@ -14,31 +14,31 @@ Response: 200 OK
 Content-Type: application/json; charset=UTF-8
 {
   "data": {
-    "agreementID": "UA-2018-11-30-000001-72cd206bf9c94dacb4da8c1447d1f6a21", 
+    "agreementID": "UA-2019-03-18-000001-df5b7964425c450c9184757dfcec18a11", 
     "status": "unsuccessful", 
     "documents": [
       {
         "hash": "md5:00000000000000000000000000000000", 
         "title": "agreement_first_document.doc", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/ecb2b0698801488c9ad12df99df8aa95?KeyID=29d4a5c6&Signature=vUm65SYKKw8ANaYPtpVonrOnm%2Fh9D2gLIyM2s4uy6W11UuyjgXmvL2ltqcnSPcPD0lJWleOrKdgt7JvU%252BLjvBw%253D%253D", 
+        "url": "http://public.docs-sandbox.openprocurement.org/get/5999b2b1c70f43588b0e786b33e41125?KeyID=a4ab2441&Signature=5oCu2atSsWuR5Rbu%2FxQFG3QntDdU1AAaBnXuXWmUQJb6UjrS6SNHlmammtAijMFNSaYioXKWLu7qmkiciKn5Aw%253D%253D", 
         "format": "application/msword", 
         "documentOf": "tender", 
-        "datePublished": "2018-11-30T16:38:32.778275+02:00", 
-        "id": "64164304ad9f4d7187b9559022af9443", 
-        "dateModified": "2018-11-30T16:38:32.778316+02:00"
+        "datePublished": "2019-03-18T09:27:03.474385+02:00", 
+        "id": "752300fd24d340059e9d0fda263a9051", 
+        "dateModified": "2019-03-18T09:27:03.474400+02:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
         "language": "en", 
         "title": "agreement_second_document.doc", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/ae98a587fc1743708a9cae01d9ca376e?KeyID=29d4a5c6&Signature=ajAEYVbhgeDzsD6NaxvL1sgLAOkh%252BB3JPYMkgttupObkPXY3SxMvo3UW1dN8Z3WxuJ1ohH8pwozbp%252BpliWBIBQ%253D%253D", 
+        "url": "http://public.docs-sandbox.openprocurement.org/get/3ab610c7f8cf4c72bfdb024529a88bdd?KeyID=a4ab2441&Signature=nmsSEOMKhzx6gy385RhQJreOM0%252BiGc1IKz0MDh0axZ2ff0lfEhNN1TqU6FdvtoBau7idZPsPx6nL41rjJlW%252BCg%253D%253D", 
         "format": "application/msword", 
         "title_en": "Title of Document", 
         "description_en": "Description of Document", 
-        "datePublished": "2018-11-30T16:38:33.141958+02:00", 
+        "datePublished": "2019-03-18T09:27:03.787809+02:00", 
         "documentOf": "tender", 
-        "id": "3b02629e2e834511b5bdf715e372c4ed", 
-        "dateModified": "2018-11-30T16:38:33.141976+02:00"
+        "id": "f563c104724747e381847c70eb047426", 
+        "dateModified": "2019-03-18T09:27:03.787826+02:00"
       }
     ], 
     "contracts": [
@@ -51,7 +51,7 @@ Content-Type: application/json; charset=UTF-8
               "amount": 0.5, 
               "valueAddedTaxIncluded": true
             }, 
-            "relatedItem": "a33c8d8aa1d949ffb6e29478daf3484b"
+            "relatedItem": "5898867557fc405ea1b00cdd947e2142"
           }, 
           {
             "value": {
@@ -59,7 +59,7 @@ Content-Type: application/json; charset=UTF-8
               "amount": 0.5, 
               "valueAddedTaxIncluded": true
             }, 
-            "relatedItem": "ac50b5589d084bf697aedfb2ed399fed"
+            "relatedItem": "065b559633864555bd31f3b0e1eb9a2b"
           }
         ], 
         "suppliers": [
@@ -84,10 +84,10 @@ Content-Type: application/json; charset=UTF-8
             }
           }
         ], 
-        "bidID": "23a42e84d61245a0bd218cd8280059ca", 
-        "date": "2018-11-30T16:38:31.349494+02:00", 
-        "awardID": "236fce0958ef49e2bb9547b8fac50ac7", 
-        "id": "1d672f347d0248669142e364d59ed483"
+        "bidID": "faab39a561a643348ec4cf4323509620", 
+        "date": "2019-03-18T09:27:02.349342+02:00", 
+        "awardID": "0149afe7262c4ede8832f11dc7a8bb29", 
+        "id": "5126b938958f4191989309444e4addc7"
       }, 
       {
         "status": "active", 
@@ -98,7 +98,7 @@ Content-Type: application/json; charset=UTF-8
               "amount": 0.5, 
               "valueAddedTaxIncluded": true
             }, 
-            "relatedItem": "a33c8d8aa1d949ffb6e29478daf3484b"
+            "relatedItem": "5898867557fc405ea1b00cdd947e2142"
           }, 
           {
             "value": {
@@ -106,7 +106,7 @@ Content-Type: application/json; charset=UTF-8
               "amount": 0.5, 
               "valueAddedTaxIncluded": true
             }, 
-            "relatedItem": "ac50b5589d084bf697aedfb2ed399fed"
+            "relatedItem": "065b559633864555bd31f3b0e1eb9a2b"
           }
         ], 
         "suppliers": [
@@ -131,10 +131,10 @@ Content-Type: application/json; charset=UTF-8
             }
           }
         ], 
-        "bidID": "3ed6da5f8665409fb9710ca826a322bc", 
-        "date": "2018-11-30T16:38:31.349575+02:00", 
-        "awardID": "6c0027aaec7a42e29aa199db3aff7a7a", 
-        "id": "2193fe90a0644f89a06e704d2403fe01"
+        "bidID": "be97dbf3b3bb453184e1058f629e1ef3", 
+        "date": "2019-03-18T09:27:02.349392+02:00", 
+        "awardID": "7cb28983a0a4461091f3cc6392f1f8f8", 
+        "id": "2fab87712e404d21980ce0c5ca3b48fb"
       }, 
       {
         "status": "active", 
@@ -145,7 +145,7 @@ Content-Type: application/json; charset=UTF-8
               "amount": 0.5, 
               "valueAddedTaxIncluded": true
             }, 
-            "relatedItem": "a33c8d8aa1d949ffb6e29478daf3484b"
+            "relatedItem": "5898867557fc405ea1b00cdd947e2142"
           }, 
           {
             "value": {
@@ -153,7 +153,7 @@ Content-Type: application/json; charset=UTF-8
               "amount": 0.5, 
               "valueAddedTaxIncluded": true
             }, 
-            "relatedItem": "ac50b5589d084bf697aedfb2ed399fed"
+            "relatedItem": "065b559633864555bd31f3b0e1eb9a2b"
           }
         ], 
         "suppliers": [
@@ -178,15 +178,15 @@ Content-Type: application/json; charset=UTF-8
             }
           }
         ], 
-        "bidID": "25ac7a23a2c2469a89730fdc082d6c76", 
-        "date": "2018-11-30T16:38:31.349624+02:00", 
-        "awardID": "3336aa33b30f4db2b46f87fb43f53aae", 
-        "id": "88caa8b1a2274333ae942f061928b666"
+        "bidID": "6eb4f1ad6ddf4998bec6805fae37e912", 
+        "date": "2019-03-18T09:27:02.349429+02:00", 
+        "awardID": "af32488dd2644681a37771f68f42ab16", 
+        "id": "c0eabc5e6c2b44fbb41f21b8adb0b7c6"
       }
     ], 
     "items": [
       {
-        "relatedLot": "ddb35dd0e9904726aafd18baed24863a", 
+        "relatedLot": "0ba62781d4414b1c9736434c0c1e1e9e", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -212,15 +212,15 @@ Content-Type: application/json; charset=UTF-8
           "startDate": "2018-06-27T13:39:09.362837+03:00", 
           "endDate": "2018-06-30T13:39:09.362837+03:00"
         }, 
-        "id": "a33c8d8aa1d949ffb6e29478daf3484b", 
+        "id": "5898867557fc405ea1b00cdd947e2142", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
-        "quantity": 5
+        "quantity": 5.0
       }, 
       {
-        "relatedLot": "ddb35dd0e9904726aafd18baed24863a", 
+        "relatedLot": "0ba62781d4414b1c9736434c0c1e1e9e", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -246,21 +246,21 @@ Content-Type: application/json; charset=UTF-8
           "startDate": "2018-06-27T13:39:09.362837+03:00", 
           "endDate": "2018-06-30T13:39:09.362837+03:00"
         }, 
-        "id": "ac50b5589d084bf697aedfb2ed399fed", 
+        "id": "065b559633864555bd31f3b0e1eb9a2b", 
         "unit": {
           "code": "44617100-8", 
           "name": "item"
         }, 
-        "quantity": 5
+        "quantity": 5.0
       }
     ], 
     "period": {
-      "startDate": "2018-11-30T16:38:09.163119+02:00", 
-      "endDate": "2022-11-29T16:38:09.163119+02:00"
+      "startDate": "2019-03-18T09:26:15.271820+02:00", 
+      "endDate": "2023-03-17T09:26:15.271820+02:00"
     }, 
-    "dateSigned": "2018-11-30T16:38:33.735638+02:00", 
-    "date": "2018-11-30T16:38:37.338586+02:00", 
-    "id": "c86d058766c04c53821802d789ddd3a4"
+    "dateSigned": "2019-03-18T09:27:04.258767+02:00", 
+    "date": "2019-03-18T09:27:06.353736+02:00", 
+    "id": "ab2aaef988ce4ddea2bc472e2f27f9d4"
   }
 }
 

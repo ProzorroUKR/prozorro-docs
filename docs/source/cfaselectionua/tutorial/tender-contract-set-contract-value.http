@@ -1,6 +1,6 @@
-PATCH /api/2.5/tenders/ae8a7a3627f44c8abb4a52c7627b32bc/contracts/03eaa7c3888c487cb2ef3556189a7975?acc_token=050c83ebfd4e43dab16376874d5b59e6 HTTP/1.0
+PATCH /api/2.5/tenders/949046045b7b4af884185f44873d6333/contracts/8b5b450496e24adf8d645dd4b0622915?acc_token=3d89223d197942ab80412ef30c104bc9 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 73
+Content-Length: 91
 Content-Type: application/json
 Host: api-sandbox.openprocurement.org
 
@@ -8,7 +8,8 @@ Host: api-sandbox.openprocurement.org
   "data": {
     "contractNumber": "contract #13111", 
     "value": {
-      "amount": 238
+      "amount": 238, 
+      "amountNet": 230
     }
   }
 }
@@ -22,7 +23,7 @@ Content-Type: application/json; charset=UTF-8
     "status": "pending", 
     "items": [
       {
-        "relatedLot": "d873580630ad4256938558786a55bb52", 
+        "relatedLot": "2eb770a1b04c40e6a7dedd0203f3e41c", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -45,15 +46,15 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-03-28T13:54:25.198916+02:00", 
-          "endDate": "2019-03-31T13:54:25.198916+02:00"
+          "startDate": "2019-04-05T14:33:42.369480+03:00", 
+          "endDate": "2019-04-08T14:33:42.369480+03:00"
         }, 
         "id": "1662b0e1d59f4e2f8e2c5bd48e03a7bc", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
-        "quantity": 6
+        "quantity": 6.0
       }
     ], 
     "suppliers": [
@@ -81,12 +82,13 @@ Content-Type: application/json; charset=UTF-8
     "value": {
       "currency": "UAH", 
       "amount": 238.0, 
+      "amountNet": 230.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2019-03-26T13:54:43.430895+02:00", 
-    "awardID": "a5be8e6bcf674af78b093716d5420353", 
-    "id": "03eaa7c3888c487cb2ef3556189a7975", 
-    "contractID": "UA-2019-03-26-000004-2"
+    "date": "2019-04-03T14:33:56.741747+03:00", 
+    "awardID": "f5c534fb8509421eb21beae4edb7169b", 
+    "id": "8b5b450496e24adf8d645dd4b0622915", 
+    "contractID": "UA-2019-04-03-000004-2"
   }
 }
 

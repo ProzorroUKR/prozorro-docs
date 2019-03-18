@@ -1,4 +1,4 @@
-GET /api/2.4/tenders/8ff72d2afd694c90b33ffd83e9d48a35 HTTP/1.0
+GET /api/2.5/tenders/96265c83640b4a82ad85ab45311fd932 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: api-sandbox.openprocurement.org
 
@@ -9,17 +9,17 @@ Content-Type: application/json; charset=UTF-8
     "procurementMethod": "open", 
     "status": "complete", 
     "awardPeriod": {
-      "startDate": "2018-09-12T13:49:35.715558+03:00", 
-      "endDate": "2018-09-22T13:49:35.715558+03:00"
+      "startDate": "2019-03-02T09:26:18.314548+02:00", 
+      "endDate": "2019-03-12T09:26:18.314548+02:00"
     }, 
     "complaintPeriod": {
-      "startDate": "2018-08-01T13:49:35.715558+03:00", 
-      "endDate": "2018-09-01T13:45:35.715558+03:00"
+      "startDate": "2019-01-19T09:26:18.314548+02:00", 
+      "endDate": "2019-02-15T00:00:00+02:00"
     }, 
     "enquiryPeriod": {
-      "startDate": "2018-08-01T13:49:35.715558+03:00", 
-      "clarificationsUntil": "2018-09-01T13:42:35.715558+03:00", 
-      "endDate": "2018-09-01T13:39:35.715558+03:00"
+      "startDate": "2019-01-19T09:26:18.314548+02:00", 
+      "clarificationsUntil": "2019-02-14T00:00:00+02:00", 
+      "endDate": "2019-02-09T09:26:18.314548+02:00"
     }, 
     "submissionMethod": "electronicAuction", 
     "procurementMethodType": "closeFrameworkAgreementUA", 
@@ -51,37 +51,37 @@ Content-Type: application/json; charset=UTF-8
     "qualifications": [
       {
         "status": "active", 
-        "lotID": "f6caf73fbe824e4fa6803f27e47f6b08", 
+        "lotID": "16a55a21ada7498ab9a2702b7b26df1d", 
         "eligible": true, 
         "qualified": true, 
-        "bidID": "f49192d0dfb941bdb6f46d713a9fff95", 
-        "date": "2018-09-01T13:49:35.715558+03:00", 
-        "id": "0e2a6739b2834c79a9d95309e0b9ef6f"
+        "bidID": "7e4d29c48def4b36a7db9608ef831dd4", 
+        "date": "2019-02-19T09:26:18.314548+02:00", 
+        "id": "65c61d12f41e45bb86c2c3ebb5813573"
       }, 
       {
         "status": "active", 
-        "lotID": "f6caf73fbe824e4fa6803f27e47f6b08", 
+        "lotID": "16a55a21ada7498ab9a2702b7b26df1d", 
         "eligible": true, 
         "qualified": true, 
-        "bidID": "72f1f2d6d77440a1b622e1841b9c5949", 
-        "date": "2018-09-01T13:49:35.715558+03:00", 
-        "id": "7cc031a748d14392b3d015c8a7dce50c"
+        "bidID": "3b9e95e3d2cc43a9805f8a02c642c60a", 
+        "date": "2019-02-19T09:26:18.314548+02:00", 
+        "id": "b3b1bd5490b942968cd48ae84dccabf7"
       }, 
       {
         "status": "active", 
-        "lotID": "f6caf73fbe824e4fa6803f27e47f6b08", 
+        "lotID": "16a55a21ada7498ab9a2702b7b26df1d", 
         "eligible": true, 
         "qualified": true, 
-        "bidID": "fed9683aa51a4842b05cfe835bb918ee", 
-        "date": "2018-09-01T13:49:35.715558+03:00", 
-        "id": "68221985d46a460ca3d3ebafb2794d6d"
+        "bidID": "31511edb6d024a5891ef28faa92777f4", 
+        "date": "2019-02-19T09:26:18.314548+02:00", 
+        "id": "75efeb35cf9844f19dbf93409601acfc"
       }
     ], 
-    "id": "8ff72d2afd694c90b33ffd83e9d48a35", 
+    "id": "96265c83640b4a82ad85ab45311fd932", 
     "contractPeriod": {
-      "startDate": "2018-09-22T13:49:35.715558+03:00", 
-      "clarificationsUntil": "2018-09-27T13:49:35.715558+03:00", 
-      "endDate": "2018-09-28T13:49:35.715558+03:00"
+      "startDate": "2019-03-12T09:26:18.314548+02:00", 
+      "clarificationsUntil": "2019-03-17T09:26:18.314548+02:00", 
+      "endDate": "2019-03-18T09:26:18.314548+02:00"
     }, 
     "title": "футляри до державних нагород", 
     "lots": [
@@ -95,29 +95,28 @@ Content-Type: application/json; charset=UTF-8
           "valueAddedTaxIncluded": true
         }, 
         "auctionPeriod": {
-          "startDate": "2018-09-11T13:49:35.715558+03:00", 
-          "endDate": "2018-09-12T13:49:35.715558+03:00"
+          "startDate": "2019-03-01T09:26:18.314548+02:00", 
+          "endDate": "2019-03-02T09:26:18.314548+02:00"
         }, 
         "value": {
           "currency": "UAH", 
           "amount": 500.0, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2018-09-28T13:49:35.649889+03:00", 
-        "id": "f6caf73fbe824e4fa6803f27e47f6b08"
+        "date": "2019-03-18T09:26:18.291295+02:00", 
+        "id": "16a55a21ada7498ab9a2702b7b26df1d"
       }
     ], 
     "qualificationPeriod": {
-      "startDate": "2018-09-01T13:49:35.715558+03:00", 
-      "endDate": "2018-09-11T13:49:35.715558+03:00"
+      "startDate": "2019-02-19T09:26:18.314548+02:00", 
+      "endDate": "2019-03-01T09:26:18.314548+02:00"
     }, 
     "maxAwardsCount": 4, 
-    "tenderID": "UA-2018-09-28-000001", 
-    "procurementMethodDetails": "quick, accelerator=1440", 
-    "dateModified": "2018-09-28T13:49:35.659883+03:00", 
+    "tenderID": "UA-2019-03-18-000001", 
+    "dateModified": "2019-03-18T09:26:18.296357+02:00", 
     "agreements": [
       {
-        "agreementID": "UA-2018-09-28-000001",
+        "agreementID": "UA-2019-03-18-000001-587535d729cc4a4aa2b42a84c09cef0d1", 
         "status": "active", 
         "contracts": [
           {
@@ -129,7 +128,7 @@ Content-Type: application/json; charset=UTF-8
                   "amount": 93, 
                   "valueAddedTaxIncluded": true
                 }, 
-                "relatedItem": "971110b62a194236bdaa935a382130f4"
+                "relatedItem": "9165ce2ad18746679a87e280dc9e0e51"
               }
             ], 
             "suppliers": [
@@ -156,10 +155,10 @@ Content-Type: application/json; charset=UTF-8
                 "name": "Державне управління справами"
               }
             ], 
-            "bidID": "f49192d0dfb941bdb6f46d713a9fff95", 
-            "date": "2018-09-28T13:49:35.880251+03:00", 
-            "awardID": "36091ba509274e5a9868e164da46faac", 
-            "id": "0dff197ee7f14de5b275f1df25546a81"
+            "bidID": "7e4d29c48def4b36a7db9608ef831dd4", 
+            "date": "2019-03-18T09:26:18.366596+02:00", 
+            "awardID": "232fd90bba254bca8650a37f5dab8102", 
+            "id": "335fba791dfd4e49822e85856d1b9526"
           }, 
           {
             "status": "active", 
@@ -170,7 +169,7 @@ Content-Type: application/json; charset=UTF-8
                   "amount": 93, 
                   "valueAddedTaxIncluded": true
                 }, 
-                "relatedItem": "971110b62a194236bdaa935a382130f4"
+                "relatedItem": "9165ce2ad18746679a87e280dc9e0e51"
               }
             ], 
             "suppliers": [
@@ -197,10 +196,10 @@ Content-Type: application/json; charset=UTF-8
                 "name": "Державне управління справами"
               }
             ], 
-            "bidID": "72f1f2d6d77440a1b622e1841b9c5949", 
-            "date": "2018-09-28T13:49:35.880329+03:00", 
-            "awardID": "84f202854f9b467e8bf005c92d2d186f", 
-            "id": "47ac00e0bf55414488f2433514f8469d"
+            "bidID": "3b9e95e3d2cc43a9805f8a02c642c60a", 
+            "date": "2019-03-18T09:26:18.366637+02:00", 
+            "awardID": "c1e422463ee24e53808d9f3d75486b2d", 
+            "id": "252403da318d4f5baca756c81abd8f00"
           }, 
           {
             "status": "active", 
@@ -211,7 +210,7 @@ Content-Type: application/json; charset=UTF-8
                   "amount": 93, 
                   "valueAddedTaxIncluded": true
                 }, 
-                "relatedItem": "971110b62a194236bdaa935a382130f4"
+                "relatedItem": "9165ce2ad18746679a87e280dc9e0e51"
               }
             ], 
             "suppliers": [
@@ -238,15 +237,15 @@ Content-Type: application/json; charset=UTF-8
                 "name": "Державне управління справами"
               }
             ], 
-            "bidID": "fed9683aa51a4842b05cfe835bb918ee", 
-            "date": "2018-09-28T13:49:35.880392+03:00", 
-            "awardID": "5c6a783f3964417591974106457bdd60", 
-            "id": "7bc8497f24c04495b944447254ab2778"
+            "bidID": "31511edb6d024a5891ef28faa92777f4", 
+            "date": "2019-03-18T09:26:18.366666+02:00", 
+            "awardID": "0213c17fd3464721b1263e9210b9a9a2", 
+            "id": "f40b3b550ae544c98e7b55f8dcaa8c24"
           }
         ], 
         "items": [
           {
-            "relatedLot": "f6caf73fbe824e4fa6803f27e47f6b08", 
+            "relatedLot": "16a55a21ada7498ab9a2702b7b26df1d", 
             "description": "футляри до державних нагород", 
             "classification": {
               "scheme": "ДК021", 
@@ -272,36 +271,36 @@ Content-Type: application/json; charset=UTF-8
               "startDate": "2018-06-27T13:39:09.362837+03:00", 
               "endDate": "2018-06-30T13:39:09.362837+03:00"
             }, 
-            "id": "971110b62a194236bdaa935a382130f4", 
+            "id": "9165ce2ad18746679a87e280dc9e0e51", 
             "unit": {
               "code": "44617100-9", 
               "name": "item"
             }, 
-            "quantity": 5
+            "quantity": 5.0
           }
         ], 
-        "date": "2018-09-28T13:49:35.715558+03:00", 
-        "id": "bac4cd4430804d14886552838c221f44"
+        "date": "2019-03-18T09:26:18.314548+02:00", 
+        "id": "812a4fd5803c47b19b57627d99c10f7f"
       }
     ], 
     "numberOfBids": 3, 
     "tenderPeriod": {
-      "startDate": "2018-08-01T13:49:35.715558+03:00", 
-      "endDate": "2018-09-01T13:49:35.715558+03:00"
+      "startDate": "2019-01-19T09:26:18.314548+02:00", 
+      "endDate": "2019-02-19T09:26:18.314548+02:00"
     }, 
     "auctionPeriod": {
-      "startDate": "2018-09-11T13:49:35.715558+03:00", 
-      "endDate": "2018-09-12T13:49:35.715558+03:00"
+      "startDate": "2019-03-01T09:26:18.314548+02:00", 
+      "endDate": "2019-03-02T09:26:18.314548+02:00"
     }, 
     "title_en": "Cases for state awards", 
     "agreementDuration": "P3Y3M3D", 
     "awards": [
       {
         "status": "active", 
-        "lotID": "f6caf73fbe824e4fa6803f27e47f6b08", 
+        "lotID": "16a55a21ada7498ab9a2702b7b26df1d", 
         "complaintPeriod": {
-          "startDate": "2018-09-12T13:49:35.715558+03:00", 
-          "endDate": "2018-09-22T13:49:35.715558+03:00"
+          "startDate": "2019-03-02T09:26:18.314548+02:00", 
+          "endDate": "2019-03-12T09:26:18.314548+02:00"
         }, 
         "suppliers": [
           {
@@ -327,21 +326,21 @@ Content-Type: application/json; charset=UTF-8
             "name": "Державне управління справами"
           }
         ], 
-        "bid_id": "f49192d0dfb941bdb6f46d713a9fff95", 
+        "bid_id": "7e4d29c48def4b36a7db9608ef831dd4", 
         "value": {
           "currency": "UAH", 
           "amount": 469, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2018-09-12T13:49:35.715558+03:00", 
-        "id": "36091ba509274e5a9868e164da46faac"
+        "date": "2019-03-02T09:26:18.314548+02:00", 
+        "id": "232fd90bba254bca8650a37f5dab8102"
       }, 
       {
         "status": "active", 
-        "lotID": "f6caf73fbe824e4fa6803f27e47f6b08", 
+        "lotID": "16a55a21ada7498ab9a2702b7b26df1d", 
         "complaintPeriod": {
-          "startDate": "2018-09-12T13:49:35.715558+03:00", 
-          "endDate": "2018-09-22T13:49:35.715558+03:00"
+          "startDate": "2019-03-02T09:26:18.314548+02:00", 
+          "endDate": "2019-03-12T09:26:18.314548+02:00"
         }, 
         "suppliers": [
           {
@@ -367,21 +366,21 @@ Content-Type: application/json; charset=UTF-8
             "name": "Державне управління справами"
           }
         ], 
-        "bid_id": "72f1f2d6d77440a1b622e1841b9c5949", 
+        "bid_id": "3b9e95e3d2cc43a9805f8a02c642c60a", 
         "value": {
           "currency": "UAH", 
           "amount": 470.0, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2018-09-12T13:49:35.715558+03:00", 
-        "id": "84f202854f9b467e8bf005c92d2d186f"
+        "date": "2019-03-02T09:26:18.314548+02:00", 
+        "id": "c1e422463ee24e53808d9f3d75486b2d"
       }, 
       {
         "status": "active", 
-        "lotID": "f6caf73fbe824e4fa6803f27e47f6b08", 
+        "lotID": "16a55a21ada7498ab9a2702b7b26df1d", 
         "complaintPeriod": {
-          "startDate": "2018-09-12T13:49:35.715558+03:00", 
-          "endDate": "2018-09-22T13:49:35.715558+03:00"
+          "startDate": "2019-03-02T09:26:18.314548+02:00", 
+          "endDate": "2019-03-12T09:26:18.314548+02:00"
         }, 
         "suppliers": [
           {
@@ -407,17 +406,17 @@ Content-Type: application/json; charset=UTF-8
             "name": "Державне управління справами"
           }
         ], 
-        "bid_id": "fed9683aa51a4842b05cfe835bb918ee", 
+        "bid_id": "31511edb6d024a5891ef28faa92777f4", 
         "value": {
           "currency": "UAH", 
           "amount": 471, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2018-09-12T13:49:35.715558+03:00", 
-        "id": "5c6a783f3964417591974106457bdd60"
+        "date": "2019-03-02T09:26:18.314548+02:00", 
+        "id": "0213c17fd3464721b1263e9210b9a9a2"
       }
     ], 
-    "date": "2018-09-28T13:49:35.649889+03:00", 
+    "date": "2019-03-18T09:26:18.291295+02:00", 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35, 
@@ -425,7 +424,7 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "items": [
       {
-        "relatedLot": "f6caf73fbe824e4fa6803f27e47f6b08", 
+        "relatedLot": "16a55a21ada7498ab9a2702b7b26df1d", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -451,12 +450,12 @@ Content-Type: application/json; charset=UTF-8
           "startDate": "2018-06-27T13:39:09.362837+03:00", 
           "endDate": "2018-06-30T13:39:09.362837+03:00"
         }, 
-        "id": "971110b62a194236bdaa935a382130f4", 
+        "id": "9165ce2ad18746679a87e280dc9e0e51", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
-        "quantity": 5
+        "quantity": 5.0
       }
     ], 
     "bids": [
@@ -465,8 +464,8 @@ Content-Type: application/json; charset=UTF-8
         "selfEligible": true, 
         "lotValues": [
           {
-            "relatedLot": "f6caf73fbe824e4fa6803f27e47f6b08", 
-            "date": "2018-09-28T13:49:36.018386+03:00", 
+            "relatedLot": "16a55a21ada7498ab9a2702b7b26df1d", 
+            "date": "2019-03-18T09:26:18.415506+02:00", 
             "status": "active", 
             "value": {
               "currency": "UAH", 
@@ -500,16 +499,16 @@ Content-Type: application/json; charset=UTF-8
             "name": "Державне управління справами"
           }
         ], 
-        "date": "2018-08-01T13:49:36.715558+03:00", 
-        "id": "f49192d0dfb941bdb6f46d713a9fff95"
+        "date": "2019-01-19T09:26:19.314548+02:00", 
+        "id": "7e4d29c48def4b36a7db9608ef831dd4"
       }, 
       {
         "status": "active", 
         "selfEligible": true, 
         "lotValues": [
           {
-            "relatedLot": "f6caf73fbe824e4fa6803f27e47f6b08", 
-            "date": "2018-09-28T13:49:36.021592+03:00", 
+            "relatedLot": "16a55a21ada7498ab9a2702b7b26df1d", 
+            "date": "2019-03-18T09:26:18.416600+02:00", 
             "status": "active", 
             "value": {
               "currency": "UAH", 
@@ -543,16 +542,16 @@ Content-Type: application/json; charset=UTF-8
             "name": "Державне управління справами"
           }
         ], 
-        "date": "2018-08-01T13:49:37.715558+03:00", 
-        "id": "72f1f2d6d77440a1b622e1841b9c5949"
+        "date": "2019-01-19T09:26:20.314548+02:00", 
+        "id": "3b9e95e3d2cc43a9805f8a02c642c60a"
       }, 
       {
         "status": "active", 
         "selfEligible": true, 
         "lotValues": [
           {
-            "relatedLot": "f6caf73fbe824e4fa6803f27e47f6b08", 
-            "date": "2018-09-28T13:49:36.024647+03:00", 
+            "relatedLot": "16a55a21ada7498ab9a2702b7b26df1d", 
+            "date": "2019-03-18T09:26:18.417934+02:00", 
             "status": "active", 
             "value": {
               "currency": "UAH", 
@@ -586,8 +585,8 @@ Content-Type: application/json; charset=UTF-8
             "name": "Державне управління справами"
           }
         ], 
-        "date": "2018-08-01T13:49:38.715558+03:00", 
-        "id": "fed9683aa51a4842b05cfe835bb918ee"
+        "date": "2019-01-19T09:26:21.314548+02:00", 
+        "id": "31511edb6d024a5891ef28faa92777f4"
       }
     ], 
     "value": {

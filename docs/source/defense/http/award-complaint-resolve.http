@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/7e137f2a666348cc89438625519e4438/awards/3430a774ec1c41f480b2fb9294d2a0f3/complaints/d84af87c20d5478fb80b2589a974eab5 HTTP/1.0
+PATCH /api/2.5/tenders/45041579bba84caf848f885741c0d7ed/awards/c36e3374da74452384b4098c957664c5/complaints/aaab0797921d4afd9336a509b834262e HTTP/1.0
 Authorization: Basic cmV2aWV3ZXI6
 Content-Length: 33
 Content-Type: application/json
@@ -15,27 +15,27 @@ Content-Type: application/json; charset=UTF-8
 {
   "data": {
     "status": "satisfied", 
-    "dateDecision": "2017-06-21T16:09:17.389508+03:00", 
+    "dateDecision": "2019-03-18T09:27:21.123923+02:00", 
     "documents": [
       {
         "author": "complaint_owner", 
         "title": "Complaint_Attachement.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/7e137f2a666348cc89438625519e4438/awards/3430a774ec1c41f480b2fb9294d2a0f3/complaints/d84af87c20d5478fb80b2589a974eab5/documents/cf48e570d8544515a33154f23e96f3a4?download=dbccdbe07bef4ae7bde978e2196d2a28", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/45041579bba84caf848f885741c0d7ed/awards/c36e3374da74452384b4098c957664c5/complaints/aaab0797921d4afd9336a509b834262e/documents/066ce2d2fc2d4037ac7ab3e2fc8d00b5?download=928335828fdb46b2ab738c3dc8ab2368", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T16:09:13.189927+03:00", 
-        "id": "cf48e570d8544515a33154f23e96f3a4", 
-        "dateModified": "2017-06-21T16:09:13.189972+03:00"
+        "datePublished": "2019-03-18T09:27:19.133378+02:00", 
+        "id": "066ce2d2fc2d4037ac7ab3e2fc8d00b5", 
+        "dateModified": "2019-03-18T09:27:19.133407+02:00"
       }, 
       {
         "author": "aboveThresholdReviewers", 
         "title": "ComplaintResolution.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/7e137f2a666348cc89438625519e4438/awards/3430a774ec1c41f480b2fb9294d2a0f3/complaints/d84af87c20d5478fb80b2589a974eab5/documents/fc95600fd74b40e492090589375a6b59?download=1340173509594e039f3d914c97a08c5c", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/45041579bba84caf848f885741c0d7ed/awards/c36e3374da74452384b4098c957664c5/complaints/aaab0797921d4afd9336a509b834262e/documents/3271b865aebe420ca4289d2f37dffe6b?download=c058007b7d034bd68efec37edb490868", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T16:09:17.135295+03:00", 
-        "id": "fc95600fd74b40e492090589375a6b59", 
-        "dateModified": "2017-06-21T16:09:17.135353+03:00"
+        "datePublished": "2019-03-18T09:27:21.013820+02:00", 
+        "id": "3271b865aebe420ca4289d2f37dffe6b", 
+        "dateModified": "2019-03-18T09:27:21.013835+02:00"
       }
     ], 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
@@ -61,13 +61,13 @@ Content-Type: application/json; charset=UTF-8
         "locality": "м. Вінниця"
       }
     }, 
-    "dateAccepted": "2017-06-21T16:09:16.210910+03:00", 
-    "dateSubmitted": "2017-06-21T16:09:13.327594+03:00", 
-    "complaintID": "UA-2017-06-21-000001.1", 
-    "date": "2017-06-21T16:09:17.401377+03:00", 
+    "dateAccepted": "2019-03-18T09:27:20.529786+02:00", 
+    "dateSubmitted": "2019-03-18T09:27:19.197155+02:00", 
+    "complaintID": "UA-2019-03-18-000001.1", 
+    "date": "2019-03-18T09:27:21.129168+02:00", 
     "acceptance": true, 
     "type": "complaint", 
-    "id": "d84af87c20d5478fb80b2589a974eab5"
+    "id": "aaab0797921d4afd9336a509b834262e"
   }
 }
 
