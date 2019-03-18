@@ -329,7 +329,8 @@ class TenderLimitedResourceTest(BaseTenderWebTest):
 
         with open(TARGET_DIR + 'tutorial/tender-contract-set-contract-value.http', 'w') as self.app.file_obj:
             response = self.app.patch_json('/tenders/{}/contracts/{}?acc_token={}'.format(
-                self.tender_id, self.contract_id, owner_token), {"data": {"value": {"amount": 238}}})
+                self.tender_id, self.contract_id, owner_token),
+                {"data": {"value": {"amount": 238, "amountNet": 230}}})
         self.assertEqual(response.status, '200 OK')
         self.assertEqual(response.json['data']['value']['amount'], 238)
 
@@ -568,7 +569,8 @@ class TenderNegotiationLimitedResourceTest(TenderLimitedResourceTest):
 
         with open(TARGET_DIR + 'multiple_lots_tutorial/tender-contract-set-contract-value.http', 'w') as self.app.file_obj:
             response = self.app.patch_json('/tenders/{}/contracts/{}?acc_token={}'.format(
-                self.tender_id, self.contract_id, owner_token), {"data": {"value": {"amount": 238}}})
+                self.tender_id, self.contract_id, owner_token),
+                {"data": {"value": {"amount": 238, "amountNet": 230}}})
         self.assertEqual(response.status, '200 OK')
         self.assertEqual(response.json['data']['value']['amount'], 238)
 

@@ -213,7 +213,7 @@ class TenderResourceTest(BaseTenderWebTest):
             custom_period_start_date = get_now().isoformat()
             custom_period_end_date = (get_now() + timedelta(days=30)).isoformat()
             response = self.app.patch_json('/contracts/{}?acc_token={}'.format(contract_id, contract_token),
-                                           {"data": {"value": {"amount": 438},
+                                           {"data": {"value": {"amount": 438, "amountNet": 430},
                                                      "period": {'startDate': custom_period_start_date,
                                                                 'endDate': custom_period_end_date}}})
             self.assertEqual(response.status, '200 OK')
