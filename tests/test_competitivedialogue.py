@@ -794,8 +794,8 @@ test_lots = [
 ]
 
 
-TARGET_DIR = 'docs/source/esco/tutorial/'
-TARGET_DIR_MULTIPLE = 'docs/source/esco/multiple_lots_tutorial/'
+TARGET_DIR = 'docs/source/competitivedialogue/tutorial/'
+TARGET_DIR_MULTIPLE = 'docs/source/competitivedialogue/multiple_lots_tutorial/'
 
 
 class DumpsTestAppwebtest(TestApp):
