@@ -1,6 +1,6 @@
-POST /api/2.3/plans?opt_pretty=1 HTTP/1.0
+POST /api/2.5/plans?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 2454
+Content-Length: 2536
 Content-Type: application/json
 Host: api-sandbox.openprocurement.org
 
@@ -27,7 +27,7 @@ Host: api-sandbox.openprocurement.org
           }
         ], 
         "deliveryDate": {
-          "endDate": "2017-07-06T17:41:39.677983"
+          "endDate": "2019-04-02T16:31:29.550810"
         }, 
         "unit": {
           "code": "KGM", 
@@ -50,7 +50,7 @@ Host: api-sandbox.openprocurement.org
           }
         ], 
         "deliveryDate": {
-          "endDate": "2017-07-07T17:41:39.677983"
+          "endDate": "2019-04-03T16:31:29.550810"
         }, 
         "unit": {
           "code": "KGM", 
@@ -73,7 +73,7 @@ Host: api-sandbox.openprocurement.org
           }
         ], 
         "deliveryDate": {
-          "endDate": "2017-07-08T17:41:39.677983"
+          "endDate": "2019-04-04T16:31:29.550810"
         }, 
         "unit": {
           "code": "KGM", 
@@ -85,6 +85,10 @@ Host: api-sandbox.openprocurement.org
     "budget": {
       "amountNet": 12222, 
       "description": "budget_description", 
+      "period": {
+        "startDate": "2019-01-01T00:00:00", 
+        "endDate": "2019-12-31T00:00:00"
+      }, 
       "project": {
         "name": "proj_name", 
         "id": "123"
@@ -112,7 +116,7 @@ Host: api-sandbox.openprocurement.org
       "procurementMethod": "open", 
       "procurementMethodType": "belowThreshold", 
       "tenderPeriod": {
-        "startDate": "2017-06-28T17:41:39.677983"
+        "startDate": "2019-03-25T16:31:29.550810"
       }
     }
   }
@@ -120,10 +124,10 @@ Host: api-sandbox.openprocurement.org
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.3/plans/52862ec099ff4debbf9f26a0980f27f3
+Location: http://api-sandbox.openprocurement.org/api/2.5/plans/2422f89d35f94d68998f444cec1322d6
 {
   "access": {
-    "token": "fc9c0f555bf24dffa2b855ed618bc81c"
+    "token": "2fdabd9fccbf47ea976f20dedd7589bc"
   }, 
   "data": {
     "classification": {
@@ -147,14 +151,14 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/plans/52862ec099ff4debb
           }
         ], 
         "deliveryDate": {
-          "endDate": "2017-07-06T17:41:39.677983+03:00"
+          "endDate": "2019-04-02T16:31:29.550810+03:00"
         }, 
-        "id": "f8173e5bf8754aec89a47a624b3cefd1", 
+        "id": "009e0cf2cc324cb5985a59ca8a15abb0", 
         "unit": {
           "code": "KGM", 
           "name": "кг"
         }, 
-        "quantity": 1000
+        "quantity": 1000.0
       }, 
       {
         "description": "Насіння соняшнику", 
@@ -171,14 +175,14 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/plans/52862ec099ff4debb
           }
         ], 
         "deliveryDate": {
-          "endDate": "2017-07-07T17:41:39.677983+03:00"
+          "endDate": "2019-04-03T16:31:29.550810+03:00"
         }, 
-        "id": "3b0208637aa44a99b388a9b540533a1c", 
+        "id": "d1e0f960591f430e8511cf75cdf70d25", 
         "unit": {
           "code": "KGM", 
           "name": "кг"
         }, 
-        "quantity": 2000
+        "quantity": 2000.0
       }, 
       {
         "description": "Насіння бавовнику", 
@@ -195,20 +199,24 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/plans/52862ec099ff4debb
           }
         ], 
         "deliveryDate": {
-          "endDate": "2017-07-08T17:41:39.677983+03:00"
+          "endDate": "2019-04-04T16:31:29.550810+03:00"
         }, 
-        "id": "7266c3c7b95246718021ab671207335e", 
+        "id": "172428ce23fa4d7280d23f93bb4339c7", 
         "unit": {
           "code": "KGM", 
           "name": "кг"
         }, 
-        "quantity": 3000
+        "quantity": 3000.0
       }
     ], 
-    "planID": "UA-P-2017-06-21-000001", 
+    "planID": "UA-P-2019-03-18-000001", 
     "budget": {
       "amountNet": 12222.0, 
       "description": "budget_description", 
+      "period": {
+        "startDate": "2019-01-01T00:00:00+02:00", 
+        "endDate": "2019-12-31T00:00:00+02:00"
+      }, 
       "project": {
         "id": "123", 
         "name": "proj_name"
@@ -217,12 +225,12 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/plans/52862ec099ff4debb
       "amount": 10000.0, 
       "id": "12303111000-2"
     }, 
-    "datePublished": "2017-06-21T17:41:40.564867+03:00", 
+    "datePublished": "2019-03-18T16:31:32.203213+02:00", 
     "tender": {
       "procurementMethod": "open", 
       "procurementMethodType": "belowThreshold", 
       "tenderPeriod": {
-        "startDate": "2017-06-28T17:41:39.677983+03:00"
+        "startDate": "2019-03-25T16:31:29.550810+02:00"
       }
     }, 
     "additionalClassifications": [
@@ -241,8 +249,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/plans/52862ec099ff4debb
       "name": "ДУС"
     }, 
     "owner": "broker", 
-    "dateModified": "2017-06-21T17:41:40.588719+03:00", 
-    "id": "52862ec099ff4debbf9f26a0980f27f3"
+    "dateModified": "2019-03-18T16:31:32.237089+02:00", 
+    "id": "2422f89d35f94d68998f444cec1322d6"
   }
 }
 
