@@ -78,10 +78,22 @@ Schema
     List of :ref:`Organization` objects, auto-generated, read-only
 
 :value:
-    `Value` object, auto-generated, read-only
+    :ref:`ContractValue` object, auto-generated
 
     |ocdsDescription|
     The total value of this contract.
+
+    Validation rules:
+
+    * Value amountNet should be less or equal to amount
+    * Value amountNet should be less or equal to awarded amount if VAT included
+    * Value amount should be less or equal to awarded amount if VAT included
+    * Value amountNet can be less than amount for 20% if VAT included
+    * Value amountNet should be less or equal to awarded amount if VAT not included
+    * Value amount should be greater or equal to awarded amount if VAT not included
+    * Value amount can be greater than amountNet for 20% if VAT not included
+
+    Check ":ref:`SettingContractValue`" tutorial section for more info
 
 :dateSigned:
     string, :ref:`date`
