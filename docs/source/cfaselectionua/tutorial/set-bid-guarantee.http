@@ -1,4 +1,4 @@
-PATCH /api/2.4/tenders/a894be5c781148189cd720b6b8c83a9d/lots/452029a0046446d0811541dd6cc10485?acc_token=25d6661782044a3aa90620d83cd78a64 HTTP/1.0
+PATCH /api/2.5/tenders/7a805885546c48c1bcdeaf1c72cc7f5d/lots/01a475ba65af458ca805d6770e8cee95?acc_token=3a37ff35bdc94e49ae549b2688693071 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 57
 Content-Type: application/json
@@ -24,7 +24,7 @@ Content-Type: application/json; charset=UTF-8
     "title": "lot title", 
     "minimalStep": {
       "currency": "UAH", 
-      "amount": 3.0, 
+      "amount": 2.5, 
       "valueAddedTaxIncluded": true
     }, 
     "value": {
@@ -32,8 +32,8 @@ Content-Type: application/json; charset=UTF-8
       "amount": 600.67, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2019-01-25T15:48:16.016135+02:00", 
-    "id": "452029a0046446d0811541dd6cc10485", 
+    "date": "2019-03-18T09:26:38.315283+02:00", 
+    "id": "01a475ba65af458ca805d6770e8cee95", 
     "guarantee": {
       "currency": "USD", 
       "amount": 8.0

@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/bcfa4c735e7c48efac20aa4542534c10/bids/4591f98295f34607bda8972ad6582fa0?acc_token=7722e81271054642ae2464d3840272a6 HTTP/1.0
+PATCH /api/2.5/tenders/1383287972d14f3f9c6b63c63040032e/bids/66693c85aa1142758dc06178cd3f5dac?acc_token=24e00983cbf543cea25e6d2fa27d20d8 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 124
 Content-Type: application/json
@@ -9,7 +9,7 @@ DATA:
     "status": "pending", 
     "lotValues": [
       {
-        "relatedLot": "be0820de82f94afd887c4715ce9bcd8c", 
+        "relatedLot": "0b1404a25f304fb883899602677faf2a", 
         "value": {
           "amount": 500
         }
@@ -26,8 +26,8 @@ Content-Type: application/json; charset=UTF-8
     "selfEligible": true, 
     "lotValues": [
       {
-        "relatedLot": "be0820de82f94afd887c4715ce9bcd8c", 
-        "date": "2017-06-21T16:03:04.657261+03:00", 
+        "relatedLot": "0b1404a25f304fb883899602677faf2a", 
+        "date": "2019-03-18T09:27:52.906254+02:00", 
         "status": "pending", 
         "value": {
           "currency": "UAH", 
@@ -59,8 +59,8 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "date": "2017-06-21T16:03:04.656556+03:00", 
-    "id": "4591f98295f34607bda8972ad6582fa0"
+    "date": "2019-03-18T09:27:52.905984+02:00", 
+    "id": "66693c85aa1142758dc06178cd3f5dac"
   }
 }
 

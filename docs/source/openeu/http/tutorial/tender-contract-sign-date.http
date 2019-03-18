@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/aa0cd6b584d543848108968ea24a7891/contracts/624361c4840644079b02fe204e68954e?acc_token=ef9c0578dbdd435ab058ee3eef53e1b7 HTTP/1.0
+PATCH /api/2.5/tenders/d305cbefe8194d4f87288d7da8bc9cc6/contracts/81ba4e6e27744a688bcf9a574eadb96f?acc_token=23f3d8cdadaa4dd9a937b97ece3143f3 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 60
 Content-Type: application/json
@@ -6,7 +6,7 @@ Host: api-sandbox.openprocurement.org
 DATA:
 {
   "data": {
-    "dateSigned": "2017-06-21T16:03:00.108024+03:00"
+    "dateSigned": "2019-03-18T09:27:50.801179+02:00"
   }
 }
 
@@ -39,15 +39,15 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-11T16:02:36.221241+03:00", 
-          "endDate": "2017-08-10T16:02:36.221295+03:00"
+          "startDate": "2019-04-07T09:26:16.564711+02:00", 
+          "endDate": "2019-05-07T09:26:16.564741+02:00"
         }, 
-        "id": "bb438534444d47eea7b1bd2fe84e58fb", 
+        "id": "d369c46c520141ed800cfb11f5a4e51d", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
-        "quantity": 1
+        "quantity": 1.0
       }, 
       {
         "description": "Послуги шкільних їдалень", 
@@ -72,15 +72,15 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-11T16:02:36.221327+03:00", 
-          "endDate": "2017-08-10T16:02:36.221351+03:00"
+          "startDate": "2019-04-07T09:26:16.564751+02:00", 
+          "endDate": "2019-05-07T09:26:16.564758+02:00"
         }, 
-        "id": "962bd32f921c4e8a8335c59a3e6f0fd6", 
+        "id": "d03b22ddf3e1451f8b3ff83ffcdc31a8", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
-        "quantity": 1
+        "quantity": 1.0
       }
     ], 
     "suppliers": [
@@ -109,12 +109,14 @@ Content-Type: application/json; charset=UTF-8
     "value": {
       "currency": "UAH", 
       "amount": 238.0, 
+      "amountNet": 230.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "dateSigned": "2017-06-21T16:03:00.108024+03:00", 
-    "awardID": "abb108bc37ee4eccaafded21c379db45", 
-    "id": "624361c4840644079b02fe204e68954e", 
-    "contractID": "UA-2017-06-21-000001-1"
+    "dateSigned": "2019-03-18T09:27:50.801179+02:00", 
+    "date": "2019-03-18T09:27:50.531807+02:00", 
+    "awardID": "62418e69f19a48cfb4e980355476fc51", 
+    "id": "81ba4e6e27744a688bcf9a574eadb96f", 
+    "contractID": "UA-2019-03-18-000001-1"
   }
 }
 

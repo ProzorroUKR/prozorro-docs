@@ -1,6 +1,6 @@
-POST /api/2.4/tenders?opt_pretty=1 HTTP/1.0
+POST /api/2.5/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 4183
+Content-Length: 4412
 Content-Type: application/json
 Host: api-sandbox.openprocurement.org
 
@@ -51,13 +51,13 @@ Host: api-sandbox.openprocurement.org
     "lots": [
       {
         "title": "lot title", 
-        "id": "452029a0046446d0811541dd6cc10485", 
+        "id": "01a475ba65af458ca805d6770e8cee95", 
         "description": "lot description"
       }
     ], 
     "items": [
       {
-        "relatedLot": "452029a0046446d0811541dd6cc10485", 
+        "relatedLot": "01a475ba65af458ca805d6770e8cee95", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -80,8 +80,8 @@ Host: api-sandbox.openprocurement.org
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-01-27T15:48:03.841685+02:00", 
-          "endDate": "2019-01-30T15:48:03.841685+02:00"
+          "startDate": "2019-03-20T09:26:15.326761+02:00", 
+          "endDate": "2019-03-23T09:26:15.326761+02:00"
         }, 
         "id": "1662b0e1d59f4e2f8e2c5bd48e03a7bc", 
         "unit": {
@@ -93,29 +93,36 @@ Host: api-sandbox.openprocurement.org
     ], 
     "procurementMethodType": "closeFrameworkAgreementSelectionUA", 
     "procuringEntity": {
-      "contactPoint": {
-        "name": "Державне управління справами", 
-        "telephone": "0440000000"
-      }, 
-      "identifier": {
-        "scheme": "UA-EDR", 
-        "id": "00037256", 
-        "uri": "http://www.dus.gov.ua/"
-      }, 
-      "name": "Державне управління справами", 
       "kind": "general", 
+      "name": "Державне управління справами", 
       "address": {
         "countryName": "Україна", 
         "postalCode": "01220", 
         "region": "м. Київ", 
         "streetAddress": "вул. Банкова, 11, корпус 1", 
         "locality": "м. Київ"
+      }, 
+      "additionalContactPoints": [
+        {
+          "name": "Державне управління справами 1", 
+          "availableLanguage": "uk", 
+          "telephone": "0440000000"
+        }
+      ], 
+      "contactPoint": {
+        "name": "Державне управління справами", 
+        "availableLanguage": "en", 
+        "telephone": "0440000000"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "00037256", 
+        "uri": "http://www.dus.gov.ua/"
       }
     }, 
-    "procurementMethodDetails": "quick, accelerator=1440", 
     "agreements": [
       {
-        "id": "42c09c505f954abd8bf8863ec2fb0379"
+        "id": "56a40c4f887f48a0873ec12bac92b706"
       }
     ]
   }
@@ -124,39 +131,29 @@ Host: api-sandbox.openprocurement.org
 
 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/2421d6b589cd45dbbd4dad08488d24ed
+Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/ff0d38e97aeb438491ab990f9cb747a6
 
 {
   "access": {
-    "token": "308198788ab34d26b7dfd526f55e5058"
+    "token": "ac7d0ac7b50a4da685b91c3ff31ebddb"
   }, 
   "data": {
     "status": "draft", 
     "procurementMethod": "selective", 
-    "tenderID": "UA-2019-01-25-000001", 
+    "tenderID": "UA-2019-03-18-000001", 
     "title": "футляри до державних нагород", 
     "lots": [
       {
-        "date": "2019-01-25T15:48:06.255147+02:00", 
+        "date": "2019-03-18T09:26:29.800543+02:00", 
         "status": "active", 
         "title": "lot title", 
         "description": "lot description", 
-        "id": "452029a0046446d0811541dd6cc10485"
+        "id": "01a475ba65af458ca805d6770e8cee95"
       }
     ], 
-    "procurementMethodDetails": "quick, accelerator=1440", 
-    "procurementMethodType": "closeFrameworkAgreementSelectionUA", 
-    "submissionMethod": "electronicAuction", 
-    "date": "2019-01-25T15:48:06.255147+02:00", 
-    "agreements": [
-      {
-        "id": "42c09c505f954abd8bf8863ec2fb0379"
-      }
-    ], 
-    "awardCriteria": "lowestCost", 
     "items": [
       {
-        "relatedLot": "452029a0046446d0811541dd6cc10485", 
+        "relatedLot": "01a475ba65af458ca805d6770e8cee95", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -179,38 +176,55 @@ Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/2421d6b589cd45d
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-01-27T15:48:03.841685+02:00", 
-          "endDate": "2019-01-30T15:48:03.841685+02:00"
+          "startDate": "2019-03-20T09:26:15.326761+02:00", 
+          "endDate": "2019-03-23T09:26:15.326761+02:00"
         }, 
         "id": "1662b0e1d59f4e2f8e2c5bd48e03a7bc", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
-        "quantity": 5
+        "quantity": 5.0
       }
     ], 
+    "procurementMethodType": "closeFrameworkAgreementSelectionUA", 
+    "submissionMethod": "electronicAuction", 
+    "date": "2019-03-18T09:26:29.800543+02:00", 
+    "agreements": [
+      {
+        "id": "56a40c4f887f48a0873ec12bac92b706"
+      }
+    ], 
+    "awardCriteria": "lowestCost", 
     "owner": "broker", 
-    "dateModified": "2019-01-25T15:48:06.263761+02:00", 
-    "id": "2421d6b589cd45dbbd4dad08488d24ed", 
+    "dateModified": "2019-03-18T09:26:29.802990+02:00", 
+    "id": "ff0d38e97aeb438491ab990f9cb747a6", 
     "procuringEntity": {
-      "contactPoint": {
-        "name": "Державне управління справами", 
-        "telephone": "0440000000"
-      }, 
-      "identifier": {
-        "scheme": "UA-EDR", 
-        "id": "00037256", 
-        "uri": "http://www.dus.gov.ua/"
-      }, 
-      "name": "Державне управління справами", 
       "kind": "general", 
+      "name": "Державне управління справами", 
       "address": {
         "postalCode": "01220", 
         "countryName": "Україна", 
         "streetAddress": "вул. Банкова, 11, корпус 1", 
         "region": "м. Київ", 
         "locality": "м. Київ"
+      }, 
+      "additionalContactPoints": [
+        {
+          "name": "Державне управління справами 1", 
+          "availableLanguage": "uk", 
+          "telephone": "0440000000"
+        }
+      ], 
+      "contactPoint": {
+        "name": "Державне управління справами", 
+        "availableLanguage": "en", 
+        "telephone": "0440000000"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "00037256", 
+        "uri": "http://www.dus.gov.ua/"
       }
     }
   }

@@ -1,4 +1,4 @@
-POST /api/2.3/tenders?opt_pretty=1 HTTP/1.0
+POST /api/2.5/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 4164
 Content-Type: application/json
@@ -22,7 +22,7 @@ Host: api-sandbox.openprocurement.org
           }
         ], 
         "title_en": "Air Intake", 
-        "relatedItem": "e214fbd9ed204c9bb42f9e1f628109f8", 
+        "relatedItem": "220c0e0859ff4294a8e68bd5b816d84b", 
         "featureOf": "item"
       }, 
       {
@@ -53,7 +53,7 @@ Host: api-sandbox.openprocurement.org
       "amount": 35
     }, 
     "enquiryPeriod": {
-      "endDate": "2017-08-01T17:36:49.331754"
+      "endDate": "2019-03-25T09:26:15.290528"
     }, 
     "title_en": "Cases with state awards", 
     "value": {
@@ -100,7 +100,7 @@ Host: api-sandbox.openprocurement.org
           }
         ], 
         "description_ru": "футляры к государственным наградам", 
-        "id": "e214fbd9ed204c9bb42f9e1f628109f8", 
+        "id": "220c0e0859ff4294a8e68bd5b816d84b", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -109,7 +109,7 @@ Host: api-sandbox.openprocurement.org
       }
     ], 
     "tenderPeriod": {
-      "endDate": "2017-08-08T17:36:49.331754"
+      "endDate": "2019-04-01T09:26:15.290528"
     }
   }
 }
@@ -117,11 +117,11 @@ Host: api-sandbox.openprocurement.org
 
 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/e5d1cd890bd54669972755ca7e8604de
+Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/2fe5bfccf3b8488ea76b21e4786b759c
 
 {
   "access": {
-    "token": "1a6350b26a094a39adf455ee9a495f6c"
+    "token": "2d4c82989c844e07946ac6eca8d20690"
   }, 
   "data": {
     "procurementMethod": "open", 
@@ -141,7 +141,7 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/e5d1cd890bd5466
           }
         ], 
         "title_en": "Air Intake", 
-        "relatedItem": "e214fbd9ed204c9bb42f9e1f628109f8", 
+        "relatedItem": "220c0e0859ff4294a8e68bd5b816d84b", 
         "featureOf": "item"
       }, 
       {
@@ -167,25 +167,44 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/e5d1cd890bd5466
       }
     ], 
     "enquiryPeriod": {
-      "startDate": "2017-07-25T17:36:55.784983+03:00", 
-      "endDate": "2017-08-01T17:36:49.331754+03:00"
+      "startDate": "2019-03-18T09:26:26.182764+02:00", 
+      "endDate": "2019-03-25T09:26:15.290528+02:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "next_check": "2017-08-01T17:36:49.331754+03:00", 
-    "awardCriteria": "lowestCost", 
+    "next_check": "2019-03-25T09:26:15.290528+02:00", 
+    "procuringEntity": {
+      "contactPoint": {
+        "name": "Державне управління справами", 
+        "telephone": "0440000000"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "00037256", 
+        "uri": "http://www.dus.gov.ua/"
+      }, 
+      "name": "Державне управління справами", 
+      "kind": "general", 
+      "address": {
+        "postalCode": "01220", 
+        "countryName": "Україна", 
+        "streetAddress": "вул. Банкова, 11, корпус 1", 
+        "region": "м. Київ", 
+        "locality": "м. Київ"
+      }
+    }, 
     "owner": "broker", 
-    "id": "e5d1cd890bd54669972755ca7e8604de", 
+    "id": "2fe5bfccf3b8488ea76b21e4786b759c", 
     "title": "[ТЕСТУВАННЯ] футляри до державних нагород", 
-    "tenderID": "UA-2017-07-25-000002", 
-    "dateModified": "2017-07-25T17:36:55.787215+03:00", 
+    "tenderID": "UA-2019-03-18-000002", 
+    "dateModified": "2019-03-18T09:26:26.184827+02:00", 
     "status": "active.enquiries", 
     "tenderPeriod": {
-      "startDate": "2017-08-01T17:36:49.331754+03:00", 
-      "endDate": "2017-08-08T17:36:49.331754+03:00"
+      "startDate": "2019-03-25T09:26:15.290528+02:00", 
+      "endDate": "2019-04-01T09:26:15.290528+03:00"
     }, 
     "procurementMethodType": "belowThreshold", 
     "title_en": "[TESTING] Cases with state awards", 
-    "date": "2017-07-25T17:36:55.785011+03:00", 
+    "date": "2019-03-18T09:26:26.182800+02:00", 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35.0, 
@@ -208,12 +227,12 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/e5d1cd890bd5466
           }
         ], 
         "description_ru": "футляры к государственным наградам", 
-        "id": "e214fbd9ed204c9bb42f9e1f628109f8", 
+        "id": "220c0e0859ff4294a8e68bd5b816d84b", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
-        "quantity": 5
+        "quantity": 5.0
       }
     ], 
     "value": {
@@ -223,26 +242,7 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/e5d1cd890bd5466
     }, 
     "mode": "test", 
     "title_ru": "[ТЕСТИРОВАНИЕ] футляры к государственным наградам", 
-    "procuringEntity": {
-      "contactPoint": {
-        "name": "Державне управління справами", 
-        "telephone": "0440000000"
-      }, 
-      "identifier": {
-        "scheme": "UA-EDR", 
-        "id": "00037256", 
-        "uri": "http://www.dus.gov.ua/"
-      }, 
-      "name": "Державне управління справами", 
-      "kind": "general", 
-      "address": {
-        "postalCode": "01220", 
-        "countryName": "Україна", 
-        "streetAddress": "вул. Банкова, 11, корпус 1", 
-        "region": "м. Київ", 
-        "locality": "м. Київ"
-      }
-    }
+    "awardCriteria": "lowestCost"
   }
 }
 
