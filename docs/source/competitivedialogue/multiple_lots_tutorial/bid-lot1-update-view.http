@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/c9fa44b1c65d4e59b5db6ebaad408a9d/bids/4cbf06c0e4ef4d6e98de16ec31113d2c?acc_token=6708915b03ac4af4a603862ee7a4f2dc HTTP/1.0
+PATCH /api/2.5/tenders/b0aac9eeadd141df8d39a01f620c6094/bids/a0b3af50282e4673aa7b715c39e4ba97?acc_token=eedfd383c0f747429a069c35343b864f HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 188
 Content-Type: application/json
@@ -9,7 +9,7 @@ DATA:
     "status": "pending", 
     "lotValues": [
       {
-        "relatedLot": "064dcd27e2cd4789a5b57519ad77c250", 
+        "relatedLot": "e0b3133acf604b108de4823789caca6e", 
         "subcontractingDetails": "ДКП «Орфей»"
       }
     ]
@@ -24,8 +24,8 @@ Content-Type: application/json; charset=UTF-8
     "selfEligible": true, 
     "lotValues": [
       {
-        "relatedLot": "064dcd27e2cd4789a5b57519ad77c250", 
-        "date": "2017-06-21T17:05:01.275699+03:00", 
+        "relatedLot": "e0b3133acf604b108de4823789caca6e", 
+        "date": "2019-03-18T16:26:15.514351+02:00", 
         "status": "pending", 
         "subcontractingDetails": "ДКП «Орфей»"
       }
@@ -53,8 +53,8 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "date": "2017-06-21T17:05:01.275159+03:00", 
-    "id": "4cbf06c0e4ef4d6e98de16ec31113d2c"
+    "date": "2019-03-18T16:26:15.513265+02:00", 
+    "id": "a0b3af50282e4673aa7b715c39e4ba97"
   }
 }
 
