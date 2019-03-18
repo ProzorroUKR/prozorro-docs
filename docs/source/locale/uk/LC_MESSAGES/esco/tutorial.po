@@ -479,17 +479,15 @@ msgstr ""
 
 #: ../../source/esco/tutorial.rst:376
 msgid "Setting contract value"
-msgstr ""
+msgstr "Встановлення вартості угоди"
 
 #: ../../source/esco/tutorial.rst:378
-msgid ""
-"By default contract value `amountNet` is set based on the award value "
-"`amount`, but there is a possibility to set custom contract value."
-msgstr ""
+msgid "By default contract value `amountNet` is set based on the award value `amount`, but there is a possibility to set custom contract value."
+msgstr "За замовчуванням вартість угоди без урахування ПДВ встановлюється на основі рішення про визначення переможця, але є можливість змінити це значення."
 
 #: ../../source/esco/tutorial.rst:380
 msgid "You can update `amountNet` following next rules:"
-msgstr ""
+msgstr "Ви можете встановити нове значення для полів `amountNet` керуючись наступними правилами:"
 
 #: ../../source/esco/tutorial.rst:383
 msgid "`amountNet`"
@@ -497,7 +495,7 @@ msgstr ""
 
 #: ../../source/esco/tutorial.rst:383
 msgid "Can be less than ``contract.value.amount`` for 20% max"
-msgstr ""
+msgstr "Внесене значення має бути <= ``contract.value.amount``, але не більше ніж на 20%"
 
 #: ../../source/esco/tutorial.rst:386
 msgid "Let's set contract contract value with next request:"
