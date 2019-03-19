@@ -267,34 +267,24 @@ Let's see the created contract with next request:
 .. include:: http/tutorial/tender-contract-get-contract-value.http
    :code:
 
+
 By default contract value `amount` and `amountNet` is set based on the award value `amount`, but there is a possibility to set custom contract value.
 
-You can update `amount` and `amountNet` following next rules:
+You can update value `amount` and `amountNet` following next rules:
 
-+-------------------------------------------------------+
-| Value `amountNet` should be less or equal to `amount` |
-+-------------------------------------------------------+
++-------------+-------------------------------------------------------------+
+| `amountNet` | Should be less or equal to `amount`                         |
++             +-------------------------------------------------------------+
+|             | Should be less than `amount` for 20% of `amountNet` max     |
++             +-------------------------------------------------------------+
+|             | Should be less or equal to **awarded** `amount`             |
++-------------+-------------------------------------------------------------+
 
 For contract value with `valueAddedTaxIncluded` set to `true`:
 
-
-+-------------+--------------------------------------------------------+
-| `amount`    | Should be less or equal to ``award.value.amount``      |
-+-------------+--------------------------------------------------------+
-| `amountNet` | Should be less or equal to ``award.value.amount``      |
-+             +--------------------------------------------------------+
-|             | Can be less than ``contract.value.amount`` for 20% max |
-+-------------+--------------------------------------------------------+
-
-For contract value with `valueAddedTaxIncluded` set to `false`:
-
-+-------------+--------------------------------------------------------------+
-| `amount`    | Should be greater or equal to ``award.value.amount``         |
-+             +--------------------------------------------------------------+
-|             | Can be greater than ``contract.value.amountNet`` for 20% max |
-+-------------+--------------------------------------------------------------+
-| `amountNet` | Should be less or equal to ``award.value.amount``            |
-+-------------+--------------------------------------------------------------+
++-------------+---------------------------------------------------+
+| `amount`    | Should be less or equal to **awarded** `amount`   |
++-------------+---------------------------------------------------+
 
 Let's set contract contract value with next request:
 

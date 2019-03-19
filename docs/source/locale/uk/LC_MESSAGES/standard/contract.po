@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.api 0.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-18 09:32+0200\n"
+"POT-Creation-Date: 2019-03-19 16:57+0200\n"
 "PO-Revision-Date: 2018-08-17 15:13+0300\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
 "Language-Team: Ukrainian <info@quintagroup.com>\n"
@@ -16,7 +16,7 @@ msgstr ""
 msgid "Contract"
 msgstr "Contract"
 
-#: ../../source/standard/contract.rst:11 ../../source/standard/contract.rst:210
+#: ../../source/standard/contract.rst:11 ../../source/standard/contract.rst:209
 msgid "Schema"
 msgstr "Схема"
 
@@ -29,7 +29,7 @@ msgid "|ocdsDescription| The identifier for this contract."
 msgstr "|ocdsDescription| Ідентифікатор цього договору."
 
 #: ../../source/standard/contract.rst:20 ../../source/standard/contract.rst:32
-#: ../../source/standard/contract.rst:44 ../../source/standard/contract.rst:225
+#: ../../source/standard/contract.rst:44 ../../source/standard/contract.rst:224
 msgid "string, required"
 msgstr "рядок, обов’язковий"
 
@@ -41,8 +41,8 @@ msgstr ""
 "|ocdsDescription| `Award.id` вказує на рішення, згідно якого видається "
 "договір."
 
-#: ../../source/standard/contract.rst:26 ../../source/standard/contract.rst:216
-#: ../../source/standard/contract.rst:238
+#: ../../source/standard/contract.rst:26 ../../source/standard/contract.rst:215
+#: ../../source/standard/contract.rst:237
 msgid "string, auto-generated, read-only"
 msgstr "рядок, генерується автоматично, лише для читання"
 
@@ -62,7 +62,7 @@ msgstr "|ocdsDescription| Опис договору"
 msgid "|ocdsDescription| The current status of the contract."
 msgstr "|ocdsDescription| Поточний статус договору."
 
-#: ../../source/standard/contract.rst:49 ../../source/standard/contract.rst:227
+#: ../../source/standard/contract.rst:49 ../../source/standard/contract.rst:226
 msgid "Possible values are:"
 msgstr "Можливі значення:"
 
@@ -122,7 +122,7 @@ msgstr ""
 "угоді. Зверніть увагу: Якщо список співпадає з визначенням переможця "
 "`award`, то його не потрібно повторювати."
 
-#: ../../source/standard/contract.rst:78 ../../source/standard/contract.rst:222
+#: ../../source/standard/contract.rst:78 ../../source/standard/contract.rst:221
 msgid "List of :ref:`Organization` objects, auto-generated, read-only"
 msgstr ""
 "Список об’єктів :ref:`Organization`, генерується автоматично, лише для "
@@ -159,32 +159,26 @@ msgid "Value amountNet can be less than amount for 20% if VAT included"
 msgstr ""
 
 #: ../../source/standard/contract.rst:92
+#, python-format
+msgid "Value amount can be greater than amountNet for 20% if VAT not included"
+msgstr ""
+
+#: ../../source/standard/contract.rst:93
 msgid ""
 "Value amountNet should be less or equal to awarded amount if VAT not "
 "included"
 msgstr ""
 
-#: ../../source/standard/contract.rst:93
-msgid ""
-"Value amount should be greater or equal to awarded amount if VAT not "
-"included"
-msgstr ""
-
-#: ../../source/standard/contract.rst:94
-#, python-format
-msgid "Value amount can be greater than amountNet for 20% if VAT not included"
-msgstr ""
-
-#: ../../source/standard/contract.rst:96
+#: ../../source/standard/contract.rst:95
 msgid "Check \":ref:`SettingContractValue`\" tutorial section for more info"
 msgstr ""
 
-#: ../../source/standard/contract.rst:99 ../../source/standard/contract.rst:124
-#: ../../source/standard/contract.rst:233
+#: ../../source/standard/contract.rst:98 ../../source/standard/contract.rst:123
+#: ../../source/standard/contract.rst:232
 msgid "string, :ref:`date`"
 msgstr "рядок, :ref:`date`"
 
-#: ../../source/standard/contract.rst:101
+#: ../../source/standard/contract.rst:100
 msgid ""
 "|ocdsDescription| The date when the contract was signed. In the case of "
 "multiple signatures, the date of the last signature."
@@ -192,39 +186,39 @@ msgstr ""
 "|ocdsDescription| Дата підписання договору. Якщо було декілька підписань,"
 " то береться дата останнього підписання."
 
-#: ../../source/standard/contract.rst:104
+#: ../../source/standard/contract.rst:103
 msgid "Differences in :ref:`defense`, :ref:`openua` and :ref:`openeu`:"
 msgstr ""
 
-#: ../../source/standard/contract.rst:106
+#: ../../source/standard/contract.rst:105
 msgid "string, :ref:`date`, auto-generated"
 msgstr "рядок, :ref:`date`, генерується автоматично"
 
-#: ../../source/standard/contract.rst:108
+#: ../../source/standard/contract.rst:107
 msgid "Time frame for `dateSigned`in :ref:`defense`:"
 msgstr "Діапазон значень для поля `dateSigned`:"
 
-#: ../../source/standard/contract.rst:111
+#: ../../source/standard/contract.rst:110
 msgid "reporting procedure:"
 msgstr "для процедури звітування про укладений договір:"
 
-#: ../../source/standard/contract.rst:111
+#: ../../source/standard/contract.rst:110
 msgid "[24 hours ago - now]"
 msgstr "[24 години назад - тепер]"
 
-#: ../../source/standard/contract.rst:114
+#: ../../source/standard/contract.rst:113
 msgid "negotiation/negotiation.quick procedure:"
 msgstr "для переговорної процедури / переговорної процедури за нагальною потребою:"
 
-#: ../../source/standard/contract.rst:114
+#: ../../source/standard/contract.rst:113
 msgid "[complaint period end - now]"
 msgstr "[закінчення періоду оскаржень - тепер]"
 
-#: ../../source/standard/contract.rst:117
+#: ../../source/standard/contract.rst:116
 msgid "List of :ref:`Document` objects"
 msgstr "Список об’єктів :ref:`Document`"
 
-#: ../../source/standard/contract.rst:119
+#: ../../source/standard/contract.rst:118
 msgid ""
 "|ocdsDescription| All documents and attachments related to the contract, "
 "including any notices."
@@ -232,24 +226,24 @@ msgstr ""
 "|ocdsDescription| Усі документи та додатки пов’язані з договором, включно"
 " з будь-якими повідомленнями."
 
-#: ../../source/standard/contract.rst:126
-#: ../../source/standard/contract.rst:235
+#: ../../source/standard/contract.rst:125
+#: ../../source/standard/contract.rst:234
 msgid "The date when the contract was changed or activated."
 msgstr "Дата, коли договір був змінений або активований."
 
-#: ../../source/standard/contract.rst:128
+#: ../../source/standard/contract.rst:127
 msgid "This field is not in :ref:`contracting`"
 msgstr "Поля немає в :ref:`contracting`"
 
-#: ../../source/standard/contract.rst:130
+#: ../../source/standard/contract.rst:129
 msgid "Additional fields for :ref:`contracting`:"
 msgstr "Додаткові поля для: :ref:`contracting`:"
 
-#: ../../source/standard/contract.rst:134
+#: ../../source/standard/contract.rst:133
 msgid ":ref:`ProcuringEntity`"
 msgstr ":ref:`ProcuringEntity`"
 
-#: ../../source/standard/contract.rst:136
+#: ../../source/standard/contract.rst:135
 msgid ""
 "|ocdsDescription| The entity managing the procurement, which may be "
 "different from the buyer who is paying / using the items being procured."
@@ -257,31 +251,31 @@ msgstr ""
 "|ocdsDescription| Об’єкт, що управляє закупівлею. Він не обов’язково є "
 "покупцем, який платить / використовує закуплені елементи."
 
-#: ../../source/standard/contract.rst:141
+#: ../../source/standard/contract.rst:140
 msgid "List of :ref:`Change` objects."
 msgstr "Список пов’язаних об’єктів :ref:`Change`."
 
-#: ../../source/standard/contract.rst:145
+#: ../../source/standard/contract.rst:144
 msgid "float, required"
 msgstr "число з рухомою комою, обов’язкове"
 
-#: ../../source/standard/contract.rst:146
+#: ../../source/standard/contract.rst:145
 msgid "string, required, auto-generated"
 msgstr "рядок, обов’язковий, генерується автоматично"
 
-#: ../../source/standard/contract.rst:147
+#: ../../source/standard/contract.rst:146
 msgid "bool, required , auto-generated"
 msgstr "логічний (булевий) тип даних, обов’язковий, генерується автоматично"
 
-#: ../../source/standard/contract.rst:149
+#: ../../source/standard/contract.rst:148
 msgid "Amount of money actually paid."
 msgstr "Дійсно оплачена сума."
 
-#: ../../source/standard/contract.rst:152
+#: ../../source/standard/contract.rst:151
 msgid "string, required for unsuccessful contract"
 msgstr "рядок, обов’язковий для неуспішних договорів"
 
-#: ../../source/standard/contract.rst:154
+#: ../../source/standard/contract.rst:153
 msgid ""
 "Reasons for contract termination. Presence of this field indicates that "
 "contract is unsuccessful."
@@ -289,60 +283,60 @@ msgstr ""
 "Причина припинення договору. Наявність цього поля вказує, що договір є "
 "неуспішним."
 
-#: ../../source/standard/contract.rst:158
+#: ../../source/standard/contract.rst:157
 msgid "Workflow in :ref:`contracting`"
 msgstr "Робочий процес в :ref:`contracting`"
 
-#: ../../source/standard/contract.rst:168
-#: ../../source/standard/contract.rst:184
-#: ../../source/standard/contract.rst:203
-#: ../../source/standard/contract.rst:261
+#: ../../source/standard/contract.rst:167
+#: ../../source/standard/contract.rst:183
+#: ../../source/standard/contract.rst:202
+#: ../../source/standard/contract.rst:260
 msgid "\\* marks initial state"
 msgstr "\\* позначає початковий стан"
 
-#: ../../source/standard/contract.rst:172
+#: ../../source/standard/contract.rst:171
 msgid "Contract workflow in :ref:`limited`"
 msgstr ""
 
-#: ../../source/standard/contract.rst:188
+#: ../../source/standard/contract.rst:187
 msgid "Workflow in :ref:`openeu`"
 msgstr "Робочий процес в :ref:`openeu`"
 
-#: ../../source/standard/contract.rst:207
+#: ../../source/standard/contract.rst:206
 #, fuzzy
 msgid "Contract in :ref:`cfaua`"
 msgstr "рядок, :ref:`date`"
 
-#: ../../source/standard/contract.rst:213
+#: ../../source/standard/contract.rst:212
 #, fuzzy
 msgid "uid, auto-generated, read-only"
 msgstr "рядок, генерується автоматично, лише для читання"
 
-#: ../../source/standard/contract.rst:219
+#: ../../source/standard/contract.rst:218
 msgid "List of :ref:`Parameter` objects, auto-generated, read-only"
 msgstr "Список об’єктів :ref:`Parameter` генерується автоматично, лише для читання"
 
-#: ../../source/standard/contract.rst:229
+#: ../../source/standard/contract.rst:228
 msgid "`active` - participant signed the agreement"
 msgstr ""
 
-#: ../../source/standard/contract.rst:230
+#: ../../source/standard/contract.rst:229
 msgid "`unsuccessful` - participant refused to sign the agreement"
 msgstr ""
 
-#: ../../source/standard/contract.rst:240
+#: ../../source/standard/contract.rst:239
 msgid "Contract related :ref:`Bid`"
 msgstr ""
 
-#: ../../source/standard/contract.rst:244
+#: ../../source/standard/contract.rst:243
 msgid "List of :ref:`UnitPrice`"
 msgstr ""
 
-#: ../../source/standard/contract.rst:246
+#: ../../source/standard/contract.rst:245
 msgid "Contract prices per :ref:`Item`"
 msgstr ""
 
-#: ../../source/standard/contract.rst:250
+#: ../../source/standard/contract.rst:249
 #, fuzzy
 msgid "Workflow in :ref:`cfaua`"
 msgstr "Робочий процес в :ref:`openeu`"
@@ -426,5 +420,11 @@ msgstr "Робочий процес в :ref:`openeu`"
 #~ msgstr ""
 
 #~ msgid "unitPrices"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Value amount should be greater or "
+#~ "equal to awarded amount if VAT not"
+#~ " included"
 #~ msgstr ""
 

@@ -117,12 +117,20 @@ Updating contract properties
 
 Now you can update contract properties which belong to the change.
 
+You can update value `amount` and `amountNet` following next rules:
+
++-------------+-------------------------------------------------------------+
+| `amountNet` | Should be less or equal to `amount`                         |
++             +-------------------------------------------------------------+
+|             | Should be less than `amount` for 20% of `amountNet` max     |
++-------------+-------------------------------------------------------------+
+
 .. include:: http/contracts-patch.http
    :code:
 
 We see the added properties have merged with existing contract data. Additionally, the `dateModified` property was updated to reflect the last modification datestamp.
 
-Fields that can be modified: `title`, `description`, `status`, `value.amount`, `period`, `items`, `amountPaid.amount`, `terminationDetails`.
+Fields that can be modified: `title`, `description`, `status`, `value.amount`, `value.amountNet`, `period`, `items`, `amountPaid.amount`, `terminationDetails`.
 
 See examples of `items` customization below. You can:
 
