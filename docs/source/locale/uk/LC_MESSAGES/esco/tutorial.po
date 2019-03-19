@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.tender.esco 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-18 09:32+0200\n"
+"POT-Creation-Date: 2019-03-19 16:57+0200\n"
 "PO-Revision-Date: 2018-09-12 11:57+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -482,89 +482,102 @@ msgid "Setting contract value"
 msgstr "Встановлення вартості угоди"
 
 #: ../../source/esco/tutorial.rst:378
-msgid "By default contract value `amountNet` is set based on the award value `amount`, but there is a possibility to set custom contract value."
-msgstr "За замовчуванням вартість угоди без урахування ПДВ встановлюється на основі рішення про визначення переможця, але є можливість змінити це значення."
+msgid ""
+"By default contract value `amountNet` is set based on the award value "
+"`amount`, but there is a possibility to set custom contract value."
+msgstr ""
+"За замовчуванням вартість угоди без урахування ПДВ встановлюється на "
+"основі рішення про визначення переможця, але є можливість змінити це "
+"значення."
 
 #: ../../source/esco/tutorial.rst:380
-msgid "You can update `amountNet` following next rules:"
-msgstr "Ви можете встановити нове значення для полів `amountNet` керуючись наступними правилами:"
+msgid "You can update value `amountNet` following next rules:"
+msgstr ""
+"Ви можете встановити нове значення для поля `amountNet` керуючись "
+"наступними правилами:"
 
 #: ../../source/esco/tutorial.rst:383
 msgid "`amountNet`"
 msgstr ""
 
 #: ../../source/esco/tutorial.rst:383
-msgid "Can be less than ``contract.value.amount`` for 20% max"
-msgstr "Внесене значення має бути <= ``contract.value.amount``, але не більше ніж на 20%"
+msgid "Should be less or equal to `amount`"
+msgstr "Встановлене значення поля має бути <= `amount`"
 
-#: ../../source/esco/tutorial.rst:386
-msgid "Let's set contract contract value with next request:"
+#: ../../source/esco/tutorial.rst:385
+msgid "Should be less than `amount` for 20% of `amountNet` max"
 msgstr ""
+"Може бути менше `amount` не більше ніж"
+" на 20% від `amountNet`"
 
-#: ../../source/esco/tutorial.rst:391
+#: ../../source/esco/tutorial.rst:388
+msgid "Let's set contract contract value with next request:"
+msgstr "Встановимо нові значення для поля `value` використовуючи наступний запит:"
+
+#: ../../source/esco/tutorial.rst:393
 msgid "`200 OK` response was returned. The value was modified successfully."
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:394
+#: ../../source/esco/tutorial.rst:396
 msgid "Setting contract signature date"
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:396
+#: ../../source/esco/tutorial.rst:398
 msgid ""
 "There is a possibility to set custom contract signature date. You can "
 "insert appropriate date into the `dateSigned` field."
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:398
+#: ../../source/esco/tutorial.rst:400
 msgid ""
 "If this date is not set, it will be auto-generated on the date of "
 "contract registration."
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:404
+#: ../../source/esco/tutorial.rst:406
 msgid "Setting contract validity period"
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:406
+#: ../../source/esco/tutorial.rst:408
 msgid ""
 "Setting contract validity period is optional, but if it is needed, you "
 "can set appropriate `startDate` and `endDate`."
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:412
+#: ../../source/esco/tutorial.rst:414
 #, fuzzy
 msgid "Uploading contract documentation"
 msgstr "Виправлені обмеження заватаження документів цінової пропозиції"
 
-#: ../../source/esco/tutorial.rst:414
+#: ../../source/esco/tutorial.rst:416
 msgid "You can upload contract documents for the ESCO procedure."
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:416
+#: ../../source/esco/tutorial.rst:418
 msgid "Let's upload contract document:"
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:421
+#: ../../source/esco/tutorial.rst:423
 msgid ""
 "`201 Created` response code and `Location` header confirm that this "
 "document was added."
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:423
+#: ../../source/esco/tutorial.rst:425
 msgid "Let's see the list of contract documents:"
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:428
+#: ../../source/esco/tutorial.rst:430
 msgid "We can upload another contract document:"
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:433
+#: ../../source/esco/tutorial.rst:435
 msgid ""
 "`201 Created` response code and `Location` header confirm that the second"
 " document was uploaded."
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:435
+#: ../../source/esco/tutorial.rst:437
 msgid ""
 "By default, document language is Ukrainian. You can can change it and set"
 " another language for the document by assigning appropriate language code"
@@ -573,100 +586,100 @@ msgid ""
 "`description_en`) fields. See :ref:`Document` data structure for details."
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:440
+#: ../../source/esco/tutorial.rst:442
 msgid "Let's see the list of all added contract documents:"
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:445
+#: ../../source/esco/tutorial.rst:447
 msgid "Let's view separate contract document:"
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:451
+#: ../../source/esco/tutorial.rst:453
 #, fuzzy
 msgid "Cancelling tender"
 msgstr "Додавання/модифікація/відміна цінової пропозиції"
 
-#: ../../source/esco/tutorial.rst:453
+#: ../../source/esco/tutorial.rst:455
 msgid ""
 "Tender creator can cancel tender anytime. The following steps should be "
 "applied:"
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:455
+#: ../../source/esco/tutorial.rst:457
 #, fuzzy
 msgid "Prepare cancellation request."
 msgstr "Cancellation"
 
-#: ../../source/esco/tutorial.rst:456
+#: ../../source/esco/tutorial.rst:458
 msgid "Fill it with the protocol describing the cancellation reasons."
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:457
+#: ../../source/esco/tutorial.rst:459
 msgid "Cancel the tender with the prepared reasons."
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:459
+#: ../../source/esco/tutorial.rst:461
 msgid ""
 "Only the request that has been activated (3rd step above) has power to "
 "cancel tender.  I.e.  you have to not only prepare cancellation request "
 "but to activate it as well."
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:463
+#: ../../source/esco/tutorial.rst:465
 msgid "See :ref:`cancellation` data structure for details."
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:466
+#: ../../source/esco/tutorial.rst:468
 #, fuzzy
 msgid "Preparing the cancellation request"
 msgstr "Cancellation"
 
-#: ../../source/esco/tutorial.rst:468
+#: ../../source/esco/tutorial.rst:470
 msgid "You should pass `reason`, `status` defaults to `pending`."
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:470
+#: ../../source/esco/tutorial.rst:472
 msgid "`id` is autogenerated and passed in the `Location` header of response."
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:475
+#: ../../source/esco/tutorial.rst:477
 msgid ""
 "There are two possible types of cancellation reason: tender was "
 "`cancelled` or `unsuccessful`. By default ``reasonType`` value is "
 "`cancelled`."
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:477
+#: ../../source/esco/tutorial.rst:479
 msgid "You can change ``reasonType`` value to `unsuccessful`."
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:483
+#: ../../source/esco/tutorial.rst:485
 msgid "Filling cancellation with protocol and supplementary documentation"
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:485
+#: ../../source/esco/tutorial.rst:487
 #, fuzzy
 msgid "Upload the file contents"
 msgstr "Зміст:"
 
-#: ../../source/esco/tutorial.rst:490
+#: ../../source/esco/tutorial.rst:492
 msgid "Change the document description and other properties"
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:496
+#: ../../source/esco/tutorial.rst:498
 msgid "Upload new version of the document"
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:503
+#: ../../source/esco/tutorial.rst:505
 #, fuzzy
 msgid "Activating the request and cancelling tender"
 msgstr "Відміна скарги на визначення переможця"
 
-#: ../../source/esco/tutorial.rst:508
+#: ../../source/esco/tutorial.rst:510
 msgid "We can check if tender was actually cancelled."
 msgstr ""
 
-#: ../../source/esco/tutorial.rst:513
+#: ../../source/esco/tutorial.rst:515
 msgid "Now  ``status`` value is `cancelled`."
 msgstr ""
 
