@@ -121,12 +121,13 @@ Procuring entity can set bid guarantee:
 .. index:: Document
 
 You may modify the following fields on this stage of procedure:
-   * in :ref:`Tender` - `title`
-   * in :ref:`Lot` - `title`, `description`
-   * in :ref:`Item` - `description`, `deliveryAddress`, `deliveryDate`, `quantity`
-   * in `tenderPeriod` - `endDate`
+   * in :ref:`Tender` - `title`, `title_en`, `description`, `description_en`, `tenderPeriod`: `endDate`
+   * in :ref:`Lot` - `title`, `description`, `title_en`, `description_en`, `minimalStep`, `amount`
+   * in :ref:`Item` - `description`, `description_en`, `deliveryAddress`, `deliveryDate`, `quantity`
    * :ref:`Guarantee`
+`tenderPeriod`:`endDate` should differ from tender publication date at least on three days.
 
+You can modify the same fields on this stage of procedure in the case of multiple :ref:`Item` selected.
 
 
 Uploading documentation
@@ -197,7 +198,7 @@ of bids.
 
 Bidder can register a bid in ``draft`` status:
 
-You cannot submit a bid greater than ``agreement.contract.value``. Also Bidder can't submit a bid if he is not party of this Framework Agreement 
+You cannot submit a bid greater than ``agreement.contract.value``. Also Bidder can't submit a bid if he is not party of this Framework Agreement
 (:ref:`Agreement`).
 
 
@@ -212,7 +213,7 @@ And activate a bid:
 .. include:: tutorial/activate-bidder.http
    :code:
 
-Procuring entity should only upload digital signature on this stage of procedure.
+Bidder should only upload digital signature on this stage of procedure.
 
 Upload proposal document:
 
