@@ -118,6 +118,7 @@ Now you can update agreement properties which belong to the change.
 .. include:: tutorial/add-agreement-change-modification.http
    :code:
 
+In case of multiple :ref:`Items` you are allowed to change in `modifications` each `factor`.
 
 Agreement preview
 ~~~~~~~~~~~~~~~~~
