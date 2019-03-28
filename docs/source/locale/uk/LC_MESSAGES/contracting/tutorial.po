@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.contracting.api 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-19 16:57+0200\n"
+"POT-Creation-Date: 2019-03-28 08:27+0200\n"
 "PO-Revision-Date: 2016-10-06 14:50+0200\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
 "Language-Team: Ukrainian <support@quintagroup.com>\n"
@@ -215,21 +215,30 @@ msgstr ""
 "керуючись наступними правилами:"
 
 #: ../../source/contracting/tutorial.rst:123
-msgid "`amountNet`"
+msgid "`valueAddedTaxIncluded`"
 msgstr ""
 
 #: ../../source/contracting/tutorial.rst:123
-msgid "Should be less or equal to `amount`"
-msgstr "Має бути <= `amount`"
+msgid "`Validation`"
+msgstr ""
 
 #: ../../source/contracting/tutorial.rst:125
-#, python-format
-msgid "Should be less than `amount` for 20% of `amountNet` max"
+msgid "true"
 msgstr ""
-"Може бути менше `amount` не більше ніж"
-" на 20% від `amountNet`"
 
-#: ../../source/contracting/tutorial.rst:131
+#: ../../source/contracting/tutorial.rst:125
+msgid "Amount should be greater than amountNet and differ by no more than 20%"
+msgstr ""
+
+#: ../../source/contracting/tutorial.rst:127
+msgid "false"
+msgstr ""
+
+#: ../../source/contracting/tutorial.rst:127
+msgid "Amount and amountNet should be equal"
+msgstr ""
+
+#: ../../source/contracting/tutorial.rst:134
 msgid ""
 "We see the added properties have merged with existing contract data. "
 "Additionally, the `dateModified` property was updated to reflect the last"
@@ -239,53 +248,53 @@ msgstr ""
 "закупівлі. Додатково оновлена властивість `dateModified`, щоб відображати"
 " останню дату модифікації."
 
-#: ../../source/contracting/tutorial.rst:133
+#: ../../source/contracting/tutorial.rst:136
 msgid ""
 "Fields that can be modified: `title`, `description`, `status`, "
 "`value.amount`, `value.amountNet`, `period`, `items`, "
-"`amountPaid.amount`, `terminationDetails`."
+"`amountPaid.amount`, `amountPaid.amountNet`, `terminationDetails`."
 msgstr ""
 "Поля, які можна модифікувати: `title`, `description`, `status`, "
 "`value.amount`, `value.amountNet`, `period`, `items`, "
-"`amountPaid.amount`, `terminationDetails`."
+"`amountPaid.amount`, `amountPaid.amountТуе`, `terminationDetails`."
 
-#: ../../source/contracting/tutorial.rst:135
+#: ../../source/contracting/tutorial.rst:138
 msgid "See examples of `items` customization below. You can:"
 msgstr "Дивіться приклади зміни елемента (`items`) нижче. Ви можете:"
 
-#: ../../source/contracting/tutorial.rst:137
+#: ../../source/contracting/tutorial.rst:140
 msgid "update item:"
 msgstr "оновити елемент (`items`):"
 
-#: ../../source/contracting/tutorial.rst:142
+#: ../../source/contracting/tutorial.rst:145
 msgid "delete item:"
 msgstr "видалити елемент (`items`):"
 
-#: ../../source/contracting/tutorial.rst:144
+#: ../../source/contracting/tutorial.rst:147
 msgid "Request example for cases when contract has several items:"
 msgstr ""
 
-#: ../../source/contracting/tutorial.rst:150
+#: ../../source/contracting/tutorial.rst:153
 msgid "Applying the change"
 msgstr "Застосування зміни"
 
-#: ../../source/contracting/tutorial.rst:152
+#: ../../source/contracting/tutorial.rst:155
 msgid "`Change` can be applied by switching to the ``active`` status."
 msgstr "Зміна `change` застосовується при переключенні в статус ``active``."
 
-#: ../../source/contracting/tutorial.rst:154
+#: ../../source/contracting/tutorial.rst:157
 msgid "In order to apply ``active`` status `dateSigned` field must be set."
 msgstr "Щоб застосувати статус ``active`` потрібно встановити поле `dateSigned`."
 
-#: ../../source/contracting/tutorial.rst:156
+#: ../../source/contracting/tutorial.rst:159
 msgid "After this `change` can't be modified anymore."
 msgstr "ПІсля цього модифікувати зміну `change` вже не можна."
 
-#: ../../source/contracting/tutorial.rst:161
+#: ../../source/contracting/tutorial.rst:164
 msgid "`dateSigned` field validation:"
 msgstr "Валідація поля `dateSigned`:"
 
-#: ../../source/contracting/tutorial.rst:163
+#: ../../source/contracting/tutorial.rst:166
 msgid ""
 "for the first contract `change` date should be after "
 "`contract.dateSigned`;"
@@ -293,7 +302,7 @@ msgstr ""
 "для першої зміни `change` договору дата повинна бути після "
 "`contract.dateSigned`;"
 
-#: ../../source/contracting/tutorial.rst:165
+#: ../../source/contracting/tutorial.rst:168
 msgid ""
 "for all next `change` objects date should be after the previous "
 "`change.dateSigned`."
@@ -301,19 +310,19 @@ msgstr ""
 "для всіх наступних змін `change` договору дата повинна бути після "
 "попередньої дати `change.dateSigned`."
 
-#: ../../source/contracting/tutorial.rst:167
+#: ../../source/contracting/tutorial.rst:170
 msgid "You can view all changes:"
 msgstr "Ви можете переглянути всі зміни:"
 
-#: ../../source/contracting/tutorial.rst:172
+#: ../../source/contracting/tutorial.rst:175
 msgid "All changes are also listed on the contract view."
 msgstr "Всі зміни присутні при перегляді контракту."
 
-#: ../../source/contracting/tutorial.rst:179
+#: ../../source/contracting/tutorial.rst:182
 msgid "Uploading documentation"
 msgstr "Завантаження документації"
 
-#: ../../source/contracting/tutorial.rst:181
+#: ../../source/contracting/tutorial.rst:184
 msgid ""
 "Procuring entity can upload PDF files into the created contract. "
 "Uploading should follow the :ref:`upload` rules."
@@ -321,7 +330,7 @@ msgstr ""
 "Замовник може завантажити PDF файл у створений договір. Завантаження "
 "повинно відбуватись згідно правил :ref:`upload`."
 
-#: ../../source/contracting/tutorial.rst:187
+#: ../../source/contracting/tutorial.rst:190
 msgid ""
 "`201 Created` response code and `Location` header confirm document "
 "creation. We can additionally query the `documents` collection API "
@@ -331,11 +340,11 @@ msgstr ""
 "документ було створено. Додатково можна зробити запит точки входу API "
 "колекції документів, щоб підтвердити дію:"
 
-#: ../../source/contracting/tutorial.rst:194
+#: ../../source/contracting/tutorial.rst:197
 msgid "And again we can confirm that there are two documents uploaded."
 msgstr "І знову можна перевірити, що є два завантажених документа."
 
-#: ../../source/contracting/tutorial.rst:199
+#: ../../source/contracting/tutorial.rst:202
 msgid ""
 "In case we made an error, we can reupload the document over the older "
 "version:"
@@ -343,15 +352,15 @@ msgstr ""
 "Якщо сталась помилка, ми можемо ще раз завантажити документ поверх старої"
 " версії:"
 
-#: ../../source/contracting/tutorial.rst:204
+#: ../../source/contracting/tutorial.rst:207
 msgid "And we can see that it is overriding the original version:"
 msgstr "І ми бачимо, що вона перекриває оригінальну версію:"
 
-#: ../../source/contracting/tutorial.rst:215
+#: ../../source/contracting/tutorial.rst:218
 msgid "Completing contract"
 msgstr "Завершення договору"
 
-#: ../../source/contracting/tutorial.rst:217
+#: ../../source/contracting/tutorial.rst:220
 msgid ""
 "Before contract can be completed ``amountPaid`` field value should be set"
 " (regardless whether the contract was successful or unsuccessful). "
@@ -363,7 +372,7 @@ msgstr ""
 " завершити переключенням у статус ``terminated``. Виконаємо ці дії єдиним"
 " запитом:"
 
-#: ../../source/contracting/tutorial.rst:224
+#: ../../source/contracting/tutorial.rst:227
 msgid ""
 "Note that you can set/change only ``amountPaid.amount`` value. "
 "``amountPaid.currency`` and ``amountPaid.valueAddedTaxIncluded`` fields' "
@@ -374,7 +383,7 @@ msgstr ""
 "``amountPaid.valueAddedTaxIncluded`` генеруються з поля "
 "``Contract.value``."
 
-#: ../../source/contracting/tutorial.rst:226
+#: ../../source/contracting/tutorial.rst:229
 msgid ""
 "If contract is unsuccessful reasons for termination "
 "``terminationDetails`` should be specified."
@@ -382,10 +391,6 @@ msgstr ""
 "Якщо договір неуспішний, то потрібно вказати причини його припинення "
 "``terminationDetails``."
 
-#: ../../source/contracting/tutorial.rst:228
+#: ../../source/contracting/tutorial.rst:231
 msgid "Any future modification to the contract are not allowed."
 msgstr "Після цього додання змін до договору не дозволяється."
-
-#~ msgid "add item:"
-#~ msgstr "додати елемент (`items`):"
-
