@@ -83,13 +83,6 @@ Schema
     |ocdsDescription|
     The total value of this contract.
 
-    Validation rules:
-
-    * Value amountNet should be less or equal to amount
-    * Value amountNet should be less or equal to awarded amount
-    * Value amountNet can be less than amount for 20% of amountNet max
-    * Value amount should be less or equal to awarded amount if VAT included
-
     Check ":ref:`SettingContractValue`" tutorial section for more info
 
 :dateSigned:

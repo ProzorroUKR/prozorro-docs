@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/8999a1d343ba4c6b8a32f33256fb9aa5?acc_token=5603313b6b9c44f98724fb5b84e2adf5 HTTP/1.0
+PATCH /api/2.5/tenders/a5737d7e05a4451a8a502a9d763357f0?acc_token=108415e41c8546a99829fcbfe080d4e1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 60
 Content-Type: application/json
@@ -17,17 +17,17 @@ Content-Type: application/json; charset=UTF-8
     "procurementMethod": "open", 
     "status": "active.pre-qualification.stand-still", 
     "complaintPeriod": {
-      "startDate": "2019-02-16T16:13:33.574083+02:00", 
-      "endDate": "2019-03-14T00:00:00+02:00"
+      "startDate": "2019-02-26T06:49:21.272105+02:00", 
+      "endDate": "2019-03-24T00:00:00+02:00"
     }, 
     "enquiryPeriod": {
-      "startDate": "2019-02-16T16:13:33.574083+02:00", 
-      "clarificationsUntil": "2019-03-14T00:00:00+02:00", 
-      "endDate": "2019-03-08T16:13:33.574083+02:00", 
-      "invalidationDate": "2019-03-18T16:13:31.948073+02:00"
+      "startDate": "2019-02-26T06:49:21.272105+02:00", 
+      "clarificationsUntil": "2019-03-21T06:49:21.272105+02:00", 
+      "endDate": "2019-03-18T06:49:21.272105+02:00", 
+      "invalidationDate": "2019-03-28T06:49:20.844428+02:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "next_check": "2019-03-24T00:00:00+02:00", 
+    "next_check": "2019-04-03T01:00:00+03:00", 
     "procuringEntity": {
       "kind": "general", 
       "name": "ЗОСШ #10 м.Вінниці", 
@@ -55,7 +55,7 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "owner": "broker", 
     "title_en": "Services in school canteens", 
-    "id": "8999a1d343ba4c6b8a32f33256fb9aa5", 
+    "id": "a5737d7e05a4451a8a502a9d763357f0", 
     "title": "Послуги шкільних їдалень", 
     "lots": [
       {
@@ -64,7 +64,7 @@ Content-Type: application/json; charset=UTF-8
         "fundingKind": "other", 
         "title": "Лот №1", 
         "auctionPeriod": {
-          "shouldStartAfter": "2019-03-24T00:00:00+02:00"
+          "shouldStartAfter": "2019-04-03T00:00:00+02:00"
         }, 
         "minValue": {
           "currency": "UAH", 
@@ -73,8 +73,8 @@ Content-Type: application/json; charset=UTF-8
         }, 
         "minimalStepPercentage": 0.006, 
         "yearlyPaymentsPercentageRange": 0.8, 
-        "date": "2019-03-18T16:13:30.054523+02:00", 
-        "id": "5b14a30befc1462385a1fe5aaa823e39"
+        "date": "2019-03-28T06:49:20.419016+02:00", 
+        "id": "b7292dba1ee3436db63fee17b2d09579"
       }, 
       {
         "status": "unsuccessful", 
@@ -88,45 +88,45 @@ Content-Type: application/json; charset=UTF-8
         }, 
         "minimalStepPercentage": 0.006, 
         "yearlyPaymentsPercentageRange": 0.8, 
-        "date": "2019-03-18T16:13:34.173563+02:00", 
-        "id": "6d27b81f6f0642469a135f3e154ed51a"
+        "date": "2019-03-28T06:49:21.443687+02:00", 
+        "id": "9aa1ec08c6b04d25b5a908c62f978f5f"
       }
     ], 
     "qualificationPeriod": {
-      "startDate": "2019-03-18T16:13:34.094066+02:00", 
-      "endDate": "2019-03-24T00:00:00+02:00"
+      "startDate": "2019-03-28T06:49:21.423250+02:00", 
+      "endDate": "2019-04-03T00:00:00+02:00"
     }, 
-    "tenderID": "UA-2019-03-18-000001", 
+    "tenderID": "UA-2019-03-28-000001", 
     "minimalStepPercentage": 0.006, 
     "yearlyPaymentsPercentageRange": 0.8, 
-    "dateModified": "2019-03-18T16:13:36.173393+02:00", 
+    "dateModified": "2019-03-28T06:49:21.906489+02:00", 
     "numberOfBids": 2, 
     "tenderPeriod": {
-      "startDate": "2019-02-16T16:13:33.574083+02:00", 
-      "endDate": "2019-03-18T16:13:33.574083+02:00"
+      "startDate": "2019-02-26T06:49:21.272105+02:00", 
+      "endDate": "2019-03-28T06:49:21.272105+02:00"
     }, 
     "qualifications": [
       {
         "status": "active", 
-        "lotID": "5b14a30befc1462385a1fe5aaa823e39", 
+        "lotID": "b7292dba1ee3436db63fee17b2d09579", 
         "eligible": true, 
         "qualified": true, 
-        "bidID": "23b00365f9d147a18ddfdc71de93df8b", 
-        "date": "2019-03-18T16:13:34.874093+02:00", 
-        "id": "7ffac4e9273a439c973929d42f25cc7c"
+        "bidID": "28208dcab1764a8ab952e5519edfd642", 
+        "date": "2019-03-28T06:49:21.600034+02:00", 
+        "id": "05874b6863b04950993236b8b01f428b"
       }, 
       {
         "status": "active", 
-        "lotID": "5b14a30befc1462385a1fe5aaa823e39", 
+        "lotID": "b7292dba1ee3436db63fee17b2d09579", 
         "eligible": true, 
         "qualified": true, 
-        "bidID": "fc288f42cd7d48d48b3c526252028985", 
-        "date": "2019-03-18T16:13:35.305862+02:00", 
-        "id": "c212becea5ec4daba58c13cf8d1515ea"
+        "bidID": "cd09b8b5ea5b4259a2128e077ae0e557", 
+        "date": "2019-03-28T06:49:21.692937+02:00", 
+        "id": "0900434bed1e40028e3111b6ca957736"
       }
     ], 
     "procurementMethodType": "esco", 
-    "date": "2019-03-18T16:13:36.173393+02:00", 
+    "date": "2019-03-28T06:49:21.906489+02:00", 
     "NBUdiscountRate": 0.22986, 
     "minValue": {
       "currency": "UAH", 
@@ -136,7 +136,7 @@ Content-Type: application/json; charset=UTF-8
     "fundingKind": "other", 
     "items": [
       {
-        "relatedLot": "5b14a30befc1462385a1fe5aaa823e39", 
+        "relatedLot": "b7292dba1ee3436db63fee17b2d09579", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -158,14 +158,14 @@ Content-Type: application/json; charset=UTF-8
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "c4b006c6e5624067accf6391b481e96a", 
+        "id": "6959b39fdea84a05a8497aec018b895a", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }
       }, 
       {
-        "relatedLot": "6d27b81f6f0642469a135f3e154ed51a", 
+        "relatedLot": "9aa1ec08c6b04d25b5a908c62f978f5f", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -187,7 +187,7 @@ Content-Type: application/json; charset=UTF-8
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "cafd934d9f9843c5b82551e03d9ae85f", 
+        "id": "9f349652b1c8496fb74e3c1d4056be52", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -197,7 +197,7 @@ Content-Type: application/json; charset=UTF-8
     "bids": [
       {
         "status": "active", 
-        "id": "23b00365f9d147a18ddfdc71de93df8b", 
+        "id": "28208dcab1764a8ab952e5519edfd642", 
         "tenderers": [
           {
             "contactPoint": {
@@ -223,7 +223,7 @@ Content-Type: application/json; charset=UTF-8
       }, 
       {
         "status": "active", 
-        "id": "fc288f42cd7d48d48b3c526252028985", 
+        "id": "cd09b8b5ea5b4259a2128e077ae0e557", 
         "tenderers": [
           {
             "contactPoint": {
@@ -248,7 +248,7 @@ Content-Type: application/json; charset=UTF-8
         ]
       }
     ], 
-    "noticePublicationDate": "2019-03-18T16:13:29.854229+02:00", 
+    "noticePublicationDate": "2019-03-28T06:49:20.369574+02:00", 
     "awardCriteria": "ratedCriteria"
   }
 }

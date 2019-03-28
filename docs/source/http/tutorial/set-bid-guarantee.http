@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/386592f3dce34fd89c6dd9e0e73855a8?acc_token=3ffe0536f0ee48b6a3e4929577cc7b6c HTTP/1.0
+PATCH /api/2.5/tenders/4e72a84032424e519ab51eb3c1c98dbf?acc_token=40505a9e3a774f6e9cd51e16d68e457a HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 57
 Content-Type: application/json
@@ -46,8 +46,8 @@ Content-Type: application/json; charset=UTF-8
     "procurementMethod": "open", 
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
-      "startDate": "2019-03-26T16:42:24.424586+02:00", 
-      "endDate": "2019-04-03T16:42:37.468594+02:00"
+      "startDate": "2019-04-04T06:47:07.288622+03:00", 
+      "endDate": "2019-04-12T06:47:29.861045+02:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -78,10 +78,42 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-03-21T16:42:24.424586+02:00", 
-          "endDate": "2019-03-24T16:42:24.424586+02:00"
+          "startDate": "2019-03-30T06:47:07.288622+02:00", 
+          "endDate": "2019-04-02T06:47:07.288622+03:00"
         }, 
-        "id": "406849efe3a943ce86f082d82485cdc8", 
+        "id": "f0d50081ea3648d9bd09e243d6619bd9", 
+        "unit": {
+          "code": "44617100-9", 
+          "name": "item"
+        }, 
+        "quantity": 5.0
+      }, 
+      {
+        "description": "футляри до державних нагород", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Cartons", 
+          "id": "44617100-9"
+        }, 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "папір і картон гофровані, паперова й картонна тара"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "deliveryDate": {
+          "startDate": "2019-03-30T06:47:07.288622+02:00", 
+          "endDate": "2019-04-02T06:47:07.288622+03:00"
+        }, 
+        "id": "d39cb38814824407a7172ac09bd522fa", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -96,8 +128,8 @@ Content-Type: application/json; charset=UTF-8
       "valueAddedTaxIncluded": true
     }, 
     "submissionMethod": "electronicAuction", 
-    "date": "2019-03-19T16:42:26.976328+02:00", 
-    "dateModified": "2019-03-19T16:42:27.893447+02:00", 
+    "date": "2019-03-28T06:47:19.674393+02:00", 
+    "dateModified": "2019-03-28T06:47:20.059511+02:00", 
     "status": "active.enquiries", 
     "procuringEntity": {
       "contactPoint": {
@@ -120,17 +152,17 @@ Content-Type: application/json; charset=UTF-8
       }
     }, 
     "enquiryPeriod": {
-      "startDate": "2019-03-19T16:42:26.976270+02:00", 
-      "endDate": "2019-03-26T16:42:24.424586+02:00"
+      "startDate": "2019-03-28T06:47:19.674356+02:00", 
+      "endDate": "2019-04-04T06:47:07.288622+03:00"
     }, 
     "owner": "broker", 
-    "next_check": "2019-03-26T16:42:24.424586+02:00", 
+    "next_check": "2019-04-04T06:47:07.288622+03:00", 
     "guarantee": {
       "currency": "USD", 
       "amount": 8.0
     }, 
-    "id": "386592f3dce34fd89c6dd9e0e73855a8", 
-    "tenderID": "UA-2019-03-19-000001"
+    "id": "4e72a84032424e519ab51eb3c1c98dbf", 
+    "tenderID": "UA-2019-03-28-000001"
   }
 }
 

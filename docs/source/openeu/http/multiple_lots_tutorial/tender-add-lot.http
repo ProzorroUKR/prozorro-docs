@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/1383287972d14f3f9c6b63c63040032e/lots?acc_token=e5c7229f8cbf4286a56aff52acbe0e9b HTTP/1.0
+POST /api/2.5/tenders/d31f5c7085db4e08912359274057ea4d/lots?acc_token=4d5dc6f3d89c4aeb8c5ff278c262ed54 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 214
 Content-Type: application/json
@@ -21,7 +21,7 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/1383287972d14f3f9c6b63c63040032e/lots/0b1404a25f304fb883899602677faf2a
+Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/d31f5c7085db4e08912359274057ea4d/lots/d7e3888f747f4927a519c996c72eb677
 {
   "data": {
     "status": "active", 
@@ -33,15 +33,15 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/1383287972d14f3
       "valueAddedTaxIncluded": true
     }, 
     "auctionPeriod": {
-      "shouldStartAfter": "2019-05-24T00:00:00+02:00"
+      "shouldStartAfter": "2019-06-03T00:00:00+02:00"
     }, 
     "value": {
       "currency": "UAH", 
       "amount": 500.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2019-03-18T09:27:52.700891+02:00", 
-    "id": "0b1404a25f304fb883899602677faf2a"
+    "date": "2019-03-28T06:49:58.573794+02:00", 
+    "id": "d7e3888f747f4927a519c996c72eb677"
   }
 }
 

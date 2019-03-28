@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.api 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-19 16:57+0200\n"
+"POT-Creation-Date: 2019-03-28 07:54+0200\n"
 "PO-Revision-Date: 2017-07-25 15:20+0200\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
 "Language-Team: Ukrainian <info@quintagroup.com>\n"
@@ -358,44 +358,65 @@ msgstr ""
 "керуючись наступними правилами:"
 
 #: ../../source/tutorial.rst:276
-msgid "`amountNet`"
+msgid "`valueAddedTaxIncluded`"
 msgstr ""
 
-#: ../../source/tutorial.rst:276
-msgid "Should be less or equal to `amount`"
-msgstr "Має бути <= `amount`"
+#: ../../source/tutorial.rst:277
+msgid "`Validation`"
+msgstr ""
 
 #: ../../source/tutorial.rst:278
-msgid "Should be less than `amount` for 20% of `amountNet` max"
+msgid "`contract`"
 msgstr ""
-"Може бути менше `amount` не більше ніж"
-" на 20% від `amountNet`"
+
+#: ../../source/tutorial.rst:278
+msgid "`award`"
+msgstr ""
+
+#: ../../source/tutorial.rst:282
+msgid "true"
+msgstr ""
 
 #: ../../source/tutorial.rst:280 ../../source/tutorial.rst:286
-msgid "Should be less or equal to **awarded** `amount`"
-msgstr "Має бути <= **awarded** `amount`"
-
-#: ../../source/tutorial.rst:283
-msgid "For contract value with `valueAddedTaxIncluded` set to `true`:"
-msgstr "За умови що для поля `valueAddedTaxIncluded` встановлено значення `true`:"
-
-#: ../../source/tutorial.rst:286
-msgid "`amount`"
+#: ../../source/tutorial.rst:288
+msgid "true/false"
 msgstr ""
 
-#: ../../source/tutorial.rst:289
+#: ../../source/tutorial.rst:280
+msgid "Amount should be greater than amountNet and differ by no more than 20%"
+msgstr ""
+
+#: ../../source/tutorial.rst:282 ../../source/tutorial.rst:288
+#, fuzzy
+msgid "Amount should be less or equal to awarded amount"
+msgstr "Має бути <= **awarded** `amount`"
+
+#: ../../source/tutorial.rst:284 ../../source/tutorial.rst:287
+msgid "false"
+msgstr ""
+
+#: ../../source/tutorial.rst:284
+#, fuzzy
+msgid "AmountNet should be less or equal to awarded amount"
+msgstr "Має бути <= **awarded** `amount`"
+
+#: ../../source/tutorial.rst:286
+msgid "Amount and amountNet should be equal"
+msgstr ""
+
+#: ../../source/tutorial.rst:291
 msgid "Let's set contract contract value with next request:"
 msgstr "Встановимо нові значення для поля `value` використовуючи наступний запит:"
 
-#: ../../source/tutorial.rst:294
+#: ../../source/tutorial.rst:296
 msgid "`200 OK` response was returned. The value was modified successfully."
 msgstr "Було повернуто код відповіді `200 OK`. Значення змінено успішно."
 
-#: ../../source/tutorial.rst:297
+#: ../../source/tutorial.rst:299
 msgid "Setting contract signature date"
 msgstr "Встановлення дати підписання угоди"
 
-#: ../../source/tutorial.rst:299
+#: ../../source/tutorial.rst:301
 msgid ""
 "There is a possibility to set custom contract signature date. You can "
 "insert appropriate date into the `dateSigned` field."
@@ -403,7 +424,7 @@ msgstr ""
 "Є можливість встановити дату підписання угоди. Для цього вставте "
 "відповідну дату в поле `dateSigned`."
 
-#: ../../source/tutorial.rst:301
+#: ../../source/tutorial.rst:303
 msgid ""
 "If this date is not set, it will be auto-generated on the date of "
 "contract registration."
@@ -411,11 +432,11 @@ msgstr ""
 "Якщо ви не встановите дату підписання, то вона буде згенерована "
 "автоматично під час реєстрації угоди."
 
-#: ../../source/tutorial.rst:307
+#: ../../source/tutorial.rst:309
 msgid "Setting contract validity period"
 msgstr "Встановлення терміну дії угоди"
 
-#: ../../source/tutorial.rst:309
+#: ../../source/tutorial.rst:311
 msgid ""
 "Setting contract validity period is optional, but if it is needed, you "
 "can set appropriate `startDate` and `endDate`."
@@ -424,15 +445,15 @@ msgstr ""
 "ви можете встановити відповідну дату початку `startDate` та кінця "
 "`endDate` терміну дії."
 
-#: ../../source/tutorial.rst:315
+#: ../../source/tutorial.rst:317
 msgid "Uploading contract documentation"
 msgstr "Завантаження документів щодо укладання угоди"
 
-#: ../../source/tutorial.rst:317
+#: ../../source/tutorial.rst:319
 msgid "You can upload contract documents. Let's upload contract document:"
 msgstr "Спробуємо завантажити документ пов’язаний з угодою:"
 
-#: ../../source/tutorial.rst:322
+#: ../../source/tutorial.rst:324
 msgid ""
 "`201 Created` response code and `Location` header confirm document was "
 "added."
@@ -440,15 +461,15 @@ msgstr ""
 "Код відповіді `201 Created` та заголовок `Location` підтверджують, що "
 "документ додано."
 
-#: ../../source/tutorial.rst:324
+#: ../../source/tutorial.rst:326
 msgid "Let's see the list of contract documents:"
 msgstr "Переглянемо список завантажених документів:"
 
-#: ../../source/tutorial.rst:329
+#: ../../source/tutorial.rst:331
 msgid "We can add another contract document:"
 msgstr "Тепер спробуємо додати ще один документ щодо укладанням угоди:"
 
-#: ../../source/tutorial.rst:334
+#: ../../source/tutorial.rst:336
 msgid ""
 "`201 Created` response code and `Location` header confirm second document"
 " was uploaded."
@@ -456,15 +477,15 @@ msgstr ""
 "Код відповіді `201 Created`та заголовок `Location` підтверджують, що ще "
 "один документ було додано."
 
-#: ../../source/tutorial.rst:336
+#: ../../source/tutorial.rst:338
 msgid "Let's see the list of all added contract documents:"
 msgstr "Тепер переглянемо знову усі документи пов’язані із укладанням угоди:"
 
-#: ../../source/tutorial.rst:342
+#: ../../source/tutorial.rst:344
 msgid "Set contract signature date"
 msgstr "Встановити дату підписання угоди"
 
-#: ../../source/tutorial.rst:344
+#: ../../source/tutorial.rst:346
 msgid ""
 "There is a possibility to set custom contract signature date. If the date"
 " is not set it will be generated on contract registration."
@@ -472,15 +493,15 @@ msgstr ""
 "Є можливість встановити дату підписання договору. Якщо дата не "
 "встановлена, то вона буде згенерована під час реєстрації договору"
 
-#: ../../source/tutorial.rst:351
+#: ../../source/tutorial.rst:353
 msgid "Contract registration"
 msgstr "Реєстрація угоди"
 
-#: ../../source/tutorial.rst:357
+#: ../../source/tutorial.rst:359
 msgid "Cancelling tender"
 msgstr "Скасування закупівлі"
 
-#: ../../source/tutorial.rst:359
+#: ../../source/tutorial.rst:361
 msgid ""
 "Tender creator can cancel tender anytime (except when tender has terminal"
 " status e.g. `usuccesfull`, `canceled`, `complete`)."
@@ -488,23 +509,23 @@ msgstr ""
 "Замовник може скасувати закупівлю у будь-який момент (крім закупівель у "
 "кінцевому стані, наприклад, `usuccesfull`, `canceled`, `complete`)."
 
-#: ../../source/tutorial.rst:361
+#: ../../source/tutorial.rst:363
 msgid "The following steps should be applied:"
 msgstr "Для цього потрібно виконати наступні кроки:"
 
-#: ../../source/tutorial.rst:363
+#: ../../source/tutorial.rst:365
 msgid "Prepare cancellation request"
 msgstr "Приготуйте запит на скасування"
 
-#: ../../source/tutorial.rst:364
+#: ../../source/tutorial.rst:366
 msgid "Fill it with the protocol describing the cancellation reasons"
 msgstr "Наповніть його протоколом про причини скасування"
 
-#: ../../source/tutorial.rst:365
+#: ../../source/tutorial.rst:367
 msgid "Cancel the tender with the reasons prepared."
 msgstr "Скасуйте закупівлю через подані причини"
 
-#: ../../source/tutorial.rst:367
+#: ../../source/tutorial.rst:369
 msgid ""
 "Only the request that has been activated (3rd step above) has power to "
 "cancel tender.  I.e.  you have to not only prepare cancellation request "
@@ -514,15 +535,15 @@ msgstr ""
 "сили, тобто, для скасування закупівлі буде обов’язковим не тільки "
 "створити заявку, але і активувати її."
 
-#: ../../source/tutorial.rst:371
+#: ../../source/tutorial.rst:373
 msgid "See :ref:`cancellation` data structure for details."
 msgstr "Див. структуру запиту :ref:`cancellation` для більш детальної інформації."
 
-#: ../../source/tutorial.rst:374
+#: ../../source/tutorial.rst:376
 msgid "Preparing the cancellation request"
 msgstr "Формування запиту на скасування"
 
-#: ../../source/tutorial.rst:376
+#: ../../source/tutorial.rst:378
 msgid ""
 "You should pass `reason`, `status` defaults to `pending`. `id` is "
 "autogenerated and passed in the `Location` header of response."
@@ -531,44 +552,22 @@ msgstr ""
 "генерується автоматично і повертається у додатковому заголовку відповіді "
 "`Location`:"
 
-#: ../../source/tutorial.rst:384
+#: ../../source/tutorial.rst:386
 msgid "Filling cancellation with protocol and supplementary documentation"
 msgstr "Наповнення протоколом та іншою супровідною документацією"
 
-#: ../../source/tutorial.rst:386
+#: ../../source/tutorial.rst:388
 msgid "Upload the file contents"
 msgstr "Завантаження вмісту файлу"
 
-#: ../../source/tutorial.rst:391
+#: ../../source/tutorial.rst:393
 msgid "Change the document description and other properties"
 msgstr "Зміна опису документа та інших властивостей"
 
-#: ../../source/tutorial.rst:396
+#: ../../source/tutorial.rst:398
 msgid "Upload new version of the document"
 msgstr "Завантаження нової версії документа"
 
-#: ../../source/tutorial.rst:402
+#: ../../source/tutorial.rst:404
 msgid "Activating the request and cancelling tender"
 msgstr "Активація запиту та скасування закупівлі"
-
-#~ msgid ""
-#~ msgstr ""
-
-#~ msgid "Should be greater or equal to ``award.value.amount``"
-#~ msgstr "Встановлене значення поля має бути >= ``award.value.amount``"
-
-#~ msgid "Value `amountNet` should be less or equal to `amount`"
-#~ msgstr "Значення поля `amountNet` має бути <= значення поля `amount`"
-
-#~ msgid "For contract value with `valueAddedTaxIncluded` set to `false`:"
-#~ msgstr ""
-#~ "За умови що для поля "
-#~ "`valueAddedTaxIncluded` встановлено значення "
-#~ "`false`:"
-
-#~ msgid "Can be greater than ``contract.value.amountNet`` for 20% max"
-#~ msgstr ""
-#~ "Внесене значення має бути >= "
-#~ "``contract.value.amountNet``, але не більше "
-#~ "ніж на 20%"
-

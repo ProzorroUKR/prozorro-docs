@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/a27a2edadf6a442eb7f17020c7d789fd/bids HTTP/1.0
+POST /api/2.5/tenders/edf1ec35dd2442928d2473f51384621f/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 1003
 Content-Type: application/json
@@ -10,7 +10,7 @@ DATA:
     "selfEligible": true, 
     "lotValues": [
       {
-        "relatedLot": "0ba62781d4414b1c9736434c0c1e1e9e", 
+        "relatedLot": "2e6f1f49c8894974a1c36e2b463b5b86", 
         "value": {
           "amount": 500
         }
@@ -45,18 +45,18 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/a27a2edadf6a442eb7f17020c7d789fd/bids/6eb4f1ad6ddf4998bec6805fae37e912
+Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/edf1ec35dd2442928d2473f51384621f/bids/b4589ca9eb684602b65a37e136f22c04
 {
   "access": {
-    "token": "70459bce567241528f0aee386cc83d0c"
+    "token": "111a5f976f3847669922c1dee355c4ad"
   }, 
   "data": {
     "status": "draft", 
     "selfEligible": true, 
     "lotValues": [
       {
-        "relatedLot": "0ba62781d4414b1c9736434c0c1e1e9e", 
-        "date": "2019-03-18T09:26:57.326536+02:00", 
+        "relatedLot": "2e6f1f49c8894974a1c36e2b463b5b86", 
+        "date": "2019-03-28T06:47:55.344733+02:00", 
         "status": "pending", 
         "value": {
           "currency": "UAH", 
@@ -89,8 +89,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/a27a2edadf6a442
         }
       }
     ], 
-    "date": "2019-03-18T09:26:57.326322+02:00", 
-    "id": "6eb4f1ad6ddf4998bec6805fae37e912"
+    "date": "2019-03-28T06:47:55.344493+02:00", 
+    "id": "b4589ca9eb684602b65a37e136f22c04"
   }
 }
 

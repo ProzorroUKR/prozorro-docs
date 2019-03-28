@@ -272,19 +272,21 @@ By default contract value `amount` and `amountNet` is set based on the award val
 
 You can update value `amount` and `amountNet` following next rules:
 
-+-------------+-------------------------------------------------------------+
-| `amountNet` | Should be less or equal to `amount`                         |
-+             +-------------------------------------------------------------+
-|             | Should be less than `amount` for 20% of `amountNet` max     |
-+             +-------------------------------------------------------------+
-|             | Should be less or equal to **awarded** `amount`             |
-+-------------+-------------------------------------------------------------+
-
-For contract value with `valueAddedTaxIncluded` set to `true`:
-
-+-------------+---------------------------------------------------+
-| `amount`    | Should be less or equal to **awarded** `amount`   |
-+-------------+---------------------------------------------------+
++-------------------------+------------------------------------------------------------------------+
+| `valueAddedTaxIncluded` |                                                                        |
++------------+------------+                              `Validation`                              +
+| `contract` |   `award`  |                                                                        |
++------------+------------+------------------------------------------------------------------------+
+|            | true/false | Amount should be greater than amountNet and differ by no more than 20% |
++            +------------+------------------------------------------------------------------------+
+|    true    |    true    |            Amount should be less or equal to awarded amount            |
++            +------------+------------------------------------------------------------------------+
+|            |    false   |           AmountNet should be less or equal to awarded amount          |
++------------+------------+------------------------------------------------------------------------+
+|            | true/false |                  Amount and amountNet should be equal                  |
++    false   +------------+------------------------------------------------------------------------+
+|            | true/false |            Amount should be less or equal to awarded amount            |
++------------+------------+------------------------------------------------------------------------+
 
 Let's set contract contract value with next request:
 

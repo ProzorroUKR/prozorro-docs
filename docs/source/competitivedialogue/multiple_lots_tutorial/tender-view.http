@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/b0aac9eeadd141df8d39a01f620c6094 HTTP/1.0
+GET /api/2.5/tenders/000c8f7d39974ccfa431f03fd95eedd5 HTTP/1.0
 Host: api-sandbox.openprocurement.org
 
 Response: 200 OK
@@ -9,8 +9,8 @@ Content-Type: application/json; charset=UTF-8
     "status": "active.tendering", 
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
-      "startDate": "2019-03-18T16:26:14.411913+02:00", 
-      "endDate": "2019-04-18T16:25:23.282341+02:00"
+      "startDate": "2019-03-28T06:48:24.810928+02:00", 
+      "endDate": "2019-04-28T06:47:07.975726+02:00"
     }, 
     "title": "Послуги шкільних їдалень", 
     "minimalStep": {
@@ -19,14 +19,14 @@ Content-Type: application/json; charset=UTF-8
       "valueAddedTaxIncluded": true
     }, 
     "enquiryPeriod": {
-      "startDate": "2019-03-18T16:26:14.411913+02:00", 
-      "clarificationsUntil": "2019-04-11T16:25:23.282341+02:00", 
-      "endDate": "2019-04-08T16:25:23.282341+02:00", 
-      "invalidationDate": "2019-03-18T16:26:15.165082+02:00"
+      "startDate": "2019-03-28T06:48:24.810928+02:00", 
+      "clarificationsUntil": "2019-04-23T06:47:07.975726+02:00", 
+      "endDate": "2019-04-18T06:47:07.975726+02:00", 
+      "invalidationDate": "2019-03-28T06:48:25.024774+02:00"
     }, 
     "complaintPeriod": {
-      "startDate": "2019-03-18T16:26:14.411913+02:00", 
-      "endDate": "2019-04-14T00:00:00+03:00"
+      "startDate": "2019-03-28T06:48:24.810928+02:00", 
+      "endDate": "2019-04-24T00:00:00+03:00"
     }, 
     "title_en": "Services in school canteens", 
     "value": {
@@ -35,8 +35,8 @@ Content-Type: application/json; charset=UTF-8
       "valueAddedTaxIncluded": true
     }, 
     "submissionMethod": "electronicAuction", 
-    "date": "2019-03-18T16:26:14.532636+02:00", 
-    "dateModified": "2019-03-18T16:26:15.188006+02:00", 
+    "date": "2019-03-28T06:48:24.839374+02:00", 
+    "dateModified": "2019-03-28T06:48:25.030680+02:00", 
     "procurementMethodType": "competitiveDialogueEU", 
     "procuringEntity": {
       "kind": "general", 
@@ -65,7 +65,7 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "items": [
       {
-        "relatedLot": "e0b3133acf604b108de4823789caca6e", 
+        "relatedLot": "84376ace1c0042948424738474323549", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -88,10 +88,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-07T16:25:23.279560+02:00", 
-          "endDate": "2019-05-07T16:25:23.279783+02:00"
+          "startDate": "2019-04-17T06:47:07.975510+02:00", 
+          "endDate": "2019-05-17T06:47:07.975543+02:00"
         }, 
-        "id": "135b27e1cc984d29a59dd36c9c01817d", 
+        "id": "ed7e8081247d4a03bcba687edbce3a53", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -99,7 +99,7 @@ Content-Type: application/json; charset=UTF-8
         "quantity": 1.0
       }, 
       {
-        "relatedLot": "60821104ce234bb8ae3295cfd87e2aee", 
+        "relatedLot": "2128fe74540742438dc3e16e02b9876c", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -122,10 +122,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-07T16:25:23.279854+02:00", 
-          "endDate": "2019-05-07T16:25:23.279919+02:00"
+          "startDate": "2019-04-17T06:47:07.975557+02:00", 
+          "endDate": "2019-05-17T06:47:07.975571+02:00"
         }, 
-        "id": "18ddb94db5164c01be749aa960dca6fa", 
+        "id": "584e0a542e594e61aa7511171763415f", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -134,7 +134,7 @@ Content-Type: application/json; charset=UTF-8
       }
     ], 
     "owner": "broker", 
-    "next_check": "2019-04-18T17:25:23.282341+03:00", 
+    "next_check": "2019-04-28T07:47:07.975726+03:00", 
     "lots": [
       {
         "status": "active", 
@@ -150,8 +150,8 @@ Content-Type: application/json; charset=UTF-8
           "amount": 500.0, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2019-03-18T16:26:14.685852+02:00", 
-        "id": "e0b3133acf604b108de4823789caca6e"
+        "date": "2019-03-28T06:48:24.894080+02:00", 
+        "id": "84376ace1c0042948424738474323549"
       }, 
       {
         "status": "active", 
@@ -167,12 +167,12 @@ Content-Type: application/json; charset=UTF-8
           "amount": 500.0, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2019-03-18T16:26:14.823963+02:00", 
-        "id": "60821104ce234bb8ae3295cfd87e2aee"
+        "date": "2019-03-28T06:48:24.943094+02:00", 
+        "id": "2128fe74540742438dc3e16e02b9876c"
       }
     ], 
-    "id": "b0aac9eeadd141df8d39a01f620c6094", 
-    "tenderID": "UA-2019-03-18-000001"
+    "id": "000c8f7d39974ccfa431f03fd95eedd5", 
+    "tenderID": "UA-2019-03-28-000001"
   }
 }
 

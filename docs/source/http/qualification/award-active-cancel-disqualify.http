@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/16a0247dd30047b490e2890ebc1530ff/awards/45e3181acc0f49a6b39e95369ad34a90?acc_token=f560f2cda61e4b3da9798551bd6700ae HTTP/1.0
+PATCH /api/2.5/tenders/4bdc8f70ca4d45b0956ab3afbadcc50c/awards/966567aa3e264025974df64bc7e5a66c?acc_token=b9d491f8ba8643bd9cddd249d67610d3 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 36
 Content-Type: application/json
@@ -13,7 +13,7 @@ Host: api-sandbox.openprocurement.org
 
 200 OK
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/16a0247dd30047b490e2890ebc1530ff/awards/48d84d6289a64781b46b162e84862bd9
+Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/4bdc8f70ca4d45b0956ab3afbadcc50c/awards/1e04659e0e7b4a7e9b151f02740d2fca
 
 {
   "data": {
@@ -23,17 +23,17 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/16a0247dd30047b
         "hash": "md5:00000000000000000000000000000000", 
         "author": "tender_owner", 
         "title": "Cancellation_Reason.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/a684f2e79ab44a66a09b5a6d69da44ff?KeyID=eb72328f&Signature=PEvGfh5IrXxywTXTZ8bKgJcE2nzyGyws2VubOjgQ5lUWCqz75kjcteMq90%252BV82eiK9KbVkvFviYiBBuHSK%252BbAA%253D%253D", 
+        "url": "http://public.docs-sandbox.openprocurement.org/get/8c9b7659984a4af3ad4b14b417d718dd?KeyID=ddecca24&Signature=88jUcVqVYqmANH3hBYOQ8rJmjAT0P82usaqZN1l3H6gp770%252Bm9zb5xBwIU8aSObdhSAB3M1fx0OJQGLhPwPOCQ%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-18T09:26:22.610807+02:00", 
-        "id": "0ad5e87d032544ca98e836f040318b47", 
-        "dateModified": "2019-03-18T09:26:22.610820+02:00"
+        "datePublished": "2019-03-28T06:47:15.526072+02:00", 
+        "id": "ee8800da939a41509c38efc84517cd64", 
+        "dateModified": "2019-03-28T06:47:15.526090+02:00"
       }
     ], 
     "complaintPeriod": {
-      "startDate": "2019-03-18T09:26:22.468295+02:00", 
-      "endDate": "2019-03-20T09:26:22.756022+02:00"
+      "startDate": "2019-03-28T06:47:15.360831+02:00", 
+      "endDate": "2019-04-01T06:47:15.649048+02:00"
     }, 
     "suppliers": [
       {
@@ -56,14 +56,14 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/16a0247dd30047b
         }
       }
     ], 
-    "bid_id": "f6125aa847324b7f8df3487d8fbe4855", 
+    "bid_id": "94aa36e83bb74c96a6009f27ab9c73cc", 
     "value": {
       "currency": "UAH", 
       "amount": 469.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2019-03-18T09:26:22.775831+02:00", 
-    "id": "45e3181acc0f49a6b39e95369ad34a90"
+    "date": "2019-03-28T06:47:15.657116+02:00", 
+    "id": "966567aa3e264025974df64bc7e5a66c"
   }
 }
 

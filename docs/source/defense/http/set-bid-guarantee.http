@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/8a94b71fce4541bb922d7c42567e4a19?acc_token=98129298172442eeb10a10b9a05a3120 HTTP/1.0
+PATCH /api/2.5/tenders/dc07cf2d5fae45f88da7ef5b0917cd1f?acc_token=41072074f75f4d3b9830f4c04d744a6d HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 57
 Content-Type: application/json
@@ -20,12 +20,12 @@ Content-Type: application/json; charset=UTF-8
     "procurementMethod": "open", 
     "status": "active.tendering", 
     "auctionPeriod": {
-      "shouldStartAfter": "2019-04-03T00:00:00+02:00"
+      "shouldStartAfter": "2019-04-13T00:00:00+02:00"
     }, 
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
-      "startDate": "2019-03-18T09:27:25.012245+02:00", 
-      "endDate": "2019-04-02T09:27:35.064257+02:00"
+      "startDate": "2019-03-28T06:48:57.577034+02:00", 
+      "endDate": "2019-04-12T06:49:07.624128+02:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -34,14 +34,14 @@ Content-Type: application/json; charset=UTF-8
       "valueAddedTaxIncluded": true
     }, 
     "enquiryPeriod": {
-      "startDate": "2019-03-18T09:27:25.012245+02:00", 
-      "clarificationsUntil": "2019-04-01T09:27:35.064257+02:00", 
-      "endDate": "2019-03-28T09:27:35.064257+02:00", 
-      "invalidationDate": "2019-03-18T09:27:25.144025+02:00"
+      "startDate": "2019-03-28T06:48:57.577034+02:00", 
+      "clarificationsUntil": "2019-04-11T06:49:07.624128+02:00", 
+      "endDate": "2019-04-09T06:49:07.624128+02:00", 
+      "invalidationDate": "2019-03-28T06:48:57.745804+02:00"
     }, 
     "complaintPeriod": {
-      "startDate": "2019-03-18T09:27:25.012245+02:00", 
-      "endDate": "2019-03-29T00:00:00+03:00"
+      "startDate": "2019-03-28T06:48:57.577034+02:00", 
+      "endDate": "2019-04-10T00:00:00+03:00"
     }, 
     "procurementMethodType": "aboveThresholdUA.defense", 
     "value": {
@@ -50,9 +50,9 @@ Content-Type: application/json; charset=UTF-8
       "valueAddedTaxIncluded": true
     }, 
     "submissionMethod": "electronicAuction", 
-    "date": "2019-03-18T09:27:25.031099+02:00", 
-    "next_check": "2019-04-02T10:27:35.064257+03:00", 
-    "tenderID": "UA-2019-03-18-000001", 
+    "date": "2019-03-28T06:48:57.591424+02:00", 
+    "next_check": "2019-04-12T07:49:07.624128+03:00", 
+    "tenderID": "UA-2019-03-28-000001", 
     "items": [
       {
         "description": "Послуги шкільних їдалень", 
@@ -76,10 +76,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-07T09:26:16.016278+02:00", 
-          "endDate": "2019-05-07T09:26:16.016307+02:00"
+          "startDate": "2019-04-17T06:47:08.227086+02:00", 
+          "endDate": "2019-05-17T06:47:08.227116+02:00"
         }, 
-        "id": "fe01b54664f64908a533033f33949381", 
+        "id": "bed8b4c1bf15429e9392a61a0b20eaa2", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -88,12 +88,12 @@ Content-Type: application/json; charset=UTF-8
       }
     ], 
     "owner": "broker", 
-    "dateModified": "2019-03-18T09:27:25.145513+02:00", 
+    "dateModified": "2019-03-28T06:48:57.750065+02:00", 
     "guarantee": {
       "currency": "USD", 
       "amount": 8.0
     }, 
-    "id": "8a94b71fce4541bb922d7c42567e4a19", 
+    "id": "dc07cf2d5fae45f88da7ef5b0917cd1f", 
     "procuringEntity": {
       "contactPoint": {
         "url": "http://sch10.edu.vn.ua/", 

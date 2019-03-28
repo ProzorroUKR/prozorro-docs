@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/a27a2edadf6a442eb7f17020c7d789fd HTTP/1.0
+GET /api/2.5/tenders/edf1ec35dd2442928d2473f51384621f HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: api-sandbox.openprocurement.org
 
@@ -8,16 +8,16 @@ Content-Type: application/json; charset=UTF-8
   "data": {
     "procurementMethod": "open", 
     "complaintPeriod": {
-      "startDate": "2019-03-18T09:26:54.573283+02:00", 
-      "endDate": "2019-04-14T00:00:00+03:00"
+      "startDate": "2019-03-28T06:47:52.517775+02:00", 
+      "endDate": "2019-04-24T00:00:00+03:00"
     }, 
     "enquiryPeriod": {
-      "startDate": "2019-03-18T09:26:54.573283+02:00", 
-      "clarificationsUntil": "2019-04-11T09:26:15.826474+02:00", 
-      "endDate": "2019-04-08T09:26:15.826474+02:00"
+      "startDate": "2019-03-28T06:47:52.517775+02:00", 
+      "clarificationsUntil": "2019-04-23T06:47:07.957181+02:00", 
+      "endDate": "2019-04-18T06:47:07.957181+02:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "next_check": "2019-04-18T10:26:15.826474+03:00", 
+    "next_check": "2019-04-28T07:47:07.957181+03:00", 
     "procuringEntity": {
       "kind": "general", 
       "name": "Державне управління справами", 
@@ -43,7 +43,7 @@ Content-Type: application/json; charset=UTF-8
       "name_en": "State administration"
     }, 
     "owner": "broker", 
-    "id": "a27a2edadf6a442eb7f17020c7d789fd", 
+    "id": "edf1ec35dd2442928d2473f51384621f", 
     "title": "футляри до державних нагород", 
     "lots": [
       {
@@ -56,29 +56,29 @@ Content-Type: application/json; charset=UTF-8
           "valueAddedTaxIncluded": true
         }, 
         "auctionPeriod": {
-          "shouldStartAfter": "2019-05-24T00:00:00+02:00"
+          "shouldStartAfter": "2019-06-03T00:00:00+02:00"
         }, 
         "value": {
           "currency": "UAH", 
           "amount": 500.0, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2019-03-18T09:26:54.594694+02:00", 
-        "id": "0ba62781d4414b1c9736434c0c1e1e9e"
+        "date": "2019-03-28T06:47:52.548924+02:00", 
+        "id": "2e6f1f49c8894974a1c36e2b463b5b86"
       }
     ], 
     "maxAwardsCount": 4, 
-    "tenderID": "UA-2019-03-18-000001", 
-    "dateModified": "2019-03-18T09:26:54.598829+02:00", 
+    "tenderID": "UA-2019-03-28-000001", 
+    "dateModified": "2019-03-28T06:47:52.553569+02:00", 
     "status": "active.tendering", 
     "tenderPeriod": {
-      "startDate": "2019-03-18T09:26:54.573283+02:00", 
-      "endDate": "2019-04-18T09:26:15.826474+02:00"
+      "startDate": "2019-03-28T06:47:52.517775+02:00", 
+      "endDate": "2019-04-28T06:47:07.957181+02:00"
     }, 
     "title_en": "Cases for state awards", 
     "procurementMethodType": "closeFrameworkAgreementUA", 
     "agreementDuration": "P3Y3M3D", 
-    "date": "2019-03-18T09:26:54.594694+02:00", 
+    "date": "2019-03-28T06:47:52.548924+02:00", 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35, 
@@ -86,7 +86,7 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "items": [
       {
-        "relatedLot": "0ba62781d4414b1c9736434c0c1e1e9e", 
+        "relatedLot": "2e6f1f49c8894974a1c36e2b463b5b86", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -112,7 +112,7 @@ Content-Type: application/json; charset=UTF-8
           "startDate": "2018-06-27T13:39:09.362837+03:00", 
           "endDate": "2018-06-30T13:39:09.362837+03:00"
         }, 
-        "id": "5898867557fc405ea1b00cdd947e2142", 
+        "id": "90759460567841e0aacf5d7c20c47baf", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -120,7 +120,7 @@ Content-Type: application/json; charset=UTF-8
         "quantity": 5.0
       }, 
       {
-        "relatedLot": "0ba62781d4414b1c9736434c0c1e1e9e", 
+        "relatedLot": "2e6f1f49c8894974a1c36e2b463b5b86", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -146,7 +146,7 @@ Content-Type: application/json; charset=UTF-8
           "startDate": "2018-06-27T13:39:09.362837+03:00", 
           "endDate": "2018-06-30T13:39:09.362837+03:00"
         }, 
-        "id": "065b559633864555bd31f3b0e1eb9a2b", 
+        "id": "2846075b9a7c45d7a6ba8384aabe5f37", 
         "unit": {
           "code": "44617100-8", 
           "name": "item"

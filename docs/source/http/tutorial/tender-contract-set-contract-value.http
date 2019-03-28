@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/386592f3dce34fd89c6dd9e0e73855a8/contracts/c6251107c0a6445eaf83c5196212fb1a?acc_token=3ffe0536f0ee48b6a3e4929577cc7b6c HTTP/1.0
+PATCH /api/2.5/tenders/4e72a84032424e519ab51eb3c1c98dbf/contracts/4669081f0e9141f3be4bdc9c631eab08?acc_token=40505a9e3a774f6e9cd51e16d68e457a HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 91
 Content-Type: application/json
@@ -44,10 +44,42 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-03-21T16:42:24.424586+02:00", 
-          "endDate": "2019-03-24T16:42:24.424586+02:00"
+          "startDate": "2019-03-30T06:47:07.288622+02:00", 
+          "endDate": "2019-04-02T06:47:07.288622+03:00"
         }, 
-        "id": "406849efe3a943ce86f082d82485cdc8", 
+        "id": "f0d50081ea3648d9bd09e243d6619bd9", 
+        "unit": {
+          "code": "44617100-9", 
+          "name": "item"
+        }, 
+        "quantity": 5.0
+      }, 
+      {
+        "description": "футляри до державних нагород", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Cartons", 
+          "id": "44617100-9"
+        }, 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "папір і картон гофровані, паперова й картонна тара"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "deliveryDate": {
+          "startDate": "2019-03-30T06:47:07.288622+02:00", 
+          "endDate": "2019-04-02T06:47:07.288622+03:00"
+        }, 
+        "id": "d39cb38814824407a7172ac09bd522fa", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -84,10 +116,10 @@ Content-Type: application/json; charset=UTF-8
       "amountNet": 230.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2019-03-19T16:42:31.254152+02:00", 
-    "awardID": "e16fe2bf08c64137b0ad25edd9145be0", 
-    "id": "c6251107c0a6445eaf83c5196212fb1a", 
-    "contractID": "UA-2019-03-19-000001-1"
+    "date": "2019-03-28T06:47:21.254386+02:00", 
+    "awardID": "30d1b00bbd954144978cbab8802646da", 
+    "id": "4669081f0e9141f3be4bdc9c631eab08", 
+    "contractID": "UA-2019-03-28-000001-1"
   }
 }
 

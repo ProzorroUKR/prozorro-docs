@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/8999a1d343ba4c6b8a32f33256fb9aa5/bids HTTP/1.0
+POST /api/2.5/tenders/a5737d7e05a4451a8a502a9d763357f0/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 1188
 Content-Type: application/json
@@ -10,7 +10,7 @@ DATA:
     "selfQualified": true, 
     "lotValues": [
       {
-        "relatedLot": "5b14a30befc1462385a1fe5aaa823e39", 
+        "relatedLot": "b7292dba1ee3436db63fee17b2d09579", 
         "value": {
           "contractDuration": {
             "years": 7
@@ -70,29 +70,29 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/8999a1d343ba4c6b8a32f33256fb9aa5/bids/23b00365f9d147a18ddfdc71de93df8b
+Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/a5737d7e05a4451a8a502a9d763357f0/bids/28208dcab1764a8ab952e5519edfd642
 {
   "access": {
-    "token": "555d1e43603e4aaeb81bd19f274698d2"
+    "token": "57e1de8fd6b94329af9e95319901f631"
   }, 
   "data": {
     "status": "pending", 
     "selfEligible": true, 
     "lotValues": [
       {
-        "relatedLot": "5b14a30befc1462385a1fe5aaa823e39", 
-        "date": "2019-03-18T16:13:30.900934+02:00", 
+        "relatedLot": "b7292dba1ee3436db63fee17b2d09579", 
+        "date": "2019-03-28T06:49:20.635875+02:00", 
         "status": "pending", 
         "value": {
           "yearlyPaymentsPercentage": 0.87, 
           "valueAddedTaxIncluded": true, 
           "currency": "UAH", 
-          "amount": 5577.53, 
+          "amount": 5601.37, 
           "contractDuration": {
             "days": 0, 
             "years": 7
           }, 
-          "amountPerformance": 1321.16, 
+          "amountPerformance": 1323.89, 
           "annualCostsReduction": [
             200.0, 
             1000.0, 
@@ -143,8 +143,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/8999a1d343ba4c6
         }
       }
     ], 
-    "date": "2019-03-18T16:13:30.900542+02:00", 
-    "id": "23b00365f9d147a18ddfdc71de93df8b"
+    "date": "2019-03-28T06:49:20.635663+02:00", 
+    "id": "28208dcab1764a8ab952e5519edfd642"
   }
 }
 

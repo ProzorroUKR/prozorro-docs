@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/16a0247dd30047b490e2890ebc1530ff/awards/8619ef73b6ef41f9b6539b4cd9678583?acc_token=f560f2cda61e4b3da9798551bd6700ae HTTP/1.0
+PATCH /api/2.5/tenders/4bdc8f70ca4d45b0956ab3afbadcc50c/awards/c8e8b73e12144aa7b491c03c608b30ac?acc_token=b9d491f8ba8643bd9cddd249d67610d3 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 33
 Content-Type: application/json
@@ -13,14 +13,14 @@ Host: api-sandbox.openprocurement.org
 
 200 OK
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/16a0247dd30047b490e2890ebc1530ff/awards/45e3181acc0f49a6b39e95369ad34a90
+Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/4bdc8f70ca4d45b0956ab3afbadcc50c/awards/966567aa3e264025974df64bc7e5a66c
 
 {
   "data": {
     "status": "cancelled", 
     "complaintPeriod": {
-      "startDate": "2019-03-18T09:26:22.217243+02:00", 
-      "endDate": "2019-03-18T09:26:22.467806+02:00"
+      "startDate": "2019-03-28T06:47:15.058266+02:00", 
+      "endDate": "2019-03-28T06:47:15.360258+02:00"
     }, 
     "suppliers": [
       {
@@ -43,14 +43,14 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/16a0247dd30047b
         }
       }
     ], 
-    "bid_id": "f6125aa847324b7f8df3487d8fbe4855", 
+    "bid_id": "94aa36e83bb74c96a6009f27ab9c73cc", 
     "value": {
       "currency": "UAH", 
       "amount": 469.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2019-03-18T09:26:22.475166+02:00", 
-    "id": "8619ef73b6ef41f9b6539b4cd9678583"
+    "date": "2019-03-28T06:47:15.369512+02:00", 
+    "id": "c8e8b73e12144aa7b491c03c608b30ac"
   }
 }
 

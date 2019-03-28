@@ -7,7 +7,7 @@ DATA:
 {
   "data": {
     "tenderPeriod": {
-      "endDate": "2019-04-03T09:26:16.016318+02:00"
+      "endDate": "2019-04-13T06:47:08.227127+02:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -37,8 +37,8 @@ DATA:
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-07T09:26:16.016278+02:00", 
-          "endDate": "2019-05-07T09:26:16.016307+02:00"
+          "startDate": "2019-04-17T06:47:08.227086+02:00", 
+          "endDate": "2019-05-17T06:47:08.227116+02:00"
         }, 
         "unit": {
           "code": "44617100-9", 
@@ -78,18 +78,18 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/7ab3336fbe844252a4dafe35e1fae71b
+Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/3d4c0ffcb9f64da6af853cdbbb7bf7c4
 {
   "access": {
-    "token": "61209cf3ec1f4d929d5de4bd98e7c836"
+    "token": "e4ca781cf87a49248f7c52aed762d818"
   }, 
   "data": {
     "procurementMethod": "open", 
     "status": "active.tendering", 
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
-      "startDate": "2019-03-18T09:27:27.183558+02:00", 
-      "endDate": "2019-04-03T09:26:16.016318+02:00"
+      "startDate": "2019-03-28T06:49:00.271719+02:00", 
+      "endDate": "2019-04-13T06:47:08.227127+02:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -98,13 +98,13 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/7ab3336fbe84425
       "valueAddedTaxIncluded": true
     }, 
     "enquiryPeriod": {
-      "startDate": "2019-03-18T09:27:27.183558+02:00", 
-      "clarificationsUntil": "2019-04-02T09:26:16.016318+02:00", 
-      "endDate": "2019-03-29T09:26:16.016318+02:00"
+      "startDate": "2019-03-28T06:49:00.271719+02:00", 
+      "clarificationsUntil": "2019-04-12T00:00:00+02:00", 
+      "endDate": "2019-04-10T00:00:00+02:00"
     }, 
     "complaintPeriod": {
-      "startDate": "2019-03-18T09:27:27.183558+02:00", 
-      "endDate": "2019-04-01T00:00:00+03:00"
+      "startDate": "2019-03-28T06:49:00.271719+02:00", 
+      "endDate": "2019-04-11T00:00:00+03:00"
     }, 
     "procurementMethodType": "aboveThresholdUA.defense", 
     "value": {
@@ -113,8 +113,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/7ab3336fbe84425
       "valueAddedTaxIncluded": true
     }, 
     "submissionMethod": "electronicAuction", 
-    "date": "2019-03-18T09:27:27.203590+02:00", 
-    "next_check": "2019-04-03T10:26:16.016318+03:00", 
+    "date": "2019-03-28T06:49:00.340290+02:00", 
+    "next_check": "2019-04-13T07:47:08.227127+03:00", 
     "procuringEntity": {
       "contactPoint": {
         "url": "http://sch10.edu.vn.ua/", 
@@ -137,10 +137,10 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/7ab3336fbe84425
       "name": "ЗОСШ #10 м.Вінниці"
     }, 
     "auctionPeriod": {
-      "shouldStartAfter": "2019-04-04T00:00:00+02:00"
+      "shouldStartAfter": "2019-04-14T00:00:00+02:00"
     }, 
     "owner": "broker", 
-    "dateModified": "2019-03-18T09:27:27.206011+02:00", 
+    "dateModified": "2019-03-28T06:49:00.344503+02:00", 
     "items": [
       {
         "description": "Послуги шкільних їдалень", 
@@ -164,10 +164,10 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/7ab3336fbe84425
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-07T09:26:16.016278+02:00", 
-          "endDate": "2019-05-07T09:26:16.016307+02:00"
+          "startDate": "2019-04-17T06:47:08.227086+02:00", 
+          "endDate": "2019-05-17T06:47:08.227116+02:00"
         }, 
-        "id": "87e7eb27a7b4411fba23a4aa8553ed94", 
+        "id": "14f03be702c24952bab87a7d0b25e762", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -175,8 +175,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/7ab3336fbe84425
         "quantity": 1.0
       }
     ], 
-    "id": "7ab3336fbe844252a4dafe35e1fae71b", 
-    "tenderID": "UA-2019-03-18-000002"
+    "id": "3d4c0ffcb9f64da6af853cdbbb7bf7c4", 
+    "tenderID": "UA-2019-03-28-000002"
   }
 }
 

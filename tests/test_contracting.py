@@ -109,7 +109,9 @@ class TenderResourceTest(BaseTenderWebTest):
         self.db.save(tender)
         # sign contract
         self.app.authorization = ('Basic', ('broker', ''))
-        self.app.patch_json('/tenders/{}/contracts/{}?acc_token={}'.format(tender_id, contract_id, owner_token), {"data": {"status": "active"}})
+        self.app.patch_json(
+            '/tenders/{}/contracts/{}?acc_token={}'.format(tender_id, contract_id, owner_token),
+            {"data": {"status": "active", "value": {"amountNet": 490}}})
         # check status
         self.app.authorization = ('Basic', ('broker', ''))
         with open(TARGET_DIR + 'example_tender.http', 'w') as self.app.file_obj:
@@ -277,5 +279,5 @@ class TenderResourceTest(BaseTenderWebTest):
         # Finalize contract
         with open(TARGET_DIR + 'contract-termination.http', 'w') as self.app.file_obj:
             response = self.app.patch_json('/contracts/{}?acc_token={}'.format(contract_id, contract_token),
-                                           {"data": {"status": "terminated", "amountPaid": {"amount": 430}}})
+                                           {"data": {"status": "terminated", "amountPaid": {"amount": 430, "amountNet": 420}}})
             self.assertEqual(response.status, '200 OK')
