@@ -228,8 +228,7 @@ test_tender_data['lots'] = [test_lots[0]]
 test_tender_maximum_data['lots'] = [test_lots[0]]
 
 test_tender_maximum_data.update({'agreements': [{'id': agreement_id}]})
-test_tender_data.update({'agreements': [{'id': agreement_id}],
-                         'features': test_features})
+test_tender_data.update({'agreements': [{'id': agreement_id}]})
 agreement_with_features = deepcopy(test_agreement)
 agreement_with_features['features'] = test_features
 for contract in agreement_with_features['contracts']:

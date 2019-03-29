@@ -448,8 +448,13 @@ Finally we confirm all `pending` awards via the following call:
    :code:
 
 Procuring entity may specify reasons of Bidder disqualification in the ``description`` field.
+
 Procuring entity can upload ``qualificationDocuments`` for each Bidder.
+
 Procuring entity may continue consideration of decision for some :ref:`award` if it is needed. Procuring entity should upload a document for that.
+
+Completion of qualification is transfer procedure into `active.qualification.stand-still` status.
+
 
 .. ПРЕЦЕДЕНТ Т13. Додати документи з цінами
 

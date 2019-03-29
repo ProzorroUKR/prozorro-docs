@@ -1,4 +1,4 @@
-GET /api/2.4/tenders/2421d6b589cd45dbbd4dad08488d24ed HTTP/1.0
+GET /api/2.5/tenders/456144750e2d41bd86f06b4de9f3b75e HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: api-sandbox.openprocurement.org
 
@@ -9,50 +9,10 @@ Content-Type: application/json; charset=UTF-8
 {
   "data": {
     "procurementMethod": "selective", 
-    "features": [
-      {
-        "code": "OCDS-123454-AIR-INTAKE", 
-        "description": "Ефективна потужність всмоктування пилососа, в ватах (аероватах)", 
-        "title": "Потужність всмоктування", 
-        "enum": [
-          {
-            "value": 0.1, 
-            "title": "До 1000 Вт"
-          }, 
-          {
-            "value": 0.15, 
-            "title": "Більше 1000 Вт"
-          }
-        ], 
-        "title_en": "Air Intake", 
-        "relatedItem": "1662b0e1d59f4e2f8e2c5bd48e03a7bc", 
-        "featureOf": "item"
-      }, 
-      {
-        "code": "OCDS-123454-YEARS", 
-        "description": "Кількість років, які організація учасник працює на ринку", 
-        "title": "Років на ринку", 
-        "enum": [
-          {
-            "value": 0.05, 
-            "title": "До 3 років"
-          }, 
-          {
-            "value": 0.1, 
-            "title": "Більше 3 років, менше 5 років"
-          }, 
-          {
-            "value": 0.15, 
-            "title": "Більше 5 років"
-          }
-        ], 
-        "title_en": "Years trading", 
-        "featureOf": "tenderer"
-      }
-    ], 
-    "enquiryPeriod": {
-      "startDate": "2019-01-25T15:48:07.556790+02:00", 
-      "endDate": "2019-01-25T15:49:07.556790+02:00"
+    "tenderID": "UA-2019-03-26-000001", 
+    "tenderPeriod": {
+      "startDate": "2019-03-27T13:54:27.860941+02:00", 
+      "endDate": "2019-03-30T13:54:27.860941+02:00"
     }, 
     "submissionMethod": "electronicAuction", 
     "next_check": "2019-01-25T15:49:07.556790+02:00", 
@@ -75,10 +35,95 @@ Content-Type: application/json; charset=UTF-8
           "amount": 500.56, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2019-01-25T15:48:06.255147+02:00", 
-        "id": "452029a0046446d0811541dd6cc10485"
+        "date": "2019-03-26T13:54:26.946741+02:00", 
+        "id": "d873580630ad4256938558786a55bb52"
       }
     ], 
+    "items": [
+      {
+        "relatedLot": "d873580630ad4256938558786a55bb52", 
+        "description": "футляри до державних нагород", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "New Cartons", 
+          "id": "44617100-9"
+        }, 
+        "description_en": "futliary do derzhavnyh nagorod", 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "папір і картон гофровані, паперова й картонна тара"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "deliveryDate": {
+          "startDate": "2019-03-28T13:54:25.198916+02:00", 
+          "endDate": "2019-03-31T13:54:25.198916+02:00"
+        }, 
+        "id": "1662b0e1d59f4e2f8e2c5bd48e03a7bc", 
+        "unit": {
+          "code": "44617100-9", 
+          "name": "item"
+        }, 
+        "quantity": 5.0
+      }
+    ], 
+    "procurementMethodType": "closeFrameworkAgreementSelectionUA", 
+    "value": {
+      "currency": "UAH", 
+      "amount": 500.56, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "submissionMethod": "electronicAuction", 
+    "date": "2019-03-26T13:54:27.870588+02:00", 
+    "minimalStep": {
+      "currency": "UAH", 
+      "amount": 2.5, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "dateModified": "2019-03-26T13:54:27.870588+02:00", 
+    "next_check": "2019-03-27T13:54:27.860941+02:00", 
+    "procuringEntity": {
+      "kind": "general", 
+      "name": "Державне управління справами", 
+      "address": {
+        "postalCode": "01220", 
+        "countryName": "Україна", 
+        "streetAddress": "вул. Банкова, 11, корпус 1", 
+        "region": "м. Київ", 
+        "locality": "м. Київ"
+      }, 
+      "additionalContactPoints": [
+        {
+          "name": "Державне управління справами 1", 
+          "availableLanguage": "uk", 
+          "telephone": "0440000000"
+        }
+      ], 
+      "contactPoint": {
+        "name": "Державне управління справами", 
+        "availableLanguage": "en", 
+        "telephone": "0440000000"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "00037256", 
+        "uri": "http://www.dus.gov.ua/"
+      }
+    }, 
+    "awardCriteria": "lowestCost", 
+    "enquiryPeriod": {
+      "startDate": "2019-03-26T13:54:27.860941+02:00", 
+      "endDate": "2019-03-27T13:54:27.860941+02:00"
+    }, 
+    "owner": "broker", 
     "agreements": [
       {
         "agreementID": "UA-2018-09-11-000002-1", 
@@ -327,7 +372,7 @@ Content-Type: application/json; charset=UTF-8
           "endDate": "2022-01-23T11:23:20.418436+03:00"
         }, 
         "dateSigned": "2018-09-11T11:23:23.220310+03:00", 
-        "id": "42c09c505f954abd8bf8863ec2fb0379", 
+        "id": "eb1ec423ed594b22b90deb61159dbe35", 
         "procuringEntity": {
           "kind": "general", 
           "name": "Шевченківська районна в місті Києві державна адміністрація", 
@@ -363,22 +408,8 @@ Content-Type: application/json; charset=UTF-8
         "tender_id": "c3f4116d38d34fe2b7d8de8aae8c0b32"
       }
     ], 
-    "dateModified": "2019-01-25T15:48:07.576910+02:00", 
-    "tenderID": "UA-2019-01-25-000001", 
-    "status": "active.enquiries", 
-    "tenderPeriod": {
-      "startDate": "2019-01-25T15:49:07.556790+02:00", 
-      "endDate": "2019-01-25T15:52:07.556790+02:00"
-    }, 
-    "procurementMethodDetails": "quick, accelerator=1440", 
-    "procurementMethodType": "closeFrameworkAgreementSelectionUA", 
-    "date": "2019-01-25T15:48:07.576910+02:00", 
-    "minimalStep": {
-      "currency": "UAH", 
-      "amount": 2.5, 
-      "valueAddedTaxIncluded": true
-    }, 
-    "items": [
+    "id": "456144750e2d41bd86f06b4de9f3b75e", 
+    "features": [
       {
         "relatedLot": "452029a0046446d0811541dd6cc10485", 
         "description": "футляри до державних нагород", 
