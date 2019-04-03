@@ -1,6 +1,6 @@
-PATCH /api/2.4/tenders/124f329e5db34bb9876f677dfef46269/contracts/40ed143312f14665ad3fd617303cd936?acc_token=ef4a720d81564f5b875f1106395fc1f2 HTTP/1.0
+PATCH /api/2.5/tenders/deb082b3f3004fc1b115e78ee2d59f6c/contracts/0840579adb784bf68990c531cd5413b5?acc_token=88277d181c4c406caa00d3386e096304 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 125
+Content-Length: 75
 Content-Type: application/json
 Host: api-sandbox.openprocurement.org
 DATA:
@@ -8,12 +8,136 @@ DATA:
   "data": {
     "contractNumber": "contract#1", 
     "value": {
-      "amount": 11089.1232877, 
-      "contractDuration": {
-        "days": 100, 
-        "years": 5
-      }
+      "amountNet": 8945.99
     }
+  }
+}
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "status": "pending", 
+    "items": [
+      {
+        "description": "Послуги шкільних їдалень", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Test", 
+          "id": "37810000-9"
+        }, 
+        "description_en": "Services in school canteens", 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "Послуги шкільних їдалень"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "id": "35558649d29545c0887de99f276b401d", 
+        "unit": {
+          "code": "44617100-9", 
+          "name": "item"
+        }
+      }, 
+      {
+        "description": "Послуги шкільних їдалень", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Test", 
+          "id": "37810000-9"
+        }, 
+        "description_en": "Services in school canteens", 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "Послуги шкільних їдалень"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "id": "27a1ff2de6d649309fd85f5c3ee8be67", 
+        "unit": {
+          "code": "44617100-9", 
+          "name": "item"
+        }
+      }
+    ], 
+    "suppliers": [
+      {
+        "contactPoint": {
+          "email": "soleksuk@gmail.com", 
+          "telephone": "+380 (432) 21-69-30", 
+          "name": "Сергій Олексюк"
+        }, 
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "00137256", 
+          "uri": "http://www.sc.gov.ua/"
+        }, 
+        "name": "ДКП «Школяр»", 
+        "address": {
+          "postalCode": "21100", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Островського, 33", 
+          "region": "м. Вінниця", 
+          "locality": "м. Вінниця"
+        }
+      }
+    ], 
+    "contractNumber": "contract#1", 
+    "value": {
+      "yearlyPaymentsPercentage": 0.9, 
+      "amountNet": 8945.99, 
+      "amountPerformance": 818.86, 
+      "currency": "UAH", 
+      "amount": 8946.99, 
+      "contractDuration": {
+        "days": 74, 
+        "years": 10
+      }, 
+      "valueAddedTaxIncluded": true, 
+      "annualCostsReduction": [
+        500.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0, 
+        1000.0
+      ]
+    }, 
+    "date": "2019-03-28T06:49:16.802738+02:00", 
+    "awardID": "bab7d23f51b24cb78f074dcfdc2d6366", 
+    "id": "0840579adb784bf68990c531cd5413b5", 
+    "contractID": "UA-2019-03-28-000001-1"
   }
 }
 

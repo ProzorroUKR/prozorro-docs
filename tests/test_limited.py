@@ -110,10 +110,14 @@ supplier = {'data':
         "value": {
             "amount": 475000,
             "currency": "UAH",
-            "valueAddedTaxIncluded": "true"
+            "valueAddedTaxIncluded": True
         }
     }
 }
+
+supplier_negotiation = deepcopy(supplier)
+supplier_negotiation['data']['value']['valueAddedTaxIncluded'] = False
+
 
 cancellation = {
     'data': {
@@ -155,6 +159,7 @@ test_tender_negotiation_data['cause'] = "twiceUnsuccessful"
 test_tender_negotiation_data['causeDescription'] = "оригінальний тендер не вдався двічі"
 test_tender_negotiation_data['causeDescription_en'] = "original tender has failed twice"
 test_tender_negotiation_data['causeDescription_ru'] = "оригинальный тендер не получился дважды"
+test_tender_negotiation_data['value']['valueAddedTaxIncluded'] = False
 
 test_tender_negotiation_quick_data = deepcopy(test_tender_data)
 test_tender_negotiation_quick_data['procurementMethodType'] = "negotiation.quick"
@@ -329,7 +334,8 @@ class TenderLimitedResourceTest(BaseTenderWebTest):
 
         with open(TARGET_DIR + 'tutorial/tender-contract-set-contract-value.http', 'w') as self.app.file_obj:
             response = self.app.patch_json('/tenders/{}/contracts/{}?acc_token={}'.format(
-                self.tender_id, self.contract_id, owner_token), {"data": {"value": {"amount": 238}}})
+                self.tender_id, self.contract_id, owner_token),
+                {"data": {"value": {"amount": 238, "amountNet": 230}}})
         self.assertEqual(response.status, '200 OK')
         self.assertEqual(response.json['data']['value']['amount'], 238)
 
@@ -461,7 +467,7 @@ class TenderNegotiationLimitedResourceTest(TenderLimitedResourceTest):
 
         with open(TARGET_DIR + 'tutorial/tender-negotiation-award.http', 'w') as self.app.file_obj:
             response = self.app.post_json('/tenders/{}/awards?acc_token={}'.format(
-                    self.tender_id, owner_token), supplier)
+                    self.tender_id, owner_token), supplier_negotiation)
             self.assertEqual(response.status, '201 Created')
         self.award_id = response.json['data']['id']
 
@@ -568,7 +574,8 @@ class TenderNegotiationLimitedResourceTest(TenderLimitedResourceTest):
 
         with open(TARGET_DIR + 'multiple_lots_tutorial/tender-contract-set-contract-value.http', 'w') as self.app.file_obj:
             response = self.app.patch_json('/tenders/{}/contracts/{}?acc_token={}'.format(
-                self.tender_id, self.contract_id, owner_token), {"data": {"value": {"amount": 238}}})
+                self.tender_id, self.contract_id, owner_token),
+                {"data": {"value": {"amount": 238, "amountNet": 230}}})
         self.assertEqual(response.status, '200 OK')
         self.assertEqual(response.json['data']['value']['amount'], 238)
 
@@ -609,7 +616,7 @@ class TenderNegotiationQuickLimitedResourceTest(TenderNegotiationLimitedResource
 
         with open(TARGET_DIR + 'tutorial/tender-negotiation-quick-award.http', 'w') as self.app.file_obj:
             response = self.app.post_json('/tenders/{}/awards?acc_token={}'.format(
-                    self.tender_id, owner_token), supplier)
+                    self.tender_id, owner_token), supplier_negotiation)
             self.assertEqual(response.status, '201 Created')
         self.award_id = response.json['data']['id']
 

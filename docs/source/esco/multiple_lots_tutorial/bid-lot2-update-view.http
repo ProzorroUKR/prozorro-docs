@@ -1,4 +1,4 @@
-PATCH /api/2.4/tenders/b204841c7ee844019a1038571b96b55a/bids/abb1c9abb2e6488987c80753bcb459cb?acc_token=0f07d2f141674cb68732cab78505f75e HTTP/1.0
+PATCH /api/2.5/tenders/a5737d7e05a4451a8a502a9d763357f0/bids/cd09b8b5ea5b4259a2128e077ae0e557?acc_token=1fce02a0714b42b893df6ba28b879de2 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 124
 Content-Type: application/json
@@ -9,7 +9,7 @@ DATA:
     "status": "pending", 
     "lotValues": [
       {
-        "relatedLot": "0b447ad702e64138b2c550dfe583c7f2", 
+        "relatedLot": "b7292dba1ee3436db63fee17b2d09579", 
         "value": {
           "amount": 500
         }
@@ -26,19 +26,19 @@ Content-Type: application/json; charset=UTF-8
     "selfEligible": true, 
     "lotValues": [
       {
-        "relatedLot": "0b447ad702e64138b2c550dfe583c7f2", 
-        "date": "2017-10-03T11:18:05.877920+03:00", 
+        "relatedLot": "b7292dba1ee3436db63fee17b2d09579", 
+        "date": "2019-03-28T06:49:20.720130+02:00", 
         "status": "pending", 
         "value": {
           "yearlyPaymentsPercentage": 0.9, 
           "valueAddedTaxIncluded": true, 
           "currency": "UAH", 
-          "amount": 10358.876712328767, 
+          "amount": 9613.23, 
           "contractDuration": {
             "days": 0, 
             "years": 7
           }, 
-          "amountPerformance": 2248.494981287916, 
+          "amountPerformance": 2013.75, 
           "annualCostsReduction": [
             700.0, 
             1600.0, 
@@ -88,8 +88,8 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "date": "2017-10-03T11:18:05.877346+03:00", 
-    "id": "abb1c9abb2e6488987c80753bcb459cb"
+    "date": "2019-03-28T06:49:20.719909+02:00", 
+    "id": "cd09b8b5ea5b4259a2128e077ae0e557"
   }
 }
 

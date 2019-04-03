@@ -1,4 +1,4 @@
-GET /api/2.3/contracts/bebdbaf7777d4bd39756f3e8872c1f46 HTTP/1.0
+GET /api/2.5/contracts/2da2605ce00540ab896900209a9d3bbd HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: api-sandbox.openprocurement.org
 
@@ -7,21 +7,16 @@ Content-Type: application/json; charset=UTF-8
 {
   "data": {
     "status": "active", 
-    "value": {
-      "currency": "UAH", 
-      "amount": 438.0, 
-      "valueAddedTaxIncluded": true
-    }, 
     "documents": [
       {
         "title": "contract_changes.doc", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/contracts/bebdbaf7777d4bd39756f3e8872c1f46/documents/853ad85f888c403eb64b3db2ce16fed7?download=6b9d115c4fa94edb8d1f07615ed5b85c", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.5/contracts/2da2605ce00540ab896900209a9d3bbd/documents/23bafb857786461e9e6f65e99d34fbbc?download=74e9fbe3ea8548c2a614c9880e708927", 
         "format": "application/msword", 
         "documentOf": "change", 
-        "datePublished": "2017-06-21T17:53:05.477533+03:00", 
-        "id": "853ad85f888c403eb64b3db2ce16fed7", 
-        "relatedItem": "c382f2a7da3647bbb4e8fea2af514157", 
-        "dateModified": "2017-06-21T17:53:05.477575+03:00"
+        "datePublished": "2019-03-28T06:48:49.095199+02:00", 
+        "id": "23bafb857786461e9e6f65e99d34fbbc", 
+        "relatedItem": "a60b5cf2e58f4e0ab405d92484b71019", 
+        "dateModified": "2019-03-28T06:48:49.095223+02:00"
       }
     ], 
     "items": [
@@ -47,15 +42,15 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-06-23T17:53:02.070092+03:00", 
-          "endDate": "2017-06-26T17:53:02.070092+03:00"
+          "startDate": "2019-03-30T06:47:07.288622+02:00", 
+          "endDate": "2019-04-02T06:47:07.288622+03:00"
         }, 
-        "id": "f8a311c2c9a34ff08bdf59bbc8092348", 
+        "id": "57ecdbb89a09425ab4fa5a75dc2d40f1", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
-        "quantity": 2
+        "quantity": 2.0
       }
     ], 
     "suppliers": [
@@ -80,11 +75,16 @@ Content-Type: application/json; charset=UTF-8
       }
     ], 
     "period": {
-      "startDate": "2017-06-21T17:53:05.582663+03:00", 
-      "endDate": "2017-07-21T17:53:05.582718+03:00"
+      "startDate": "2019-03-28T06:48:49.146735+02:00", 
+      "endDate": "2019-04-27T06:48:49.146759+02:00"
     }, 
-    "dateSigned": "2017-06-21T17:53:04.594612+03:00", 
-    "id": "bebdbaf7777d4bd39756f3e8872c1f46", 
+    "value": {
+      "currency": "UAH", 
+      "amount": 438.0, 
+      "amountNet": 430.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "dateModified": "2019-03-28T06:48:49.384837+02:00", 
     "procuringEntity": {
       "contactPoint": {
         "name": "Державне управління справами", 
@@ -105,9 +105,10 @@ Content-Type: application/json; charset=UTF-8
         "locality": "м. Київ"
       }
     }, 
-    "contractID": "UA-2017-06-21-000001-1", 
+    "dateSigned": "2019-03-28T06:48:48.661676+02:00", 
+    "contractID": "UA-2019-03-28-000001-1", 
     "owner": "broker", 
-    "awardID": "2f549474497c475b8023d51845cbb2bd", 
+    "awardID": "0070ab5f96df47ecae302c40ab7335bb", 
     "changes": [
       {
         "status": "active", 
@@ -116,14 +117,14 @@ Content-Type: application/json; charset=UTF-8
           "priceReduction"
         ], 
         "rationale_en": "Contract change cause", 
-        "dateSigned": "2017-06-21T17:53:05.978602+03:00", 
+        "dateSigned": "2019-03-28T06:48:49.370827+02:00", 
         "rationale": "Друга і третя поставка має бути розфасована", 
-        "date": "2017-06-21T17:53:06.002992+03:00", 
-        "id": "c382f2a7da3647bbb4e8fea2af514157"
+        "date": "2019-03-28T06:48:49.382770+02:00", 
+        "id": "a60b5cf2e58f4e0ab405d92484b71019"
       }
     ], 
-    "dateModified": "2017-06-21T17:53:06.006808+03:00", 
-    "tender_id": "7dc086c4a213492ab9c43b95b43bd817"
+    "id": "2da2605ce00540ab896900209a9d3bbd", 
+    "tender_id": "d29dcbb84cbe4be191e2dc2690bddd1b"
   }
 }
 

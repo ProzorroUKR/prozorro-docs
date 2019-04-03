@@ -1,4 +1,4 @@
-GET /api/2.3/plans/52862ec099ff4debbf9f26a0980f27f3 HTTP/1.0
+GET /api/2.5/plans/0394b1674398493f8c9aa592e829afa4 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: api-sandbox.openprocurement.org
 
@@ -27,14 +27,14 @@ Content-Type: application/json; charset=UTF-8
           }
         ], 
         "deliveryDate": {
-          "endDate": "2017-07-06T17:41:39.677983+03:00"
+          "endDate": "2019-04-12T06:47:09.005262+03:00"
         }, 
-        "id": "f8173e5bf8754aec89a47a624b3cefd1", 
+        "id": "53ea0cf4b353443b8ef8caeab44b4e52", 
         "unit": {
           "code": "KGM", 
           "name": "кг"
         }, 
-        "quantity": 1000
+        "quantity": 1000.0
       }, 
       {
         "description": "Насіння соняшнику", 
@@ -51,14 +51,14 @@ Content-Type: application/json; charset=UTF-8
           }
         ], 
         "deliveryDate": {
-          "endDate": "2017-07-07T17:41:39.677983+03:00"
+          "endDate": "2019-04-13T06:47:09.005262+03:00"
         }, 
-        "id": "3b0208637aa44a99b388a9b540533a1c", 
+        "id": "4d33d7138f6c479e8edcdd8adbcb25d0", 
         "unit": {
           "code": "KGM", 
           "name": "кг"
         }, 
-        "quantity": 2000
+        "quantity": 2000.0
       }, 
       {
         "description": "Насіння бавовнику", 
@@ -75,20 +75,24 @@ Content-Type: application/json; charset=UTF-8
           }
         ], 
         "deliveryDate": {
-          "endDate": "2017-07-08T17:41:39.677983+03:00"
+          "endDate": "2019-04-14T06:47:09.005262+03:00"
         }, 
-        "id": "7266c3c7b95246718021ab671207335e", 
+        "id": "0fa0e0eb031c44fab37341e64da3b46f", 
         "unit": {
           "code": "KGM", 
           "name": "кг"
         }, 
-        "quantity": 3000
+        "quantity": 3000.0
       }
     ], 
-    "planID": "UA-P-2017-06-21-000001", 
+    "planID": "UA-P-2019-03-28-000001", 
     "budget": {
       "amountNet": 12222.0, 
       "description": "budget_description", 
+      "period": {
+        "startDate": "2019-01-01T00:00:00+02:00", 
+        "endDate": "2019-12-31T00:00:00+02:00"
+      }, 
       "project": {
         "id": "123", 
         "name": "proj_name"
@@ -97,12 +101,12 @@ Content-Type: application/json; charset=UTF-8
       "amount": 10000.0, 
       "id": "12303111000-2"
     }, 
-    "datePublished": "2017-06-21T17:41:40.564867+03:00", 
+    "datePublished": "2019-03-28T06:50:16.190988+02:00", 
     "tender": {
       "procurementMethod": "open", 
       "procurementMethodType": "belowThreshold", 
       "tenderPeriod": {
-        "startDate": "2017-06-28T17:41:39.677983+03:00"
+        "startDate": "2019-04-04T06:47:09.005262+03:00"
       }
     }, 
     "additionalClassifications": [
@@ -121,8 +125,8 @@ Content-Type: application/json; charset=UTF-8
       "name": "ДУС"
     }, 
     "owner": "broker", 
-    "dateModified": "2017-06-21T17:41:40.588719+03:00", 
-    "id": "52862ec099ff4debbf9f26a0980f27f3"
+    "dateModified": "2019-03-28T06:50:16.200643+02:00", 
+    "id": "0394b1674398493f8c9aa592e829afa4"
   }
 }
 

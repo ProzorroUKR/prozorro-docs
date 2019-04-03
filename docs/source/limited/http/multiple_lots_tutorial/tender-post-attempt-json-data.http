@@ -1,4 +1,4 @@
-POST /api/2.3/tenders?opt_pretty=1 HTTP/1.0
+POST /api/2.5/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 3719
 Content-Type: application/json
@@ -61,8 +61,8 @@ Host: api-sandbox.openprocurement.org
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-06-23T16:18:46.759393", 
-          "endDate": "2017-06-26T16:18:46.759393"
+          "startDate": "2019-03-30T06:47:08.632098", 
+          "endDate": "2019-04-02T06:47:08.632098"
         }, 
         "description_ru": "Услуги школьных столовых", 
         "id": "2dc54675d6364e2baffbc0f8e74432ac"
@@ -80,10 +80,10 @@ Host: api-sandbox.openprocurement.org
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/a464e40a3bc54b91b508bf995be294d7
+Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/f930e795d51e4d0897efd6abd044cab3
 {
   "access": {
-    "token": "327c6a6852614356871347e875519e06"
+    "token": "de5684b7316349acb1774b8332e102ab"
   }, 
   "data": {
     "procurementMethod": "limited", 
@@ -114,8 +114,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/a464e40a3bc54b9
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-06-23T16:18:46.759393+03:00", 
-          "endDate": "2017-06-26T16:18:46.759393+03:00"
+          "startDate": "2019-03-30T06:47:08.632098+02:00", 
+          "endDate": "2019-04-02T06:47:08.632098+03:00"
         }, 
         "description_ru": "Услуги школьных столовых", 
         "id": "2dc54675d6364e2baffbc0f8e74432ac"
@@ -127,9 +127,9 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/a464e40a3bc54b9
       "amount": 500000.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "dateModified": "2017-06-21T16:19:11.493924+03:00", 
+    "dateModified": "2019-03-28T06:49:42.528846+02:00", 
     "causeDescription_ru": "оригинальный тендер не получился дважды", 
-    "date": "2017-06-21T16:19:11.489687+03:00", 
+    "date": "2019-03-28T06:49:42.527115+02:00", 
     "causeDescription_en": "original tender has failed twice", 
     "description_ru": "Услуги школьных столовых", 
     "description_en": "Services in school canteens", 
@@ -157,8 +157,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/a464e40a3bc54b9
       }
     }, 
     "title_en": "Services in school canteens", 
-    "id": "a464e40a3bc54b91b508bf995be294d7", 
-    "tenderID": "UA-2017-06-21-000001"
+    "id": "f930e795d51e4d0897efd6abd044cab3", 
+    "tenderID": "UA-2019-03-28-000001"
   }
 }
 

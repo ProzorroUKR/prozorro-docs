@@ -257,12 +257,38 @@ Qualification comission registers its decision via the following call:
 .. include:: http/tutorial/confirm-qualification.http
    :code:
 
-Setting  contract value
------------------------
+.. _SettingContractValue:
 
-By default contract value is set based on the award, but there is a possibility to set custom contract value. 
+Setting contract value
+----------------------
 
-If you want to **lower contract value**, you can insert new one into the `amount` field.
+Let's see the created contract with next request:
+
+.. include:: http/tutorial/tender-contract-get-contract-value.http
+   :code:
+
+
+By default contract value `amount` and `amountNet` is set based on the award value `amount`, but there is a possibility to set custom contract value.
+
+You can update value `amount` and `amountNet` following next rules:
+
++-------------------------+------------------------------------------------------------------------+
+| `valueAddedTaxIncluded` |                                                                        |
++------------+------------+                              `Validation`                              +
+| `contract` |   `award`  |                                                                        |
++------------+------------+------------------------------------------------------------------------+
+|            | true/false | Amount should be greater than amountNet and differ by no more than 20% |
++            +------------+------------------------------------------------------------------------+
+|    true    |    true    |            Amount should be less or equal to awarded amount            |
++            +------------+------------------------------------------------------------------------+
+|            |    false   |           AmountNet should be less or equal to awarded amount          |
++------------+------------+------------------------------------------------------------------------+
+|            | true/false |                  Amount and amountNet should be equal                  |
++    false   +------------+------------------------------------------------------------------------+
+|            | true/false |            Amount should be less or equal to awarded amount            |
++------------+------------+------------------------------------------------------------------------+
+
+Let's set contract contract value with next request:
 
 .. include:: http/tutorial/tender-contract-set-contract-value.http
    :code:

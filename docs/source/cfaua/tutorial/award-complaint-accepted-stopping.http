@@ -1,4 +1,4 @@
-PATCH /api/2.4/tenders/d274b60ebac849478795fab82829fb55/awards/6590139a4f8e4649ad6e64ae8ba93927/complaints/076ec58da61b4701abc638320e01b5ab?acc_token=18df93ed1f4e42b4a60d28defc35d33c HTTP/1.0
+PATCH /api/2.5/tenders/c2be6cc98391434da02ceb5260928191/awards/b3ea07978dfa4489a4143af66ef6d18b/complaints/61433581ec0d40af962b6a511776df6b?acc_token=a07eabff824f415b90db8b48b8ffe7b4 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 228
 Content-Type: application/json
@@ -15,14 +15,14 @@ Response: 200 OK
 Content-Type: application/json; charset=UTF-8
 {
   "data": {
-    "relatedLot": "ddb35dd0e9904726aafd18baed24863a", 
+    "relatedLot": "2e6f1f49c8894974a1c36e2b463b5b86", 
     "status": "stopping", 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
     "title": "Недостатньо інформації", 
     "acceptance": true, 
     "cancellationReason": "Тендер скасовується замовником", 
-    "dateCanceled": "2018-11-30T16:38:17.379393+02:00", 
-    "dateAccepted": "2018-11-30T16:38:15.980862+02:00", 
+    "dateCanceled": "2019-03-28T06:47:47.728404+02:00", 
+    "dateAccepted": "2019-03-28T06:47:46.320879+02:00", 
     "author": {
       "contactPoint": {
         "email": "soleksuk@gmail.com", 
@@ -44,11 +44,11 @@ Content-Type: application/json; charset=UTF-8
         "locality": "м. Вінниця"
       }
     }, 
-    "dateSubmitted": "2018-11-30T16:38:13.741149+02:00", 
-    "complaintID": "UA-2018-11-30-000001.4", 
-    "date": "2018-11-30T16:38:17.390311+02:00", 
+    "dateSubmitted": "2019-03-28T06:47:44.262641+02:00", 
+    "complaintID": "UA-2019-03-28-000001.4", 
+    "date": "2019-03-28T06:47:47.740047+02:00", 
     "type": "complaint", 
-    "id": "076ec58da61b4701abc638320e01b5ab"
+    "id": "61433581ec0d40af962b6a511776df6b"
   }
 }
 

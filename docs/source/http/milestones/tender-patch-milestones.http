@@ -1,4 +1,4 @@
-PATCH /api/2.4/tenders/c04c4b2ab1994ea3b48b80055b9db735?acc_token=a3cea2be754e47b2812f941112035567 HTTP/1.0
+PATCH /api/2.5/tenders/3b5121d3616741d4913c211251104fb3?acc_token=49d336fd47e6439e8169f524d75af3a9 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 161
 Content-Type: application/json
@@ -18,7 +18,7 @@ Host: api-sandbox.openprocurement.org
 
 
 200 OK
-Content-Type: application/json
+Content-Type: application/json; charset=UTF-8
 
 {
   "data": {
@@ -35,7 +35,7 @@ Content-Type: application/json
         }, 
         "percentage": 45.55, 
         "type": "financing", 
-        "id": "7013ef14729448c48737975336477ecb"
+        "id": "1d8710ef4a2a40f2aa2c9c200e9e435e"
       }, 
       {
         "code": "postpayment", 
@@ -48,13 +48,13 @@ Content-Type: application/json
         }, 
         "percentage": 54.45, 
         "type": "financing", 
-        "id": "2fdbe2d1f4524cd88ac2654f8e298480"
+        "id": "c045399e18034946adef0c8811a381b0"
       }
     ], 
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
-      "startDate": "2019-01-04T18:37:46.381580+02:00", 
-      "endDate": "2019-01-11T18:37:46.381580+02:00"
+      "startDate": "2019-04-04T06:47:07.288622+03:00", 
+      "endDate": "2019-04-11T06:47:07.288622+03:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -85,15 +85,47 @@ Content-Type: application/json
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2018-12-30T18:37:46.381580+02:00", 
-          "endDate": "2019-01-02T18:37:46.381580+02:00"
+          "startDate": "2019-03-30T06:47:07.288622+02:00", 
+          "endDate": "2019-04-02T06:47:07.288622+03:00"
         }, 
-        "id": "94084e6b9bd64957beba3782938ed37a", 
+        "id": "959ce14dd44749248a2331e9014a6521", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
-        "quantity": 5
+        "quantity": 5.0
+      }, 
+      {
+        "description": "футляри до державних нагород", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Cartons", 
+          "id": "44617100-9"
+        }, 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "папір і картон гофровані, паперова й картонна тара"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "deliveryDate": {
+          "startDate": "2019-03-30T06:47:07.288622+02:00", 
+          "endDate": "2019-04-02T06:47:07.288622+03:00"
+        }, 
+        "id": "94c514784a52477fb465f2d4e0ad536a", 
+        "unit": {
+          "code": "44617100-9", 
+          "name": "item"
+        }, 
+        "quantity": 5.0
       }
     ], 
     "procurementMethodType": "belowThreshold", 
@@ -103,8 +135,8 @@ Content-Type: application/json
       "valueAddedTaxIncluded": true
     }, 
     "submissionMethod": "electronicAuction", 
-    "date": "2018-12-28T18:37:47.903773+02:00", 
-    "next_check": "2019-01-04T18:37:46.381580+02:00", 
+    "date": "2019-03-28T06:47:18.870091+02:00", 
+    "next_check": "2019-04-04T06:47:07.288622+03:00", 
     "procuringEntity": {
       "contactPoint": {
         "name": "Державне управління справами", 
@@ -126,13 +158,13 @@ Content-Type: application/json
       }
     }, 
     "enquiryPeriod": {
-      "startDate": "2018-12-28T18:37:47.903734+02:00", 
-      "endDate": "2019-01-04T18:37:46.381580+02:00"
+      "startDate": "2019-03-28T06:47:18.870002+02:00", 
+      "endDate": "2019-04-04T06:47:07.288622+03:00"
     }, 
     "owner": "broker", 
-    "dateModified": "2018-12-28T18:37:47.952044+02:00", 
-    "id": "c04c4b2ab1994ea3b48b80055b9db735", 
-    "tenderID": "UA-2018-12-28-000001"
+    "dateModified": "2019-03-28T06:47:18.950742+02:00", 
+    "id": "3b5121d3616741d4913c211251104fb3", 
+    "tenderID": "UA-2019-03-28-000001"
   }
 }
 

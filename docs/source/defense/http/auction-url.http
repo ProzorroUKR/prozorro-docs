@@ -1,4 +1,4 @@
-GET /api/2.3/tenders/d3dba9240047439492b162acda141abd HTTP/1.0
+GET /api/2.5/tenders/dc07cf2d5fae45f88da7ef5b0917cd1f HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: api-sandbox.openprocurement.org
 
@@ -8,18 +8,18 @@ Content-Type: application/json; charset=UTF-8
   "data": {
     "procurementMethod": "open", 
     "complaintPeriod": {
-      "startDate": "2017-06-05T16:09:09.844494+03:00", 
-      "endDate": "2017-06-19T00:00:00+03:00"
+      "startDate": "2019-03-12T06:47:07.288622+02:00", 
+      "endDate": "2019-03-26T00:00:00+02:00"
     }, 
-    "auctionUrl": "http://auction-sandbox.openprocurement.org/tenders/d3dba9240047439492b162acda141abd", 
+    "auctionUrl": "http://auction-sandbox.openprocurement.org/tenders/dc07cf2d5fae45f88da7ef5b0917cd1f", 
     "enquiryPeriod": {
-      "startDate": "2017-06-05T16:09:09.844494+03:00", 
-      "clarificationsUntil": "2017-06-20T16:09:09.844494+03:00", 
-      "endDate": "2017-06-16T16:09:09.844494+03:00", 
-      "invalidationDate": "2017-06-21T16:09:26.333674+03:00"
+      "startDate": "2019-03-12T06:47:07.288622+02:00", 
+      "clarificationsUntil": "2019-03-27T06:47:07.288622+02:00", 
+      "endDate": "2019-03-25T06:47:07.288622+02:00", 
+      "invalidationDate": "2019-03-28T06:48:58.455408+02:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "next_check": "2017-06-21T16:45:09.844494+03:00", 
+    "next_check": "2019-03-28T07:23:07.288622+02:00", 
     "procuringEntity": {
       "contactPoint": {
         "url": "http://sch10.edu.vn.ua/", 
@@ -44,63 +44,66 @@ Content-Type: application/json; charset=UTF-8
     "questions": [
       {
         "description": "Просимо додати таблицю потрібної калорійності харчування", 
-        "dateAnswered": "2017-06-21T16:09:25.542870+03:00", 
+        "dateAnswered": "2019-03-28T06:48:58.014445+02:00", 
         "title": "Калорійність", 
-        "date": "2017-06-21T16:09:25.463612+03:00", 
+        "date": "2019-03-28T06:48:57.963495+02:00", 
         "answer": "Таблицю додано в файлі \"Kalorijnist.xslx\"", 
-        "id": "ca012dda99b94ddb99d87c244874692a", 
+        "id": "710166016a224e2887c1ebce762d52df", 
         "questionOf": "tender"
       }
     ], 
     "owner": "broker", 
-    "id": "d3dba9240047439492b162acda141abd", 
+    "id": "dc07cf2d5fae45f88da7ef5b0917cd1f", 
     "guarantee": {
       "currency": "USD", 
       "amount": 8.0
     }, 
     "documents": [
       {
+        "author": "tender_owner", 
         "title": "Notice.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/d3dba9240047439492b162acda141abd/documents/31049c2f5b9144868d88a0160c934d60?download=636b9b3d3667402fa489569bf305f564", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/dc07cf2d5fae45f88da7ef5b0917cd1f/documents/ce8d71f7af8543bba4d3acaa71e1b0d4?download=b9025bafe62e48f486a8ef86b09fe48c", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T16:09:25.183718+03:00", 
-        "id": "31049c2f5b9144868d88a0160c934d60", 
-        "dateModified": "2017-06-21T16:09:25.183751+03:00"
+        "datePublished": "2019-03-28T06:48:57.774368+02:00", 
+        "id": "ce8d71f7af8543bba4d3acaa71e1b0d4", 
+        "dateModified": "2019-03-28T06:48:57.774382+02:00"
       }, 
       {
+        "author": "tender_owner", 
         "title": "AwardCriteria.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/d3dba9240047439492b162acda141abd/documents/9560b6640681409fa8a6038826443683?download=62864d28d1564434b77f6a964f1123fb", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/dc07cf2d5fae45f88da7ef5b0917cd1f/documents/caa3adbf43b04a2a93f64e06813f41be?download=99ea8516a6314817a82952a43ce57ba9", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T16:09:25.274380+03:00", 
-        "id": "9560b6640681409fa8a6038826443683", 
-        "dateModified": "2017-06-21T16:09:25.274416+03:00"
+        "datePublished": "2019-03-28T06:48:57.809320+02:00", 
+        "id": "caa3adbf43b04a2a93f64e06813f41be", 
+        "dateModified": "2019-03-28T06:48:57.809335+02:00"
       }, 
       {
+        "author": "tender_owner", 
         "title": "AwardCriteria-2.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/d3dba9240047439492b162acda141abd/documents/9560b6640681409fa8a6038826443683?download=53701f8f3501480aa50dac54e0f4e5d3", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/dc07cf2d5fae45f88da7ef5b0917cd1f/documents/caa3adbf43b04a2a93f64e06813f41be?download=a198a9e0183444fba55bf0fca4f0bf67", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-06-21T16:09:25.274380+03:00", 
-        "id": "9560b6640681409fa8a6038826443683", 
-        "dateModified": "2017-06-21T16:09:25.369568+03:00"
+        "datePublished": "2019-03-28T06:48:57.809320+02:00", 
+        "id": "caa3adbf43b04a2a93f64e06813f41be", 
+        "dateModified": "2019-03-28T06:48:57.851513+02:00"
       }
     ], 
     "title": "футляри до державних нагород", 
-    "tenderID": "UA-2017-06-21-000001", 
-    "dateModified": "2017-06-21T16:09:26.874155+03:00", 
+    "tenderID": "UA-2019-03-28-000001", 
+    "dateModified": "2019-03-28T06:48:58.785699+02:00", 
     "status": "active.auction", 
     "tenderPeriod": {
-      "startDate": "2017-06-05T16:09:09.844494+03:00", 
-      "endDate": "2017-06-21T16:09:09.844494+03:00"
+      "startDate": "2019-03-12T06:47:07.288622+02:00", 
+      "endDate": "2019-03-28T06:47:07.288622+02:00"
     }, 
     "auctionPeriod": {
-      "startDate": "2017-06-21T16:09:09.844494+03:00", 
-      "shouldStartAfter": "2017-06-22T00:00:00+03:00"
+      "startDate": "2019-03-28T06:47:07.288622+02:00", 
+      "shouldStartAfter": "2019-03-29T00:00:00+02:00"
     }, 
     "procurementMethodType": "aboveThresholdUA.defense", 
-    "date": "2017-06-21T16:09:24.792303+03:00", 
+    "date": "2019-03-28T06:48:57.591424+02:00", 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35.0, 
@@ -129,15 +132,15 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-11T16:09:10.869776+03:00", 
-          "endDate": "2017-08-10T16:09:10.869828+03:00"
+          "startDate": "2019-04-17T06:47:08.227086+02:00", 
+          "endDate": "2019-05-17T06:47:08.227116+02:00"
         }, 
-        "id": "088c06079114432a868884642967dd98", 
+        "id": "bed8b4c1bf15429e9392a61a0b20eaa2", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
-        "quantity": 1
+        "quantity": 1.0
       }
     ], 
     "value": {
@@ -145,27 +148,7 @@ Content-Type: application/json; charset=UTF-8
       "amount": 501.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "procuringEntity": {
-      "contactPoint": {
-        "url": "http://sch10.edu.vn.ua/", 
-        "name": "Куца Світлана Валентинівна", 
-        "telephone": "+380 (432) 46-53-02"
-      }, 
-      "identifier": {
-        "scheme": "UA-EDR", 
-        "id": "21725150", 
-        "legalName": "Заклад \"Загальноосвітня школа І-ІІІ ступенів № 10 Вінницької міської ради\""
-      }, 
-      "kind": "defense", 
-      "address": {
-        "postalCode": "21027", 
-        "countryName": "Україна", 
-        "streetAddress": "вул. Стахурського. 22", 
-        "region": "м. Вінниця", 
-        "locality": "м. Вінниця"
-      }, 
-      "name": "ЗОСШ #10 м.Вінниці"
-    }
+    "awardCriteria": "lowestCost"
   }
 }
 

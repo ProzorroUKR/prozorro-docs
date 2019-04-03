@@ -1,6 +1,6 @@
-POST /api/2.3/tenders/97cf65391926469b81293beab084b426/awards?acc_token=d6417c718191458a8d1b7ae505b014e9 HTTP/1.0
+POST /api/2.5/tenders/f2e3fad1e2fa436fbf7f229568f13d0c/awards?acc_token=f17aaedeca36415fb0bcc791e2422067 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 1284
+Content-Length: 1283
 Content-Type: application/json
 Host: api-sandbox.openprocurement.org
 
@@ -11,15 +11,15 @@ Host: api-sandbox.openprocurement.org
     "suppliers": [
       {
         "contactPoint": {
+          "email": "soleksuk@gmail.com", 
           "telephone": "+380 (432) 21-69-30", 
-          "name": "Сергій Олексюк", 
-          "email": "soleksuk@gmail.com"
+          "name": "Сергій Олексюк"
         }, 
         "identifier": {
           "scheme": "UA-EDR", 
-          "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
           "id": "13313462", 
-          "uri": "http://sch10.edu.vn.ua/"
+          "uri": "http://sch10.edu.vn.ua/", 
+          "legalName": "Державне комунальне підприємство громадського харчування «Школяр»"
         }, 
         "name": "ДКП «Школяр»", 
         "address": {
@@ -35,19 +35,19 @@ Host: api-sandbox.openprocurement.org
     "value": {
       "currency": "UAH", 
       "amount": 475000, 
-      "valueAddedTaxIncluded": "true"
+      "valueAddedTaxIncluded": false
     }
   }
 }
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/97cf65391926469b81293beab084b426/awards/4f13c6ef3d4c4e32bec71f1b5024f2d9
+Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/f2e3fad1e2fa436fbf7f229568f13d0c/awards/28065c6b3e6f4403aaed16720fabacd5
 {
   "data": {
     "status": "pending", 
     "complaintPeriod": {
-      "startDate": "2017-09-14T19:40:11.445327+03:00"
+      "startDate": "2019-03-28T06:49:33.697795+02:00"
     }, 
     "suppliers": [
       {
@@ -75,10 +75,10 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/97cf65391926469
     "value": {
       "currency": "UAH", 
       "amount": 475000.0, 
-      "valueAddedTaxIncluded": true
+      "valueAddedTaxIncluded": false
     }, 
-    "date": "2017-09-14T19:40:11.439237+03:00", 
-    "id": "4f13c6ef3d4c4e32bec71f1b5024f2d9"
+    "date": "2019-03-28T06:49:33.697026+02:00", 
+    "id": "28065c6b3e6f4403aaed16720fabacd5"
   }
 }
 

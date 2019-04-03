@@ -1,4 +1,4 @@
-GET /api/2.4/agreements/bac4cd4430804d14886552838c221f44/preview?acc_token=292fa501fab14276ac5d7a3076a459fb HTTP/1.0
+GET /api/2.5/agreements/c37f8569c6104df8b9c909a2bd5e591d/preview?acc_token=a6b1a227059b4333acb0444bde2cb6a1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: api-sandbox.openprocurement.org
 
@@ -6,19 +6,19 @@ Response: 200 OK
 Content-Type: application/json; charset=UTF-8
 {
   "data": {
-    "agreementID": "UA-2018-09-28-000001",
+    "agreementID": "UA-2019-03-28-000001-8f12c2a20d1c49498ad4fb5a21e7e8061", 
     "status": "active", 
     "documents": [
       {
         "hash": "md5:00000000000000000000000000000000", 
         "title": "agreement_changes.doc", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/1c02df8ee75a41f38e77da31ef13a55d?KeyID=7a12d53d&Signature=Dc56C96DvoWU1ReBC0akSDKNtTt4NKaAXXHQ%252B231PzAGJMYWIqpyo%2FkTNO5QCPl4NsQxdm4txfnjrheT8%252BOzDw%253D%253D", 
+        "url": "http://public.docs-sandbox.openprocurement.org/get/fa23c91e1dae47d997083ebee66808b9?KeyID=3a8e07a2&Signature=TNqckgVj5ekXPx%252Bq%252BAlGXzOIvD1cUn1QM2iHlBvH11J38jQhBfXb0%2FodBrUVLDabWqQ%2F8P2yVBTbGbKVgyDIDA%253D%253D", 
         "format": "application/msword", 
         "documentOf": "change", 
-        "datePublished": "2018-09-28T13:49:36.927513+03:00", 
-        "id": "826c1c729930494a8fecd66811a48529", 
-        "relatedItem": "d477e71367eb4409ad0c02c7aab14685", 
-        "dateModified": "2018-09-28T13:49:36.927558+03:00"
+        "datePublished": "2019-03-28T06:47:11.223107+02:00", 
+        "id": "e743a021a2bb4934a3855f2f5dc653de", 
+        "relatedItem": "61f8b06f662e467d87a1854331f446bd", 
+        "dateModified": "2019-03-28T06:47:11.223129+02:00"
       }
     ], 
     "contracts": [
@@ -31,7 +31,7 @@ Content-Type: application/json; charset=UTF-8
               "amount": 14.93, 
               "valueAddedTaxIncluded": true
             }, 
-            "relatedItem": "971110b62a194236bdaa935a382130f4"
+            "relatedItem": "4331e451ca6b4f3cb4a43cefb9e17c39"
           }
         ], 
         "suppliers": [
@@ -58,10 +58,10 @@ Content-Type: application/json; charset=UTF-8
             "name": "Державне управління справами"
           }
         ], 
-        "bidID": "f49192d0dfb941bdb6f46d713a9fff95", 
-        "date": "2018-09-28T13:49:35.880251+03:00", 
-        "awardID": "36091ba509274e5a9868e164da46faac", 
-        "id": "0dff197ee7f14de5b275f1df25546a81"
+        "bidID": "d1970f238dda4458b313e4ec6f2d4160", 
+        "date": "2019-03-28T06:47:10.739741+02:00", 
+        "awardID": "feb65d192da44dc5bbe883f94887c998", 
+        "id": "f6a2f2739acd426aa458bf06f9bafe23"
       }, 
       {
         "status": "active", 
@@ -72,7 +72,7 @@ Content-Type: application/json; charset=UTF-8
               "amount": 14.93, 
               "valueAddedTaxIncluded": true
             }, 
-            "relatedItem": "971110b62a194236bdaa935a382130f4"
+            "relatedItem": "4331e451ca6b4f3cb4a43cefb9e17c39"
           }
         ], 
         "suppliers": [
@@ -99,10 +99,10 @@ Content-Type: application/json; charset=UTF-8
             "name": "Державне управління справами"
           }
         ], 
-        "bidID": "72f1f2d6d77440a1b622e1841b9c5949", 
-        "date": "2018-09-28T13:49:35.880329+03:00", 
-        "awardID": "84f202854f9b467e8bf005c92d2d186f", 
-        "id": "47ac00e0bf55414488f2433514f8469d"
+        "bidID": "ac9b70868b544592bc48e3a4aa688639", 
+        "date": "2019-03-28T06:47:10.739781+02:00", 
+        "awardID": "ad13da1e0d64465baf54b29059d835b2", 
+        "id": "9951580c3af742a68d152db2c1d0f5dc"
       }, 
       {
         "status": "active", 
@@ -113,7 +113,7 @@ Content-Type: application/json; charset=UTF-8
               "amount": 14.93, 
               "valueAddedTaxIncluded": true
             }, 
-            "relatedItem": "971110b62a194236bdaa935a382130f4"
+            "relatedItem": "4331e451ca6b4f3cb4a43cefb9e17c39"
           }
         ], 
         "suppliers": [
@@ -140,15 +140,15 @@ Content-Type: application/json; charset=UTF-8
             "name": "Державне управління справами"
           }
         ], 
-        "bidID": "fed9683aa51a4842b05cfe835bb918ee", 
-        "date": "2018-09-28T13:49:35.880392+03:00", 
-        "awardID": "5c6a783f3964417591974106457bdd60", 
-        "id": "7bc8497f24c04495b944447254ab2778"
+        "bidID": "12da52b3dd7b4d0aa3892bc6af4e9d2b", 
+        "date": "2019-03-28T06:47:10.739810+02:00", 
+        "awardID": "3d98bfcfca904bb89ad0d31009706fa4", 
+        "id": "f80d6c4f2b8542c1bc8a22891841c7e7"
       }
     ], 
     "items": [
       {
-        "relatedLot": "f6caf73fbe824e4fa6803f27e47f6b08", 
+        "relatedLot": "5bc43d056b10462494a37cae6491d515", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -174,15 +174,16 @@ Content-Type: application/json; charset=UTF-8
           "startDate": "2018-06-27T13:39:09.362837+03:00", 
           "endDate": "2018-06-30T13:39:09.362837+03:00"
         }, 
-        "id": "971110b62a194236bdaa935a382130f4", 
+        "id": "4331e451ca6b4f3cb4a43cefb9e17c39", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
-        "quantity": 5
+        "quantity": 5.0
       }
     ], 
-    "id": "bac4cd4430804d14886552838c221f44", 
+    "id": "c37f8569c6104df8b9c909a2bd5e591d", 
+    "numberOfContracts": 3, 
     "procuringEntity": {
       "kind": "general", 
       "name": "Державне управління справами", 
@@ -213,19 +214,19 @@ Content-Type: application/json; charset=UTF-8
         "status": "pending", 
         "modifications": [
           {
-            "itemId": "971110b62a194236bdaa935a382130f4", 
+            "itemId": "4331e451ca6b4f3cb4a43cefb9e17c39", 
             "factor": 0.1605
           }
         ], 
         "rationaleType": "taxRate", 
         "rationale_en": "Agreement change cause", 
         "rationale": "Друга і третя поставка має бути розфасована", 
-        "date": "2018-09-28T13:49:36.515236+03:00", 
-        "id": "d477e71367eb4409ad0c02c7aab14685"
+        "date": "2019-03-28T06:47:11.108337+02:00", 
+        "id": "61f8b06f662e467d87a1854331f446bd"
       }
     ], 
-    "dateModified": "2018-09-28T13:49:37.159135+03:00", 
-    "tender_id": "8ff72d2afd694c90b33ffd83e9d48a35"
+    "dateModified": "2019-03-28T06:47:11.314189+02:00", 
+    "tender_id": "adf248ab889b4c2d803de357d7840215"
   }
 }
 

@@ -1,4 +1,4 @@
-POST /api/2.4/tenders?opt_pretty=1 HTTP/1.0
+POST /api/2.5/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 4162
 Content-Type: application/json
@@ -7,7 +7,7 @@ DATA:
 {
   "data": {
     "tenderPeriod": {
-      "endDate": "2018-12-31T16:38:09.883588+02:00"
+      "endDate": "2019-04-28T06:47:07.957181+02:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -17,7 +17,7 @@ DATA:
     }, 
     "items": [
       {
-        "relatedLot": "ddb35dd0e9904726aafd18baed24863a", 
+        "relatedLot": "2e6f1f49c8894974a1c36e2b463b5b86", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -50,7 +50,7 @@ DATA:
         "quantity": 5
       }, 
       {
-        "relatedLot": "ddb35dd0e9904726aafd18baed24863a", 
+        "relatedLot": "2e6f1f49c8894974a1c36e2b463b5b86", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -104,7 +104,7 @@ DATA:
           "amount": 500, 
           "valueAddedTaxIncluded": true
         }, 
-        "id": "ddb35dd0e9904726aafd18baed24863a"
+        "id": "2e6f1f49c8894974a1c36e2b463b5b86"
       }
     ], 
     "maxAwardsCount": 4, 
@@ -137,24 +137,24 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/4e095f899aea431dade658804787b2aa
+Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/edf1ec35dd2442928d2473f51384621f
 {
   "access": {
-    "token": "8a38796ad4814abcaf75da2c44b5c6cc"
+    "token": "cbe41c0fba54453ea52434ea6c0e1867"
   }, 
   "data": {
     "procurementMethod": "open", 
     "complaintPeriod": {
-      "startDate": "2018-11-30T16:38:21.854917+02:00", 
-      "endDate": "2018-12-27T00:00:00+02:00"
+      "startDate": "2019-03-28T06:47:52.517775+02:00", 
+      "endDate": "2019-04-24T00:00:00+03:00"
     }, 
     "enquiryPeriod": {
-      "startDate": "2018-11-30T16:38:21.854917+02:00", 
-      "clarificationsUntil": "2018-12-27T16:38:09.883588+02:00", 
-      "endDate": "2018-12-21T16:38:09.883588+02:00"
+      "startDate": "2019-03-28T06:47:52.517775+02:00", 
+      "clarificationsUntil": "2019-04-23T06:47:07.957181+02:00", 
+      "endDate": "2019-04-18T06:47:07.957181+02:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "next_check": "2018-12-31T16:38:09.883588+02:00", 
+    "next_check": "2019-04-28T07:47:07.957181+03:00", 
     "procuringEntity": {
       "kind": "general", 
       "name": "Державне управління справами", 
@@ -180,7 +180,7 @@ Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/4e095f899aea431
       "name_en": "State administration"
     }, 
     "owner": "broker", 
-    "id": "4e095f899aea431dade658804787b2aa", 
+    "id": "edf1ec35dd2442928d2473f51384621f", 
     "title": "футляри до державних нагород", 
     "lots": [
       {
@@ -193,29 +193,29 @@ Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/4e095f899aea431
           "valueAddedTaxIncluded": true
         }, 
         "auctionPeriod": {
-          "shouldStartAfter": "2019-02-05T00:00:00+02:00"
+          "shouldStartAfter": "2019-06-03T00:00:00+02:00"
         }, 
         "value": {
           "currency": "UAH", 
           "amount": 500.0, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2018-11-30T16:38:21.879121+02:00", 
-        "id": "ddb35dd0e9904726aafd18baed24863a"
+        "date": "2019-03-28T06:47:52.548924+02:00", 
+        "id": "2e6f1f49c8894974a1c36e2b463b5b86"
       }
     ], 
     "maxAwardsCount": 4, 
-    "tenderID": "UA-2018-11-30-000001", 
-    "dateModified": "2018-11-30T16:38:21.884588+02:00", 
+    "tenderID": "UA-2019-03-28-000001", 
+    "dateModified": "2019-03-28T06:47:52.553569+02:00", 
     "status": "active.tendering", 
     "tenderPeriod": {
-      "startDate": "2018-11-30T16:38:21.854917+02:00", 
-      "endDate": "2018-12-31T16:38:09.883588+02:00"
+      "startDate": "2019-03-28T06:47:52.517775+02:00", 
+      "endDate": "2019-04-28T06:47:07.957181+02:00"
     }, 
     "title_en": "Cases for state awards", 
     "procurementMethodType": "closeFrameworkAgreementUA", 
     "agreementDuration": "P3Y3M3D", 
-    "date": "2018-11-30T16:38:21.879121+02:00", 
+    "date": "2019-03-28T06:47:52.548924+02:00", 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35, 
@@ -223,7 +223,7 @@ Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/4e095f899aea431
     }, 
     "items": [
       {
-        "relatedLot": "ddb35dd0e9904726aafd18baed24863a", 
+        "relatedLot": "2e6f1f49c8894974a1c36e2b463b5b86", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -249,15 +249,15 @@ Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/4e095f899aea431
           "startDate": "2018-06-27T13:39:09.362837+03:00", 
           "endDate": "2018-06-30T13:39:09.362837+03:00"
         }, 
-        "id": "a33c8d8aa1d949ffb6e29478daf3484b", 
+        "id": "90759460567841e0aacf5d7c20c47baf", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
-        "quantity": 5
+        "quantity": 5.0
       }, 
       {
-        "relatedLot": "ddb35dd0e9904726aafd18baed24863a", 
+        "relatedLot": "2e6f1f49c8894974a1c36e2b463b5b86", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -283,12 +283,12 @@ Location: http://api-sandbox.openprocurement.org/api/2.4/tenders/4e095f899aea431
           "startDate": "2018-06-27T13:39:09.362837+03:00", 
           "endDate": "2018-06-30T13:39:09.362837+03:00"
         }, 
-        "id": "ac50b5589d084bf697aedfb2ed399fed", 
+        "id": "2846075b9a7c45d7a6ba8384aabe5f37", 
         "unit": {
           "code": "44617100-8", 
           "name": "item"
         }, 
-        "quantity": 5
+        "quantity": 5.0
       }
     ], 
     "value": {

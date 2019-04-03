@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/456144750e2d41bd86f06b4de9f3b75e?acc_token=719899aa5d31458fb3b410aaa858b123 HTTP/1.0
+PATCH /api/2.5/tenders/bfc38e0727544f8bbcacbf60bd82358d?acc_token=1f81552c3cdc417cb65518819410eec2 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 37
 Content-Type: application/json
@@ -18,30 +18,20 @@ Content-Type: application/json; charset=UTF-8
   "data": {
     "status": "draft.pending", 
     "procurementMethod": "selective", 
-    "tenderID": "UA-2019-03-26-000001", 
+    "tenderID": "UA-2019-04-03-000001", 
     "title": "футляри до державних нагород", 
     "lots": [
       {
-        "date": "2019-03-26T13:54:26.946741+02:00", 
+        "date": "2019-04-03T14:34:33.852536+03:00", 
         "status": "active", 
         "title": "lot title", 
         "description": "lot description", 
-        "id": "d873580630ad4256938558786a55bb52"
+        "id": "f95dd4f753684255832d7cfdc7b32368"
       }
     ], 
-    "procurementMethodDetails": "quick, accelerator=1440", 
-    "procurementMethodType": "closeFrameworkAgreementSelectionUA", 
-    "submissionMethod": "electronicAuction", 
-    "date": "2019-01-25T15:48:06.724957+02:00", 
-    "agreements": [
-      {
-        "id": "42c09c505f954abd8bf8863ec2fb0379"
-      }
-    ], 
-    "awardCriteria": "lowestCost", 
     "items": [
       {
-        "relatedLot": "d873580630ad4256938558786a55bb52", 
+        "relatedLot": "f95dd4f753684255832d7cfdc7b32368", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -64,8 +54,8 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-03-28T13:54:25.198916+02:00", 
-          "endDate": "2019-03-31T13:54:25.198916+02:00"
+          "startDate": "2019-04-05T14:34:32.392080+03:00", 
+          "endDate": "2019-04-08T14:34:32.392080+03:00"
         }, 
         "id": "1662b0e1d59f4e2f8e2c5bd48e03a7bc", 
         "unit": {
@@ -77,33 +67,42 @@ Content-Type: application/json; charset=UTF-8
     ], 
     "procurementMethodType": "closeFrameworkAgreementSelectionUA", 
     "submissionMethod": "electronicAuction", 
-    "date": "2019-03-26T13:54:27.470536+02:00", 
+    "date": "2019-04-03T14:34:33.977640+03:00", 
     "agreements": [
       {
-        "id": "eb1ec423ed594b22b90deb61159dbe35"
+        "id": "3c7c74b4eea74bbea027e6cdace4e7c9"
       }
     ], 
+    "awardCriteria": "lowestCost", 
     "owner": "broker", 
-    "dateModified": "2019-03-26T13:54:27.470536+02:00", 
-    "id": "456144750e2d41bd86f06b4de9f3b75e", 
+    "dateModified": "2019-04-03T14:34:33.977640+03:00", 
+    "id": "bfc38e0727544f8bbcacbf60bd82358d", 
     "procuringEntity": {
-      "contactPoint": {
-        "name": "Державне управління справами", 
-        "telephone": "0440000000"
-      }, 
-      "identifier": {
-        "scheme": "UA-EDR", 
-        "id": "00037256", 
-        "uri": "http://www.dus.gov.ua/"
-      }, 
-      "name": "Державне управління справами", 
       "kind": "general", 
+      "name": "Державне управління справами", 
       "address": {
         "postalCode": "01220", 
         "countryName": "Україна", 
         "streetAddress": "вул. Банкова, 11, корпус 1", 
         "region": "м. Київ", 
         "locality": "м. Київ"
+      }, 
+      "additionalContactPoints": [
+        {
+          "name": "Державне управління справами 1", 
+          "availableLanguage": "uk", 
+          "telephone": "0440000000"
+        }
+      ], 
+      "contactPoint": {
+        "name": "Державне управління справами", 
+        "availableLanguage": "en", 
+        "telephone": "0440000000"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "00037256", 
+        "uri": "http://www.dus.gov.ua/"
       }
     }
   }

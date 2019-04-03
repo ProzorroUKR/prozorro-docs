@@ -1,12 +1,12 @@
-POST /api/2.3/tenders/f3641d0ba0f042e8b49de06d5c7921af/documents?acc_token=2ef61fa89e8a451ba4149d2f8e31173b HTTP/1.0
+POST /api/2.5/tenders/4e72a84032424e519ab51eb3c1c98dbf/documents?acc_token=40505a9e3a774f6e9cd51e16d68e457a HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 334
+Content-Length: 324
 Content-Type: application/json
 Host: api-sandbox.openprocurement.org
 
 {
   "data": {
-    "url": "http://public.docs-sandbox.openprocurement.org/get/33bd696eba8a4877af96fc267df48c21?KeyID=459f8ecf&Signature=3SoLjvN%2Bubc3yUq7E%2F8z%2FT4nhwBCO%2BYejSIqF2ORk3btE1ug052zZDNQQpi4yyd1rj%2FPX09LiTVm%2BoTVYouoCg%3D%3D", 
+    "url": "http://public.docs-sandbox.openprocurement.org/get/7f582c3fe17b4d22b312206e40e7abba?KeyID=782d7111&Signature=kQsDro%2BJNcXb3dlk9aZ51rtDPtGSVn88icHMFLLe18nC6u79QCRI6tPRJxIwHW39mYLTUoetSkfsDgILa6GZDA%3D%3D", 
     "title": "Notice.pdf", 
     "hash": "md5:00000000000000000000000000000000", 
     "format": "application/pdf"
@@ -16,19 +16,19 @@ Host: api-sandbox.openprocurement.org
 
 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/f3641d0ba0f042e8b49de06d5c7921af/documents/8c4f7355fed4463b98eb429237a2e6a5
+Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/4e72a84032424e519ab51eb3c1c98dbf/documents/a0e07c2c12d44f9fbe3d0ffe229dcd94
 
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "author": "tender_owner", 
     "title": "Notice.pdf", 
-    "url": "http://public.docs-sandbox.openprocurement.org/get/33bd696eba8a4877af96fc267df48c21?KeyID=459f8ecf&Signature=ddH8OS09K%252BBpHxgERTqBTtRkfEU1q6Lj65I1JeIn%2FlcdEC6e2eOs936ScnDmRUAtryWyyLR75Zt6aaB1%2FLtWBw%253D%253D", 
+    "url": "http://public.docs-sandbox.openprocurement.org/get/7f582c3fe17b4d22b312206e40e7abba?KeyID=782d7111&Signature=bEWrpMB9DsLPKl1CX%252Bbu%2FAQOLwn1iYOGs5XdYflV6gnCvHJpl%252Byil2E83ks1EyFWvbQd6zFXlQ2kYh29LHO8DA%253D%253D", 
     "format": "application/pdf", 
     "documentOf": "tender", 
-    "datePublished": "2017-07-25T17:36:56.044656+03:00", 
-    "id": "8c4f7355fed4463b98eb429237a2e6a5", 
-    "dateModified": "2017-07-25T17:36:56.044677+03:00"
+    "datePublished": "2019-03-28T06:47:20.089427+02:00", 
+    "id": "a0e07c2c12d44f9fbe3d0ffe229dcd94", 
+    "dateModified": "2019-03-28T06:47:20.089447+02:00"
   }
 }
 

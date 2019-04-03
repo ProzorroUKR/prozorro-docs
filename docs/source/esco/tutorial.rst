@@ -372,17 +372,17 @@ Qualification commission registers its decision via the following call:
 .. include:: tutorial/confirm-qualification.http
    :code:
 
-.. Setting  contract value
-   -----------------------
+Setting contract value
+-----------------------
 
-   By default contract value is set based on the award, but there is a possibility to set custom contract value.
+By default contract value `amountNet` is set based on the award value `amount`, but there is a possibility to set custom contract value.
 
-   If you want to **lower contract value**, you can change `contractDuration`, `yearlyPaymentsPercentage` and `annualCostsReduction`  fields.
+Let's set contract contract value with next request:
 
-   .. include:: tutorial/tender-contract-set-contract-value.http
-      :code:
+.. include:: tutorial/tender-contract-set-contract-value.http
+   :code:
 
-   `200 OK` response was returned. The value was modified successfully.
+`200 OK` response was returned. The value was modified successfully.
 
 Setting contract signature date
 -------------------------------

@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/aa0cd6b584d543848108968ea24a7891?acc_token=ef9c0578dbdd435ab058ee3eef53e1b7 HTTP/1.0
+PATCH /api/2.5/tenders/3e7eabcb058f47c492c03f1b2cb05d76?acc_token=f6b69a804f20492fa60852bdcba9a296 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 75
 Content-Type: application/json
@@ -7,7 +7,7 @@ DATA:
 {
   "data": {
     "tenderPeriod": {
-      "endDate": "2017-07-21T16:03:02.907054+03:00"
+      "endDate": "2019-04-27T06:50:02.461732+02:00"
     }
   }
 }
@@ -20,8 +20,8 @@ Content-Type: application/json; charset=UTF-8
     "status": "active.tendering", 
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
-      "startDate": "2017-06-21T16:02:52.741611+03:00", 
-      "endDate": "2017-07-21T16:03:02.907054+03:00"
+      "startDate": "2019-03-28T06:49:52.402821+02:00", 
+      "endDate": "2019-04-27T06:50:02.461732+02:00"
     }, 
     "title": "Послуги шкільних їдалень", 
     "minimalStep": {
@@ -30,11 +30,11 @@ Content-Type: application/json; charset=UTF-8
       "valueAddedTaxIncluded": true
     }, 
     "auctionPeriod": {
-      "shouldStartAfter": "2017-08-26T00:00:00+03:00"
+      "shouldStartAfter": "2019-06-02T00:00:00+02:00"
     }, 
     "complaintPeriod": {
-      "startDate": "2017-06-21T16:02:52.741611+03:00", 
-      "endDate": "2017-07-17T00:00:00+03:00"
+      "startDate": "2019-03-28T06:49:52.402821+02:00", 
+      "endDate": "2019-04-23T00:00:00+03:00"
     }, 
     "title_en": "Services in school canteens", 
     "value": {
@@ -43,8 +43,8 @@ Content-Type: application/json; charset=UTF-8
       "valueAddedTaxIncluded": true
     }, 
     "submissionMethod": "electronicAuction", 
-    "date": "2017-06-21T16:02:52.784188+03:00", 
-    "dateModified": "2017-06-21T16:02:52.988639+03:00", 
+    "date": "2019-03-28T06:49:52.422885+02:00", 
+    "dateModified": "2019-03-28T06:49:52.501449+02:00", 
     "procurementMethodType": "aboveThresholdEU", 
     "procuringEntity": {
       "kind": "general", 
@@ -72,13 +72,13 @@ Content-Type: application/json; charset=UTF-8
       "name_en": "School #10 of Vinnytsia"
     }, 
     "enquiryPeriod": {
-      "startDate": "2017-06-21T16:02:52.741611+03:00", 
-      "clarificationsUntil": "2017-07-14T16:03:02.907054+03:00", 
-      "endDate": "2017-07-11T16:03:02.907054+03:00", 
-      "invalidationDate": "2017-06-21T16:02:52.985135+03:00"
+      "startDate": "2019-03-28T06:49:52.402821+02:00", 
+      "clarificationsUntil": "2019-04-22T06:50:02.461732+02:00", 
+      "endDate": "2019-04-17T06:50:02.461732+02:00", 
+      "invalidationDate": "2019-03-28T06:49:52.499628+02:00"
     }, 
     "owner": "broker", 
-    "next_check": "2017-07-21T16:03:02.907054+03:00", 
+    "next_check": "2019-04-27T07:50:02.461732+03:00", 
     "items": [
       {
         "description": "Послуги шкільних їдалень", 
@@ -103,15 +103,15 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-11T16:02:36.221241+03:00", 
-          "endDate": "2017-08-10T16:02:36.221295+03:00"
+          "startDate": "2019-04-17T06:47:08.947035+02:00", 
+          "endDate": "2019-05-17T06:47:08.947066+02:00"
         }, 
-        "id": "bb438534444d47eea7b1bd2fe84e58fb", 
+        "id": "458801e6c4554bd99d040ab560a256bd", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
-        "quantity": 1
+        "quantity": 1.0
       }, 
       {
         "description": "Послуги шкільних їдалень", 
@@ -136,19 +136,19 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-07-11T16:02:36.221327+03:00", 
-          "endDate": "2017-08-10T16:02:36.221351+03:00"
+          "startDate": "2019-04-17T06:47:08.947077+02:00", 
+          "endDate": "2019-05-17T06:47:08.947084+02:00"
         }, 
-        "id": "962bd32f921c4e8a8335c59a3e6f0fd6", 
+        "id": "33bd4a45adf04470b73fbf111005df6c", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }, 
-        "quantity": 1
+        "quantity": 1.0
       }
     ], 
-    "id": "aa0cd6b584d543848108968ea24a7891", 
-    "tenderID": "UA-2017-06-21-000001"
+    "id": "3e7eabcb058f47c492c03f1b2cb05d76", 
+    "tenderID": "UA-2019-03-28-000001"
   }
 }
 

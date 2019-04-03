@@ -78,10 +78,12 @@ Schema
     List of :ref:`Organization` objects, auto-generated, read-only
 
 :value:
-    `Value` object, auto-generated, read-only
+    :ref:`ContractValue` object, auto-generated
 
     |ocdsDescription|
     The total value of this contract.
+
+    Check ":ref:`SettingContractValue`" tutorial section for more info
 
 :dateSigned:
     string, :ref:`date`

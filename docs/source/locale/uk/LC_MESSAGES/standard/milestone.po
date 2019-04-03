@@ -8,17 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.api 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 09:43+0200\n"
+"POT-Creation-Date: 2019-03-18 09:32+0200\n"
 "PO-Revision-Date: 2018-11-20 10:32+0200\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: uk\n"
-"X-Generator: Poedit 2.2\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 1.3\n"
 
 #: ../../source/standard/milestone.rst:6
 msgid "Milestone"
@@ -28,17 +25,9 @@ msgstr ""
 msgid "Schema"
 msgstr "Схема"
 
-#: ../../source/standard/milestone.rst
-msgid "id"
-msgstr ""
-
 #: ../../source/standard/milestone.rst:12
 msgid "uid, auto-generated"
 msgstr "uid, генерується автоматично"
-
-#: ../../source/standard/milestone.rst
-msgid "title"
-msgstr ""
 
 #: ../../source/standard/milestone.rst:15
 #: ../../source/standard/milestone.rst:32
@@ -54,48 +43,40 @@ msgid "Possible values are:"
 msgstr "Можливі значення:"
 
 #: ../../source/standard/milestone.rst:19
-msgid "`Виконання робіт`"
+msgid "`executionOfWorks`"
 msgstr ""
 
 #: ../../source/standard/milestone.rst:20
-msgid "`Поставка товару`"
+msgid "`deliveryOfGoods`"
 msgstr ""
 
 #: ../../source/standard/milestone.rst:21
-msgid "`Надання послуг`"
+msgid "`submittingServices`"
 msgstr ""
 
 #: ../../source/standard/milestone.rst:22
-msgid "`Підписання договору`"
+msgid "`signingTheContract`"
 msgstr ""
 
 #: ../../source/standard/milestone.rst:23
-msgid "`Дата подання заявки`"
+msgid "`submissionDateOfApplications`"
 msgstr ""
 
 #: ../../source/standard/milestone.rst:24
-msgid "`Дата виставлення рахунку`"
+msgid "`dateOfInvoicing`"
 msgstr ""
 
 #: ../../source/standard/milestone.rst:25
-msgid "`Дата закінчення звітного періоду`"
+msgid "`endDateOfTheReportingPeriod`"
 msgstr ""
 
 #: ../../source/standard/milestone.rst:26
-msgid "`Інша подія`"
-msgstr ""
-
-#: ../../source/standard/milestone.rst
-msgid "description"
+msgid "`anotherEvent`"
 msgstr ""
 
 #: ../../source/standard/milestone.rst:29
 msgid "string, required if title == `anotherEvent`"
 msgstr "рядок, обов’язковий якщо title == `anotherEvent`"
-
-#: ../../source/standard/milestone.rst
-msgid "type"
-msgstr ""
 
 #: ../../source/standard/milestone.rst:34
 msgid "The only possible value is:"
@@ -103,10 +84,6 @@ msgstr "Єдине можливе значення:"
 
 #: ../../source/standard/milestone.rst:36
 msgid "`financing`"
-msgstr ""
-
-#: ../../source/standard/milestone.rst
-msgid "code"
 msgstr ""
 
 #: ../../source/standard/milestone.rst:43
@@ -117,10 +94,6 @@ msgstr ""
 msgid "`postpayment`"
 msgstr ""
 
-#: ../../source/standard/milestone.rst
-msgid "percentage"
-msgstr ""
-
 #: ../../source/standard/milestone.rst:47
 msgid "float, required, 0..100"
 msgstr "float, обов’язково, 0..100"
@@ -129,25 +102,13 @@ msgstr "float, обов’язково, 0..100"
 msgid "Sum of all tender (or lot) milestones should be 100"
 msgstr "Сума всіх milestone тендеру (або лоту) повинна бути 100"
 
-#: ../../source/standard/milestone.rst
-msgid "duration"
-msgstr ""
-
 #: ../../source/standard/milestone.rst:52
 msgid ":ref:`Duration` object, required"
 msgstr ":ref:`Duration`, обов’язково"
 
-#: ../../source/standard/milestone.rst
-msgid "sequenceNumber"
-msgstr ""
-
 #: ../../source/standard/milestone.rst:55
 msgid "integer, required, non negative"
 msgstr "integer, обов’язковий, не негативний"
-
-#: ../../source/standard/milestone.rst
-msgid "relatedLot"
-msgstr ""
 
 #: ../../source/standard/milestone.rst:58
 msgid "uid"
@@ -159,10 +120,6 @@ msgstr "ID пов’язаного :ref:`lot`."
 
 #: ../../source/standard/milestone.rst:66
 msgid "Duration"
-msgstr ""
-
-#: ../../source/standard/milestone.rst
-msgid "days"
 msgstr ""
 
 #: ../../source/standard/milestone.rst:72
@@ -180,3 +137,58 @@ msgstr ""
 #: ../../source/standard/milestone.rst:81
 msgid "`calendar`"
 msgstr ""
+
+#~ msgid "id"
+#~ msgstr ""
+
+#~ msgid "title"
+#~ msgstr ""
+
+#~ msgid "`Виконання робіт`"
+#~ msgstr ""
+
+#~ msgid "`Поставка товару`"
+#~ msgstr ""
+
+#~ msgid "`Надання послуг`"
+#~ msgstr ""
+
+#~ msgid "`Підписання договору`"
+#~ msgstr ""
+
+#~ msgid "`Дата подання заявки`"
+#~ msgstr ""
+
+#~ msgid "`Дата виставлення рахунку`"
+#~ msgstr ""
+
+#~ msgid "`Дата закінчення звітного періоду`"
+#~ msgstr ""
+
+#~ msgid "`Інша подія`"
+#~ msgstr ""
+
+#~ msgid "description"
+#~ msgstr ""
+
+#~ msgid "type"
+#~ msgstr ""
+
+#~ msgid "code"
+#~ msgstr ""
+
+#~ msgid "percentage"
+#~ msgstr ""
+
+#~ msgid "duration"
+#~ msgstr ""
+
+#~ msgid "sequenceNumber"
+#~ msgstr ""
+
+#~ msgid "relatedLot"
+#~ msgstr ""
+
+#~ msgid "days"
+#~ msgstr ""
+

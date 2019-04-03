@@ -3,18 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.api 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-14 13:08+0300\n"
+"POT-Creation-Date: 2019-03-18 09:32+0200\n"
 "PO-Revision-Date: 2018-09-12 16:50+0300\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
-"Language: uk\n"
 "Language-Team: Ukrainian <info@quintagroup.com>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
-"X-Generator: Poedit 2.1.1\n"
+"Generated-By: Babel 1.3\n"
 
 #: ../../source/standard/question.rst:7
 msgid "Question"
@@ -24,17 +20,9 @@ msgstr "Question"
 msgid "Schema"
 msgstr "Схема"
 
-#: ../../source/standard/question.rst
-msgid "id"
-msgstr ""
-
 #: ../../source/standard/question.rst:13
 msgid "uid, auto-generated"
 msgstr "uid, генерується автоматично"
-
-#: ../../source/standard/question.rst
-msgid "author"
-msgstr ""
 
 #: ../../source/standard/question.rst:16
 msgid ":ref:`Organization`, required"
@@ -45,12 +33,8 @@ msgid ""
 "Who is asking a question (contactPoint - person, identification - "
 "organization that person represents)."
 msgstr ""
-"Хто задає питання (contactPoint - людина, identification - організація, яку "
-"ця людина представляє)."
-
-#: ../../source/standard/question.rst
-msgid "title"
-msgstr ""
+"Хто задає питання (contactPoint - людина, identification - організація, "
+"яку ця людина представляє)."
 
 #: ../../source/standard/question.rst:21
 msgid "string, required"
@@ -59,10 +43,6 @@ msgstr "рядок, обов’язковий"
 #: ../../source/standard/question.rst:23
 msgid "Title of the question."
 msgstr "Назва запитання."
-
-#: ../../source/standard/question.rst
-msgid "description"
-msgstr ""
 
 #: ../../source/standard/question.rst:26 ../../source/standard/question.rst:41
 #: ../../source/standard/question.rst:46 ../../source/standard/question.rst:55
@@ -73,10 +53,6 @@ msgstr "рядок"
 msgid "Description of the question."
 msgstr "Опис запитання."
 
-#: ../../source/standard/question.rst
-msgid "date"
-msgstr ""
-
 #: ../../source/standard/question.rst:31 ../../source/standard/question.rst:36
 msgid "string, :ref:`date`, auto-generated"
 msgstr "рядок, :ref:`date`, генерується автоматично"
@@ -85,25 +61,13 @@ msgstr "рядок, :ref:`date`, генерується автоматично"
 msgid "Date of posting."
 msgstr "Дата публікації."
 
-#: ../../source/standard/question.rst
-msgid "dateAnswered"
-msgstr ""
-
 #: ../../source/standard/question.rst:38
 msgid "Date when answer has been provided."
 msgstr "Дата, коли було надано відповідь."
 
-#: ../../source/standard/question.rst
-msgid "answer"
-msgstr ""
-
 #: ../../source/standard/question.rst:43
 msgid "Answer for the question asked."
 msgstr "Відповідь на задане питання."
-
-#: ../../source/standard/question.rst
-msgid "questionOf"
-msgstr ""
 
 #: ../../source/standard/question.rst:48
 msgid "Possible values are:"
@@ -121,10 +85,34 @@ msgstr "`item`"
 msgid "`lot`"
 msgstr "`lot`"
 
-#: ../../source/standard/question.rst
-msgid "relatedItem"
-msgstr ""
-
 #: ../../source/standard/question.rst:57
 msgid "Id of related :ref:`lot` or :ref:`item`."
 msgstr "ID пов’язаних :ref:`lot` або :ref:`item`."
+
+#~ msgid "id"
+#~ msgstr ""
+
+#~ msgid "author"
+#~ msgstr ""
+
+#~ msgid "title"
+#~ msgstr ""
+
+#~ msgid "description"
+#~ msgstr ""
+
+#~ msgid "date"
+#~ msgstr ""
+
+#~ msgid "dateAnswered"
+#~ msgstr ""
+
+#~ msgid "answer"
+#~ msgstr ""
+
+#~ msgid "questionOf"
+#~ msgstr ""
+
+#~ msgid "relatedItem"
+#~ msgstr ""
+

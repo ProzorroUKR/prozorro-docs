@@ -1,4 +1,4 @@
-PATCH /api/2.4/tenders/5a12aa2342aa4042bf6980a62d52669b/contracts/14592124eee847cc86f970c2e238626d?acc_token=c882469d40054373bf95c9ab87c9249f HTTP/1.0
+PATCH /api/2.5/tenders/deb082b3f3004fc1b115e78ee2d59f6c/contracts/0840579adb784bf68990c531cd5413b5?acc_token=88277d181c4c406caa00d3386e096304 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 118
 Content-Type: application/json
@@ -7,8 +7,8 @@ DATA:
 {
   "data": {
     "period": {
-      "startDate": "2017-10-11T17:20:26.559997+03:00", 
-      "endDate": "2018-10-11T17:20:26.560051+03:00"
+      "startDate": "2019-03-28T06:49:17.445126+02:00", 
+      "endDate": "2020-03-27T06:49:17.445156+02:00"
     }
   }
 }
@@ -41,7 +41,7 @@ Content-Type: application/json; charset=UTF-8
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "a73f68d005d244fd8972480d9fffe56a", 
+        "id": "35558649d29545c0887de99f276b401d", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -69,7 +69,7 @@ Content-Type: application/json; charset=UTF-8
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "885400cdaccf4fa0b174b5c17f7b4cba", 
+        "id": "27a1ff2de6d649309fd85f5c3ee8be67", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -98,20 +98,23 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
+    "contractNumber": "contract#1", 
     "period": {
-      "startDate": "2017-10-11T17:20:26.559997+03:00", 
-      "endDate": "2018-10-11T17:20:26.560051+03:00"
+      "startDate": "2019-03-28T06:49:17.445126+02:00", 
+      "endDate": "2020-03-27T06:49:17.445156+02:00"
     }, 
+    "dateSigned": "2019-03-28T06:49:17.201631+02:00", 
     "value": {
       "yearlyPaymentsPercentage": 0.9, 
-      "valueAddedTaxIncluded": true, 
+      "amountNet": 8945.99, 
+      "amountPerformance": 818.86, 
       "currency": "UAH", 
-      "amount": 9432.74, 
+      "amount": 8946.99, 
       "contractDuration": {
         "days": 74, 
         "years": 10
       }, 
-      "amountPerformance": 865.24, 
+      "valueAddedTaxIncluded": true, 
       "annualCostsReduction": [
         500.0, 
         1000.0, 
@@ -136,10 +139,10 @@ Content-Type: application/json; charset=UTF-8
         1000.0
       ]
     }, 
-    "dateSigned": "2017-10-11T17:20:26.159568+03:00", 
-    "awardID": "7d531ab11c7c4f56ae13f1edc0bf2061", 
-    "id": "14592124eee847cc86f970c2e238626d", 
-    "contractID": "UA-2017-10-11-000001-1"
+    "date": "2019-03-28T06:49:16.802738+02:00", 
+    "awardID": "bab7d23f51b24cb78f074dcfdc2d6366", 
+    "id": "0840579adb784bf68990c531cd5413b5", 
+    "contractID": "UA-2019-03-28-000001-1"
   }
 }
 
