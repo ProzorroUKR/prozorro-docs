@@ -1,13 +1,12 @@
 # -*- coding: utf-8 -*-
-import json
 import os
 from copy import deepcopy
 from datetime import timedelta, datetime
 
 import openprocurement.tender.limited.tests.base as base_test
-from openprocurement.api.tests.base import PrefixedRequestClass
 from openprocurement.tender.limited.tests.tender import BaseTenderWebTest
-from webtest import TestApp
+
+from tests.base import DumpsWebTestApp, DOCS_HOST
 
 now = datetime.now()
 test_tender_data = {
@@ -177,53 +176,30 @@ test_lots = [
 ]
 
 
-class DumpsTestAppwebtest(TestApp):
-
-    def do_request(self, req, status=None, expect_errors=None):
-        req.headers.environ["HTTP_HOST"] = "api-sandbox.openprocurement.org"
-        if hasattr(self, 'file_obj') and not self.file_obj.closed:
-            self.file_obj.write(req.as_bytes(True))
-            self.file_obj.write("\n")
-            if req.body:
-                try:
-                    self.file_obj.write(
-                            '\n' + json.dumps(json.loads(req.body), indent=2, ensure_ascii=False).encode('utf8'))
-                    self.file_obj.write("\n")
-                except:
-                    pass
-            self.file_obj.write("\n")
-        resp = super(DumpsTestAppwebtest, self).do_request(req, status=status, expect_errors=expect_errors)
-        if hasattr(self, 'file_obj') and not self.file_obj.closed:
-            headers = [(n.title(), v)
-                       for n, v in resp.headerlist
-                       if n.lower() != 'content-length']
-            headers.sort()
-            self.file_obj.write(str('Response: %s\n%s\n') % (
-                resp.status,
-                str('\n').join([str('%s: %s') % (n, v) for n, v in headers]),
-            ))
-
-            if resp.testbody:
-                try:
-                    self.file_obj.write(json.dumps(json.loads(resp.testbody), indent=2, ensure_ascii=False).encode('utf8'))
-                except:
-                    pass
-            self.file_obj.write("\n\n")
-        return resp
-
 TARGET_DIR = 'docs/source/limited/http/'
 
 
 class TenderLimitedResourceTest(BaseTenderWebTest):
     initial_data = test_tender_data
+    docservice = True
+
+    docs_host = DOCS_HOST
 
     def setUp(self):
-        self.app = DumpsTestAppwebtest(
-                "config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
-        self.app.RequestClass = PrefixedRequestClass
-        self.app.authorization = ('Basic', ('broker', ''))
+        self.app = DumpsWebTestApp(
+            "config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
+        if self.docservice:
+            self.setUpDS()
+            self.app.app.registry.docservice_url = 'http://{}'.format(self.docs_host)
+
+    def tearDown(self):
+        self.couchdb_server.delete(self.db.name)
+
+    def generate_docservice_url(self):
+        url = super(TenderLimitedResourceTest, self).generate_docservice_url()
+        return url.replace('localhost', DOCS_HOST)
 
     def test_docs(self):
         request_path = '/tenders?opt_pretty=1'

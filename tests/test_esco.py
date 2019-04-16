@@ -7,9 +7,9 @@ import openprocurement.tender.esco.tests.base as base_test
 from openprocurement.api.models import get_now
 from openprocurement.api.tests.base import PrefixedRequestClass
 
-from openprocurement.tender.core.tests.base import DumpsTestAppwebtest
-
 from openprocurement.tender.esco.tests.base import BaseESCOWebTest
+
+from tests.base import DumpsWebTestApp, DOCS_HOST, AUCTIONS_HOST
 
 test_tender_data = {
     "title": "Послуги шкільних їдалень",
@@ -351,19 +351,24 @@ class TenderResourceTest(BaseESCOWebTest):
     initial_data = test_tender_data
     docservice = True
 
+    docs_host = DOCS_HOST
+    auctions_host = AUCTIONS_HOST
+
     def setUp(self):
-        self.app = DumpsTestAppwebtest(
-                "config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
-        self.app.RequestClass = PrefixedRequestClass
-        self.app.authorization = ('Basic', ('broker', ''))
+        self.app = DumpsWebTestApp(
+            "config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
         if self.docservice:
             self.setUpDS()
-            self.app.app.registry.docservice_url = 'http://public.docs-sandbox.openprocurement.org'
+            self.app.app.registry.docservice_url = 'http://{}'.format(self.docs_host)
+
+    def tearDown(self):
+        self.couchdb_server.delete(self.db.name)
 
     def generate_docservice_url(self):
-        return super(TenderResourceTest, self).generate_docservice_url().replace('/localhost/', '/public.docs-sandbox.openprocurement.org/')
+        url = super(TenderResourceTest, self).generate_docservice_url()
+        return url.replace('localhost', self.docs_host)
 
     def test_docs(self):
         request_path = '/tenders?opt_pretty=1'
@@ -717,22 +722,18 @@ class TenderResourceTest(BaseESCOWebTest):
 
         self.set_status('active.auction')
         self.app.authorization = ('Basic', ('auction', ''))
+        auction_url = u'http://{}/tenders/{}'.format(self.auctions_host, self.tender_id)
         patch_data = {
-            'auctionUrl': u'http://auction-sandbox.openprocurement.org/tenders/{}'.format(self.tender_id),
-            'bids': [
-                {
-                    "id": bid1_id,
-                    "participationUrl": u'http://auction-sandbox.openprocurement.org/tenders/{}?key_for_bid={}'.format(self.tender_id, bid1_id)
-                },
-                {
-                    "id": bid2_id,
-                    "participationUrl": u'http://auction-sandbox.openprocurement.org/tenders/{}?key_for_bid={}'.format(self.tender_id, bid2_id)
-                },
-                {
-                    "id": bid3_id
-                }
-
-            ]
+            'auctionUrl': auction_url,
+            'bids': [{
+                "id": bid1_id,
+                "participationUrl": u'{}?key_for_bid={}'.format(auction_url, bid1_id)
+            }, {
+                "id": bid2_id,
+                "participationUrl": u'{}?key_for_bid={}'.format(auction_url, bid2_id)
+            }, {
+                "id": bid3_id
+            }]
         }
         response = self.app.patch_json('/tenders/{}/auction?acc_token={}'.format(self.tender_id, owner_token),
                                            {'data': patch_data})
@@ -890,6 +891,8 @@ class TenderResourceTest(BaseESCOWebTest):
             self.assertEqual(response.status, '200 OK')
 
     def test_complaints(self):
+        self.app.authorization = ('Basic', ('broker', ''))
+
         response = self.app.post_json('/tenders?opt_pretty=1', {"data": test_tender_data})
         self.assertEqual(response.status, '201 Created')
 
@@ -1078,6 +1081,8 @@ class TenderResourceTest(BaseESCOWebTest):
             self.assertEqual(response.status, '200 OK')
 
     def test_qualification_complaints(self):
+        self.app.authorization = ('Basic', ('broker', ''))
+
         response = self.app.post_json('/tenders?opt_pretty=1', {"data": test_tender_data})
         self.assertEqual(response.status, '201 Created')
 
@@ -1305,6 +1310,8 @@ class TenderResourceTest(BaseESCOWebTest):
             self.assertEqual(response.status, '200 OK')
 
     def test_award_complaints(self):
+        self.app.authorization = ('Basic', ('broker', ''))
+
         response = self.app.post_json('/tenders?opt_pretty=1', {"data": test_tender_data})
         self.assertEqual(response.status, '201 Created')
 
