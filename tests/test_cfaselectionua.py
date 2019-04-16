@@ -1,6 +1,5 @@
 
 # -*- coding: utf-8 -*-
-import json
 import os
 from copy import deepcopy
 from datetime import timedelta, datetime
@@ -9,12 +8,12 @@ from uuid import uuid4
 
 import openprocurement.tender.cfaselectionua.tests.base as base_test
 from openprocurement.api.models import get_now
-from openprocurement.api.tests.base import PrefixedRequestClass
 from openprocurement.tender.cfaselectionua.constants import BOT_NAME
 from openprocurement.tender.cfaselectionua.tests.base import (
     BaseTenderWebTest, test_tender_data, test_bids, test_agreement, test_lots
 )
-from webtest import TestApp
+
+from tests.base import DumpsWebTestApp, DOCS_HOST, AUCTIONS_HOST
 
 now = datetime.now()
 lot_id = uuid4().hex
@@ -241,40 +240,6 @@ for item in test_tender_maximum_data['items']:
     item['relatedLot'] = lot_id
 
 
-class DumpsTestAppwebtest(TestApp):
-    def do_request(self, req, status=None, expect_errors=None):
-        req.headers.environ["HTTP_HOST"] = "api-sandbox.openprocurement.org"
-        if hasattr(self, 'file_obj') and not self.file_obj.closed:
-            self.file_obj.write(req.as_bytes(True))
-            self.file_obj.write("\n")
-            if req.body:
-                try:
-                    self.file_obj.write(
-                        '\n' + json.dumps(json.loads(req.body), indent=2, ensure_ascii=False).encode('utf8'))
-                    self.file_obj.write("\n")
-                except Exception:
-                    pass
-            self.file_obj.write("\n")
-        resp = super(DumpsTestAppwebtest, self).do_request(req, status=status, expect_errors=expect_errors)
-        if hasattr(self, 'file_obj') and not self.file_obj.closed:
-            headers = [(n.title(), v)
-                       for n, v in resp.headerlist
-                       if n.lower() != 'content-length']
-            headers.sort()
-            self.file_obj.write(str('\n%s\n%s\n') % (
-                resp.status,
-                str('\n').join([str('%s: %s') % (n, v) for n, v in headers]),
-            ))
-
-            if resp.testbody:
-                try:
-                    self.file_obj.write(
-                        '\n' + json.dumps(json.loads(resp.testbody), indent=2, ensure_ascii=False).encode('utf8'))
-                except Exception:
-                    pass
-            self.file_obj.write("\n\n")
-        return resp
-
 TARGET_DIR = 'docs/source/cfaselectionua/tutorial/'
 
 
@@ -283,20 +248,24 @@ class TenderResourceTest(BaseTenderWebTest):
     initial_bids = test_bids
     docservice = True
 
+    docs_host = DOCS_HOST
+    auctions_host = AUCTIONS_HOST
+
     def setUp(self):
-        self.app = DumpsTestAppwebtest(
+        self.app = DumpsWebTestApp(
             "config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
-        self.app.RequestClass = PrefixedRequestClass
-        self.app.authorization = ('Basic', ('broker', ''))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
         if self.docservice:
             self.setUpDS()
-            self.app.app.registry.docservice_url = 'http://public.docs-sandbox.openprocurement.org'
+            self.app.app.registry.docservice_url = 'http://{}'.format(self.docs_host)
+
+    def tearDown(self):
+        self.couchdb_server.delete(self.db.name)
 
     def generate_docservice_url(self):
-        return super(TenderResourceTest,
-                     self).generate_docservice_url().replace('/localhost/', '/public.docs-sandbox.openprocurement.org/')
+        url = super(TenderResourceTest, self).generate_docservice_url()
+        return url.replace('localhost', self.docs_host)
 
     def test_docs_tutorial(self):
         request_path = '/tenders?opt_pretty=1'
@@ -577,40 +546,21 @@ class TenderResourceTest(BaseTenderWebTest):
 
         self.set_status('active.auction')
         self.app.authorization = ('Basic', ('auction', ''))
+        auction_url = u'http://{}/tenders/{}_{}'.format(self.auctions_host, self.tender_id, lot_id)
         patch_data = {
             'lots': [{
-                'auctionUrl':
-                    u'http://auction-sandbox.openprocurement.org/tenders/{}_{}'.format(self.tender_id, lot_id),
+                'auctionUrl': auction_url,
             }],
-            'bids': [
-                {
-                    "id": bid1_id,
-                    "lotValues": [{
-                        "participationUrl":
-                            u'http://auction-sandbox.openprocurement.org/tenders/{}_{}?key_for_bid={}'.format(
-                                self.tender_id, lot_id, bid1_id)
-
-                    }]
-                },
-                {
-                    "id": bid2_id,
-                    "lotValues": [{
-                        "participationUrl":
-                            u'http://auction-sandbox.openprocurement.org/tenders/{}_{}?key_for_bid={}'.format(
-                                self.tender_id, lot_id, bid2_id
-                            )
-                    }]
-                },
-                {
-                    "id": bid3_id,
-                    "lotValues": [{
-                        "participationUrl":
-                            u'http://auction-sandbox.openprocurement.org/tenders/{}_{}?key_for_bid={}'.format(
-                                self.tender_id, lot_id, bid3_id
-                            )
-                    }]
-                }
-            ]
+            'bids': [{
+                "id": bid1_id,
+                "lotValues": [{"participationUrl": u'{}?key_for_bid={}'.format(auction_url, bid1_id)}]
+            }, {
+                "id": bid2_id,
+                "lotValues": [{"participationUrl": u'{}?key_for_bid={}'.format(auction_url, bid2_id)}]
+            }, {
+                "id": bid3_id,
+                "lotValues": [{"participationUrl": u'{}?key_for_bid={}'.format(auction_url, bid3_id)}]
+            }]
         }
         response = self.app.patch_json(
             '/tenders/{}/auction/{}?acc_token={}'.format(self.tender_id, lot_id, owner_token), {'data': patch_data}

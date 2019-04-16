@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import json
 import os
 from datetime import timedelta
 from hashlib import sha512
@@ -7,12 +6,12 @@ from copy import deepcopy
 
 import openprocurement.tender.competitivedialogue.tests.base as base_test
 from openprocurement.api.models import get_now
-from openprocurement.api.tests.base import PrefixedRequestClass
 from openprocurement.tender.competitivedialogue.tests.base import (
     BaseCompetitiveDialogEUWebTest,
     BaseCompetitiveDialogUAStage2WebTest
 )
-from webtest import TestApp
+
+from tests.base import DumpsWebTestApp, DOCS_HOST, AUCTIONS_HOST
 
 test_tender_data_stage1 = {
   "tenderPeriod": {
@@ -798,58 +797,28 @@ TARGET_DIR = 'docs/source/competitivedialogue/tutorial/'
 TARGET_DIR_MULTIPLE = 'docs/source/competitivedialogue/multiple_lots_tutorial/'
 
 
-class DumpsTestAppwebtest(TestApp):
-    def do_request(self, req, status=None, expect_errors=None):
-        req.headers.environ["HTTP_HOST"] = "api-sandbox.openprocurement.org"
-        if hasattr(self, 'file_obj') and not self.file_obj.closed:
-            self.file_obj.write(req.as_bytes(True))
-            self.file_obj.write("\n")
-            if req.body:
-                try:
-                    self.file_obj.write(
-                            'DATA:\n' + json.dumps(json.loads(req.body), indent=2, ensure_ascii=False).encode('utf8'))
-                except ValueError:
-                    pass  # doesn't write anything
-                self.file_obj.write("\n")
-            self.file_obj.write("\n")
-        resp = super(DumpsTestAppwebtest, self).do_request(req, status=status, expect_errors=expect_errors)
-        if hasattr(self, 'file_obj') and not self.file_obj.closed:
-            headers = [(n.title(), v)
-                       for n, v in resp.headerlist
-                       if n.lower() != 'content-length']
-            headers.sort()
-            self.file_obj.write(str('Response: %s\n%s\n') % (
-                resp.status,
-                str('\n').join([str('%s: %s') % (n, v) for n, v in headers]),
-            ))
-
-            if resp.testbody:
-                try:
-                    self.file_obj.write(json.dumps(json.loads(resp.testbody), indent=2, ensure_ascii=False).encode('utf8'))
-                except ValueError:
-                    pass
-            self.file_obj.write("\n\n")
-        return resp
-
-
 class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
     initial_data = test_tender_data_stage1
     docservice = True
 
+    docs_host = DOCS_HOST
+    auctions_host = AUCTIONS_HOST
+
     def setUp(self):
-        self.app = DumpsTestAppwebtest("config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
-        self.app.RequestClass = PrefixedRequestClass
-        self.app.authorization = ('Basic', ('broker', ''))
+        self.app = DumpsWebTestApp(
+            "config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
         if self.docservice:
             self.setUpDS()
-            self.app.app.registry.docservice_url = 'http://public.docs-sandbox.openprocurement.org'
+            self.app.app.registry.docservice_url = 'http://{}'.format(self.docs_host)
+
+    def tearDown(self):
+        self.couchdb_server.delete(self.db.name)
 
     def generate_docservice_url(self):
-        return super(TenderResourceTest, self).generate_docservice_url().replace(
-            '/localhost/', '/public.docs-sandbox.openprocurement.org/'
-        )
+        url = super(TenderResourceTest, self).generate_docservice_url()
+        return url.replace('localhost', self.docs_host)
 
     def test_stage1(self):
         request_path = '/tenders?opt_pretty=1'
@@ -1569,22 +1538,18 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
 
         self.set_status('active.auction')
         self.app.authorization = ('Basic', ('auction', ''))
+        auction_url = u'http://{}/tenders/{}'.format(self.auctions_host, self.tender_id)
         patch_data = {
-            'auctionUrl': u'http://auction-sandbox.openprocurement.org/tenders/{}'.format(self.tender_id),
-            'bids': [
-                {
-                    "id": bid1_id,
-                    "participationUrl": u'http://auction-sandbox.openprocurement.org/tenders/{}?key_for_bid={}'.format(self.tender_id, bid1_id)
-                },
-                {
-                    "id": bid2_id,
-                    "participationUrl": u'http://auction-sandbox.openprocurement.org/tenders/{}?key_for_bid={}'.format(self.tender_id, bid2_id)
-                },
-                {
-                    "id": bid3_id
-                }
-
-            ]
+            'auctionUrl': auction_url,
+            'bids': [{
+                "id": bid1_id,
+                "participationUrl": u'{}?key_for_bid={}'.format(auction_url, bid1_id)
+            }, {
+                "id": bid2_id,
+                "participationUrl": u'{}?key_for_bid={}'.format(auction_url, bid2_id)
+            }, {
+                "id": bid3_id
+            }]
         }
         response = self.app.patch_json('/tenders/{}/auction?acc_token={}'.format(self.tender_id, owner_token),
                                        {'data': patch_data})
@@ -1745,6 +1710,7 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
             self.assertEqual(response.status, '200 OK')
 
     def test_cancel_tender(self):
+        self.app.authorization = ('Basic', ('broker', ''))
 
         #### Creating tender
         #
@@ -1811,6 +1777,8 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
             self.assertEqual(response.status, '200 OK')
 
     def test_complaints(self):
+        self.app.authorization = ('Basic', ('broker', ''))
+
         response = self.app.post_json('/tenders?opt_pretty=1', {'data': test_tender_data_stage1})
         self.assertEqual(response.status, '201 Created')
 
@@ -1997,6 +1965,8 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
             self.assertEqual(response.status, '200 OK')
 
     def test_qualification_complaints(self):
+        self.app.authorization = ('Basic', ('broker', ''))
+
         response = self.app.post_json('/tenders?opt_pretty=1', {'data': test_tender_data_stage1})
         self.assertEqual(response.status, '201 Created')
 
@@ -2645,29 +2615,25 @@ class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest):
     docservice = True
     initial_data = test_tender_data_stage1
 
+    docs_host = DOCS_HOST
+    auctions_host = AUCTIONS_HOST
+
     def setUp(self):
-        self.app = DumpsTestAppwebtest("config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
-        self.app.RequestClass = PrefixedRequestClass
+        self.app = DumpsWebTestApp(
+            "config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
         self.app.authorization = ('Basic', ('broker', ''))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
         if self.docservice:
             self.setUpDS()
-            self.app.app.registry.docservice_url = 'http://public.docs-sandbox.openprocurement.org'
+            self.app.app.registry.docservice_url = 'http://{}'.format(DOCS_HOST)
+
+    def tearDown(self):
+        self.couchdb_server.delete(self.db.name)
 
     def generate_docservice_url(self):
-        return super(TenderResourceTestStage2UA,self).generate_docservice_url().replace(
-            '/localhost/', '/public.docs-sandbox.openprocurement.org/'
-        )
-
-        if self.docservice:
-            self.setUpDS()
-            self.app.app.registry.docservice_url = 'http://public.docs-sandbox.openprocurement.org'
-
-    def generate_docservice_url(self):
-        return super(TenderResourceTestStage2UA,self).generate_docservice_url().replace(
-            '/localhost/', '/public.docs-sandbox.openprocurement.org/'
-        )
+        url = super(TenderResourceTestStage2UA, self).generate_docservice_url()
+        return url.replace('localhost', DOCS_HOST)
 
     def test_stage2_UA(self):
         request_path = '/tenders?opt_pretty=1'
@@ -2860,18 +2826,16 @@ class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest):
         #
         self.set_status('active.auction')
         self.app.authorization = ('Basic', ('auction', ''))
+        auction_url = u'http://{}/tenders/{}'.format(self.auctions_host, self.tender_id)
         patch_data = {
-            'auctionUrl': u'http://auction-sandbox.openprocurement.org/tenders/{}'.format(self.tender_id),
-            'bids': [
-                {
-                    "id": bid1_id,
-                    "participationUrl": u'http://auction-sandbox.openprocurement.org/tenders/{}?key_for_bid={}'.format(self.tender_id, bid1_id)
-                },
-                {
-                    "id": bid2_id,
-                    "participationUrl": u'http://auction-sandbox.openprocurement.org/tenders/{}?key_for_bid={}'.format(self.tender_id, bid2_id)
-                }
-            ]
+            'auctionUrl': auction_url,
+            'bids': [{
+                "id": bid1_id,
+                "participationUrl": u'{}?key_for_bid={}'.format(auction_url, bid1_id)
+            }, {
+                "id": bid2_id,
+                "participationUrl": u'{}?key_for_bid={}'.format(auction_url, bid2_id)
+            }]
         }
         response = self.app.patch_json('/tenders/{}/auction?acc_token={}'.format(self.tender_id, owner_token),
                                            {'data': patch_data})
