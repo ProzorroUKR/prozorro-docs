@@ -2,12 +2,13 @@
 import os
 
 from copy import deepcopy
+
+from openprocurement.api.utils import get_now
 from uuid import uuid4
 
-from openprocurement.api.models import get_now
-
 from openprocurement.tender.cfaua.tests.base import (
-    BaseTenderWebTest, test_tender_data, test_lots)
+    BaseTenderWebTest, test_tender_data, test_lots
+)
 import openprocurement.agreement.cfaua.tests.base as base_test
 
 from tests.base import DumpsWebTestApp, DOCS_HOST
@@ -19,8 +20,7 @@ class TenderResourceTest(BaseTenderWebTest):
     docs_host = DOCS_HOST
 
     def setUp(self):
-        self.app = DumpsWebTestApp(
-            "config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
+        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
         self.setUpDS()
@@ -46,12 +46,12 @@ class TenderResourceTest(BaseTenderWebTest):
         test_tender_data['lots'] = [lot]
         test_tender_data['items'][0]['relatedLot'] = lot['id']
 
-        response = self.app.post_json('/tenders', {"data": test_tender_data})
+        response = self.app.post_json('/tenders', {'data': test_tender_data})
         tender_id = self.tender_id = response.json['data']['id']
         owner_token = response.json['access']['token']
 
         # switch to complete - dirty hack
-        response = self.set_status('complete')
+        self.set_status('complete')
 
         # check status
         with open(TARGET_DIR + 'example_tender.http', 'w') as self.app.file_obj:
@@ -64,8 +64,9 @@ class TenderResourceTest(BaseTenderWebTest):
                 tender_id, response.json['data']['agreements'][0]['id']))
         test_agreement_data = response.json['data']
 
-        # # empty agreements listing
+        # empty agreements listing
         request_path = '/agreements'
+
         #### Exploring basic rules
         with open(TARGET_DIR + 'agreements-listing-0.http', 'w') as self.app.file_obj:
             self.app.authorization = None
@@ -84,7 +85,7 @@ class TenderResourceTest(BaseTenderWebTest):
         test_agreement_data['procuringEntity'] = tender['procuringEntity']
 
         self.app.authorization = ('Basic', ('agreements', ''))
-        response = self.app.post_json(request_path, {"data": test_agreement_data})
+        response = self.app.post_json(request_path, {'data': test_agreement_data})
         self.assertEqual(response.status, '201 Created')
         self.assertEqual(response.json['data']['status'], 'active')
         self.app.get(request_path)  # need to start couchdb indexing views, so next request gives results
@@ -100,8 +101,9 @@ class TenderResourceTest(BaseTenderWebTest):
         # Getting access
         self.app.authorization = ('Basic', ('broker', ''))
         with open(TARGET_DIR + 'agreement-credentials.http', 'w') as self.app.file_obj:
-            response = self.app.patch_json('/agreements/{}/credentials?acc_token={}'.format(
-                test_agreement_data['id'], owner_token))
+            response = self.app.patch_json(
+                '/agreements/{}/credentials?acc_token={}'.format(
+                    test_agreement_data['id'], owner_token))
             self.assertEqual(response.status, '200 OK')
         agreement_token = response.json['access']['token']
         agreement_id = test_agreement_data['id']
@@ -115,10 +117,14 @@ class TenderResourceTest(BaseTenderWebTest):
 
         # Submitting agreement change
         with open(TARGET_DIR + 'add-agreement-change.http', 'w') as self.app.file_obj:
-            response = self.app.post_json('/agreements/{}/changes?acc_token={}'.format(
-                agreement_id, agreement_token), {'data': {'rationale': u'Опис причини змін егріменту',
-                                                          'rationale_en': 'Agreement change cause',
-                                                          'rationaleType': 'taxRate'}})
+            response = self.app.post_json(
+                '/agreements/{}/changes?acc_token={}'.format(
+                    agreement_id, agreement_token),
+                {'data': {
+                    'rationale': u'Опис причини змін егріменту',
+                    'rationale_en': 'Agreement change cause',
+                    'rationaleType': 'taxRate'
+                }})
             self.assertEqual(response.status, '201 Created')
             change = response.json['data']
 
@@ -128,8 +134,9 @@ class TenderResourceTest(BaseTenderWebTest):
             self.assertEqual(response.json['data']['id'], change['id'])
 
         with open(TARGET_DIR + 'patch-agreement-change.http', 'w') as self.app.file_obj:
-            response = self.app.patch_json('/agreements/{}/changes/{}?acc_token={}'.format(
-                agreement_id, change['id'], agreement_token),
+            response = self.app.patch_json(
+                '/agreements/{}/changes/{}?acc_token={}'.format(
+                    agreement_id, change['id'], agreement_token),
                 {'data': {'rationale': u'Друга і третя поставка має бути розфасована'}})
             self.assertEqual(response.status, '200 OK')
             change = response.json['data']
@@ -137,26 +144,31 @@ class TenderResourceTest(BaseTenderWebTest):
         # add agreement change document
         with open(TARGET_DIR + 'add-agreement-change-document.http', 'w') as self.app.file_obj:
             response = self.app.post('/agreements/{}/documents?acc_token={}'.format(
-                agreement_id, agreement_token), upload_files=[('file', u'agreement_changes.doc', 'content')])
+                agreement_id, agreement_token),
+                upload_files=[('file', u'agreement_changes.doc', 'content')])
             self.assertEqual(response.status, '201 Created')
             doc_id = response.json["data"]['id']
 
         with open(TARGET_DIR + 'set-document-of-change.http', 'w') as self.app.file_obj:
-            response = self.app.patch_json('/agreements/{}/documents/{}?acc_token={}'.format(
-                agreement_id, doc_id, agreement_token),
+            response = self.app.patch_json(
+                '/agreements/{}/documents/{}?acc_token={}'.format(
+                    agreement_id, doc_id, agreement_token),
                 {"data": {"documentOf": "change",
                           "relatedItem": change['id'],
                           }})
             self.assertEqual(response.status, '200 OK')
+
         # patching change with modification
         with open(TARGET_DIR + 'add-agreement-change-modification.http', 'w') as self.app.file_obj:
-            response = self.app.patch_json('/agreements/{}/changes/{}?acc_token={}'.format(
-                agreement_id, change['id'], agreement_token),
+            response = self.app.patch_json(
+                '/agreements/{}/changes/{}?acc_token={}'.format(
+                    agreement_id, change['id'], agreement_token),
                 {'data': {
-                    'modifications': [
-                        {'itemId': agreement['items'][0]['id'],
-                         'factor': 0.1605}
-                    ]}})
+                    'modifications': [{
+                        'itemId': agreement['items'][0]['id'],
+                        'factor': 0.1605
+                    }]
+                }})
             self.assertEqual(response.status, '200 OK')
             change = response.json['data']
 
@@ -167,8 +179,9 @@ class TenderResourceTest(BaseTenderWebTest):
 
         # apply agreement change
         with open(TARGET_DIR + 'apply-agreement-change.http', 'w') as self.app.file_obj:
-            response = self.app.patch_json('/agreements/{}/changes/{}?acc_token={}'.format(
-                agreement_id, change['id'], agreement_token),
+            response = self.app.patch_json(
+                '/agreements/{}/changes/{}?acc_token={}'.format(
+                    agreement_id, change['id'], agreement_token),
                 {'data': {'status': 'active', 'dateSigned': get_now().isoformat()}})
             self.assertEqual(response.status, '200 OK')
 
@@ -185,7 +198,8 @@ class TenderResourceTest(BaseTenderWebTest):
         # Uploading documentation
         with open(TARGET_DIR + 'upload-agreement-document.http', 'w') as self.app.file_obj:
             response = self.app.post('/agreements/{}/documents?acc_token={}'.format(
-                agreement_id, agreement_token), upload_files=[('file', u'agreement.doc', 'content')])
+                agreement_id, agreement_token),
+                upload_files=[('file', u'agreement.doc', 'content')])
 
         with open(TARGET_DIR + 'agreement-documents.http', 'w') as self.app.file_obj:
             response = self.app.get('/agreements/{}/documents?acc_token={}'.format(
@@ -209,6 +223,8 @@ class TenderResourceTest(BaseTenderWebTest):
 
         # Finalize agreement
         with open(TARGET_DIR + 'agreement-termination.http', 'w') as self.app.file_obj:
-            response = self.app.patch_json('/agreements/{}?acc_token={}'.format(
-                agreement_id, agreement_token), {"data": {"status": "terminated"}})
+            response = self.app.patch_json(
+                '/agreements/{}?acc_token={}'.format(
+                    agreement_id, agreement_token),
+                {'data': {"status": "terminated"}})
             self.assertEqual(response.status, '200 OK')

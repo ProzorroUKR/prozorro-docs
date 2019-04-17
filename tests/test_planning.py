@@ -17,8 +17,7 @@ class PlanResourceTest(BasePlanWebTest):
     docs_host = DOCS_HOST
 
     def setUp(self):
-        self.app = DumpsWebTestApp(
-            "config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
+        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
         if self.docservice:
@@ -40,7 +39,9 @@ class PlanResourceTest(BasePlanWebTest):
 
         # create plan
         with open(TARGET_DIR + 'create-plan.http', 'w') as self.app.file_obj:
-            response = self.app.post_json('/plans?opt_pretty=1', {"data": test_plan_data})
+            response = self.app.post_json(
+                '/plans?opt_pretty=1',
+                {'data': test_plan_data})
             self.assertEqual(response.status, '201 Created')
 
         plan = response.json['data']
@@ -58,34 +59,35 @@ class PlanResourceTest(BasePlanWebTest):
 
         self.app.authorization = ('Basic', ('broker', ''))
         with open(TARGET_DIR + 'patch-plan-procuringEntity-name.http', 'w') as self.app.file_obj:
-            response = self.app.patch_json('/plans/{}?acc_token={}'.format(plan['id'], owner_token), {'data':
-                {"items": [
-                    {
-                        "description": "Насіння овочевих культур",
-                        "classification": {
-                            "scheme": "ДК021",
-                            "description": "Vegetable seeds",
-                            "id": "03111700-9"
-                        },
-                        "additionalClassifications": [
-                            {
-                                "scheme": "ДКПП",
-                                "id": "01.13.6",
-                                "description": "Насіння овочевих культур"
-                            }
-                        ],
-                        "deliveryDate": {
-                            "endDate": "2016-06-01T23:06:30.023018+03:00"
-                        },
-                        "unit": {
-                            "code": "KGM",
-                            "name": "кг"
-                        },
-                        "quantity": 5000
-                    }
-                ]
-                }
-            })
+            response = self.app.patch_json(
+                '/plans/{}?acc_token={}'.format(plan['id'], owner_token),
+                {'data':
+                    {"items": [
+                        {
+                            "description": "Насіння овочевих культур",
+                            "classification": {
+                                "scheme": "ДК021",
+                                "description": "Vegetable seeds",
+                                "id": "03111700-9"
+                            },
+                            "additionalClassifications": [
+                                {
+                                    "scheme": "ДКПП",
+                                    "id": "01.13.6",
+                                    "description": "Насіння овочевих культур"
+                                }
+                            ],
+                            "deliveryDate": {
+                                "endDate": "2016-06-01T23:06:30.023018+03:00"
+                            },
+                            "unit": {
+                                "code": "KGM",
+                                "name": "кг"
+                            },
+                            "quantity": 5000
+                        }
+                    ]}
+                })
 
         with open(TARGET_DIR + 'plan-listing-after-patch.http', 'w') as self.app.file_obj:
             self.app.authorization = None
