@@ -152,9 +152,10 @@ class TenderResourceTest(BaseTenderWebTest):
             response = self.app.patch_json(
                 '/agreements/{}/documents/{}?acc_token={}'.format(
                     agreement_id, doc_id, agreement_token),
-                {"data": {"documentOf": "change",
-                          "relatedItem": change['id'],
-                          }})
+                {"data": {
+                    "documentOf": "change",
+                    "relatedItem": change['id'],
+                }})
             self.assertEqual(response.status, '200 OK')
 
         # patching change with modification

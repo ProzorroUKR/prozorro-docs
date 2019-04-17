@@ -87,7 +87,6 @@ class TenderResourceTest(BaseTenderWebTest):
         request_path = '/tenders?opt_pretty=1'
 
         # Exploring basic rules
-        #
 
         with open(TARGET_DIR + 'tender-listing.http', 'w') as self.app.file_obj:
             self.app.authorization = ('Basic', ('broker', ''))
@@ -301,8 +300,7 @@ class TenderResourceTest(BaseTenderWebTest):
                     'url': self.generate_docservice_url(),
                     'hash': 'md5:' + '0' * 32,
                     'format': 'application/pdf',
-                }}
-            )
+                }})
             self.assertEqual(response.status, '200 OK')
 
         with open(TARGET_DIR + 'tender-documents-3.http', 'w') as self.app.file_obj:
@@ -356,8 +354,7 @@ class TenderResourceTest(BaseTenderWebTest):
                     'url': self.generate_docservice_url(),
                     'hash': 'md5:' + '0' * 32,
                     'format': 'application/pdf',
-                }}
-            )
+                }})
             self.assertEqual(response.status, '201 Created')
 
         with open(TARGET_DIR + 'bidder-documents.http', 'w') as self.app.file_obj:
@@ -411,8 +408,7 @@ class TenderResourceTest(BaseTenderWebTest):
         }
         response = self.app.patch_json(
             '/tenders/{}/auction/{}?acc_token={}'.format(self.tender_id, lot_id, owner_token),
-            {'data': patch_data}
-        )
+            {'data': patch_data})
         self.assertEqual(response.status, '200 OK')
 
         self.app.authorization = ('Basic', ('broker', ''))
@@ -505,7 +501,8 @@ class TenderResourceTest(BaseTenderWebTest):
                 '/tenders/{}/contracts/{}?acc_token={}'.format(self.tender_id, self.contract_id, owner_token),
                 {"data": {
                     "contractNumber": "contract #13111",
-                    "value": {"amount": 238, "amountNet": 230}}})
+                    "value": {"amount": 238, "amountNet": 230}
+                }})
         self.assertEqual(response.status, '200 OK')
         self.assertEqual(response.json['data']['value']['amount'], 238)
 
@@ -528,8 +525,7 @@ class TenderResourceTest(BaseTenderWebTest):
         with open(TARGET_DIR + 'tender-contract-period.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
                 '/tenders/{}/contracts/{}?acc_token={}'.format(self.tender_id, self.contract_id, owner_token),
-                {'data': {'period': period_dates["period"]}}
-            )
+                {'data': {'period': period_dates["period"]}})
         self.assertEqual(response.status, '200 OK')
 
         # Uploading contract documentation
@@ -542,8 +538,7 @@ class TenderResourceTest(BaseTenderWebTest):
                     'url': self.generate_docservice_url(),
                     'hash': 'md5:' + '0' * 32,
                     'format': 'application/msword',
-                }}
-            )
+                }})
             self.assertEqual(response.status, '201 Created')
 
         with open(TARGET_DIR + 'tender-contract-get-documents.http', 'w') as self.app.file_obj:
@@ -628,8 +623,7 @@ class TenderResourceTest(BaseTenderWebTest):
                     'url': self.generate_docservice_url(),
                     'hash': 'md5:' + '0' * 32,
                     'format': 'application/pdf',
-                }}
-            )
+                }})
             self.assertEqual(response.status, '200 OK')
 
         # Activating the request and cancelling tender
@@ -637,6 +631,5 @@ class TenderResourceTest(BaseTenderWebTest):
         with open(TARGET_DIR + 'active-cancellation.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
                 '/tenders/{}/cancellations/{}?acc_token={}'.format(self.tender_id, cancellation_id, owner_token),
-                {"data": {"status": "active"}}
-            )
+                {"data": {"status": "active"}})
             self.assertEqual(response.status, '200 OK')

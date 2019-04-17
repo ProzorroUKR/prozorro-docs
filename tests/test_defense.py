@@ -100,13 +100,7 @@ class TenderUAResourceTest(BaseTenderUAWebTest):
         with open(TARGET_DIR + 'patch-items-value-periods.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
                 '/tenders/{}?acc_token={}'.format(tender['id'], owner_token),
-                {'data':
-                    {
-                        "tenderPeriod": {
-                            "endDate": tenderPeriod_endDate.isoformat()
-                        }
-                    }
-                })
+                {'data': {"tenderPeriod": {"endDate": tenderPeriod_endDate.isoformat()}}})
 
         with open(TARGET_DIR + 'tender-listing-after-patch.http', 'w') as self.app.file_obj:
             self.app.authorization = None

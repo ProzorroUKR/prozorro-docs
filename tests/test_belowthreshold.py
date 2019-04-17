@@ -1034,8 +1034,7 @@ class TenderResourceTest(BaseTenderWebTest):
 
         response = self.app.post_json(
             '/tenders/{}/lots?acc_token={}'.format(tender["id"], owner_token),
-            {'data': test_lots[0]}
-        )
+            {'data': test_lots[0]})
         self.assertEqual(response.status, '201 Created')
         lot = response.json["data"]
 

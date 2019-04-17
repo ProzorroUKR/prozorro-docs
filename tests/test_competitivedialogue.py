@@ -1460,7 +1460,8 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
         with open(TARGET_DIR + 'qualification-complaint-cancel.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
                 '/tenders/{}/qualifications/{}/complaints/{}?acc_token={}'.format(
-                    self.tender_id, qualification_id, response.json['data']['id'], response.json['access']['token']),
+                    self.tender_id, qualification_id,
+                    response.json['data']['id'], response.json['access']['token']),
                 {'data': {'cancellationReason': 'Умови виправлено', 'status': 'cancelled'}})
             self.assertEqual(response.status, '200 OK')
 
@@ -1549,7 +1550,8 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
 
         self.app.authorization = None
         with open(TARGET_DIR + 'qualification-complaints-list.http', 'w') as self.app.file_obj:
-            response = self.app.get('/tenders/{}/qualifications/{}/complaints'.format(self.tender_id, qualification_id))
+            response = self.app.get(
+                '/tenders/{}/qualifications/{}/complaints'.format(self.tender_id, qualification_id))
             self.assertEqual(response.status, '200 OK')
 
         with open(TARGET_DIR + 'qualification-complaint.http', 'w') as self.app.file_obj:
@@ -1676,9 +1678,13 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
         with open(TARGET_DIR_MULTIPLE + 'bid-lot1-update-view.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
                 '/tenders/{}/bids/{}?acc_token={}'.format(tender_id, bid1_id, bid1_token),
-                {'data': {'lotValues': [{'subcontractingDetails': 'ДКП «Орфей»',
-                                         'relatedLot': lot_id1}],
-                          'status': 'pending'}})
+                {'data': {
+                    'lotValues': [{
+                        'subcontractingDetails': 'ДКП «Орфей»',
+                        'relatedLot': lot_id1
+                    }],
+                    'status': 'pending'
+                }})
             self.assertEqual(response.status, '200 OK')
 
         with open(TARGET_DIR_MULTIPLE + 'bid-lot2-update-view.http', 'w') as self.app.file_obj:
@@ -1913,7 +1919,11 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
             response = self.app.patch_json(
                 '/tenders/{}/qualifications/{}?acc_token={}'.format(
                     self.tender_id, qualification['id'], owner_token),
-                {'data': {'status': 'active', 'qualified': True, 'eligible': True}})
+                {'data': {
+                    'status': 'active',
+                    'qualified': True,
+                    'eligible': True
+                }})
         self.assertEqual(response.status, '200 OK')
 
         # active.pre-qualification.stand-still
@@ -2209,7 +2219,8 @@ class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest):
 
         doc_id = response.json["data"]["id"]
         with open(TARGET_DIR + 'stage2/UA/tender-documents.http', 'w') as self.app.file_obj:
-            response = self.app.get('/tenders/{}/documents/{}?acc_token={}'.format(self.tender_id, doc_id, owner_token))
+            response = self.app.get('/tenders/{}/documents/{}?acc_token={}'.format(
+                self.tender_id, doc_id, owner_token))
             self.assertEqual(response.status, '200 OK')
 
         with open(TARGET_DIR + 'stage2/UA/upload-award-criteria.http', 'w') as self.app.file_obj:
