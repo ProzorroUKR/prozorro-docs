@@ -1,11 +1,7 @@
 import json
-
-from openprocurement.api.constants import VERSION
 from webtest import TestApp, TestRequest
-
-API_HOST = 'lb-api-sandbox.prozorro.gov.ua'
-DOCS_HOST = 'public-docs-sandbox.prozorro.gov.ua'
-AUCTIONS_HOST = 'auction-sandbox.prozorro.gov.ua'
+from openprocurement.api.constants import VERSION
+from tests.constants import API_HOST
 
 
 class PrefixedRequestClass(TestRequest):

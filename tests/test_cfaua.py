@@ -6,12 +6,13 @@ from openprocurement.api.utils import get_now
 from time import sleep
 from uuid import uuid4
 
-import openprocurement.tender.cfaua.tests.base as base_test
-from openprocurement.tender.cfaua.tests.base import test_tender_data
+import openprocurement.api.tests as base_test
+from openprocurement.tender.cfaua.tests.base import test_tender_data, agreement_period
 from openprocurement.tender.cfaua.constants import CLARIFICATIONS_UNTIL_PERIOD
 from openprocurement.tender.cfaua.tests.tender import BaseTenderWebTest
 
-from tests.base import DumpsWebTestApp, DOCS_HOST, AUCTIONS_HOST
+from tests.base import DumpsWebTestApp
+from tests.constants import DOCS_HOST, AUCTIONS_HOST
 from tests.data import (
     lot_bid, question, complaint, lots, lot_bid2,
     subcontracting, qualified, lot_bid3_with_docs,
@@ -721,7 +722,7 @@ class TenderResourceTest(BaseTenderWebTest):
         with open(TARGET_DIR + 'tender-agreement-sign.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
                 '/tenders/{}/agreements/{}?acc_token={}'.format(self.tender_id, agreement_id, owner_token),
-                {"data": {"status": "active", "period": base_test.agreement_period}})
+                {"data": {"status": "active", "period": agreement_period}})
         self.assertEqual(response.json['data']['status'], 'active')
 
         with open(TARGET_DIR + 'tender-completed.http', 'w') as self.app.file_obj:

@@ -1,17 +1,16 @@
 # -*- coding: utf-8 -*-
 import os
-
 from copy import deepcopy
-
-from openprocurement.api.utils import get_now
 from uuid import uuid4
 
+import openprocurement.api.tests as base_test
+from openprocurement.api.utils import get_now
 from openprocurement.tender.cfaua.tests.base import (
     BaseTenderWebTest, test_tender_data, test_lots
 )
-import openprocurement.agreement.cfaua.tests.base as base_test
 
-from tests.base import DumpsWebTestApp, DOCS_HOST
+from tests.base import DumpsWebTestApp
+from tests.constants import DOCS_HOST
 
 TARGET_DIR = 'docs/source/agreementcfaua/tutorial/'
 

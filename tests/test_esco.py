@@ -1,16 +1,14 @@
 # -*- coding: utf-8 -*-
 import os
 from copy import deepcopy
-
 from datetime import timedelta
 
-import openprocurement.tender.esco.tests.base as base_test
-
+import openprocurement.api.tests as base_test
 from openprocurement.api.models import get_now
-
 from openprocurement.tender.esco.tests.base import BaseESCOWebTest
 
-from tests.base import DumpsWebTestApp, DOCS_HOST, AUCTIONS_HOST
+from tests.base import DumpsWebTestApp
+from tests.constants import DOCS_HOST, AUCTIONS_HOST
 from tests.data import (
     complaint, question, subcontracting, qualified,
     tender_esco, bid_draft, bid2, bid3_with_docs,

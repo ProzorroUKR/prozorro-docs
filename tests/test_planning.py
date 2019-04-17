@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 import os
 
-import openprocurement.planning.api.tests.base as base_test
+import openprocurement.api.tests as base_test
 from openprocurement.planning.api.tests.base import BasePlanWebTest
 from openprocurement.planning.api.tests.base import test_plan_data
 
-from tests.base import DumpsWebTestApp, DOCS_HOST
+from tests.base import DumpsWebTestApp
+from tests.constants import DOCS_HOST
 
 TARGET_DIR = 'docs/source/planning/tutorial/'
 

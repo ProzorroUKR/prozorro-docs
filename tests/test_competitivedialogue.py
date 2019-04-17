@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
 import os
-
 from datetime import timedelta
 from hashlib import sha512
 from copy import deepcopy
 
-import openprocurement.tender.competitivedialogue.tests.base as base_test
+import openprocurement.api.tests as base_test
 from openprocurement.api.models import get_now
 from openprocurement.tender.competitivedialogue.tests.base import (
     BaseCompetitiveDialogEUWebTest,
     BaseCompetitiveDialogUAStage2WebTest
 )
 
-from tests.base import DumpsWebTestApp, DOCS_HOST, AUCTIONS_HOST
+from tests.base import DumpsWebTestApp
+from tests.constants import DOCS_HOST, AUCTIONS_HOST
 from tests.data import (
     bid_draft, bid2, bid3, bid4, bad_participant, question, complaint, qualified,
     bid_document, bid_document2, lots, subcontracting,

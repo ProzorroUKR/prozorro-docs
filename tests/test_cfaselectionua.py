@@ -5,17 +5,18 @@ from datetime import timedelta
 from time import sleep
 from uuid import uuid4
 
-import openprocurement.tender.cfaselectionua.tests.base as base_test
+import openprocurement.api.tests as base_test
 from openprocurement.api.models import get_now
 from openprocurement.tender.cfaselectionua.constants import BOT_NAME
 from openprocurement.tender.cfaselectionua.tests.base import (
     BaseTenderWebTest, test_tender_data, test_bids, test_agreement
 )
 
-from tests.base import DumpsWebTestApp, DOCS_HOST, AUCTIONS_HOST
+from tests.base import DumpsWebTestApp
+from tests.constants import DOCS_HOST, AUCTIONS_HOST
 from tests.data import (
-    parameters, lot_bid, lot_bid2_with_docs, features, tender_cfaselectionua_maximum,
-    lots,
+    parameters, lot_bid, lot_bid2_with_docs, features,
+    tender_cfaselectionua_maximum, lots,
 )
 
 lot_id = uuid4().hex

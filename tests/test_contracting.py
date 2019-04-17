@@ -3,13 +3,14 @@ import os
 from datetime import timedelta
 from copy import deepcopy
 
+import openprocurement.contracting.api.tests as base_test
 from openprocurement.api.models import get_now
-import openprocurement.contracting.api.tests.base as base_test
 from openprocurement.tender.belowthreshold.tests.base import BaseTenderWebTest
 from openprocurement.contracting.api.tests.base import test_contract_data
 from openprocurement.tender.belowthreshold.tests.base import test_tender_data, test_organization
 
-from tests.base import DumpsWebTestApp, DOCS_HOST
+from tests.base import DumpsWebTestApp
+from tests.constants import DOCS_HOST
 
 test_tender_data['items'].append(deepcopy(test_tender_data['items'][0]))
 

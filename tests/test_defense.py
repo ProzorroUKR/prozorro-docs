@@ -1,16 +1,17 @@
 # -*- coding: utf-8 -*-
 import os
 from copy import deepcopy
-
 from datetime import timedelta
 
-import openprocurement.tender.openuadefense.tests.base as base_test
+import openprocurement.api.tests as base_test
 from openprocurement.api.models import get_now
 from openprocurement.tender.openuadefense.tests.tender import BaseTenderUAWebTest
 
-from tests.base import DumpsWebTestApp, DOCS_HOST, AUCTIONS_HOST
+from tests.base import DumpsWebTestApp
+from tests.constants import DOCS_HOST, AUCTIONS_HOST
 from tests.data import (
-    question, complaint, tender_defense, subcontracting, qualified, bid, bid2
+    question, complaint, tender_defense, subcontracting,
+    qualified, bid, bid2
 )
 
 test_tender_ua_data = deepcopy(tender_defense)
