@@ -14,7 +14,8 @@ from openprocurement.tender.cfaua.tests.tender import BaseTenderWebTest
 from tests.base import DumpsWebTestApp, DOCS_HOST, AUCTIONS_HOST
 from tests.data import (
     lot_bid, question, complaint, lots, lot_bid2,
-    subcontracting, qualified, lot_bid3_with_docs
+    subcontracting, qualified, lot_bid3_with_docs,
+    bid_document, bid_document2
 )
 
 second_item = deepcopy(test_tender_data['items'][0])
@@ -34,8 +35,15 @@ bid2 = deepcopy(lot_bid2)
 bid2['lotValues'][0]['relatedLot'] = lot_id
 bid2.update(qualified)
 
+bid_document2_conf = deepcopy(bid_document2)
+bid_document2_conf.update({
+    'confidentiality': 'buyerOnly',
+    'confidentialityRationale': 'Only our company sells badgers with pink hair.'
+})
+
 bid3 = deepcopy(lot_bid3_with_docs)
 bid3['lotValues'][0]['relatedLot'] = lot_id
+bid3["documents"] = [bid_document, bid_document2_conf]
 bid3.update(qualified)
 
 test_lots = deepcopy(lots)
