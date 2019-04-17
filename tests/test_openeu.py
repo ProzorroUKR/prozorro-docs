@@ -7,7 +7,7 @@ import openprocurement.api.tests as base_test
 from openprocurement.api.models import get_now
 from openprocurement.tender.openeu.tests.tender import BaseTenderWebTest
 
-from tests.base import DumpsWebTestApp
+from tests.base import DumpsWebTestApp, MockUUIDWebTestMixin
 from tests.constants import DOCS_HOST, AUCTIONS_HOST
 from tests.data import (
     question, complaint, lots, subcontracting,
@@ -37,7 +37,7 @@ TARGET_DIR = 'docs/source/openeu/http/tutorial'
 TARGET_DIR_MULTI = 'docs/source/openeu/http/multiple_lots_tutorial/'
 
 
-class TenderResourceTest(BaseTenderWebTest):
+class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
     initial_data = test_tender_data
     docservice = True
 
@@ -48,11 +48,13 @@ class TenderResourceTest(BaseTenderWebTest):
         self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
+        self.setUpMock()
         if self.docservice:
             self.setUpDS()
             self.app.app.registry.docservice_url = 'http://{}'.format(self.docs_host)
 
     def tearDown(self):
+        self.tearDownMock()
         self.couchdb_server.delete(self.db.name)
 
     def generate_docservice_url(self):

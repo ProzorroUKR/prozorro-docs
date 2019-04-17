@@ -1,6 +1,12 @@
 import json
+import traceback
+import mock
+
+from uuid import UUID
+from hashlib import md5
 from webtest import TestApp, TestRequest
 from openprocurement.api.constants import VERSION
+
 from tests.constants import API_HOST
 
 
@@ -65,3 +71,41 @@ class DumpsWebTestApp(TestApp):
                     ).encode(self.encode))
                     self.file_obj.write("\n")
             self.file_obj.write("\n")
+
+
+class MockUUIDWebTestMixin(object):
+    uuid_patch = None
+    uuid_counters = None
+
+    whitelist = ('/openprocurement/', '/tests/')
+    blacklist = ('/tests/base.py',)
+
+    def setUpMock(self):
+        self.uuid_patch = mock.patch('uuid.UUID', side_effect=self.uuid)
+        self.uuid_patch.start()
+
+    def tearDownMock(self):
+        self.uuid_patch.stop()
+
+    def uuid(self, version=None, **kwargs):
+        stack = self.stack()
+        hex = md5(str(stack)).hexdigest()
+        count = self.count(hex)
+        hash = md5(hex + str(count)).digest()
+        return UUID(bytes=hash[:16], version=version)
+
+    def stack(self):
+        stack = traceback.extract_stack()
+        return [(item[0], item[2], item[3]) for item in stack if all([
+            any([path in item[0] for path in self.whitelist]),
+            all([path not in item[0] for path in self.blacklist])
+        ])]
+
+    def count(self, name):
+        if self.uuid_counters is None:
+            self.uuid_counters = dict()
+        if name not in self.uuid_counters:
+            self.uuid_counters[name] = 0
+        else:
+            self.uuid_counters[name] += 1
+        return self.uuid_counters[name]

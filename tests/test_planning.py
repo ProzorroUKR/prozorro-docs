@@ -5,13 +5,13 @@ import openprocurement.api.tests as base_test
 from openprocurement.planning.api.tests.base import BasePlanWebTest
 from openprocurement.planning.api.tests.base import test_plan_data
 
-from tests.base import DumpsWebTestApp
+from tests.base import DumpsWebTestApp, MockUUIDWebTestMixin
 from tests.constants import DOCS_HOST
 
 TARGET_DIR = 'docs/source/planning/tutorial/'
 
 
-class PlanResourceTest(BasePlanWebTest):
+class PlanResourceTest(BasePlanWebTest, MockUUIDWebTestMixin):
     initial_data = test_plan_data
     docservice = True
 
@@ -21,11 +21,13 @@ class PlanResourceTest(BasePlanWebTest):
         self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
+        self.setUpMock()
         if self.docservice:
             self.setUpDS()
             self.app.app.registry.docservice_url = 'http://{}'.format(self.docs_host)
 
     def tearDown(self):
+        self.tearDownMock()
         self.couchdb_server.delete(self.db.name)
 
     def generate_docservice_url(self):

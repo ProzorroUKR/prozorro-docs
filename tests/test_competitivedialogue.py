@@ -11,7 +11,7 @@ from openprocurement.tender.competitivedialogue.tests.base import (
     BaseCompetitiveDialogUAStage2WebTest
 )
 
-from tests.base import DumpsWebTestApp
+from tests.base import DumpsWebTestApp, MockUUIDWebTestMixin
 from tests.constants import DOCS_HOST, AUCTIONS_HOST
 from tests.data import (
     bid_draft, bid2, bid3, bid4, bad_participant, question, complaint, qualified,
@@ -75,7 +75,7 @@ TARGET_DIR = 'docs/source/competitivedialogue/tutorial/'
 TARGET_DIR_MULTIPLE = 'docs/source/competitivedialogue/multiple_lots_tutorial/'
 
 
-class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
+class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockUUIDWebTestMixin):
     initial_data = test_tender_data_stage1
     docservice = True
 
@@ -86,11 +86,13 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
         self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
+        self.setUpMock()
         if self.docservice:
             self.setUpDS()
             self.app.app.registry.docservice_url = 'http://{}'.format(self.docs_host)
 
     def tearDown(self):
+        self.tearDownMock()
         self.couchdb_server.delete(self.db.name)
 
     def generate_docservice_url(self):

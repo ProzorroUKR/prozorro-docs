@@ -11,7 +11,7 @@ from openprocurement.tender.cfaua.tests.base import test_tender_data, agreement_
 from openprocurement.tender.cfaua.constants import CLARIFICATIONS_UNTIL_PERIOD
 from openprocurement.tender.cfaua.tests.tender import BaseTenderWebTest
 
-from tests.base import DumpsWebTestApp
+from tests.base import DumpsWebTestApp, MockUUIDWebTestMixin
 from tests.constants import DOCS_HOST, AUCTIONS_HOST
 from tests.data import (
     lot_bid, question, complaint, lots, lot_bid2,
@@ -59,7 +59,7 @@ for item in test_tender_data['items']:
 TARGET_DIR = 'docs/source/cfaua/tutorial/'
 
 
-class TenderResourceTest(BaseTenderWebTest):
+class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
     initial_data = test_tender_data
     docservice = True
 
@@ -70,11 +70,13 @@ class TenderResourceTest(BaseTenderWebTest):
         self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
+        self.setUpMock()
         if self.docservice:
             self.setUpDS()
             self.app.app.registry.docservice_url = 'http://{}'.format(self.docs_host)
 
     def tearDown(self):
+        self.tearDownMock()
         self.couchdb_server.delete(self.db.name)
 
     def generate_docservice_url(self):

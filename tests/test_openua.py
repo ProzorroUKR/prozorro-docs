@@ -7,7 +7,7 @@ import openprocurement.api.tests as base_test
 from openprocurement.api.models import get_now
 from openprocurement.tender.openua.tests.tender import BaseTenderUAWebTest
 
-from tests.base import DumpsWebTestApp
+from tests.base import DumpsWebTestApp, MockUUIDWebTestMixin
 from tests.constants import DOCS_HOST, AUCTIONS_HOST
 from tests.data import (
     question, complaint, tender_openua, bid_draft, bid2,
@@ -26,7 +26,7 @@ bid2.update(qualified)
 TARGET_DIR = 'docs/source/openua/http/'
 
 
-class TenderUAResourceTest(BaseTenderUAWebTest):
+class TenderUAResourceTest(BaseTenderUAWebTest, MockUUIDWebTestMixin):
     initial_data = test_tender_ua_data
     docservice = True
 
@@ -37,11 +37,13 @@ class TenderUAResourceTest(BaseTenderUAWebTest):
         self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
+        self.setUpMock()
         if self.docservice:
             self.setUpDS()
             self.app.app.registry.docservice_url = 'http://{}'.format(self.docs_host)
 
     def tearDown(self):
+        self.tearDownMock()
         self.couchdb_server.delete(self.db.name)
 
     def generate_docservice_url(self):

@@ -9,7 +9,7 @@ from openprocurement.tender.belowthreshold.tests.base import BaseTenderWebTest
 from openprocurement.contracting.api.tests.base import test_contract_data
 from openprocurement.tender.belowthreshold.tests.base import test_tender_data, test_organization
 
-from tests.base import DumpsWebTestApp
+from tests.base import DumpsWebTestApp, MockUUIDWebTestMixin
 from tests.constants import DOCS_HOST
 
 test_tender_data['items'].append(deepcopy(test_tender_data['items'][0]))
@@ -17,7 +17,7 @@ test_tender_data['items'].append(deepcopy(test_tender_data['items'][0]))
 TARGET_DIR = 'docs/source/contracting/http/'
 
 
-class TenderResourceTest(BaseTenderWebTest):
+class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
     initial_data = test_contract_data
 
     docs_host = DOCS_HOST
@@ -26,8 +26,10 @@ class TenderResourceTest(BaseTenderWebTest):
         self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
+        self.setUpMock()
 
     def tearDown(self):
+        self.tearDownMock()
         self.couchdb_server.delete(self.db.name)
 
     def test_docs(self):
