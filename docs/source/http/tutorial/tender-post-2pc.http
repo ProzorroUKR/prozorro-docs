@@ -1,6 +1,6 @@
 POST /api/2.5/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 2378
+Content-Length: 2376
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
@@ -8,7 +8,7 @@ DATA:
   "data": {
     "status": "draft", 
     "tenderPeriod": {
-      "endDate": "2019-05-02T12:54:06.935992"
+      "endDate": "2019-05-02T13:16:19.693381"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -16,7 +16,7 @@ DATA:
       "amount": 35
     }, 
     "enquiryPeriod": {
-      "endDate": "2019-04-25T12:54:06.935992"
+      "endDate": "2019-04-25T13:16:19.693381"
     }, 
     "procurementMethodType": "belowThreshold", 
     "value": {
@@ -66,8 +66,8 @@ DATA:
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-20T12:54:06.935992", 
-          "endDate": "2019-04-23T12:54:06.935992"
+          "startDate": "2019-01-03T00:00:00+02:00", 
+          "endDate": "2019-01-06T00:00:00+02:00"
         }, 
         "unit": {
           "code": "44617100-9", 
@@ -91,8 +91,8 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/6c1dd219face4320
     "status": "draft", 
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
-      "startDate": "2019-04-25T12:54:06.935992+03:00", 
-      "endDate": "2019-05-02T12:54:06.935992+03:00"
+      "startDate": "2019-04-25T13:16:19.693381+03:00", 
+      "endDate": "2019-05-02T13:16:19.693381+03:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -123,8 +123,8 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/6c1dd219face4320
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-20T12:54:06.935992+03:00", 
-          "endDate": "2019-04-23T12:54:06.935992+03:00"
+          "startDate": "2019-01-03T00:00:00+02:00", 
+          "endDate": "2019-01-06T00:00:00+02:00"
         }, 
         "id": "64c828f8a4d7410d8fe0a8c1e9911db9", 
         "unit": {
@@ -164,7 +164,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/6c1dd219face4320
     }, 
     "enquiryPeriod": {
       "startDate": "2019-01-01T00:00:00+02:00", 
-      "endDate": "2019-04-25T12:54:06.935992+03:00"
+      "endDate": "2019-04-25T13:16:19.693381+03:00"
     }, 
     "owner": "broker", 
     "dateModified": "2019-01-01T00:00:00+02:00", 
