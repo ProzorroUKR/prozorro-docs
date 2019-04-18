@@ -30,7 +30,7 @@ test_lots[0]['minimalStep'] = test_tender_data['minimalStep']
 test_lots[1]['value'] = test_tender_data['value']
 test_lots[1]['minimalStep'] = test_tender_data['minimalStep']
 
-TARGET_DIR = 'docs/source/openeu/http/tutorial'
+TARGET_DIR = 'docs/source/openeu/http/tutorial/'
 TARGET_DIR_MULTI = 'docs/source/openeu/http/multiple_lots_tutorial/'
 
 
