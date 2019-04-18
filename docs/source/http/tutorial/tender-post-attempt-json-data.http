@@ -1,13 +1,13 @@
 POST /api/2.5/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 2357
+Content-Length: 2355
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
     "tenderPeriod": {
-      "endDate": "2019-05-02T13:16:19.693381"
+      "endDate": "2019-01-15T00:00:00+02:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -15,7 +15,7 @@ DATA:
       "amount": 35
     }, 
     "enquiryPeriod": {
-      "endDate": "2019-04-25T13:16:19.693381"
+      "endDate": "2019-01-08T00:00:00+02:00"
     }, 
     "procurementMethodType": "belowThreshold", 
     "value": {
@@ -90,8 +90,8 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e370d1ede4574bb8
     "status": "active.enquiries", 
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
-      "startDate": "2019-04-25T13:16:19.693381+03:00", 
-      "endDate": "2019-05-02T13:16:19.693381+03:00"
+      "startDate": "2019-01-08T00:00:00+02:00", 
+      "endDate": "2019-01-15T00:00:00+02:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -141,7 +141,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e370d1ede4574bb8
     }, 
     "submissionMethod": "electronicAuction", 
     "date": "2019-01-01T00:00:00+02:00", 
-    "next_check": "2019-04-25T13:16:19.693381+03:00", 
+    "next_check": "2019-01-08T00:00:00+02:00", 
     "procuringEntity": {
       "contactPoint": {
         "name": "Державне управління справами", 
@@ -164,7 +164,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e370d1ede4574bb8
     }, 
     "enquiryPeriod": {
       "startDate": "2019-01-01T00:00:00+02:00", 
-      "endDate": "2019-04-25T13:16:19.693381+03:00"
+      "endDate": "2019-01-08T00:00:00+02:00"
     }, 
     "owner": "broker", 
     "dateModified": "2019-01-01T00:00:00+02:00", 
