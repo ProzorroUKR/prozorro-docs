@@ -1,6 +1,6 @@
 POST /api/2.5/plans?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 2533
+Content-Length: 2532
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
@@ -116,7 +116,7 @@ DATA:
       "procurementMethod": "open", 
       "procurementMethodType": "belowThreshold", 
       "tenderPeriod": {
-        "startDate": "2019-04-25T17:03:33.404007"
+        "startDate": "2019-01-08T00:00:00+02:00"
       }
     }
   }
@@ -230,7 +230,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/plans/23a60932190b48b68d
       "procurementMethod": "open", 
       "procurementMethodType": "belowThreshold", 
       "tenderPeriod": {
-        "startDate": "2019-04-25T17:03:33.404007+03:00"
+        "startDate": "2019-01-08T00:00:00+02:00"
       }
     }, 
     "additionalClassifications": [
