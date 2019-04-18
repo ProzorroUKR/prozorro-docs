@@ -6,7 +6,7 @@ from openprocurement.api.utils import get_now
 from time import sleep
 from uuid import uuid4
 
-from openprocurement.tender.cfaua.tests.base import test_tender_data, agreement_period
+from openprocurement.tender.cfaua.tests.base import test_tender_data
 from openprocurement.tender.cfaua.constants import CLARIFICATIONS_UNTIL_PERIOD
 from openprocurement.tender.cfaua.tests.tender import BaseTenderWebTest
 
@@ -30,7 +30,6 @@ bid.update(subcontracting)
 bid.update(qualified)
 bid2.update(qualified)
 bid3.update(qualified)
-
 
 TARGET_DIR = 'docs/source/cfaua/tutorial/'
 
@@ -91,6 +90,10 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
         test_tender_data['lots'] = [lot]
         for item in test_tender_data['items']:
             item['relatedLot'] = lot['id']
+
+        test_tender_data.update({
+            "tenderPeriod": {"endDate": (get_now() + timedelta(days=31)).isoformat()}
+        })
 
         self.app.authorization = ('Basic', ('broker', ''))
         with open(TARGET_DIR + 'tender-post-attempt-json-data.http', 'w') as self.app.file_obj:
@@ -647,8 +650,8 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
 
         # Time travel to agreement.contractPeriod.clarificationsUntil
         tender = self.db.get(self.tender_id)
-        tender['contractPeriod']['startDate'] = \
-            (get_now() - CLARIFICATIONS_UNTIL_PERIOD - timedelta(days=1)).isoformat()
+        tender['contractPeriod']['startDate'] = (
+                get_now() - CLARIFICATIONS_UNTIL_PERIOD - timedelta(days=1)).isoformat()
         tender['contractPeriod']['clarificationsUntil'] = (get_now() - timedelta(days=1)).isoformat()
         self.db.save(tender)
 
@@ -709,7 +712,10 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
         with open(TARGET_DIR + 'tender-agreement-sign.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
                 '/tenders/{}/agreements/{}?acc_token={}'.format(self.tender_id, agreement_id, owner_token),
-                {"data": {"status": "active", "period": agreement_period}})
+                {"data": {"status": "active", "period": {
+                    "startDate": get_now().isoformat(),
+                    "endDate": (get_now() + timedelta(days=4 * 365)).isoformat()
+                }}})
         self.assertEqual(response.json['data']['status'], 'active')
 
         with open(TARGET_DIR + 'tender-completed.http', 'w') as self.app.file_obj:
