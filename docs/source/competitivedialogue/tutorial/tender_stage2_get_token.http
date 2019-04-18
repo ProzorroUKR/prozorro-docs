@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/f20c1a8094f746ef850088b0d533362a/credentials?acc_token=170761b45ca447fd912a2e36a9379c91 HTTP/1.0
+PATCH /api/2.5/tenders/f7b9cae4db6a4e0b9f4883ce410024fc/credentials?acc_token=57e796bd207d4695964c4d14060285c7 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 2
 Content-Type: application/json
@@ -10,7 +10,7 @@ Response: 200 OK
 Content-Type: application/json; charset=UTF-8
 {
   "access": {
-    "token": "b38e19bb356344daacb962b9d07e55c3"
+    "token": "8de97437a31d4f6d98f300c665222db2"
   }, 
   "data": {
     "status": "draft.stage2", 
@@ -119,10 +119,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-05-08T06:49:21.594579+03:00", 
-          "endDate": "2019-06-07T06:49:21.594605+03:00"
+          "startDate": "2019-05-08T09:19:44.298707+03:00", 
+          "endDate": "2019-06-07T09:19:44.298767+03:00"
         }, 
-        "id": "8cb30d88f43c47cab80369d50d9b20b0", 
+        "id": "2ea57389aecb4ef78a1047f86a4ab02c", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -152,10 +152,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-05-08T06:49:21.594619+03:00", 
-          "endDate": "2019-06-07T06:49:21.594627+03:00"
+          "startDate": "2019-05-08T09:19:44.298785+03:00", 
+          "endDate": "2019-06-07T09:19:44.298796+03:00"
         }, 
-        "id": "50740bf0be154d8488614ae7b5fad0e0", 
+        "id": "d3dfcc4755e74eb3a17f0b3ceb38d091", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -165,7 +165,7 @@ Content-Type: application/json; charset=UTF-8
     ], 
     "owner": "broker", 
     "dateModified": "2019-01-01T00:00:00+02:00", 
-    "id": "f20c1a8094f746ef850088b0d533362a", 
+    "id": "f7b9cae4db6a4e0b9f4883ce410024fc", 
     "procurementMethod": "selective", 
     "tenderID": "UA-2019-01-01-000002"
   }

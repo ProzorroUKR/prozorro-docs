@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/e87a7400cc144ac9b69ec677303e3721/bids HTTP/1.0
+POST /api/2.5/tenders/e079d0f147d74fcebf76f53f477ad16c/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 975
 Content-Type: application/json
@@ -10,10 +10,10 @@ DATA:
     "selfQualified": true, 
     "lotValues": [
       {
-        "relatedLot": "eb5716cccb9747749c7ab89824466345"
+        "relatedLot": "faa9f6fda9cb4f63bce56c634875eb06"
       }, 
       {
-        "relatedLot": "5f61ca4e5db1466f9154216af87a5638", 
+        "relatedLot": "d0775ff07b4d4b88976c6eedc6df8fb2", 
         "subcontractingDetails": "ДКП «Укр Прінт», Україна"
       }
     ], 
@@ -44,22 +44,22 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e87a7400cc144ac9b69ec677303e3721/bids/76be5c3a95f74c0fa3cbacfa8ec84c0f
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e079d0f147d74fcebf76f53f477ad16c/bids/4db56ab06ab94a9a92fd67b7cf21f35d
 {
   "access": {
-    "token": "c0260e45eb0a4fc9af1b0d6df8cb89cf"
+    "token": "4ccd5979ba3347febe0a521220687451"
   }, 
   "data": {
     "status": "pending", 
     "selfEligible": true, 
     "lotValues": [
       {
-        "relatedLot": "eb5716cccb9747749c7ab89824466345", 
+        "relatedLot": "faa9f6fda9cb4f63bce56c634875eb06", 
         "date": "2019-01-01T00:00:00+02:00", 
         "status": "pending"
       }, 
       {
-        "relatedLot": "5f61ca4e5db1466f9154216af87a5638", 
+        "relatedLot": "d0775ff07b4d4b88976c6eedc6df8fb2", 
         "date": "2019-01-01T00:00:00+02:00", 
         "status": "pending", 
         "subcontractingDetails": "ДКП «Укр Прінт», Україна"
@@ -89,7 +89,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e87a7400cc144ac9
       }
     ], 
     "date": "2019-01-01T00:00:00+02:00", 
-    "id": "76be5c3a95f74c0fa3cbacfa8ec84c0f"
+    "id": "4db56ab06ab94a9a92fd67b7cf21f35d"
   }
 }
 

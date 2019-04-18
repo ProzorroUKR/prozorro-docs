@@ -1,12 +1,12 @@
-POST /api/2.5/tenders/cfe8d9ecde7d49cba990bed08065d7d4/documents?acc_token=7a8640666384400f9051baf16a41659d HTTP/1.0
+POST /api/2.5/tenders/e370d1ede4574bb8aebd9cd6976fd5f8/documents?acc_token=855549743758426abe02dad7618aea90 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 331
+Content-Length: 329
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
-    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/c2fe0597ae8a46c4b3f9058f1cff03f3?KeyID=573d3072&Signature=tcRHeAQOaywrcxWloTt5YHa5RNElzdz2jDdMW1mwoolPqPngJf9%2BHZb8lbJ%2BsCbK7aRgBfDv9sV%2FwWWrTIBZBQ%3D%3D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/14946dc68dc4410180689e2aa4465759?KeyID=a8968c46&Signature=Vi3M%2F5fk9LsNkYm1%2BPAYFsfmkCC9NGxqwW9Ne3DyT2sYXxcqABkyfgReFZIc4UhmpdAo8y4hzwStuhTnUDQ1Dw%3D%3D", 
     "title": "AwardCriteria.pdf", 
     "hash": "md5:00000000000000000000000000000000", 
     "format": "application/pdf"
@@ -15,17 +15,17 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/cfe8d9ecde7d49cba990bed08065d7d4/documents/a7cb5b2663d04ae18ecce463379cf113
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e370d1ede4574bb8aebd9cd6976fd5f8/documents/72445401273248279ff4f544ae07f29e
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "author": "tender_owner", 
     "title": "AwardCriteria.pdf", 
-    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/c2fe0597ae8a46c4b3f9058f1cff03f3?KeyID=573d3072&Signature=0Rxo63F%2FJmiWC%2F6tFboz0hHkRD6Hne%252BJPziK%2FVmG32%2F4Dxp1IX1axaSQGwum5sreF%2FBEhcZ0EK%252BXSHaSilAxBA%253D%253D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/14946dc68dc4410180689e2aa4465759?KeyID=a8968c46&Signature=EpOrIHB%2FqoOnqEtoiW51IVE7lHSNV%252BKk3MKL3p5x6hf%2FznY%2FaUADdKCcZZBoIWx6rM45hQ0hiqN%2FZKXqSIxeBQ%253D%253D", 
     "format": "application/pdf", 
     "documentOf": "tender", 
     "datePublished": "2019-01-01T00:10:00+02:00", 
-    "id": "a7cb5b2663d04ae18ecce463379cf113", 
+    "id": "72445401273248279ff4f544ae07f29e", 
     "dateModified": "2019-01-01T00:10:00+02:00"
   }
 }

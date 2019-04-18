@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/e54514398db3478a934ed7e8472b1516/bids HTTP/1.0
+POST /api/2.5/tenders/860d74a785364c238fc2e06190d4c25d/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 1454
 Content-Type: application/json
@@ -10,7 +10,7 @@ DATA:
     "selfQualified": true, 
     "lotValues": [
       {
-        "relatedLot": "fd0bdf6a19114cc09cc48e9a350f833a", 
+        "relatedLot": "c610d778e48445eda6c38b497d348925", 
         "value": {
           "contractDuration": {
             "years": 7
@@ -42,7 +42,7 @@ DATA:
         }
       }, 
       {
-        "relatedLot": "5aa0c87a954e4dd8910ecd7e95c49470", 
+        "relatedLot": "f9af5748098c4f3c90c620bfb83c1594", 
         "value": {
           "contractDuration": {
             "years": 9
@@ -102,17 +102,17 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e54514398db3478a934ed7e8472b1516/bids/32b06275330d44ab89bd5f897f443259
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/860d74a785364c238fc2e06190d4c25d/bids/51573dd743594c138baebfec4a9f547a
 {
   "access": {
-    "token": "202d3c188f9740458927ceea85592f3e"
+    "token": "59b94ba51b0f444c9927ae68db056d94"
   }, 
   "data": {
     "status": "pending", 
     "selfEligible": true, 
     "lotValues": [
       {
-        "relatedLot": "fd0bdf6a19114cc09cc48e9a350f833a", 
+        "relatedLot": "c610d778e48445eda6c38b497d348925", 
         "date": "2019-01-01T00:00:00+02:00", 
         "status": "pending", 
         "value": {
@@ -151,7 +151,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e54514398db3478a
         }
       }, 
       {
-        "relatedLot": "5aa0c87a954e4dd8910ecd7e95c49470", 
+        "relatedLot": "f9af5748098c4f3c90c620bfb83c1594", 
         "date": "2019-01-01T00:00:00+02:00", 
         "status": "pending", 
         "value": {
@@ -215,7 +215,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e54514398db3478a
       }
     ], 
     "date": "2019-01-01T00:00:00+02:00", 
-    "id": "32b06275330d44ab89bd5f897f443259"
+    "id": "51573dd743594c138baebfec4a9f547a"
   }
 }
 

@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/76a47711227a4dbbb943008da264324e/qualifications/9fa3e3e47b314b08924359c928bdfd92/complaints?acc_token=665658592ad147438ef563d181abb2c7 HTTP/1.0
+POST /api/2.5/tenders/af9d87e1eb144d71a571c4941211c112/qualifications/7857d0a2d8544ca8a094e8aa7614b674/complaints?acc_token=aab15b1af973491aaac8dd4c34801fc7 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 1298
 Content-Type: application/json
@@ -33,20 +33,20 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/76a47711227a4dbbb943008da264324e/qualifications/9fa3e3e47b314b08924359c928bdfd92/complaints/e6e0df688d3f4c21890356bb887e2623
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/af9d87e1eb144d71a571c4941211c112/qualifications/7857d0a2d8544ca8a094e8aa7614b674/complaints/cb1ef66e3c954ad280cefb4f10f43281
 {
   "access": {
-    "token": "9e27da72df7d43faa1bc9ed8b138879a"
+    "token": "0b03997a629f4851ab497925d679499c"
   }, 
   "data": {
     "status": "draft", 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
     "title": "Недостатньо інформації", 
-    "bid_id": "828276a99597414b9bfd0e33022aa9ed", 
+    "bid_id": "2e2fd282dd12463eae1e996c4d3f8c5b", 
     "complaintID": "UA-2019-01-01-000001.1", 
     "date": "2019-01-01T00:10:00+02:00", 
     "type": "claim", 
-    "id": "e6e0df688d3f4c21890356bb887e2623"
+    "id": "cb1ef66e3c954ad280cefb4f10f43281"
   }
 }
 

@@ -10,13 +10,13 @@ DATA:
     "lots": [
       {
         "title": "Лот №1", 
-        "id": "be6fe65d43f14d3d838990f21c3d2d69", 
+        "id": "410ed97a5c1d46e69a7802e6323ef3cb", 
         "description": "Опис Лот №1"
       }
     ], 
     "items": [
       {
-        "relatedLot": "be6fe65d43f14d3d838990f21c3d2d69", 
+        "relatedLot": "410ed97a5c1d46e69a7802e6323ef3cb", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -32,7 +32,7 @@ DATA:
           }
         ], 
         "description_ru": "футляры к государственным наградам", 
-        "id": "8b74ffcf01c1410b9129e59840cbefe7", 
+        "id": "6edef4e24a5d4b12ba2010ba68c69c21", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -44,7 +44,7 @@ DATA:
     "mode": "test", 
     "agreements": [
       {
-        "id": "a53c2286a06f4a8aa512989c6556e46c"
+        "id": "c2da0df95205478995f1d1eaf5c1ae16"
       }
     ], 
     "title_ru": "футляры к государственным наградам", 
@@ -74,10 +74,10 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/0cf59e8e49c6416f8e21744fb860a516
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/1f780e07a2ca4b31bba8e96a5d37b1b1
 {
   "access": {
-    "token": "2dd9b775b18e47da8ba3b1c8b42d10b7"
+    "token": "6b2877b5758f46f1b236cd0ab1e9f378"
   }, 
   "data": {
     "status": "draft", 
@@ -90,12 +90,12 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/0cf59e8e49c6416f
         "status": "active", 
         "title": "Лот №1", 
         "description": "Опис Лот №1", 
-        "id": "be6fe65d43f14d3d838990f21c3d2d69"
+        "id": "410ed97a5c1d46e69a7802e6323ef3cb"
       }
     ], 
     "items": [
       {
-        "relatedLot": "be6fe65d43f14d3d838990f21c3d2d69", 
+        "relatedLot": "410ed97a5c1d46e69a7802e6323ef3cb", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -111,7 +111,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/0cf59e8e49c6416f
           }
         ], 
         "description_ru": "футляры к государственным наградам", 
-        "id": "8b74ffcf01c1410b9129e59840cbefe7", 
+        "id": "6edef4e24a5d4b12ba2010ba68c69c21", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -148,10 +148,10 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/0cf59e8e49c6416f
     "owner": "broker", 
     "dateModified": "2019-01-01T00:00:00+02:00", 
     "mode": "test", 
-    "id": "0cf59e8e49c6416f8e21744fb860a516", 
+    "id": "1f780e07a2ca4b31bba8e96a5d37b1b1", 
     "agreements": [
       {
-        "id": "a53c2286a06f4a8aa512989c6556e46c"
+        "id": "c2da0df95205478995f1d1eaf5c1ae16"
       }
     ]
   }

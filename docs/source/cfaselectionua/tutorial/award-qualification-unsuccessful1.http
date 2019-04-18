@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/ae3adab91a6741b7b7c081c7f99632aa/awards/1dc71b55721546e2b3694a48957437ae?acc_token=dcfda2d9335b41a9814dc01c39bd9a03 HTTP/1.0
+PATCH /api/2.5/tenders/4cdd6b38d69c459284b31ab81cbea097/awards/bb6908758b2d4cb9a9e927016f38f999?acc_token=55a1ff7e4b9c4fec90bca39c8e96fbd7 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 36
 Content-Type: application/json
@@ -12,11 +12,11 @@ DATA:
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ae3adab91a6741b7b7c081c7f99632aa/awards/459fc6df79cd4840973a2f8b81f36a07
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4cdd6b38d69c459284b31ab81cbea097/awards/2bbb5853ac2f4d47943ea6507406edf7
 {
   "data": {
     "status": "unsuccessful", 
-    "lotID": "be6fe65d43f14d3d838990f21c3d2d69", 
+    "lotID": "410ed97a5c1d46e69a7802e6323ef3cb", 
     "suppliers": [
       {
         "contactPoint": {
@@ -38,14 +38,14 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ae3adab91a6741b7
         }
       }
     ], 
-    "bid_id": "eed222706ef742c599fd90c57061bae1", 
+    "bid_id": "6b6fe9bb3ef647d8ac5b8be0f8873c31", 
     "value": {
       "currency": "UAH", 
       "amount": 499.0, 
       "valueAddedTaxIncluded": true
     }, 
     "date": "2019-01-01T00:00:00+02:00", 
-    "id": "1dc71b55721546e2b3694a48957437ae"
+    "id": "bb6908758b2d4cb9a9e927016f38f999"
   }
 }
 

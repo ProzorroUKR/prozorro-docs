@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/ae3adab91a6741b7b7c081c7f99632aa/contracts/da6dae5c78ac4ef6bdc6ae0b4958aaf6/documents?acc_token=dcfda2d9335b41a9814dc01c39bd9a03 HTTP/1.0
+POST /api/2.5/tenders/4cdd6b38d69c459284b31ab81cbea097/contracts/dcf3565417d44143b47ae2a316a85892/documents?acc_token=55a1ff7e4b9c4fec90bca39c8e96fbd7 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 349
 Content-Type: application/json
@@ -6,7 +6,7 @@ Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
-    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/8d5c3d03a0374d2eba204c4550abd171?KeyID=a1aff1ca&Signature=lmYFamWHS0aS%2BVJCZcvluIhb%2FIHPrdIY39jybqaVcVCfVjcFe%2BphxzO38TTehFWpsviWpFk%2BZrcKAj7L7%2B5wCQ%3D%3D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/35bc340e85774e2a8c7018cd7aae1dd1?KeyID=a8968c46&Signature=MaXH412zm3Zytoq3ob4%2B5DHvk8lI%2BetkGJqQP1JLiu9OvV7RRGiqz%2FPT%2BU%2Fyqz60NhVGw4nTZlRTNpsla5KZBA%3D%3D", 
     "title": "contract_second_document.doc", 
     "hash": "md5:00000000000000000000000000000000", 
     "format": "application/msword"
@@ -15,15 +15,15 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ae3adab91a6741b7b7c081c7f99632aa/contracts/da6dae5c78ac4ef6bdc6ae0b4958aaf6/documents/0f6e9487051944e3b7f77ee8b9469769
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4cdd6b38d69c459284b31ab81cbea097/contracts/dcf3565417d44143b47ae2a316a85892/documents/cefd0fdccb3148c1b10ff96a07be09c1
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "title": "contract_second_document.doc", 
-    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/8d5c3d03a0374d2eba204c4550abd171?KeyID=a1aff1ca&Signature=CIlDqW%252BH%2FM8mHcv8zkjRkPNsojuL2bY5OK2y7b3WEoQ3WDUtCUBHzLf3iwvbQ%2FA9nfVd3%252BCj8UagLbF7dvuxCg%253D%253D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/35bc340e85774e2a8c7018cd7aae1dd1?KeyID=a8968c46&Signature=y64GFO%2FAoxzyA%2FRJebVUXtSZeMTK1Fpe8NFatPd7Ofe4q5wVn%2FXSR7r1vnuboCpRujLNIc6Ewx2SAi7WPwulAw%253D%253D", 
     "format": "application/msword", 
     "datePublished": "2019-01-01T00:00:00+02:00", 
-    "id": "0f6e9487051944e3b7f77ee8b9469769", 
+    "id": "cefd0fdccb3148c1b10ff96a07be09c1", 
     "dateModified": "2019-01-01T00:00:00+02:00"
   }
 }

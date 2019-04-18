@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/e54514398db3478a934ed7e8472b1516 HTTP/1.0
+GET /api/2.5/tenders/860d74a785364c238fc2e06190d4c25d HTTP/1.0
 Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
@@ -13,11 +13,11 @@ Content-Type: application/json; charset=UTF-8
     "enquiryPeriod": {
       "startDate": "2019-01-01T00:00:00+02:00", 
       "clarificationsUntil": "2019-05-15T00:00:00+03:00", 
-      "endDate": "2019-05-09T06:49:21.594974+03:00", 
+      "endDate": "2019-05-09T09:19:44.299407+03:00", 
       "invalidationDate": "2019-01-01T00:00:00+02:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "next_check": "2019-05-19T06:49:21.594974+03:00", 
+    "next_check": "2019-05-19T09:19:44.299407+03:00", 
     "procuringEntity": {
       "kind": "general", 
       "name": "ЗОСШ #10 м.Вінниці", 
@@ -45,7 +45,7 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "owner": "broker", 
     "title_en": "Services in school canteens", 
-    "id": "e54514398db3478a934ed7e8472b1516", 
+    "id": "860d74a785364c238fc2e06190d4c25d", 
     "title": "Послуги шкільних їдалень", 
     "lots": [
       {
@@ -64,7 +64,7 @@ Content-Type: application/json; charset=UTF-8
         "minimalStepPercentage": 0.006, 
         "yearlyPaymentsPercentageRange": 0.8, 
         "date": "2019-01-01T00:00:00+02:00", 
-        "id": "fd0bdf6a19114cc09cc48e9a350f833a"
+        "id": "c610d778e48445eda6c38b497d348925"
       }, 
       {
         "status": "active", 
@@ -82,7 +82,7 @@ Content-Type: application/json; charset=UTF-8
         "minimalStepPercentage": 0.006, 
         "yearlyPaymentsPercentageRange": 0.8, 
         "date": "2019-01-01T00:00:00+02:00", 
-        "id": "5aa0c87a954e4dd8910ecd7e95c49470"
+        "id": "f9af5748098c4f3c90c620bfb83c1594"
       }
     ], 
     "tenderID": "UA-2019-01-01-000001", 
@@ -92,7 +92,7 @@ Content-Type: application/json; charset=UTF-8
     "status": "active.tendering", 
     "tenderPeriod": {
       "startDate": "2019-01-01T00:00:00+02:00", 
-      "endDate": "2019-05-19T06:49:21.594974+03:00"
+      "endDate": "2019-05-19T09:19:44.299407+03:00"
     }, 
     "NBUdiscountRate": 0.22986, 
     "procurementMethodType": "esco", 
@@ -105,7 +105,7 @@ Content-Type: application/json; charset=UTF-8
     "fundingKind": "other", 
     "items": [
       {
-        "relatedLot": "fd0bdf6a19114cc09cc48e9a350f833a", 
+        "relatedLot": "c610d778e48445eda6c38b497d348925", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -127,14 +127,14 @@ Content-Type: application/json; charset=UTF-8
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "71e30516456848b5b87471335f9ff005", 
+        "id": "ac8fdb243bd3494fbd5b9a8d185cf8ee", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }
       }, 
       {
-        "relatedLot": "5aa0c87a954e4dd8910ecd7e95c49470", 
+        "relatedLot": "f9af5748098c4f3c90c620bfb83c1594", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -156,7 +156,7 @@ Content-Type: application/json; charset=UTF-8
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "74d7fd6b45744d04b20115efc8e16811", 
+        "id": "510f7dd337e1490b9fd012f3127964ae", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"

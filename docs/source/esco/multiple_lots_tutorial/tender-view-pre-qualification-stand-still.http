@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/e54514398db3478a934ed7e8472b1516?acc_token=7bb328af3ac54afb9a1fe834c978668e HTTP/1.0
+PATCH /api/2.5/tenders/860d74a785364c238fc2e06190d4c25d?acc_token=6fe807aaf8204458b6b0b3ca4e5fe9b3 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 60
 Content-Type: application/json
@@ -55,7 +55,7 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "owner": "broker", 
     "title_en": "Services in school canteens", 
-    "id": "e54514398db3478a934ed7e8472b1516", 
+    "id": "860d74a785364c238fc2e06190d4c25d", 
     "title": "Послуги шкільних їдалень", 
     "lots": [
       {
@@ -74,7 +74,7 @@ Content-Type: application/json; charset=UTF-8
         "minimalStepPercentage": 0.006, 
         "yearlyPaymentsPercentageRange": 0.8, 
         "date": "2019-01-01T00:00:00+02:00", 
-        "id": "fd0bdf6a19114cc09cc48e9a350f833a"
+        "id": "c610d778e48445eda6c38b497d348925"
       }, 
       {
         "status": "unsuccessful", 
@@ -89,7 +89,7 @@ Content-Type: application/json; charset=UTF-8
         "minimalStepPercentage": 0.006, 
         "yearlyPaymentsPercentageRange": 0.8, 
         "date": "2019-01-01T00:00:00+02:00", 
-        "id": "5aa0c87a954e4dd8910ecd7e95c49470"
+        "id": "f9af5748098c4f3c90c620bfb83c1594"
       }
     ], 
     "qualificationPeriod": {
@@ -108,21 +108,21 @@ Content-Type: application/json; charset=UTF-8
     "qualifications": [
       {
         "status": "active", 
-        "lotID": "fd0bdf6a19114cc09cc48e9a350f833a", 
+        "lotID": "c610d778e48445eda6c38b497d348925", 
         "eligible": true, 
         "qualified": true, 
-        "bidID": "431dc9a9dfaf485ab1a030f0d3bf89d8", 
+        "bidID": "57488ff8930c45f38b782a50340d0664", 
         "date": "2019-01-01T00:00:00+02:00", 
-        "id": "94f7f2bca6fa498db76ee819ee4d05f4"
+        "id": "b5f773c5fad742339924ed1d47682257"
       }, 
       {
         "status": "active", 
-        "lotID": "fd0bdf6a19114cc09cc48e9a350f833a", 
+        "lotID": "c610d778e48445eda6c38b497d348925", 
         "eligible": true, 
         "qualified": true, 
-        "bidID": "32b06275330d44ab89bd5f897f443259", 
+        "bidID": "51573dd743594c138baebfec4a9f547a", 
         "date": "2019-01-01T00:00:00+02:00", 
-        "id": "56e0500fc03748608be511a8487ed2ca"
+        "id": "543349a9126749fabea248f1dc34a8fb"
       }
     ], 
     "procurementMethodType": "esco", 
@@ -136,7 +136,7 @@ Content-Type: application/json; charset=UTF-8
     "fundingKind": "other", 
     "items": [
       {
-        "relatedLot": "fd0bdf6a19114cc09cc48e9a350f833a", 
+        "relatedLot": "c610d778e48445eda6c38b497d348925", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -158,14 +158,14 @@ Content-Type: application/json; charset=UTF-8
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "71e30516456848b5b87471335f9ff005", 
+        "id": "ac8fdb243bd3494fbd5b9a8d185cf8ee", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }
       }, 
       {
-        "relatedLot": "5aa0c87a954e4dd8910ecd7e95c49470", 
+        "relatedLot": "f9af5748098c4f3c90c620bfb83c1594", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -187,7 +187,7 @@ Content-Type: application/json; charset=UTF-8
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "74d7fd6b45744d04b20115efc8e16811", 
+        "id": "510f7dd337e1490b9fd012f3127964ae", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -197,7 +197,7 @@ Content-Type: application/json; charset=UTF-8
     "bids": [
       {
         "status": "active", 
-        "id": "431dc9a9dfaf485ab1a030f0d3bf89d8", 
+        "id": "57488ff8930c45f38b782a50340d0664", 
         "tenderers": [
           {
             "contactPoint": {
@@ -223,7 +223,7 @@ Content-Type: application/json; charset=UTF-8
       }, 
       {
         "status": "active", 
-        "id": "32b06275330d44ab89bd5f897f443259", 
+        "id": "51573dd743594c138baebfec4a9f547a", 
         "tenderers": [
           {
             "contactPoint": {

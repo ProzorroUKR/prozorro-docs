@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/8f11f82d19b64b859827cc941fd7f839/awards/ad8989e2987e4277a7e347fb51daa7e1?acc_token=7a12fff2b5f14f698f4c22ad8addc97e HTTP/1.0
+PATCH /api/2.5/tenders/40c17dbea3ba43fab389cc55c80183fc/awards/bf2564d143394bb59c0744c58458a9b5?acc_token=74ec625f693841c0ad3e8bc4538041bc HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 36
 Content-Type: application/json
@@ -12,7 +12,7 @@ DATA:
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/8f11f82d19b64b859827cc941fd7f839/awards/a8c6a46342e645919666b0e350bf2cde
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/40c17dbea3ba43fab389cc55c80183fc/awards/0db1f854d9b8406d823d42def01d9d30
 {
   "data": {
     "status": "unsuccessful", 
@@ -21,11 +21,11 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/8f11f82d19b64b85
         "hash": "md5:00000000000000000000000000000000", 
         "author": "tender_owner", 
         "title": "Cancellation_Reason.pdf", 
-        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/193865a689684a39811efe697b975535?KeyID=a0b3a3fd&Signature=aonigjBKL5bhmsos7Azg1vMya2dApl%2Fzw879Jv10Y%2FJtY9CSskQ3Wj%252Bk5dqWil%252B8FjLOQOFoNJlG6oQyaB9JCg%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/2fdb202c8302468fa38dcd0705d00325?KeyID=a8968c46&Signature=8QNJc6jEqNRGDKYMrxtWr4DsYNmDDqjTE9rlR0NXUqv91RwRhYt4nsZR1NckVSIrz2AmgRkeRtKKfmTDhXC3Aw%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
         "datePublished": "2019-01-01T00:00:00+02:00", 
-        "id": "b5b4e933e0d641cb8e56434ca6ac180a", 
+        "id": "f7eabcf2c111430baee7cbfdd61d920e", 
         "dateModified": "2019-01-01T00:00:00+02:00"
       }
     ], 
@@ -54,14 +54,14 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/8f11f82d19b64b85
         }
       }
     ], 
-    "bid_id": "ea83947de09d46209f02151bdc8bb94e", 
+    "bid_id": "eca7b27245654827bde5734b242f3529", 
     "value": {
       "currency": "UAH", 
       "amount": 469.0, 
       "valueAddedTaxIncluded": true
     }, 
     "date": "2019-01-01T00:00:00+02:00", 
-    "id": "ad8989e2987e4277a7e347fb51daa7e1"
+    "id": "bf2564d143394bb59c0744c58458a9b5"
   }
 }
 

@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/c7bc76c4afe1401292e0d567b37eab99/bids HTTP/1.0
+POST /api/2.5/tenders/f79202ed72aa4df58b23e22a833948e3/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 1047
 Content-Type: application/json
@@ -10,13 +10,13 @@ DATA:
     "selfQualified": true, 
     "lotValues": [
       {
-        "relatedLot": "ce64571476054cff89bc1c2dd50e323e", 
+        "relatedLot": "9c681dd3701140aeb8c6d83ae1a31e38", 
         "value": {
           "amount": 500
         }
       }, 
       {
-        "relatedLot": "661ada0b9e224d4a9495c8c8b357746a", 
+        "relatedLot": "3f214e71a3894e7793214fef4dab684c", 
         "value": {
           "amount": 500
         }, 
@@ -50,17 +50,17 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/c7bc76c4afe1401292e0d567b37eab99/bids/83c1121358ef48cab5216e6c7620e657
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/f79202ed72aa4df58b23e22a833948e3/bids/92d3348340fa46f8b031aeec7990dba0
 {
   "access": {
-    "token": "b4f6d0efe1a74fd9b3b1048a40248890"
+    "token": "7323f33b01b1498fb5b7e027b06a6686"
   }, 
   "data": {
     "status": "pending", 
     "selfEligible": true, 
     "lotValues": [
       {
-        "relatedLot": "ce64571476054cff89bc1c2dd50e323e", 
+        "relatedLot": "9c681dd3701140aeb8c6d83ae1a31e38", 
         "date": "2019-01-01T00:00:00+02:00", 
         "status": "pending", 
         "value": {
@@ -70,7 +70,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/c7bc76c4afe14012
         }
       }, 
       {
-        "relatedLot": "661ada0b9e224d4a9495c8c8b357746a", 
+        "relatedLot": "3f214e71a3894e7793214fef4dab684c", 
         "date": "2019-01-01T00:00:00+02:00", 
         "status": "pending", 
         "value": {
@@ -105,7 +105,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/c7bc76c4afe14012
       }
     ], 
     "date": "2019-01-01T00:00:00+02:00", 
-    "id": "83c1121358ef48cab5216e6c7620e657"
+    "id": "92d3348340fa46f8b031aeec7990dba0"
   }
 }
 

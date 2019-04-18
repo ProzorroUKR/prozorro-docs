@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/e87a7400cc144ac9b69ec677303e3721?acc_token=bf617dbbe0274dbcb038442a3d21275c HTTP/1.0
+PATCH /api/2.5/tenders/e079d0f147d74fcebf76f53f477ad16c?acc_token=5ae97b21ba424d95bb8004e7f3835124 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 125
 Content-Type: application/json
@@ -8,10 +8,10 @@ DATA:
   "data": {
     "items": [
       {
-        "relatedLot": "eb5716cccb9747749c7ab89824466345"
+        "relatedLot": "faa9f6fda9cb4f63bce56c634875eb06"
       }, 
       {
-        "relatedLot": "5f61ca4e5db1466f9154216af87a5638"
+        "relatedLot": "d0775ff07b4d4b88976c6eedc6df8fb2"
       }
     ]
   }
@@ -26,7 +26,7 @@ Content-Type: application/json; charset=UTF-8
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
       "startDate": "2019-01-01T00:00:00+02:00", 
-      "endDate": "2019-05-19T06:49:22.031690+03:00"
+      "endDate": "2019-05-19T09:19:44.396789+03:00"
     }, 
     "title": "Послуги шкільних їдалень", 
     "minimalStep": {
@@ -37,7 +37,7 @@ Content-Type: application/json; charset=UTF-8
     "enquiryPeriod": {
       "startDate": "2019-01-01T00:00:00+02:00", 
       "clarificationsUntil": "2019-05-15T00:00:00+03:00", 
-      "endDate": "2019-05-09T06:49:22.031690+03:00", 
+      "endDate": "2019-05-09T09:19:44.396789+03:00", 
       "invalidationDate": "2019-01-01T00:00:00+02:00"
     }, 
     "complaintPeriod": {
@@ -81,7 +81,7 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "items": [
       {
-        "relatedLot": "eb5716cccb9747749c7ab89824466345", 
+        "relatedLot": "faa9f6fda9cb4f63bce56c634875eb06", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -104,10 +104,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-05-08T06:49:21.594579+03:00", 
-          "endDate": "2019-06-07T06:49:21.594605+03:00"
+          "startDate": "2019-05-08T09:19:44.298707+03:00", 
+          "endDate": "2019-06-07T09:19:44.298767+03:00"
         }, 
-        "id": "0b5822816e8e41ce82f18106e70f9ded", 
+        "id": "431f103482084ba3aef4afb82d5324fb", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -115,7 +115,7 @@ Content-Type: application/json; charset=UTF-8
         "quantity": 1.0
       }, 
       {
-        "relatedLot": "5f61ca4e5db1466f9154216af87a5638", 
+        "relatedLot": "d0775ff07b4d4b88976c6eedc6df8fb2", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -138,10 +138,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-05-08T06:49:21.594619+03:00", 
-          "endDate": "2019-06-07T06:49:21.594627+03:00"
+          "startDate": "2019-05-08T09:19:44.298785+03:00", 
+          "endDate": "2019-06-07T09:19:44.298796+03:00"
         }, 
-        "id": "d5b43472c10c4f288b1415a9a1c9fed1", 
+        "id": "b2a658f3fe6649dda848fa8f61657bdc", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -150,7 +150,7 @@ Content-Type: application/json; charset=UTF-8
       }
     ], 
     "owner": "broker", 
-    "next_check": "2019-05-19T06:49:22.031690+03:00", 
+    "next_check": "2019-05-19T09:19:44.396789+03:00", 
     "lots": [
       {
         "status": "active", 
@@ -167,7 +167,7 @@ Content-Type: application/json; charset=UTF-8
           "valueAddedTaxIncluded": true
         }, 
         "date": "2019-01-01T00:00:00+02:00", 
-        "id": "eb5716cccb9747749c7ab89824466345"
+        "id": "faa9f6fda9cb4f63bce56c634875eb06"
       }, 
       {
         "status": "active", 
@@ -184,10 +184,10 @@ Content-Type: application/json; charset=UTF-8
           "valueAddedTaxIncluded": true
         }, 
         "date": "2019-01-01T00:00:00+02:00", 
-        "id": "5f61ca4e5db1466f9154216af87a5638"
+        "id": "d0775ff07b4d4b88976c6eedc6df8fb2"
       }
     ], 
-    "id": "e87a7400cc144ac9b69ec677303e3721", 
+    "id": "e079d0f147d74fcebf76f53f477ad16c", 
     "tenderID": "UA-2019-01-01-000001"
   }
 }
