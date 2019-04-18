@@ -9,13 +9,13 @@ from openprocurement.tender.cfaua.tests.base import (
     BaseTenderWebTest, test_tender_data, test_lots
 )
 
-from tests.base import DumpsWebTestApp, MockUUIDWebTestMixin
+from tests.base import DumpsWebTestApp, MockWebTestMixin
 from tests.constants import DOCS_HOST
 
 TARGET_DIR = 'docs/source/agreementcfaua/tutorial/'
 
 
-class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
+class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
     docs_host = DOCS_HOST
 
     def setUp(self):

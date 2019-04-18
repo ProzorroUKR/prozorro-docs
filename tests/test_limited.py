@@ -7,7 +7,7 @@ import openprocurement.api.tests as base_test
 from openprocurement.api.utils import get_now
 from openprocurement.tender.limited.tests.tender import BaseTenderWebTest
 
-from tests.base import DumpsWebTestApp, MockUUIDWebTestMixin
+from tests.base import DumpsWebTestApp, MockWebTestMixin
 from tests.constants import DOCS_HOST
 from tests.data import complaint, award, tender_limited, lots
 
@@ -36,7 +36,7 @@ test_lots[0]['value'] = test_tender_negotiation_data['value']
 TARGET_DIR = 'docs/source/limited/http/'
 
 
-class TenderLimitedResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
+class TenderLimitedResourceTest(BaseTenderWebTest, MockWebTestMixin):
     initial_data = test_tender_data
     docservice = True
 
@@ -235,6 +235,8 @@ class TenderLimitedResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
 
         #### Contract signing
 
+        self.tick()
+
         with open(TARGET_DIR + 'tutorial/tender-contract-sign.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
                 '/tenders/{}/contracts/{}?acc_token={}'.format(
@@ -340,6 +342,8 @@ class TenderNegotiationLimitedResourceTest(TenderLimitedResourceTest):
 
         #### Contract signing
 
+        self.tick()
+
         tender = self.db.get(self.tender_id)
         for i in tender.get('awards', []):
             i['complaintPeriod']['endDate'] = i['complaintPeriod']['startDate']
@@ -440,6 +444,8 @@ class TenderNegotiationLimitedResourceTest(TenderLimitedResourceTest):
 
         #### Contract signing
 
+        self.tick()
+
         tender = self.db.get(self.tender_id)
         for i in tender.get('awards', []):
             i['complaintPeriod']['endDate'] = i['complaintPeriod']['startDate']
@@ -500,6 +506,8 @@ class TenderNegotiationQuickLimitedResourceTest(TenderNegotiationLimitedResource
 
         #### Contract signing
 
+        self.tick()
+
         tender = self.db.get(self.tender_id)
         for i in tender.get('awards', []):
             i['complaintPeriod']['endDate'] = i['complaintPeriod']['startDate']
@@ -539,6 +547,8 @@ class TenderNegotiationQuickLimitedResourceTest(TenderNegotiationLimitedResource
                 '/tenders/{}/awards/{}/complaints'.format(self.tender_id, award_id),
                 {'data': complaint})
             self.assertEqual(response.status, '201 Created')
+
+        self.tick()
 
         complaint1_token = response.json['access']['token']
         complaint1_id = response.json['data']['id']

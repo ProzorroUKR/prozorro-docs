@@ -11,7 +11,7 @@ from openprocurement.tender.competitivedialogue.tests.base import (
     BaseCompetitiveDialogUAStage2WebTest
 )
 
-from tests.base import DumpsWebTestApp, MockUUIDWebTestMixin
+from tests.base import DumpsWebTestApp, MockWebTestMixin
 from tests.constants import DOCS_HOST, AUCTIONS_HOST
 from tests.data import (
     bid_draft, bid2, bid3, bid4, bad_participant, question, complaint, qualified,
@@ -75,7 +75,7 @@ TARGET_DIR = 'docs/source/competitivedialogue/tutorial/'
 TARGET_DIR_MULTIPLE = 'docs/source/competitivedialogue/multiple_lots_tutorial/'
 
 
-class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockUUIDWebTestMixin):
+class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):
     initial_data = test_tender_data_stage1
     docservice = True
 
@@ -440,7 +440,6 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockUUIDWebTestMixin):
             self.assertEqual(response.status, '200 OK')
 
         # active.pre-qualification.stand-still
-
         with open(TARGET_DIR + 'pre-qualification-confirmation.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
                 '/tenders/{}?acc_token={}'.format(self.tender_id, owner_token),
@@ -630,11 +629,15 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockUUIDWebTestMixin):
             response = self.app.get('/tenders/{}/questions/{}'.format(self.tender_id, question_id))
             self.assertEqual(response.status, '200 OK')
 
-        self.time_shift('enquiryPeriod_ends')
+        self.time_shift('enquiryPeriod_ends', {'items': [{"deliveryDate": {
+            "startDate": (get_now() + timedelta(days=20)).isoformat(),
+            "endDate": (get_now() + timedelta(days=50)).isoformat()
+        }}]})
         self.app.authorization = ('Basic', ('broker', ''))
         response = self.app.get('/tenders/{}?acc_token={}'.format(tender['id'], owner_token))
+        endDate = (get_now() + timedelta(days=30, seconds=10)).isoformat()
+
         with open(TARGET_DIR + 'stage2/EU/update-tender-after-enqiery.http', 'w') as self.app.file_obj:
-            endDate = (get_now() + timedelta(days=30, seconds=10)).isoformat()
             response = self.app.patch_json(
                 '/tenders/{}?acc_token={}'.format(tender['id'], owner_token),
                 {'data': {'items': [{'deliveryDate': {"endDate": endDate}}]}}, status=403)
@@ -845,7 +848,6 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockUUIDWebTestMixin):
             self.assertEqual(response.status, "200 OK")
 
         # active.pre-qualification.stand-still
-
         with open(TARGET_DIR + 'stage2/EU/pre-qualification-confirmation.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
                 '/tenders/{}?acc_token={}'.format(self.tender_id, owner_token),
@@ -892,7 +894,6 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockUUIDWebTestMixin):
             self.assertEqual(response.status, '200 OK')
 
         #### Confirming qualification
-        # self.set_status('active.qualification')
         self.app.authorization = ('Basic', ('auction', ''))
         response = self.app.get('/tenders/{}/auction'.format(self.tender_id))
         auction_bids_data = response.json['data']['bids']
@@ -935,6 +936,8 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockUUIDWebTestMixin):
         self.assertEqual(response.json['data']['value']['amount'], 238)
 
         #### Setting contract signature date
+
+        self.tick()
 
         with open(TARGET_DIR + 'stage2/EU/tender-contract-sign-date.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
@@ -1390,6 +1393,8 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockUUIDWebTestMixin):
                     self.tender_id, qualification['id'], owner_token),
                 {'data': {'status': 'active', 'qualified': True, 'eligible': True}})
             self.assertEqual(response.status, '200 OK')
+
+        self.tick()
 
         # active.pre-qualification.stand-still
         response = self.app.patch_json(
@@ -1944,6 +1949,8 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockUUIDWebTestMixin):
             '/tenders/{}/auction'.format(self.tender_id),
             {'data': {'bids': auction_bids_data}})
 
+        self.tick()
+
         self.app.authorization = ('Basic', ('broker', ''))
         response = self.app.get('/tenders/{}/awards?acc_token={}'.format(self.tender_id, owner_token))
         # get pending award
@@ -2408,7 +2415,6 @@ class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest):
             self.assertEqual(response.status, '200 OK')
 
         #### Confirming qualification
-        # self.set_status('active.qualification')
         self.app.authorization = ('Basic', ('auction', ''))
         response = self.app.get('/tenders/{}/auction'.format(self.tender_id))
         auction_bids_data = response.json['data']['bids']

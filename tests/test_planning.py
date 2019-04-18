@@ -5,13 +5,13 @@ import openprocurement.api.tests as base_test
 from openprocurement.planning.api.tests.base import BasePlanWebTest
 from openprocurement.planning.api.tests.base import test_plan_data
 
-from tests.base import DumpsWebTestApp, MockUUIDWebTestMixin
+from tests.base import DumpsWebTestApp, MockWebTestMixin
 from tests.constants import DOCS_HOST
 
 TARGET_DIR = 'docs/source/planning/tutorial/'
 
 
-class PlanResourceTest(BasePlanWebTest, MockUUIDWebTestMixin):
+class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
     initial_data = test_plan_data
     docservice = True
 

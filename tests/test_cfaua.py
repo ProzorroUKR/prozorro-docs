@@ -11,7 +11,7 @@ from openprocurement.tender.cfaua.tests.base import test_tender_data, agreement_
 from openprocurement.tender.cfaua.constants import CLARIFICATIONS_UNTIL_PERIOD
 from openprocurement.tender.cfaua.tests.tender import BaseTenderWebTest
 
-from tests.base import DumpsWebTestApp, MockUUIDWebTestMixin
+from tests.base import DumpsWebTestApp, MockWebTestMixin
 from tests.constants import DOCS_HOST, AUCTIONS_HOST
 from tests.data import (
     lot_bid, question, complaint, lots, lot_bid2,
@@ -59,7 +59,7 @@ for item in test_tender_data['items']:
 TARGET_DIR = 'docs/source/cfaua/tutorial/'
 
 
-class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
+class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
     initial_data = test_tender_data
     docservice = True
 
@@ -114,6 +114,9 @@ class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
 
         tender = response.json['data']
         owner_token = response.json['access']['token']
+        self.tender_id = tender['id']
+
+        self.set_status('active.enquiries')
 
         with open(TARGET_DIR + 'blank-tender-view.http', 'w') as self.app.file_obj:
             response = self.app.get('/tenders/{}'.format(tender['id']))
@@ -135,14 +138,7 @@ class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
         with open(TARGET_DIR + 'patch-items-value-periods.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
                 '/tenders/{}?acc_token={}'.format(tender['id'], owner_token),
-                {
-                    'data': {
-                        "tenderPeriod": {
-                            "endDate": tenderPeriod_endDate.isoformat()
-                        }
-                    }
-                }
-            )
+                {'data': {"tenderPeriod": {"endDate": tenderPeriod_endDate.isoformat()}}})
 
         with open(TARGET_DIR + 'tender-listing-after-patch.http', 'w') as self.app.file_obj:
             self.app.authorization = None
@@ -150,7 +146,6 @@ class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
             self.assertEqual(response.status, '200 OK')
 
         self.app.authorization = ('Basic', ('broker', ''))
-        self.tender_id = tender['id']
 
         # Setting Bid guarantee
 
@@ -707,6 +702,8 @@ class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
 
         # Agreement signing
 
+        self.tick()
+
         with open(TARGET_DIR + 'tender-agreement-sign-date.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
                 '/tenders/{}/agreements/{}?acc_token={}'.format(self.tender_id, agreement_id, owner_token),
@@ -1090,6 +1087,8 @@ class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
                 }})
             self.assertEqual(response.status, "200 OK")
 
+        self.tick()
+
         # active.pre-qualification.stand-still
         response = self.app.patch_json(
             '/tenders/{}?acc_token={}'.format(self.tender_id, owner_token),
@@ -1452,6 +1451,8 @@ class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
         self.assertEqual(response.status, '200 OK')
 
         self.set_status('active.qualification.stand-still')
+
+        self.tick()
 
         with open(TARGET_DIR + 'award-complaint-submission.http', 'w') as self.app.file_obj:
             response = self.app.post_json(

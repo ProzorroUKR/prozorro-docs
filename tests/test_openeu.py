@@ -7,7 +7,7 @@ import openprocurement.api.tests as base_test
 from openprocurement.api.models import get_now
 from openprocurement.tender.openeu.tests.tender import BaseTenderWebTest
 
-from tests.base import DumpsWebTestApp, MockUUIDWebTestMixin
+from tests.base import DumpsWebTestApp, MockWebTestMixin
 from tests.constants import DOCS_HOST, AUCTIONS_HOST
 from tests.data import (
     question, complaint, lots, subcontracting,
@@ -37,7 +37,7 @@ TARGET_DIR = 'docs/source/openeu/http/tutorial'
 TARGET_DIR_MULTI = 'docs/source/openeu/http/multiple_lots_tutorial/'
 
 
-class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
+class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
     initial_data = test_tender_data
     docservice = True
 
@@ -418,7 +418,6 @@ class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
             self.assertEqual(response.status, "200 OK")
 
         # active.pre-qualification.stand-still
-
         with open(TARGET_DIR + 'pre-qualification-confirmation.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
                 '/tenders/{}?acc_token={}'.format(self.tender_id, owner_token),
@@ -465,7 +464,6 @@ class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
             self.assertEqual(response.status, '200 OK')
 
         #### Confirming qualification
-        # self.set_status('active.qualification')
         self.app.authorization = ('Basic', ('auction', ''))
         response = self.app.get('/tenders/{}/auction'.format(self.tender_id))
         auction_bids_data = response.json['data']['bids']
@@ -509,6 +507,8 @@ class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
         self.assertEqual(response.json['data']['value']['amount'], 238)
 
         #### Setting contract signature date
+
+        self.tick()
 
         with open(TARGET_DIR + 'tender-contract-sign-date.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
@@ -907,6 +907,8 @@ class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
                 }})
             self.assertEqual(response.status, "200 OK")
 
+        self.tick()
+
         # active.pre-qualification.stand-still
         response = self.app.patch_json(
             '/tenders/{}?acc_token={}'.format(self.tender_id, owner_token),
@@ -1275,6 +1277,8 @@ class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
                     self.tender_id, award_id, bid_token),
                 {'data': complaint})
             self.assertEqual(response.status, '201 Created')
+
+        self.tick()
 
         complaint1_token = response.json['access']['token']
         complaint1_id = response.json['data']['id']

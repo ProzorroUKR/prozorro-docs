@@ -1,6 +1,10 @@
 import json
 import traceback
+from datetime import timedelta
+
 import mock
+from freezegun import freeze_time
+from openprocurement.api.utils import get_now
 
 from uuid import UUID
 from hashlib import md5
@@ -73,9 +77,11 @@ class DumpsWebTestApp(TestApp):
             self.file_obj.write("\n")
 
 
-class MockUUIDWebTestMixin(object):
+class MockWebTestMixin(object):
     uuid_patch = None
     uuid_counters = None
+    freezer = None
+    tick_delta = None
 
     whitelist = ('/openprocurement/', '/tests/')
     blacklist = ('/tests/base.py',)
@@ -83,8 +89,11 @@ class MockUUIDWebTestMixin(object):
     def setUpMock(self):
         self.uuid_patch = mock.patch('uuid.UUID', side_effect=self.uuid)
         self.uuid_patch.start()
+        self.freezer = freeze_time('2019-01-01T00:00:00+02:00')
+        self.freezer.start()
 
     def tearDownMock(self):
+        self.freezer.stop()
         self.uuid_patch.stop()
 
     def uuid(self, version=None, **kwargs):
@@ -106,6 +115,14 @@ class MockUUIDWebTestMixin(object):
             self.uuid_counters = dict()
         if name not in self.uuid_counters:
             self.uuid_counters[name] = 0
-        else:
-            self.uuid_counters[name] += 1
+        self.uuid_counters[name] += 1
         return self.uuid_counters[name]
+
+    def tick(self, delta=timedelta(minutes=10)):
+        if not self.tick_delta:
+            self.tick_delta = timedelta(minutes=0)
+        self.tick_delta += delta
+        freeze = get_now() + self.tick_delta
+        self.freezer.stop()
+        self.freezer = freeze_time(freeze.isoformat())
+        self.freezer.start()

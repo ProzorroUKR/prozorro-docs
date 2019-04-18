@@ -9,7 +9,7 @@ from openprocurement.tender.belowthreshold.tests.base import (
     BaseTenderWebTest, test_tender_data, test_bids, test_lots
 )
 
-from tests.base import DumpsWebTestApp, MockUUIDWebTestMixin
+from tests.base import DumpsWebTestApp, MockWebTestMixin
 from tests.constants import DOCS_HOST, AUCTIONS_HOST
 from tests.data import (
     bid_draft, bid2_with_docs, question,
@@ -19,7 +19,7 @@ from tests.data import (
 TARGET_DIR = 'docs/source/http/'
 
 
-class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
+class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
     initial_data = test_tender_data
     initial_bids = test_bids
     docservice = True
@@ -58,6 +58,7 @@ class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
                 {'data': data})
             self.assertEqual(response.status, '201 Created')
 
+
         tender = response.json['data']
         self.tender_id = tender['id']
         owner_token = response.json['access']['token']
@@ -71,6 +72,7 @@ class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
             self.assertEqual(response.status, '200 OK')
 
     def test_docs_tutorial(self):
+
         request_path = '/tenders?opt_pretty=1'
 
         # Exploring basic rules
@@ -103,6 +105,9 @@ class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
 
         tender = response.json['data']
         owner_token = response.json['access']['token']
+        self.tender_id = tender['id']
+
+        self.set_status('active.enquiries')
 
         with open(TARGET_DIR + 'tutorial/blank-tender-view.http', 'w') as self.app.file_obj:
             response = self.app.get('/tenders/{}'.format(tender['id']))
@@ -139,6 +144,8 @@ class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
 
         # Modifying tender
 
+        self.tick()
+
         tenderPeriod_endDate = get_now() + timedelta(days=15, seconds=10)
         with open(TARGET_DIR + 'tutorial/patch-items-value-periods.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
@@ -151,7 +158,6 @@ class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
             self.assertEqual(response.status, '200 OK')
 
         self.app.authorization = ('Basic', ('broker', ''))
-        self.tender_id = tender['id']
 
         # Setting funders
 
@@ -270,6 +276,7 @@ class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
         # Registering bid
 
         self.set_status('active.tendering')
+
         self.app.authorization = ('Basic', ('broker', ''))
         bids_access = {}
         with open(TARGET_DIR + 'tutorial/register-bidder.http', 'w') as self.app.file_obj:
@@ -403,7 +410,10 @@ class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
         self.assertEqual(response.status, '200 OK')
         self.assertEqual(response.json['data']['value']['amount'], 238)
 
+
         #### Setting contract signature date
+
+        self.tick()
 
         with open(TARGET_DIR + 'tutorial/tender-contract-sign-date.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
@@ -816,6 +826,8 @@ class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
         ###################### Tender Award Claims/Complaints ##################
 
         #### Tender Award Claim Submission (with documents)
+
+        self.tick()
 
         with open(TARGET_DIR + 'complaints/award-complaint-submission.http', 'w') as self.app.file_obj:
             response = self.app.post_json(

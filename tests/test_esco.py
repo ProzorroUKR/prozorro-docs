@@ -7,7 +7,7 @@ import openprocurement.api.tests as base_test
 from openprocurement.api.models import get_now
 from openprocurement.tender.esco.tests.base import BaseESCOWebTest
 
-from tests.base import DumpsWebTestApp, MockUUIDWebTestMixin
+from tests.base import DumpsWebTestApp, MockWebTestMixin
 from tests.constants import DOCS_HOST, AUCTIONS_HOST
 from tests.data import (
     complaint, question, subcontracting, qualified,
@@ -74,7 +74,7 @@ TARGET_DIR = 'docs/source/esco/tutorial/'
 TARGET_DIR_MULTIPLE = 'docs/source/esco/multiple_lots_tutorial/'
 
 
-class TenderResourceTest(BaseESCOWebTest, MockUUIDWebTestMixin):
+class TenderResourceTest(BaseESCOWebTest, MockWebTestMixin):
     initial_data = test_tender_data
     docservice = True
 
@@ -473,7 +473,6 @@ class TenderResourceTest(BaseESCOWebTest, MockUUIDWebTestMixin):
             self.assertEqual(response.status, "200 OK")
 
         # active.pre-qualification.stand-still
-
         with open(TARGET_DIR + 'pre-qualification-confirmation.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
                 '/tenders/{}?acc_token={}'.format(self.tender_id, owner_token),
@@ -549,6 +548,8 @@ class TenderResourceTest(BaseESCOWebTest, MockUUIDWebTestMixin):
         self.contract_id = response.json['data'][0]['id']
 
         ####  Set contract value
+
+        self.tick()
 
         tender = self.db.get(self.tender_id)
         for i in tender.get('awards', []):
@@ -986,6 +987,8 @@ class TenderResourceTest(BaseESCOWebTest, MockUUIDWebTestMixin):
                 }})
             self.assertEqual(response.status, "200 OK")
 
+        self.tick()
+
         # active.pre-qualification.stand-still
         response = self.app.patch_json(
             '/tenders/{}?acc_token={}'.format(self.tender_id, owner_token),
@@ -1318,6 +1321,8 @@ class TenderResourceTest(BaseESCOWebTest, MockUUIDWebTestMixin):
                 }})
             self.assertEqual(response.status, "200 OK")
 
+        self.tick()
+
         # active.pre-qualification.stand-still
         response = self.app.patch_json(
             '/tenders/{}?acc_token={}'.format(self.tender_id, owner_token),
@@ -1346,6 +1351,8 @@ class TenderResourceTest(BaseESCOWebTest, MockUUIDWebTestMixin):
                 "eligible": True
             }})
         self.assertEqual(response.status, '200 OK')
+
+        self.tick()
 
         with open(TARGET_DIR + 'award-complaint-submission.http', 'w') as self.app.file_obj:
             response = self.app.post_json(

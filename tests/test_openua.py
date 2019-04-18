@@ -7,7 +7,7 @@ import openprocurement.api.tests as base_test
 from openprocurement.api.models import get_now
 from openprocurement.tender.openua.tests.tender import BaseTenderUAWebTest
 
-from tests.base import DumpsWebTestApp, MockUUIDWebTestMixin
+from tests.base import DumpsWebTestApp, MockWebTestMixin
 from tests.constants import DOCS_HOST, AUCTIONS_HOST
 from tests.data import (
     question, complaint, tender_openua, bid_draft, bid2,
@@ -26,7 +26,7 @@ bid2.update(qualified)
 TARGET_DIR = 'docs/source/openua/http/'
 
 
-class TenderUAResourceTest(BaseTenderUAWebTest, MockUUIDWebTestMixin):
+class TenderUAResourceTest(BaseTenderUAWebTest, MockWebTestMixin):
     initial_data = test_tender_ua_data
     docservice = True
 
@@ -317,7 +317,6 @@ class TenderUAResourceTest(BaseTenderUAWebTest, MockUUIDWebTestMixin):
             self.assertEqual(response.status, '200 OK')
 
         #### Confirming qualification
-        # self.set_status('active.qualification')
         self.app.authorization = ('Basic', ('auction', ''))
         response = self.app.get('/tenders/{}/auction'.format(self.tender_id))
         auction_bids_data = response.json['data']['bids']
@@ -362,6 +361,8 @@ class TenderUAResourceTest(BaseTenderUAWebTest, MockUUIDWebTestMixin):
         self.assertEqual(response.json['data']['value']['amount'], 238)
 
         #### Setting contract signature date
+
+        self.tick()
 
         with open(TARGET_DIR + 'tender-contract-sign-date.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
@@ -753,6 +754,8 @@ class TenderUAResourceTest(BaseTenderUAWebTest, MockUUIDWebTestMixin):
                     self.tender_id, award_id, bid_token),
                 {'data': complaint})
             self.assertEqual(response.status, '201 Created')
+
+        self.tick()
 
         complaint1_token = response.json['access']['token']
         complaint1_id = response.json['data']['id']

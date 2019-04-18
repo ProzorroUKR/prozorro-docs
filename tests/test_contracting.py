@@ -9,7 +9,7 @@ from openprocurement.tender.belowthreshold.tests.base import BaseTenderWebTest
 from openprocurement.contracting.api.tests.base import test_contract_data
 from openprocurement.tender.belowthreshold.tests.base import test_tender_data, test_organization
 
-from tests.base import DumpsWebTestApp, MockUUIDWebTestMixin
+from tests.base import DumpsWebTestApp, MockWebTestMixin
 from tests.constants import DOCS_HOST
 
 test_tender_data['items'].append(deepcopy(test_tender_data['items'][0]))
@@ -17,7 +17,7 @@ test_tender_data['items'].append(deepcopy(test_tender_data['items'][0]))
 TARGET_DIR = 'docs/source/contracting/http/'
 
 
-class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
+class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
     initial_data = test_contract_data
 
     docs_host = DOCS_HOST
@@ -75,6 +75,7 @@ class TenderResourceTest(BaseTenderWebTest, MockUUIDWebTestMixin):
         # after stand slill period
         self.app.authorization = ('Basic', ('chronograph', ''))
         self.set_status('complete', {'status': 'active.awarded'})
+        self.tick()
         # time travel
         tender = self.db.get(tender_id)
         for i in tender.get('awards', []):
