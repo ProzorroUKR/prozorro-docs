@@ -1,6 +1,6 @@
 PATCH /api/2.5/tenders/239ab2b4b65a46f8ac603eebcd77771c/agreements/537065690fe34d19895c085d0e4aabb1?acc_token=4fedc6c367a94e00ac51cd25b92bb6f8 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 138
+Content-Length: 124
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
@@ -8,8 +8,8 @@ DATA:
   "data": {
     "status": "active", 
     "period": {
-      "startDate": "2019-04-18T13:04:10.491709+03:00", 
-      "endDate": "2023-04-17T13:04:10.491709+03:00"
+      "startDate": "2019-01-01T00:10:00+02:00", 
+      "endDate": "2022-12-31T00:10:00+02:00"
     }
   }
 }
@@ -259,8 +259,8 @@ Content-Type: application/json; charset=UTF-8
       }
     ], 
     "period": {
-      "startDate": "2019-04-18T13:04:10.491709+03:00", 
-      "endDate": "2023-04-17T13:04:10.491709+03:00"
+      "startDate": "2019-01-01T00:10:00+02:00", 
+      "endDate": "2022-12-31T00:10:00+02:00"
     }, 
     "dateSigned": "2019-01-01T00:10:00+02:00", 
     "date": "2019-01-01T00:10:00+02:00", 
