@@ -11,6 +11,7 @@ from openprocurement.tender.belowthreshold.tests.base import test_tender_data, t
 from tests.base.test import DumpsWebTestApp, MockWebTestMixin
 from tests.base.constants import DOCS_HOST
 
+test_tender_data = deepcopy(test_tender_data)
 test_tender_data['items'].append(deepcopy(test_tender_data['items'][0]))
 
 TARGET_DIR = 'docs/source/contracting/http/'
