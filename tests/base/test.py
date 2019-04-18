@@ -1,15 +1,18 @@
 import json
+import mimetypes
 import traceback
 from datetime import timedelta
 
 import mock
 from freezegun import freeze_time
 from openprocurement.api.utils import get_now
+from six import text_type
 
 from uuid import UUID
 from hashlib import md5
-from webtest import TestApp, TestRequest
+from webtest import TestApp, TestRequest, forms
 from openprocurement.api.constants import VERSION
+from webtest.compat import to_bytes
 
 from tests.base.constants import API_HOST, MOCK_DATETIME
 
@@ -27,7 +30,6 @@ class DumpsWebTestApp(TestApp):
     hostname = API_HOST
     indent = 2
     ensure_ascii = False
-    encode = 'utf8'
 
     def do_request(self, req, status=None, expect_errors=None):
         req.headers.environ["HTTP_HOST"] = self.hostname
@@ -44,12 +46,12 @@ class DumpsWebTestApp(TestApp):
                 try:
                     obj = json.loads(req.body)
                 except ValueError:
-                    pass
+                    self.file_obj.write('DATA:\n' + req.body)
                 else:
                     self.file_obj.write('DATA:\n' + json.dumps(
                         obj, indent=self.indent, ensure_ascii=self.ensure_ascii
-                    ).encode(self.encode))
-                    self.file_obj.write("\n")
+                    ).encode('utf8'))
+                self.file_obj.write("\n")
             self.file_obj.write("\n")
 
     def write_response(self, resp):
@@ -72,9 +74,75 @@ class DumpsWebTestApp(TestApp):
                 else:
                     self.file_obj.write(json.dumps(
                         obj, indent=self.indent, ensure_ascii=self.ensure_ascii
-                    ).encode(self.encode))
+                    ).encode('utf8'))
                     self.file_obj.write("\n")
             self.file_obj.write("\n")
+
+
+    def encode_multipart(self, params, files):
+        """
+        Encodes a set of parameters (typically a name/value list) and
+        a set of files (a list of (name, filename, file_body, mimetype)) into a
+        typical POST body, returning the (content_type, body).
+
+        """
+        boundary = 'BOUNDARY'
+        lines = []
+
+        def _append_file(file_info):
+            key, filename, value, fcontent = self._get_file_info(file_info)
+            if isinstance(key, text_type):
+                try:
+                    key = key.encode('ascii')
+                except:  # pragma: no cover
+                    raise  # file name must be ascii
+            if isinstance(filename, text_type):
+                try:
+                    filename = filename.encode('utf8')
+                except:  # pragma: no cover
+                    raise  # file name must be ascii or utf8
+            if not fcontent:
+                fcontent = mimetypes.guess_type(filename.decode('utf8'))[0]
+            fcontent = to_bytes(fcontent)
+            fcontent = fcontent or b'application/octet-stream'
+            lines.extend([
+                b'--' + boundary,
+                b'Content-Disposition: form-data; ' +
+                b'name="' + key + b'"; filename="' + filename + b'"',
+                b'Content-Type: ' + fcontent, b'', value])
+
+        for key, value in params:
+            if isinstance(key, text_type):
+                try:
+                    key = key.encode('ascii')
+                except:  # pragma: no cover
+                    raise  # field name are always ascii
+            if isinstance(value, forms.File):
+                if value.value:
+                    _append_file([key] + list(value.value))
+            elif isinstance(value, forms.Upload):
+                file_info = [key, value.filename]
+                if value.content is not None:
+                    file_info.append(value.content)
+                    if value.content_type is not None:
+                        file_info.append(value.content_type)
+                _append_file(file_info)
+            else:
+                if isinstance(value, text_type):
+                    value = value.encode('utf8')
+                lines.extend([
+                    b'--' + boundary,
+                    b'Content-Disposition: form-data; name="' + key + b'"',
+                    b'', value])
+
+        for file_info in files:
+            _append_file(file_info)
+
+        lines.extend([b'--' + boundary + b'--', b''])
+        body = b'\r\n'.join(lines)
+        boundary = boundary.decode('ascii')
+        content_type = 'multipart/form-data; boundary=%s' % boundary
+        return content_type, body
 
 
 class MockWebTestMixin(object):
