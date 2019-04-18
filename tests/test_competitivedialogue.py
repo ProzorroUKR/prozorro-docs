@@ -108,6 +108,8 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):
 
         #### Creating tender
 
+        test_tender_data_stage1["tenderPeriod"] = {"endDate": (get_now() + timedelta(days=31)).isoformat()}
+
         # Create tender
         with open(TARGET_DIR + 'tender-post-attempt-json-data.http', 'w') as self.app.file_obj:
             response = self.app.post_json(
@@ -1145,6 +1147,8 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):
                 {'data': complaint})
             self.assertEqual(response.status, '201 Created')
 
+        self.tick()
+
         complaint1_token = response.json['access']['token']
         complaint1_id = response.json['data']['id']
 
@@ -1398,7 +1402,11 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):
             response = self.app.patch_json(
                 '/tenders/{}/qualifications/{}?acc_token={}'.format(
                     self.tender_id, qualification['id'], owner_token),
-                {'data': {'status': 'active', 'qualified': True, 'eligible': True}})
+                {'data': {
+                    'status': 'active',
+                    'qualified': True,
+                    'eligible': True
+                }})
             self.assertEqual(response.status, '200 OK')
 
         self.tick()
@@ -1418,6 +1426,8 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):
                     self.tender_id, qualification_id, bid_token),
                 {'data': complaint})
             self.assertEqual(response.status, '201 Created')
+
+        self.tick()
 
         complaint1_token = response.json['access']['token']
         complaint1_id = response.json['data']['id']
@@ -1943,6 +1953,8 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):
                 }})
         self.assertEqual(response.status, '200 OK')
 
+        self.tick()
+
         # active.pre-qualification.stand-still
         response = self.app.patch_json(
             '/tenders/{}?acc_token={}'.format(self.tender_id, owner_token),
@@ -1967,7 +1979,11 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):
         award_id = [i['id'] for i in response.json['data'] if i['status'] == 'pending'][0]
         self.app.patch_json(
             '/tenders/{}/awards/{}?acc_token={}'.format(self.tender_id, award_id, owner_token),
-            {'data': {'status': 'active', 'qualified': True, 'eligible': True}})
+            {'data': {
+                'status': 'active',
+                'qualified': True,
+                'eligible': True
+            }})
         self.assertEqual(response.status, '200 OK')
 
         with open(TARGET_DIR + 'award-complaint-submission.http', 'w') as self.app.file_obj:
@@ -2160,7 +2176,7 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):
         self.assertEqual(response.status, '200 OK')
 
 
-class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest):
+class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest, MockWebTestMixin):
     docservice = True
     initial_data = test_tender_data_stage1
 
@@ -2169,15 +2185,16 @@ class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest):
 
     def setUp(self):
         self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(__file__))
-        self.app.authorization = ('Basic', ('broker', ''))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
+        self.setUpMock()
         if self.docservice:
             self.setUpDS()
             self.app.app.registry.docservice_url = 'http://{}'.format(self.docs_host)
 
     def tearDown(self):
         self.couchdb_server.delete(self.db.name)
+        self.tearDownMock()
 
     def generate_docservice_url(self):
         url = super(TenderResourceTestStage2UA, self).generate_docservice_url()
@@ -2190,6 +2207,7 @@ class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest):
 
         self.app.authorization = ('Basic', ('competitive_dialogue', ''))
 
+        test_tender_data_stage2UA["tenderPeriod"] = {"endDate": (get_now() + timedelta(days=31)).isoformat()}
         test_tender_data_stage2UA['dialogue_token'] = sha512("super_secret_token").hexdigest()
         response = self.app.post_json(
             '/tenders?opt_pretty=1',
@@ -2411,6 +2429,8 @@ class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest):
             {'data': patch_data})
         self.assertEqual(response.status, '200 OK')
 
+        self.tick()
+
         self.app.authorization = ('Basic', ('broker', ''))
 
         with open(TARGET_DIR + 'stage2/UA/auction-url.http', 'w') as self.app.file_obj:
@@ -2426,6 +2446,10 @@ class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest):
             response = self.app.get(
                 '/tenders/{}/bids/{}?acc_token={}'.format(self.tender_id, bid2_id, bids_access[bid2_id]))
             self.assertEqual(response.status, '200 OK')
+
+        response = self.app.get('/tenders/{}'.format(self.tender_id))
+        from pprint import pprint
+        pprint(response.json)
 
         #### Confirming qualification
         self.app.authorization = ('Basic', ('auction', ''))
@@ -2466,6 +2490,8 @@ class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest):
         self.assertEqual(response.json['data']['value']['amount'], 238)
 
         #### Setting contract signature date
+
+        self.tick()
 
         with open(TARGET_DIR + 'stage2/UA/tender-contract-sign-date.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
