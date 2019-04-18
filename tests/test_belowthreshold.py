@@ -50,6 +50,12 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
 
         # Creating tender in draft status
 
+        for item in test_tender_data['items']:
+            item['deliveryDate'] = {
+                "startDate": (get_now() + timedelta(days=2)).isoformat(),
+                "endDate": (get_now() + timedelta(days=5)).isoformat()
+            }
+
         data = test_tender_data.copy()
         data['status'] = 'draft'
 
@@ -97,6 +103,12 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
             self.assertEqual(response.status, '422 Unprocessable Entity')
 
         # Creating tender
+
+        for item in test_tender_data['items']:
+            item['deliveryDate'] = {
+                "startDate": (get_now() + timedelta(days=2)).isoformat(),
+                "endDate": (get_now() + timedelta(days=5)).isoformat()
+            }
 
         with open(TARGET_DIR + 'tutorial/tender-post-attempt-json-data.http', 'w') as self.app.file_obj:
             response = self.app.post_json(
@@ -560,6 +572,12 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
 
         #### Claim Submission (with documents)
 
+        for item in test_tender_data['items']:
+            item['deliveryDate'] = {
+                "startDate": (get_now() + timedelta(days=2)).isoformat(),
+                "endDate": (get_now() + timedelta(days=5)).isoformat()
+            }
+
         self.create_tender()
 
         with open(TARGET_DIR + 'complaints/complaint-submission.http', 'w') as self.app.file_obj:
@@ -1010,6 +1028,12 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
 
     def test_docs_milestones(self):
         self.app.authorization = ('Basic', ('broker', ''))
+
+        for item in test_tender_data['items']:
+            item['deliveryDate'] = {
+                "startDate": (get_now() + timedelta(days=2)).isoformat(),
+                "endDate": (get_now() + timedelta(days=5)).isoformat()
+            }
 
         data = dict(**test_tender_data)
         data["milestones"] = [

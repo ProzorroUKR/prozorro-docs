@@ -25,7 +25,6 @@ test_agreement = deepcopy(test_agreement)
 test_lots = deepcopy(lots)
 test_tender_maximum_data = deepcopy(tender_cfaselectionua_maximum)
 
-
 TARGET_DIR = 'docs/source/cfaselectionua/tutorial/'
 
 
@@ -93,6 +92,10 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
         test_tender_data['lots'] = [lot]
         for item in test_tender_data['items']:
             item['relatedLot'] = lot['id']
+            item['deliveryDate'] = {
+                "startDate": (get_now() + timedelta(days=2)).isoformat(),
+                "endDate": (get_now() + timedelta(days=5)).isoformat()
+            }
 
         with open(TARGET_DIR + 'tender-post-attempt-json-data.http', 'w') as self.app.file_obj:
             response = self.app.post_json(

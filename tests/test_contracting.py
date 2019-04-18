@@ -38,6 +38,11 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
         self.assertEqual(response.json['data'], [])
         # create tender
         test_tender_data['items'].append(deepcopy(test_tender_data['items'][0]))
+        for item in test_tender_data['items']:
+            item['deliveryDate'] = {
+                "startDate": (get_now() + timedelta(days=2)).isoformat(),
+                "endDate": (get_now() + timedelta(days=5)).isoformat()
+            }
         response = self.app.post_json('/tenders', {"data": test_tender_data})
         tender_id = self.tender_id = response.json['data']['id']
         owner_token = response.json['access']['token']
