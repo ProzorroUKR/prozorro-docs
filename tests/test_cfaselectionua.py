@@ -109,8 +109,8 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
 
         test_tender_maximum_data.update(agreements)
         test_tender_maximum_data['lots'] = [lot]
-        for item in test_tender_maximum_data['items']:
-            item['relatedLot'] = lot['id']
+        test_tender_maximum_data['items'][0]['id'] = uuid4().hex
+        test_tender_maximum_data['items'][0]['relatedLot'] = lot['id']
 
         with open(TARGET_DIR + 'create-tender-procuringEntity.http', 'w') as self.app.file_obj:
             response = self.app.post_json(

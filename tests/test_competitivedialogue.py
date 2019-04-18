@@ -48,7 +48,6 @@ bid2_with_docs.update(qualified)
 bid4_with_docs.update(qualified)
 
 del bid['value']
-test_tender_data_stage1["tenderPeriod"] = {"endDate": (get_now() + timedelta(days=31)).isoformat()}
 bid_with_bad_participant['tenderers'] = [bad_participant]
 test_lots[0]['value'] = test_tender_data_stage1['value']
 test_lots[0]['minimalStep'] = test_tender_data_stage1['minimalStep']
@@ -1054,6 +1053,8 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):
 
         #### Creating tender
 
+        test_tender_data_stage1["tenderPeriod"] = {"endDate": (get_now() + timedelta(days=31)).isoformat()}
+
         # Create tender
         response = self.app.post_json(
             '/tenders?opt_pretty=1',
@@ -1126,6 +1127,8 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):
 
     def test_complaints(self):
         self.app.authorization = ('Basic', ('broker', ''))
+
+        test_tender_data_stage1["tenderPeriod"] = {"endDate": (get_now() + timedelta(days=31)).isoformat()}
 
         response = self.app.post_json(
             '/tenders?opt_pretty=1',
@@ -1344,6 +1347,8 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):
 
     def test_qualification_complaints(self):
         self.app.authorization = ('Basic', ('broker', ''))
+
+        test_tender_data_stage1["tenderPeriod"] = {"endDate": (get_now() + timedelta(days=31)).isoformat()}
 
         response = self.app.post_json(
             '/tenders?opt_pretty=1',
@@ -1580,6 +1585,9 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):
             self.app.file_obj.write("\n")
 
         #### Creating tender
+
+        test_tender_data_stage1["tenderPeriod"] = {"endDate": (get_now() + timedelta(days=31)).isoformat()}
+
         self.app.authorization = ('Basic', ('broker', ''))
         with open(TARGET_DIR_MULTIPLE + 'tender-post-attempt-json-data.http', 'w') as self.app.file_obj:
             response = self.app.post_json(

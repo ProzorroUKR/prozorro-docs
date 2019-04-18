@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 import os
 from copy import deepcopy
+from uuid import uuid4
+
 from datetime import timedelta
 
 from openprocurement.api.models import get_now
@@ -115,6 +117,11 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
         with open(TARGET_DIR + 'tutorial/initial-tender-listing.http', 'w') as self.app.file_obj:
             response = self.app.get('/tenders')
             self.assertEqual(response.status, '200 OK')
+
+        tender_below_maximum['items'][0]['id'] = uuid4().hex
+        for feature in tender_below_maximum['features']:
+            if feature['featureOf'] == 'item':
+                feature['relatedItem'] = tender_below_maximum['items'][0]['id']
 
         with open(TARGET_DIR + 'tutorial/create-tender-procuringEntity.http', 'w') as self.app.file_obj:
             response = self.app.post_json(
