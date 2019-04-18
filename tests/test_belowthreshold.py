@@ -17,6 +17,8 @@ from tests.base.data import (
     tender_below_maximum, funder, complaint,
 )
 
+test_tender_data = deepcopy(test_tender_data)
+
 TARGET_DIR = 'docs/source/http/'
 
 
@@ -56,6 +58,11 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
                 "endDate": (get_now() + timedelta(days=5)).isoformat()
             }
 
+        test_tender_data.update({
+            "enquiryPeriod": {"endDate": (get_now() + timedelta(days=7)).isoformat()},
+            "tenderPeriod": {"endDate": (get_now() + timedelta(days=14)).isoformat()}
+        })
+
         data = test_tender_data.copy()
         data['status'] = 'draft'
 
@@ -64,7 +71,6 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
                 '/tenders?opt_pretty=1',
                 {'data': data})
             self.assertEqual(response.status, '201 Created')
-
 
         tender = response.json['data']
         self.tender_id = tender['id']
@@ -109,6 +115,11 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
                 "startDate": (get_now() + timedelta(days=2)).isoformat(),
                 "endDate": (get_now() + timedelta(days=5)).isoformat()
             }
+
+        test_tender_data.update({
+            "enquiryPeriod": {"endDate": (get_now() + timedelta(days=7)).isoformat()},
+            "tenderPeriod": {"endDate": (get_now() + timedelta(days=14)).isoformat()}
+        })
 
         with open(TARGET_DIR + 'tutorial/tender-post-attempt-json-data.http', 'w') as self.app.file_obj:
             response = self.app.post_json(
@@ -1034,6 +1045,11 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
                 "startDate": (get_now() + timedelta(days=2)).isoformat(),
                 "endDate": (get_now() + timedelta(days=5)).isoformat()
             }
+
+        test_tender_data.update({
+            "enquiryPeriod": {"endDate": (get_now() + timedelta(days=7)).isoformat()},
+            "tenderPeriod": {"endDate": (get_now() + timedelta(days=14)).isoformat()}
+        })
 
         data = dict(**test_tender_data)
         data["milestones"] = [
