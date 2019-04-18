@@ -1,13 +1,13 @@
 POST /api/2.5/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 2618
+Content-Length: 2597
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
     "tenderPeriod": {
-      "endDate": "2019-05-04T11:23:35.862986+03:00"
+      "endDate": "2019-01-17T00:00:00+02:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -37,8 +37,8 @@ DATA:
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-05-08T11:23:35.862731+03:00", 
-          "endDate": "2019-06-07T11:23:35.862753+03:00"
+          "startDate": "2019-01-21T00:00:00+02:00", 
+          "endDate": "2019-02-20T00:00:00+02:00"
         }, 
         "quantity": 1
       }
@@ -85,7 +85,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/b4c19583ccf64dfe
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
       "startDate": "2019-01-01T00:10:00+02:00", 
-      "endDate": "2019-05-04T11:23:35.862986+03:00"
+      "endDate": "2019-01-17T00:00:00+02:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -95,12 +95,12 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/b4c19583ccf64dfe
     }, 
     "enquiryPeriod": {
       "startDate": "2019-01-01T00:10:00+02:00", 
-      "clarificationsUntil": "2019-05-03T00:00:00+03:00", 
-      "endDate": "2019-04-26T00:00:00+03:00"
+      "clarificationsUntil": "2019-01-16T00:00:00+02:00", 
+      "endDate": "2019-01-14T00:00:00+02:00"
     }, 
     "complaintPeriod": {
       "startDate": "2019-01-01T00:10:00+02:00", 
-      "endDate": "2019-05-02T00:00:00+03:00"
+      "endDate": "2019-01-15T00:00:00+02:00"
     }, 
     "procurementMethodType": "aboveThresholdUA.defense", 
     "value": {
@@ -110,7 +110,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/b4c19583ccf64dfe
     }, 
     "submissionMethod": "electronicAuction", 
     "date": "2019-01-01T00:10:00+02:00", 
-    "next_check": "2019-05-04T11:23:35.862986+03:00", 
+    "next_check": "2019-01-17T00:00:00+02:00", 
     "procuringEntity": {
       "contactPoint": {
         "url": "http://sch10.edu.vn.ua/", 
@@ -133,7 +133,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/b4c19583ccf64dfe
       "name": "ЗОСШ #10 м.Вінниці"
     }, 
     "auctionPeriod": {
-      "shouldStartAfter": "2019-05-05T00:00:00+03:00"
+      "shouldStartAfter": "2019-01-17T00:00:00+02:00"
     }, 
     "owner": "broker", 
     "dateModified": "2019-01-01T00:10:00+02:00", 
@@ -160,8 +160,8 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/b4c19583ccf64dfe
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-05-08T11:23:35.862731+03:00", 
-          "endDate": "2019-06-07T11:23:35.862753+03:00"
+          "startDate": "2019-01-21T00:00:00+02:00", 
+          "endDate": "2019-02-20T00:00:00+02:00"
         }, 
         "id": "7fe0d77602334a838b19bdb8979d9f4b", 
         "quantity": 1.0

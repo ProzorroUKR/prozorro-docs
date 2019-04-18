@@ -1,13 +1,13 @@
 POST /api/2.5/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 3792
+Content-Length: 3757
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
     "tenderPeriod": {
-      "endDate": "2019-05-19T11:23:35.862973+03:00"
+      "endDate": "2019-02-01T00:00:00+02:00"
     }, 
     "fundingKind": "other", 
     "title": "Послуги шкільних їдалень", 
@@ -64,8 +64,8 @@ DATA:
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-05-08T11:23:35.862469+03:00", 
-          "endDate": "2019-06-07T11:23:35.862525+03:00"
+          "startDate": "2019-01-21T00:00:00+02:00", 
+          "endDate": "2019-02-20T00:00:00+02:00"
         }, 
         "unit": {
           "code": "44617100-9", 
@@ -96,8 +96,8 @@ DATA:
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-05-08T11:23:35.862539+03:00", 
-          "endDate": "2019-06-07T11:23:35.862547+03:00"
+          "startDate": "2019-01-21T00:00:00+02:00", 
+          "endDate": "2019-02-20T00:00:00+02:00"
         }, 
         "unit": {
           "code": "44617100-9", 
@@ -121,15 +121,15 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/19e26a9aabb84578
     "procurementMethod": "open", 
     "complaintPeriod": {
       "startDate": "2019-01-01T00:00:00+02:00", 
-      "endDate": "2019-05-15T00:00:00+03:00"
+      "endDate": "2019-01-28T00:00:00+02:00"
     }, 
     "enquiryPeriod": {
       "startDate": "2019-01-01T00:00:00+02:00", 
-      "clarificationsUntil": "2019-05-15T00:00:00+03:00", 
-      "endDate": "2019-05-09T11:23:35.862973+03:00"
+      "clarificationsUntil": "2019-01-25T00:00:00+02:00", 
+      "endDate": "2019-01-22T00:00:00+02:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "next_check": "2019-05-19T11:23:35.862973+03:00", 
+    "next_check": "2019-02-01T00:00:00+02:00", 
     "procuringEntity": {
       "kind": "general", 
       "name": "ЗОСШ #10 м.Вінниці", 
@@ -166,10 +166,10 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/19e26a9aabb84578
     "status": "active.tendering", 
     "tenderPeriod": {
       "startDate": "2019-01-01T00:00:00+02:00", 
-      "endDate": "2019-05-19T11:23:35.862973+03:00"
+      "endDate": "2019-02-01T00:00:00+02:00"
     }, 
     "auctionPeriod": {
-      "shouldStartAfter": "2019-06-24T00:00:00+03:00"
+      "shouldStartAfter": "2019-03-08T00:00:00+02:00"
     }, 
     "procurementMethodType": "esco", 
     "date": "2019-01-01T00:00:00+02:00", 
