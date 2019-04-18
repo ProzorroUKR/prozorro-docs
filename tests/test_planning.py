@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 import os
+from copy import deepcopy
+from datetime import timedelta
 
+from openprocurement.api.utils import get_now
 from openprocurement.planning.api.tests.base import BasePlanWebTest
 from openprocurement.planning.api.tests.base import test_plan_data
 
@@ -8,6 +11,8 @@ from tests.base.test import DumpsWebTestApp, MockWebTestMixin
 from tests.base.constants import DOCS_HOST
 
 TARGET_DIR = 'docs/source/planning/tutorial/'
+
+test_plan_data = deepcopy(test_plan_data)
 
 
 class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
@@ -40,6 +45,16 @@ class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
         self.assertEqual(response.json['data'], [])
 
         # create plan
+        test_plan_data['items'][0].update({
+            "deliveryDate": {"endDate": (get_now() + timedelta(days=15)).isoformat()}
+        })
+        test_plan_data['items'][1].update({
+            "deliveryDate": {"endDate": (get_now() + timedelta(days=16)).isoformat()}
+        })
+        test_plan_data['items'][2].update({
+            "deliveryDate": {"endDate": (get_now() + timedelta(days=17)).isoformat()}
+        })
+
         with open(TARGET_DIR + 'create-plan.http', 'w') as self.app.file_obj:
             response = self.app.post_json(
                 '/plans?opt_pretty=1',

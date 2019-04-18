@@ -2207,7 +2207,6 @@ class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest, MockWebTe
 
         self.app.authorization = ('Basic', ('competitive_dialogue', ''))
 
-        test_tender_data_stage2UA["tenderPeriod"] = {"endDate": (get_now() + timedelta(days=31)).isoformat()}
         test_tender_data_stage2UA['dialogue_token'] = sha512("super_secret_token").hexdigest()
         response = self.app.post_json(
             '/tenders?opt_pretty=1',
