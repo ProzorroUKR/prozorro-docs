@@ -1,8 +1,8 @@
-PATCH /api/2.5/tenders/0143113c11134157922d7f6d23052266/complaints/5c4ce46fa41b4c93bfad05fe351297ea HTTP/1.0
+PATCH /api/2.5/tenders/8609b26009dd4da1bda83e43dbfed3f2/complaints/97cb6f93b5814b7a94249335cf0561a5 HTTP/1.0
 Authorization: Basic cmV2aWV3ZXI6
 Content-Length: 31
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -15,15 +15,15 @@ Content-Type: application/json; charset=UTF-8
 {
   "data": {
     "status": "invalid", 
-    "dateDecision": "2019-03-28T06:49:50.652011+02:00", 
+    "dateDecision": "2019-01-01T00:00:00+02:00", 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
     "title": "Недостатньо інформації", 
     "resolutionType": "invalid", 
     "type": "complaint", 
     "acceptance": false, 
     "satisfied": false, 
-    "dateEscalated": "2019-03-28T06:49:50.454466+02:00", 
-    "dateAnswered": "2019-03-28T06:49:50.345297+02:00", 
+    "dateEscalated": "2019-01-01T00:00:00+02:00", 
+    "dateAnswered": "2019-01-01T00:00:00+02:00", 
     "author": {
       "contactPoint": {
         "email": "soleksuk@gmail.com", 
@@ -32,9 +32,8 @@ Content-Type: application/json; charset=UTF-8
       }, 
       "identifier": {
         "scheme": "UA-EDR", 
-        "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
-        "id": "13313462", 
-        "uri": "http://sch10.edu.vn.ua/"
+        "id": "00137256", 
+        "uri": "http://www.sc.gov.ua/"
       }, 
       "name": "ДКП «Школяр»", 
       "address": {
@@ -45,11 +44,11 @@ Content-Type: application/json; charset=UTF-8
         "locality": "м. Вінниця"
       }
     }, 
-    "dateSubmitted": "2019-03-28T06:49:50.167175+02:00", 
-    "complaintID": "UA-2019-03-28-000001.4", 
-    "date": "2019-03-28T06:49:50.656777+02:00", 
+    "dateSubmitted": "2019-01-01T00:00:00+02:00", 
+    "complaintID": "UA-2019-01-01-000001.4", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "resolution": "Вимога не відповідає предмету закупівлі", 
-    "id": "5c4ce46fa41b4c93bfad05fe351297ea"
+    "id": "97cb6f93b5814b7a94249335cf0561a5"
   }
 }
 

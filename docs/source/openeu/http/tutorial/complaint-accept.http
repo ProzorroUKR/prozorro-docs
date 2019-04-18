@@ -1,8 +1,8 @@
-PATCH /api/2.5/tenders/0143113c11134157922d7f6d23052266/complaints/83a963eddee14e2a81b8c494f0a86d60 HTTP/1.0
+PATCH /api/2.5/tenders/8609b26009dd4da1bda83e43dbfed3f2/complaints/d1f739c4e90949269b64f72d5c389980 HTTP/1.0
 Authorization: Basic cmV2aWV3ZXI6
 Content-Length: 32
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -21,44 +21,43 @@ Content-Type: application/json; charset=UTF-8
         "author": "complaint_owner", 
         "language": "uk", 
         "title": "Complaint_Attachement.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/957c2f3805354efb97a97639ed0bf06d?KeyID=58210c7a&Signature=SMsZAWPJAMp8n2ZjoslnF%252Bgxa0KyiCEDScSp0exM8p9rkt%2FeckGZJ8BPlxX%252BQGl9SNzK1JaPBmImMNQ0RBMzAg%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/740ffc4e3561421dad9de4e1f4554e95?KeyID=a8968c46&Signature=hsOn%252BUi7TY5XImEDZtd6%2FyJHLrXXKPt8wH5Q%252B%2FJF8a3tJ3pfES%2FZNdH7whrUJD8IDh3mMsj0gL8cvucQXiaIBA%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:49:49.953925+02:00", 
-        "id": "99619ed59e474fc498d4c11f77101b24", 
-        "dateModified": "2019-03-28T06:49:49.953944+02:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "33e95631f1194a86a997a6c6c199b6d7", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }
     ], 
-    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+    "description": "Просимо додати таблицю потрібної калорійності харчування", 
     "author": {
       "contactPoint": {
-        "email": "soleksuk@gmail.com", 
-        "telephone": "+380 (432) 21-69-30", 
-        "name": "Сергій Олексюк"
+        "email": "aagt@gmail.com", 
+        "telephone": "+380 (322) 91-69-30", 
+        "name": "Андрій Олексюк"
       }, 
       "identifier": {
         "scheme": "UA-EDR", 
-        "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
-        "id": "13313462", 
-        "uri": "http://sch10.edu.vn.ua/"
+        "id": "00137226", 
+        "uri": "http://www.sc.gov.ua/"
       }, 
-      "name": "ДКП «Школяр»", 
+      "name": "ДКП «Книга»", 
       "address": {
-        "postalCode": "21100", 
+        "postalCode": "79013", 
         "countryName": "Україна", 
-        "streetAddress": "вул. Островського, 33", 
-        "region": "м. Вінниця", 
-        "locality": "м. Вінниця"
+        "streetAddress": "вул. Островського, 34", 
+        "region": "м. Львів", 
+        "locality": "м. Львів"
       }
     }, 
     "acceptance": true, 
-    "dateAccepted": "2019-03-28T06:49:50.720069+02:00", 
-    "dateSubmitted": "2019-03-28T06:49:50.237244+02:00", 
-    "complaintID": "UA-2019-03-28-000001.1", 
-    "date": "2019-03-28T06:49:50.730950+02:00", 
-    "title": "Недостатньо інформації", 
+    "dateAccepted": "2019-01-01T00:00:00+02:00", 
+    "dateSubmitted": "2019-01-01T00:00:00+02:00", 
+    "complaintID": "UA-2019-01-01-000001.1", 
+    "date": "2019-01-01T00:00:00+02:00", 
+    "title": "Калорійність", 
     "type": "complaint", 
-    "id": "83a963eddee14e2a81b8c494f0a86d60"
+    "id": "d1f739c4e90949269b64f72d5c389980"
   }
 }
 
