@@ -1,13 +1,13 @@
 POST /api/2.5/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 3444
+Content-Length: 2359
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
     "tenderPeriod": {
-      "endDate": "2019-05-02T09:19:44.243458"
+      "endDate": "2019-05-02T09:34:10.468011"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -15,7 +15,7 @@ DATA:
       "amount": 35
     }, 
     "enquiryPeriod": {
-      "endDate": "2019-04-25T09:19:44.243458"
+      "endDate": "2019-04-25T09:34:10.468011"
     }, 
     "procurementMethodType": "belowThreshold", 
     "value": {
@@ -65,39 +65,8 @@ DATA:
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-20T09:19:44.243458", 
-          "endDate": "2019-04-23T09:19:44.243458"
-        }, 
-        "unit": {
-          "code": "44617100-9", 
-          "name": "item"
-        }, 
-        "quantity": 5
-      }, 
-      {
-        "description": "футляри до державних нагород", 
-        "classification": {
-          "scheme": "ДК021", 
-          "id": "44617100-9", 
-          "description": "Cartons"
-        }, 
-        "additionalClassifications": [
-          {
-            "scheme": "ДКПП", 
-            "id": "17.21.1", 
-            "description": "папір і картон гофровані, паперова й картонна тара"
-          }
-        ], 
-        "deliveryAddress": {
-          "countryName": "Україна", 
-          "postalCode": "79000", 
-          "region": "м. Київ", 
-          "streetAddress": "вул. Банкова 1", 
-          "locality": "м. Київ"
-        }, 
-        "deliveryDate": {
-          "startDate": "2019-04-20T09:19:44.243458", 
-          "endDate": "2019-04-23T09:19:44.243458"
+          "startDate": "2019-04-20T09:34:10.468011", 
+          "endDate": "2019-04-23T09:34:10.468011"
         }, 
         "unit": {
           "code": "44617100-9", 
@@ -121,8 +90,8 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e370d1ede4574bb8
     "status": "active.enquiries", 
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
-      "startDate": "2019-04-25T09:19:44.243458+03:00", 
-      "endDate": "2019-05-02T09:19:44.243458+03:00"
+      "startDate": "2019-04-25T09:34:10.468011+03:00", 
+      "endDate": "2019-05-02T09:34:10.468011+03:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -153,42 +122,10 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e370d1ede4574bb8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-20T09:19:44.243458+03:00", 
-          "endDate": "2019-04-23T09:19:44.243458+03:00"
+          "startDate": "2019-04-20T09:34:10.468011+03:00", 
+          "endDate": "2019-04-23T09:34:10.468011+03:00"
         }, 
         "id": "e76ed323129749cc8038459e7ba9ee5b", 
-        "unit": {
-          "code": "44617100-9", 
-          "name": "item"
-        }, 
-        "quantity": 5.0
-      }, 
-      {
-        "description": "футляри до державних нагород", 
-        "classification": {
-          "scheme": "ДК021", 
-          "description": "Cartons", 
-          "id": "44617100-9"
-        }, 
-        "additionalClassifications": [
-          {
-            "scheme": "ДКПП", 
-            "id": "17.21.1", 
-            "description": "папір і картон гофровані, паперова й картонна тара"
-          }
-        ], 
-        "deliveryAddress": {
-          "postalCode": "79000", 
-          "countryName": "Україна", 
-          "streetAddress": "вул. Банкова 1", 
-          "region": "м. Київ", 
-          "locality": "м. Київ"
-        }, 
-        "deliveryDate": {
-          "startDate": "2019-04-20T09:19:44.243458+03:00", 
-          "endDate": "2019-04-23T09:19:44.243458+03:00"
-        }, 
-        "id": "ec9daba7e28a4fbcba0b4a634afb3cf9", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -204,7 +141,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e370d1ede4574bb8
     }, 
     "submissionMethod": "electronicAuction", 
     "date": "2019-01-01T00:00:00+02:00", 
-    "next_check": "2019-04-25T09:19:44.243458+03:00", 
+    "next_check": "2019-04-25T09:34:10.468011+03:00", 
     "procuringEntity": {
       "contactPoint": {
         "name": "Державне управління справами", 
@@ -227,7 +164,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e370d1ede4574bb8
     }, 
     "enquiryPeriod": {
       "startDate": "2019-01-01T00:00:00+02:00", 
-      "endDate": "2019-04-25T09:19:44.243458+03:00"
+      "endDate": "2019-04-25T09:34:10.468011+03:00"
     }, 
     "owner": "broker", 
     "dateModified": "2019-01-01T00:00:00+02:00", 
