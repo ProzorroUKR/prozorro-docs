@@ -18,32 +18,19 @@ from tests.base.data import (
     bid_document, bid_document2
 )
 
-second_item = deepcopy(test_tender_data['items'][0])
-second_item['unit']['code'] = '44617100-8'
-
-test_tender_data = deepcopy(test_tender_data)
-test_tender_data['items'] = [test_tender_data['items'][0], second_item]
-
 bid = deepcopy(lot_bid)
+bid2 = deepcopy(lot_bid2)
+bid3 = deepcopy(lot_bid3_with_docs)
+bid_document = deepcopy(bid_document)
+bid_document2 = deepcopy(bid_document2)
+test_tender_data = deepcopy(test_tender_data)
+test_lots = deepcopy(lots)
+
 bid.update(subcontracting)
 bid.update(qualified)
-
-bid2 = deepcopy(lot_bid2)
 bid2.update(qualified)
-
-bid_document2_conf = deepcopy(bid_document2)
-bid_document2_conf.update({
-    'confidentiality': 'buyerOnly',
-    'confidentialityRationale': 'Only our company sells badgers with pink hair.'
-})
-
-bid3 = deepcopy(lot_bid3_with_docs)
-bid3["documents"] = [bid_document, bid_document2_conf]
 bid3.update(qualified)
 
-test_lots = deepcopy(lots)
-test_lots[0]['value'] = test_tender_data['value']
-test_lots[0]['minimalStep'] = test_tender_data['minimalStep']
 
 TARGET_DIR = 'docs/source/cfaua/tutorial/'
 
@@ -96,6 +83,11 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
 
         lot = deepcopy(test_lots[0])
         lot['id'] = uuid4().hex
+        lot['value'] = test_tender_data['value']
+        lot['minimalStep'] = test_tender_data['minimalStep']
+        second_item = deepcopy(test_tender_data['items'][0])
+        second_item['unit']['code'] = '44617100-8'
+        test_tender_data['items'] = [test_tender_data['items'][0], second_item]
         test_tender_data['lots'] = [lot]
         for item in test_tender_data['items']:
             item['relatedLot'] = lot['id']
@@ -371,16 +363,22 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
             bids_access[bid2_id] = response.json['access']['token']
             self.assertEqual(response.status, '201 Created')
 
+        bid_document2.update({
+            'confidentiality': 'buyerOnly',
+            'confidentialityRationale': 'Only our company sells badgers with pink hair.'
+        })
+        bid3["documents"] = [bid_document, bid_document2]
+        bid3['lotValues'][0]['relatedLot'] = lot['id']
+        for document in bid3['documents']:
+            document['url'] = self.generate_docservice_url()
+        for document in bid3['eligibilityDocuments']:
+            document['url'] = self.generate_docservice_url()
+        for document in bid3['financialDocuments']:
+            document['url'] = self.generate_docservice_url()
+        for document in bid3['qualificationDocuments']:
+            document['url'] = self.generate_docservice_url()
+
         with open(TARGET_DIR + 'register-3rd-bidder.http', 'w') as self.app.file_obj:
-            bid3['lotValues'][0]['relatedLot'] = lot['id']
-            for document in bid3['documents']:
-                document['url'] = self.generate_docservice_url()
-            for document in bid3['eligibilityDocuments']:
-                document['url'] = self.generate_docservice_url()
-            for document in bid3['financialDocuments']:
-                document['url'] = self.generate_docservice_url()
-            for document in bid3['qualificationDocuments']:
-                document['url'] = self.generate_docservice_url()
             response = self.app.post_json(
                 '/tenders/{}/bids'.format(self.tender_id),
                 {'data': bid3})
@@ -389,7 +387,6 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
             self.assertEqual(response.status, '201 Created')
 
         with open(TARGET_DIR + 'register-4rd-bidder.http', 'w') as self.app.file_obj:
-            bid3['lotValues'][0]['relatedLot'] = lot['id']
             response = self.app.post_json(
                 '/tenders/{}/bids'.format(self.tender_id),
                 {'data': bid3})
@@ -797,6 +794,11 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
 
         lot = deepcopy(test_lots[0])
         lot['id'] = uuid4().hex
+        lot['value'] = test_tender_data['value']
+        lot['minimalStep'] = test_tender_data['minimalStep']
+        second_item = deepcopy(test_tender_data['items'][0])
+        second_item['unit']['code'] = '44617100-8'
+        test_tender_data['items'] = [test_tender_data['items'][0], second_item]
         test_tender_data['lots'] = [lot]
         for item in test_tender_data['items']:
             item['relatedLot'] = lot['id']
@@ -1043,6 +1045,11 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
 
         lot = deepcopy(test_lots[0])
         lot['id'] = uuid4().hex
+        lot['value'] = test_tender_data['value']
+        lot['minimalStep'] = test_tender_data['minimalStep']
+        second_item = deepcopy(test_tender_data['items'][0])
+        second_item['unit']['code'] = '44617100-8'
+        test_tender_data['items'] = [test_tender_data['items'][0], second_item]
         test_tender_data['lots'] = [lot]
         for item in test_tender_data['items']:
             item['relatedLot'] = lot['id']
@@ -1386,6 +1393,11 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
 
         lot = deepcopy(test_lots[0])
         lot['id'] = uuid4().hex
+        lot['value'] = test_tender_data['value']
+        lot['minimalStep'] = test_tender_data['minimalStep']
+        second_item = deepcopy(test_tender_data['items'][0])
+        second_item['unit']['code'] = '44617100-8'
+        test_tender_data['items'] = [test_tender_data['items'][0], second_item]
         test_tender_data['lots'] = [lot]
         for item in test_tender_data['items']:
             item['relatedLot'] = lot['id']

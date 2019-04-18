@@ -12,7 +12,6 @@ from tests.base.test import DumpsWebTestApp, MockWebTestMixin
 from tests.base.constants import DOCS_HOST
 
 test_tender_data = deepcopy(test_tender_data)
-test_tender_data['items'].append(deepcopy(test_tender_data['items'][0]))
 
 TARGET_DIR = 'docs/source/contracting/http/'
 
@@ -38,9 +37,8 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
         response = self.app.get('/tenders')
         self.assertEqual(response.json['data'], [])
         # create tender
-        response = self.app.post_json(
-            '/tenders',
-            {"data": test_tender_data})
+        test_tender_data['items'].append(deepcopy(test_tender_data['items'][0]))
+        response = self.app.post_json('/tenders', {"data": test_tender_data})
         tender_id = self.tender_id = response.json['data']['id']
         owner_token = response.json['access']['token']
         # switch to active.tendering

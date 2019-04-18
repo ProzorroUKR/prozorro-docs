@@ -24,47 +24,32 @@ test_tender_data_stage1 = deepcopy(tender_stage1)
 test_tender_data_stage2_multiple_lots = deepcopy(tender_stage2_multiple_lots)
 test_tender_data_stage2EU = deepcopy(tender_stage2EU)
 test_tender_data_stage2UA = deepcopy(tender_stage2UA)
-
-test_tender_data_stage1["tenderPeriod"] = {"endDate": (get_now() + timedelta(days=31)).isoformat()}
-
+test_lots = deepcopy(lots)
 bid_stage2 = deepcopy(bid_draft)
+bid = deepcopy(bid_draft)
+bid_with_bad_participant = deepcopy(bid_draft)
+bid2 = deepcopy(bid2)
+bid3 = deepcopy(bid3)
+bid4 = deepcopy(bid4)
+bid2_with_docs = deepcopy(bid2)
+bid4_with_docs = deepcopy(bid4)
+bid_document2 = deepcopy(bid_document2)
+
 bid_stage2.update(subcontracting)
 bid_stage2.update(qualified)
-
-bid = deepcopy(bid_stage2)
-del bid['value']
-
-bid_with_bad_participant = deepcopy(bid_stage2)
-bid_with_bad_participant['tenderers'] = [bad_participant]
-
-bid2 = deepcopy(bid2)
+bid.update(subcontracting)
+bid.update(qualified)
+bid_with_bad_participant.update(subcontracting)
+bid_with_bad_participant.update(qualified)
 bid2.update(qualified)
-
-bid3 = deepcopy(bid3)
 bid3.update(qualified)
-
-bid4 = deepcopy(bid4)
 bid4.update(qualified)
+bid2_with_docs.update(qualified)
+bid4_with_docs.update(qualified)
 
-bid2_with_docs = deepcopy(bid2)
-bid2_with_docs["documents"] = [bid_document]
-
-bid_document2_conf = deepcopy(bid_document2)
-bid_document2_conf.update({
-    'confidentiality': 'buyerOnly',
-    'confidentialityRationale': 'Only our company sells badgers with pink hair.'
-})
-
-bid4_with_docs = deepcopy(bid4)
-bid4_with_docs["documents"] = [bid_document, bid_document2_conf]
-
-question_with_bad_participant = {
-    "author": bad_participant,
-    "description": "Просимо додати таблицю потрібної калорійності харчування",
-    "title": "Калорійність"
-}
-
-test_lots = deepcopy(lots)
+del bid['value']
+test_tender_data_stage1["tenderPeriod"] = {"endDate": (get_now() + timedelta(days=31)).isoformat()}
+bid_with_bad_participant['tenderers'] = [bad_participant]
 test_lots[0]['value'] = test_tender_data_stage1['value']
 test_lots[0]['minimalStep'] = test_tender_data_stage1['minimalStep']
 test_lots[1]['value'] = test_tender_data_stage1['value']
@@ -178,8 +163,9 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):
         #### Uploading documentation
 
         with open(TARGET_DIR + 'upload-tender-notice.http', 'w') as self.app.file_obj:
-            response = self.app.post('/tenders/{}/documents?acc_token={}'.format(self.tender_id, owner_token),
-                                     upload_files=[('file', u'Notice.pdf', 'content')])
+            response = self.app.post(
+                '/tenders/{}/documents?acc_token={}'.format(self.tender_id, owner_token),
+                upload_files=[('file', u'Notice.pdf', 'content')])
             self.assertEqual(response.status, '201 Created')
 
         doc_id = response.json["data"]["id"]
@@ -188,8 +174,9 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):
             self.assertEqual(response.status, '200 OK')
 
         with open(TARGET_DIR + 'upload-award-criteria.http', 'w') as self.app.file_obj:
-            response = self.app.post('/tenders/{}/documents?acc_token={}'.format(self.tender_id, owner_token),
-                                     upload_files=[('file', u'AwardCriteria.pdf', 'content')])
+            response = self.app.post(
+                '/tenders/{}/documents?acc_token={}'.format(self.tender_id, owner_token),
+                upload_files=[('file', u'AwardCriteria.pdf', 'content')])
             self.assertEqual(response.status, '201 Created')
 
         doc_id = response.json["data"]["id"]
@@ -199,8 +186,9 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):
             self.assertEqual(response.status, '200 OK')
 
         with open(TARGET_DIR + 'update-award-criteria.http', 'w') as self.app.file_obj:
-            response = self.app.put('/tenders/{}/documents/{}?acc_token={}'.format(self.tender_id, doc_id, owner_token),
-                                    upload_files=[('file', 'AwardCriteria-2.pdf', 'content2')])
+            response = self.app.put(
+                '/tenders/{}/documents/{}?acc_token={}'.format(self.tender_id, doc_id, owner_token),
+                upload_files=[('file', 'AwardCriteria-2.pdf', 'content2')])
             self.assertEqual(response.status, '200 OK')
 
         with open(TARGET_DIR + 'tender-documents-3.http', 'w') as self.app.file_obj:
@@ -373,9 +361,15 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):
             bids_access[bid3_id] = response.json['access']['token']
             self.assertEqual(response.status, '201 Created')
 
+        bid_document2.update({
+            'confidentiality': 'buyerOnly',
+            'confidentialityRationale': 'Only our company sells badgers with pink hair.'
+        })
+        bid4_with_docs["documents"] = [bid_document, bid_document2]
+        for document in bid4_with_docs['documents']:
+            document['url'] = self.generate_docservice_url()
+
         with open(TARGET_DIR + 'register-4rd-bidder.http', 'w') as self.app.file_obj:
-            for document in bid4_with_docs['documents']:
-                document['url'] = self.generate_docservice_url()
             response = self.app.post_json(
                 '/tenders/{}/bids'.format(self.tender_id),
                 {'data': bid4_with_docs})
@@ -602,8 +596,11 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):
         with open(TARGET_DIR + 'stage2/EU/ask-question-bad-participant.http', 'w') as self.app.file_obj:
             response = self.app.post_json(
                 '/tenders/{}/questions'.format(self.tender_id),
-                {'data': question_with_bad_participant},
-                status=403)
+                {'data': {
+                    "author": bad_participant,
+                    "description": "Просимо додати таблицю потрібної калорійності харчування",
+                    "title": "Калорійність"
+                }}, status=403)
             self.assertEqual(response.status, '403 Forbidden')
 
         with open(TARGET_DIR + 'stage2/EU/ask-question.http', 'w') as self.app.file_obj:
@@ -771,19 +768,25 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):
             bids_access[bid2_id] = response.json['access']['token']
             self.assertEqual(response.status, '201 Created')
 
+
+        bid_document2.update({
+            'confidentiality': 'buyerOnly',
+            'confidentialityRationale': 'Only our company sells badgers with pink hair.'
+        })
+        bid4_with_docs["documents"] = [bid_document, bid_document2]
         bid4_with_docs["eligibilityDocuments"] = [bid_document3_eligibility]
         bid4_with_docs["financialDocuments"] = [bid_document4_financialy]
         bid4_with_docs["qualificationDocuments"] = [bid_document5_qualification]
+        for document in bid4_with_docs['documents']:
+            document['url'] = self.generate_docservice_url()
+        for document in bid4_with_docs['eligibilityDocuments']:
+            document['url'] = self.generate_docservice_url()
+        for document in bid4_with_docs['financialDocuments']:
+            document['url'] = self.generate_docservice_url()
+        for document in bid4_with_docs['qualificationDocuments']:
+            document['url'] = self.generate_docservice_url()
 
         with open(TARGET_DIR + 'stage2/EU/register-3rd-bidder.http', 'w') as self.app.file_obj:
-            for document in bid4_with_docs['documents']:
-                document['url'] = self.generate_docservice_url()
-            for document in bid4_with_docs['eligibilityDocuments']:
-                document['url'] = self.generate_docservice_url()
-            for document in bid4_with_docs['financialDocuments']:
-                document['url'] = self.generate_docservice_url()
-            for document in bid4_with_docs['qualificationDocuments']:
-                document['url'] = self.generate_docservice_url()
             response = self.app.post_json(
                 '/tenders/{}/bids'.format(self.tender_id),
                 {'data': bid4_with_docs})
@@ -2257,8 +2260,11 @@ class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest):
         with open(TARGET_DIR + 'stage2/UA/ask-question-bad-participant.http', 'w') as self.app.file_obj:
             response = self.app.post_json(
                 '/tenders/{}/questions'.format(self.tender_id),
-                {'data': question_with_bad_participant},
-                status=403)
+                {'data': {
+                    "author": bad_participant,
+                    "description": "Просимо додати таблицю потрібної калорійності харчування",
+                    "title": "Калорійність"
+                }}, status=403)
             self.assertEqual(response.status, '403 Forbidden')
 
         with open(TARGET_DIR + 'stage2/UA/ask-question.http', 'w') as self.app.file_obj:
@@ -2367,9 +2373,10 @@ class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest):
                 {'data': {'status': 'active'}})
             self.assertEqual(response.status, '200 OK')
 
+        bid2_with_docs["documents"] = [bid_document]
+        for document in bid2_with_docs['documents']:
+            document['url'] = self.generate_docservice_url()
         with open(TARGET_DIR + 'stage2/UA/register-2nd-bidder.http', 'w') as self.app.file_obj:
-            for document in bid2_with_docs['documents']:
-                document['url'] = self.generate_docservice_url()
             response = self.app.post_json(
                 '/tenders/{}/bids'.format(self.tender_id),
                 {'data': bid2_with_docs})

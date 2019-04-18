@@ -11,25 +11,22 @@ from tests.base.constants import DOCS_HOST
 from tests.base.data import complaint, award, tender_limited, lots
 
 test_tender_data = deepcopy(tender_limited)
-
+test_lots = deepcopy(lots)
 award_negotiation = deepcopy(award)
-award_negotiation['value']['valueAddedTaxIncluded'] = False
-
 test_tender_negotiation_data = deepcopy(test_tender_data)
+test_tender_negotiation_quick_data = deepcopy(test_tender_data)
+
+award_negotiation['value']['valueAddedTaxIncluded'] = False
 test_tender_negotiation_data['procurementMethodType'] = "negotiation"
 test_tender_negotiation_data['cause'] = "twiceUnsuccessful"
 test_tender_negotiation_data['causeDescription'] = "оригінальний тендер не вдався двічі"
 test_tender_negotiation_data['causeDescription_en'] = "original tender has failed twice"
 test_tender_negotiation_data['causeDescription_ru'] = "оригинальный тендер не получился дважды"
 test_tender_negotiation_data['value']['valueAddedTaxIncluded'] = False
-
-test_tender_negotiation_quick_data = deepcopy(test_tender_data)
 test_tender_negotiation_quick_data['procurementMethodType'] = "negotiation.quick"
 test_tender_negotiation_quick_data['causeDescription'] = "оригінальний тендер не вдався двічі"
 test_tender_negotiation_quick_data['causeDescription_en'] = "original tender has failed twice"
 test_tender_negotiation_quick_data['causeDescription_ru'] = "оригинальный тендер не получился дважды"
-
-test_lots = deepcopy(lots)
 test_lots[0]['value'] = test_tender_negotiation_data['value']
 
 TARGET_DIR = 'docs/source/limited/http/'

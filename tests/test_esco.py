@@ -15,10 +15,17 @@ from tests.base.data import (
 )
 
 test_tender_data = deepcopy(tender_esco)
-
+test_lots = deepcopy(lots)
 bid = deepcopy(bid_draft)
+bid2 = deepcopy(bid2)
+bid3 = deepcopy(bid3_with_docs)
+bid_document2 = deepcopy(bid_document2)
+
 bid.update(subcontracting)
 bid.update(qualified)
+bid2.update(qualified)
+bid3.update(qualified)
+
 bid.update({
     "value": {
         "annualCostsReduction": [500] + [1000] * 20,
@@ -30,8 +37,6 @@ bid.update({
     }
 })
 
-bid2 = deepcopy(bid2)
-bid2.update(qualified)
 bid2.update({
     "value": {
         "annualCostsReduction": [400] + [900] * 20,
@@ -43,14 +48,6 @@ bid2.update({
     }
 })
 
-bid_document2_conf = deepcopy(bid_document2)
-bid_document2_conf.update({
-    'confidentiality': 'buyerOnly',
-    'confidentialityRationale': 'Only our company sells badgers with pink hair.'
-})
-
-bid3 = deepcopy(bid3_with_docs)
-bid3.update(qualified)
 bid3.update({
     "value": {
         "annualCostsReduction": [200] + [800] * 20,
@@ -61,9 +58,7 @@ bid3.update({
         }
     }
 })
-bid3["documents"] = [bid_document, bid_document2_conf]
 
-test_lots = deepcopy(lots)
 test_lots[0]['fundingKind'] = 'other'
 test_lots[0]['minimalStepPercentage'] = test_tender_data['minimalStepPercentage']
 test_lots[1]['fundingKind'] = 'other'
@@ -396,15 +391,21 @@ class TenderResourceTest(BaseESCOWebTest, MockWebTestMixin):
             bids_access[bid2_id] = response.json['access']['token']
             self.assertEqual(response.status, '201 Created')
 
+        bid_document2.update({
+            'confidentiality': 'buyerOnly',
+            'confidentialityRationale': 'Only our company sells badgers with pink hair.'
+        })
+        bid3["documents"] = [bid_document, bid_document2]
+        for document in bid3['documents']:
+            document['url'] = self.generate_docservice_url()
+        for document in bid3['eligibilityDocuments']:
+            document['url'] = self.generate_docservice_url()
+        for document in bid3['financialDocuments']:
+            document['url'] = self.generate_docservice_url()
+        for document in bid3['qualificationDocuments']:
+            document['url'] = self.generate_docservice_url()
+
         with open(TARGET_DIR + 'register-3rd-bidder.http', 'w') as self.app.file_obj:
-            for document in bid3['documents']:
-                document['url'] = self.generate_docservice_url()
-            for document in bid3['eligibilityDocuments']:
-                document['url'] = self.generate_docservice_url()
-            for document in bid3['financialDocuments']:
-                document['url'] = self.generate_docservice_url()
-            for document in bid3['qualificationDocuments']:
-                document['url'] = self.generate_docservice_url()
             response = self.app.post_json(
                 '/tenders/{}/bids'.format(self.tender_id),
                 {'data': bid3})

@@ -14,13 +14,11 @@ from tests.base.data import (
 )
 
 test_tender_ua_data = deepcopy(tender_defense)
-test_tender_ua_data["procuringEntity"]["kind"] = "defense"
-
 bid = deepcopy(bid)
+bid2 = deepcopy(bid2)
+
 bid.update(subcontracting)
 bid.update(qualified)
-
-bid2 = deepcopy(bid2)
 bid2.update(qualified)
 
 TARGET_DIR = 'docs/source/defense/http/'
@@ -74,6 +72,8 @@ class TenderUAResourceTest(BaseTenderUAWebTest, MockWebTestMixin):
             self.assertEqual(response.status, '422 Unprocessable Entity')
 
         #### Creating tender
+
+        test_tender_ua_data["procuringEntity"]["kind"] = "defense"
 
         with open(TARGET_DIR + 'tender-post-attempt-json-data.http', 'w') as self.app.file_obj:
             response = self.app.post_json(
@@ -447,6 +447,8 @@ class TenderUAResourceTest(BaseTenderUAWebTest, MockWebTestMixin):
     def test_complaints(self):
         self.app.authorization = ('Basic', ('broker', ''))
 
+        test_tender_ua_data["procuringEntity"]["kind"] = "defense"
+
         response = self.app.post_json(
             '/tenders?opt_pretty=1',
             {'data': test_tender_ua_data})
@@ -684,6 +686,8 @@ class TenderUAResourceTest(BaseTenderUAWebTest, MockWebTestMixin):
 
     def test_award_complaints(self):
         self.app.authorization = ('Basic', ('broker', ''))
+
+        test_tender_ua_data["procuringEntity"]["kind"] = "defense"
 
         response = self.app.post_json(
             '/tenders?opt_pretty=1',

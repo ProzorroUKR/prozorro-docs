@@ -14,13 +14,12 @@ from tests.base.data import (
 )
 
 test_tender_ua_data = deepcopy(tender_openua)
-
 bid = deepcopy(bid_draft)
+bid2 = deepcopy(bid2)
+
+bid2.update(qualified)
 bid.update(subcontracting)
 bid.update(qualified)
-
-bid2 = deepcopy(bid2)
-bid2.update(qualified)
 
 TARGET_DIR = 'docs/source/openua/http/'
 
