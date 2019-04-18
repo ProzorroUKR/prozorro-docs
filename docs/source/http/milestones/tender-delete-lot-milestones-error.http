@@ -1,12 +1,10 @@
-DELETE /api/2.5/tenders/3b5121d3616741d4913c211251104fb3/lots/3cb10d94cfd645b995274c24118a3199?acc_token=49d336fd47e6439e8169f524d75af3a9 HTTP/1.0
+DELETE /api/2.5/tenders/cbc95e54451a454a991aef6965777305/lots/2000cd65adfb441f9f00a7a3d98c7b50?acc_token=d0f8b71cd5d44ff39e34b95674a5aa4d HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 0
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
-
-422 Unprocessable Entity
+Response: 422 Unprocessable Entity
 Content-Type: application/json; charset=UTF-8
-
 {
   "status": "error", 
   "errors": [

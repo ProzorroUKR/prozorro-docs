@@ -1,8 +1,8 @@
-PATCH /api/2.5/tenders/dd16b9bbdea449ff82d72804ecfa7b2c/complaints/d99e32f067934abc89181593f3345abc HTTP/1.0
+PATCH /api/2.5/tenders/cef4930c639c446690b584400d89b484/complaints/48068413b54f448bb94cd57297038391 HTTP/1.0
 Authorization: Basic cmV2aWV3ZXI6
 Content-Length: 217
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -16,14 +16,14 @@ Content-Type: application/json; charset=UTF-8
 {
   "data": {
     "status": "stopped", 
-    "dateDecision": "2019-03-28T06:50:12.530842+02:00", 
+    "dateDecision": "2019-01-01T00:00:00+02:00", 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
     "title": "Недостатньо інформації", 
     "decision": "Тендер скасовується замовником", 
     "acceptance": true, 
     "cancellationReason": "Тендер скасовується замовником", 
-    "dateCanceled": "2019-03-28T06:50:12.440129+02:00", 
-    "dateAccepted": "2019-03-28T06:50:11.907990+02:00", 
+    "dateCanceled": "2019-01-01T00:00:00+02:00", 
+    "dateAccepted": "2019-01-01T00:00:00+02:00", 
     "author": {
       "contactPoint": {
         "email": "soleksuk@gmail.com", 
@@ -32,9 +32,8 @@ Content-Type: application/json; charset=UTF-8
       }, 
       "identifier": {
         "scheme": "UA-EDR", 
-        "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
-        "id": "13313462", 
-        "uri": "http://sch10.edu.vn.ua/"
+        "id": "00137256", 
+        "uri": "http://www.sc.gov.ua/"
       }, 
       "name": "ДКП «Школяр»", 
       "address": {
@@ -45,11 +44,11 @@ Content-Type: application/json; charset=UTF-8
         "locality": "м. Вінниця"
       }
     }, 
-    "dateSubmitted": "2019-03-28T06:50:11.543950+02:00", 
-    "complaintID": "UA-2019-03-28-000001.6", 
-    "date": "2019-03-28T06:50:12.536121+02:00", 
+    "dateSubmitted": "2019-01-01T00:00:00+02:00", 
+    "complaintID": "UA-2019-01-01-000001.6", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "type": "complaint", 
-    "id": "d99e32f067934abc89181593f3345abc"
+    "id": "48068413b54f448bb94cd57297038391"
   }
 }
 

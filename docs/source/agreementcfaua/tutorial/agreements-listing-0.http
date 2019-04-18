@@ -1,12 +1,12 @@
 GET /api/2.5/agreements HTTP/1.0
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
 {
   "next_page": {
     "path": "/api/2.5/agreements?offset=", 
-    "uri": "http://api-sandbox.openprocurement.org/api/2.5/agreements?offset=", 
+    "uri": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/agreements?offset=", 
     "offset": ""
   }, 
   "data": []

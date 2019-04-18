@@ -1,8 +1,8 @@
-PATCH /api/2.5/tenders/ecf287a696234915834e93bd9c09f0f4/bids/833d86a60690494c8b773ef633153e65?acc_token=dffe7852375c4922a824ff08c2872ad9 HTTP/1.0
+PATCH /api/2.5/tenders/7c8c978fa6554fc187f93dc3ed43a9c2/bids/1398d0d0ec8840d38ca385e20479342c?acc_token=ab46033f80174d10a062cb863a89e384 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 30
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -16,7 +16,7 @@ Content-Type: application/json; charset=UTF-8
   "data": {
     "status": "active", 
     "selfEligible": true, 
-    "id": "833d86a60690494c8b773ef633153e65", 
+    "id": "1398d0d0ec8840d38ca385e20479342c", 
     "value": {
       "currency": "UAH", 
       "amount": 500.0, 
@@ -45,7 +45,7 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "date": "2019-03-28T06:48:45.251415+02:00", 
+    "date": "2019-04-18T06:51:45.165106+03:00", 
     "selfQualified": true
   }
 }

@@ -1,9 +1,9 @@
-PATCH /api/2.5/tenders/4bdc8f70ca4d45b0956ab3afbadcc50c/complaints/28d9cf5b02ac478490314f169cd25cce?acc_token=b9d491f8ba8643bd9cddd249d67610d3 HTTP/1.0
+PATCH /api/2.5/tenders/8f11f82d19b64b859827cc941fd7f839/complaints/6de24f9c7bda4087aa474ecd6e08c84e?acc_token=7a12fff2b5f14f698f4c22ad8addc97e HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 442
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "status": "answered", 
@@ -13,10 +13,8 @@ Host: api-sandbox.openprocurement.org
   }
 }
 
-
-200 OK
+Response: 200 OK
 Content-Type: application/json; charset=UTF-8
-
 {
   "data": {
     "status": "answered", 
@@ -25,26 +23,26 @@ Content-Type: application/json; charset=UTF-8
         "hash": "md5:00000000000000000000000000000000", 
         "author": "complaint_owner", 
         "title": "Complaint_Attachement.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/2551544c13d74736a3dc09df7f677f16?KeyID=ddecca24&Signature=CenwlM2gvvGkuUolADthJvMkQHkz3hagPC8nld9oeptJgV4LLVDhoz96efFHskC5WKfSOCYFFMr4cHI50BuKAw%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/edcfaabfcbe34ea39cfa064ce5864841?KeyID=a0b3a3fd&Signature=s74aq5v3anIDSqOKIDrJY7vSW78vHwE4YXnA45ASxAtZ8s6VhGjBWV8FUq1kITfDV6amCKgoYGzM%252BoYgJoNnBw%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:47:13.368358+02:00", 
-        "id": "bcfc48dccc954b85a43ded7104ec4dfa", 
-        "dateModified": "2019-03-28T06:47:13.368378+02:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "66f9b87fc2644512b6530d26e3469ea4", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }
     ], 
-    "description": "complaint description", 
-    "title": "complaint title", 
+    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+    "title": "Недостатньо інформації", 
     "resolutionType": "resolved", 
     "type": "claim", 
     "tendererAction": "Виправлено неконкурентні умови", 
-    "dateAnswered": "2019-03-28T06:47:13.617942+02:00", 
-    "tendererActionDate": "2019-03-28T06:47:13.617963+02:00", 
-    "dateSubmitted": "2019-03-28T06:47:13.449779+02:00", 
-    "complaintID": "UA-2019-03-28-000001.1", 
-    "date": "2019-03-28T06:47:13.620830+02:00", 
+    "dateAnswered": "2019-01-01T00:00:00+02:00", 
+    "tendererActionDate": "2019-01-01T00:00:00+02:00", 
+    "dateSubmitted": "2019-01-01T00:00:00+02:00", 
+    "complaintID": "UA-2019-01-01-000001.1", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "resolution": "Виправлено неконкурентні умови", 
-    "id": "28d9cf5b02ac478490314f169cd25cce"
+    "id": "6de24f9c7bda4087aa474ecd6e08c84e"
   }
 }
 

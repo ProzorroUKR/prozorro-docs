@@ -1,8 +1,8 @@
-POST /api/2.5/tenders/edf1ec35dd2442928d2473f51384621f/bids HTTP/1.0
+POST /api/2.5/tenders/69b2e0ceffcf46899710d0fbbca43d16/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 816
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -10,7 +10,7 @@ DATA:
     "selfQualified": true, 
     "lotValues": [
       {
-        "relatedLot": "2e6f1f49c8894974a1c36e2b463b5b86", 
+        "relatedLot": "a7bb6ac2dc0f4b4c8f3fa5874c402305", 
         "value": {
           "amount": 499
         }
@@ -19,9 +19,9 @@ DATA:
     "tenderers": [
       {
         "contactPoint": {
+          "email": "aagt@gmail.com", 
           "telephone": "+380 (322) 91-69-30", 
-          "name": "Андрій Олексюк", 
-          "email": "aagt@gmail.com"
+          "name": "Андрій Олексюк"
         }, 
         "identifier": {
           "scheme": "UA-EDR", 
@@ -43,18 +43,18 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/edf1ec35dd2442928d2473f51384621f/bids/936c5038211d4c6497ae90396d86e8ba
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/69b2e0ceffcf46899710d0fbbca43d16/bids/d0bae9fc4c104aaf870a44b6181547f4
 {
   "access": {
-    "token": "9cde0ccb265244d4b76194915cbb03e6"
+    "token": "f73d6ba28f5c4e039d29c74801ae1c3a"
   }, 
   "data": {
     "status": "pending", 
     "selfEligible": true, 
     "lotValues": [
       {
-        "relatedLot": "2e6f1f49c8894974a1c36e2b463b5b86", 
-        "date": "2019-03-28T06:47:56.587793+02:00", 
+        "relatedLot": "a7bb6ac2dc0f4b4c8f3fa5874c402305", 
+        "date": "2019-01-01T00:00:00+02:00", 
         "status": "pending", 
         "value": {
           "currency": "UAH", 
@@ -86,8 +86,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/edf1ec35dd24429
         }
       }
     ], 
-    "date": "2019-03-28T06:47:56.587594+02:00", 
-    "id": "936c5038211d4c6497ae90396d86e8ba"
+    "date": "2019-01-01T00:00:00+02:00", 
+    "id": "d0bae9fc4c104aaf870a44b6181547f4"
   }
 }
 

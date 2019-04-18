@@ -1,8 +1,8 @@
-PATCH /api/2.5/tenders/a5737d7e05a4451a8a502a9d763357f0/lots/9aa1ec08c6b04d25b5a908c62f978f5f?acc_token=108415e41c8546a99829fcbfe080d4e1 HTTP/1.0
+PATCH /api/2.5/tenders/e54514398db3478a934ed7e8472b1516/lots/5aa0c87a954e4dd8910ecd7e95c49470?acc_token=7bb328af3ac54afb9a1fe834c978668e HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 39
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -21,7 +21,7 @@ Content-Type: application/json; charset=UTF-8
     "fundingKind": "other", 
     "title": "Лот №2", 
     "auctionPeriod": {
-      "shouldStartAfter": "2019-06-03T00:00:00+02:00"
+      "shouldStartAfter": "2019-06-24T00:00:00+03:00"
     }, 
     "minValue": {
       "currency": "UAH", 
@@ -30,8 +30,8 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "minimalStepPercentage": 0.006, 
     "yearlyPaymentsPercentageRange": 0.8, 
-    "date": "2019-03-28T06:49:20.451490+02:00", 
-    "id": "9aa1ec08c6b04d25b5a908c62f978f5f"
+    "date": "2019-01-01T00:00:00+02:00", 
+    "id": "5aa0c87a954e4dd8910ecd7e95c49470"
   }
 }
 

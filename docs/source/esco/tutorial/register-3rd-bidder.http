@@ -1,14 +1,14 @@
-POST /api/2.5/tenders/deb082b3f3004fc1b115e78ee2d59f6c/bids HTTP/1.0
+POST /api/2.5/tenders/f643605221c54eb4b38a3f56b6b2215b/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 2724
+Content-Length: 2769
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
     "documents": [
       {
-        "url": "http://public.docs-sandbox.openprocurement.org/get/b6094824640147479863eae365601773?KeyID=4f21d124&Signature=T3stmHpNnF96rQzUzztBf3wn%2FTJb6rda2HjqSHk%2BQmMpXSWG6yWbkl4uRFx7rBpp%2Fy208BsLAvjIDpYQEi5IAA%3D%3D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/c3c272b01c5741f1b42d6c0c164b1dff?KeyID=3ccbc1c3&Signature=evrVRHhVToWwCJazEJIKb5k9BJxc5EIAN1iDeyPMx4QRaHEHAoPEFVQfsgAAunPkhKFbRxMI91Bl7v1YVn%2FjDg%3D%3D", 
         "title": "Proposal_part1.pdf", 
         "hash": "md5:00000000000000000000000000000000", 
         "format": "application/pdf"
@@ -16,20 +16,21 @@ DATA:
       {
         "hash": "md5:00000000000000000000000000000000", 
         "confidentiality": "buyerOnly", 
-        "title": "Proposal_part2.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/de0b7ddc6759418891568c6fb4d1fc2d?KeyID=4f21d124&Signature=JUt4TM2ETzgKFk1yxIyHRIGYBOx5d2J2XYaLs9CBJdcqLux%2BPPhdb2iF4FJnMYIGfZirfZ7wwwqAaQKpjkkFBA%3D%3D", 
+        "format": "application/pdf", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/4696b8c0706f48d7b08344d97fce006d?KeyID=3ccbc1c3&Signature=fSZP8NELdJrw%2F3tzBLHQUvkRPXz9ecGccCpV099tapz7Y2XYwWLaCR5lFOvQX15VXv7YoKVs5f9hYdb%2FiJ6LCQ%3D%3D", 
         "confidentialityRationale": "Only our company sells badgers with pink hair.", 
-        "format": "application/pdf"
+        "title": "Proposal_part2.pdf"
       }
     ], 
     "eligibilityDocuments": [
       {
-        "url": "http://public.docs-sandbox.openprocurement.org/get/90c9eb0afa30439fafbac3d2491d2b72?KeyID=4f21d124&Signature=oXIBT8KpSOZEkccpt5tSX%2BpNrLNMHmPf0gLM7klGC3K26gOvaF3k%2Bku6FDn%2FyadGKJChuUrZWohszGMqGFwiDA%3D%3D", 
-        "title": "eligibility_doc.pdf", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/9a0e55a488d64b07a6bb32530aae3073?KeyID=3ccbc1c3&Signature=H3KcYikBIidRT3FfAWGqQ64IF2hG29HSEdWtTS5jbuBOAi79Bg0yADeuMmDjWxorm7wRvJRzj4QmDnpR6IaGCQ%3D%3D", 
+        "format": "application/pdf", 
         "hash": "md5:00000000000000000000000000000000", 
-        "format": "application/pdf"
+        "title": "eligibility_doc.pdf"
       }
     ], 
+    "selfEligible": true, 
     "value": {
       "contractDuration": {
         "days": 40, 
@@ -60,53 +61,54 @@ DATA:
         800
       ]
     }, 
+    "qualificationDocuments": [
+      {
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/1045691daf4747e2bfc71e0931fc2190?KeyID=3ccbc1c3&Signature=Gzgvelnq2x7BxWFtgUgFIvyFuMSnrtUBUXLnJGG4%2ButuKwUwI3%2BcTwag22VCTLCq89H2xEyPn%2BAd2EQiz0%2FHBg%3D%3D", 
+        "format": "application/pdf", 
+        "hash": "md5:00000000000000000000000000000000", 
+        "title": "qualification_document.pdf"
+      }
+    ], 
     "financialDocuments": [
       {
-        "url": "http://public.docs-sandbox.openprocurement.org/get/cc29a3e8bc9d4e7da97436455183abb8?KeyID=4f21d124&Signature=EZrsBWGgQjC2XhjkXJ1dzs8ryOzO%2FwGfn0XAOvdJHrIukXZIHNeTik9qc98gwWG0utVudunw1xXdbzHP709tBA%3D%3D", 
-        "title": "financial_doc.pdf", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/3f5198c60d554286acb190728989f15a?KeyID=3ccbc1c3&Signature=NVuWPLsZVqgSWs1YRS%2Fv%2BeRdvoZnMPewVYedCsUbcJa9%2FsazXPiDu4JSuBYMPuzDkj8qzrBY%2Fa7e9CPgyUVtDA%3D%3D", 
+        "format": "application/pdf", 
         "hash": "md5:00000000000000000000000000000000", 
-        "format": "application/pdf"
+        "title": "financial_doc.pdf"
       }
     ], 
     "tenderers": [
       {
         "contactPoint": {
-          "telephone": "+380 (322) 12-34-56", 
-          "name": "Іван Іваненко", 
-          "email": "fake@mail.com"
+          "email": "aagt@gmail.com", 
+          "name": "Андрій Олексюк", 
+          "telephone": "+380 (322) 91-69-30"
         }, 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137226", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "«Снігур»", 
+        "name": "ДКП «Книга»", 
         "address": {
           "countryName": "Україна", 
           "postalCode": "79013", 
           "region": "м. Львів", 
-          "streetAddress": "вул. Островського, 35", 
+          "streetAddress": "вул. Островського, 34", 
           "locality": "м. Львів"
         }
       }
     ], 
-    "qualificationDocuments": [
-      {
-        "url": "http://public.docs-sandbox.openprocurement.org/get/9c6185c907824b468a8071546baf113c?KeyID=4f21d124&Signature=SK79kx42DHwC9FUZiRo3BVkTSNgmZqJVmXgYi4smGGhMrn4k8f4FjX63102N97%2BlJ5v%2FncjVKUQ0YJAKHaa%2FCQ%3D%3D", 
-        "title": "qualification_document.pdf", 
-        "hash": "md5:00000000000000000000000000000000", 
-        "format": "application/pdf"
-      }
-    ]
+    "selfQualified": true
   }
 }
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/deb082b3f3004fc1b115e78ee2d59f6c/bids/f87c5f06e68b415cbe550efc7006d0ec
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/f643605221c54eb4b38a3f56b6b2215b/bids/fe11dab82d88488b955774056d12a884
 {
   "access": {
-    "token": "72bda513384a4bafa69c3b8963885cbb"
+    "token": "86cc03e502484c838efde4b4fda17931"
   }, 
   "data": {
     "status": "pending", 
@@ -116,25 +118,25 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/deb082b3f3004fc
         "confidentiality": "public", 
         "language": "uk", 
         "title": "Proposal_part1.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/deb082b3f3004fc1b115e78ee2d59f6c/bids/f87c5f06e68b415cbe550efc7006d0ec/documents/62bdadaba08641de894a57057cb3bb01?download=b6094824640147479863eae365601773", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/f643605221c54eb4b38a3f56b6b2215b/bids/fe11dab82d88488b955774056d12a884/documents/25a787a53b4e4157ad4487e74e5c053a?download=c3c272b01c5741f1b42d6c0c164b1dff", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:49:14.295773+02:00", 
-        "id": "62bdadaba08641de894a57057cb3bb01", 
-        "dateModified": "2019-03-28T06:49:14.295786+02:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "25a787a53b4e4157ad4487e74e5c053a", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
         "confidentiality": "buyerOnly", 
         "language": "uk", 
         "format": "application/pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/deb082b3f3004fc1b115e78ee2d59f6c/bids/f87c5f06e68b415cbe550efc7006d0ec/documents/a87ee69ec00349a780a13ce2aebd9d22?download=de0b7ddc6759418891568c6fb4d1fc2d", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/f643605221c54eb4b38a3f56b6b2215b/bids/fe11dab82d88488b955774056d12a884/documents/26f7ede3d5fb4211bd51189390a2e3b7?download=4696b8c0706f48d7b08344d97fce006d", 
         "confidentialityRationale": "Only our company sells badgers with pink hair.", 
         "title": "Proposal_part2.pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:49:14.296171+02:00", 
-        "id": "a87ee69ec00349a780a13ce2aebd9d22", 
-        "dateModified": "2019-03-28T06:49:14.296183+02:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "26f7ede3d5fb4211bd51189390a2e3b7", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }
     ], 
     "eligibilityDocuments": [
@@ -143,24 +145,26 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/deb082b3f3004fc
         "confidentiality": "public", 
         "language": "uk", 
         "title": "eligibility_doc.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/deb082b3f3004fc1b115e78ee2d59f6c/bids/f87c5f06e68b415cbe550efc7006d0ec/eligibility_documents/6f60909e91594bc6a1d30dfa397d172d?download=90c9eb0afa30439fafbac3d2491d2b72", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/f643605221c54eb4b38a3f56b6b2215b/bids/fe11dab82d88488b955774056d12a884/eligibility_documents/f2d30f7b24e746079d867f961a2a5f5a?download=9a0e55a488d64b07a6bb32530aae3073", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:49:14.296974+02:00", 
-        "id": "6f60909e91594bc6a1d30dfa397d172d", 
-        "dateModified": "2019-03-28T06:49:14.296986+02:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "f2d30f7b24e746079d867f961a2a5f5a", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }
     ], 
+    "selfEligible": true, 
+    "id": "fe11dab82d88488b955774056d12a884", 
     "value": {
       "yearlyPaymentsPercentage": 0.86, 
       "valueAddedTaxIncluded": true, 
       "currency": "UAH", 
-      "amount": 8667.39, 
+      "amount": 8505.28, 
       "contractDuration": {
         "days": 40, 
         "years": 13
       }, 
-      "amountPerformance": 582.27, 
+      "amountPerformance": 562.72, 
       "annualCostsReduction": [
         200.0, 
         800.0, 
@@ -185,56 +189,56 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/deb082b3f3004fc
         800.0
       ]
     }, 
-    "id": "f87c5f06e68b415cbe550efc7006d0ec", 
+    "selfQualified": true, 
     "financialDocuments": [
       {
         "hash": "md5:00000000000000000000000000000000", 
         "confidentiality": "public", 
         "language": "uk", 
         "title": "financial_doc.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/deb082b3f3004fc1b115e78ee2d59f6c/bids/f87c5f06e68b415cbe550efc7006d0ec/financial_documents/12c920dc0fed4da29d166a872491574f?download=cc29a3e8bc9d4e7da97436455183abb8", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/f643605221c54eb4b38a3f56b6b2215b/bids/fe11dab82d88488b955774056d12a884/financial_documents/14aea3be4c21488c838a9e1f2ca7e4fa?download=3f5198c60d554286acb190728989f15a", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:49:14.296573+02:00", 
-        "id": "12c920dc0fed4da29d166a872491574f", 
-        "dateModified": "2019-03-28T06:49:14.296585+02:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "14aea3be4c21488c838a9e1f2ca7e4fa", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }
     ], 
     "tenderers": [
       {
         "contactPoint": {
-          "email": "fake@mail.com", 
-          "telephone": "+380 (322) 12-34-56", 
-          "name": "Іван Іваненко"
+          "email": "aagt@gmail.com", 
+          "telephone": "+380 (322) 91-69-30", 
+          "name": "Андрій Олексюк"
         }, 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137226", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "«Снігур»", 
+        "name": "ДКП «Книга»", 
         "address": {
           "postalCode": "79013", 
           "countryName": "Україна", 
-          "streetAddress": "вул. Островського, 35", 
+          "streetAddress": "вул. Островського, 34", 
           "region": "м. Львів", 
           "locality": "м. Львів"
         }
       }
     ], 
-    "date": "2019-03-28T06:49:14.295400+02:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "qualificationDocuments": [
       {
         "hash": "md5:00000000000000000000000000000000", 
         "confidentiality": "public", 
         "language": "uk", 
         "title": "qualification_document.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/deb082b3f3004fc1b115e78ee2d59f6c/bids/f87c5f06e68b415cbe550efc7006d0ec/qualification_documents/b199d29c7a3f4196be27eec6d55a6f2a?download=9c6185c907824b468a8071546baf113c", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/f643605221c54eb4b38a3f56b6b2215b/bids/fe11dab82d88488b955774056d12a884/qualification_documents/d5d4c86fd54c49d39daf52cf7341668e?download=1045691daf4747e2bfc71e0931fc2190", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:49:14.297368+02:00", 
-        "id": "b199d29c7a3f4196be27eec6d55a6f2a", 
-        "dateModified": "2019-03-28T06:49:14.297380+02:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "d5d4c86fd54c49d39daf52cf7341668e", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }
     ]
   }

@@ -1,6 +1,6 @@
-GET /api/2.5/tenders/a5737d7e05a4451a8a502a9d763357f0/qualifications?acc_token=108415e41c8546a99829fcbfe080d4e1 HTTP/1.0
+GET /api/2.5/tenders/e54514398db3478a934ed7e8472b1516/qualifications?acc_token=7bb328af3ac54afb9a1fe834c978668e HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
@@ -8,21 +8,21 @@ Content-Type: application/json; charset=UTF-8
   "data": [
     {
       "status": "pending", 
-      "lotID": "b7292dba1ee3436db63fee17b2d09579", 
+      "lotID": "fd0bdf6a19114cc09cc48e9a350f833a", 
       "eligible": false, 
       "qualified": false, 
-      "bidID": "28208dcab1764a8ab952e5519edfd642", 
-      "date": "2019-03-28T06:49:21.424095+02:00", 
-      "id": "05874b6863b04950993236b8b01f428b"
+      "bidID": "431dc9a9dfaf485ab1a030f0d3bf89d8", 
+      "date": "2019-01-01T00:00:00+02:00", 
+      "id": "94f7f2bca6fa498db76ee819ee4d05f4"
     }, 
     {
       "status": "pending", 
-      "lotID": "b7292dba1ee3436db63fee17b2d09579", 
+      "lotID": "fd0bdf6a19114cc09cc48e9a350f833a", 
       "eligible": false, 
       "qualified": false, 
-      "bidID": "cd09b8b5ea5b4259a2128e077ae0e557", 
-      "date": "2019-03-28T06:49:21.424326+02:00", 
-      "id": "0900434bed1e40028e3111b6ca957736"
+      "bidID": "32b06275330d44ab89bd5f897f443259", 
+      "date": "2019-01-01T00:00:00+02:00", 
+      "id": "56e0500fc03748608be511a8487ed2ca"
     }
   ]
 }

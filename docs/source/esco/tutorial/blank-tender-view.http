@@ -1,6 +1,6 @@
-GET /api/2.5/tenders/deb082b3f3004fc1b115e78ee2d59f6c HTTP/1.0
+GET /api/2.5/tenders/f643605221c54eb4b38a3f56b6b2215b HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
@@ -8,16 +8,16 @@ Content-Type: application/json; charset=UTF-8
   "data": {
     "procurementMethod": "open", 
     "complaintPeriod": {
-      "startDate": "2019-03-28T06:49:11.995474+02:00", 
-      "endDate": "2019-04-24T00:00:00+03:00"
+      "startDate": "2019-01-01T00:00:00+02:00", 
+      "endDate": "2019-05-15T00:00:00+03:00"
     }, 
     "enquiryPeriod": {
-      "startDate": "2019-03-28T06:49:11.995474+02:00", 
-      "clarificationsUntil": "2019-04-23T06:47:08.240881+02:00", 
-      "endDate": "2019-04-18T06:47:08.240881+02:00"
+      "startDate": "2019-01-01T00:00:00+02:00", 
+      "clarificationsUntil": "2019-05-15T00:00:00+03:00", 
+      "endDate": "2019-05-09T06:49:21.594974+03:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "next_check": "2019-04-28T07:47:08.240881+03:00", 
+    "next_check": "2019-05-19T06:49:21.594974+03:00", 
     "procuringEntity": {
       "kind": "general", 
       "name": "ЗОСШ #10 м.Вінниці", 
@@ -45,22 +45,22 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "owner": "broker", 
     "title_en": "Services in school canteens", 
-    "id": "deb082b3f3004fc1b115e78ee2d59f6c", 
+    "id": "f643605221c54eb4b38a3f56b6b2215b", 
     "title": "Послуги шкільних їдалень", 
-    "tenderID": "UA-2019-03-28-000001", 
+    "tenderID": "UA-2019-01-01-000001", 
     "minimalStepPercentage": 0.006, 
     "yearlyPaymentsPercentageRange": 0.8, 
-    "dateModified": "2019-03-28T06:49:12.021006+02:00", 
+    "dateModified": "2019-01-01T00:00:00+02:00", 
     "status": "active.tendering", 
     "tenderPeriod": {
-      "startDate": "2019-03-28T06:49:11.995474+02:00", 
-      "endDate": "2019-04-28T06:47:08.240881+02:00"
+      "startDate": "2019-01-01T00:00:00+02:00", 
+      "endDate": "2019-05-19T06:49:21.594974+03:00"
     }, 
     "auctionPeriod": {
-      "shouldStartAfter": "2019-06-03T00:00:00+02:00"
+      "shouldStartAfter": "2019-06-24T00:00:00+03:00"
     }, 
     "procurementMethodType": "esco", 
-    "date": "2019-03-28T06:49:12.017308+02:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "NBUdiscountRate": 0.22986, 
     "minValue": {
       "currency": "UAH", 
@@ -91,7 +91,7 @@ Content-Type: application/json; charset=UTF-8
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "35558649d29545c0887de99f276b401d", 
+        "id": "a52b66c3bac44ded99f595cc088f1a85", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -119,14 +119,14 @@ Content-Type: application/json; charset=UTF-8
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "27a1ff2de6d649309fd85f5c3ee8be67", 
+        "id": "c07f62aaa7ec4bfca4a94d68c69c0210", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }
       }
     ], 
-    "noticePublicationDate": "2019-03-28T06:49:12.006384+02:00", 
+    "noticePublicationDate": "2019-01-01T00:00:00+02:00", 
     "awardCriteria": "ratedCriteria"
   }
 }

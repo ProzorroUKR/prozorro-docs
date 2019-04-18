@@ -1,8 +1,8 @@
-PATCH /api/2.5/tenders/c2be6cc98391434da02ceb5260928191/awards/b3ea07978dfa4489a4143af66ef6d18b/complaints/2a3afee011924c8fb39f5459cad480de?acc_token=c174b49051b24691b44d996f70ab8558 HTTP/1.0
+PATCH /api/2.5/tenders/2fa83d3442ba4956a2f5bcde852d7d32/awards/d74cc31f7f69485eb30dca7e2ef452ba/complaints/8192a2dee0e646678cc4ff0c7054d7dd?acc_token=b80d68973586455bbd0e9638e29cd93a HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 361
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -15,10 +15,10 @@ Response: 200 OK
 Content-Type: application/json; charset=UTF-8
 {
   "data": {
-    "relatedLot": "2e6f1f49c8894974a1c36e2b463b5b86", 
+    "relatedLot": "a7bb6ac2dc0f4b4c8f3fa5874c402305", 
     "status": "resolved", 
-    "dateDecision": "2019-03-28T06:47:46.841978+02:00", 
-    "tendererActionDate": "2019-03-28T06:47:47.502361+02:00", 
+    "dateDecision": "2019-01-01T00:10:00+02:00", 
+    "tendererActionDate": "2019-01-01T00:10:00+02:00", 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
     "author": {
       "contactPoint": {
@@ -28,9 +28,8 @@ Content-Type: application/json; charset=UTF-8
       }, 
       "identifier": {
         "scheme": "UA-EDR", 
-        "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
-        "id": "13313462", 
-        "uri": "http://sch10.edu.vn.ua/"
+        "id": "00137256", 
+        "uri": "http://www.sc.gov.ua/"
       }, 
       "name": "ДКП «Школяр»", 
       "address": {
@@ -42,11 +41,11 @@ Content-Type: application/json; charset=UTF-8
       }
     }, 
     "title": "Недостатньо інформації", 
-    "id": "2a3afee011924c8fb39f5459cad480de", 
+    "id": "8192a2dee0e646678cc4ff0c7054d7dd", 
     "tendererAction": "Умови виправлено, вибір переможня буде розгянуто повторно", 
-    "dateSubmitted": "2019-03-28T06:47:43.849036+02:00", 
-    "complaintID": "UA-2019-03-28-000001.1", 
-    "date": "2019-03-28T06:47:47.517074+02:00", 
+    "dateSubmitted": "2019-01-01T00:10:00+02:00", 
+    "complaintID": "UA-2019-01-01-000001.1", 
+    "date": "2019-01-01T00:10:00+02:00", 
     "acceptance": true, 
     "type": "complaint", 
     "documents": [
@@ -55,27 +54,27 @@ Content-Type: application/json; charset=UTF-8
         "author": "complaint_owner", 
         "language": "uk", 
         "title": "Complaint_Attachement.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/d048801338f640faadb38d04b87f2dcd?KeyID=25f399ce&Signature=KKzUjUNmCO3R7m6sqIxDY9VqQQbcQC6iMDYiCEVGxrqPGsZtvY%252Bp7gcvWrmNvLEhvUPxrDoS3RiQbi2jPH55AQ%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/d5014d0356bb4efb9ca9a57efa85309e?KeyID=e8294d53&Signature=rf3P4lV1kSurZR3pk3H%2Fo8Fp%252BCwf87a315HK6zznQnMFSh1nDU9JvWb%252Bd7bXOhOr%252BCprMaq52yOu7tYSnc%252BQCQ%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:47:43.727861+02:00", 
-        "id": "1af38b18fa754368a132b95e2902f57d", 
-        "dateModified": "2019-03-28T06:47:43.727890+02:00"
+        "datePublished": "2019-01-01T00:10:00+02:00", 
+        "id": "9ec781facce34d5b98bbf726af3684dd", 
+        "dateModified": "2019-01-01T00:10:00+02:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
         "author": "aboveThresholdReviewers", 
         "language": "uk", 
         "title": "ComplaintResolution.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/da9d5773d0944fd59347b861340e0821?KeyID=25f399ce&Signature=FqE1m39kxYjYXzLLF6f16zB1lJP%2FCLpU%252Bl4oVa8ifzgYFVc87rwciqfAm8m%2FWgZuHUDCyw3jZammVpWeQpJODA%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/13359927f86e4454baeb46dd6bcc2002?KeyID=e8294d53&Signature=D3%252B6rkzAkDOMaPFJs1E6kvNDYIooDKilPMNCWodOQ%2F1qvv5RNC%2F1r%252BxgLUf0Mq%252BacToQTkcD2jNSnJvLWuziCw%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:47:46.678729+02:00", 
-        "id": "09a0c358579c40c2ae0c2c3643cd377d", 
-        "dateModified": "2019-03-28T06:47:46.678748+02:00"
+        "datePublished": "2019-01-01T00:10:00+02:00", 
+        "id": "96ac589622df4dba903659796ee33831", 
+        "dateModified": "2019-01-01T00:10:00+02:00"
       }
     ], 
-    "dateAccepted": "2019-03-28T06:47:45.939996+02:00"
+    "dateAccepted": "2019-01-01T00:10:00+02:00"
   }
 }
 

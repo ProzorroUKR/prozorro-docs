@@ -1,8 +1,8 @@
-POST /api/2.5/tenders/dc07cf2d5fae45f88da7ef5b0917cd1f/bids HTTP/1.0
+POST /api/2.5/tenders/97c85910204e45aca789969e8a136e76/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 1055
+Content-Length: 917
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -10,9 +10,9 @@ DATA:
     "tenderers": [
       {
         "contactPoint": {
+          "email": "soleksuk@gmail.com", 
           "telephone": "+380 (432) 21-69-30", 
-          "name": "Сергій Олексюк", 
-          "email": "soleksuk@gmail.com"
+          "name": "Сергій Олексюк"
         }, 
         "identifier": {
           "scheme": "UA-EDR", 
@@ -33,27 +33,27 @@ DATA:
     "value": {
       "amount": 500
     }, 
-    "subcontractingDetails": "ДКП «книга», Україна, м. Львів, вул. Островського, 33"
+    "subcontractingDetails": "ДКП «Орфей», Україна"
   }
 }
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/dc07cf2d5fae45f88da7ef5b0917cd1f/bids/087bb709d3fc4e1d9be1fac5e91c1b53
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/97c85910204e45aca789969e8a136e76/bids/79f4f1545bd04c1eb03a916edc626c7b
 {
   "access": {
-    "token": "34e4f4f169d54a0db853ee5c9f678b88"
+    "token": "16f633b210fe4f889f85a44e86560e44"
   }, 
   "data": {
     "status": "active", 
     "selfEligible": true, 
-    "id": "087bb709d3fc4e1d9be1fac5e91c1b53", 
+    "id": "79f4f1545bd04c1eb03a916edc626c7b", 
     "value": {
       "currency": "UAH", 
       "amount": 500.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "subcontractingDetails": "ДКП «книга», Україна, м. Львів, вул. Островського, 33", 
+    "subcontractingDetails": "ДКП «Орфей», Україна", 
     "tenderers": [
       {
         "contactPoint": {
@@ -76,7 +76,7 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/dc07cf2d5fae45f
         }
       }
     ], 
-    "date": "2019-03-28T06:48:58.299028+02:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "selfQualified": true
   }
 }

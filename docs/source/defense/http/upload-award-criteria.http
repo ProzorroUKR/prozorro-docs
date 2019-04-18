@@ -1,22 +1,23 @@
-POST /api/2.5/tenders/dc07cf2d5fae45f88da7ef5b0917cd1f/documents?acc_token=41072074f75f4d3b9830f4c04d744a6d HTTP/1.0
+POST /api/2.5/tenders/97c85910204e45aca789969e8a136e76/documents?acc_token=cdd57014a34946a58cef647597fd9e87 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 193
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy415020061678$
-Host: api-sandbox.openprocurement.org
+Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy394674105575$
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/dc07cf2d5fae45f88da7ef5b0917cd1f/documents/caa3adbf43b04a2a93f64e06813f41be
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/97c85910204e45aca789969e8a136e76/documents/995bcf913a0a44f6a2d30b8ad94bf0eb
 {
   "data": {
+    "hash": "md5:00000000000000000000000000000000", 
     "author": "tender_owner", 
     "title": "AwardCriteria.pdf", 
-    "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/dc07cf2d5fae45f88da7ef5b0917cd1f/documents/caa3adbf43b04a2a93f64e06813f41be?download=99ea8516a6314817a82952a43ce57ba9", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/7b9014bcf53346959d015540b346682f?KeyID=66bd4083&Signature=lbwiEImlAt9nLO4iww8W7qB%252BYVIT1FzQ2WDZnxQcRQbwPTc2sNGLvFsHUzpNFFBITJqFZOGo7y%252ByHiFk9D%2FHAw%253D%253D", 
     "format": "application/pdf", 
     "documentOf": "tender", 
-    "datePublished": "2019-03-28T06:48:57.809320+02:00", 
-    "id": "caa3adbf43b04a2a93f64e06813f41be", 
-    "dateModified": "2019-03-28T06:48:57.809335+02:00"
+    "datePublished": "2019-01-01T00:00:00+02:00", 
+    "id": "995bcf913a0a44f6a2d30b8ad94bf0eb", 
+    "dateModified": "2019-01-01T00:00:00+02:00"
   }
 }
 

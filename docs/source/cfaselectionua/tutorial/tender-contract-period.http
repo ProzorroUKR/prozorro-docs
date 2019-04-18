@@ -1,28 +1,26 @@
-PATCH /api/2.5/tenders/55fbfef6773941a68153e7e877673499/contracts/f7a347eda6744daf9997077814cc00b1?acc_token=fd113ea31c4145b2a5790646a65a9099 HTTP/1.0
+PATCH /api/2.5/tenders/ae3adab91a6741b7b7c081c7f99632aa/contracts/da6dae5c78ac4ef6bdc6ae0b4958aaf6?acc_token=dcfda2d9335b41a9814dc01c39bd9a03 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 106
+Content-Length: 104
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "period": {
-      "startDate": "2019-04-03T14:34:32.422281", 
-      "endDate": "2020-04-02T14:34:32.422281"
+      "startDate": "2019-01-01T00:00:00+02:00", 
+      "endDate": "2020-01-01T00:00:00+02:00"
     }
   }
 }
 
-
-200 OK
+Response: 200 OK
 Content-Type: application/json; charset=UTF-8
-
 {
   "data": {
     "status": "pending", 
     "items": [
       {
-        "relatedLot": "f95dd4f753684255832d7cfdc7b32368", 
+        "relatedLot": "be6fe65d43f14d3d838990f21c3d2d69", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -45,8 +43,8 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-05T14:34:32.392080+03:00", 
-          "endDate": "2019-04-08T14:34:32.392080+03:00"
+          "startDate": "2019-04-20T06:49:21.606012+03:00", 
+          "endDate": "2019-04-23T06:49:21.606012+03:00"
         }, 
         "id": "1662b0e1d59f4e2f8e2c5bd48e03a7bc", 
         "unit": {
@@ -79,20 +77,20 @@ Content-Type: application/json; charset=UTF-8
     ], 
     "contractNumber": "contract #13111", 
     "period": {
-      "startDate": "2019-04-03T14:34:32.422281+03:00", 
-      "endDate": "2020-04-02T14:34:32.422281+03:00"
+      "startDate": "2019-01-01T00:00:00+02:00", 
+      "endDate": "2020-01-01T00:00:00+02:00"
     }, 
-    "dateSigned": "2019-04-03T14:34:47.070731+03:00", 
+    "dateSigned": "2019-01-01T00:00:00+02:00", 
     "value": {
       "currency": "UAH", 
       "amount": 238.0, 
       "amountNet": 230.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2019-04-03T14:34:46.648279+03:00", 
-    "awardID": "0b96ab8360ef48739c23a2694f3bbdcb", 
-    "id": "f7a347eda6744daf9997077814cc00b1", 
-    "contractID": "UA-2019-04-03-000004-2"
+    "date": "2019-01-01T00:00:00+02:00", 
+    "awardID": "459fc6df79cd4840973a2f8b81f36a07", 
+    "id": "da6dae5c78ac4ef6bdc6ae0b4958aaf6", 
+    "contractID": "UA-2019-01-01-000004-2"
   }
 }
 

@@ -1,8 +1,8 @@
-PATCH /api/2.5/tenders/c1ff56f8f36644269a8023a68d7ba2e6/complaints/2aa0d098b17c43b3954a30088dbd0e6a?acc_token=96acc6f889dc4fb7ae48575240136bf9 HTTP/1.0
+PATCH /api/2.5/tenders/1e249c65e82a47b9b2edfb76505c3da5/complaints/9cdfbc540dde48159c4a5f6c8d84a693?acc_token=1f50f484782446a0a4500ccfddcb70f4 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 29
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -21,21 +21,21 @@ Content-Type: application/json; charset=UTF-8
         "author": "complaint_owner", 
         "language": "uk", 
         "title": "Complaint_Attachement.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/78eba68ac0d24ab88c4f7130bd07dad2?KeyID=44c447bb&Signature=hL%2FyfuG0whYO6uEJ32My%2Fx60jpJvNhZQBjPObxh9fifbccnT3wVi7ihKGkRIqzHLJZy9eKwaqSNW4lKxLCmzDQ%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/e825ec1cc46c471d9e6e04019c555541?KeyID=55ede853&Signature=Ru41QdWec0%252BqPu8ARsodMwgBaMa0zbfyNyIO%252BYd%2Fi%2FyJ%2FEhz5CI5qkI31bFzuKLj5%252Bb%2FhI6WGIP99GXzTt2ABQ%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:49:09.488581+02:00", 
-        "id": "311a448e6f32400c9372a1f55c58a85e", 
-        "dateModified": "2019-03-28T06:49:09.488598+02:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "220d2603abc24ff2a6d24695da931b5c", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }
     ], 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
     "title": "Недостатньо інформації", 
-    "dateSubmitted": "2019-03-28T06:49:09.531153+02:00", 
-    "complaintID": "UA-2019-03-28-000001.1", 
-    "date": "2019-03-28T06:49:09.533862+02:00", 
+    "dateSubmitted": "2019-01-01T00:00:00+02:00", 
+    "complaintID": "UA-2019-01-01-000001.1", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "type": "claim", 
-    "id": "2aa0d098b17c43b3954a30088dbd0e6a"
+    "id": "9cdfbc540dde48159c4a5f6c8d84a693"
   }
 }
 

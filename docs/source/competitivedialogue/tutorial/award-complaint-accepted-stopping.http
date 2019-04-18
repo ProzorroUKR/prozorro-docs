@@ -1,8 +1,8 @@
-PATCH /api/2.5/tenders/bb69bc57d0704d3fbc261afb4859b302/awards/4904e14fce9e423e9035e7f392e8a966/complaints/e198393ff24a4c3bb69cac9c6e01af8b?acc_token=fb04ace925ba4357b5e84e31380cd350 HTTP/1.0
+PATCH /api/2.5/tenders/ec7db6c39e23444a8f8e9672d2b4c308/awards/54db90a26387496aa0a85ff426e26171/complaints/2f36af24d7aa4e66a19b8a1285e50435?acc_token=c1dbbc8ca01f46fb82ce55c737c33305 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 228
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -25,9 +25,8 @@ Content-Type: application/json; charset=UTF-8
       }, 
       "identifier": {
         "scheme": "UA-EDR", 
-        "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
-        "id": "13313462", 
-        "uri": "http://sch10.edu.vn.ua/"
+        "id": "00137256", 
+        "uri": "http://www.sc.gov.ua/"
       }, 
       "name": "ДКП «Школяр»", 
       "address": {
@@ -40,14 +39,14 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "acceptance": true, 
     "cancellationReason": "Тендер скасовується замовником", 
-    "dateCanceled": "2019-03-28T06:48:17.947039+02:00", 
-    "dateAccepted": "2019-03-28T06:48:17.068443+02:00", 
-    "dateSubmitted": "2019-03-28T06:48:16.454607+02:00", 
-    "complaintID": "UA-2019-03-28-000001.4", 
-    "date": "2019-03-28T06:48:17.957054+02:00", 
+    "dateCanceled": "2019-01-01T00:10:00+02:00", 
+    "dateAccepted": "2019-01-01T00:10:00+02:00", 
+    "dateSubmitted": "2019-01-01T00:10:00+02:00", 
+    "complaintID": "UA-2019-01-01-000001.4", 
+    "date": "2019-01-01T00:10:00+02:00", 
     "title": "Недостатньо інформації", 
     "type": "complaint", 
-    "id": "e198393ff24a4c3bb69cac9c6e01af8b"
+    "id": "2f36af24d7aa4e66a19b8a1285e50435"
   }
 }
 

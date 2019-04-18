@@ -1,15 +1,15 @@
-POST /api/2.5/tenders/ecf287a696234915834e93bd9c09f0f4/bids HTTP/1.0
+POST /api/2.5/tenders/7c8c978fa6554fc187f93dc3ed43a9c2/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 1090
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
     "selfEligible": true, 
     "documents": [
       {
-        "url": "http://public.docs-sandbox.openprocurement.org/get/311428c9082a4c30934e4e3c3a1d77dc?KeyID=b1640028&Signature=hPrARQygy0FCb96zFz3MyuSXXjLUozgUhEU2qqAetAGnPg%2BLFWyRSUBEhs1sqcAr4EhwKHUaNgD%2FLkxMTG1QAQ%3D%3D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/9c0c028b48a547f19c3bceef7446cb86?KeyID=8af4a23b&Signature=Vr6gIf%2FK4EdaFrFqmBwPE8zPcXYSGYgRmjEPT0zD%2FWfweILpfZp3KKuSA0d%2BATJpJr6EopRJnRZ%2BBYy8tCdcCQ%3D%3D", 
         "title": "Proposal_part1.pdf", 
         "hash": "md5:00000000000000000000000000000000", 
         "format": "application/pdf"
@@ -23,8 +23,8 @@ DATA:
       {
         "contactPoint": {
           "email": "aagt@gmail.com", 
-          "telephone": "+380 (322) 91-69-30", 
-          "name": "Андрій Олексюк"
+          "name": "Андрій Олексюк", 
+          "telephone": "+380 (322) 91-69-30"
         }, 
         "identifier": {
           "scheme": "UA-EDR", 
@@ -46,10 +46,10 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/ecf287a696234915834e93bd9c09f0f4/bids/a458a4a7fbfd49f0b437b76fc21a8189
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/7c8c978fa6554fc187f93dc3ed43a9c2/bids/9665109680524b39a4a1183b04669571
 {
   "access": {
-    "token": "66ecf1d9db3c4e029fa9dc861e660ecd"
+    "token": "40a3e7809af7444b907905f21359630b"
   }, 
   "data": {
     "status": "active", 
@@ -57,12 +57,12 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/ecf287a69623491
       {
         "hash": "md5:00000000000000000000000000000000", 
         "title": "Proposal_part1.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/ecf287a696234915834e93bd9c09f0f4/bids/a458a4a7fbfd49f0b437b76fc21a8189/documents/b8c5e74d2c3942f79963b07929fa25f4?download=311428c9082a4c30934e4e3c3a1d77dc", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/7c8c978fa6554fc187f93dc3ed43a9c2/bids/9665109680524b39a4a1183b04669571/documents/00a19666da3644e58a236b946d348725?download=9c0c028b48a547f19c3bceef7446cb86", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:48:45.639354+02:00", 
-        "id": "b8c5e74d2c3942f79963b07929fa25f4", 
-        "dateModified": "2019-03-28T06:48:45.639366+02:00"
+        "datePublished": "2019-04-18T06:51:45.482984+03:00", 
+        "id": "00a19666da3644e58a236b946d348725", 
+        "dateModified": "2019-04-18T06:51:45.482996+03:00"
       }
     ], 
     "selfEligible": true, 
@@ -71,7 +71,7 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/ecf287a69623491
       "amount": 499.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "id": "a458a4a7fbfd49f0b437b76fc21a8189", 
+    "id": "9665109680524b39a4a1183b04669571", 
     "tenderers": [
       {
         "contactPoint": {
@@ -94,7 +94,7 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/ecf287a69623491
         }
       }
     ], 
-    "date": "2019-03-28T06:48:45.638961+02:00", 
+    "date": "2019-04-18T06:51:45.482594+03:00", 
     "selfQualified": true
   }
 }

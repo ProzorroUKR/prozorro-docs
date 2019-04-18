@@ -1,9 +1,9 @@
-PATCH /api/2.5/tenders/55fbfef6773941a68153e7e877673499?acc_token=fd113ea31c4145b2a5790646a65a9099 HTTP/1.0
+PATCH /api/2.5/tenders/ae3adab91a6741b7b7c081c7f99632aa?acc_token=dcfda2d9335b41a9814dc01c39bd9a03 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 103
+Content-Length: 96
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "items": [
@@ -12,30 +12,28 @@ Host: api-sandbox.openprocurement.org
       }
     ], 
     "tenderPeriod": {
-      "endDate": "2019-04-18T14:34:52.918733+03:00"
+      "endDate": "2019-01-16T00:00:10+02:00"
     }
   }
 }
 
-
-200 OK
+Response: 200 OK
 Content-Type: application/json; charset=UTF-8
-
 {
   "data": {
     "status": "active.enquiries", 
     "procurementMethod": "selective", 
-    "tenderID": "UA-2019-04-03-000004", 
+    "tenderID": "UA-2019-01-01-000004", 
     "tenderPeriod": {
-      "startDate": "2019-04-04T14:34:42.846679+03:00", 
-      "endDate": "2019-04-18T14:34:52.918733+03:00"
+      "startDate": "2019-01-02T00:00:00+02:00", 
+      "endDate": "2019-01-16T00:00:10+02:00"
     }, 
     "title": "футляри до державних нагород", 
     "lots": [
       {
         "status": "active", 
-        "description": "lot description", 
-        "title": "lot title", 
+        "description": "Опис Лот №1", 
+        "title": "Лот №1", 
         "minimalStep": {
           "currency": "UAH", 
           "amount": 2.5, 
@@ -46,13 +44,13 @@ Content-Type: application/json; charset=UTF-8
           "amount": 600.67, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2019-04-03T14:34:42.419765+03:00", 
-        "id": "f95dd4f753684255832d7cfdc7b32368"
+        "date": "2019-01-01T00:00:00+02:00", 
+        "id": "be6fe65d43f14d3d838990f21c3d2d69"
       }
     ], 
     "items": [
       {
-        "relatedLot": "f95dd4f753684255832d7cfdc7b32368", 
+        "relatedLot": "be6fe65d43f14d3d838990f21c3d2d69", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -75,8 +73,8 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-05T14:34:32.392080+03:00", 
-          "endDate": "2019-04-08T14:34:32.392080+03:00"
+          "startDate": "2019-04-20T06:49:21.606012+03:00", 
+          "endDate": "2019-04-23T06:49:21.606012+03:00"
         }, 
         "id": "1662b0e1d59f4e2f8e2c5bd48e03a7bc", 
         "unit": {
@@ -93,14 +91,14 @@ Content-Type: application/json; charset=UTF-8
       "valueAddedTaxIncluded": true
     }, 
     "submissionMethod": "electronicAuction", 
-    "date": "2019-04-03T14:34:42.852746+03:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 2.5, 
       "valueAddedTaxIncluded": true
     }, 
-    "dateModified": "2019-04-03T14:34:43.071646+03:00", 
-    "next_check": "2019-04-04T14:34:42.846679+03:00", 
+    "dateModified": "2019-01-01T00:00:00+02:00", 
+    "next_check": "2019-01-02T00:00:00+02:00", 
     "procuringEntity": {
       "kind": "general", 
       "name": "Державне управління справами", 
@@ -131,8 +129,8 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "awardCriteria": "lowestCost", 
     "enquiryPeriod": {
-      "startDate": "2019-04-03T14:34:42.846679+03:00", 
-      "endDate": "2019-04-04T14:34:42.846679+03:00"
+      "startDate": "2019-01-01T00:00:00+02:00", 
+      "endDate": "2019-01-02T00:00:00+02:00"
     }, 
     "owner": "broker", 
     "agreements": [
@@ -436,7 +434,7 @@ Content-Type: application/json; charset=UTF-8
           "endDate": "2022-01-23T11:23:20.418436+03:00"
         }, 
         "dateSigned": "2018-09-11T11:23:23.220310+03:00", 
-        "id": "3c7c74b4eea74bbea027e6cdace4e7c9", 
+        "id": "a53c2286a06f4a8aa512989c6556e46c", 
         "procuringEntity": {
           "kind": "general", 
           "name": "Шевченківська районна в місті Києві державна адміністрація", 
@@ -472,7 +470,7 @@ Content-Type: application/json; charset=UTF-8
         "tender_id": "c3f4116d38d34fe2b7d8de8aae8c0b32"
       }
     ], 
-    "id": "55fbfef6773941a68153e7e877673499", 
+    "id": "ae3adab91a6741b7b7c081c7f99632aa", 
     "features": [
       {
         "code": "OCDS-123454-AIR-INTAKE", 

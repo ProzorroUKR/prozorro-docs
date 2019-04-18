@@ -1,34 +1,32 @@
-POST /api/2.5/tenders/4bdc8f70ca4d45b0956ab3afbadcc50c/awards/32a97e4b24054e2db5f8d16d4bdd4fc0/documents?acc_token=b9d491f8ba8643bd9cddd249d67610d3 HTTP/1.0
+POST /api/2.5/tenders/8f11f82d19b64b859827cc941fd7f839/awards/be28a579af2b47788dfb441328f844bc/documents?acc_token=7a12fff2b5f14f698f4c22ad8addc97e HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 339
+Content-Length: 337
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
-    "url": "http://public.docs-sandbox.openprocurement.org/get/2177f3149cd2405ca4c82c642d1a8130?KeyID=ddecca24&Signature=65lw3yZuKYJ5U%2FMmVRvjAHwVPrQHgI5em7EYzQyT0SxCJn2nGyIIdCLzELGSaefeqlAD4TFN5iu5FkB1%2FJGLAA%3D%3D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/7a47460395a64c238b4b75f9de2eb455?KeyID=a0b3a3fd&Signature=0chH90c2ldnrZx5MqzXx6dz5kNegKPXTXv236R%2BFn1EbncJK42o%2FCfcCmQWV6F0otcSNdyP%2Bvrv0IqVN1NfjCA%3D%3D", 
     "title": "Unsuccessful_Reason.pdf", 
     "hash": "md5:00000000000000000000000000000000", 
     "format": "application/pdf"
   }
 }
 
-
-201 Created
+Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/4bdc8f70ca4d45b0956ab3afbadcc50c/awards/32a97e4b24054e2db5f8d16d4bdd4fc0/documents/c82ae8879102412da71f26efdf93879e
-
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/8f11f82d19b64b859827cc941fd7f839/awards/be28a579af2b47788dfb441328f844bc/documents/feb49b3dfa38456bb45fdb66e013412a
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "author": "tender_owner", 
     "title": "Unsuccessful_Reason.pdf", 
-    "url": "http://public.docs-sandbox.openprocurement.org/get/2177f3149cd2405ca4c82c642d1a8130?KeyID=ddecca24&Signature=Yf%252BREREmsMp40BM0MucT%2FT%252BbSCRMU5a%252BgNHCFezGcv5qAJ4KI280rnixo88Yz%2FtLc2Z7Sbpu%2FLoQEgg5il1lCQ%253D%253D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/7a47460395a64c238b4b75f9de2eb455?KeyID=a0b3a3fd&Signature=WEORK2UtDqy4vDyXFgCNyXt7VSDAH%252B%2FiSEiF%2F1hK4rPitpthZ6elYTQ9X20RTBAofvBfITxf41kMWXttXGIyAg%253D%253D", 
     "format": "application/pdf", 
     "documentOf": "tender", 
-    "datePublished": "2019-03-28T06:47:14.966121+02:00", 
-    "id": "c82ae8879102412da71f26efdf93879e", 
-    "dateModified": "2019-03-28T06:47:14.966136+02:00"
+    "datePublished": "2019-01-01T00:00:00+02:00", 
+    "id": "feb49b3dfa38456bb45fdb66e013412a", 
+    "dateModified": "2019-01-01T00:00:00+02:00"
   }
 }
 

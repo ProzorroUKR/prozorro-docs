@@ -1,30 +1,32 @@
-GET /api/2.5/tenders/425a24b7b03d49759b19d37ac7e51561/documents HTTP/1.0
+GET /api/2.5/tenders/fd3bff85b6cf4847a886943870d4ed9d/documents HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
 {
   "data": [
     {
-      "author": "tender_owner", 
-      "title": "Notice.pdf", 
-      "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/425a24b7b03d49759b19d37ac7e51561/documents/1e44f141a99142899c674d8bcd1ae738?download=c174f69b258446c28ad644f78be90a8d", 
-      "format": "application/pdf", 
-      "documentOf": "tender", 
-      "datePublished": "2019-03-28T06:50:13.343168+02:00", 
-      "id": "1e44f141a99142899c674d8bcd1ae738", 
-      "dateModified": "2019-03-28T06:50:13.343185+02:00"
-    }, 
-    {
+      "hash": "md5:00000000000000000000000000000000", 
       "author": "tender_owner", 
       "title": "AwardCriteria-2.pdf", 
-      "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/425a24b7b03d49759b19d37ac7e51561/documents/ea343e92c7684298af94cc1f0c06db9d?download=e4ff4da123d7476483a7b36c651e3364", 
+      "url": "http://public-docs-sandbox.prozorro.gov.ua/get/9f5f20f49fac459ba772fc1b9be42d5a?KeyID=ac787512&Signature=%252BQJZGA0KJeJUvwoeieXM9fpy5yOnrA0em2f%2FiEF6%252BgT5kLUu39%2Fh3%252BBR1jewiF7plDQqqgA0%2FcXkBnZ33S1FAQ%253D%253D", 
       "format": "application/pdf", 
       "documentOf": "tender", 
-      "datePublished": "2019-03-28T06:50:13.380868+02:00", 
-      "id": "ea343e92c7684298af94cc1f0c06db9d", 
-      "dateModified": "2019-03-28T06:50:13.425288+02:00"
+      "datePublished": "2019-01-01T00:00:00+02:00", 
+      "id": "96fa8e440c2b4abeafae6e6b3b5a0780", 
+      "dateModified": "2019-01-01T00:00:00+02:00"
+    }, 
+    {
+      "hash": "md5:00000000000000000000000000000000", 
+      "author": "tender_owner", 
+      "title": "Notice.pdf", 
+      "url": "http://public-docs-sandbox.prozorro.gov.ua/get/d6a28f4188fd425bb220b65964ccd64a?KeyID=ac787512&Signature=ltPgSROCzCwwoqU%252BIvxW6ZBf9eSViWyDTDLlWa6ys5VoVL8UvS4nGBupKMozSe%252BM5vqklG3l%2FTNJklNmFr6nDA%253D%253D", 
+      "format": "application/pdf", 
+      "documentOf": "tender", 
+      "datePublished": "2019-01-01T00:00:00+02:00", 
+      "id": "aaf144a47d704dd3813cff2b82488da7", 
+      "dateModified": "2019-01-01T00:00:00+02:00"
     }
   ]
 }

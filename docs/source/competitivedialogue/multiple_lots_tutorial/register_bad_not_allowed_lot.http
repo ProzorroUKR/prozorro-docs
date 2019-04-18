@@ -1,8 +1,8 @@
-POST /api/2.5/tenders/b3699f3e77fe4e5e990c590dbcead5b2/bids HTTP/1.0
+POST /api/2.5/tenders/24d89076c3c94b2385f4b6a66bfe4d4c/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 984
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -10,7 +10,7 @@ DATA:
     "selfQualified": true, 
     "lotValues": [
       {
-        "relatedLot": "2128fe74540742438dc3e16e02b9876c", 
+        "relatedLot": "5f61ca4e5db1466f9154216af87a5638", 
         "value": {
           "amount": 300
         }, 
@@ -21,8 +21,8 @@ DATA:
       {
         "contactPoint": {
           "telephone": "+380 (432) 21-69-30", 
-          "name": "Сергій Олексюк", 
-          "email": "soleksuk@gmail.com"
+          "email": "soleksuk@gmail.com", 
+          "name": "Сергій Олексюк"
         }, 
         "identifier": {
           "scheme": "UA-EDR", 

@@ -1,19 +1,20 @@
-GET /api/2.5/tenders/8ebbedbb7e114716a175fa053af7cda6/contracts/065161db6ca14f6c858c1d37613650d6/documents?acc_token=cd8238cb6f7449eeab3bfcf5cd5d6579 HTTP/1.0
+GET /api/2.5/tenders/279d5688a5e943168632df3b5d169d63/contracts/aaccf1604ee845ac9abf473e3c02595e/documents?acc_token=7ee2cdca6b0d482f9449372b899ea5c8 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
 {
   "data": [
     {
+      "hash": "md5:00000000000000000000000000000000", 
       "title": "contract_first_document.doc", 
-      "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/8ebbedbb7e114716a175fa053af7cda6/contracts/065161db6ca14f6c858c1d37613650d6/documents/058f38eabeaf417eba945f324785a9ca?download=5f59550c3eaa41e58f7daea17f4c660f", 
+      "url": "http://public-docs-sandbox.prozorro.gov.ua/get/b5240361d9334f1e8e978a69090047b6?KeyID=e2e24154&Signature=Qq31fw5Skz9aodN7d5p3ThbdvaxaVUNOK1y6gw07t1giBd%252BuCASNMVALBc1fnWNuSy6JZqwryR2FAl%252BFL3yBAg%253D%253D", 
       "format": "application/msword", 
       "documentOf": "tender", 
-      "datePublished": "2019-03-28T06:49:31.273916+02:00", 
-      "id": "058f38eabeaf417eba945f324785a9ca", 
-      "dateModified": "2019-03-28T06:49:31.273942+02:00"
+      "datePublished": "2019-01-01T00:00:00+02:00", 
+      "id": "01571de5d54847c38995e4cdd09d97c7", 
+      "dateModified": "2019-01-01T00:00:00+02:00"
     }
   ]
 }

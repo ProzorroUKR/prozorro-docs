@@ -1,22 +1,23 @@
-POST /api/2.5/tenders/dd16b9bbdea449ff82d72804ecfa7b2c/complaints/b4654b6a9b2d4fceb51a51fd3c9bd233/documents HTTP/1.0
+POST /api/2.5/tenders/cef4930c639c446690b584400d89b484/complaints/cb23abf653494a6eb14ed2aa4b3bdaed/documents HTTP/1.0
 Authorization: Basic cmV2aWV3ZXI6
 Content-Length: 199
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy262245658013$
-Host: api-sandbox.openprocurement.org
+Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy368181233249$
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/dd16b9bbdea449ff82d72804ecfa7b2c/complaints/b4654b6a9b2d4fceb51a51fd3c9bd233/documents/53ab4cc09a7d456492acd4733c3e37d5
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/cef4930c639c446690b584400d89b484/complaints/cb23abf653494a6eb14ed2aa4b3bdaed/documents/b5d87c451dab4630ae17e2ab039cd9ff
 {
   "data": {
+    "hash": "md5:00000000000000000000000000000000", 
     "author": "aboveThresholdReviewers", 
     "title": "ComplaintResolution.pdf", 
-    "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/dd16b9bbdea449ff82d72804ecfa7b2c/complaints/b4654b6a9b2d4fceb51a51fd3c9bd233/documents/53ab4cc09a7d456492acd4733c3e37d5?download=4f4c40a378b8445ab544cccd0f3afc4e", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/b1be5a1817e04cf9b58db08e797893cb?KeyID=81433850&Signature=Yt%2FzwFFP6waDqSOO%252BD95hcu2ID2gRvccy4TjNFW%2FYx6ldhumlQyarKvYcO62hzrKLSH16kqVTRFAM6D35Ed6Bw%253D%253D", 
     "format": "application/pdf", 
     "documentOf": "tender", 
-    "datePublished": "2019-03-28T06:50:11.982542+02:00", 
-    "id": "53ab4cc09a7d456492acd4733c3e37d5", 
-    "dateModified": "2019-03-28T06:50:11.982562+02:00"
+    "datePublished": "2019-01-01T00:00:00+02:00", 
+    "id": "b5d87c451dab4630ae17e2ab039cd9ff", 
+    "dateModified": "2019-01-01T00:00:00+02:00"
   }
 }
 

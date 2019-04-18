@@ -1,9 +1,9 @@
-PATCH /api/2.5/tenders/4bdc8f70ca4d45b0956ab3afbadcc50c/awards/32a97e4b24054e2db5f8d16d4bdd4fc0/complaints/aa0f69d66ab94c358c09dcda1abb5f6a?acc_token=e0ab27fe3a7045c28a7e6a15cf8d8961 HTTP/1.0
+PATCH /api/2.5/tenders/8f11f82d19b64b859827cc941fd7f839/awards/be28a579af2b47788dfb441328f844bc/complaints/4e28a045331943eb89c6be15c7a9f570?acc_token=8d1e5808a00649e591881308a0be9958 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 51
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "status": "resolved", 
@@ -11,10 +11,8 @@ Host: api-sandbox.openprocurement.org
   }
 }
 
-
-200 OK
+Response: 200 OK
 Content-Type: application/json; charset=UTF-8
-
 {
   "data": {
     "status": "resolved", 
@@ -23,15 +21,15 @@ Content-Type: application/json; charset=UTF-8
         "hash": "md5:00000000000000000000000000000000", 
         "author": "complaint_owner", 
         "title": "Complaint_Attachement.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/e3ff2d97cea6449da5c93ddc3fd0dae4?KeyID=ddecca24&Signature=WGAwzdUxRMgwdiJmy%2FsKY80BJ5dzkoTfl%2Fn%252BbOuD1SW%252BXw46U4SgUnUl0UVVODbKfBT7Z5CpskjjiW3LfHNjDg%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/3cec94f61e6646d0afc3e00c0c83fa15?KeyID=a0b3a3fd&Signature=ZV85ZDeTPAUjPKT5xlnX%2F1LQoapRnDH7CiAotn8UTvD1SavbkHgxPpCTrgkIDI2ZTQ78b9sf2kH5jpVUg7ZXBg%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:47:15.993725+02:00", 
-        "id": "796264f35e004bef912b543686856f0c", 
-        "dateModified": "2019-03-28T06:47:15.993744+02:00"
+        "datePublished": "2019-01-01T00:10:00+02:00", 
+        "id": "3444ef6c99be465b8f698c7a43ba5b8e", 
+        "dateModified": "2019-01-01T00:10:00+02:00"
       }
     ], 
-    "description": "complaint description", 
+    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
     "author": {
       "contactPoint": {
         "email": "soleksuk@gmail.com", 
@@ -54,16 +52,16 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "resolutionType": "resolved", 
     "type": "claim", 
-    "title": "complaint title", 
+    "title": "Недостатньо інформації", 
     "satisfied": true, 
     "tendererAction": "Виправлено неконкурентні умови", 
-    "dateAnswered": "2019-03-28T06:47:16.515495+02:00", 
-    "tendererActionDate": "2019-03-28T06:47:16.515524+02:00", 
-    "dateSubmitted": "2019-03-28T06:47:16.136409+02:00", 
-    "complaintID": "UA-2019-03-28-000001.5", 
-    "date": "2019-03-28T06:47:16.676340+02:00", 
+    "dateAnswered": "2019-01-01T00:10:00+02:00", 
+    "tendererActionDate": "2019-01-01T00:10:00+02:00", 
+    "dateSubmitted": "2019-01-01T00:10:00+02:00", 
+    "complaintID": "UA-2019-01-01-000001.5", 
+    "date": "2019-01-01T00:10:00+02:00", 
     "resolution": "Виправлено неконкурентні умови", 
-    "id": "aa0f69d66ab94c358c09dcda1abb5f6a"
+    "id": "4e28a045331943eb89c6be15c7a9f570"
   }
 }
 

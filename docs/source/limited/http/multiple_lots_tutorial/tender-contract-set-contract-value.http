@@ -1,9 +1,9 @@
-PATCH /api/2.5/tenders/f930e795d51e4d0897efd6abd044cab3/contracts/7904238244a145d29c9af569c2cca0aa?acc_token=de5684b7316349acb1774b8332e102ab HTTP/1.0
+PATCH /api/2.5/tenders/6418a8ebfc3b47cb95b0ec6de0c3bdb1/contracts/5d8912a930a148cba88415c085795825?acc_token=1aed17756aad4f0aaacdff130f87dc0a HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 54
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "value": {
@@ -20,18 +20,17 @@ Content-Type: application/json; charset=UTF-8
     "status": "pending", 
     "items": [
       {
-        "relatedLot": "d24866d6eade408d988ac6dc679460fe", 
+        "relatedLot": "1db1d75a56454f7ea600991417121e9f", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
           "description": "Послуги з харчування у школах", 
           "id": "55523100-3"
         }, 
-        "description_en": "Services in school canteens", 
         "additionalClassifications": [
           {
             "scheme": "ДКПП", 
-            "id": "55.51.10.300", 
+            "id": "17.21.1", 
             "description": "Послуги шкільних їдалень"
           }
         ], 
@@ -43,11 +42,11 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-03-30T06:47:08.632098+02:00", 
-          "endDate": "2019-04-02T06:47:08.632098+03:00"
+          "startDate": "2019-05-08T06:49:21.594749+03:00", 
+          "endDate": "2019-06-07T06:49:21.594758+03:00"
         }, 
-        "description_ru": "Услуги школьных столовых", 
-        "id": "2dc54675d6364e2baffbc0f8e74432ac"
+        "id": "0ea2f48654ed443c95048461751a9d09", 
+        "quantity": 1.0
       }
     ], 
     "suppliers": [
@@ -59,9 +58,8 @@ Content-Type: application/json; charset=UTF-8
         }, 
         "identifier": {
           "scheme": "UA-EDR", 
-          "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
-          "id": "13313462", 
-          "uri": "http://sch10.edu.vn.ua/"
+          "id": "00137256", 
+          "uri": "http://www.sc.gov.ua/"
         }, 
         "name": "ДКП «Школяр»", 
         "address": {
@@ -79,10 +77,10 @@ Content-Type: application/json; charset=UTF-8
       "amountNet": 230.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2019-03-28T06:49:42.774090+02:00", 
-    "awardID": "75c5007d80ee4a4796999af3719ae58b", 
-    "id": "7904238244a145d29c9af569c2cca0aa", 
-    "contractID": "UA-2019-03-28-000001-1"
+    "date": "2019-01-01T00:00:00+02:00", 
+    "awardID": "4087e03c7707400099bfb149061fead7", 
+    "id": "5d8912a930a148cba88415c085795825", 
+    "contractID": "UA-2019-01-01-000001-1"
   }
 }
 

@@ -1,8 +1,8 @@
-PATCH /api/2.5/tenders/d6aa2463a1bc4f7d8f737e80f4a864b7/awards/b107d6b4a6d9486894011e37c5a368a0/complaints/f22815eb6ff04c609c5fc9cd5d5b7bb8 HTTP/1.0
+PATCH /api/2.5/tenders/3c2f3bb4c2f6449fbe0ca1ab1fd768f7/awards/f764e0a5b6274bb89ce6e731d7003a7a/complaints/ba4a717cd04246c2a294b92e0140fada HTTP/1.0
 Authorization: Basic cmV2aWV3ZXI6
 Content-Length: 32
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -17,14 +17,15 @@ Content-Type: application/json; charset=UTF-8
     "status": "accepted", 
     "documents": [
       {
+        "hash": "md5:00000000000000000000000000000000", 
         "author": "complaint_owner", 
         "title": "Complaint_Attachement.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/d6aa2463a1bc4f7d8f737e80f4a864b7/awards/b107d6b4a6d9486894011e37c5a368a0/complaints/f22815eb6ff04c609c5fc9cd5d5b7bb8/documents/1b9726ced23c445c91442fd936521237?download=30185150a48c43f784e677cfaeba6cb0", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/dd797ea0a1b943d39e52ec928075cd1d?KeyID=36670427&Signature=g1Pv2j2rp79Cl%2FDwj7p9aZYsRDoJPninoEpdkc8yNLcNKaCAb0KAYtwV9lOWMuYCBTAOtf6XOTmoH3mZjwlqBA%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:48:51.461905+02:00", 
-        "id": "1b9726ced23c445c91442fd936521237", 
-        "dateModified": "2019-03-28T06:48:51.461921+02:00"
+        "datePublished": "2019-01-01T00:10:00+02:00", 
+        "id": "84bcfedf09664893a60c4c596cdb5ddb", 
+        "dateModified": "2019-01-01T00:10:00+02:00"
       }
     ], 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
@@ -37,9 +38,8 @@ Content-Type: application/json; charset=UTF-8
       }, 
       "identifier": {
         "scheme": "UA-EDR", 
-        "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
-        "id": "13313462", 
-        "uri": "http://sch10.edu.vn.ua/"
+        "id": "00137256", 
+        "uri": "http://www.sc.gov.ua/"
       }, 
       "name": "ДКП «Школяр»", 
       "address": {
@@ -50,13 +50,13 @@ Content-Type: application/json; charset=UTF-8
         "locality": "м. Вінниця"
       }
     }, 
-    "dateAccepted": "2019-03-28T06:48:52.994859+02:00", 
-    "dateSubmitted": "2019-03-28T06:48:51.539823+02:00", 
-    "complaintID": "UA-2019-03-28-000001.1", 
-    "date": "2019-03-28T06:48:53.006876+02:00", 
+    "dateAccepted": "2019-01-01T00:10:00+02:00", 
+    "dateSubmitted": "2019-01-01T00:10:00+02:00", 
+    "complaintID": "UA-2019-01-01-000001.1", 
+    "date": "2019-01-01T00:10:00+02:00", 
     "acceptance": true, 
     "type": "complaint", 
-    "id": "f22815eb6ff04c609c5fc9cd5d5b7bb8"
+    "id": "ba4a717cd04246c2a294b92e0140fada"
   }
 }
 

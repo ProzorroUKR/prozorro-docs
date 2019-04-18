@@ -1,21 +1,19 @@
 GET /api/2.5/tenders HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
-
-200 OK
+Response: 200 OK
 Content-Type: application/json; charset=UTF-8
-
 {
   "next_page": {
-    "path": "/api/2.5/tenders?offset=2019-04-03T14%3A34%3A34.226396%2B03%3A00", 
-    "uri": "http://api-sandbox.openprocurement.org/api/2.5/tenders?offset=2019-04-03T14%3A34%3A34.226396%2B03%3A00", 
-    "offset": "2019-04-03T14:34:34.226396+03:00"
+    "path": "/api/2.5/tenders?offset=2019-01-01T00%3A00%3A00%2B02%3A00", 
+    "uri": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders?offset=2019-01-01T00%3A00%3A00%2B02%3A00", 
+    "offset": "2019-01-01T00:00:00+02:00"
   }, 
   "data": [
     {
-      "id": "bfc38e0727544f8bbcacbf60bd82358d", 
-      "dateModified": "2019-04-03T14:34:34.226396+03:00"
+      "id": "63cb67da96fe483699794e17c5345e28", 
+      "dateModified": "2019-01-01T00:00:00+02:00"
     }
   ]
 }

@@ -1,22 +1,20 @@
-PATCH /api/2.5/tenders/4e72a84032424e519ab51eb3c1c98dbf/contracts/4669081f0e9141f3be4bdc9c631eab08?acc_token=40505a9e3a774f6e9cd51e16d68e457a HTTP/1.0
+PATCH /api/2.5/tenders/cfe8d9ecde7d49cba990bed08065d7d4/contracts/5edfcbe1d28046cd8e72d8e8847c3ece?acc_token=7a8640666384400f9051baf16a41659d HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 106
+Content-Length: 104
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "period": {
-      "startDate": "2019-03-28T06:47:07.311391", 
-      "endDate": "2020-03-27T06:47:07.311391"
+      "startDate": "2019-01-01T00:30:00+02:00", 
+      "endDate": "2020-01-01T00:30:00+02:00"
     }
   }
 }
 
-
-200 OK
+Response: 200 OK
 Content-Type: application/json; charset=UTF-8
-
 {
   "data": {
     "status": "pending", 
@@ -43,10 +41,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-03-30T06:47:07.288622+02:00", 
-          "endDate": "2019-04-02T06:47:07.288622+03:00"
+          "startDate": "2019-04-20T06:49:21.547544+03:00", 
+          "endDate": "2019-04-23T06:49:21.547544+03:00"
         }, 
-        "id": "f0d50081ea3648d9bd09e243d6619bd9", 
+        "id": "51dd3d05a87a4bdfadfa21f800591343", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -75,10 +73,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-03-30T06:47:07.288622+02:00", 
-          "endDate": "2019-04-02T06:47:07.288622+03:00"
+          "startDate": "2019-04-20T06:49:21.547544+03:00", 
+          "endDate": "2019-04-23T06:49:21.547544+03:00"
         }, 
-        "id": "d39cb38814824407a7172ac09bd522fa", 
+        "id": "363b608997814f17822811058d214a91", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -110,20 +108,20 @@ Content-Type: application/json; charset=UTF-8
     ], 
     "contractNumber": "contract #13111", 
     "period": {
-      "startDate": "2019-03-28T06:47:07.311391+02:00", 
-      "endDate": "2020-03-27T06:47:07.311391+02:00"
+      "startDate": "2019-01-01T00:30:00+02:00", 
+      "endDate": "2020-01-01T00:30:00+02:00"
     }, 
-    "dateSigned": "2019-03-28T06:47:21.500518+02:00", 
+    "dateSigned": "2019-01-01T00:30:00+02:00", 
     "value": {
       "currency": "UAH", 
       "amount": 238.0, 
       "amountNet": 230.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2019-03-28T06:47:21.254386+02:00", 
-    "awardID": "30d1b00bbd954144978cbab8802646da", 
-    "id": "4669081f0e9141f3be4bdc9c631eab08", 
-    "contractID": "UA-2019-03-28-000001-1"
+    "date": "2019-01-01T00:10:00+02:00", 
+    "awardID": "eb0b40f760be47e8b2d275b777e7578f", 
+    "id": "5edfcbe1d28046cd8e72d8e8847c3ece", 
+    "contractID": "UA-2019-01-01-000001-1"
   }
 }
 

@@ -1,9 +1,9 @@
-PATCH /api/2.5/tenders/8ebbedbb7e114716a175fa053af7cda6/cancellations/1ded474272e34d3396224625a9c5caf2?acc_token=cd8238cb6f7449eeab3bfcf5cd5d6579 HTTP/1.0
+PATCH /api/2.5/tenders/279d5688a5e943168632df3b5d169d63/cancellations/1801b1c29b8145a99ef19f50a1a92104?acc_token=7ee2cdca6b0d482f9449372b899ea5c8 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 30
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "status": "active"
@@ -17,31 +17,33 @@ Content-Type: application/json; charset=UTF-8
     "status": "active", 
     "documents": [
       {
+        "hash": "md5:00000000000000000000000000000000", 
         "description": "Changed description", 
         "title": "Notice.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/8ebbedbb7e114716a175fa053af7cda6/cancellations/1ded474272e34d3396224625a9c5caf2/documents/27d9dbdfb104435ba48d659ed7082055?download=02a27694b3904562ad4b537d39531365", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/d1b986f18bf340e48ec25d1e9080205a?KeyID=e2e24154&Signature=PO8C1%2FGZ%2FHzloWeKrU8%2Fo%2FYC94XW2pVk7jeauv93ZpYNncqnE9OSA3v027Yz0Bk3uU77YcVHfOv6ZrMsbxanCA%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:49:31.660786+02:00", 
-        "id": "27d9dbdfb104435ba48d659ed7082055", 
-        "dateModified": "2019-03-28T06:49:31.660810+02:00"
+        "datePublished": "2019-01-01T00:10:00+02:00", 
+        "id": "ab68cc0013ab4bd9af7ae07d99d35a6b", 
+        "dateModified": "2019-01-01T00:10:00+02:00"
       }, 
       {
+        "hash": "md5:00000000000000000000000000000000", 
         "description": "Changed description", 
         "title": "Notice-2.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/8ebbedbb7e114716a175fa053af7cda6/cancellations/1ded474272e34d3396224625a9c5caf2/documents/27d9dbdfb104435ba48d659ed7082055?download=936fbd9172364e2c800bbb671b1f318f", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/fd8b67030bda42cfa7254a6970fb8df4?KeyID=e2e24154&Signature=IIEyPj4bdLY3Awo%252B%252BHuDHNUxO%2Fi6oo1ZFIvMc5p1bl1XzNw6trv7%252BuzLMDLyE4sQ%252B6NXAfOmXdRDXFza1eIOCg%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:49:31.660786+02:00", 
-        "id": "27d9dbdfb104435ba48d659ed7082055", 
-        "dateModified": "2019-03-28T06:49:31.799194+02:00"
+        "datePublished": "2019-01-01T00:10:00+02:00", 
+        "id": "ab68cc0013ab4bd9af7ae07d99d35a6b", 
+        "dateModified": "2019-01-01T00:10:00+02:00"
       }
     ], 
     "reason": "cancellation reason", 
     "reasonType": "unsuccessful", 
-    "date": "2019-03-28T06:49:31.907737+02:00", 
+    "date": "2019-01-01T00:10:00+02:00", 
     "cancellationOf": "tender", 
-    "id": "1ded474272e34d3396224625a9c5caf2"
+    "id": "1801b1c29b8145a99ef19f50a1a92104"
   }
 }
 

@@ -1,8 +1,8 @@
-POST /api/2.5/tenders/000c8f7d39974ccfa431f03fd95eedd5/bids HTTP/1.0
+POST /api/2.5/tenders/e87a7400cc144ac9b69ec677303e3721/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 975
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -10,19 +10,19 @@ DATA:
     "selfQualified": true, 
     "lotValues": [
       {
-        "relatedLot": "84376ace1c0042948424738474323549"
+        "relatedLot": "eb5716cccb9747749c7ab89824466345"
       }, 
       {
-        "relatedLot": "2128fe74540742438dc3e16e02b9876c", 
+        "relatedLot": "5f61ca4e5db1466f9154216af87a5638", 
         "subcontractingDetails": "ДКП «Укр Прінт», Україна"
       }
     ], 
     "tenderers": [
       {
         "contactPoint": {
+          "email": "fake@mail.com", 
           "telephone": "+380 (322) 12-34-56", 
-          "name": "Іван Іваненко", 
-          "email": "fake@mail.com"
+          "name": "Іван Іваненко"
         }, 
         "identifier": {
           "scheme": "UA-EDR", 
@@ -44,23 +44,23 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/000c8f7d39974ccfa431f03fd95eedd5/bids/355f5962dc954c85a0ae704769081070
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e87a7400cc144ac9b69ec677303e3721/bids/76be5c3a95f74c0fa3cbacfa8ec84c0f
 {
   "access": {
-    "token": "64fb2ed52a4143b2becad0cd5cb71956"
+    "token": "c0260e45eb0a4fc9af1b0d6df8cb89cf"
   }, 
   "data": {
     "status": "pending", 
     "selfEligible": true, 
     "lotValues": [
       {
-        "relatedLot": "84376ace1c0042948424738474323549", 
-        "date": "2019-03-28T06:48:25.194343+02:00", 
+        "relatedLot": "eb5716cccb9747749c7ab89824466345", 
+        "date": "2019-01-01T00:00:00+02:00", 
         "status": "pending"
       }, 
       {
-        "relatedLot": "2128fe74540742438dc3e16e02b9876c", 
-        "date": "2019-03-28T06:48:25.194467+02:00", 
+        "relatedLot": "5f61ca4e5db1466f9154216af87a5638", 
+        "date": "2019-01-01T00:00:00+02:00", 
         "status": "pending", 
         "subcontractingDetails": "ДКП «Укр Прінт», Україна"
       }
@@ -88,8 +88,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/000c8f7d39974cc
         }
       }
     ], 
-    "date": "2019-03-28T06:48:25.194142+02:00", 
-    "id": "355f5962dc954c85a0ae704769081070"
+    "date": "2019-01-01T00:00:00+02:00", 
+    "id": "76be5c3a95f74c0fa3cbacfa8ec84c0f"
   }
 }
 

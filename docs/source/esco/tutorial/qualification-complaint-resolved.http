@@ -1,8 +1,8 @@
-PATCH /api/2.5/tenders/db62d144fe4b4d4fa661839d7095f95a/qualifications/d93afb5447f64b5883700239cffa68f8/complaints/68f7d6ebe8854d4f976915387e170616?acc_token=509fda5a9f6b46cc8b20b4c73904a8dd HTTP/1.0
+PATCH /api/2.5/tenders/76a47711227a4dbbb943008da264324e/qualifications/9fa3e3e47b314b08924359c928bdfd92/complaints/e6e0df688d3f4c21890356bb887e2623?acc_token=4ba114285ca848bf8983cb287a05ddb9 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 145
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -16,8 +16,8 @@ Content-Type: application/json; charset=UTF-8
 {
   "data": {
     "status": "resolved", 
-    "dateDecision": "2019-03-28T06:49:26.726116+02:00", 
-    "tendererActionDate": "2019-03-28T06:49:27.293171+02:00", 
+    "dateDecision": "2019-01-01T00:10:00+02:00", 
+    "tendererActionDate": "2019-01-01T00:10:00+02:00", 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
     "author": {
       "contactPoint": {
@@ -27,9 +27,8 @@ Content-Type: application/json; charset=UTF-8
       }, 
       "identifier": {
         "scheme": "UA-EDR", 
-        "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
-        "id": "13313462", 
-        "uri": "http://sch10.edu.vn.ua/"
+        "id": "00137256", 
+        "uri": "http://www.sc.gov.ua/"
       }, 
       "name": "ДКП «Школяр»", 
       "address": {
@@ -41,11 +40,11 @@ Content-Type: application/json; charset=UTF-8
       }
     }, 
     "title": "Недостатньо інформації", 
-    "id": "68f7d6ebe8854d4f976915387e170616", 
+    "id": "e6e0df688d3f4c21890356bb887e2623", 
     "tendererAction": "Умови виправлено", 
-    "dateSubmitted": "2019-03-28T06:49:23.536760+02:00", 
-    "complaintID": "UA-2019-03-28-000001.1", 
-    "date": "2019-03-28T06:49:27.307879+02:00", 
+    "dateSubmitted": "2019-01-01T00:10:00+02:00", 
+    "complaintID": "UA-2019-01-01-000001.1", 
+    "date": "2019-01-01T00:10:00+02:00", 
     "acceptance": true, 
     "type": "complaint", 
     "documents": [
@@ -54,27 +53,27 @@ Content-Type: application/json; charset=UTF-8
         "author": "complaint_owner", 
         "language": "uk", 
         "title": "Complaint_Attachement.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/f1e6ff96ead645ef87ad7a2845b57cbb?KeyID=f3c549a4&Signature=wbE7Mnju564luVRtz1mKJfBAf9apFwjL%252BMlVgEMBSyD8Tx4DZrGFIWZERJOLbeWSs8XoYWvcrJi0MTU%252BAbqrDg%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/f9877103b1714e3fbeb53ff6cdd4e91b?KeyID=5097c6c1&Signature=PwELwpb39dOAtQLzNWZVvtysHRtw00qQKAPj0plxktHCRa%2FaVkwf%2FPYn9cDWuKRjq0%2FTVXZ%2FpnEWwHbC6Z0HDg%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:49:23.436982+02:00", 
-        "id": "d4f72361e6414713935d7931d8030da9", 
-        "dateModified": "2019-03-28T06:49:23.436998+02:00"
+        "datePublished": "2019-01-01T00:10:00+02:00", 
+        "id": "69f70a78cdf64fa399a6ca3c73772cc6", 
+        "dateModified": "2019-01-01T00:10:00+02:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
         "author": "aboveThresholdReviewers", 
         "language": "uk", 
         "title": "ComplaintResolution.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/51bc443062514553b55e2a0a343ad3a2?KeyID=f3c549a4&Signature=Q1%252Bfe%252BuTTcEkr78PJ7iCXxMF3XUCHUtPeIvQ81vfFfQ2OVk353whhOffew%2FcWHZj5Ymv2RpBRVGt5m6KV%252BneCg%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/b3ede1b34e234f13a5463029208561f7?KeyID=5097c6c1&Signature=s3i%2FxoVGt84kOYedIESyXyZSr4yVqZ4czwbhcxoo2KZ6%2FFanDMOYRB76BUL1abC2Y7qrFk3T%2FE1ckYqEkNDODQ%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:49:26.526741+02:00", 
-        "id": "49f621f10aa54966877bfa87ab2c76f1", 
-        "dateModified": "2019-03-28T06:49:26.526758+02:00"
+        "datePublished": "2019-01-01T00:10:00+02:00", 
+        "id": "67cdab341d304cbca34cde4c5337c2d5", 
+        "dateModified": "2019-01-01T00:10:00+02:00"
       }
     ], 
-    "dateAccepted": "2019-03-28T06:49:25.886530+02:00"
+    "dateAccepted": "2019-01-01T00:10:00+02:00"
   }
 }
 

@@ -1,11 +1,9 @@
-GET /api/2.5/tenders/55fbfef6773941a68153e7e877673499/bids/7a609cde36ef4e5693c92d3a4fe1fd65?acc_token=bd106ceed32c4d1daa41d78c54db6ac7 HTTP/1.0
+GET /api/2.5/tenders/ae3adab91a6741b7b7c081c7f99632aa/bids/eed222706ef742c599fd90c57061bae1?acc_token=4e3cadbb83614221976176eb5c0ce717 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
-
-200 OK
+Response: 200 OK
 Content-Type: application/json; charset=UTF-8
-
 {
   "data": {
     "status": "active", 
@@ -13,22 +11,22 @@ Content-Type: application/json; charset=UTF-8
       {
         "hash": "md5:00000000000000000000000000000000", 
         "title": "Proposal_part1.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/55fbfef6773941a68153e7e877673499/bids/7a609cde36ef4e5693c92d3a4fe1fd65/documents/390ed843ea534304bd9cb5d5a2bc6bff?download=ef9cad5cc10a414eac66abb7ba25835b", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ae3adab91a6741b7b7c081c7f99632aa/bids/eed222706ef742c599fd90c57061bae1/documents/80c2ef251bdd4f02aad93e1489f79c3a?download=bf55d86ef10b4dc896238b3e8ab16f08", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-04-03T14:34:44.622240+03:00", 
-        "id": "390ed843ea534304bd9cb5d5a2bc6bff", 
-        "dateModified": "2019-04-03T14:34:44.622251+03:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "80c2ef251bdd4f02aad93e1489f79c3a", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
         "title": "Proposal_part2.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/55fbfef6773941a68153e7e877673499/bids/7a609cde36ef4e5693c92d3a4fe1fd65/documents/7a892590bae747c1b1045f76ae486b0f?download=853dc371cbdb4e539bf917df4fb31f85", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ae3adab91a6741b7b7c081c7f99632aa/bids/eed222706ef742c599fd90c57061bae1/documents/6025360a1fcb4d0c92215f4761d69bbf?download=48af9b2b9d0c4ca59ec4a7405f8a7106", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-04-03T14:34:44.622579+03:00", 
-        "id": "7a892590bae747c1b1045f76ae486b0f", 
-        "dateModified": "2019-04-03T14:34:44.622590+03:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "6025360a1fcb4d0c92215f4761d69bbf", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }
     ], 
     "parameters": [
@@ -43,14 +41,14 @@ Content-Type: application/json; charset=UTF-8
     ], 
     "lotValues": [
       {
-        "relatedLot": "f95dd4f753684255832d7cfdc7b32368", 
-        "date": "2019-04-03T14:34:44.623066+03:00", 
+        "relatedLot": "be6fe65d43f14d3d838990f21c3d2d69", 
+        "date": "2019-01-01T00:00:00+02:00", 
         "value": {
           "currency": "UAH", 
           "amount": 499.0, 
           "valueAddedTaxIncluded": true
         }, 
-        "participationUrl": "http://auction-sandbox.openprocurement.org/tenders/55fbfef6773941a68153e7e877673499_f95dd4f753684255832d7cfdc7b32368?key_for_bid=7a609cde36ef4e5693c92d3a4fe1fd65"
+        "participationUrl": "http://auction-sandbox.prozorro.gov.ua/tenders/ae3adab91a6741b7b7c081c7f99632aa_be6fe65d43f14d3d838990f21c3d2d69?key_for_bid=eed222706ef742c599fd90c57061bae1"
       }
     ], 
     "tenderers": [
@@ -74,8 +72,8 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "date": "2019-04-03T14:34:44.621936+03:00", 
-    "id": "7a609cde36ef4e5693c92d3a4fe1fd65"
+    "date": "2019-01-01T00:00:00+02:00", 
+    "id": "eed222706ef742c599fd90c57061bae1"
   }
 }
 

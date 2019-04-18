@@ -1,6 +1,6 @@
-GET /api/2.5/tenders/d29dcbb84cbe4be191e2dc2690bddd1b HTTP/1.0
+GET /api/2.5/tenders/bd4410ceb3a949858ccdc3141d32898f HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
@@ -9,12 +9,12 @@ Content-Type: application/json; charset=UTF-8
     "procurementMethod": "open", 
     "status": "complete", 
     "awardPeriod": {
-      "startDate": "2019-03-18T06:47:07.288622+02:00", 
-      "endDate": "2019-03-18T06:47:07.288622+02:00"
+      "startDate": "2018-12-22T00:00:00+02:00", 
+      "endDate": "2018-12-22T00:00:00+02:00"
     }, 
     "enquiryPeriod": {
-      "startDate": "2019-03-03T06:47:07.288622+02:00", 
-      "endDate": "2019-03-10T06:47:07.288622+02:00"
+      "startDate": "2018-12-07T00:00:00+02:00", 
+      "endDate": "2018-12-14T00:00:00+02:00"
     }, 
     "submissionMethod": "electronicAuction", 
     "procuringEntity": {
@@ -38,14 +38,14 @@ Content-Type: application/json; charset=UTF-8
       }
     }, 
     "owner": "broker", 
-    "id": "d29dcbb84cbe4be191e2dc2690bddd1b", 
+    "id": "bd4410ceb3a949858ccdc3141d32898f", 
     "title": "футляри до державних нагород", 
-    "tenderID": "UA-2019-03-28-000001", 
-    "dateModified": "2019-03-28T06:48:48.666056+02:00", 
+    "tenderID": "UA-2019-01-01-000001", 
+    "dateModified": "2019-01-01T00:10:00+02:00", 
     "numberOfBids": 1, 
     "tenderPeriod": {
-      "startDate": "2019-03-10T06:47:07.288622+02:00", 
-      "endDate": "2019-03-17T06:47:07.288622+02:00"
+      "startDate": "2018-12-14T00:00:00+02:00", 
+      "endDate": "2018-12-21T00:00:00+02:00"
     }, 
     "contracts": [
       {
@@ -73,10 +73,10 @@ Content-Type: application/json; charset=UTF-8
               "locality": "м. Київ"
             }, 
             "deliveryDate": {
-              "startDate": "2019-03-30T06:47:07.288622+02:00", 
-              "endDate": "2019-04-02T06:47:07.288622+03:00"
+              "startDate": "2019-04-20T06:49:21.547544+03:00", 
+              "endDate": "2019-04-23T06:49:21.547544+03:00"
             }, 
-            "id": "57ecdbb89a09425ab4fa5a75dc2d40f1", 
+            "id": "ed2f6d44fb254ad9ab0d628d5737002a", 
             "unit": {
               "code": "44617100-9", 
               "name": "item"
@@ -105,10 +105,10 @@ Content-Type: application/json; charset=UTF-8
               "locality": "м. Київ"
             }, 
             "deliveryDate": {
-              "startDate": "2019-03-30T06:47:07.288622+02:00", 
-              "endDate": "2019-04-02T06:47:07.288622+03:00"
+              "startDate": "2019-04-20T06:49:21.547544+03:00", 
+              "endDate": "2019-04-23T06:49:21.547544+03:00"
             }, 
-            "id": "ba8e3f23cf8441c28e60009e8f3073c1", 
+            "id": "1dc056ea4a57422a80e0a3a7f1d4de63", 
             "unit": {
               "code": "44617100-9", 
               "name": "item"
@@ -143,24 +143,24 @@ Content-Type: application/json; charset=UTF-8
           "amountNet": 490.0, 
           "valueAddedTaxIncluded": true
         }, 
-        "dateSigned": "2019-03-28T06:48:48.661676+02:00", 
-        "date": "2019-03-28T06:48:48.666056+02:00", 
-        "awardID": "0070ab5f96df47ecae302c40ab7335bb", 
-        "id": "2da2605ce00540ab896900209a9d3bbd", 
-        "contractID": "UA-2019-03-28-000001-1"
+        "dateSigned": "2019-01-01T00:10:00+02:00", 
+        "date": "2019-01-01T00:10:00+02:00", 
+        "awardID": "20844293153543d7afabad719b6a7b88", 
+        "id": "78ebf0cac78f45d6a6772cb5d8f26bc3", 
+        "contractID": "UA-2019-01-01-000001-1"
       }
     ], 
     "auctionPeriod": {
-      "startDate": "2019-03-17T06:47:07.288622+02:00", 
-      "endDate": "2019-03-18T06:47:07.288622+02:00"
+      "startDate": "2018-12-21T00:00:00+02:00", 
+      "endDate": "2018-12-22T00:00:00+02:00"
     }, 
     "procurementMethodType": "belowThreshold", 
     "awards": [
       {
         "status": "active", 
         "complaintPeriod": {
-          "startDate": "2019-03-28T06:48:48.473990+02:00", 
-          "endDate": "2019-03-28T06:48:48.473990+02:00"
+          "startDate": "2019-01-01T00:00:00+02:00", 
+          "endDate": "2019-01-01T00:00:00+02:00"
         }, 
         "suppliers": [
           {
@@ -183,17 +183,17 @@ Content-Type: application/json; charset=UTF-8
             }
           }
         ], 
-        "bid_id": "d946833ef8384baf9b4d2d63e72c7bc2", 
+        "bid_id": "d97074449c9141268522ffa9a170ff9b", 
         "value": {
           "currency": "UAH", 
           "amount": 500.0, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2019-03-28T06:48:48.535350+02:00", 
-        "id": "0070ab5f96df47ecae302c40ab7335bb"
+        "date": "2019-01-01T00:00:00+02:00", 
+        "id": "20844293153543d7afabad719b6a7b88"
       }
     ], 
-    "date": "2019-03-28T06:48:48.666056+02:00", 
+    "date": "2019-01-01T00:10:00+02:00", 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35.0, 
@@ -222,10 +222,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-03-30T06:47:07.288622+02:00", 
-          "endDate": "2019-04-02T06:47:07.288622+03:00"
+          "startDate": "2019-04-20T06:49:21.547544+03:00", 
+          "endDate": "2019-04-23T06:49:21.547544+03:00"
         }, 
-        "id": "57ecdbb89a09425ab4fa5a75dc2d40f1", 
+        "id": "ed2f6d44fb254ad9ab0d628d5737002a", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -254,10 +254,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-03-30T06:47:07.288622+02:00", 
-          "endDate": "2019-04-02T06:47:07.288622+03:00"
+          "startDate": "2019-04-20T06:49:21.547544+03:00", 
+          "endDate": "2019-04-23T06:49:21.547544+03:00"
         }, 
-        "id": "ba8e3f23cf8441c28e60009e8f3073c1", 
+        "id": "1dc056ea4a57422a80e0a3a7f1d4de63", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -267,9 +267,9 @@ Content-Type: application/json; charset=UTF-8
     ], 
     "bids": [
       {
-        "date": "2019-03-28T06:48:48.370150+02:00", 
+        "date": "2019-01-01T00:00:00+02:00", 
         "status": "active", 
-        "id": "d946833ef8384baf9b4d2d63e72c7bc2", 
+        "id": "d97074449c9141268522ffa9a170ff9b", 
         "value": {
           "currency": "UAH", 
           "amount": 500.0, 

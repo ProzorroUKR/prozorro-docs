@@ -1,9 +1,9 @@
-PATCH /api/2.5/tenders/41bb8ae42f6a4abda158a1e3bd0bd06e/contracts/9c7a751d4a1e4aeebcd9aff97e1bd55d?acc_token=fa0e16cb88cb46cead96aa0a133e40a7 HTTP/1.0
+PATCH /api/2.5/tenders/7b2a4d95470e4352a2b6dc3d4e368521/contracts/91dfc96aaa174f0e93dbf60b944a4135?acc_token=aec5a8c5a4994ed0a93f934cb46be1f3 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 30
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "status": "active"
@@ -23,11 +23,10 @@ Content-Type: application/json; charset=UTF-8
           "description": "Послуги з харчування у школах", 
           "id": "55523100-3"
         }, 
-        "description_en": "Services in school canteens", 
         "additionalClassifications": [
           {
             "scheme": "ДКПП", 
-            "id": "55.51.10.300", 
+            "id": "17.21.1", 
             "description": "Послуги шкільних їдалень"
           }
         ], 
@@ -39,11 +38,11 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-03-30T06:47:08.632098+02:00", 
-          "endDate": "2019-04-02T06:47:08.632098+03:00"
+          "startDate": "2019-05-08T06:49:21.594749+03:00", 
+          "endDate": "2019-06-07T06:49:21.594758+03:00"
         }, 
-        "description_ru": "Услуги школьных столовых", 
-        "id": "2dc54675d6364e2baffbc0f8e74432ac"
+        "id": "0cecc67781ae40fa951f35d74d51d460", 
+        "quantity": 1.0
       }
     ], 
     "suppliers": [
@@ -55,9 +54,8 @@ Content-Type: application/json; charset=UTF-8
         }, 
         "identifier": {
           "scheme": "UA-EDR", 
-          "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
-          "id": "13313462", 
-          "uri": "http://sch10.edu.vn.ua/"
+          "id": "00137256", 
+          "uri": "http://www.sc.gov.ua/"
         }, 
         "name": "ДКП «Школяр»", 
         "address": {
@@ -75,11 +73,11 @@ Content-Type: application/json; charset=UTF-8
       "amountNet": 475000.0, 
       "valueAddedTaxIncluded": false
     }, 
-    "dateSigned": "2019-03-28T06:49:41.547983+02:00", 
-    "date": "2019-03-28T06:49:41.550370+02:00", 
-    "awardID": "b5834448593748b0a8f9e8f211921525", 
-    "id": "9c7a751d4a1e4aeebcd9aff97e1bd55d", 
-    "contractID": "UA-2019-03-28-000001-1"
+    "dateSigned": "2019-01-01T00:10:00+02:00", 
+    "date": "2019-01-01T00:10:00+02:00", 
+    "awardID": "bc51ee2c5cb1435eb92d08fcc3294edd", 
+    "id": "91dfc96aaa174f0e93dbf60b944a4135", 
+    "contractID": "UA-2019-01-01-000001-1"
   }
 }
 

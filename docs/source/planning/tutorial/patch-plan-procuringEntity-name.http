@@ -1,9 +1,9 @@
-PATCH /api/2.5/plans/0394b1674398493f8c9aa592e829afa4?acc_token=5fa5abf31def493a80a046bc1ce59b9d HTTP/1.0
+PATCH /api/2.5/plans/b6493faa8b794c0c91ea6c9508a396aa?acc_token=a223065a042d4bb8904e378c1cdeee62 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 652
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "items": [
@@ -61,7 +61,7 @@ Content-Type: application/json; charset=UTF-8
         "deliveryDate": {
           "endDate": "2016-06-01T23:06:30.023018+03:00"
         }, 
-        "id": "53ea0cf4b353443b8ef8caeab44b4e52", 
+        "id": "f1a62a4a79ed476c862a7565c1e81e75", 
         "unit": {
           "code": "KGM", 
           "name": "кг"
@@ -69,7 +69,7 @@ Content-Type: application/json; charset=UTF-8
         "quantity": 5000.0
       }
     ], 
-    "planID": "UA-P-2019-03-28-000001", 
+    "planID": "UA-P-2019-01-01-000001", 
     "budget": {
       "amountNet": 12222.0, 
       "description": "budget_description", 
@@ -85,12 +85,12 @@ Content-Type: application/json; charset=UTF-8
       "amount": 10000.0, 
       "id": "12303111000-2"
     }, 
-    "datePublished": "2019-03-28T06:50:16.190988+02:00", 
+    "datePublished": "2019-01-01T00:00:00+02:00", 
     "tender": {
       "procurementMethod": "open", 
       "procurementMethodType": "belowThreshold", 
       "tenderPeriod": {
-        "startDate": "2019-04-04T06:47:09.005262+03:00"
+        "startDate": "2019-04-25T06:49:22.164344+03:00"
       }
     }, 
     "additionalClassifications": [
@@ -109,8 +109,8 @@ Content-Type: application/json; charset=UTF-8
       "name": "ДУС"
     }, 
     "owner": "broker", 
-    "dateModified": "2019-03-28T06:50:16.323743+02:00", 
-    "id": "0394b1674398493f8c9aa592e829afa4"
+    "dateModified": "2019-01-01T00:00:00+02:00", 
+    "id": "b6493faa8b794c0c91ea6c9508a396aa"
   }
 }
 

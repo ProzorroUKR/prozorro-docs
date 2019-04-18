@@ -2,12 +2,10 @@ POST /api/2.5/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 4
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
-
-422 Unprocessable Entity
+Response: 422 Unprocessable Entity
 Content-Type: application/json; charset=UTF-8
-
 {
   "status": "error", 
   "errors": [

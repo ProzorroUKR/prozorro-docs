@@ -1,32 +1,30 @@
-POST /api/2.5/tenders/55fbfef6773941a68153e7e877673499/contracts/f7a347eda6744daf9997077814cc00b1/documents?acc_token=fd113ea31c4145b2a5790646a65a9099 HTTP/1.0
+POST /api/2.5/tenders/ae3adab91a6741b7b7c081c7f99632aa/contracts/da6dae5c78ac4ef6bdc6ae0b4958aaf6/documents?acc_token=dcfda2d9335b41a9814dc01c39bd9a03 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 346
+Content-Length: 342
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
-    "url": "http://public.docs-sandbox.openprocurement.org/get/f3c665f6b0bd4fd88e278740d11d4516?KeyID=cfd3c8d9&Signature=5LIv3Dzva8eg2ZB814oP4NVki7GO3h7FotGhTMKNUr82CzEF2qNkKWZpTfkeqUycvUgZg3ex5BAfK0hX%2F%2FNfDw%3D%3D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/0dc1ce5790c446b48316718aaece3b62?KeyID=a1aff1ca&Signature=37jPvNi5A5fOsCXEQNRDXNb2CJwGI%2FkV53px3uQX1mKOHwUlac8mA7iq5S%2FCpzdtKa0AJ7KMvEn9vwWB3tyxCw%3D%3D", 
     "title": "contract_first_document.doc", 
     "hash": "md5:00000000000000000000000000000000", 
     "format": "application/msword"
   }
 }
 
-
-201 Created
+Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/55fbfef6773941a68153e7e877673499/contracts/f7a347eda6744daf9997077814cc00b1/documents/b4d60797ce8f4a648e590a527bde78a2
-
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ae3adab91a6741b7b7c081c7f99632aa/contracts/da6dae5c78ac4ef6bdc6ae0b4958aaf6/documents/dfa142dfece04ac39bd0aff1473f2095
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "title": "contract_first_document.doc", 
-    "url": "http://public.docs-sandbox.openprocurement.org/get/f3c665f6b0bd4fd88e278740d11d4516?KeyID=cfd3c8d9&Signature=BROtvoeeZBaYRtNmjhXeuHzyXxwxjiwqklW7hGDkFqS8h%252BDbKfw7GfNM1CNxaE3dLcn2PbkAnZVReNoYIPW2Bg%253D%253D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/0dc1ce5790c446b48316718aaece3b62?KeyID=a1aff1ca&Signature=z%252BZO52aBJQnqZ7hzJtlJ1yCHjEjC3SEA1dNNsseULLohC9QBpjDtet5vEcKbOR51aep0THokpADVTg1lK7K9Bg%253D%253D", 
     "format": "application/msword", 
-    "datePublished": "2019-04-03T14:34:47.560414+03:00", 
-    "id": "b4d60797ce8f4a648e590a527bde78a2", 
-    "dateModified": "2019-04-03T14:34:47.560431+03:00"
+    "datePublished": "2019-01-01T00:00:00+02:00", 
+    "id": "dfa142dfece04ac39bd0aff1473f2095", 
+    "dateModified": "2019-01-01T00:00:00+02:00"
   }
 }
 

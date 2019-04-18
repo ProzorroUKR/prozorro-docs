@@ -1,6 +1,6 @@
-GET /api/2.5/tenders/edf1ec35dd2442928d2473f51384621f/awards?acc_token=cbe41c0fba54453ea52434ea6c0e1867 HTTP/1.0
+GET /api/2.5/tenders/69b2e0ceffcf46899710d0fbbca43d16/awards?acc_token=94c3cae73f8a42dd8e34733966513d31 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
@@ -8,7 +8,7 @@ Content-Type: application/json; charset=UTF-8
   "data": [
     {
       "status": "pending", 
-      "lotID": "2e6f1f49c8894974a1c36e2b463b5b86", 
+      "lotID": "a7bb6ac2dc0f4b4c8f3fa5874c402305", 
       "suppliers": [
         {
           "contactPoint": {
@@ -18,7 +18,7 @@ Content-Type: application/json; charset=UTF-8
           }, 
           "identifier": {
             "scheme": "UA-EDR", 
-            "id": "00137226", 
+            "id": "00137227", 
             "uri": "http://www.sc.gov.ua/"
           }, 
           "name": "«Снігур»", 
@@ -31,18 +31,18 @@ Content-Type: application/json; charset=UTF-8
           }
         }
       ], 
-      "bid_id": "5379199eb3c44e0f8fb7e7eda1b05954", 
+      "bid_id": "f30029f85828476b9933ec082f123e69", 
       "value": {
         "currency": "UAH", 
         "amount": 5, 
         "valueAddedTaxIncluded": true
       }, 
-      "date": "2019-03-28T06:47:59.502845+02:00", 
-      "id": "b8dfa0c1f7ff4ec5b2f0a93b219000b5"
+      "date": "2019-01-01T00:00:00+02:00", 
+      "id": "e45f418c1d2f495981647e639901ebf3"
     }, 
     {
       "status": "pending", 
-      "lotID": "2e6f1f49c8894974a1c36e2b463b5b86", 
+      "lotID": "a7bb6ac2dc0f4b4c8f3fa5874c402305", 
       "suppliers": [
         {
           "contactPoint": {
@@ -65,18 +65,18 @@ Content-Type: application/json; charset=UTF-8
           }
         }
       ], 
-      "bid_id": "936c5038211d4c6497ae90396d86e8ba", 
+      "bid_id": "d0bae9fc4c104aaf870a44b6181547f4", 
       "value": {
         "currency": "UAH", 
         "amount": 499, 
         "valueAddedTaxIncluded": true
       }, 
-      "date": "2019-03-28T06:47:59.503236+02:00", 
-      "id": "150e3d220d05477e963e4928ac5dd686"
+      "date": "2019-01-01T00:00:00+02:00", 
+      "id": "5afc678a76a04da9887e528f68373c8a"
     }, 
     {
       "status": "pending", 
-      "lotID": "2e6f1f49c8894974a1c36e2b463b5b86", 
+      "lotID": "a7bb6ac2dc0f4b4c8f3fa5874c402305", 
       "suppliers": [
         {
           "contactPoint": {
@@ -99,14 +99,14 @@ Content-Type: application/json; charset=UTF-8
           }
         }
       ], 
-      "bid_id": "b4589ca9eb684602b65a37e136f22c04", 
+      "bid_id": "072db6b8dba749d9bd50c5e1dc33459a", 
       "value": {
         "currency": "UAH", 
         "amount": 500.0, 
         "valueAddedTaxIncluded": true
       }, 
-      "date": "2019-03-28T06:47:59.503619+02:00", 
-      "id": "61330582ce514f9cb7f8b217decbdcd0"
+      "date": "2019-01-01T00:00:00+02:00", 
+      "id": "6c72521b0ed24792b5eea2aeeda54182"
     }
   ]
 }

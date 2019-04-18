@@ -1,12 +1,12 @@
-PATCH /api/2.5/tenders/c368f2394a83454fbd86a8f66c5c1ab4/contracts/9e1c59bb29544f2bbc357a7eb8a27276?acc_token=1b2bc07c22ac43e5811e5b0916da46b7 HTTP/1.0
+PATCH /api/2.5/tenders/aaae78af64524937a8ac48aace2715db/contracts/34a546e300f747eba8319d63acf266ae?acc_token=49425b1c4f744b00af62c89e9efd36e9 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 60
+Content-Length: 53
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
-    "dateSigned": "2019-03-28T06:48:41.154658+02:00"
+    "dateSigned": "2019-01-01T00:10:00+02:00"
   }
 }
 
@@ -39,10 +39,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-17T06:47:07.975655+02:00", 
-          "endDate": "2019-04-27T06:48:47.790326+02:00"
+          "startDate": "2019-01-21T00:00:00+02:00", 
+          "endDate": "2019-01-31T00:00:10+02:00"
         }, 
-        "id": "5625ca993d854389b18d91dfb96dce97", 
+        "id": "920d8bfd71ff4366ab8fd3bae30c1986", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -79,11 +79,11 @@ Content-Type: application/json; charset=UTF-8
       "amountNet": 230.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "dateSigned": "2019-03-28T06:48:41.154658+02:00", 
-    "date": "2019-03-28T06:48:40.815896+02:00", 
-    "awardID": "7ff7c325c4a1467091cdc7ec8d1d29c2", 
-    "id": "9e1c59bb29544f2bbc357a7eb8a27276", 
-    "contractID": "UA-2019-03-28-000001-1"
+    "dateSigned": "2019-01-01T00:10:00+02:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
+    "awardID": "11ac3a57a0ec488b979bc706e1787946", 
+    "id": "34a546e300f747eba8319d63acf266ae", 
+    "contractID": "UA-2019-01-01-000001-1"
   }
 }
 

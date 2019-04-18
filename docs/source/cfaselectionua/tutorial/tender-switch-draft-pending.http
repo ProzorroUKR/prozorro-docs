@@ -1,37 +1,35 @@
-PATCH /api/2.5/tenders/bfc38e0727544f8bbcacbf60bd82358d?acc_token=1f81552c3cdc417cb65518819410eec2 HTTP/1.0
+PATCH /api/2.5/tenders/63cb67da96fe483699794e17c5345e28?acc_token=b2d908518d7c4e94a27791678523132b HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 37
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "status": "draft.pending"
   }
 }
 
-
-200 OK
+Response: 200 OK
 Content-Type: application/json; charset=UTF-8
-
 {
   "data": {
     "status": "draft.pending", 
     "procurementMethod": "selective", 
-    "tenderID": "UA-2019-04-03-000001", 
+    "tenderID": "UA-2019-01-01-000001", 
     "title": "футляри до державних нагород", 
     "lots": [
       {
-        "date": "2019-04-03T14:34:33.852536+03:00", 
+        "date": "2019-01-01T00:00:00+02:00", 
         "status": "active", 
-        "title": "lot title", 
-        "description": "lot description", 
-        "id": "f95dd4f753684255832d7cfdc7b32368"
+        "title": "Лот №1", 
+        "description": "Опис Лот №1", 
+        "id": "be6fe65d43f14d3d838990f21c3d2d69"
       }
     ], 
     "items": [
       {
-        "relatedLot": "f95dd4f753684255832d7cfdc7b32368", 
+        "relatedLot": "be6fe65d43f14d3d838990f21c3d2d69", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -54,8 +52,8 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-05T14:34:32.392080+03:00", 
-          "endDate": "2019-04-08T14:34:32.392080+03:00"
+          "startDate": "2019-04-20T06:49:21.606012+03:00", 
+          "endDate": "2019-04-23T06:49:21.606012+03:00"
         }, 
         "id": "1662b0e1d59f4e2f8e2c5bd48e03a7bc", 
         "unit": {
@@ -67,16 +65,16 @@ Content-Type: application/json; charset=UTF-8
     ], 
     "procurementMethodType": "closeFrameworkAgreementSelectionUA", 
     "submissionMethod": "electronicAuction", 
-    "date": "2019-04-03T14:34:33.977640+03:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "agreements": [
       {
-        "id": "3c7c74b4eea74bbea027e6cdace4e7c9"
+        "id": "a53c2286a06f4a8aa512989c6556e46c"
       }
     ], 
     "awardCriteria": "lowestCost", 
     "owner": "broker", 
-    "dateModified": "2019-04-03T14:34:33.977640+03:00", 
-    "id": "bfc38e0727544f8bbcacbf60bd82358d", 
+    "dateModified": "2019-01-01T00:00:00+02:00", 
+    "id": "63cb67da96fe483699794e17c5345e28", 
     "procuringEntity": {
       "kind": "general", 
       "name": "Державне управління справами", 

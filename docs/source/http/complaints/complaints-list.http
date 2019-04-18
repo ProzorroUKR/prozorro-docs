@@ -1,10 +1,8 @@
-GET /api/2.5/tenders/4bdc8f70ca4d45b0956ab3afbadcc50c/complaints HTTP/1.0
-Host: api-sandbox.openprocurement.org
+GET /api/2.5/tenders/8f11f82d19b64b859827cc941fd7f839/complaints HTTP/1.0
+Host: lb-api-sandbox.prozorro.gov.ua
 
-
-200 OK
+Response: 200 OK
 Content-Type: application/json; charset=UTF-8
-
 {
   "data": [
     {
@@ -14,31 +12,31 @@ Content-Type: application/json; charset=UTF-8
           "hash": "md5:00000000000000000000000000000000", 
           "author": "complaint_owner", 
           "title": "Complaint_Attachement.pdf", 
-          "url": "http://public.docs-sandbox.openprocurement.org/get/2551544c13d74736a3dc09df7f677f16?KeyID=ddecca24&Signature=CenwlM2gvvGkuUolADthJvMkQHkz3hagPC8nld9oeptJgV4LLVDhoz96efFHskC5WKfSOCYFFMr4cHI50BuKAw%253D%253D", 
+          "url": "http://public-docs-sandbox.prozorro.gov.ua/get/edcfaabfcbe34ea39cfa064ce5864841?KeyID=a0b3a3fd&Signature=s74aq5v3anIDSqOKIDrJY7vSW78vHwE4YXnA45ASxAtZ8s6VhGjBWV8FUq1kITfDV6amCKgoYGzM%252BoYgJoNnBw%253D%253D", 
           "format": "application/pdf", 
           "documentOf": "tender", 
-          "datePublished": "2019-03-28T06:47:13.368358+02:00", 
-          "id": "bcfc48dccc954b85a43ded7104ec4dfa", 
-          "dateModified": "2019-03-28T06:47:13.368378+02:00"
+          "datePublished": "2019-01-01T00:00:00+02:00", 
+          "id": "66f9b87fc2644512b6530d26e3469ea4", 
+          "dateModified": "2019-01-01T00:00:00+02:00"
         }
       ], 
-      "description": "complaint description", 
-      "title": "complaint title", 
-      "dateSubmitted": "2019-03-28T06:47:13.449779+02:00", 
-      "complaintID": "UA-2019-03-28-000001.1", 
-      "date": "2019-03-28T06:47:13.458125+02:00", 
+      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+      "title": "Недостатньо інформації", 
+      "dateSubmitted": "2019-01-01T00:00:00+02:00", 
+      "complaintID": "UA-2019-01-01-000001.1", 
+      "date": "2019-01-01T00:00:00+02:00", 
       "type": "claim", 
-      "id": "28d9cf5b02ac478490314f169cd25cce"
+      "id": "6de24f9c7bda4087aa474ecd6e08c84e"
     }, 
     {
       "status": "claim", 
-      "description": "complaint description", 
-      "title": "complaint title", 
-      "dateSubmitted": "2019-03-28T06:47:13.523743+02:00", 
-      "complaintID": "UA-2019-03-28-000001.2", 
-      "date": "2019-03-28T06:47:13.523721+02:00", 
+      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+      "title": "Недостатньо інформації", 
+      "dateSubmitted": "2019-01-01T00:00:00+02:00", 
+      "complaintID": "UA-2019-01-01-000001.2", 
+      "date": "2019-01-01T00:00:00+02:00", 
       "type": "claim", 
-      "id": "56ce9df9b54e4463b7c4c8dea121e8ff"
+      "id": "66b9081d70bd46b3a950c40bb21cb8d5"
     }
   ]
 }

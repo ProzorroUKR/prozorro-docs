@@ -1,14 +1,14 @@
-PATCH /api/2.5/agreements/c37f8569c6104df8b9c909a2bd5e591d/changes/61f8b06f662e467d87a1854331f446bd?acc_token=a6b1a227059b4333acb0444bde2cb6a1 HTTP/1.0
+PATCH /api/2.5/agreements/01d3f2813ee344a2adffb8d4b7f11a75/changes/7384aad420f14edeb3693e9e13aabd83?acc_token=8659eb98404f4ea4b35c225050fe0f57 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 95
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
     "modifications": [
       {
-        "itemId": "4331e451ca6b4f3cb4a43cefb9e17c39", 
+        "itemId": "1785dbc0c6e546b6b35797ba5571b8f2", 
         "factor": 0.1605
       }
     ]
@@ -22,15 +22,15 @@ Content-Type: application/json; charset=UTF-8
     "status": "pending", 
     "modifications": [
       {
-        "itemId": "4331e451ca6b4f3cb4a43cefb9e17c39", 
+        "itemId": "1785dbc0c6e546b6b35797ba5571b8f2", 
         "factor": 0.1605
       }
     ], 
     "rationaleType": "taxRate", 
     "rationale_en": "Agreement change cause", 
     "rationale": "Друга і третя поставка має бути розфасована", 
-    "date": "2019-03-28T06:47:11.108337+02:00", 
-    "id": "61f8b06f662e467d87a1854331f446bd"
+    "date": "2019-01-01T00:00:00+02:00", 
+    "id": "7384aad420f14edeb3693e9e13aabd83"
   }
 }
 

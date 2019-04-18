@@ -1,21 +1,22 @@
-POST /api/2.5/tenders/8ebbedbb7e114716a175fa053af7cda6/documents?acc_token=cd8238cb6f7449eeab3bfcf5cd5d6579 HTTP/1.0
+POST /api/2.5/tenders/279d5688a5e943168632df3b5d169d63/documents?acc_token=7ee2cdca6b0d482f9449372b899ea5c8 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 186
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy609051766958$
-Host: api-sandbox.openprocurement.org
+Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy210732886301$
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/8ebbedbb7e114716a175fa053af7cda6/documents/aa40556e150649e0b4024c5b3c380dce
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/279d5688a5e943168632df3b5d169d63/documents/eec23eceb4b6461da7dda3184697fd11
 {
   "data": {
+    "hash": "md5:00000000000000000000000000000000", 
     "title": "Notice.pdf", 
-    "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/8ebbedbb7e114716a175fa053af7cda6/documents/aa40556e150649e0b4024c5b3c380dce?download=51e5bd7d42504369824d6b9d6a392f91", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/ac569b49dcb24eea8f159a8c84244b57?KeyID=e2e24154&Signature=wn%252BkDgFTMwMNn9soiVYGuj1fwAA9NqW8KAyGTYxZK3LDz2j%252BFenR96DMRVla9QEiKXL3eKJ5TS39NQoawBOfAQ%253D%253D", 
     "format": "application/pdf", 
     "documentOf": "tender", 
-    "datePublished": "2019-03-28T06:49:30.630662+02:00", 
-    "id": "aa40556e150649e0b4024c5b3c380dce", 
-    "dateModified": "2019-03-28T06:49:30.630685+02:00"
+    "datePublished": "2019-01-01T00:00:00+02:00", 
+    "id": "eec23eceb4b6461da7dda3184697fd11", 
+    "dateModified": "2019-01-01T00:00:00+02:00"
   }
 }
 

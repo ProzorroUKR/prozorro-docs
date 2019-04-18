@@ -1,13 +1,13 @@
-PATCH /api/2.5/tenders/dc07cf2d5fae45f88da7ef5b0917cd1f?acc_token=41072074f75f4d3b9830f4c04d744a6d HTTP/1.0
+PATCH /api/2.5/tenders/97c85910204e45aca789969e8a136e76?acc_token=cdd57014a34946a58cef647597fd9e87 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 120
+Content-Length: 113
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
     "tenderPeriod": {
-      "endDate": "2019-04-05T06:48:58.186811+02:00"
+      "endDate": "2019-01-09T00:00:00+02:00"
     }, 
     "value": {
       "currency": "UAH", 
@@ -22,17 +22,17 @@ Content-Type: application/json; charset=UTF-8
   "data": {
     "procurementMethod": "open", 
     "complaintPeriod": {
-      "startDate": "2019-03-15T06:48:58.075159+02:00", 
-      "endDate": "2019-04-03T00:00:00+03:00"
+      "startDate": "2018-12-19T00:00:00+02:00", 
+      "endDate": "2019-01-03T00:00:00+02:00"
     }, 
     "enquiryPeriod": {
-      "startDate": "2019-03-15T06:48:58.075159+02:00", 
-      "clarificationsUntil": "2019-04-04T06:48:58.186811+02:00", 
-      "endDate": "2019-04-02T06:48:58.186811+02:00", 
-      "invalidationDate": "2019-03-28T06:48:58.254142+02:00"
+      "startDate": "2018-12-19T00:00:00+02:00", 
+      "clarificationsUntil": "2019-01-04T00:00:00+02:00", 
+      "endDate": "2019-01-02T00:00:00+02:00", 
+      "invalidationDate": "2019-01-01T00:00:00+02:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "next_check": "2019-04-05T07:48:58.186811+03:00", 
+    "next_check": "2019-01-09T00:00:00+02:00", 
     "procuringEntity": {
       "contactPoint": {
         "url": "http://sch10.edu.vn.ua/", 
@@ -57,66 +57,69 @@ Content-Type: application/json; charset=UTF-8
     "questions": [
       {
         "description": "Просимо додати таблицю потрібної калорійності харчування", 
-        "dateAnswered": "2019-03-28T06:48:58.014445+02:00", 
+        "dateAnswered": "2019-01-01T00:00:00+02:00", 
         "title": "Калорійність", 
-        "date": "2019-03-28T06:48:57.963495+02:00", 
+        "date": "2019-01-01T00:00:00+02:00", 
         "answer": "Таблицю додано в файлі \"Kalorijnist.xslx\"", 
-        "id": "710166016a224e2887c1ebce762d52df", 
+        "id": "2d82d5b5a50c497795d9839167ef2cd9", 
         "questionOf": "tender"
       }
     ], 
     "owner": "broker", 
-    "id": "dc07cf2d5fae45f88da7ef5b0917cd1f", 
+    "id": "97c85910204e45aca789969e8a136e76", 
     "guarantee": {
       "currency": "USD", 
       "amount": 8.0
     }, 
     "documents": [
       {
+        "hash": "md5:00000000000000000000000000000000", 
         "author": "tender_owner", 
         "title": "Notice.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/dc07cf2d5fae45f88da7ef5b0917cd1f/documents/ce8d71f7af8543bba4d3acaa71e1b0d4?download=b9025bafe62e48f486a8ef86b09fe48c", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/94230db9c82c44e0bf1ffa80784e0494?KeyID=66bd4083&Signature=g3Skiy6wkZgP2sK%2FgSgePbF2Z4ZOiUgxw8fSoBsrzU4tp38OVOmJzPal%2F9BED0Wlo8YCx%252BpAY65CCKDvslpjDg%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:48:57.774368+02:00", 
-        "id": "ce8d71f7af8543bba4d3acaa71e1b0d4", 
-        "dateModified": "2019-03-28T06:48:57.774382+02:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "5c5c04f4fbd54d32a45da1c8e256a2a1", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }, 
       {
+        "hash": "md5:00000000000000000000000000000000", 
         "author": "tender_owner", 
         "title": "AwardCriteria.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/dc07cf2d5fae45f88da7ef5b0917cd1f/documents/caa3adbf43b04a2a93f64e06813f41be?download=99ea8516a6314817a82952a43ce57ba9", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/7b9014bcf53346959d015540b346682f?KeyID=66bd4083&Signature=lbwiEImlAt9nLO4iww8W7qB%252BYVIT1FzQ2WDZnxQcRQbwPTc2sNGLvFsHUzpNFFBITJqFZOGo7y%252ByHiFk9D%2FHAw%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:48:57.809320+02:00", 
-        "id": "caa3adbf43b04a2a93f64e06813f41be", 
-        "dateModified": "2019-03-28T06:48:57.809335+02:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "995bcf913a0a44f6a2d30b8ad94bf0eb", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }, 
       {
+        "hash": "md5:00000000000000000000000000000000", 
         "author": "tender_owner", 
         "title": "AwardCriteria-2.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/dc07cf2d5fae45f88da7ef5b0917cd1f/documents/caa3adbf43b04a2a93f64e06813f41be?download=a198a9e0183444fba55bf0fca4f0bf67", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/a27f2f1813d54e55ab21312fe7cfcfa4?KeyID=66bd4083&Signature=tb1P10%2Ftkz85g%252B55Dq9IeJQoAtkJ%2FlSD0Ouqef5AbyyuWBdVvo%252BsQrXX2GgDAJHRz%252BxxPSUUngyzPWebBT53AA%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:48:57.809320+02:00", 
-        "id": "caa3adbf43b04a2a93f64e06813f41be", 
-        "dateModified": "2019-03-28T06:48:57.851513+02:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "995bcf913a0a44f6a2d30b8ad94bf0eb", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }
     ], 
     "title": "футляри до державних нагород", 
-    "tenderID": "UA-2019-03-28-000001", 
-    "dateModified": "2019-03-28T06:48:58.257079+02:00", 
+    "tenderID": "UA-2019-01-01-000001", 
+    "dateModified": "2019-01-01T00:00:00+02:00", 
     "status": "active.tendering", 
     "tenderPeriod": {
-      "startDate": "2019-03-15T06:48:58.075159+02:00", 
-      "endDate": "2019-04-05T06:48:58.186811+02:00"
+      "startDate": "2018-12-19T00:00:00+02:00", 
+      "endDate": "2019-01-09T00:00:00+02:00"
     }, 
     "auctionPeriod": {
-      "startDate": "2019-03-30T06:48:58.075159+02:00", 
-      "shouldStartAfter": "2019-04-06T00:00:00+02:00"
+      "startDate": "2019-01-03T00:00:00+02:00", 
+      "shouldStartAfter": "2019-01-09T00:00:00+02:00"
     }, 
     "procurementMethodType": "aboveThresholdUA.defense", 
-    "date": "2019-03-28T06:48:57.591424+02:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35.0, 
@@ -127,8 +130,8 @@ Content-Type: application/json; charset=UTF-8
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
-          "description": "Test", 
-          "id": "37810000-9"
+          "description": "Послуги з харчування у школах", 
+          "id": "55523100-3"
         }, 
         "additionalClassifications": [
           {
@@ -145,14 +148,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-17T06:47:08.227086+02:00", 
-          "endDate": "2019-05-17T06:47:08.227116+02:00"
+          "startDate": "2019-05-08T06:49:21.594749+03:00", 
+          "endDate": "2019-06-07T06:49:21.594758+03:00"
         }, 
-        "id": "bed8b4c1bf15429e9392a61a0b20eaa2", 
-        "unit": {
-          "code": "44617100-9", 
-          "name": "item"
-        }, 
+        "id": "3f9140f76629450ca5a4ba63be6a0355", 
         "quantity": 1.0
       }
     ], 

@@ -1,33 +1,31 @@
-PATCH /api/2.5/tenders/3b5121d3616741d4913c211251104fb3?acc_token=49d336fd47e6439e8169f524d75af3a9 HTTP/1.0
+PATCH /api/2.5/tenders/cbc95e54451a454a991aef6965777305?acc_token=d0f8b71cd5d44ff39e34b95674a5aa4d HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 130
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "milestones": [
       {
-        "relatedLot": "3cb10d94cfd645b995274c24118a3199"
+        "relatedLot": "2000cd65adfb441f9f00a7a3d98c7b50"
       }, 
       {
-        "relatedLot": "3cb10d94cfd645b995274c24118a3199"
+        "relatedLot": "2000cd65adfb441f9f00a7a3d98c7b50"
       }
     ]
   }
 }
 
-
-200 OK
+Response: 200 OK
 Content-Type: application/json; charset=UTF-8
-
 {
   "data": {
     "procurementMethod": "open", 
     "status": "active.enquiries", 
     "milestones": [
       {
-        "relatedLot": "3cb10d94cfd645b995274c24118a3199", 
+        "relatedLot": "2000cd65adfb441f9f00a7a3d98c7b50", 
         "code": "prepayment", 
         "sequenceNumber": 0, 
         "title": "signingTheContract", 
@@ -37,10 +35,10 @@ Content-Type: application/json; charset=UTF-8
         }, 
         "percentage": 45.55, 
         "type": "financing", 
-        "id": "1d8710ef4a2a40f2aa2c9c200e9e435e"
+        "id": "3a4b86266f364887860ace15b785b570"
       }, 
       {
-        "relatedLot": "3cb10d94cfd645b995274c24118a3199", 
+        "relatedLot": "2000cd65adfb441f9f00a7a3d98c7b50", 
         "code": "postpayment", 
         "description": "Підозрілий опис", 
         "sequenceNumber": 1, 
@@ -51,13 +49,13 @@ Content-Type: application/json; charset=UTF-8
         }, 
         "percentage": 54.45, 
         "type": "financing", 
-        "id": "c045399e18034946adef0c8811a381b0"
+        "id": "0f2b2c101e8f42fdbc2fd48f57b37664"
       }
     ], 
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
-      "startDate": "2019-04-04T06:47:07.288622+03:00", 
-      "endDate": "2019-04-11T06:47:07.288622+03:00"
+      "startDate": "2019-04-25T06:49:21.547544+03:00", 
+      "endDate": "2019-05-02T06:49:21.547544+03:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -88,10 +86,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-03-30T06:47:07.288622+02:00", 
-          "endDate": "2019-04-02T06:47:07.288622+03:00"
+          "startDate": "2019-04-20T06:49:21.547544+03:00", 
+          "endDate": "2019-04-23T06:49:21.547544+03:00"
         }, 
-        "id": "959ce14dd44749248a2331e9014a6521", 
+        "id": "0d7e9dd5db024abb9919ee1e810469ea", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -120,10 +118,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-03-30T06:47:07.288622+02:00", 
-          "endDate": "2019-04-02T06:47:07.288622+03:00"
+          "startDate": "2019-04-20T06:49:21.547544+03:00", 
+          "endDate": "2019-04-23T06:49:21.547544+03:00"
         }, 
-        "id": "94c514784a52477fb465f2d4e0ad536a", 
+        "id": "534e0f6c161e4dfa8b97f025a8f24368", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -138,8 +136,8 @@ Content-Type: application/json; charset=UTF-8
       "valueAddedTaxIncluded": true
     }, 
     "submissionMethod": "electronicAuction", 
-    "date": "2019-03-28T06:47:18.870091+02:00", 
-    "next_check": "2019-04-04T06:47:07.288622+03:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
+    "next_check": "2019-04-25T06:49:21.547544+03:00", 
     "procuringEntity": {
       "contactPoint": {
         "name": "Державне управління справами", 
@@ -161,11 +159,11 @@ Content-Type: application/json; charset=UTF-8
       }
     }, 
     "enquiryPeriod": {
-      "startDate": "2019-03-28T06:47:18.870002+02:00", 
-      "endDate": "2019-04-04T06:47:07.288622+03:00"
+      "startDate": "2019-01-01T00:00:00+02:00", 
+      "endDate": "2019-04-25T06:49:21.547544+03:00"
     }, 
     "owner": "broker", 
-    "dateModified": "2019-03-28T06:47:19.072032+02:00", 
+    "dateModified": "2019-01-01T00:00:00+02:00", 
     "lots": [
       {
         "status": "active", 
@@ -181,12 +179,12 @@ Content-Type: application/json; charset=UTF-8
           "amount": 500.0, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2019-03-28T06:47:18.986101+02:00", 
-        "id": "3cb10d94cfd645b995274c24118a3199"
+        "date": "2019-01-01T00:00:00+02:00", 
+        "id": "2000cd65adfb441f9f00a7a3d98c7b50"
       }
     ], 
-    "id": "3b5121d3616741d4913c211251104fb3", 
-    "tenderID": "UA-2019-03-28-000001"
+    "id": "cbc95e54451a454a991aef6965777305", 
+    "tenderID": "UA-2019-01-01-000001"
   }
 }
 

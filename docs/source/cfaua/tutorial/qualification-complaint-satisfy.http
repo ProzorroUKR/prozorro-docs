@@ -1,8 +1,8 @@
-PATCH /api/2.5/tenders/6cd8a1d635fb4c56b981335cbe1bc96d/qualifications/ae2182a4f1a745f2aaabf8e58162a691/complaints/5852504a080348f593199ee188758a46?acc_token=7ce99dabc4824ba1ba534419befffc1f HTTP/1.0
+PATCH /api/2.5/tenders/536b6f8fb8f34ed9bd06f45f731077cd/qualifications/64bd3fb0f1564edcbfb134e28d24387c/complaints/04ec28f5a76441af827a2ced5aab9b23?acc_token=378ac71448f54657afb393e9fdcd1304 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 29
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -14,20 +14,20 @@ Response: 200 OK
 Content-Type: application/json; charset=UTF-8
 {
   "data": {
-    "relatedLot": "2e6f1f49c8894974a1c36e2b463b5b86", 
+    "relatedLot": "a7bb6ac2dc0f4b4c8f3fa5874c402305", 
     "status": "answered", 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
     "title": "Недостатньо інформації", 
     "resolutionType": "resolved", 
     "type": "claim", 
     "satisfied": true, 
-    "bid_id": "73a4478fc91142fd96858b844b006db8", 
-    "dateAnswered": "2019-03-28T06:48:08.975742+02:00", 
-    "dateSubmitted": "2019-03-28T06:48:08.849229+02:00", 
-    "complaintID": "UA-2019-03-28-000001.6", 
-    "date": "2019-03-28T06:48:08.993040+02:00", 
+    "bid_id": "d089e9877b0940e991e4fd27d2ca21f8", 
+    "dateAnswered": "2019-01-01T00:10:00+02:00", 
+    "dateSubmitted": "2019-01-01T00:10:00+02:00", 
+    "complaintID": "UA-2019-01-01-000001.6", 
+    "date": "2019-01-01T00:10:00+02:00", 
     "resolution": "Умови виправлено, вибір переможня буде розгянуто повторно", 
-    "id": "5852504a080348f593199ee188758a46"
+    "id": "04ec28f5a76441af827a2ced5aab9b23"
   }
 }
 

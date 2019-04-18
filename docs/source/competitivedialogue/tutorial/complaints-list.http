@@ -1,5 +1,5 @@
-GET /api/2.5/tenders/349e0700a0a943709bf6699665e0c4f7/complaints HTTP/1.0
-Host: api-sandbox.openprocurement.org
+GET /api/2.5/tenders/65f92f272bf04338908a441bdd292b9b/complaints HTTP/1.0
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
@@ -7,8 +7,8 @@ Content-Type: application/json; charset=UTF-8
   "data": [
     {
       "status": "resolved", 
-      "dateDecision": "2019-03-28T06:48:22.807623+02:00", 
-      "tendererActionDate": "2019-03-28T06:48:23.063268+02:00", 
+      "dateDecision": "2019-01-01T00:00:00+02:00", 
+      "tendererActionDate": "2019-01-01T00:00:00+02:00", 
       "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
       "author": {
         "contactPoint": {
@@ -18,9 +18,8 @@ Content-Type: application/json; charset=UTF-8
         }, 
         "identifier": {
           "scheme": "UA-EDR", 
-          "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
-          "id": "13313462", 
-          "uri": "http://sch10.edu.vn.ua/"
+          "id": "00137256", 
+          "uri": "http://www.sc.gov.ua/"
         }, 
         "name": "ДКП «Школяр»", 
         "address": {
@@ -32,11 +31,11 @@ Content-Type: application/json; charset=UTF-8
         }
       }, 
       "title": "Недостатньо інформації", 
-      "id": "8d7a1a485d764655a60105fc8a9e088e", 
+      "id": "c058732cbd2349f097caf029681f042d", 
       "tendererAction": "Умови виправлено", 
-      "dateSubmitted": "2019-03-28T06:48:21.814282+02:00", 
-      "complaintID": "UA-2019-03-28-000001.1", 
-      "date": "2019-03-28T06:48:23.067765+02:00", 
+      "dateSubmitted": "2019-01-01T00:00:00+02:00", 
+      "complaintID": "UA-2019-01-01-000001.1", 
+      "date": "2019-01-01T00:00:00+02:00", 
       "acceptance": true, 
       "type": "complaint", 
       "documents": [
@@ -45,27 +44,27 @@ Content-Type: application/json; charset=UTF-8
           "author": "complaint_owner", 
           "language": "uk", 
           "title": "Complaint_Attachement.pdf", 
-          "url": "http://public.docs-sandbox.openprocurement.org/get/28e11e8128c1413db120e3b6236d562d?KeyID=6e37a347&Signature=kLkL0QaZVGV6YUsIPt1FVKdk%2FYZ1kwsHX1e3mr5INjj9FLVkHDtYl%2FX7k1Bqm1l7qAoRnaWfJ8aR6fWR25gJBg%253D%253D", 
+          "url": "http://public-docs-sandbox.prozorro.gov.ua/get/e3dfb176a75b4474bfe639b0e94a4e64?KeyID=f8d1ed1b&Signature=wCbkl%2FZPEPNTAvBBSTs5Gg23MZ%252BGcFgjhCgV5WPlG4LcizgvhHZ02L4WUtVB0vZDKwdMXiw5rfGUA268No2RCQ%253D%253D", 
           "format": "application/pdf", 
           "documentOf": "tender", 
-          "datePublished": "2019-03-28T06:48:21.544125+02:00", 
-          "id": "788c4f1373c44431b101275a17b8257f", 
-          "dateModified": "2019-03-28T06:48:21.544141+02:00"
+          "datePublished": "2019-01-01T00:00:00+02:00", 
+          "id": "a6b182caccc74745948653d0cbcd7c4a", 
+          "dateModified": "2019-01-01T00:00:00+02:00"
         }, 
         {
           "hash": "md5:00000000000000000000000000000000", 
           "author": "aboveThresholdReviewers", 
           "language": "uk", 
           "title": "ComplaintResolution.pdf", 
-          "url": "http://public.docs-sandbox.openprocurement.org/get/c62f190655114fe2aca83723dd7a9ec9?KeyID=6e37a347&Signature=fNj5Hq2q4lzcmAfv0M54va%2F4gJUiBCGSbkrTACLPAfltYM%2FWEGhMOtm8faSShGKJj%2F1vpszMyQkiRDXfzNsMDw%253D%253D", 
+          "url": "http://public-docs-sandbox.prozorro.gov.ua/get/a394b09841b644f889881a26859ea664?KeyID=f8d1ed1b&Signature=kEwok6Bua3f64DunXJ3P9X1OTPvLGp%2FYlsKe2Puq7X44MlcWwgMiwWLcv3Grtm2jv191%252BLvlmEg3Q8F8FZJ%252BAQ%253D%253D", 
           "format": "application/pdf", 
           "documentOf": "tender", 
-          "datePublished": "2019-03-28T06:48:22.732130+02:00", 
-          "id": "bee25a1809084592a3ef10bdae839d16", 
-          "dateModified": "2019-03-28T06:48:22.732146+02:00"
+          "datePublished": "2019-01-01T00:00:00+02:00", 
+          "id": "c7d246e8f64c463dbffd4735d548da6d", 
+          "dateModified": "2019-01-01T00:00:00+02:00"
         }
       ], 
-      "dateAccepted": "2019-03-28T06:48:22.406428+02:00"
+      "dateAccepted": "2019-01-01T00:00:00+02:00"
     }, 
     {
       "status": "resolved", 
@@ -74,16 +73,16 @@ Content-Type: application/json; charset=UTF-8
       "resolutionType": "resolved", 
       "type": "claim", 
       "satisfied": true, 
-      "dateAnswered": "2019-03-28T06:48:21.874192+02:00", 
-      "dateSubmitted": "2019-03-28T06:48:21.622308+02:00", 
-      "complaintID": "UA-2019-03-28-000001.2", 
-      "date": "2019-03-28T06:48:22.050526+02:00", 
+      "dateAnswered": "2019-01-01T00:00:00+02:00", 
+      "dateSubmitted": "2019-01-01T00:00:00+02:00", 
+      "complaintID": "UA-2019-01-01-000001.2", 
+      "date": "2019-01-01T00:00:00+02:00", 
       "resolution": "Виправлено неконкурентні умови", 
-      "id": "bb2a8d12ad9a4b559cc096b99636d354"
+      "id": "f5d9dfbe5f36451a96f4ec7411b350ac"
     }, 
     {
       "status": "declined", 
-      "dateDecision": "2019-03-28T06:48:22.885963+02:00", 
+      "dateDecision": "2019-01-01T00:00:00+02:00", 
       "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
       "author": {
         "contactPoint": {
@@ -93,9 +92,8 @@ Content-Type: application/json; charset=UTF-8
         }, 
         "identifier": {
           "scheme": "UA-EDR", 
-          "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
-          "id": "13313462", 
-          "uri": "http://sch10.edu.vn.ua/"
+          "id": "00137256", 
+          "uri": "http://www.sc.gov.ua/"
         }, 
         "name": "ДКП «Школяр»", 
         "address": {
@@ -107,25 +105,25 @@ Content-Type: application/json; charset=UTF-8
         }
       }, 
       "acceptance": true, 
-      "dateAccepted": "2019-03-28T06:48:22.471012+02:00", 
-      "dateSubmitted": "2019-03-28T06:48:21.696598+02:00", 
-      "complaintID": "UA-2019-03-28-000001.3", 
-      "date": "2019-03-28T06:48:22.894927+02:00", 
+      "dateAccepted": "2019-01-01T00:00:00+02:00", 
+      "dateSubmitted": "2019-01-01T00:00:00+02:00", 
+      "complaintID": "UA-2019-01-01-000001.3", 
+      "date": "2019-01-01T00:00:00+02:00", 
       "title": "Недостатньо інформації", 
       "type": "complaint", 
-      "id": "122f9cf0b6434b2fa21338d9c9c22003"
+      "id": "65c8bfa69df14033bfe86326a2a11e90"
     }, 
     {
       "status": "invalid", 
-      "dateDecision": "2019-03-28T06:48:22.336740+02:00", 
+      "dateDecision": "2019-01-01T00:00:00+02:00", 
       "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
       "title": "Недостатньо інформації", 
       "resolutionType": "invalid", 
       "type": "complaint", 
       "acceptance": false, 
       "satisfied": false, 
-      "dateEscalated": "2019-03-28T06:48:22.114083+02:00", 
-      "dateAnswered": "2019-03-28T06:48:21.974252+02:00", 
+      "dateEscalated": "2019-01-01T00:00:00+02:00", 
+      "dateAnswered": "2019-01-01T00:00:00+02:00", 
       "author": {
         "contactPoint": {
           "email": "soleksuk@gmail.com", 
@@ -134,9 +132,8 @@ Content-Type: application/json; charset=UTF-8
         }, 
         "identifier": {
           "scheme": "UA-EDR", 
-          "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
-          "id": "13313462", 
-          "uri": "http://sch10.edu.vn.ua/"
+          "id": "00137256", 
+          "uri": "http://www.sc.gov.ua/"
         }, 
         "name": "ДКП «Школяр»", 
         "address": {
@@ -147,21 +144,21 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Вінниця"
         }
       }, 
-      "dateSubmitted": "2019-03-28T06:48:21.753814+02:00", 
-      "complaintID": "UA-2019-03-28-000001.4", 
-      "date": "2019-03-28T06:48:22.342102+02:00", 
+      "dateSubmitted": "2019-01-01T00:00:00+02:00", 
+      "complaintID": "UA-2019-01-01-000001.4", 
+      "date": "2019-01-01T00:00:00+02:00", 
       "resolution": "Вимога не відповідає предмету закупівлі", 
-      "id": "e3c7b74c6fb146cd9958d573bb844a3d"
+      "id": "df4fd5f3fdb54bab8adb6aeb8622b6b9"
     }, 
     {
       "status": "stopped", 
-      "dateDecision": "2019-03-28T06:48:22.977689+02:00", 
+      "dateDecision": "2019-01-01T00:00:00+02:00", 
       "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
       "title": "Недостатньо інформації", 
       "decision": "Тендер скасовується замовником", 
       "acceptance": true, 
-      "dateCanceled": "2019-03-28T06:48:22.977716+02:00", 
-      "dateAccepted": "2019-03-28T06:48:22.575339+02:00", 
+      "dateCanceled": "2019-01-01T00:00:00+02:00", 
+      "dateAccepted": "2019-01-01T00:00:00+02:00", 
       "author": {
         "contactPoint": {
           "email": "soleksuk@gmail.com", 
@@ -170,9 +167,8 @@ Content-Type: application/json; charset=UTF-8
         }, 
         "identifier": {
           "scheme": "UA-EDR", 
-          "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
-          "id": "13313462", 
-          "uri": "http://sch10.edu.vn.ua/"
+          "id": "00137256", 
+          "uri": "http://www.sc.gov.ua/"
         }, 
         "name": "ДКП «Школяр»", 
         "address": {
@@ -183,22 +179,22 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Вінниця"
         }
       }, 
-      "dateSubmitted": "2019-03-28T06:48:22.184498+02:00", 
-      "complaintID": "UA-2019-03-28-000001.5", 
-      "date": "2019-03-28T06:48:22.982733+02:00", 
+      "dateSubmitted": "2019-01-01T00:00:00+02:00", 
+      "complaintID": "UA-2019-01-01-000001.5", 
+      "date": "2019-01-01T00:00:00+02:00", 
       "type": "complaint", 
-      "id": "59d4d9f7a9ed4f2b98dd4f7b0b85efec"
+      "id": "13f5aa45bf2748a3b9dafda2f4ff4da2"
     }, 
     {
       "status": "stopped", 
-      "dateDecision": "2019-03-28T06:48:23.274002+02:00", 
+      "dateDecision": "2019-01-01T00:00:00+02:00", 
       "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
       "title": "Недостатньо інформації", 
       "decision": "Тендер скасовується замовником", 
       "acceptance": true, 
       "cancellationReason": "Тендер скасовується замовником", 
-      "dateCanceled": "2019-03-28T06:48:23.179366+02:00", 
-      "dateAccepted": "2019-03-28T06:48:22.644576+02:00", 
+      "dateCanceled": "2019-01-01T00:00:00+02:00", 
+      "dateAccepted": "2019-01-01T00:00:00+02:00", 
       "author": {
         "contactPoint": {
           "email": "soleksuk@gmail.com", 
@@ -207,9 +203,8 @@ Content-Type: application/json; charset=UTF-8
         }, 
         "identifier": {
           "scheme": "UA-EDR", 
-          "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
-          "id": "13313462", 
-          "uri": "http://sch10.edu.vn.ua/"
+          "id": "00137256", 
+          "uri": "http://www.sc.gov.ua/"
         }, 
         "name": "ДКП «Школяр»", 
         "address": {
@@ -220,22 +215,22 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Вінниця"
         }
       }, 
-      "dateSubmitted": "2019-03-28T06:48:22.257057+02:00", 
-      "complaintID": "UA-2019-03-28-000001.6", 
-      "date": "2019-03-28T06:48:23.279633+02:00", 
+      "dateSubmitted": "2019-01-01T00:00:00+02:00", 
+      "complaintID": "UA-2019-01-01-000001.6", 
+      "date": "2019-01-01T00:00:00+02:00", 
       "type": "complaint", 
-      "id": "be41880c560847ba8bda6f316f774948"
+      "id": "7f55382ad0524aaf861301ca3fc92ad1"
     }, 
     {
       "status": "cancelled", 
       "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
       "title": "Недостатньо інформації", 
       "cancellationReason": "Умови виправлено", 
-      "dateCanceled": "2019-03-28T06:48:23.468222+02:00", 
-      "complaintID": "UA-2019-03-28-000001.7", 
-      "date": "2019-03-28T06:48:23.473663+02:00", 
+      "dateCanceled": "2019-01-01T00:00:00+02:00", 
+      "complaintID": "UA-2019-01-01-000001.7", 
+      "date": "2019-01-01T00:00:00+02:00", 
       "type": "claim", 
-      "id": "1cb0399f212e48d785b2fc74c22d004b"
+      "id": "c871b3155609413987f3f5960bdaf7f4"
     }
   ]
 }

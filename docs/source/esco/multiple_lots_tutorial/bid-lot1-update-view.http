@@ -1,15 +1,15 @@
-PATCH /api/2.5/tenders/a5737d7e05a4451a8a502a9d763357f0/bids/28208dcab1764a8ab952e5519edfd642?acc_token=57e1de8fd6b94329af9e95319901f631 HTTP/1.0
+PATCH /api/2.5/tenders/e54514398db3478a934ed7e8472b1516/bids/431dc9a9dfaf485ab1a030f0d3bf89d8?acc_token=a45b9ab6009f495d9305aaa4a9b452ae HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 214
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
     "status": "pending", 
     "lotValues": [
       {
-        "relatedLot": "b7292dba1ee3436db63fee17b2d09579", 
+        "relatedLot": "fd0bdf6a19114cc09cc48e9a350f833a", 
         "value": {
           "amount": 500
         }, 
@@ -27,19 +27,19 @@ Content-Type: application/json; charset=UTF-8
     "selfEligible": true, 
     "lotValues": [
       {
-        "relatedLot": "b7292dba1ee3436db63fee17b2d09579", 
-        "date": "2019-03-28T06:49:20.635875+02:00", 
+        "relatedLot": "fd0bdf6a19114cc09cc48e9a350f833a", 
+        "date": "2019-01-01T00:00:00+02:00", 
         "status": "pending", 
         "value": {
           "yearlyPaymentsPercentage": 0.87, 
           "valueAddedTaxIncluded": true, 
           "currency": "UAH", 
-          "amount": 5601.37, 
+          "amount": 5396.38, 
           "contractDuration": {
             "days": 0, 
             "years": 7
           }, 
-          "amountPerformance": 1323.89, 
+          "amountPerformance": 1301.18, 
           "annualCostsReduction": [
             200.0, 
             1000.0, 
@@ -90,8 +90,8 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "date": "2019-03-28T06:49:20.635663+02:00", 
-    "id": "28208dcab1764a8ab952e5519edfd642"
+    "date": "2019-01-01T00:00:00+02:00", 
+    "id": "431dc9a9dfaf485ab1a030f0d3bf89d8"
   }
 }
 

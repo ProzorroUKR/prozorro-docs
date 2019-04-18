@@ -1,28 +1,28 @@
-POST /api/2.5/tenders/55fbfef6773941a68153e7e877673499/bids HTTP/1.0
+POST /api/2.5/tenders/ae3adab91a6741b7b7c081c7f99632aa/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 1692
+Content-Length: 1682
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "documents": [
       {
-        "url": "http://public.docs-sandbox.openprocurement.org/get/ef9cad5cc10a414eac66abb7ba25835b?KeyID=cfd3c8d9&Signature=ivDm6riAdU41INuxWwGqL5L7u7tMoGFYzd5PaCmmtTjvt2mQtfQPsxj0FE%2BBRXC2WpSb3jNYzPVNUKHnSL7PDw%3D%3D", 
-        "title": "Proposal_part1.pdf", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/bf55d86ef10b4dc896238b3e8ab16f08?KeyID=a1aff1ca&Signature=luM2CGDS%2BGXuBZpfe2n%2BeDJaO9ymUy7x63qaMJ%2FecVLKWFchFl0zJhq5G2v6O4nfKOUBeDSecFqm61i0V4WDDQ%3D%3D", 
+        "format": "application/pdf", 
         "hash": "md5:00000000000000000000000000000000", 
-        "format": "application/pdf"
+        "title": "Proposal_part1.pdf"
       }, 
       {
-        "url": "http://public.docs-sandbox.openprocurement.org/get/853dc371cbdb4e539bf917df4fb31f85?KeyID=cfd3c8d9&Signature=qOh2SWcl%2FrpkBEu99J2OVTIzz4dY%2FHRmFmRVljLds36HXc0eYUgT3KAjQ5%2FIBznNCJN9jtUN0RF%2FadKBr%2BjyCw%3D%3D", 
-        "title": "Proposal_part2.pdf", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/48af9b2b9d0c4ca59ec4a7405f8a7106?KeyID=a1aff1ca&Signature=EoW0dr8RtLxzAzSvqnF1r6vKt7TkEEC1zR12cmJ%2FLjaRELt9oHOUlL5Zzt8uWiu5i%2FfenzPUAPUKwHykwjRqBg%3D%3D", 
+        "format": "application/pdf", 
         "hash": "md5:00000000000000000000000000000000", 
-        "format": "application/pdf"
+        "title": "Proposal_part2.pdf"
       }
     ], 
     "lotValues": [
       {
-        "relatedLot": "f95dd4f753684255832d7cfdc7b32368", 
+        "relatedLot": "be6fe65d43f14d3d838990f21c3d2d69", 
         "value": {
           "amount": 499
         }
@@ -62,14 +62,12 @@ Host: api-sandbox.openprocurement.org
   }
 }
 
-
-201 Created
+Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/55fbfef6773941a68153e7e877673499/bids/7a609cde36ef4e5693c92d3a4fe1fd65
-
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ae3adab91a6741b7b7c081c7f99632aa/bids/eed222706ef742c599fd90c57061bae1
 {
   "access": {
-    "token": "bd106ceed32c4d1daa41d78c54db6ac7"
+    "token": "4e3cadbb83614221976176eb5c0ce717"
   }, 
   "data": {
     "status": "active", 
@@ -77,22 +75,22 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/55fbfef6773941a
       {
         "hash": "md5:00000000000000000000000000000000", 
         "title": "Proposal_part1.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/55fbfef6773941a68153e7e877673499/bids/7a609cde36ef4e5693c92d3a4fe1fd65/documents/390ed843ea534304bd9cb5d5a2bc6bff?download=ef9cad5cc10a414eac66abb7ba25835b", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ae3adab91a6741b7b7c081c7f99632aa/bids/eed222706ef742c599fd90c57061bae1/documents/80c2ef251bdd4f02aad93e1489f79c3a?download=bf55d86ef10b4dc896238b3e8ab16f08", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-04-03T14:34:44.622240+03:00", 
-        "id": "390ed843ea534304bd9cb5d5a2bc6bff", 
-        "dateModified": "2019-04-03T14:34:44.622251+03:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "80c2ef251bdd4f02aad93e1489f79c3a", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
         "title": "Proposal_part2.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/55fbfef6773941a68153e7e877673499/bids/7a609cde36ef4e5693c92d3a4fe1fd65/documents/7a892590bae747c1b1045f76ae486b0f?download=853dc371cbdb4e539bf917df4fb31f85", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ae3adab91a6741b7b7c081c7f99632aa/bids/eed222706ef742c599fd90c57061bae1/documents/6025360a1fcb4d0c92215f4761d69bbf?download=48af9b2b9d0c4ca59ec4a7405f8a7106", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-04-03T14:34:44.622579+03:00", 
-        "id": "7a892590bae747c1b1045f76ae486b0f", 
-        "dateModified": "2019-04-03T14:34:44.622590+03:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "6025360a1fcb4d0c92215f4761d69bbf", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }
     ], 
     "parameters": [
@@ -107,8 +105,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/55fbfef6773941a
     ], 
     "lotValues": [
       {
-        "relatedLot": "f95dd4f753684255832d7cfdc7b32368", 
-        "date": "2019-04-03T14:34:44.623066+03:00", 
+        "relatedLot": "be6fe65d43f14d3d838990f21c3d2d69", 
+        "date": "2019-01-01T00:00:00+02:00", 
         "value": {
           "currency": "UAH", 
           "amount": 499.0, 
@@ -137,8 +135,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/55fbfef6773941a
         }
       }
     ], 
-    "date": "2019-04-03T14:34:44.621936+03:00", 
-    "id": "7a609cde36ef4e5693c92d3a4fe1fd65"
+    "date": "2019-01-01T00:00:00+02:00", 
+    "id": "eed222706ef742c599fd90c57061bae1"
   }
 }
 

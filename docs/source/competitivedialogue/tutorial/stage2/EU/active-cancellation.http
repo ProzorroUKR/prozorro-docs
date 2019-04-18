@@ -1,8 +1,8 @@
-PATCH /api/2.5/tenders/c368f2394a83454fbd86a8f66c5c1ab4/cancellations/5c7fd28a08624f4a8b05435108506bb7?acc_token=1b2bc07c22ac43e5811e5b0916da46b7 HTTP/1.0
+PATCH /api/2.5/tenders/aaae78af64524937a8ac48aace2715db/cancellations/b6c1912c502c4b208ef31fb5b2bf749f?acc_token=49425b1c4f744b00af62c89e9efd36e9 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 30
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -21,31 +21,31 @@ Content-Type: application/json; charset=UTF-8
         "description": "Changed description", 
         "language": "uk", 
         "title": "Notice.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/dfab9bc54928476a939ce4233583fc60?KeyID=2d509c5e&Signature=mZYyRRKO%252BEhO9vKlVfFMRQzaHCi3pwp8ONirbozY09JglSiDD5yUMI42jZ9hLHMFcWfiM7cB8Kzc3Gn8OKgpDQ%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/1df780ed0a4b4a69949eeb95d11f5b94?KeyID=f8180d36&Signature=669INjS6BW4sGhUJjRe54tyiGxkSXMYdVd%252B4qy8SakkY8Yzu%252BRTToufskOSiEqXVB7XeboJ%252Brw1MkTlrPJggBg%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:48:42.326606+02:00", 
-        "id": "466b849a120a4968b43f81a181c4bb36", 
-        "dateModified": "2019-03-28T06:48:42.326621+02:00"
+        "datePublished": "2019-01-01T00:10:00+02:00", 
+        "id": "740d5b9c487144579c5f1f7dd86ac596", 
+        "dateModified": "2019-01-01T00:10:00+02:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
         "description": "Changed description", 
         "language": "uk", 
         "title": "Notice-2.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/f377420c8c384084a206bfc33205758a?KeyID=2d509c5e&Signature=%2FLaHIoT9QvE%2F%2FO%2FO96xdjrWl6KExz5%252Bg9%252Bcm5tE9iZkJ0vaF9GbpOXWw58xZGuF%252BZZSacvGYXgSlzTsXL%2Fj3BA%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/0e6f5c770c5341479955be4c4d98340c?KeyID=f8180d36&Signature=qhVzPA4XOuCXSUQJrmBPrH2uyBZF50eP%252BRbWyuvWvOejHmS%252B1SP3syGWt7NK9zFbpRzFD1qXXHYpwG1fD%2F8hBA%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:48:42.326606+02:00", 
-        "id": "466b849a120a4968b43f81a181c4bb36", 
-        "dateModified": "2019-03-28T06:48:42.630326+02:00"
+        "datePublished": "2019-01-01T00:10:00+02:00", 
+        "id": "740d5b9c487144579c5f1f7dd86ac596", 
+        "dateModified": "2019-01-01T00:10:00+02:00"
       }
     ], 
     "reason": "cancellation reason", 
     "reasonType": "unsuccessful", 
-    "date": "2019-03-28T06:48:42.775909+02:00", 
+    "date": "2019-01-01T00:10:00+02:00", 
     "cancellationOf": "tender", 
-    "id": "5c7fd28a08624f4a8b05435108506bb7"
+    "id": "b6c1912c502c4b208ef31fb5b2bf749f"
   }
 }
 

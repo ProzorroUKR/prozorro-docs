@@ -1,6 +1,6 @@
-GET /api/2.5/tenders/73c2c3f9cc6349f0a144ed40c9e3dfa7 HTTP/1.0
+GET /api/2.5/tenders/fc67c57b5cdb4a06a99e35bd632b9366 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
@@ -10,8 +10,8 @@ Content-Type: application/json; charset=UTF-8
     "status": "active.tendering", 
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
-      "startDate": "2019-03-28T06:48:31.968946+02:00", 
-      "endDate": "2019-04-28T06:47:07.975726+02:00"
+      "startDate": "2019-01-01T00:00:00+02:00", 
+      "endDate": "2019-05-19T06:49:22.031690+03:00"
     }, 
     "title": "Послуги шкільних їдалень", 
     "minimalStep": {
@@ -20,13 +20,13 @@ Content-Type: application/json; charset=UTF-8
       "valueAddedTaxIncluded": true
     }, 
     "enquiryPeriod": {
-      "startDate": "2019-03-28T06:48:31.968946+02:00", 
-      "clarificationsUntil": "2019-04-23T06:47:07.975726+02:00", 
-      "endDate": "2019-04-18T06:47:07.975726+02:00"
+      "startDate": "2019-01-01T00:00:00+02:00", 
+      "clarificationsUntil": "2019-05-15T00:00:00+03:00", 
+      "endDate": "2019-05-09T06:49:22.031690+03:00"
     }, 
     "complaintPeriod": {
-      "startDate": "2019-03-28T06:48:31.968946+02:00", 
-      "endDate": "2019-04-24T00:00:00+03:00"
+      "startDate": "2019-01-01T00:00:00+02:00", 
+      "endDate": "2019-05-15T00:00:00+03:00"
     }, 
     "title_en": "Services in school canteens", 
     "value": {
@@ -35,8 +35,8 @@ Content-Type: application/json; charset=UTF-8
       "valueAddedTaxIncluded": true
     }, 
     "submissionMethod": "electronicAuction", 
-    "date": "2019-03-28T06:48:31.990273+02:00", 
-    "dateModified": "2019-03-28T06:48:31.993027+02:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
+    "dateModified": "2019-01-01T00:00:00+02:00", 
     "procurementMethodType": "competitiveDialogueEU", 
     "procuringEntity": {
       "kind": "general", 
@@ -87,10 +87,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-17T06:47:07.975510+02:00", 
-          "endDate": "2019-05-17T06:47:07.975543+02:00"
+          "startDate": "2019-05-08T06:49:21.594579+03:00", 
+          "endDate": "2019-06-07T06:49:21.594605+03:00"
         }, 
-        "id": "7f6efd4a2f2949d783da759c660da3d3", 
+        "id": "747deaafa6c0492389d02a0fc8e451ca", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -120,10 +120,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-17T06:47:07.975557+02:00", 
-          "endDate": "2019-05-17T06:47:07.975571+02:00"
+          "startDate": "2019-05-08T06:49:21.594619+03:00", 
+          "endDate": "2019-06-07T06:49:21.594627+03:00"
         }, 
-        "id": "a4dfa4eea6864907b12cc3484dd9cc26", 
+        "id": "211faed1bf11494bb34c498a29d420bf", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -132,9 +132,9 @@ Content-Type: application/json; charset=UTF-8
       }
     ], 
     "owner": "broker", 
-    "next_check": "2019-04-28T07:47:07.975726+03:00", 
-    "id": "73c2c3f9cc6349f0a144ed40c9e3dfa7", 
-    "tenderID": "UA-2019-03-28-000001"
+    "next_check": "2019-05-19T06:49:22.031690+03:00", 
+    "id": "fc67c57b5cdb4a06a99e35bd632b9366", 
+    "tenderID": "UA-2019-01-01-000001"
   }
 }
 

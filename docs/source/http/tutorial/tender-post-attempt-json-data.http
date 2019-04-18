@@ -2,12 +2,12 @@ POST /api/2.5/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 3444
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "tenderPeriod": {
-      "endDate": "2019-04-11T06:47:07.288622"
+      "endDate": "2019-05-02T06:49:21.547544"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -15,7 +15,7 @@ Host: api-sandbox.openprocurement.org
       "amount": 35
     }, 
     "enquiryPeriod": {
-      "endDate": "2019-04-04T06:47:07.288622"
+      "endDate": "2019-04-25T06:49:21.547544"
     }, 
     "procurementMethodType": "belowThreshold", 
     "value": {
@@ -65,8 +65,8 @@ Host: api-sandbox.openprocurement.org
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-03-30T06:47:07.288622", 
-          "endDate": "2019-04-02T06:47:07.288622"
+          "startDate": "2019-04-20T06:49:21.547544", 
+          "endDate": "2019-04-23T06:49:21.547544"
         }, 
         "unit": {
           "code": "44617100-9", 
@@ -96,8 +96,8 @@ Host: api-sandbox.openprocurement.org
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-03-30T06:47:07.288622", 
-          "endDate": "2019-04-02T06:47:07.288622"
+          "startDate": "2019-04-20T06:49:21.547544", 
+          "endDate": "2019-04-23T06:49:21.547544"
         }, 
         "unit": {
           "code": "44617100-9", 
@@ -109,22 +109,20 @@ Host: api-sandbox.openprocurement.org
   }
 }
 
-
-201 Created
+Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/4e72a84032424e519ab51eb3c1c98dbf
-
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/cfe8d9ecde7d49cba990bed08065d7d4
 {
   "access": {
-    "token": "40505a9e3a774f6e9cd51e16d68e457a"
+    "token": "7a8640666384400f9051baf16a41659d"
   }, 
   "data": {
     "procurementMethod": "open", 
     "status": "active.enquiries", 
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
-      "startDate": "2019-04-04T06:47:07.288622+03:00", 
-      "endDate": "2019-04-11T06:47:07.288622+03:00"
+      "startDate": "2019-04-25T06:49:21.547544+03:00", 
+      "endDate": "2019-05-02T06:49:21.547544+03:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -155,10 +153,10 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/4e72a84032424e5
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-03-30T06:47:07.288622+02:00", 
-          "endDate": "2019-04-02T06:47:07.288622+03:00"
+          "startDate": "2019-04-20T06:49:21.547544+03:00", 
+          "endDate": "2019-04-23T06:49:21.547544+03:00"
         }, 
-        "id": "f0d50081ea3648d9bd09e243d6619bd9", 
+        "id": "51dd3d05a87a4bdfadfa21f800591343", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -187,10 +185,10 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/4e72a84032424e5
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-03-30T06:47:07.288622+02:00", 
-          "endDate": "2019-04-02T06:47:07.288622+03:00"
+          "startDate": "2019-04-20T06:49:21.547544+03:00", 
+          "endDate": "2019-04-23T06:49:21.547544+03:00"
         }, 
-        "id": "d39cb38814824407a7172ac09bd522fa", 
+        "id": "363b608997814f17822811058d214a91", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -205,8 +203,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/4e72a84032424e5
       "valueAddedTaxIncluded": true
     }, 
     "submissionMethod": "electronicAuction", 
-    "date": "2019-03-28T06:47:19.674393+02:00", 
-    "next_check": "2019-04-04T06:47:07.288622+03:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
+    "next_check": "2019-04-25T06:49:21.547544+03:00", 
     "procuringEntity": {
       "contactPoint": {
         "name": "Державне управління справами", 
@@ -228,13 +226,13 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/4e72a84032424e5
       }
     }, 
     "enquiryPeriod": {
-      "startDate": "2019-03-28T06:47:19.674356+02:00", 
-      "endDate": "2019-04-04T06:47:07.288622+03:00"
+      "startDate": "2019-01-01T00:00:00+02:00", 
+      "endDate": "2019-04-25T06:49:21.547544+03:00"
     }, 
     "owner": "broker", 
-    "dateModified": "2019-03-28T06:47:19.676314+02:00", 
-    "id": "4e72a84032424e519ab51eb3c1c98dbf", 
-    "tenderID": "UA-2019-03-28-000001"
+    "dateModified": "2019-01-01T00:00:00+02:00", 
+    "id": "cfe8d9ecde7d49cba990bed08065d7d4", 
+    "tenderID": "UA-2019-01-01-000001"
   }
 }
 

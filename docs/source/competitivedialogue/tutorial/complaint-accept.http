@@ -1,8 +1,8 @@
-PATCH /api/2.5/tenders/349e0700a0a943709bf6699665e0c4f7/complaints/8d7a1a485d764655a60105fc8a9e088e HTTP/1.0
+PATCH /api/2.5/tenders/65f92f272bf04338908a441bdd292b9b/complaints/c058732cbd2349f097caf029681f042d HTTP/1.0
 Authorization: Basic cmV2aWV3ZXI6
 Content-Length: 32
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -21,12 +21,12 @@ Content-Type: application/json; charset=UTF-8
         "author": "complaint_owner", 
         "language": "uk", 
         "title": "Complaint_Attachement.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/28e11e8128c1413db120e3b6236d562d?KeyID=6e37a347&Signature=kLkL0QaZVGV6YUsIPt1FVKdk%2FYZ1kwsHX1e3mr5INjj9FLVkHDtYl%2FX7k1Bqm1l7qAoRnaWfJ8aR6fWR25gJBg%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/e3dfb176a75b4474bfe639b0e94a4e64?KeyID=f8d1ed1b&Signature=wCbkl%2FZPEPNTAvBBSTs5Gg23MZ%252BGcFgjhCgV5WPlG4LcizgvhHZ02L4WUtVB0vZDKwdMXiw5rfGUA268No2RCQ%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:48:21.544125+02:00", 
-        "id": "788c4f1373c44431b101275a17b8257f", 
-        "dateModified": "2019-03-28T06:48:21.544141+02:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "a6b182caccc74745948653d0cbcd7c4a", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }
     ], 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
@@ -38,9 +38,8 @@ Content-Type: application/json; charset=UTF-8
       }, 
       "identifier": {
         "scheme": "UA-EDR", 
-        "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
-        "id": "13313462", 
-        "uri": "http://sch10.edu.vn.ua/"
+        "id": "00137256", 
+        "uri": "http://www.sc.gov.ua/"
       }, 
       "name": "ДКП «Школяр»", 
       "address": {
@@ -52,13 +51,13 @@ Content-Type: application/json; charset=UTF-8
       }
     }, 
     "acceptance": true, 
-    "dateAccepted": "2019-03-28T06:48:22.406428+02:00", 
-    "dateSubmitted": "2019-03-28T06:48:21.814282+02:00", 
-    "complaintID": "UA-2019-03-28-000001.1", 
-    "date": "2019-03-28T06:48:22.411033+02:00", 
+    "dateAccepted": "2019-01-01T00:00:00+02:00", 
+    "dateSubmitted": "2019-01-01T00:00:00+02:00", 
+    "complaintID": "UA-2019-01-01-000001.1", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "title": "Недостатньо інформації", 
     "type": "complaint", 
-    "id": "8d7a1a485d764655a60105fc8a9e088e"
+    "id": "c058732cbd2349f097caf029681f042d"
   }
 }
 

@@ -1,13 +1,13 @@
-POST /api/2.5/tenders/4bdc8f70ca4d45b0956ab3afbadcc50c/complaints HTTP/1.0
+POST /api/2.5/tenders/8f11f82d19b64b859827cc941fd7f839/complaints HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 775
+Content-Length: 1298
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
-    "title": "complaint title", 
-    "description": "complaint description", 
+    "title": "Недостатньо інформації", 
+    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
     "author": {
       "contactPoint": {
         "telephone": "+380 (432) 21-69-30", 
@@ -31,19 +31,17 @@ Host: api-sandbox.openprocurement.org
   }
 }
 
-
-201 Created
+Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/4bdc8f70ca4d45b0956ab3afbadcc50c/complaints/28d9cf5b02ac478490314f169cd25cce
-
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/8f11f82d19b64b859827cc941fd7f839/complaints/6de24f9c7bda4087aa474ecd6e08c84e
 {
   "access": {
-    "token": "8b0d92726fca41c09d9b5ea150e42f68"
+    "token": "b50ae8640ffe4c679726c3a7b57b0993"
   }, 
   "data": {
     "status": "draft", 
-    "description": "complaint description", 
-    "title": "complaint title", 
+    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+    "title": "Недостатньо інформації", 
     "author": {
       "contactPoint": {
         "email": "soleksuk@gmail.com", 
@@ -64,10 +62,10 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/4bdc8f70ca4d45b
         "locality": "м. Вінниця"
       }
     }, 
-    "complaintID": "UA-2019-03-28-000001.1", 
-    "date": "2019-03-28T06:47:13.316243+02:00", 
+    "complaintID": "UA-2019-01-01-000001.1", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "type": "claim", 
-    "id": "28d9cf5b02ac478490314f169cd25cce"
+    "id": "6de24f9c7bda4087aa474ecd6e08c84e"
   }
 }
 
