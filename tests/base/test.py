@@ -11,7 +11,7 @@ from hashlib import md5
 from webtest import TestApp, TestRequest
 from openprocurement.api.constants import VERSION
 
-from tests.constants import API_HOST
+from tests.base.constants import API_HOST, MOCK_DATETIME
 
 
 class PrefixedRequestClass(TestRequest):
@@ -89,7 +89,7 @@ class MockWebTestMixin(object):
     def setUpMock(self):
         self.uuid_patch = mock.patch('uuid.UUID', side_effect=self.uuid)
         self.uuid_patch.start()
-        self.freezer = freeze_time('2019-01-01T00:00:00+02:00')
+        self.freezer = freeze_time(MOCK_DATETIME)
         self.freezer.start()
 
     def tearDownMock(self):

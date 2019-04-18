@@ -4,16 +4,15 @@ from datetime import timedelta
 from hashlib import sha512
 from copy import deepcopy
 
-import openprocurement.api.tests as base_test
 from openprocurement.api.models import get_now
 from openprocurement.tender.competitivedialogue.tests.base import (
     BaseCompetitiveDialogEUWebTest,
     BaseCompetitiveDialogUAStage2WebTest
 )
 
-from tests.base import DumpsWebTestApp, MockWebTestMixin
-from tests.constants import DOCS_HOST, AUCTIONS_HOST
-from tests.data import (
+from tests.base.test import DumpsWebTestApp, MockWebTestMixin
+from tests.base.constants import DOCS_HOST, AUCTIONS_HOST
+from tests.base.data import (
     bid_draft, bid2, bid3, bid4, bad_participant, question, complaint, qualified,
     bid_document, bid_document2, lots, subcontracting,
     bid_document3_eligibility, bid_document4_financialy,
@@ -83,7 +82,7 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):
     auctions_host = AUCTIONS_HOST
 
     def setUp(self):
-        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
+        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(__file__))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
         self.setUpMock()
@@ -2158,8 +2157,7 @@ class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest):
     auctions_host = AUCTIONS_HOST
 
     def setUp(self):
-        self.app = DumpsWebTestApp(
-            "config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
+        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(__file__))
         self.app.authorization = ('Basic', ('broker', ''))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db

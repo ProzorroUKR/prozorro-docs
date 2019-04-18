@@ -3,14 +3,13 @@ import os
 from datetime import timedelta
 from copy import deepcopy
 
-import openprocurement.contracting.api.tests as base_test
 from openprocurement.api.models import get_now
 from openprocurement.tender.belowthreshold.tests.base import BaseTenderWebTest
 from openprocurement.contracting.api.tests.base import test_contract_data
 from openprocurement.tender.belowthreshold.tests.base import test_tender_data, test_organization
 
-from tests.base import DumpsWebTestApp, MockWebTestMixin
-from tests.constants import DOCS_HOST
+from tests.base.test import DumpsWebTestApp, MockWebTestMixin
+from tests.base.constants import DOCS_HOST
 
 test_tender_data['items'].append(deepcopy(test_tender_data['items'][0]))
 
@@ -23,7 +22,7 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
     docs_host = DOCS_HOST
 
     def setUp(self):
-        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
+        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(__file__))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
         self.setUpMock()

@@ -6,14 +6,13 @@ from openprocurement.api.utils import get_now
 from time import sleep
 from uuid import uuid4
 
-import openprocurement.api.tests as base_test
 from openprocurement.tender.cfaua.tests.base import test_tender_data, agreement_period
 from openprocurement.tender.cfaua.constants import CLARIFICATIONS_UNTIL_PERIOD
 from openprocurement.tender.cfaua.tests.tender import BaseTenderWebTest
 
-from tests.base import DumpsWebTestApp, MockWebTestMixin
-from tests.constants import DOCS_HOST, AUCTIONS_HOST
-from tests.data import (
+from tests.base.test import DumpsWebTestApp, MockWebTestMixin
+from tests.base.constants import DOCS_HOST, AUCTIONS_HOST
+from tests.base.data import (
     lot_bid, question, complaint, lots, lot_bid2,
     subcontracting, qualified, lot_bid3_with_docs,
     bid_document, bid_document2
@@ -67,7 +66,7 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
     auctions_host = AUCTIONS_HOST
 
     def setUp(self):
-        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
+        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(__file__))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
         self.setUpMock()

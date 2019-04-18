@@ -5,16 +5,15 @@ from datetime import timedelta
 from time import sleep
 from uuid import uuid4
 
-import openprocurement.api.tests as base_test
 from openprocurement.api.models import get_now
 from openprocurement.tender.cfaselectionua.constants import BOT_NAME
 from openprocurement.tender.cfaselectionua.tests.base import (
     BaseTenderWebTest, test_tender_data, test_bids, test_agreement
 )
 
-from tests.base import DumpsWebTestApp, MockWebTestMixin
-from tests.constants import DOCS_HOST, AUCTIONS_HOST
-from tests.data import (
+from tests.base.test import DumpsWebTestApp, MockWebTestMixin
+from tests.base.constants import DOCS_HOST, AUCTIONS_HOST
+from tests.base.data import (
     parameters, lot_bid, lot_bid2_with_docs, features,
     tender_cfaselectionua_maximum, lots,
 )
@@ -69,7 +68,7 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
     auctions_host = AUCTIONS_HOST
 
     def setUp(self):
-        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
+        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(__file__))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
         self.setUpMock()
