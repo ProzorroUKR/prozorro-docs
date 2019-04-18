@@ -1,12 +1,12 @@
-PATCH /api/2.5/tenders/deb082b3f3004fc1b115e78ee2d59f6c/contracts/0840579adb784bf68990c531cd5413b5?acc_token=88277d181c4c406caa00d3386e096304 HTTP/1.0
+PATCH /api/2.5/tenders/19e26a9aabb84578920993b1d57f719d/contracts/56f576b75b9c405081622d75cad21bf2?acc_token=dee9fca567cd400c87a7c52c22c6eaec HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 60
+Content-Length: 53
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
-    "dateSigned": "2019-03-28T06:49:17.201631+02:00"
+    "dateSigned": "2019-01-01T00:10:00+02:00"
   }
 }
 
@@ -38,7 +38,7 @@ Content-Type: application/json; charset=UTF-8
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "35558649d29545c0887de99f276b401d", 
+        "id": "c8ddcb8c6d6f42ca9aa3b608d01f1494", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -66,7 +66,7 @@ Content-Type: application/json; charset=UTF-8
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "27a1ff2de6d649309fd85f5c3ee8be67", 
+        "id": "874a5db4734d4df39097f4426dcd637f", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -98,10 +98,10 @@ Content-Type: application/json; charset=UTF-8
     "contractNumber": "contract#1", 
     "value": {
       "yearlyPaymentsPercentage": 0.9, 
-      "amountNet": 8945.99, 
-      "amountPerformance": 818.86, 
+      "amountNet": 8733.93, 
+      "amountPerformance": 801.01, 
       "currency": "UAH", 
-      "amount": 8946.99, 
+      "amount": 8734.93, 
       "contractDuration": {
         "days": 74, 
         "years": 10
@@ -131,11 +131,11 @@ Content-Type: application/json; charset=UTF-8
         1000.0
       ]
     }, 
-    "dateSigned": "2019-03-28T06:49:17.201631+02:00", 
-    "date": "2019-03-28T06:49:16.802738+02:00", 
-    "awardID": "bab7d23f51b24cb78f074dcfdc2d6366", 
-    "id": "0840579adb784bf68990c531cd5413b5", 
-    "contractID": "UA-2019-03-28-000001-1"
+    "dateSigned": "2019-01-01T00:10:00+02:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
+    "awardID": "bf6214d4adf74c0287f135a4ebded475", 
+    "id": "56f576b75b9c405081622d75cad21bf2", 
+    "contractID": "UA-2019-01-01-000001-1"
   }
 }
 

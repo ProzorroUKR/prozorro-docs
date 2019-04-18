@@ -1,25 +1,32 @@
-POST /api/2.5/tenders/73c2c3f9cc6349f0a144ed40c9e3dfa7/documents?acc_token=62a4f7692eab4a6cbb0af2c34f9dd6c0 HTTP/1.0
+POST /api/2.5/tenders/ee151acde21d47749df3a412b1b1c5b9/documents?acc_token=57e796bd207d4695964c4d14060285c7 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 186
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy541573399435$
-Host: api-sandbox.openprocurement.org
+Content-Length: 136
+Content-Type: multipart/form-data; boundary=BOUNDARY
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="Notice.pdf"
+Content-Type: application/pdf
+
+content
+--BOUNDARY--
 
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/73c2c3f9cc6349f0a144ed40c9e3dfa7/documents/3950220e604d49b79237e0797c0e16ba
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ee151acde21d47749df3a412b1b1c5b9/documents/4f48a9390f2a43388b4e2e0b33446ac2
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "author": "tender_owner", 
     "language": "uk", 
     "title": "Notice.pdf", 
-    "url": "http://public.docs-sandbox.openprocurement.org/get/e9b6b6ef7faa41bbaef7c4dda5222553?KeyID=17aaf97f&Signature=sEfTHgIOPeS4e98iTh2vIAkPmvG80sKRghdtHhckQceoSLzW5FvXNURlG%2FQ2DcThzhVmoasvDexF0xfYgms%252BAg%253D%253D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/3a5e3a40fbb74fd68bea2547af64a273?KeyID=a8968c46&Signature=KSwEOQC%252BoEKUBzjmzCIKQPxCVlo%2F3iUOGC%252B7U7icGcVOK00f111chY77yb3PuZHYodhEhBpxxxZgMJvFpaOjAA%253D%253D", 
     "format": "application/pdf", 
     "documentOf": "tender", 
-    "datePublished": "2019-03-28T06:48:32.196875+02:00", 
-    "id": "3950220e604d49b79237e0797c0e16ba", 
-    "dateModified": "2019-03-28T06:48:32.196903+02:00"
+    "datePublished": "2019-01-01T00:00:00+02:00", 
+    "id": "4f48a9390f2a43388b4e2e0b33446ac2", 
+    "dateModified": "2019-01-01T00:00:00+02:00"
   }
 }
 

@@ -1,33 +1,31 @@
-PUT /api/2.5/tenders/55fbfef6773941a68153e7e877673499/documents/237648aae26f484ca3004423d49538c3?acc_token=fd113ea31c4145b2a5790646a65a9099 HTTP/1.0
+PUT /api/2.5/tenders/4cdd6b38d69c459284b31ab81cbea097/documents/57a426ae3ae9439589d421cb9abd0f64?acc_token=55a1ff7e4b9c4fec90bca39c8e96fbd7 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 339
+Content-Length: 327
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
-    "url": "http://public.docs-sandbox.openprocurement.org/get/7cb6f068ea7445d084ef58e4d73bfdaf?KeyID=cfd3c8d9&Signature=iLRJd%2BB8XU1ie2sGtOTnH7g%2FNh%2BoGatmir6K764MmcNOqcTpdEAdpyX8tOEfdMSB%2BilqaIxdrOTuqoAuSeaVDQ%3D%3D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/9e87ca0753254c6a81911318b1c2e334?KeyID=a8968c46&Signature=XLXwYo7ka7gpEVUytCW3t0Sg5nr2wD6uSku4fHTDUDyZQiwFJrAkHnINLboI7bwlGehwQtM5Q569dULtRnQiCg%3D%3D", 
     "title": "AwardCriteria-2.pdf", 
     "hash": "md5:00000000000000000000000000000000", 
     "format": "application/pdf"
   }
 }
 
-
-200 OK
+Response: 200 OK
 Content-Type: application/json; charset=UTF-8
-
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "author": "tender_owner", 
     "title": "AwardCriteria-2.pdf", 
-    "url": "http://public.docs-sandbox.openprocurement.org/get/7cb6f068ea7445d084ef58e4d73bfdaf?KeyID=cfd3c8d9&Signature=uZsXyYtD%2FpNViEGaJNTuyV%2F4gRtXkmbJKooLc8t3s07AMXOONcFU6o%2F6D3%2FBumAoVoJwPUhlRboHdzQevzvrAA%253D%253D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/9e87ca0753254c6a81911318b1c2e334?KeyID=a8968c46&Signature=1gwUKyUowI4MYlnQkE2vUzkyBLGm%2F4YnUvjvqJa73QV13pA2PrbAdjWsroH7YRD9KQ3jKT1x4eerbUvNXugFBQ%253D%253D", 
     "format": "application/pdf", 
     "documentOf": "tender", 
-    "datePublished": "2019-04-03T14:34:43.633371+03:00", 
-    "id": "237648aae26f484ca3004423d49538c3", 
-    "dateModified": "2019-04-03T14:34:43.758900+03:00"
+    "datePublished": "2019-01-01T00:00:00+02:00", 
+    "id": "57a426ae3ae9439589d421cb9abd0f64", 
+    "dateModified": "2019-01-01T00:00:00+02:00"
   }
 }
 

@@ -1,23 +1,31 @@
-POST /api/2.5/tenders/edf1ec35dd2442928d2473f51384621f/cancellations/93abddeaffa34aa2befd7ab66876c0db/documents?acc_token=cbe41c0fba54453ea52434ea6c0e1867 HTTP/1.0
+POST /api/2.5/tenders/239ab2b4b65a46f8ac603eebcd77771c/cancellations/b314c6b707c44afda70eae84203a7a5a/documents?acc_token=4fedc6c367a94e00ac51cd25b92bb6f8 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 186
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy543376055674$
-Host: api-sandbox.openprocurement.org
+Content-Length: 136
+Content-Type: multipart/form-data; boundary=BOUNDARY
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="Notice.pdf"
+Content-Type: application/pdf
+
+content
+--BOUNDARY--
+
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/edf1ec35dd2442928d2473f51384621f/cancellations/93abddeaffa34aa2befd7ab66876c0db/documents/7d0f39f6e954440bbf34200a8f0c4697
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/239ab2b4b65a46f8ac603eebcd77771c/cancellations/b314c6b707c44afda70eae84203a7a5a/documents/1b99bc3bc0af4122bf9fa67cc98fc611
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "language": "uk", 
     "title": "Notice.pdf", 
-    "url": "http://public.docs-sandbox.openprocurement.org/get/83d6a80f885248fe96829c65902a04f5?KeyID=3e304647&Signature=%2FWTpcC%2FfDQvkoOB5jtmbPYyq96CPOpK8qbtJ9ohVoPZqY0QdogBcRU32ouicYm984wfIun03aagZaROsn7WYCg%253D%253D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/8c1cdc8cdba2471eb45cec7b549ea043?KeyID=a8968c46&Signature=imsYBtJatKEaR4QulMVu6mYxdmxR9ZvEb3qhr4T3sC5vJdQil2xF5YZFrnOoqG746KhoPvQHceV1ohadSZaAAw%253D%253D", 
     "format": "application/pdf", 
     "documentOf": "tender", 
-    "datePublished": "2019-03-28T06:48:05.219897+02:00", 
-    "id": "7d0f39f6e954440bbf34200a8f0c4697", 
-    "dateModified": "2019-03-28T06:48:05.219912+02:00"
+    "datePublished": "2019-01-01T00:10:00+02:00", 
+    "id": "1b99bc3bc0af4122bf9fa67cc98fc611", 
+    "dateModified": "2019-01-01T00:10:00+02:00"
   }
 }
 

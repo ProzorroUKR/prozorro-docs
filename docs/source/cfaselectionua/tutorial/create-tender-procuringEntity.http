@@ -1,22 +1,22 @@
 POST /api/2.5/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 2557
+Content-Length: 2610
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "title": "футляри до державних нагород", 
     "lots": [
       {
-        "title": "lot title", 
-        "id": "f95dd4f753684255832d7cfdc7b32368", 
-        "description": "lot description"
+        "title": "Лот №1", 
+        "id": "8c48fa062b4d4df8bc6f4e57271b2112", 
+        "description": "Опис Лот №1"
       }
     ], 
     "items": [
       {
-        "relatedLot": "f95dd4f753684255832d7cfdc7b32368", 
+        "relatedLot": "8c48fa062b4d4df8bc6f4e57271b2112", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -32,7 +32,7 @@ Host: api-sandbox.openprocurement.org
           }
         ], 
         "description_ru": "футляры к государственным наградам", 
-        "id": "dd7ff222b5bf40859e864dd2e7464f45", 
+        "id": "ac27b3c2320d4ac29861a4760410667f", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -42,6 +42,13 @@ Host: api-sandbox.openprocurement.org
     ], 
     "procurementMethodType": "closeFrameworkAgreementSelectionUA", 
     "mode": "test", 
+    "agreements": [
+      {
+        "id": "c2221c2d855b457db7952d960dc02611"
+      }
+    ], 
+    "title_ru": "футляры к государственным наградам", 
+    "title_en": "Cases with state awards", 
     "procuringEntity": {
       "contactPoint": {
         "name": "Державне управління справами", 
@@ -61,43 +68,34 @@ Host: api-sandbox.openprocurement.org
         "streetAddress": "вул. Банкова, 11, корпус 1", 
         "locality": "м. Київ"
       }
-    }, 
-    "title_ru": "футляры к государственным наградам", 
-    "title_en": "Cases with state awards", 
-    "agreements": [
-      {
-        "id": "3c7c74b4eea74bbea027e6cdace4e7c9"
-      }
-    ]
+    }
   }
 }
 
-
-201 Created
+Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/cd7c8a32591a46de86e8cc0d7487bc79
-
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/1f780e07a2ca4b31bba8e96a5d37b1b1
 {
   "access": {
-    "token": "f6b6747ea094448a990d6f5daccf8047"
+    "token": "6b2877b5758f46f1b236cd0ab1e9f378"
   }, 
   "data": {
     "status": "draft", 
     "procurementMethod": "selective", 
-    "tenderID": "UA-2019-04-03-000002", 
+    "tenderID": "UA-2019-01-01-000002", 
     "title": "[ТЕСТУВАННЯ] футляри до державних нагород", 
     "lots": [
       {
-        "date": "2019-04-03T14:34:33.903262+03:00", 
+        "date": "2019-01-01T00:00:00+02:00", 
         "status": "active", 
-        "title": "lot title", 
-        "description": "lot description", 
-        "id": "f95dd4f753684255832d7cfdc7b32368"
+        "title": "Лот №1", 
+        "description": "Опис Лот №1", 
+        "id": "8c48fa062b4d4df8bc6f4e57271b2112"
       }
     ], 
     "items": [
       {
-        "relatedLot": "f95dd4f753684255832d7cfdc7b32368", 
+        "relatedLot": "8c48fa062b4d4df8bc6f4e57271b2112", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -113,7 +111,7 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/cd7c8a32591a46d
           }
         ], 
         "description_ru": "футляры к государственным наградам", 
-        "id": "dd7ff222b5bf40859e864dd2e7464f45", 
+        "id": "ac27b3c2320d4ac29861a4760410667f", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -143,17 +141,17 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/cd7c8a32591a46d
         "locality": "м. Київ"
       }
     }, 
-    "date": "2019-04-03T14:34:33.903262+03:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "procurementMethodType": "closeFrameworkAgreementSelectionUA", 
     "awardCriteria": "lowestCost", 
     "title_ru": "[ТЕСТИРОВАНИЕ] футляры к государственным наградам", 
     "owner": "broker", 
-    "dateModified": "2019-04-03T14:34:33.905124+03:00", 
+    "dateModified": "2019-01-01T00:00:00+02:00", 
     "mode": "test", 
-    "id": "cd7c8a32591a46de86e8cc0d7487bc79", 
+    "id": "1f780e07a2ca4b31bba8e96a5d37b1b1", 
     "agreements": [
       {
-        "id": "3c7c74b4eea74bbea027e6cdace4e7c9"
+        "id": "c2221c2d855b457db7952d960dc02611"
       }
     ]
   }

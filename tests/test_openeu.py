@@ -1,32 +1,30 @@
 # -*- coding: utf-8 -*-
 import os
 from copy import deepcopy
-
 from datetime import timedelta
 
-import openprocurement.tender.openeu.tests.base as base_test
 from openprocurement.api.models import get_now
 from openprocurement.tender.openeu.tests.tender import BaseTenderWebTest
 
-from tests.base import DumpsWebTestApp, DOCS_HOST, AUCTIONS_HOST
-from tests.data import (
-    question, complaint, lots, subcontracting, bid_draft, bid2, bid3_with_docs,
+from tests.base.test import DumpsWebTestApp, MockWebTestMixin
+from tests.base.constants import DOCS_HOST, AUCTIONS_HOST
+from tests.base.data import (
+    question, complaint, lots, subcontracting,
+    bid_draft, bid2, bid3_with_docs,
     qualified, tender_openeu
 )
 
 test_tender_data = deepcopy(tender_openeu)
-
+test_lots = deepcopy(lots)
 bid = deepcopy(bid_draft)
+bid2 = deepcopy(bid2)
+bid3 = deepcopy(bid3_with_docs)
+
 bid.update(subcontracting)
 bid.update(qualified)
-
-bid2 = deepcopy(bid2)
 bid2.update(qualified)
-
-bid3 = deepcopy(bid3_with_docs)
 bid3.update(qualified)
 
-test_lots = deepcopy(lots)
 test_lots[0]['value'] = test_tender_data['value']
 test_lots[0]['minimalStep'] = test_tender_data['minimalStep']
 test_lots[1]['value'] = test_tender_data['value']
@@ -36,7 +34,7 @@ TARGET_DIR = 'docs/source/openeu/http/tutorial'
 TARGET_DIR_MULTI = 'docs/source/openeu/http/multiple_lots_tutorial/'
 
 
-class TenderResourceTest(BaseTenderWebTest):
+class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
     initial_data = test_tender_data
     docservice = True
 
@@ -44,14 +42,16 @@ class TenderResourceTest(BaseTenderWebTest):
     auctions_host = AUCTIONS_HOST
 
     def setUp(self):
-        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
+        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(__file__))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
+        self.setUpMock()
         if self.docservice:
             self.setUpDS()
             self.app.app.registry.docservice_url = 'http://{}'.format(self.docs_host)
 
     def tearDown(self):
+        self.tearDownMock()
         self.couchdb_server.delete(self.db.name)
 
     def generate_docservice_url(self):
@@ -219,17 +219,15 @@ class TenderResourceTest(BaseTenderWebTest):
             tenderPeriod_endDate = get_now() + timedelta(days=8)
             response = self.app.patch_json(
                 '/tenders/{}?acc_token={}'.format(tender['id'], owner_token),
-                {'data':
-                    {
-                        "value": {
-                            "amount": 501,
-                            "currency": u"UAH"
-                        },
-                        "tenderPeriod": {
-                            "endDate": tenderPeriod_endDate.isoformat()
-                        }
+                {'data': {
+                    "value": {
+                        "amount": 501,
+                        "currency": u"UAH"
+                    },
+                    "tenderPeriod": {
+                        "endDate": tenderPeriod_endDate.isoformat()
                     }
-                })
+                }})
             self.assertEqual(response.status, '200 OK')
 
         #### Registering bid
@@ -340,15 +338,16 @@ class TenderResourceTest(BaseTenderWebTest):
             bids_access[bid2_id] = response.json['access']['token']
             self.assertEqual(response.status, '201 Created')
 
+        for document in bid3['documents']:
+            document['url'] = self.generate_docservice_url()
+        for document in bid3['eligibilityDocuments']:
+            document['url'] = self.generate_docservice_url()
+        for document in bid3['financialDocuments']:
+            document['url'] = self.generate_docservice_url()
+        for document in bid3['qualificationDocuments']:
+            document['url'] = self.generate_docservice_url()
+
         with open(TARGET_DIR + 'register-3rd-bidder.http', 'w') as self.app.file_obj:
-            for document in bid3['documents']:
-                document['url'] = self.generate_docservice_url()
-            for document in bid3['eligibilityDocuments']:
-                document['url'] = self.generate_docservice_url()
-            for document in bid3['financialDocuments']:
-                document['url'] = self.generate_docservice_url()
-            for document in bid3['qualificationDocuments']:
-                document['url'] = self.generate_docservice_url()
             response = self.app.post_json(
                 '/tenders/{}/bids'.format(self.tender_id),
                 {'data': bid2})
@@ -415,7 +414,6 @@ class TenderResourceTest(BaseTenderWebTest):
             self.assertEqual(response.status, "200 OK")
 
         # active.pre-qualification.stand-still
-
         with open(TARGET_DIR + 'pre-qualification-confirmation.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
                 '/tenders/{}?acc_token={}'.format(self.tender_id, owner_token),
@@ -462,7 +460,6 @@ class TenderResourceTest(BaseTenderWebTest):
             self.assertEqual(response.status, '200 OK')
 
         #### Confirming qualification
-        # self.set_status('active.qualification')
         self.app.authorization = ('Basic', ('auction', ''))
         response = self.app.get('/tenders/{}/auction'.format(self.tender_id))
         auction_bids_data = response.json['data']['bids']
@@ -506,6 +503,8 @@ class TenderResourceTest(BaseTenderWebTest):
         self.assertEqual(response.json['data']['value']['amount'], 238)
 
         #### Setting contract signature date
+
+        self.tick()
 
         with open(TARGET_DIR + 'tender-contract-sign-date.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
@@ -904,6 +903,8 @@ class TenderResourceTest(BaseTenderWebTest):
                 }})
             self.assertEqual(response.status, "200 OK")
 
+        self.tick()
+
         # active.pre-qualification.stand-still
         response = self.app.patch_json(
             '/tenders/{}?acc_token={}'.format(self.tender_id, owner_token),
@@ -1272,6 +1273,8 @@ class TenderResourceTest(BaseTenderWebTest):
                     self.tender_id, award_id, bid_token),
                 {'data': complaint})
             self.assertEqual(response.status, '201 Created')
+
+        self.tick()
 
         complaint1_token = response.json['access']['token']
         complaint1_id = response.json['data']['id']

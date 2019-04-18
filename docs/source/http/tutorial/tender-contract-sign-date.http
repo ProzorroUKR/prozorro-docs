@@ -1,148 +1,16 @@
-PATCH /api/2.5/tenders/4e72a84032424e519ab51eb3c1c98dbf/contracts/4669081f0e9141f3be4bdc9c631eab08?acc_token=40505a9e3a774f6e9cd51e16d68e457a HTTP/1.0
+PATCH /api/2.5/tenders/e370d1ede4574bb8aebd9cd6976fd5f8/contracts/712c296d52b949758c8bfd1a69f2a31c?acc_token=855549743758426abe02dad7618aea90 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 60
+Content-Length: 53
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
-    "dateSigned": "2019-03-28T06:47:22.026757+02:00"
+    "dateSigned": "2019-01-01T00:30:00+02:00"
   }
 }
 
-
-200 OK
+Response: 200 OK
 Content-Type: application/json; charset=UTF-8
-
-{
-  "data": {
-    "status": "pending", 
-    "documents": [
-      {
-        "hash": "md5:00000000000000000000000000000000", 
-        "title": "contract_first_document.doc", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/2df99c98f6d84fd5b0da0710aaa3c726?KeyID=782d7111&Signature=gudCtEmN%252BZLSbZ4EHuc%252B2p80RzuCoeN3ueKiaBKLuoR6Oh7%2FoU%252B1%2FYGgQb98wgEpxEfzID8qisIR3OSGpxEoDQ%253D%253D", 
-        "format": "application/msword", 
-        "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:47:21.816286+02:00", 
-        "id": "fadc5f96bb064c058e1915906f963444", 
-        "dateModified": "2019-03-28T06:47:21.816300+02:00"
-      }, 
-      {
-        "hash": "md5:00000000000000000000000000000000", 
-        "title": "contract_second_document.doc", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/8d344d33583a40fd98c061e1f6bbe193?KeyID=782d7111&Signature=W6cemYF%252BBg2nD2mKVA02ao6IKXlLQjb8Q7jqd8Ubzg0Yr2yXjadI%2Fe%2F2qcwQl2GGJOc5nsQB%2F%2FZ58NRFqoJsCQ%253D%253D", 
-        "format": "application/msword", 
-        "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:47:21.942834+02:00", 
-        "id": "80ac424ae5014f24a700725a4802e75a", 
-        "dateModified": "2019-03-28T06:47:21.942851+02:00"
-      }
-    ], 
-    "items": [
-      {
-        "description": "футляри до державних нагород", 
-        "classification": {
-          "scheme": "ДК021", 
-          "description": "Cartons", 
-          "id": "44617100-9"
-        }, 
-        "additionalClassifications": [
-          {
-            "scheme": "ДКПП", 
-            "id": "17.21.1", 
-            "description": "папір і картон гофровані, паперова й картонна тара"
-          }
-        ], 
-        "deliveryAddress": {
-          "postalCode": "79000", 
-          "countryName": "Україна", 
-          "streetAddress": "вул. Банкова 1", 
-          "region": "м. Київ", 
-          "locality": "м. Київ"
-        }, 
-        "deliveryDate": {
-          "startDate": "2019-03-30T06:47:07.288622+02:00", 
-          "endDate": "2019-04-02T06:47:07.288622+03:00"
-        }, 
-        "id": "f0d50081ea3648d9bd09e243d6619bd9", 
-        "unit": {
-          "code": "44617100-9", 
-          "name": "item"
-        }, 
-        "quantity": 5.0
-      }, 
-      {
-        "description": "футляри до державних нагород", 
-        "classification": {
-          "scheme": "ДК021", 
-          "description": "Cartons", 
-          "id": "44617100-9"
-        }, 
-        "additionalClassifications": [
-          {
-            "scheme": "ДКПП", 
-            "id": "17.21.1", 
-            "description": "папір і картон гофровані, паперова й картонна тара"
-          }
-        ], 
-        "deliveryAddress": {
-          "postalCode": "79000", 
-          "countryName": "Україна", 
-          "streetAddress": "вул. Банкова 1", 
-          "region": "м. Київ", 
-          "locality": "м. Київ"
-        }, 
-        "deliveryDate": {
-          "startDate": "2019-03-30T06:47:07.288622+02:00", 
-          "endDate": "2019-04-02T06:47:07.288622+03:00"
-        }, 
-        "id": "d39cb38814824407a7172ac09bd522fa", 
-        "unit": {
-          "code": "44617100-9", 
-          "name": "item"
-        }, 
-        "quantity": 5.0
-      }
-    ], 
-    "suppliers": [
-      {
-        "contactPoint": {
-          "email": "aagt@gmail.com", 
-          "telephone": "+380 (322) 91-69-30", 
-          "name": "Андрій Олексюк"
-        }, 
-        "identifier": {
-          "scheme": "UA-EDR", 
-          "id": "00137226", 
-          "uri": "http://www.sc.gov.ua/"
-        }, 
-        "name": "ДКП «Книга»", 
-        "address": {
-          "postalCode": "79013", 
-          "countryName": "Україна", 
-          "streetAddress": "вул. Островського, 34", 
-          "region": "м. Львів", 
-          "locality": "м. Львів"
-        }
-      }
-    ], 
-    "contractNumber": "contract #13111", 
-    "period": {
-      "startDate": "2019-03-28T06:47:07.311391+02:00", 
-      "endDate": "2020-03-27T06:47:07.311391+02:00"
-    }, 
-    "dateSigned": "2019-03-28T06:47:22.026757+02:00", 
-    "value": {
-      "currency": "UAH", 
-      "amount": 238.0, 
-      "amountNet": 230.0, 
-      "valueAddedTaxIncluded": true
-    }, 
-    "date": "2019-03-28T06:47:21.254386+02:00", 
-    "awardID": "30d1b00bbd954144978cbab8802646da", 
-    "id": "4669081f0e9141f3be4bdc9c631eab08", 
-    "contractID": "UA-2019-03-28-000001-1"
-  }
-}
+null
 

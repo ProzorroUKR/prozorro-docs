@@ -1,24 +1,32 @@
-POST /api/2.5/tenders/edf1ec35dd2442928d2473f51384621f/bids/b4589ca9eb684602b65a37e136f22c04/documents?acc_token=111a5f976f3847669922c1dee355c4ad HTTP/1.0
+POST /api/2.5/tenders/239ab2b4b65a46f8ac603eebcd77771c/bids/5b1584c69800457d9ea9df290ddb42ae/documents?acc_token=117ebc612ee44d1e94e699f91e64bc22 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 188
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy663547366921$
-Host: api-sandbox.openprocurement.org
+Content-Length: 138
+Content-Type: multipart/form-data; boundary=BOUNDARY
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="Proposal.pdf"
+Content-Type: application/pdf
+
+content
+--BOUNDARY--
+
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/edf1ec35dd2442928d2473f51384621f/bids/b4589ca9eb684602b65a37e136f22c04/documents/2e81f311abc24c6eb2899f5e5b834752
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/239ab2b4b65a46f8ac603eebcd77771c/bids/5b1584c69800457d9ea9df290ddb42ae/documents/4345c1573ab64285ae5b581958e6914f
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "confidentiality": "public", 
     "language": "uk", 
     "title": "Proposal.pdf", 
-    "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/edf1ec35dd2442928d2473f51384621f/bids/b4589ca9eb684602b65a37e136f22c04/documents/2e81f311abc24c6eb2899f5e5b834752?download=2cdaabebb0f5408d8fa35a79096ed032", 
+    "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/239ab2b4b65a46f8ac603eebcd77771c/bids/5b1584c69800457d9ea9df290ddb42ae/documents/4345c1573ab64285ae5b581958e6914f?download=231b822a07e64a4e80227d91e9c92ccc", 
     "format": "application/pdf", 
     "documentOf": "tender", 
-    "datePublished": "2019-03-28T06:47:55.496997+02:00", 
-    "id": "2e81f311abc24c6eb2899f5e5b834752", 
-    "dateModified": "2019-03-28T06:47:55.497015+02:00"
+    "datePublished": "2019-01-01T00:00:00+02:00", 
+    "id": "4345c1573ab64285ae5b581958e6914f", 
+    "dateModified": "2019-01-01T00:00:00+02:00"
   }
 }
 

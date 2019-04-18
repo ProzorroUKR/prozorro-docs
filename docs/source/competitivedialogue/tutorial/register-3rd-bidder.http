@@ -1,8 +1,8 @@
-POST /api/2.5/tenders/73c2c3f9cc6349f0a144ed40c9e3dfa7/bids HTTP/1.0
+POST /api/2.5/tenders/ee151acde21d47749df3a412b1b1c5b9/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 727
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -14,9 +14,9 @@ DATA:
     "tenderers": [
       {
         "contactPoint": {
+          "email": "fake@mail.com", 
           "telephone": "+380 (322) 12-34-56", 
-          "name": "Іван Іваненко", 
-          "email": "fake@mail.com"
+          "name": "Іван Іваненко"
         }, 
         "identifier": {
           "scheme": "UA-EDR", 
@@ -38,10 +38,10 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/73c2c3f9cc6349f0a144ed40c9e3dfa7/bids/64c69906987a4fe9ab5551011ed3eea8
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ee151acde21d47749df3a412b1b1c5b9/bids/8a1a5a06de004862b4809d24cb2fed4f
 {
   "access": {
-    "token": "d6cc370ea1ff4c4cbddcb3f3b09a8e64"
+    "token": "fbd4c2d1e6aa4637b3b43951085fb19c"
   }, 
   "data": {
     "status": "pending", 
@@ -69,8 +69,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/73c2c3f9cc6349f
         }
       }
     ], 
-    "date": "2019-03-28T06:48:33.677869+02:00", 
-    "id": "64c69906987a4fe9ab5551011ed3eea8"
+    "date": "2019-01-01T00:00:00+02:00", 
+    "id": "8a1a5a06de004862b4809d24cb2fed4f"
   }
 }
 

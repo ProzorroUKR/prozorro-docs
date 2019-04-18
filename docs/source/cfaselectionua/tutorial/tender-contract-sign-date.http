@@ -1,115 +1,16 @@
-PATCH /api/2.5/tenders/55fbfef6773941a68153e7e877673499/contracts/f7a347eda6744daf9997077814cc00b1?acc_token=fd113ea31c4145b2a5790646a65a9099 HTTP/1.0
+PATCH /api/2.5/tenders/4cdd6b38d69c459284b31ab81cbea097/contracts/dcf3565417d44143b47ae2a316a85892?acc_token=55a1ff7e4b9c4fec90bca39c8e96fbd7 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 60
+Content-Length: 53
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
-    "dateSigned": "2019-04-03T14:34:47.948939+03:00"
+    "dateSigned": "2019-01-01T00:00:00+02:00"
   }
 }
 
-
-200 OK
+Response: 200 OK
 Content-Type: application/json; charset=UTF-8
-
-{
-  "data": {
-    "status": "pending", 
-    "documents": [
-      {
-        "hash": "md5:00000000000000000000000000000000", 
-        "title": "contract_first_document.doc", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/f3c665f6b0bd4fd88e278740d11d4516?KeyID=cfd3c8d9&Signature=BROtvoeeZBaYRtNmjhXeuHzyXxwxjiwqklW7hGDkFqS8h%252BDbKfw7GfNM1CNxaE3dLcn2PbkAnZVReNoYIPW2Bg%253D%253D", 
-        "format": "application/msword", 
-        "datePublished": "2019-04-03T14:34:47.560414+03:00", 
-        "id": "b4d60797ce8f4a648e590a527bde78a2", 
-        "dateModified": "2019-04-03T14:34:47.560431+03:00"
-      }, 
-      {
-        "hash": "md5:00000000000000000000000000000000", 
-        "title": "contract_second_document.doc", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/bc6a405de27e42bba26cf5decf994460?KeyID=cfd3c8d9&Signature=EVAUxm1s0OLSJpaFKIDECwEgaRAuX0KoBDJVHTXOXJpUd%252BB17wBWJSXoWFBDs0lrkzk5Mq7rzNGrF9SDoZcCCw%253D%253D", 
-        "format": "application/msword", 
-        "datePublished": "2019-04-03T14:34:47.781825+03:00", 
-        "id": "0a06d67f070d4dcc8953026c053b3a7f", 
-        "dateModified": "2019-04-03T14:34:47.781838+03:00"
-      }
-    ], 
-    "items": [
-      {
-        "relatedLot": "f95dd4f753684255832d7cfdc7b32368", 
-        "description": "футляри до державних нагород", 
-        "classification": {
-          "scheme": "ДК021", 
-          "description": "New Cartons", 
-          "id": "44617100-9"
-        }, 
-        "description_en": "futliary do derzhavnyh nagorod", 
-        "additionalClassifications": [
-          {
-            "scheme": "ДКПП", 
-            "id": "17.21.1", 
-            "description": "папір і картон гофровані, паперова й картонна тара"
-          }
-        ], 
-        "deliveryAddress": {
-          "postalCode": "79000", 
-          "countryName": "Україна", 
-          "streetAddress": "вул. Банкова 1", 
-          "region": "м. Київ", 
-          "locality": "м. Київ"
-        }, 
-        "deliveryDate": {
-          "startDate": "2019-04-05T14:34:32.392080+03:00", 
-          "endDate": "2019-04-08T14:34:32.392080+03:00"
-        }, 
-        "id": "1662b0e1d59f4e2f8e2c5bd48e03a7bc", 
-        "unit": {
-          "code": "44617100-9", 
-          "name": "item"
-        }, 
-        "quantity": 6.0
-      }
-    ], 
-    "suppliers": [
-      {
-        "contactPoint": {
-          "name": "Державне управління справами", 
-          "telephone": "0440000000"
-        }, 
-        "identifier": {
-          "scheme": "UA-EDR", 
-          "id": "00037258", 
-          "uri": "http://www.dus.gov.ua/"
-        }, 
-        "name": "Державне управління справами", 
-        "address": {
-          "postalCode": "01220", 
-          "countryName": "Україна", 
-          "streetAddress": "вул. Банкова, 11, корпус 1", 
-          "region": "м. Київ", 
-          "locality": "м. Київ"
-        }
-      }
-    ], 
-    "contractNumber": "contract #13111", 
-    "period": {
-      "startDate": "2019-04-03T14:34:32.422281+03:00", 
-      "endDate": "2020-04-02T14:34:32.422281+03:00"
-    }, 
-    "dateSigned": "2019-04-03T14:34:47.948939+03:00", 
-    "value": {
-      "currency": "UAH", 
-      "amount": 238.0, 
-      "amountNet": 230.0, 
-      "valueAddedTaxIncluded": true
-    }, 
-    "date": "2019-04-03T14:34:46.648279+03:00", 
-    "awardID": "0b96ab8360ef48739c23a2694f3bbdcb", 
-    "id": "f7a347eda6744daf9997077814cc00b1", 
-    "contractID": "UA-2019-04-03-000004-2"
-  }
-}
+null
 

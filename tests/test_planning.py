@@ -1,30 +1,37 @@
 # -*- coding: utf-8 -*-
 import os
+from copy import deepcopy
+from datetime import timedelta
 
-import openprocurement.planning.api.tests.base as base_test
+from openprocurement.api.utils import get_now
 from openprocurement.planning.api.tests.base import BasePlanWebTest
 from openprocurement.planning.api.tests.base import test_plan_data
 
-from tests.base import DumpsWebTestApp, DOCS_HOST
+from tests.base.test import DumpsWebTestApp, MockWebTestMixin
+from tests.base.constants import DOCS_HOST
 
 TARGET_DIR = 'docs/source/planning/tutorial/'
 
+test_plan_data = deepcopy(test_plan_data)
 
-class PlanResourceTest(BasePlanWebTest):
+
+class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
     initial_data = test_plan_data
     docservice = True
 
     docs_host = DOCS_HOST
 
     def setUp(self):
-        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
+        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(__file__))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
+        self.setUpMock()
         if self.docservice:
             self.setUpDS()
             self.app.app.registry.docservice_url = 'http://{}'.format(self.docs_host)
 
     def tearDown(self):
+        self.tearDownMock()
         self.couchdb_server.delete(self.db.name)
 
     def generate_docservice_url(self):
@@ -38,6 +45,11 @@ class PlanResourceTest(BasePlanWebTest):
         self.assertEqual(response.json['data'], [])
 
         # create plan
+        test_plan_data['tender'].update({"tenderPeriod": {"startDate": (get_now() + timedelta(days=7)).isoformat()}})
+        test_plan_data['items'][0].update({"deliveryDate": {"endDate": (get_now() + timedelta(days=15)).isoformat()}})
+        test_plan_data['items'][1].update({"deliveryDate": {"endDate": (get_now() + timedelta(days=16)).isoformat()}})
+        test_plan_data['items'][2].update({"deliveryDate": {"endDate": (get_now() + timedelta(days=17)).isoformat()}})
+
         with open(TARGET_DIR + 'create-plan.http', 'w') as self.app.file_obj:
             response = self.app.post_json(
                 '/plans?opt_pretty=1',

@@ -1,36 +1,34 @@
-GET /api/2.5/tenders/4e72a84032424e519ab51eb3c1c98dbf/documents HTTP/1.0
+GET /api/2.5/tenders/e370d1ede4574bb8aebd9cd6976fd5f8/documents HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
-
-200 OK
+Response: 200 OK
 Content-Type: application/json; charset=UTF-8
-
 {
   "data": [
     {
       "hash": "md5:00000000000000000000000000000000", 
-      "description": "document description modified", 
-      "title": "Notice.pdf", 
-      "url": "http://public.docs-sandbox.openprocurement.org/get/7f582c3fe17b4d22b312206e40e7abba?KeyID=782d7111&Signature=bEWrpMB9DsLPKl1CX%252Bbu%2FAQOLwn1iYOGs5XdYflV6gnCvHJpl%252Byil2E83ks1EyFWvbQd6zFXlQ2kYh29LHO8DA%253D%253D", 
+      "author": "tender_owner", 
+      "title": "AwardCriteria-2.pdf", 
+      "url": "http://public-docs-sandbox.prozorro.gov.ua/get/af60c2a4eaf4418b9e000ea116adef7b?KeyID=a8968c46&Signature=vOIMN96DQ%2F4Ui85AdnF85sX7YJwN3Sio7LPBYmeYGiWLLZF8%252B%252BlbYgfsz1TLsrdMzTtVI9%252BA5C0UlwWQTw75AQ%253D%253D", 
       "format": "application/pdf", 
       "documentOf": "tender", 
-      "datePublished": "2019-03-28T06:47:20.089427+02:00", 
-      "author": "tender_owner", 
-      "documentType": "technicalSpecifications", 
-      "id": "a0e07c2c12d44f9fbe3d0ffe229dcd94", 
-      "dateModified": "2019-03-28T06:47:20.089447+02:00"
+      "datePublished": "2019-01-01T00:10:00+02:00", 
+      "id": "72445401273248279ff4f544ae07f29e", 
+      "dateModified": "2019-01-01T00:10:00+02:00"
     }, 
     {
       "hash": "md5:00000000000000000000000000000000", 
-      "author": "tender_owner", 
-      "title": "AwardCriteria-2.pdf", 
-      "url": "http://public.docs-sandbox.openprocurement.org/get/e9735bd999ac4185a2660b0a68baf609?KeyID=782d7111&Signature=wKPy0g%252Bdm%2FcJbHqoQEQEncnVk3EYG9AoI9NsyU5oklzNB5qlG3xgLiXfBSvNBP7FNp20jgWapX%252BwAxZiJK1iBQ%253D%253D", 
+      "description": "document description modified", 
+      "title": "Notice.pdf", 
+      "url": "http://public-docs-sandbox.prozorro.gov.ua/get/499d1434d924483f80adeeba0e959284?KeyID=a8968c46&Signature=g9%2FFE7KyN2v8kCfIinRRVE9Af9NLYw8dUm1%252BlR5Pfl13B9Hb%2Ff15QCiB7UMPctEALCzyLNp1On3l7%252BX%252B1xdLBQ%253D%253D", 
       "format": "application/pdf", 
       "documentOf": "tender", 
-      "datePublished": "2019-03-28T06:47:20.221190+02:00", 
-      "id": "b1838594bf5343859e93111516ca4022", 
-      "dateModified": "2019-03-28T06:47:20.283445+02:00"
+      "datePublished": "2019-01-01T00:10:00+02:00", 
+      "author": "tender_owner", 
+      "documentType": "technicalSpecifications", 
+      "id": "36ca1b00125549b69c226b4fe8185f44", 
+      "dateModified": "2019-01-01T00:10:00+02:00"
     }
   ]
 }

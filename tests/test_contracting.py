@@ -4,29 +4,31 @@ from datetime import timedelta
 from copy import deepcopy
 
 from openprocurement.api.models import get_now
-import openprocurement.contracting.api.tests.base as base_test
 from openprocurement.tender.belowthreshold.tests.base import BaseTenderWebTest
 from openprocurement.contracting.api.tests.base import test_contract_data
 from openprocurement.tender.belowthreshold.tests.base import test_tender_data, test_organization
 
-from tests.base import DumpsWebTestApp, DOCS_HOST
+from tests.base.test import DumpsWebTestApp, MockWebTestMixin
+from tests.base.constants import DOCS_HOST
 
-test_tender_data['items'].append(deepcopy(test_tender_data['items'][0]))
+test_tender_data = deepcopy(test_tender_data)
 
 TARGET_DIR = 'docs/source/contracting/http/'
 
 
-class TenderResourceTest(BaseTenderWebTest):
+class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
     initial_data = test_contract_data
 
     docs_host = DOCS_HOST
 
     def setUp(self):
-        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
+        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(__file__))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
+        self.setUpMock()
 
     def tearDown(self):
+        self.tearDownMock()
         self.couchdb_server.delete(self.db.name)
 
     def test_docs(self):
@@ -35,9 +37,13 @@ class TenderResourceTest(BaseTenderWebTest):
         response = self.app.get('/tenders')
         self.assertEqual(response.json['data'], [])
         # create tender
-        response = self.app.post_json(
-            '/tenders',
-            {"data": test_tender_data})
+        test_tender_data['items'].append(deepcopy(test_tender_data['items'][0]))
+        for item in test_tender_data['items']:
+            item['deliveryDate'] = {
+                "startDate": (get_now() + timedelta(days=2)).isoformat(),
+                "endDate": (get_now() + timedelta(days=5)).isoformat()
+            }
+        response = self.app.post_json('/tenders', {"data": test_tender_data})
         tender_id = self.tender_id = response.json['data']['id']
         owner_token = response.json['access']['token']
         # switch to active.tendering
@@ -72,6 +78,7 @@ class TenderResourceTest(BaseTenderWebTest):
         # after stand slill period
         self.app.authorization = ('Basic', ('chronograph', ''))
         self.set_status('complete', {'status': 'active.awarded'})
+        self.tick()
         # time travel
         tender = self.db.get(tender_id)
         for i in tender.get('awards', []):

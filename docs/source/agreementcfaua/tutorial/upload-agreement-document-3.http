@@ -1,8 +1,16 @@
-PUT /api/2.5/agreements/c37f8569c6104df8b9c909a2bd5e591d/documents/3a288f9db7f748f98bd414fc28b0aab6?acc_token=a6b1a227059b4333acb0444bde2cb6a1 HTTP/1.0
+PUT /api/2.5/agreements/83456a89ad0143b5b9dde8ca7ac28456/documents/bfa4de68c400402daf26f99f0b6f0ac5?acc_token=7b93503ebb914e35ac86ce4cf565018f HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 225
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy908181539361$
-Host: api-sandbox.openprocurement.org
+Content-Length: 175
+Content-Type: multipart/form-data; boundary=BOUNDARY
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="agreement_additional_docs.doc"
+Content-Type: application/msword
+
+extended additional info
+--BOUNDARY--
+
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
@@ -10,12 +18,12 @@ Content-Type: application/json; charset=UTF-8
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "title": "agreement_additional_docs.doc", 
-    "url": "http://public.docs-sandbox.openprocurement.org/get/a5457dbccbac4fafa44f196e43f990d9?KeyID=3a8e07a2&Signature=eHfSYoM0U5bwkIX20c0c6Hy3Usu16%252BFn43X9ELZ3IP%2FQ00ZL9zYHII8SyoGqdbaGbHYizWvGOqwCVmVlePnSBw%253D%253D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/2352762b5bdc4a1fb9b28c81d6d23c63?KeyID=a8968c46&Signature=pHAjXZUV0gggOgKQtJE9Gc7W9kMxwjxmMZ%2FQtU6WOpJNlTR%252BZuitJJzWp0L9hViG5Y5RF1zUafd9u0%2F98tLXAw%253D%253D", 
     "format": "application/msword", 
     "documentOf": "agreement", 
-    "datePublished": "2019-03-28T06:47:11.505388+02:00", 
-    "id": "3a288f9db7f748f98bd414fc28b0aab6", 
-    "dateModified": "2019-03-28T06:47:11.590590+02:00"
+    "datePublished": "2019-01-01T00:00:00+02:00", 
+    "id": "bfa4de68c400402daf26f99f0b6f0ac5", 
+    "dateModified": "2019-01-01T00:00:00+02:00"
   }
 }
 

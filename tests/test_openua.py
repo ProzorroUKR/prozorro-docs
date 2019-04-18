@@ -1,32 +1,30 @@
 # -*- coding: utf-8 -*-
 import os
 from copy import deepcopy
-
 from datetime import timedelta
 
-import openprocurement.tender.openua.tests.base as base_test
 from openprocurement.api.models import get_now
 from openprocurement.tender.openua.tests.tender import BaseTenderUAWebTest
 
-from tests.base import DumpsWebTestApp, DOCS_HOST, AUCTIONS_HOST
-from tests.data import (
+from tests.base.test import DumpsWebTestApp, MockWebTestMixin
+from tests.base.constants import DOCS_HOST, AUCTIONS_HOST
+from tests.base.data import (
     question, complaint, tender_openua, bid_draft, bid2,
     subcontracting, qualified,
 )
 
 test_tender_ua_data = deepcopy(tender_openua)
-
 bid = deepcopy(bid_draft)
+bid2 = deepcopy(bid2)
+
+bid2.update(qualified)
 bid.update(subcontracting)
 bid.update(qualified)
-
-bid2 = deepcopy(bid2)
-bid2.update(qualified)
 
 TARGET_DIR = 'docs/source/openua/http/'
 
 
-class TenderUAResourceTest(BaseTenderUAWebTest):
+class TenderUAResourceTest(BaseTenderUAWebTest, MockWebTestMixin):
     initial_data = test_tender_ua_data
     docservice = True
 
@@ -34,14 +32,16 @@ class TenderUAResourceTest(BaseTenderUAWebTest):
     auctions_host = AUCTIONS_HOST
 
     def setUp(self):
-        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
+        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(__file__))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
+        self.setUpMock()
         if self.docservice:
             self.setUpDS()
             self.app.app.registry.docservice_url = 'http://{}'.format(self.docs_host)
 
     def tearDown(self):
+        self.tearDownMock()
         self.couchdb_server.delete(self.db.name)
 
     def generate_docservice_url(self):
@@ -315,7 +315,6 @@ class TenderUAResourceTest(BaseTenderUAWebTest):
             self.assertEqual(response.status, '200 OK')
 
         #### Confirming qualification
-        # self.set_status('active.qualification')
         self.app.authorization = ('Basic', ('auction', ''))
         response = self.app.get('/tenders/{}/auction'.format(self.tender_id))
         auction_bids_data = response.json['data']['bids']
@@ -360,6 +359,8 @@ class TenderUAResourceTest(BaseTenderUAWebTest):
         self.assertEqual(response.json['data']['value']['amount'], 238)
 
         #### Setting contract signature date
+
+        self.tick()
 
         with open(TARGET_DIR + 'tender-contract-sign-date.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
@@ -751,6 +752,8 @@ class TenderUAResourceTest(BaseTenderUAWebTest):
                     self.tender_id, award_id, bid_token),
                 {'data': complaint})
             self.assertEqual(response.status, '201 Created')
+
+        self.tick()
 
         complaint1_token = response.json['access']['token']
         complaint1_id = response.json['data']['id']

@@ -1,13 +1,13 @@
-GET /api/2.5/tenders/edf1ec35dd2442928d2473f51384621f/agreements HTTP/1.0
+GET /api/2.5/tenders/239ab2b4b65a46f8ac603eebcd77771c/agreements HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
 {
   "data": [
     {
-      "agreementID": "UA-2019-03-28-000001-79ad41882a3344fab24c49132b70bcee1", 
+      "agreementID": "UA-2019-01-01-000001-ba302183716a4cf180d1de54c751f6641", 
       "status": "pending", 
       "contracts": [
         {
@@ -18,14 +18,14 @@ Content-Type: application/json; charset=UTF-8
                 "currency": "UAH", 
                 "valueAddedTaxIncluded": true
               }, 
-              "relatedItem": "90759460567841e0aacf5d7c20c47baf"
+              "relatedItem": "a992fabdfbdb42ecbe35300382d3f565"
             }, 
             {
               "value": {
                 "currency": "UAH", 
                 "valueAddedTaxIncluded": true
               }, 
-              "relatedItem": "2846075b9a7c45d7a6ba8384aabe5f37"
+              "relatedItem": "b576e7db35a04249b8b08cf468d36396"
             }
           ], 
           "suppliers": [
@@ -37,7 +37,7 @@ Content-Type: application/json; charset=UTF-8
               }, 
               "identifier": {
                 "scheme": "UA-EDR", 
-                "id": "00137226", 
+                "id": "00137227", 
                 "uri": "http://www.sc.gov.ua/"
               }, 
               "name": "«Снігур»", 
@@ -50,10 +50,10 @@ Content-Type: application/json; charset=UTF-8
               }
             }
           ], 
-          "bidID": "5379199eb3c44e0f8fb7e7eda1b05954", 
-          "date": "2019-03-28T06:48:01.541592+02:00", 
-          "awardID": "4f6a5347ac7244e3be409468efb6a965", 
-          "id": "c792fe0836264a37b2154cd8f274adc9"
+          "bidID": "7ded07f482ac44dd815b1cd075d9b64c", 
+          "date": "2019-01-01T00:00:00+02:00", 
+          "awardID": "0edd79cfcea64eb3ad60dda8ab06399c", 
+          "id": "3089914a440f409eb830a3732c23dfe7"
         }, 
         {
           "status": "active", 
@@ -63,14 +63,14 @@ Content-Type: application/json; charset=UTF-8
                 "currency": "UAH", 
                 "valueAddedTaxIncluded": true
               }, 
-              "relatedItem": "90759460567841e0aacf5d7c20c47baf"
+              "relatedItem": "a992fabdfbdb42ecbe35300382d3f565"
             }, 
             {
               "value": {
                 "currency": "UAH", 
                 "valueAddedTaxIncluded": true
               }, 
-              "relatedItem": "2846075b9a7c45d7a6ba8384aabe5f37"
+              "relatedItem": "b576e7db35a04249b8b08cf468d36396"
             }
           ], 
           "suppliers": [
@@ -95,10 +95,10 @@ Content-Type: application/json; charset=UTF-8
               }
             }
           ], 
-          "bidID": "936c5038211d4c6497ae90396d86e8ba", 
-          "date": "2019-03-28T06:48:01.541633+02:00", 
-          "awardID": "45d20288ceaa4ec39a08bbac22ecac72", 
-          "id": "991298c9a3a34e3fba58128666538fb1"
+          "bidID": "a21960990261432faab44db6275676d5", 
+          "date": "2019-01-01T00:00:00+02:00", 
+          "awardID": "c6dd7a24cf5b40f9836b62a2423474f7", 
+          "id": "117e4784329b41a28bbfa8680316ccf6"
         }, 
         {
           "status": "active", 
@@ -108,14 +108,14 @@ Content-Type: application/json; charset=UTF-8
                 "currency": "UAH", 
                 "valueAddedTaxIncluded": true
               }, 
-              "relatedItem": "90759460567841e0aacf5d7c20c47baf"
+              "relatedItem": "a992fabdfbdb42ecbe35300382d3f565"
             }, 
             {
               "value": {
                 "currency": "UAH", 
                 "valueAddedTaxIncluded": true
               }, 
-              "relatedItem": "2846075b9a7c45d7a6ba8384aabe5f37"
+              "relatedItem": "b576e7db35a04249b8b08cf468d36396"
             }
           ], 
           "suppliers": [
@@ -140,15 +140,15 @@ Content-Type: application/json; charset=UTF-8
               }
             }
           ], 
-          "bidID": "b4589ca9eb684602b65a37e136f22c04", 
-          "date": "2019-03-28T06:48:01.541665+02:00", 
-          "awardID": "8328c443e83c49f6b0cf6c1597da0f10", 
-          "id": "05a0c07f90fc4198a54c85d4265deb40"
+          "bidID": "5b1584c69800457d9ea9df290ddb42ae", 
+          "date": "2019-01-01T00:00:00+02:00", 
+          "awardID": "ef1965ec0f204a36a50614bd7a1597bb", 
+          "id": "a4532aaf90714886a53d52db8f4a08c7"
         }
       ], 
       "items": [
         {
-          "relatedLot": "2e6f1f49c8894974a1c36e2b463b5b86", 
+          "relatedLot": "474a13302d414c40b95a16f154cdd263", 
           "description": "футляри до державних нагород", 
           "classification": {
             "scheme": "ДК021", 
@@ -174,7 +174,7 @@ Content-Type: application/json; charset=UTF-8
             "startDate": "2018-06-27T13:39:09.362837+03:00", 
             "endDate": "2018-06-30T13:39:09.362837+03:00"
           }, 
-          "id": "90759460567841e0aacf5d7c20c47baf", 
+          "id": "a992fabdfbdb42ecbe35300382d3f565", 
           "unit": {
             "code": "44617100-9", 
             "name": "item"
@@ -182,7 +182,7 @@ Content-Type: application/json; charset=UTF-8
           "quantity": 5.0
         }, 
         {
-          "relatedLot": "2e6f1f49c8894974a1c36e2b463b5b86", 
+          "relatedLot": "474a13302d414c40b95a16f154cdd263", 
           "description": "футляри до державних нагород", 
           "classification": {
             "scheme": "ДК021", 
@@ -208,7 +208,7 @@ Content-Type: application/json; charset=UTF-8
             "startDate": "2018-06-27T13:39:09.362837+03:00", 
             "endDate": "2018-06-30T13:39:09.362837+03:00"
           }, 
-          "id": "2846075b9a7c45d7a6ba8384aabe5f37", 
+          "id": "b576e7db35a04249b8b08cf468d36396", 
           "unit": {
             "code": "44617100-8", 
             "name": "item"
@@ -216,8 +216,8 @@ Content-Type: application/json; charset=UTF-8
           "quantity": 5.0
         }
       ], 
-      "date": "2019-03-28T06:48:01.487904+02:00", 
-      "id": "b75fa2d9a34149bb92d0434eb71b7968"
+      "date": "2019-01-01T00:00:00+02:00", 
+      "id": "537065690fe34d19895c085d0e4aabb1"
     }
   ]
 }

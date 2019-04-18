@@ -1,9 +1,9 @@
 POST /api/2.5/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 4342
+Content-Length: 3253
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "funders": [
@@ -32,7 +32,7 @@ Host: api-sandbox.openprocurement.org
       }
     ], 
     "tenderPeriod": {
-      "endDate": "2019-04-11T06:47:07.288622"
+      "endDate": "2019-01-15T00:00:00+02:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -40,7 +40,7 @@ Host: api-sandbox.openprocurement.org
       "amount": 35
     }, 
     "enquiryPeriod": {
-      "endDate": "2019-04-04T06:47:07.288622"
+      "endDate": "2019-01-08T00:00:00+02:00"
     }, 
     "procurementMethodType": "belowThreshold", 
     "value": {
@@ -90,39 +90,8 @@ Host: api-sandbox.openprocurement.org
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-03-30T06:47:07.288622", 
-          "endDate": "2019-04-02T06:47:07.288622"
-        }, 
-        "unit": {
-          "code": "44617100-9", 
-          "name": "item"
-        }, 
-        "quantity": 5
-      }, 
-      {
-        "description": "футляри до державних нагород", 
-        "classification": {
-          "scheme": "ДК021", 
-          "id": "44617100-9", 
-          "description": "Cartons"
-        }, 
-        "additionalClassifications": [
-          {
-            "scheme": "ДКПП", 
-            "id": "17.21.1", 
-            "description": "папір і картон гофровані, паперова й картонна тара"
-          }
-        ], 
-        "deliveryAddress": {
-          "countryName": "Україна", 
-          "postalCode": "79000", 
-          "region": "м. Київ", 
-          "streetAddress": "вул. Банкова 1", 
-          "locality": "м. Київ"
-        }, 
-        "deliveryDate": {
-          "startDate": "2019-03-30T06:47:07.288622", 
-          "endDate": "2019-04-02T06:47:07.288622"
+          "startDate": "2019-01-03T00:00:00+02:00", 
+          "endDate": "2019-01-06T00:00:00+02:00"
         }, 
         "unit": {
           "code": "44617100-9", 
@@ -134,14 +103,12 @@ Host: api-sandbox.openprocurement.org
   }
 }
 
-
-201 Created
+Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/3c1bde5dd8b94e82a5ccfd5780d245ed
-
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/65d205fd6c064f8e8a82971101b9fd7e
 {
   "access": {
-    "token": "83acd335af6b4cc4a5336fd3cb6f0b27"
+    "token": "0d79c839a6274d2a981a46c05a6c46e5"
   }, 
   "data": {
     "funders": [
@@ -171,8 +138,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/3c1bde5dd8b94e8
     "procurementMethod": "open", 
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
-      "startDate": "2019-04-04T06:47:07.288622+03:00", 
-      "endDate": "2019-04-11T06:47:07.288622+03:00"
+      "startDate": "2019-01-08T00:00:00+02:00", 
+      "endDate": "2019-01-15T00:00:00+02:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -203,42 +170,10 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/3c1bde5dd8b94e8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-03-30T06:47:07.288622+02:00", 
-          "endDate": "2019-04-02T06:47:07.288622+03:00"
+          "startDate": "2019-01-03T00:00:00+02:00", 
+          "endDate": "2019-01-06T00:00:00+02:00"
         }, 
-        "id": "4556cf309b7e42adb6c087cbd09bc29a", 
-        "unit": {
-          "code": "44617100-9", 
-          "name": "item"
-        }, 
-        "quantity": 5.0
-      }, 
-      {
-        "description": "футляри до державних нагород", 
-        "classification": {
-          "scheme": "ДК021", 
-          "description": "Cartons", 
-          "id": "44617100-9"
-        }, 
-        "additionalClassifications": [
-          {
-            "scheme": "ДКПП", 
-            "id": "17.21.1", 
-            "description": "папір і картон гофровані, паперова й картонна тара"
-          }
-        ], 
-        "deliveryAddress": {
-          "postalCode": "79000", 
-          "countryName": "Україна", 
-          "streetAddress": "вул. Банкова 1", 
-          "region": "м. Київ", 
-          "locality": "м. Київ"
-        }, 
-        "deliveryDate": {
-          "startDate": "2019-03-30T06:47:07.288622+02:00", 
-          "endDate": "2019-04-02T06:47:07.288622+03:00"
-        }, 
-        "id": "9b65e80c367c4a658dae2ae83a0e9084", 
+        "id": "f7ab0eeaae59498795d2af29784333c9", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -253,8 +188,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/3c1bde5dd8b94e8
       "valueAddedTaxIncluded": true
     }, 
     "submissionMethod": "electronicAuction", 
-    "date": "2019-03-28T06:47:19.778158+02:00", 
-    "dateModified": "2019-03-28T06:47:19.780746+02:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
+    "dateModified": "2019-01-01T00:00:00+02:00", 
     "status": "active.enquiries", 
     "procuringEntity": {
       "contactPoint": {
@@ -277,13 +212,13 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/3c1bde5dd8b94e8
       }
     }, 
     "enquiryPeriod": {
-      "startDate": "2019-03-28T06:47:19.778091+02:00", 
-      "endDate": "2019-04-04T06:47:07.288622+03:00"
+      "startDate": "2019-01-01T00:00:00+02:00", 
+      "endDate": "2019-01-08T00:00:00+02:00"
     }, 
     "owner": "broker", 
-    "next_check": "2019-04-04T06:47:07.288622+03:00", 
-    "id": "3c1bde5dd8b94e82a5ccfd5780d245ed", 
-    "tenderID": "UA-2019-03-28-000003"
+    "next_check": "2019-01-08T00:00:00+02:00", 
+    "id": "65d205fd6c064f8e8a82971101b9fd7e", 
+    "tenderID": "UA-2019-01-01-000003"
   }
 }
 

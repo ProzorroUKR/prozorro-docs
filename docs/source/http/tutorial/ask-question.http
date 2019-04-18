@@ -1,30 +1,29 @@
-POST /api/2.5/tenders/4e72a84032424e519ab51eb3c1c98dbf/questions HTTP/1.0
+POST /api/2.5/tenders/e370d1ede4574bb8aebd9cd6976fd5f8/questions HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 1506
+Content-Length: 1088
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "author": {
       "contactPoint": {
-        "telephone": "+380 (432) 21-69-30", 
-        "name": "Сергій Олексюк", 
-        "email": "soleksuk@gmail.com"
+        "telephone": "+380 (322) 91-69-30", 
+        "name": "Андрій Олексюк", 
+        "email": "aagt@gmail.com"
       }, 
       "identifier": {
         "scheme": "UA-EDR", 
-        "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
         "id": "00137226", 
-        "uri": "http://sch10.edu.vn.ua/"
+        "uri": "http://www.sc.gov.ua/"
       }, 
-      "name": "ДКП «Школяр»", 
+      "name": "ДКП «Книга»", 
       "address": {
         "countryName": "Україна", 
-        "postalCode": "21100", 
-        "region": "м. Вінниця", 
-        "streetAddress": "вул. Островського, 33", 
-        "locality": "м. Вінниця"
+        "postalCode": "79013", 
+        "region": "м. Львів", 
+        "streetAddress": "вул. Островського, 34", 
+        "locality": "м. Львів"
       }
     }, 
     "description": "Просимо додати таблицю потрібної калорійності харчування", 
@@ -32,38 +31,35 @@ Host: api-sandbox.openprocurement.org
   }
 }
 
-
-201 Created
+Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/4e72a84032424e519ab51eb3c1c98dbf/questions/c17fa52911844d7387b8446638b0fdde
-
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e370d1ede4574bb8aebd9cd6976fd5f8/questions/0846df553ea845d28ed874a7ed3780ad
 {
   "data": {
     "description": "Просимо додати таблицю потрібної калорійності харчування", 
     "author": {
       "contactPoint": {
-        "email": "soleksuk@gmail.com", 
-        "telephone": "+380 (432) 21-69-30", 
-        "name": "Сергій Олексюк"
+        "email": "aagt@gmail.com", 
+        "telephone": "+380 (322) 91-69-30", 
+        "name": "Андрій Олексюк"
       }, 
       "identifier": {
         "scheme": "UA-EDR", 
-        "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
         "id": "00137226", 
-        "uri": "http://sch10.edu.vn.ua/"
+        "uri": "http://www.sc.gov.ua/"
       }, 
-      "name": "ДКП «Школяр»", 
+      "name": "ДКП «Книга»", 
       "address": {
-        "postalCode": "21100", 
+        "postalCode": "79013", 
         "countryName": "Україна", 
-        "streetAddress": "вул. Островського, 33", 
-        "region": "м. Вінниця", 
-        "locality": "м. Вінниця"
+        "streetAddress": "вул. Островського, 34", 
+        "region": "м. Львів", 
+        "locality": "м. Львів"
       }
     }, 
     "title": "Калорійність", 
-    "date": "2019-03-28T06:47:20.349883+02:00", 
-    "id": "c17fa52911844d7387b8446638b0fdde", 
+    "date": "2019-01-01T00:10:00+02:00", 
+    "id": "0846df553ea845d28ed874a7ed3780ad", 
     "questionOf": "tender"
   }
 }

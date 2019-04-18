@@ -1,6 +1,6 @@
-GET /api/2.5/tenders/edf1ec35dd2442928d2473f51384621f HTTP/1.0
+GET /api/2.5/tenders/239ab2b4b65a46f8ac603eebcd77771c HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
@@ -9,17 +9,17 @@ Content-Type: application/json; charset=UTF-8
     "procurementMethod": "open", 
     "status": "active.auction", 
     "complaintPeriod": {
-      "startDate": "2019-02-15T06:47:58.484372+02:00", 
-      "endDate": "2019-03-14T00:00:00+02:00"
+      "startDate": "2018-11-21T00:00:00+02:00", 
+      "endDate": "2018-12-18T00:00:00+02:00"
     }, 
     "enquiryPeriod": {
-      "startDate": "2019-02-15T06:47:58.484372+02:00", 
-      "clarificationsUntil": "2019-03-14T00:00:00+02:00", 
-      "endDate": "2019-03-08T06:47:58.484372+02:00", 
-      "invalidationDate": "2019-03-28T06:47:56.315671+02:00"
+      "startDate": "2018-11-21T00:00:00+02:00", 
+      "clarificationsUntil": "2018-12-17T00:00:00+02:00", 
+      "endDate": "2018-12-12T00:00:00+02:00", 
+      "invalidationDate": "2019-01-01T00:00:00+02:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "next_check": "2019-03-28T07:29:58.484372+02:00", 
+    "next_check": "2019-01-01T00:42:00+02:00", 
     "procuringEntity": {
       "kind": "general", 
       "name": "Державне управління справами", 
@@ -47,16 +47,16 @@ Content-Type: application/json; charset=UTF-8
     "questions": [
       {
         "description": "Просимо додати таблицю потрібної калорійності харчування", 
-        "dateAnswered": "2019-03-28T06:47:54.981838+02:00", 
+        "dateAnswered": "2019-01-01T00:00:00+02:00", 
         "title": "Калорійність", 
-        "date": "2019-03-28T06:47:54.931946+02:00", 
+        "date": "2019-01-01T00:00:00+02:00", 
         "answer": "Таблицю додано в файлі \"Kalorijnist.xslx\"", 
-        "id": "1365710159eb4beeaa96d6c91fff5d20", 
+        "id": "fe75f15177fc4676815395e14ff9c699", 
         "questionOf": "tender"
       }
     ], 
     "owner": "broker", 
-    "id": "edf1ec35dd2442928d2473f51384621f", 
+    "id": "239ab2b4b65a46f8ac603eebcd77771c", 
     "guarantee": {
       "currency": "USD", 
       "amount": 8
@@ -67,36 +67,36 @@ Content-Type: application/json; charset=UTF-8
         "author": "tender_owner", 
         "language": "uk", 
         "title": "Notice.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/a59e85b620b247b1905c94936e891fc4?KeyID=3e304647&Signature=CNe4tk8%252BK9ckSte23EGMp2%252BxVlgarCucAjVg%2F5zpdIud%2FHmhdRiJNmKofh2z1VDXjjS3Ii7rYrIHzVoRI4%252BwAw%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/625c9edc30be4aa3acab470c93670fcd?KeyID=a8968c46&Signature=OZSKKisz1Ys04TuQN9jODI%2FjeDFEPi03ckPd7fJGgQ2eVZVjH8SvZfc2sbIIXfyU%252Bbd1eVsQc4nG8ouCooMVAw%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:47:54.755829+02:00", 
-        "id": "b1fde7d0b8a94f449971568152b9f129", 
-        "dateModified": "2019-03-28T06:47:54.755843+02:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "4e6fa5162eb147afb947f582bc3fa49b", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
         "author": "tender_owner", 
         "language": "uk", 
         "title": "AwardCriteria.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/b2319a2ab1874044b1d07ee56f89c222?KeyID=3e304647&Signature=i%2FTolsbrofI1bGJPPiOvUr82XFgYtEH1hoh7rdZLDJwyDdZxo1U51jGem8v%252BcH4f6TkbIpzIhQK3FbfTPCtgBA%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/1861716372954b42a0468782597cb9d3?KeyID=a8968c46&Signature=PWeg49bDvjE5QPGQod5KYk62C%2FDQdB4f2FvhK4K0Mn3P44OeSrQkSLACzaNnr0Pnb16lZK3r10vMgVwSysSkAQ%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:47:54.810506+02:00", 
-        "id": "07afd64e22a9480b801c516fb1f6c77d", 
-        "dateModified": "2019-03-28T06:47:54.810521+02:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "6ac2be61881f4b65a396cad52b8faf73", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
         "author": "tender_owner", 
         "language": "uk", 
         "title": "AwardCriteria-2.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/d4649506d3844a1aa75f2c9589fed54a?KeyID=3e304647&Signature=SJkScYSXaOAFu2giTZOIJ%252B4l65bMgFbAQU1aBxy0sHLpuiXRW5ZMH8B3vgD6Z%2FYfNBXRoTVDwraxSqAno0RUCA%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/a9d7f82659d747d790aaae6bb8a81e27?KeyID=a8968c46&Signature=f8UHsymuRS1CL%2Fr1jpaycVJqrTrGHKDZ49GFkfHFaZc4LiFdmuTsv5NWodN5xf%252BApbprhxRm7qV4uBiIgScMAw%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:47:54.810506+02:00", 
-        "id": "07afd64e22a9480b801c516fb1f6c77d", 
-        "dateModified": "2019-03-28T06:47:54.869658+02:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "6ac2be61881f4b65a396cad52b8faf73", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }
     ], 
     "title": "футляри до державних нагород", 
@@ -105,10 +105,10 @@ Content-Type: application/json; charset=UTF-8
         "status": "active", 
         "description": "Опис Лот №1", 
         "title": "Лот №1", 
-        "auctionUrl": "http://auction-sandbox.openprocurement.org/tenders/edf1ec35dd2442928d2473f51384621f_2e6f1f49c8894974a1c36e2b463b5b86", 
+        "auctionUrl": "http://auction-sandbox.prozorro.gov.ua/tenders/239ab2b4b65a46f8ac603eebcd77771c_474a13302d414c40b95a16f154cdd263", 
         "auctionPeriod": {
-          "startDate": "2019-03-28T06:47:58.484372+02:00", 
-          "shouldStartAfter": "2019-03-29T00:00:00+02:00"
+          "startDate": "2019-01-01T00:00:00+02:00", 
+          "shouldStartAfter": "2019-01-01T00:00:00+02:00"
         }, 
         "value": {
           "currency": "UAH", 
@@ -120,8 +120,8 @@ Content-Type: application/json; charset=UTF-8
           "amount": 35.0, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2019-03-28T06:47:52.548924+02:00", 
-        "id": "2e6f1f49c8894974a1c36e2b463b5b86", 
+        "date": "2019-01-01T00:00:00+02:00", 
+        "id": "474a13302d414c40b95a16f154cdd263", 
         "guarantee": {
           "currency": "USD", 
           "amount": 8.0
@@ -129,61 +129,61 @@ Content-Type: application/json; charset=UTF-8
       }
     ], 
     "qualificationPeriod": {
-      "startDate": "2019-03-18T06:47:58.484372+02:00", 
-      "endDate": "2019-03-28T06:47:58.484372+02:00"
+      "startDate": "2018-12-22T00:00:00+02:00", 
+      "endDate": "2019-01-01T00:00:00+02:00"
     }, 
     "maxAwardsCount": 4, 
-    "tenderID": "UA-2019-03-28-000001", 
+    "tenderID": "UA-2019-01-01-000001", 
     "auctionPeriod": {
-      "startDate": "2019-03-28T06:47:58.484372+02:00"
+      "startDate": "2019-01-01T00:00:00+02:00"
     }, 
-    "dateModified": "2019-03-28T06:47:58.829906+02:00", 
+    "dateModified": "2019-01-01T00:00:00+02:00", 
     "numberOfBids": 3, 
     "tenderPeriod": {
-      "startDate": "2019-02-15T06:47:58.484372+02:00", 
-      "endDate": "2019-03-18T06:47:58.484372+02:00"
+      "startDate": "2018-11-21T00:00:00+02:00", 
+      "endDate": "2018-12-22T00:00:00+02:00"
     }, 
     "qualifications": [
       {
         "status": "active", 
-        "lotID": "2e6f1f49c8894974a1c36e2b463b5b86", 
+        "lotID": "474a13302d414c40b95a16f154cdd263", 
         "eligible": true, 
         "qualified": true, 
-        "bidID": "b4589ca9eb684602b65a37e136f22c04", 
-        "date": "2019-03-28T06:47:57.459028+02:00", 
-        "id": "189a0adc5a0c4c78a9fbac43f6b28b55"
+        "bidID": "5b1584c69800457d9ea9df290ddb42ae", 
+        "date": "2019-01-01T00:00:00+02:00", 
+        "id": "a3863dc755ff49ba9dfeb387cda380c9"
       }, 
       {
         "status": "active", 
-        "lotID": "2e6f1f49c8894974a1c36e2b463b5b86", 
+        "lotID": "474a13302d414c40b95a16f154cdd263", 
         "eligible": true, 
         "qualified": true, 
-        "bidID": "936c5038211d4c6497ae90396d86e8ba", 
-        "date": "2019-03-28T06:47:57.624776+02:00", 
-        "id": "4de343ffb1004662be9ebe38bed59b1f"
+        "bidID": "a21960990261432faab44db6275676d5", 
+        "date": "2019-01-01T00:00:00+02:00", 
+        "id": "06512832799f439d800972c71ad7a507"
       }, 
       {
         "status": "unsuccessful", 
-        "lotID": "2e6f1f49c8894974a1c36e2b463b5b86", 
+        "lotID": "474a13302d414c40b95a16f154cdd263", 
         "eligible": false, 
         "qualified": false, 
-        "bidID": "d509f3ed16464292bf24999ff36f51f6", 
-        "date": "2019-03-28T06:47:57.953833+02:00", 
-        "id": "78dcd292ecce421eb14a26c6caa3c4ce"
+        "bidID": "7dad4f355e2b4bb1b757c38127de7628", 
+        "date": "2019-01-01T00:00:00+02:00", 
+        "id": "426732aec3a4412396240e931f2ddd5f"
       }, 
       {
         "status": "active", 
-        "lotID": "2e6f1f49c8894974a1c36e2b463b5b86", 
+        "lotID": "474a13302d414c40b95a16f154cdd263", 
         "eligible": true, 
         "qualified": true, 
-        "bidID": "5379199eb3c44e0f8fb7e7eda1b05954", 
-        "date": "2019-03-28T06:47:57.765533+02:00", 
-        "id": "b00101cb28bb49fe94f78c08528db66e"
+        "bidID": "7ded07f482ac44dd815b1cd075d9b64c", 
+        "date": "2019-01-01T00:00:00+02:00", 
+        "id": "dd52d961a4ab42d6a4f91f1391d048c7"
       }
     ], 
     "title_en": "Cases for state awards", 
     "agreementDuration": "P3Y3M3D", 
-    "date": "2019-03-28T06:47:58.405819+02:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "procurementMethodType": "closeFrameworkAgreementUA", 
     "minimalStep": {
       "currency": "UAH", 
@@ -192,7 +192,7 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "items": [
       {
-        "relatedLot": "2e6f1f49c8894974a1c36e2b463b5b86", 
+        "relatedLot": "474a13302d414c40b95a16f154cdd263", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -218,7 +218,7 @@ Content-Type: application/json; charset=UTF-8
           "startDate": "2018-06-27T13:39:09.362837+03:00", 
           "endDate": "2018-06-30T13:39:09.362837+03:00"
         }, 
-        "id": "90759460567841e0aacf5d7c20c47baf", 
+        "id": "a992fabdfbdb42ecbe35300382d3f565", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -226,7 +226,7 @@ Content-Type: application/json; charset=UTF-8
         "quantity": 5.0
       }, 
       {
-        "relatedLot": "2e6f1f49c8894974a1c36e2b463b5b86", 
+        "relatedLot": "474a13302d414c40b95a16f154cdd263", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -252,7 +252,7 @@ Content-Type: application/json; charset=UTF-8
           "startDate": "2018-06-27T13:39:09.362837+03:00", 
           "endDate": "2018-06-30T13:39:09.362837+03:00"
         }, 
-        "id": "2846075b9a7c45d7a6ba8384aabe5f37", 
+        "id": "b576e7db35a04249b8b08cf468d36396", 
         "unit": {
           "code": "44617100-8", 
           "name": "item"
@@ -269,25 +269,25 @@ Content-Type: application/json; charset=UTF-8
             "confidentiality": "public", 
             "language": "uk", 
             "title": "Proposal.pdf", 
-            "url": "http://public.docs-sandbox.openprocurement.org/get/2cdaabebb0f5408d8fa35a79096ed032?KeyID=3e304647&Signature=cO7E5NkcMZwLy5yQURGe2wUhwPRJHbdaKm%252Boz%252BA87PMe4F4JlgQdLiBfWIFmG4PYGjrFVL0lk3WEMcFrUhZECQ%253D%253D", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/231b822a07e64a4e80227d91e9c92ccc?KeyID=a8968c46&Signature=%252BuPlMa9KxPGiOYT5eHCwa7kLDioRMtlrBikphll%252B%2FvZy02qMbDMAdt5REwKhCFTa7nA1vz6HEmTVp9tIkYw5Bg%253D%253D", 
             "format": "application/pdf", 
             "documentOf": "tender", 
-            "datePublished": "2019-03-28T06:47:55.496997+02:00", 
-            "id": "2e81f311abc24c6eb2899f5e5b834752", 
-            "dateModified": "2019-03-28T06:47:55.497015+02:00"
+            "datePublished": "2019-01-01T00:00:00+02:00", 
+            "id": "4345c1573ab64285ae5b581958e6914f", 
+            "dateModified": "2019-01-01T00:00:00+02:00"
           }, 
           {
             "hash": "md5:00000000000000000000000000000000", 
             "confidentiality": "buyerOnly", 
             "language": "uk", 
             "format": "application/pdf", 
-            "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/edf1ec35dd2442928d2473f51384621f/bids/b4589ca9eb684602b65a37e136f22c04/documents/2710393ef8154373a06c3fae809bd875?download=55b2e8c8f6dd42899c94536961e852ee", 
+            "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/239ab2b4b65a46f8ac603eebcd77771c/bids/5b1584c69800457d9ea9df290ddb42ae/documents/2cc05f224b3e42a0ae5713bcd1c7b982?download=479494c860814218982f719f4b2321b1", 
             "confidentialityRationale": "Only our company sells badgers with pink hair.", 
             "title": "Proposal_top_secrets.pdf", 
             "documentOf": "tender", 
-            "datePublished": "2019-03-28T06:47:55.573145+02:00", 
-            "id": "2710393ef8154373a06c3fae809bd875", 
-            "dateModified": "2019-03-28T06:47:55.573162+02:00"
+            "datePublished": "2019-01-01T00:00:00+02:00", 
+            "id": "2cc05f224b3e42a0ae5713bcd1c7b982", 
+            "dateModified": "2019-01-01T00:00:00+02:00"
           }
         ], 
         "tenderers": [
@@ -312,25 +312,25 @@ Content-Type: application/json; charset=UTF-8
             }
           }
         ], 
-        "id": "b4589ca9eb684602b65a37e136f22c04", 
+        "id": "5b1584c69800457d9ea9df290ddb42ae", 
         "eligibilityDocuments": [
           {
             "hash": "md5:00000000000000000000000000000000", 
             "confidentiality": "public", 
             "language": "uk", 
             "title": "eligibility_doc.pdf", 
-            "url": "http://public.docs-sandbox.openprocurement.org/get/a5cb631e4d0247f98b1da6d0e822cde7?KeyID=3e304647&Signature=99qpGMiMw7EjWo%2F8wXl%252BQwfjkh8icwYXXpocE%2FR4X7DPJ5grDNHQ7MTUWFik2WsFNzqlE2kOl0Av3ONCga6UAQ%253D%253D", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/b70cb436f2b54594b3f3bff673eb120c?KeyID=a8968c46&Signature=cMED8V6qUTZ77ZUuQuWi7lcHwQNHnOnp%252Bn7R6WaKoKNqZln4kDU3DqQdMhvFlnnFvD48F3nkoa4Dlm743NwVDQ%253D%253D", 
             "format": "application/pdf", 
             "documentOf": "tender", 
-            "datePublished": "2019-03-28T06:47:55.976609+02:00", 
-            "id": "5d1800dde28a4693aa0424a7bfbd132c", 
-            "dateModified": "2019-03-28T06:47:55.976623+02:00"
+            "datePublished": "2019-01-01T00:00:00+02:00", 
+            "id": "e3be2be9a5804b948ef612689a2aef15", 
+            "dateModified": "2019-01-01T00:00:00+02:00"
           }
         ]
       }, 
       {
         "status": "active", 
-        "id": "936c5038211d4c6497ae90396d86e8ba", 
+        "id": "a21960990261432faab44db6275676d5", 
         "tenderers": [
           {
             "contactPoint": {
@@ -362,25 +362,25 @@ Content-Type: application/json; charset=UTF-8
             "confidentiality": "public", 
             "language": "uk", 
             "title": "Proposal_part1.pdf", 
-            "url": "http://public.docs-sandbox.openprocurement.org/get/c2e060f185ec410a9bbca16c0e9a2070?KeyID=3e304647&Signature=xxxtN5SVGP0838h8vEqnnzx4HPAPBH1kzJ9KMd7n1ZVJnN59tkwTU71JYR8tMGHZmQgzEGoPZoabhBfce0wBAw%253D%253D", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/881579ab81ed4db48c7ebda31fd795be?KeyID=a8968c46&Signature=SzO0bE6x0Ce8cCKcDna7%252BmdsmLL2DEpikwSYZ56B86%252BVmD1eoMKavkUWv2kYxTiStu37hur%252B2YwUqLjfJ4szBA%253D%253D", 
             "format": "application/pdf", 
             "documentOf": "tender", 
-            "datePublished": "2019-03-28T06:47:56.705773+02:00", 
-            "id": "39deaec138b743708e60b26b90abd0d1", 
-            "dateModified": "2019-03-28T06:47:56.705789+02:00"
+            "datePublished": "2019-01-01T00:00:00+02:00", 
+            "id": "78c31c350cd94dedb25360d1dbb3199e", 
+            "dateModified": "2019-01-01T00:00:00+02:00"
           }, 
           {
             "hash": "md5:00000000000000000000000000000000", 
             "confidentiality": "buyerOnly", 
             "language": "uk", 
             "format": "application/pdf", 
-            "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/edf1ec35dd2442928d2473f51384621f/bids/d509f3ed16464292bf24999ff36f51f6/documents/2a0481dda27a4278b86cce7bda696f45?download=bc7a3fae3ac04f05be3a5d85f0905fc7", 
+            "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/239ab2b4b65a46f8ac603eebcd77771c/bids/7dad4f355e2b4bb1b757c38127de7628/documents/7a7524c55307467da3a357cd8460aa1b?download=ee33845a73fb48be97b0c99afa1b5cd6", 
             "confidentialityRationale": "Only our company sells badgers with pink hair.", 
             "title": "Proposal_part2.pdf", 
             "documentOf": "tender", 
-            "datePublished": "2019-03-28T06:47:56.706263+02:00", 
-            "id": "2a0481dda27a4278b86cce7bda696f45", 
-            "dateModified": "2019-03-28T06:47:56.706278+02:00"
+            "datePublished": "2019-01-01T00:00:00+02:00", 
+            "id": "7a7524c55307467da3a357cd8460aa1b", 
+            "dateModified": "2019-01-01T00:00:00+02:00"
           }
         ], 
         "eligibilityDocuments": [
@@ -389,12 +389,12 @@ Content-Type: application/json; charset=UTF-8
             "confidentiality": "public", 
             "language": "uk", 
             "title": "eligibility_doc.pdf", 
-            "url": "http://public.docs-sandbox.openprocurement.org/get/61736ecf8dc54b51baca1ab140651add?KeyID=3e304647&Signature=gMjBe87%252BE0X1WdNW%252Bs0WyKiTv52rHsSrYB96Chtn33teyUPPYh1dQYv3lV3XU34Fwha%2FBX6S8e%2FNUy%252BB53XsDw%253D%253D", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/a387f4f4f8cd4b7b8b233b1122a1a1f7?KeyID=a8968c46&Signature=IxhppvJObyzjAZQYdRBxflHj3VuDgrCUZYIBuO%2FXepDd2NYPgdOtBRc0mLawTKi0EW8yo2FvVcgYxr%2F03SYICQ%253D%253D", 
             "format": "application/pdf", 
             "documentOf": "tender", 
-            "datePublished": "2019-03-28T06:47:56.707276+02:00", 
-            "id": "6633cd9a42ff43d48ad2183a7a7841ee", 
-            "dateModified": "2019-03-28T06:47:56.707291+02:00"
+            "datePublished": "2019-01-01T00:00:00+02:00", 
+            "id": "a8f2d273da09456d8b71430829acfc92", 
+            "dateModified": "2019-01-01T00:00:00+02:00"
           }
         ], 
         "selfEligible": true, 
@@ -408,7 +408,7 @@ Content-Type: application/json; charset=UTF-8
             }, 
             "identifier": {
               "scheme": "UA-EDR", 
-              "id": "00137226", 
+              "id": "00137227", 
               "uri": "http://www.sc.gov.ua/"
             }, 
             "name": "«Снігур»", 
@@ -421,7 +421,7 @@ Content-Type: application/json; charset=UTF-8
             }
           }
         ], 
-        "id": "d509f3ed16464292bf24999ff36f51f6"
+        "id": "7dad4f355e2b4bb1b757c38127de7628"
       }, 
       {
         "status": "active", 
@@ -431,25 +431,25 @@ Content-Type: application/json; charset=UTF-8
             "confidentiality": "public", 
             "language": "uk", 
             "title": "Proposal_part1.pdf", 
-            "url": "http://public.docs-sandbox.openprocurement.org/get/c8090d97964b452eb5591baa457417bb?KeyID=3e304647&Signature=kVTyUKYfkf2%252BzIRf0qsuuC%2Fl%2FBUD0sxs2qg%252BSfh1fwZozIQ1IhkPD8kIcWj6nU62C3LmifZFCJukj5kODLyGCg%253D%253D", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/881579ab81ed4db48c7ebda31fd795be?KeyID=a8968c46&Signature=SzO0bE6x0Ce8cCKcDna7%252BmdsmLL2DEpikwSYZ56B86%252BVmD1eoMKavkUWv2kYxTiStu37hur%252B2YwUqLjfJ4szBA%253D%253D", 
             "format": "application/pdf", 
             "documentOf": "tender", 
-            "datePublished": "2019-03-28T06:47:56.868625+02:00", 
-            "id": "3dcbf9e3c9bf4ff2bf65fd83920aa9d6", 
-            "dateModified": "2019-03-28T06:47:56.868641+02:00"
+            "datePublished": "2019-01-01T00:00:00+02:00", 
+            "id": "77bcfb8cdd424beab7904abef6a8411b", 
+            "dateModified": "2019-01-01T00:00:00+02:00"
           }, 
           {
             "hash": "md5:00000000000000000000000000000000", 
             "confidentiality": "buyerOnly", 
             "language": "uk", 
             "format": "application/pdf", 
-            "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/edf1ec35dd2442928d2473f51384621f/bids/5379199eb3c44e0f8fb7e7eda1b05954/documents/ac81204b223840f3b4e110132cb1f4f8?download=fbf0d968258848c38adf05b6cb433fd7", 
+            "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/239ab2b4b65a46f8ac603eebcd77771c/bids/7ded07f482ac44dd815b1cd075d9b64c/documents/c5be635ac53d4272a9bf13d7c0c0555f?download=ee33845a73fb48be97b0c99afa1b5cd6", 
             "confidentialityRationale": "Only our company sells badgers with pink hair.", 
             "title": "Proposal_part2.pdf", 
             "documentOf": "tender", 
-            "datePublished": "2019-03-28T06:47:56.869126+02:00", 
-            "id": "ac81204b223840f3b4e110132cb1f4f8", 
-            "dateModified": "2019-03-28T06:47:56.869141+02:00"
+            "datePublished": "2019-01-01T00:00:00+02:00", 
+            "id": "c5be635ac53d4272a9bf13d7c0c0555f", 
+            "dateModified": "2019-01-01T00:00:00+02:00"
           }
         ], 
         "tenderers": [
@@ -461,7 +461,7 @@ Content-Type: application/json; charset=UTF-8
             }, 
             "identifier": {
               "scheme": "UA-EDR", 
-              "id": "00137226", 
+              "id": "00137227", 
               "uri": "http://www.sc.gov.ua/"
             }, 
             "name": "«Снігур»", 
@@ -474,19 +474,19 @@ Content-Type: application/json; charset=UTF-8
             }
           }
         ], 
-        "id": "5379199eb3c44e0f8fb7e7eda1b05954", 
+        "id": "7ded07f482ac44dd815b1cd075d9b64c", 
         "eligibilityDocuments": [
           {
             "hash": "md5:00000000000000000000000000000000", 
             "confidentiality": "public", 
             "language": "uk", 
             "title": "eligibility_doc.pdf", 
-            "url": "http://public.docs-sandbox.openprocurement.org/get/bab8d9674b574eb08e529c572bb224d6?KeyID=3e304647&Signature=gC1FDxOEWphGEwHWptTP1099LDEPqoG%2FEEYepDgRkiUSapHxeCUBbVQ1tDw9gvWyOcm%252Bg1bBL04Bp4uFF53kBg%253D%253D", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/a387f4f4f8cd4b7b8b233b1122a1a1f7?KeyID=a8968c46&Signature=IxhppvJObyzjAZQYdRBxflHj3VuDgrCUZYIBuO%2FXepDd2NYPgdOtBRc0mLawTKi0EW8yo2FvVcgYxr%2F03SYICQ%253D%253D", 
             "format": "application/pdf", 
             "documentOf": "tender", 
-            "datePublished": "2019-03-28T06:47:56.870204+02:00", 
-            "id": "bb707a331b2a4102af79d147fdd61dfb", 
-            "dateModified": "2019-03-28T06:47:56.870220+02:00"
+            "datePublished": "2019-01-01T00:00:00+02:00", 
+            "id": "5d4b6cf8b5e74e93a90e5091a42070f4", 
+            "dateModified": "2019-01-01T00:00:00+02:00"
           }
         ]
       }

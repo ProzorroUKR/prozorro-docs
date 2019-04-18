@@ -1,9 +1,9 @@
 POST /api/2.5/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 4164
+Content-Length: 4162
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "features": [
@@ -22,7 +22,7 @@ Host: api-sandbox.openprocurement.org
           }
         ], 
         "title_en": "Air Intake", 
-        "relatedItem": "b04f180561df46869592d11bafb46dc0", 
+        "relatedItem": "4972a50256ac428089b23b119eadaa76", 
         "featureOf": "item"
       }, 
       {
@@ -53,7 +53,7 @@ Host: api-sandbox.openprocurement.org
       "amount": 35
     }, 
     "enquiryPeriod": {
-      "endDate": "2019-04-04T06:47:07.311391"
+      "endDate": "2019-01-08T00:00:00+02:00"
     }, 
     "title_en": "Cases with state awards", 
     "value": {
@@ -100,7 +100,7 @@ Host: api-sandbox.openprocurement.org
           }
         ], 
         "description_ru": "футляры к государственным наградам", 
-        "id": "b04f180561df46869592d11bafb46dc0", 
+        "id": "4972a50256ac428089b23b119eadaa76", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -109,19 +109,17 @@ Host: api-sandbox.openprocurement.org
       }
     ], 
     "tenderPeriod": {
-      "endDate": "2019-04-11T06:47:07.311391"
+      "endDate": "2019-01-15T00:00:00+02:00"
     }
   }
 }
 
-
-201 Created
+Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/8176e5df128341c3b1f895ad68a019b2
-
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/f47ca967862147389cd86f8c0d9883d5
 {
   "access": {
-    "token": "873621fdbf3d4041a8f623b0d4b2411c"
+    "token": "2d94092b738a4b54a0db6618b10d75b8"
   }, 
   "data": {
     "procurementMethod": "open", 
@@ -141,7 +139,7 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/8176e5df128341c
           }
         ], 
         "title_en": "Air Intake", 
-        "relatedItem": "b04f180561df46869592d11bafb46dc0", 
+        "relatedItem": "4972a50256ac428089b23b119eadaa76", 
         "featureOf": "item"
       }, 
       {
@@ -167,11 +165,11 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/8176e5df128341c
       }
     ], 
     "enquiryPeriod": {
-      "startDate": "2019-03-28T06:47:19.731247+02:00", 
-      "endDate": "2019-04-04T06:47:07.311391+03:00"
+      "startDate": "2019-01-01T00:00:00+02:00", 
+      "endDate": "2019-01-08T00:00:00+02:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "next_check": "2019-04-04T06:47:07.311391+03:00", 
+    "next_check": "2019-01-08T00:00:00+02:00", 
     "procuringEntity": {
       "contactPoint": {
         "name": "Державне управління справами", 
@@ -193,18 +191,18 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/8176e5df128341c
       }
     }, 
     "owner": "broker", 
-    "id": "8176e5df128341c3b1f895ad68a019b2", 
+    "id": "f47ca967862147389cd86f8c0d9883d5", 
     "title": "[ТЕСТУВАННЯ] футляри до державних нагород", 
-    "tenderID": "UA-2019-03-28-000002", 
-    "dateModified": "2019-03-28T06:47:19.733410+02:00", 
+    "tenderID": "UA-2019-01-01-000002", 
+    "dateModified": "2019-01-01T00:00:00+02:00", 
     "status": "active.enquiries", 
     "tenderPeriod": {
-      "startDate": "2019-04-04T06:47:07.311391+03:00", 
-      "endDate": "2019-04-11T06:47:07.311391+03:00"
+      "startDate": "2019-01-08T00:00:00+02:00", 
+      "endDate": "2019-01-15T00:00:00+02:00"
     }, 
     "procurementMethodType": "belowThreshold", 
     "title_en": "[TESTING] Cases with state awards", 
-    "date": "2019-03-28T06:47:19.731283+02:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35.0, 
@@ -227,7 +225,7 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/8176e5df128341c
           }
         ], 
         "description_ru": "футляры к государственным наградам", 
-        "id": "b04f180561df46869592d11bafb46dc0", 
+        "id": "4972a50256ac428089b23b119eadaa76", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"

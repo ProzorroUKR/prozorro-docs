@@ -1,19 +1,18 @@
 # -*- coding: utf-8 -*-
 import os
-
 from datetime import timedelta
 from hashlib import sha512
 from copy import deepcopy
 
-import openprocurement.tender.competitivedialogue.tests.base as base_test
 from openprocurement.api.models import get_now
 from openprocurement.tender.competitivedialogue.tests.base import (
     BaseCompetitiveDialogEUWebTest,
     BaseCompetitiveDialogUAStage2WebTest
 )
 
-from tests.base import DumpsWebTestApp, DOCS_HOST, AUCTIONS_HOST
-from tests.data import (
+from tests.base.test import DumpsWebTestApp, MockWebTestMixin
+from tests.base.constants import DOCS_HOST, AUCTIONS_HOST
+from tests.base.data import (
     bid_draft, bid2, bid3, bid4, bad_participant, question, complaint, qualified,
     bid_document, bid_document2, lots, subcontracting,
     bid_document3_eligibility, bid_document4_financialy,
@@ -25,47 +24,31 @@ test_tender_data_stage1 = deepcopy(tender_stage1)
 test_tender_data_stage2_multiple_lots = deepcopy(tender_stage2_multiple_lots)
 test_tender_data_stage2EU = deepcopy(tender_stage2EU)
 test_tender_data_stage2UA = deepcopy(tender_stage2UA)
-
-test_tender_data_stage1["tenderPeriod"] = {"endDate": (get_now() + timedelta(days=31)).isoformat()}
-
+test_lots = deepcopy(lots)
 bid_stage2 = deepcopy(bid_draft)
+bid = deepcopy(bid_draft)
+bid_with_bad_participant = deepcopy(bid_draft)
+bid2 = deepcopy(bid2)
+bid3 = deepcopy(bid3)
+bid4 = deepcopy(bid4)
+bid2_with_docs = deepcopy(bid2)
+bid4_with_docs = deepcopy(bid4)
+bid_document2 = deepcopy(bid_document2)
+
 bid_stage2.update(subcontracting)
 bid_stage2.update(qualified)
-
-bid = deepcopy(bid_stage2)
-del bid['value']
-
-bid_with_bad_participant = deepcopy(bid_stage2)
-bid_with_bad_participant['tenderers'] = [bad_participant]
-
-bid2 = deepcopy(bid2)
+bid.update(subcontracting)
+bid.update(qualified)
+bid_with_bad_participant.update(subcontracting)
+bid_with_bad_participant.update(qualified)
 bid2.update(qualified)
-
-bid3 = deepcopy(bid3)
 bid3.update(qualified)
-
-bid4 = deepcopy(bid4)
 bid4.update(qualified)
+bid2_with_docs.update(qualified)
+bid4_with_docs.update(qualified)
 
-bid2_with_docs = deepcopy(bid2)
-bid2_with_docs["documents"] = [bid_document]
-
-bid_document2_conf = deepcopy(bid_document2)
-bid_document2_conf.update({
-    'confidentiality': 'buyerOnly',
-    'confidentialityRationale': 'Only our company sells badgers with pink hair.'
-})
-
-bid4_with_docs = deepcopy(bid4)
-bid4_with_docs["documents"] = [bid_document, bid_document2_conf]
-
-question_with_bad_participant = {
-    "author": bad_participant,
-    "description": "Просимо додати таблицю потрібної калорійності харчування",
-    "title": "Калорійність"
-}
-
-test_lots = deepcopy(lots)
+del bid['value']
+bid_with_bad_participant['tenderers'] = [bad_participant]
 test_lots[0]['value'] = test_tender_data_stage1['value']
 test_lots[0]['minimalStep'] = test_tender_data_stage1['minimalStep']
 test_lots[1]['value'] = test_tender_data_stage1['value']
@@ -75,7 +58,7 @@ TARGET_DIR = 'docs/source/competitivedialogue/tutorial/'
 TARGET_DIR_MULTIPLE = 'docs/source/competitivedialogue/multiple_lots_tutorial/'
 
 
-class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
+class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):
     initial_data = test_tender_data_stage1
     docservice = True
 
@@ -83,14 +66,16 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
     auctions_host = AUCTIONS_HOST
 
     def setUp(self):
-        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
+        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(__file__))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
+        self.setUpMock()
         if self.docservice:
             self.setUpDS()
             self.app.app.registry.docservice_url = 'http://{}'.format(self.docs_host)
 
     def tearDown(self):
+        self.tearDownMock()
         self.couchdb_server.delete(self.db.name)
 
     def generate_docservice_url(self):
@@ -122,6 +107,8 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
             self.assertEqual(response.status, '422 Unprocessable Entity')
 
         #### Creating tender
+
+        test_tender_data_stage1["tenderPeriod"] = {"endDate": (get_now() + timedelta(days=31)).isoformat()}
 
         # Create tender
         with open(TARGET_DIR + 'tender-post-attempt-json-data.http', 'w') as self.app.file_obj:
@@ -177,8 +164,9 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
         #### Uploading documentation
 
         with open(TARGET_DIR + 'upload-tender-notice.http', 'w') as self.app.file_obj:
-            response = self.app.post('/tenders/{}/documents?acc_token={}'.format(self.tender_id, owner_token),
-                                     upload_files=[('file', u'Notice.pdf', 'content')])
+            response = self.app.post(
+                '/tenders/{}/documents?acc_token={}'.format(self.tender_id, owner_token),
+                upload_files=[('file', u'Notice.pdf', 'content')])
             self.assertEqual(response.status, '201 Created')
 
         doc_id = response.json["data"]["id"]
@@ -187,8 +175,9 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
             self.assertEqual(response.status, '200 OK')
 
         with open(TARGET_DIR + 'upload-award-criteria.http', 'w') as self.app.file_obj:
-            response = self.app.post('/tenders/{}/documents?acc_token={}'.format(self.tender_id, owner_token),
-                                     upload_files=[('file', u'AwardCriteria.pdf', 'content')])
+            response = self.app.post(
+                '/tenders/{}/documents?acc_token={}'.format(self.tender_id, owner_token),
+                upload_files=[('file', u'AwardCriteria.pdf', 'content')])
             self.assertEqual(response.status, '201 Created')
 
         doc_id = response.json["data"]["id"]
@@ -198,8 +187,9 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
             self.assertEqual(response.status, '200 OK')
 
         with open(TARGET_DIR + 'update-award-criteria.http', 'w') as self.app.file_obj:
-            response = self.app.put('/tenders/{}/documents/{}?acc_token={}'.format(self.tender_id, doc_id, owner_token),
-                                    upload_files=[('file', 'AwardCriteria-2.pdf', 'content2')])
+            response = self.app.put(
+                '/tenders/{}/documents/{}?acc_token={}'.format(self.tender_id, doc_id, owner_token),
+                upload_files=[('file', 'AwardCriteria-2.pdf', 'content2')])
             self.assertEqual(response.status, '200 OK')
 
         with open(TARGET_DIR + 'tender-documents-3.http', 'w') as self.app.file_obj:
@@ -372,9 +362,15 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
             bids_access[bid3_id] = response.json['access']['token']
             self.assertEqual(response.status, '201 Created')
 
+        bid_document2.update({
+            'confidentiality': 'buyerOnly',
+            'confidentialityRationale': 'Only our company sells badgers with pink hair.'
+        })
+        bid4_with_docs["documents"] = [bid_document, bid_document2]
+        for document in bid4_with_docs['documents']:
+            document['url'] = self.generate_docservice_url()
+
         with open(TARGET_DIR + 'register-4rd-bidder.http', 'w') as self.app.file_obj:
-            for document in bid4_with_docs['documents']:
-                document['url'] = self.generate_docservice_url()
             response = self.app.post_json(
                 '/tenders/{}/bids'.format(self.tender_id),
                 {'data': bid4_with_docs})
@@ -438,7 +434,6 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
             self.assertEqual(response.status, '200 OK')
 
         # active.pre-qualification.stand-still
-
         with open(TARGET_DIR + 'pre-qualification-confirmation.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
                 '/tenders/{}?acc_token={}'.format(self.tender_id, owner_token),
@@ -602,8 +597,11 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
         with open(TARGET_DIR + 'stage2/EU/ask-question-bad-participant.http', 'w') as self.app.file_obj:
             response = self.app.post_json(
                 '/tenders/{}/questions'.format(self.tender_id),
-                {'data': question_with_bad_participant},
-                status=403)
+                {'data': {
+                    "author": bad_participant,
+                    "description": "Просимо додати таблицю потрібної калорійності харчування",
+                    "title": "Калорійність"
+                }}, status=403)
             self.assertEqual(response.status, '403 Forbidden')
 
         with open(TARGET_DIR + 'stage2/EU/ask-question.http', 'w') as self.app.file_obj:
@@ -628,11 +626,15 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
             response = self.app.get('/tenders/{}/questions/{}'.format(self.tender_id, question_id))
             self.assertEqual(response.status, '200 OK')
 
-        self.time_shift('enquiryPeriod_ends')
+        self.time_shift('enquiryPeriod_ends', {'items': [{"deliveryDate": {
+            "startDate": (get_now() + timedelta(days=20)).isoformat(),
+            "endDate": (get_now() + timedelta(days=50)).isoformat()
+        }}]})
         self.app.authorization = ('Basic', ('broker', ''))
         response = self.app.get('/tenders/{}?acc_token={}'.format(tender['id'], owner_token))
+        endDate = (get_now() + timedelta(days=30, seconds=10)).isoformat()
+
         with open(TARGET_DIR + 'stage2/EU/update-tender-after-enqiery.http', 'w') as self.app.file_obj:
-            endDate = (get_now() + timedelta(days=30, seconds=10)).isoformat()
             response = self.app.patch_json(
                 '/tenders/{}?acc_token={}'.format(tender['id'], owner_token),
                 {'data': {'items': [{'deliveryDate': {"endDate": endDate}}]}}, status=403)
@@ -767,19 +769,25 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
             bids_access[bid2_id] = response.json['access']['token']
             self.assertEqual(response.status, '201 Created')
 
+
+        bid_document2.update({
+            'confidentiality': 'buyerOnly',
+            'confidentialityRationale': 'Only our company sells badgers with pink hair.'
+        })
+        bid4_with_docs["documents"] = [bid_document, bid_document2]
         bid4_with_docs["eligibilityDocuments"] = [bid_document3_eligibility]
         bid4_with_docs["financialDocuments"] = [bid_document4_financialy]
         bid4_with_docs["qualificationDocuments"] = [bid_document5_qualification]
+        for document in bid4_with_docs['documents']:
+            document['url'] = self.generate_docservice_url()
+        for document in bid4_with_docs['eligibilityDocuments']:
+            document['url'] = self.generate_docservice_url()
+        for document in bid4_with_docs['financialDocuments']:
+            document['url'] = self.generate_docservice_url()
+        for document in bid4_with_docs['qualificationDocuments']:
+            document['url'] = self.generate_docservice_url()
 
         with open(TARGET_DIR + 'stage2/EU/register-3rd-bidder.http', 'w') as self.app.file_obj:
-            for document in bid4_with_docs['documents']:
-                document['url'] = self.generate_docservice_url()
-            for document in bid4_with_docs['eligibilityDocuments']:
-                document['url'] = self.generate_docservice_url()
-            for document in bid4_with_docs['financialDocuments']:
-                document['url'] = self.generate_docservice_url()
-            for document in bid4_with_docs['qualificationDocuments']:
-                document['url'] = self.generate_docservice_url()
             response = self.app.post_json(
                 '/tenders/{}/bids'.format(self.tender_id),
                 {'data': bid4_with_docs})
@@ -843,7 +851,6 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
             self.assertEqual(response.status, "200 OK")
 
         # active.pre-qualification.stand-still
-
         with open(TARGET_DIR + 'stage2/EU/pre-qualification-confirmation.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
                 '/tenders/{}?acc_token={}'.format(self.tender_id, owner_token),
@@ -890,7 +897,6 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
             self.assertEqual(response.status, '200 OK')
 
         #### Confirming qualification
-        # self.set_status('active.qualification')
         self.app.authorization = ('Basic', ('auction', ''))
         response = self.app.get('/tenders/{}/auction'.format(self.tender_id))
         auction_bids_data = response.json['data']['bids']
@@ -933,6 +939,8 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
         self.assertEqual(response.json['data']['value']['amount'], 238)
 
         #### Setting contract signature date
+
+        self.tick()
 
         with open(TARGET_DIR + 'stage2/EU/tender-contract-sign-date.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
@@ -1047,6 +1055,8 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
 
         #### Creating tender
 
+        test_tender_data_stage1["tenderPeriod"] = {"endDate": (get_now() + timedelta(days=31)).isoformat()}
+
         # Create tender
         response = self.app.post_json(
             '/tenders?opt_pretty=1',
@@ -1120,6 +1130,8 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
     def test_complaints(self):
         self.app.authorization = ('Basic', ('broker', ''))
 
+        test_tender_data_stage1["tenderPeriod"] = {"endDate": (get_now() + timedelta(days=31)).isoformat()}
+
         response = self.app.post_json(
             '/tenders?opt_pretty=1',
             {'data': test_tender_data_stage1})
@@ -1134,6 +1146,8 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
                 '/tenders/{}/complaints'.format(self.tender_id),
                 {'data': complaint})
             self.assertEqual(response.status, '201 Created')
+
+        self.tick()
 
         complaint1_token = response.json['access']['token']
         complaint1_id = response.json['data']['id']
@@ -1338,6 +1352,8 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
     def test_qualification_complaints(self):
         self.app.authorization = ('Basic', ('broker', ''))
 
+        test_tender_data_stage1["tenderPeriod"] = {"endDate": (get_now() + timedelta(days=31)).isoformat()}
+
         response = self.app.post_json(
             '/tenders?opt_pretty=1',
             {'data': test_tender_data_stage1})
@@ -1386,8 +1402,14 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
             response = self.app.patch_json(
                 '/tenders/{}/qualifications/{}?acc_token={}'.format(
                     self.tender_id, qualification['id'], owner_token),
-                {'data': {'status': 'active', 'qualified': True, 'eligible': True}})
+                {'data': {
+                    'status': 'active',
+                    'qualified': True,
+                    'eligible': True
+                }})
             self.assertEqual(response.status, '200 OK')
+
+        self.tick()
 
         # active.pre-qualification.stand-still
         response = self.app.patch_json(
@@ -1404,6 +1426,8 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
                     self.tender_id, qualification_id, bid_token),
                 {'data': complaint})
             self.assertEqual(response.status, '201 Created')
+
+        self.tick()
 
         complaint1_token = response.json['access']['token']
         complaint1_id = response.json['data']['id']
@@ -1460,7 +1484,8 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
         with open(TARGET_DIR + 'qualification-complaint-cancel.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
                 '/tenders/{}/qualifications/{}/complaints/{}?acc_token={}'.format(
-                    self.tender_id, qualification_id, response.json['data']['id'], response.json['access']['token']),
+                    self.tender_id, qualification_id,
+                    response.json['data']['id'], response.json['access']['token']),
                 {'data': {'cancellationReason': 'Умови виправлено', 'status': 'cancelled'}})
             self.assertEqual(response.status, '200 OK')
 
@@ -1549,7 +1574,8 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
 
         self.app.authorization = None
         with open(TARGET_DIR + 'qualification-complaints-list.http', 'w') as self.app.file_obj:
-            response = self.app.get('/tenders/{}/qualifications/{}/complaints'.format(self.tender_id, qualification_id))
+            response = self.app.get(
+                '/tenders/{}/qualifications/{}/complaints'.format(self.tender_id, qualification_id))
             self.assertEqual(response.status, '200 OK')
 
         with open(TARGET_DIR + 'qualification-complaint.http', 'w') as self.app.file_obj:
@@ -1569,6 +1595,9 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
             self.app.file_obj.write("\n")
 
         #### Creating tender
+
+        test_tender_data_stage1["tenderPeriod"] = {"endDate": (get_now() + timedelta(days=31)).isoformat()}
+
         self.app.authorization = ('Basic', ('broker', ''))
         with open(TARGET_DIR_MULTIPLE + 'tender-post-attempt-json-data.http', 'w') as self.app.file_obj:
             response = self.app.post_json(
@@ -1676,9 +1705,13 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
         with open(TARGET_DIR_MULTIPLE + 'bid-lot1-update-view.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
                 '/tenders/{}/bids/{}?acc_token={}'.format(tender_id, bid1_id, bid1_token),
-                {'data': {'lotValues': [{'subcontractingDetails': 'ДКП «Орфей»',
-                                         'relatedLot': lot_id1}],
-                          'status': 'pending'}})
+                {'data': {
+                    'lotValues': [{
+                        'subcontractingDetails': 'ДКП «Орфей»',
+                        'relatedLot': lot_id1
+                    }],
+                    'status': 'pending'
+                }})
             self.assertEqual(response.status, '200 OK')
 
         with open(TARGET_DIR_MULTIPLE + 'bid-lot2-update-view.http', 'w') as self.app.file_obj:
@@ -1913,8 +1946,14 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
             response = self.app.patch_json(
                 '/tenders/{}/qualifications/{}?acc_token={}'.format(
                     self.tender_id, qualification['id'], owner_token),
-                {'data': {'status': 'active', 'qualified': True, 'eligible': True}})
+                {'data': {
+                    'status': 'active',
+                    'qualified': True,
+                    'eligible': True
+                }})
         self.assertEqual(response.status, '200 OK')
+
+        self.tick()
 
         # active.pre-qualification.stand-still
         response = self.app.patch_json(
@@ -1932,13 +1971,19 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
             '/tenders/{}/auction'.format(self.tender_id),
             {'data': {'bids': auction_bids_data}})
 
+        self.tick()
+
         self.app.authorization = ('Basic', ('broker', ''))
         response = self.app.get('/tenders/{}/awards?acc_token={}'.format(self.tender_id, owner_token))
         # get pending award
         award_id = [i['id'] for i in response.json['data'] if i['status'] == 'pending'][0]
         self.app.patch_json(
             '/tenders/{}/awards/{}?acc_token={}'.format(self.tender_id, award_id, owner_token),
-            {'data': {'status': 'active', 'qualified': True, 'eligible': True}})
+            {'data': {
+                'status': 'active',
+                'qualified': True,
+                'eligible': True
+            }})
         self.assertEqual(response.status, '200 OK')
 
         with open(TARGET_DIR + 'award-complaint-submission.http', 'w') as self.app.file_obj:
@@ -2131,7 +2176,7 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest):
         self.assertEqual(response.status, '200 OK')
 
 
-class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest):
+class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest, MockWebTestMixin):
     docservice = True
     initial_data = test_tender_data_stage1
 
@@ -2139,17 +2184,17 @@ class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest):
     auctions_host = AUCTIONS_HOST
 
     def setUp(self):
-        self.app = DumpsWebTestApp(
-            "config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
-        self.app.authorization = ('Basic', ('broker', ''))
+        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(__file__))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
+        self.setUpMock()
         if self.docservice:
             self.setUpDS()
             self.app.app.registry.docservice_url = 'http://{}'.format(self.docs_host)
 
     def tearDown(self):
         self.couchdb_server.delete(self.db.name)
+        self.tearDownMock()
 
     def generate_docservice_url(self):
         url = super(TenderResourceTestStage2UA, self).generate_docservice_url()
@@ -2209,7 +2254,8 @@ class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest):
 
         doc_id = response.json["data"]["id"]
         with open(TARGET_DIR + 'stage2/UA/tender-documents.http', 'w') as self.app.file_obj:
-            response = self.app.get('/tenders/{}/documents/{}?acc_token={}'.format(self.tender_id, doc_id, owner_token))
+            response = self.app.get('/tenders/{}/documents/{}?acc_token={}'.format(
+                self.tender_id, doc_id, owner_token))
             self.assertEqual(response.status, '200 OK')
 
         with open(TARGET_DIR + 'stage2/UA/upload-award-criteria.http', 'w') as self.app.file_obj:
@@ -2239,8 +2285,11 @@ class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest):
         with open(TARGET_DIR + 'stage2/UA/ask-question-bad-participant.http', 'w') as self.app.file_obj:
             response = self.app.post_json(
                 '/tenders/{}/questions'.format(self.tender_id),
-                {'data': question_with_bad_participant},
-                status=403)
+                {'data': {
+                    "author": bad_participant,
+                    "description": "Просимо додати таблицю потрібної калорійності харчування",
+                    "title": "Калорійність"
+                }}, status=403)
             self.assertEqual(response.status, '403 Forbidden')
 
         with open(TARGET_DIR + 'stage2/UA/ask-question.http', 'w') as self.app.file_obj:
@@ -2349,9 +2398,10 @@ class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest):
                 {'data': {'status': 'active'}})
             self.assertEqual(response.status, '200 OK')
 
+        bid2_with_docs["documents"] = [bid_document]
+        for document in bid2_with_docs['documents']:
+            document['url'] = self.generate_docservice_url()
         with open(TARGET_DIR + 'stage2/UA/register-2nd-bidder.http', 'w') as self.app.file_obj:
-            for document in bid2_with_docs['documents']:
-                document['url'] = self.generate_docservice_url()
             response = self.app.post_json(
                 '/tenders/{}/bids'.format(self.tender_id),
                 {'data': bid2_with_docs})
@@ -2378,6 +2428,8 @@ class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest):
             {'data': patch_data})
         self.assertEqual(response.status, '200 OK')
 
+        self.tick()
+
         self.app.authorization = ('Basic', ('broker', ''))
 
         with open(TARGET_DIR + 'stage2/UA/auction-url.http', 'w') as self.app.file_obj:
@@ -2394,8 +2446,11 @@ class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest):
                 '/tenders/{}/bids/{}?acc_token={}'.format(self.tender_id, bid2_id, bids_access[bid2_id]))
             self.assertEqual(response.status, '200 OK')
 
+        response = self.app.get('/tenders/{}'.format(self.tender_id))
+        from pprint import pprint
+        pprint(response.json)
+
         #### Confirming qualification
-        # self.set_status('active.qualification')
         self.app.authorization = ('Basic', ('auction', ''))
         response = self.app.get('/tenders/{}/auction'.format(self.tender_id))
         auction_bids_data = response.json['data']['bids']
@@ -2434,6 +2489,8 @@ class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest):
         self.assertEqual(response.json['data']['value']['amount'], 238)
 
         #### Setting contract signature date
+
+        self.tick()
 
         with open(TARGET_DIR + 'stage2/UA/tender-contract-sign-date.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(

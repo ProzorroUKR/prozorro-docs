@@ -1,11 +1,13 @@
-POST /api/2.5/tenders/deb082b3f3004fc1b115e78ee2d59f6c/bids HTTP/1.0
+POST /api/2.5/tenders/19e26a9aabb84578920993b1d57f719d/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 902
+Content-Length: 947
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
+    "selfEligible": true, 
+    "selfQualified": true, 
     "value": {
       "contractDuration": {
         "days": 200, 
@@ -39,9 +41,9 @@ DATA:
     "tenderers": [
       {
         "contactPoint": {
+          "email": "aagt@gmail.com", 
           "telephone": "+380 (322) 91-69-30", 
-          "name": "Андрій Олексюк", 
-          "email": "aagt@gmail.com"
+          "name": "Андрій Олексюк"
         }, 
         "identifier": {
           "scheme": "UA-EDR", 
@@ -63,25 +65,24 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/deb082b3f3004fc1b115e78ee2d59f6c/bids/e7ddcaff2a3341cea8c596ac0db6c4c0
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/19e26a9aabb84578920993b1d57f719d/bids/f1339086825247fa913cc0c496fba95d
 {
   "access": {
-    "token": "f59d7a2c9ac143f3b35d73ac3134b037"
+    "token": "0809bca0f7314b9ea6ea1901d861a810"
   }, 
   "data": {
-    "date": "2019-03-28T06:49:14.152654+02:00", 
     "status": "pending", 
-    "id": "e7ddcaff2a3341cea8c596ac0db6c4c0", 
+    "selfEligible": true, 
     "value": {
       "yearlyPaymentsPercentage": 0.85, 
       "valueAddedTaxIncluded": true, 
       "currency": "UAH", 
-      "amount": 9356.52, 
+      "amount": 9176.27, 
       "contractDuration": {
         "days": 200, 
         "years": 12
       }, 
-      "amountPerformance": 737.02, 
+      "amountPerformance": 713.59, 
       "annualCostsReduction": [
         400.0, 
         900.0, 
@@ -106,6 +107,7 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/deb082b3f3004fc
         900.0
       ]
     }, 
+    "selfQualified": true, 
     "tenderers": [
       {
         "contactPoint": {
@@ -127,7 +129,9 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/deb082b3f3004fc
           "locality": "м. Львів"
         }
       }
-    ]
+    ], 
+    "date": "2019-01-01T00:00:00+02:00", 
+    "id": "f1339086825247fa913cc0c496fba95d"
   }
 }
 

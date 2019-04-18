@@ -1,21 +1,30 @@
-POST /api/2.5/tenders/dc07cf2d5fae45f88da7ef5b0917cd1f/bids/087bb709d3fc4e1d9be1fac5e91c1b53/documents?acc_token=34e4f4f169d54a0db853ee5c9f678b88 HTTP/1.0
+POST /api/2.5/tenders/24f6a0b9c9d24eb5887a9d6015b64218/bids/16022a766ac54aec8ef76542a6958467/documents?acc_token=18ce7ff875584fc3a4e10c542f2a3ad8 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 184
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy5720869994$
-Host: api-sandbox.openprocurement.org
+Content-Length: 138
+Content-Type: multipart/form-data; boundary=BOUNDARY
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="Proposal.pdf"
+Content-Type: application/pdf
+
+content
+--BOUNDARY--
+
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/dc07cf2d5fae45f88da7ef5b0917cd1f/bids/087bb709d3fc4e1d9be1fac5e91c1b53/documents/41f3a85f20d34c29b95a13e0f21c3d5f
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/24f6a0b9c9d24eb5887a9d6015b64218/bids/16022a766ac54aec8ef76542a6958467/documents/e5433f070a864e3c930bf8aba6335c9c
 {
   "data": {
+    "hash": "md5:00000000000000000000000000000000", 
     "title": "Proposal.pdf", 
-    "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/dc07cf2d5fae45f88da7ef5b0917cd1f/bids/087bb709d3fc4e1d9be1fac5e91c1b53/documents/41f3a85f20d34c29b95a13e0f21c3d5f?download=f681ad2482664e859f9f356beaab1aa3", 
+    "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/24f6a0b9c9d24eb5887a9d6015b64218/bids/16022a766ac54aec8ef76542a6958467/documents/e5433f070a864e3c930bf8aba6335c9c?download=118a1d384bbb465e97e4be4ee773e830", 
     "format": "application/pdf", 
     "documentOf": "tender", 
-    "datePublished": "2019-03-28T06:48:58.345401+02:00", 
-    "id": "41f3a85f20d34c29b95a13e0f21c3d5f", 
-    "dateModified": "2019-03-28T06:48:58.345415+02:00"
+    "datePublished": "2019-01-01T00:00:00+02:00", 
+    "id": "e5433f070a864e3c930bf8aba6335c9c", 
+    "dateModified": "2019-01-01T00:00:00+02:00"
   }
 }
 

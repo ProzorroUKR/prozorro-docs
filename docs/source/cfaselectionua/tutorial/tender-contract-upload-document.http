@@ -1,32 +1,30 @@
-POST /api/2.5/tenders/55fbfef6773941a68153e7e877673499/contracts/f7a347eda6744daf9997077814cc00b1/documents?acc_token=fd113ea31c4145b2a5790646a65a9099 HTTP/1.0
+POST /api/2.5/tenders/4cdd6b38d69c459284b31ab81cbea097/contracts/dcf3565417d44143b47ae2a316a85892/documents?acc_token=55a1ff7e4b9c4fec90bca39c8e96fbd7 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 346
+Content-Length: 348
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
-    "url": "http://public.docs-sandbox.openprocurement.org/get/f3c665f6b0bd4fd88e278740d11d4516?KeyID=cfd3c8d9&Signature=5LIv3Dzva8eg2ZB814oP4NVki7GO3h7FotGhTMKNUr82CzEF2qNkKWZpTfkeqUycvUgZg3ex5BAfK0hX%2F%2FNfDw%3D%3D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/af4543f4f97d411f88ea1c4c812b6bd3?KeyID=a8968c46&Signature=obny0vIMbuPnDSjg3f6%2FtVTmBCO98GpLuF%2FoaQLAu46vcYatXZotQOfYztew4OFwf1%2FSAUAjcJnZN%2BpFZ4%2BABA%3D%3D", 
     "title": "contract_first_document.doc", 
     "hash": "md5:00000000000000000000000000000000", 
     "format": "application/msword"
   }
 }
 
-
-201 Created
+Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/55fbfef6773941a68153e7e877673499/contracts/f7a347eda6744daf9997077814cc00b1/documents/b4d60797ce8f4a648e590a527bde78a2
-
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4cdd6b38d69c459284b31ab81cbea097/contracts/dcf3565417d44143b47ae2a316a85892/documents/a9c2fe0cee044bda9a9520a9c83dc581
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "title": "contract_first_document.doc", 
-    "url": "http://public.docs-sandbox.openprocurement.org/get/f3c665f6b0bd4fd88e278740d11d4516?KeyID=cfd3c8d9&Signature=BROtvoeeZBaYRtNmjhXeuHzyXxwxjiwqklW7hGDkFqS8h%252BDbKfw7GfNM1CNxaE3dLcn2PbkAnZVReNoYIPW2Bg%253D%253D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/af4543f4f97d411f88ea1c4c812b6bd3?KeyID=a8968c46&Signature=gmQC4dMAqr0MqvJuhfyW8RtnIKlwTVq7suusgsb6Qs6YSqv5dT6dpkzhpFk7iq7MwWcxTAIN%252BTH0Wgl4c%2FoxDQ%253D%253D", 
     "format": "application/msword", 
-    "datePublished": "2019-04-03T14:34:47.560414+03:00", 
-    "id": "b4d60797ce8f4a648e590a527bde78a2", 
-    "dateModified": "2019-04-03T14:34:47.560431+03:00"
+    "datePublished": "2019-01-01T00:00:00+02:00", 
+    "id": "a9c2fe0cee044bda9a9520a9c83dc581", 
+    "dateModified": "2019-01-01T00:00:00+02:00"
   }
 }
 

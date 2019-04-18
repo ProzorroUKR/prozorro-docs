@@ -1,20 +1,18 @@
-PATCH /api/2.5/tenders/4bdc8f70ca4d45b0956ab3afbadcc50c/awards/32a97e4b24054e2db5f8d16d4bdd4fc0?acc_token=b9d491f8ba8643bd9cddd249d67610d3 HTTP/1.0
+PATCH /api/2.5/tenders/40c17dbea3ba43fab389cc55c80183fc/awards/8cba908aedee4f7d90a81f67a2b69ad7?acc_token=74ec625f693841c0ad3e8bc4538041bc HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 36
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "status": "unsuccessful"
   }
 }
 
-
-200 OK
+Response: 200 OK
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/4bdc8f70ca4d45b0956ab3afbadcc50c/awards/c8e8b73e12144aa7b491c03c608b30ac
-
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/40c17dbea3ba43fab389cc55c80183fc/awards/6b0f4f603de4444e9e030620b26c3974
 {
   "data": {
     "status": "unsuccessful", 
@@ -23,17 +21,17 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/4bdc8f70ca4d45b
         "hash": "md5:00000000000000000000000000000000", 
         "author": "tender_owner", 
         "title": "Unsuccessful_Reason.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/2177f3149cd2405ca4c82c642d1a8130?KeyID=ddecca24&Signature=Yf%252BREREmsMp40BM0MucT%2FT%252BbSCRMU5a%252BgNHCFezGcv5qAJ4KI280rnixo88Yz%2FtLc2Z7Sbpu%2FLoQEgg5il1lCQ%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/1bc0e3c6b6014da99c141450a723d3a1?KeyID=a8968c46&Signature=eLX2bLO%252BCh7Q3UBSzsDCJyyp58L5luiaQeMZow%2Fjof8b9yNG0fsIhWXWRzf26KfB4VdUtRnNb14xM%252BWvmSWyCw%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:47:14.966121+02:00", 
-        "id": "c82ae8879102412da71f26efdf93879e", 
-        "dateModified": "2019-03-28T06:47:14.966136+02:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "4ac91ff67c3246f6b42650dd93895c5b", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }
     ], 
     "complaintPeriod": {
-      "startDate": "2019-03-28T06:47:14.843791+02:00", 
-      "endDate": "2019-04-01T06:47:15.057802+02:00"
+      "startDate": "2019-01-01T00:00:00+02:00", 
+      "endDate": "2019-01-04T00:00:00+02:00"
     }, 
     "suppliers": [
       {
@@ -57,14 +55,14 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/4bdc8f70ca4d45b
         }
       }
     ], 
-    "bid_id": "cd3a7f9265fa40859ef7f3d7c905bcb3", 
+    "bid_id": "058beff354b44f24a1e4a44ab60f4801", 
     "value": {
       "currency": "UAH", 
       "amount": 450.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2019-03-28T06:47:15.065129+02:00", 
-    "id": "32a97e4b24054e2db5f8d16d4bdd4fc0"
+    "date": "2019-01-01T00:00:00+02:00", 
+    "id": "8cba908aedee4f7d90a81f67a2b69ad7"
   }
 }
 

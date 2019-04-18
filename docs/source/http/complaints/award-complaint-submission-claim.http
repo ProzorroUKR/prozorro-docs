@@ -1,14 +1,12 @@
-POST /api/2.5/tenders/4bdc8f70ca4d45b0956ab3afbadcc50c/awards/32a97e4b24054e2db5f8d16d4bdd4fc0/complaints?acc_token=0a58952804db4d8fb59c820a8b752bcb HTTP/1.0
+POST /api/2.5/tenders/40c17dbea3ba43fab389cc55c80183fc/awards/8cba908aedee4f7d90a81f67a2b69ad7/complaints?acc_token=932a407404d1443e9d97fb6455e7d06c HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 794
+Content-Length: 1317
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "status": "claim", 
-    "title": "complaint title", 
-    "description": "complaint description", 
     "author": {
       "contactPoint": {
         "telephone": "+380 (432) 21-69-30", 
@@ -28,23 +26,23 @@ Host: api-sandbox.openprocurement.org
         "streetAddress": "вул. Островського, 33", 
         "locality": "м. Вінниця"
       }
-    }
+    }, 
+    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+    "title": "Недостатньо інформації"
   }
 }
 
-
-201 Created
+Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/4bdc8f70ca4d45b0956ab3afbadcc50c/awards/32a97e4b24054e2db5f8d16d4bdd4fc0/complaints/f8df28d4f77d43f3b2bfc7bf809df861
-
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/40c17dbea3ba43fab389cc55c80183fc/awards/8cba908aedee4f7d90a81f67a2b69ad7/complaints/cc6a802c0a7e4127b6de35401a843e24
 {
   "access": {
-    "token": "1ed3777258d4412e8ab223b6582cfa11"
+    "token": "72bc7d06a7c34b828f87288d8dd4eaa3"
   }, 
   "data": {
     "status": "claim", 
-    "description": "complaint description", 
-    "title": "complaint title", 
+    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+    "title": "Недостатньо інформації", 
     "author": {
       "contactPoint": {
         "email": "soleksuk@gmail.com", 
@@ -65,11 +63,11 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/4bdc8f70ca4d45b
         "locality": "м. Вінниця"
       }
     }, 
-    "dateSubmitted": "2019-03-28T06:47:16.264864+02:00", 
-    "complaintID": "UA-2019-03-28-000001.6", 
-    "date": "2019-03-28T06:47:16.264846+02:00", 
+    "dateSubmitted": "2019-01-01T00:10:00+02:00", 
+    "complaintID": "UA-2019-01-01-000001.6", 
+    "date": "2019-01-01T00:10:00+02:00", 
     "type": "claim", 
-    "id": "f8df28d4f77d43f3b2bfc7bf809df861"
+    "id": "cc6a802c0a7e4127b6de35401a843e24"
   }
 }
 

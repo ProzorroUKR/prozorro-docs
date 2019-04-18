@@ -1,14 +1,14 @@
-PATCH /api/2.5/tenders/8ebbedbb7e114716a175fa053af7cda6/contracts/065161db6ca14f6c858c1d37613650d6?acc_token=cd8238cb6f7449eeab3bfcf5cd5d6579 HTTP/1.0
+PATCH /api/2.5/tenders/411eba73a7e241eab1e17cf80cbe33c6/contracts/a1b42145e86d4eb7b71ebd7570c708cc?acc_token=aa8f9663e1ac4382ac0d69917f93e5f3 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 106
+Content-Length: 104
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "period": {
-      "startDate": "2019-03-28T06:47:08.632098", 
-      "endDate": "2020-03-27T06:47:08.632098"
+      "startDate": "2019-01-01T00:00:00+02:00", 
+      "endDate": "2020-01-01T00:00:00+02:00"
     }
   }
 }
@@ -26,11 +26,10 @@ Content-Type: application/json; charset=UTF-8
           "description": "Послуги з харчування у школах", 
           "id": "55523100-3"
         }, 
-        "description_en": "Services in school canteens", 
         "additionalClassifications": [
           {
             "scheme": "ДКПП", 
-            "id": "55.51.10.300", 
+            "id": "17.21.1", 
             "description": "Послуги шкільних їдалень"
           }
         ], 
@@ -42,11 +41,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-03-30T06:47:08.632098+02:00", 
-          "endDate": "2019-04-02T06:47:08.632098+03:00"
+          "startDate": "2019-01-21T00:00:00+02:00", 
+          "endDate": "2019-02-20T00:00:00+02:00"
         }, 
-        "description_ru": "Услуги школьных столовых", 
-        "id": "2dc54675d6364e2baffbc0f8e74432ac", 
+        "id": "6754413a93e449cd9f59855ae81932f1", 
         "unit": {
           "code": "MON", 
           "name": "month", 
@@ -68,9 +66,8 @@ Content-Type: application/json; charset=UTF-8
         }, 
         "identifier": {
           "scheme": "UA-EDR", 
-          "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
-          "id": "13313462", 
-          "uri": "http://sch10.edu.vn.ua/"
+          "id": "00137256", 
+          "uri": "http://www.sc.gov.ua/"
         }, 
         "name": "ДКП «Школяр»", 
         "address": {
@@ -83,8 +80,8 @@ Content-Type: application/json; charset=UTF-8
       }
     ], 
     "period": {
-      "startDate": "2019-03-28T06:47:08.632098+02:00", 
-      "endDate": "2020-03-27T06:47:08.632098+02:00"
+      "startDate": "2019-01-01T00:00:00+02:00", 
+      "endDate": "2020-01-01T00:00:00+02:00"
     }, 
     "value": {
       "currency": "UAH", 
@@ -92,11 +89,11 @@ Content-Type: application/json; charset=UTF-8
       "amountNet": 230.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "dateSigned": "2019-03-28T06:47:08.632098+02:00", 
-    "date": "2019-03-28T06:49:31.223824+02:00", 
-    "awardID": "ab93425d1b974090bbcf0c97e20269d7", 
-    "id": "065161db6ca14f6c858c1d37613650d6", 
-    "contractID": "UA-2019-03-28-000001-1"
+    "dateSigned": "2019-01-01T00:00:00+02:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
+    "awardID": "efe76415cff24b1b97ccf889eecbe556", 
+    "id": "a1b42145e86d4eb7b71ebd7570c708cc", 
+    "contractID": "UA-2019-01-01-000001-1"
   }
 }
 

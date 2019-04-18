@@ -1,15 +1,15 @@
-PATCH /api/2.5/tenders/d31f5c7085db4e08912359274057ea4d/bids/3e97dabd5f824c34b5dc05642eb4409a?acc_token=7a8f39cc67244f18bf5cf5952502c530 HTTP/1.0
+PATCH /api/2.5/tenders/f79202ed72aa4df58b23e22a833948e3/bids/92d3348340fa46f8b031aeec7990dba0?acc_token=7323f33b01b1498fb5b7e027b06a6686 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 124
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
     "status": "pending", 
     "lotValues": [
       {
-        "relatedLot": "d7e3888f747f4927a519c996c72eb677", 
+        "relatedLot": "9c681dd3701140aeb8c6d83ae1a31e38", 
         "value": {
           "amount": 500
         }
@@ -26,8 +26,8 @@ Content-Type: application/json; charset=UTF-8
     "selfEligible": true, 
     "lotValues": [
       {
-        "relatedLot": "d7e3888f747f4927a519c996c72eb677", 
-        "date": "2019-03-28T06:49:58.862970+02:00", 
+        "relatedLot": "9c681dd3701140aeb8c6d83ae1a31e38", 
+        "date": "2019-01-01T00:00:00+02:00", 
         "status": "pending", 
         "value": {
           "currency": "UAH", 
@@ -59,8 +59,8 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "date": "2019-03-28T06:49:58.862530+02:00", 
-    "id": "3e97dabd5f824c34b5dc05642eb4409a"
+    "date": "2019-01-01T00:00:00+02:00", 
+    "id": "92d3348340fa46f8b031aeec7990dba0"
   }
 }
 

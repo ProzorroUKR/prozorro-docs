@@ -1,14 +1,12 @@
-POST /api/2.5/tenders/4bdc8f70ca4d45b0956ab3afbadcc50c/complaints HTTP/1.0
+POST /api/2.5/tenders/40c17dbea3ba43fab389cc55c80183fc/complaints HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 794
+Content-Length: 1317
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "status": "claim", 
-    "title": "complaint title", 
-    "description": "complaint description", 
     "author": {
       "contactPoint": {
         "telephone": "+380 (432) 21-69-30", 
@@ -28,23 +26,23 @@ Host: api-sandbox.openprocurement.org
         "streetAddress": "вул. Островського, 33", 
         "locality": "м. Вінниця"
       }
-    }
+    }, 
+    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+    "title": "Недостатньо інформації"
   }
 }
 
-
-201 Created
+Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/4bdc8f70ca4d45b0956ab3afbadcc50c/complaints/56ce9df9b54e4463b7c4c8dea121e8ff
-
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/40c17dbea3ba43fab389cc55c80183fc/complaints/73fa83a6a70f4ff2941206ae4d8655c7
 {
   "access": {
-    "token": "7c7ca39f09474b7284cccdf6cec7783f"
+    "token": "0bea39b4e3a74fa69162e6b82ca7f8fb"
   }, 
   "data": {
     "status": "claim", 
-    "description": "complaint description", 
-    "title": "complaint title", 
+    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+    "title": "Недостатньо інформації", 
     "author": {
       "contactPoint": {
         "email": "soleksuk@gmail.com", 
@@ -65,11 +63,11 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/4bdc8f70ca4d45b
         "locality": "м. Вінниця"
       }
     }, 
-    "dateSubmitted": "2019-03-28T06:47:13.523743+02:00", 
-    "complaintID": "UA-2019-03-28-000001.2", 
-    "date": "2019-03-28T06:47:13.523721+02:00", 
+    "dateSubmitted": "2019-01-01T00:00:00+02:00", 
+    "complaintID": "UA-2019-01-01-000001.2", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "type": "claim", 
-    "id": "56ce9df9b54e4463b7c4c8dea121e8ff"
+    "id": "73fa83a6a70f4ff2941206ae4d8655c7"
   }
 }
 

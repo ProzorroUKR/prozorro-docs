@@ -1,15 +1,15 @@
-POST /api/2.5/tenders/73c2c3f9cc6349f0a144ed40c9e3dfa7/bids HTTP/1.0
+POST /api/2.5/tenders/ee151acde21d47749df3a412b1b1c5b9/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 1556
+Content-Length: 1546
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
     "selfEligible": true, 
     "documents": [
       {
-        "url": "http://public.docs-sandbox.openprocurement.org/get/7750b0e90ed342378ae26103293031b3?KeyID=17aaf97f&Signature=4LKc2LD1qPA4%2FaaA7eMQlO3y0ZyPjybKsgLu6%2FoMIPGgz1J8hZw4ugYn3uKTvBKvtK3c33Aana9NrtHQzuKdCg%3D%3D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/86f643880c634e23956f6ea74cf7897a?KeyID=a8968c46&Signature=drcLDhBIr0ndVt0WEoIj7JPTdWpbEF97bwhXNUz1Ufhpoi9XHeRTxaeYXakz6qxSF7dSjv7hT83FX0PJd2gqDw%3D%3D", 
         "title": "Proposal_part1.pdf", 
         "hash": "md5:00000000000000000000000000000000", 
         "format": "application/pdf"
@@ -17,10 +17,10 @@ DATA:
       {
         "hash": "md5:00000000000000000000000000000000", 
         "confidentiality": "buyerOnly", 
-        "title": "Proposal_part2.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/8a7e8e9aae274486a596378eb7e8a9c2?KeyID=17aaf97f&Signature=97SVbRodu5SZaPscSdYqvGKWwCC2pN4acOrsMuuDvvwSL7yGua%2FLkmr3eHvP69hdjmv867JCrqV1hNCWYHJ6DQ%3D%3D", 
+        "format": "application/pdf", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/76ffbf5dbadb4734aea804372cc3aa8c?KeyID=a8968c46&Signature=anexused7m%2BoymHb39zEW67Lp%2FXMgJXWb1DKLuaLXzaEO2ytc37waAXG9vObe9pXopvMtKbXAI0GT6saGfzuAg%3D%3D", 
         "confidentialityRationale": "Only our company sells badgers with pink hair.", 
-        "format": "application/pdf"
+        "title": "Proposal_part2.pdf"
       }
     ], 
     "selfQualified": true, 
@@ -31,8 +31,8 @@ DATA:
       {
         "contactPoint": {
           "email": "fake@mail.com", 
-          "telephone": "+380 (322) 12-34-56", 
-          "name": "Іван Карпенко"
+          "name": "Іван Карпенко", 
+          "telephone": "+380 (322) 12-34-56"
         }, 
         "identifier": {
           "scheme": "UA-EDR", 
@@ -54,10 +54,10 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/73c2c3f9cc6349f0a144ed40c9e3dfa7/bids/1df69052c8004ed5ad6d80e969ed7b4c
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ee151acde21d47749df3a412b1b1c5b9/bids/c083b93126884fb490faca2f53a547bb
 {
   "access": {
-    "token": "fa0f5a6287d84c5e9ab0c0e4cbff8ed0"
+    "token": "2d0347734f754723a63e69ea4e351c3a"
   }, 
   "data": {
     "status": "pending", 
@@ -67,27 +67,27 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/73c2c3f9cc6349f
         "confidentiality": "public", 
         "language": "uk", 
         "title": "Proposal_part1.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/73c2c3f9cc6349f0a144ed40c9e3dfa7/bids/1df69052c8004ed5ad6d80e969ed7b4c/documents/1a18c763c52f4e9cba84abb8420906d9?download=7750b0e90ed342378ae26103293031b3", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ee151acde21d47749df3a412b1b1c5b9/bids/c083b93126884fb490faca2f53a547bb/documents/7ccbaa50b58e4986b57c8c5a9975107d?download=86f643880c634e23956f6ea74cf7897a", 
         "format": "application/pdf", 
         "isDescriptionDecision": false, 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:48:33.749154+02:00", 
-        "id": "1a18c763c52f4e9cba84abb8420906d9", 
-        "dateModified": "2019-03-28T06:48:33.749165+02:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "7ccbaa50b58e4986b57c8c5a9975107d", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
         "confidentiality": "buyerOnly", 
         "language": "uk", 
         "format": "application/pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/73c2c3f9cc6349f0a144ed40c9e3dfa7/bids/1df69052c8004ed5ad6d80e969ed7b4c/documents/b2d34029d52042be875dc38534caa719?download=8a7e8e9aae274486a596378eb7e8a9c2", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ee151acde21d47749df3a412b1b1c5b9/bids/c083b93126884fb490faca2f53a547bb/documents/c5dcf3d6ce584bb89bcc091f2f1a0378?download=76ffbf5dbadb4734aea804372cc3aa8c", 
         "confidentialityRationale": "Only our company sells badgers with pink hair.", 
         "title": "Proposal_part2.pdf", 
         "isDescriptionDecision": false, 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:48:33.749547+02:00", 
-        "id": "b2d34029d52042be875dc38534caa719", 
-        "dateModified": "2019-03-28T06:48:33.749558+02:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "c5dcf3d6ce584bb89bcc091f2f1a0378", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }
     ], 
     "selfEligible": true, 
@@ -114,8 +114,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/73c2c3f9cc6349f
         }
       }
     ], 
-    "date": "2019-03-28T06:48:33.748785+02:00", 
-    "id": "1df69052c8004ed5ad6d80e969ed7b4c"
+    "date": "2019-01-01T00:00:00+02:00", 
+    "id": "c083b93126884fb490faca2f53a547bb"
   }
 }
 

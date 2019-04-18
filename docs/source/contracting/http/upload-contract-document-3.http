@@ -1,20 +1,28 @@
-PUT /api/2.5/contracts/2da2605ce00540ab896900209a9d3bbd/documents/40f6eb43dce246119c2770fd97d1b410?acc_token=bb2d1340e85b4a33b1108c36928e6eed HTTP/1.0
+PUT /api/2.5/contracts/67b7dce91c0b47b18c266d187c2a132c/documents/13b692ddb20d4248a75928f63833f428?acc_token=bc3cb0a3a68149d982aa218bc75c15d2 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 224
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy143251664973$
-Host: api-sandbox.openprocurement.org
+Content-Length: 174
+Content-Type: multipart/form-data; boundary=BOUNDARY
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="contract_additional_docs.doc"
+Content-Type: application/msword
+
+extended additional info
+--BOUNDARY--
+
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
 {
   "data": {
     "title": "contract_additional_docs.doc", 
-    "url": "http://api-sandbox.openprocurement.org/api/2.5/contracts/2da2605ce00540ab896900209a9d3bbd/documents/40f6eb43dce246119c2770fd97d1b410?download=fec5bc652b184fcbb3f825a8f72b868e", 
+    "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/contracts/67b7dce91c0b47b18c266d187c2a132c/documents/13b692ddb20d4248a75928f63833f428?download=4fcf06a3ea1e4c259a80718cdca20393", 
     "format": "application/msword", 
     "documentOf": "contract", 
-    "datePublished": "2019-03-28T06:48:49.478631+02:00", 
-    "id": "40f6eb43dce246119c2770fd97d1b410", 
-    "dateModified": "2019-03-28T06:48:49.510346+02:00"
+    "datePublished": "2019-01-01T00:10:00+02:00", 
+    "id": "13b692ddb20d4248a75928f63833f428", 
+    "dateModified": "2019-01-01T00:10:00+02:00"
   }
 }
 

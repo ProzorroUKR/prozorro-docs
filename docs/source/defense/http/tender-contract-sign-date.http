@@ -1,12 +1,12 @@
-PATCH /api/2.5/tenders/dc07cf2d5fae45f88da7ef5b0917cd1f/contracts/6dac9cb6cddb45138684a31896d250ab?acc_token=41072074f75f4d3b9830f4c04d744a6d HTTP/1.0
+PATCH /api/2.5/tenders/24f6a0b9c9d24eb5887a9d6015b64218/contracts/f360042dbad34624b8944356e3b044ad?acc_token=b62db9cb6b1149fcb62b0e5276c5b724 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 60
+Content-Length: 53
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
-    "dateSigned": "2019-03-28T06:48:59.310560+02:00"
+    "dateSigned": "2019-01-01T00:10:00+02:00"
   }
 }
 
@@ -20,8 +20,8 @@ Content-Type: application/json; charset=UTF-8
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
-          "description": "Test", 
-          "id": "37810000-9"
+          "description": "Послуги з харчування у школах", 
+          "id": "55523100-3"
         }, 
         "additionalClassifications": [
           {
@@ -38,14 +38,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-17T06:47:08.227086+02:00", 
-          "endDate": "2019-05-17T06:47:08.227116+02:00"
+          "startDate": "2019-01-21T00:00:00+02:00", 
+          "endDate": "2019-02-20T00:00:00+02:00"
         }, 
-        "id": "bed8b4c1bf15429e9392a61a0b20eaa2", 
-        "unit": {
-          "code": "44617100-9", 
-          "name": "item"
-        }, 
+        "id": "b93e41624f46400d8930ca512f697c6b", 
         "quantity": 1.0
       }
     ], 
@@ -77,11 +73,11 @@ Content-Type: application/json; charset=UTF-8
       "amountNet": 230.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "dateSigned": "2019-03-28T06:48:59.310560+02:00", 
-    "date": "2019-03-28T06:48:59.083747+02:00", 
-    "awardID": "8338da56f6a04f2cb011333e0b7aac4b", 
-    "id": "6dac9cb6cddb45138684a31896d250ab", 
-    "contractID": "UA-2019-03-28-000001-1"
+    "dateSigned": "2019-01-01T00:10:00+02:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
+    "awardID": "ee708842066a41c8affaae60545cfb2c", 
+    "id": "f360042dbad34624b8944356e3b044ad", 
+    "contractID": "UA-2019-01-01-000001-1"
   }
 }
 

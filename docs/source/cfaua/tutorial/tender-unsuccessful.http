@@ -1,6 +1,6 @@
-GET /api/2.5/tenders/edf1ec35dd2442928d2473f51384621f HTTP/1.0
+GET /api/2.5/tenders/239ab2b4b65a46f8ac603eebcd77771c HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
@@ -9,18 +9,18 @@ Content-Type: application/json; charset=UTF-8
     "procurementMethod": "open", 
     "status": "unsuccessful", 
     "awardPeriod": {
-      "startDate": "2019-03-18T06:48:01.487904+02:00", 
-      "endDate": "2019-03-28T06:48:01.487904+02:00"
+      "startDate": "2018-12-22T00:00:00+02:00", 
+      "endDate": "2019-01-01T00:00:00+02:00"
     }, 
     "complaintPeriod": {
-      "startDate": "2019-02-04T06:48:01.487904+02:00", 
-      "endDate": "2019-03-03T00:00:00+02:00"
+      "startDate": "2018-11-10T00:00:00+02:00", 
+      "endDate": "2018-12-07T00:00:00+02:00"
     }, 
     "enquiryPeriod": {
-      "startDate": "2019-02-04T06:48:01.487904+02:00", 
-      "clarificationsUntil": "2019-02-28T06:48:01.487904+02:00", 
-      "endDate": "2019-02-25T06:48:01.487904+02:00", 
-      "invalidationDate": "2019-03-28T06:47:56.315671+02:00"
+      "startDate": "2018-11-10T00:00:00+02:00", 
+      "clarificationsUntil": "2018-12-06T00:00:00+02:00", 
+      "endDate": "2018-12-01T00:00:00+02:00", 
+      "invalidationDate": "2019-01-01T00:00:00+02:00"
     }, 
     "submissionMethod": "electronicAuction", 
     "procurementMethodType": "closeFrameworkAgreementUA", 
@@ -53,39 +53,38 @@ Content-Type: application/json; charset=UTF-8
         "description": "Просимо додати таблицю потрібної калорійності харчування", 
         "author": {
           "contactPoint": {
-            "email": "soleksuk@gmail.com", 
-            "telephone": "+380 (432) 21-69-30", 
-            "name": "Сергій Олексюк"
+            "email": "aagt@gmail.com", 
+            "telephone": "+380 (322) 91-69-30", 
+            "name": "Андрій Олексюк"
           }, 
           "identifier": {
             "scheme": "UA-EDR", 
-            "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
             "id": "00137226", 
-            "uri": "http://sch10.edu.vn.ua/"
+            "uri": "http://www.sc.gov.ua/"
           }, 
-          "name": "ДКП «Школяр»", 
+          "name": "ДКП «Книга»", 
           "address": {
-            "postalCode": "21100", 
+            "postalCode": "79013", 
             "countryName": "Україна", 
-            "streetAddress": "вул. Островського, 33", 
-            "region": "м. Вінниця", 
-            "locality": "м. Вінниця"
+            "streetAddress": "вул. Островського, 34", 
+            "region": "м. Львів", 
+            "locality": "м. Львів"
           }
         }, 
         "title": "Калорійність", 
-        "date": "2019-03-28T06:47:54.931946+02:00", 
+        "date": "2019-01-01T00:00:00+02:00", 
         "answer": "Таблицю додано в файлі \"Kalorijnist.xslx\"", 
-        "dateAnswered": "2019-03-28T06:47:54.981838+02:00", 
-        "id": "1365710159eb4beeaa96d6c91fff5d20", 
+        "dateAnswered": "2019-01-01T00:00:00+02:00", 
+        "id": "fe75f15177fc4676815395e14ff9c699", 
         "questionOf": "tender"
       }
     ], 
     "owner": "broker", 
-    "id": "edf1ec35dd2442928d2473f51384621f", 
+    "id": "239ab2b4b65a46f8ac603eebcd77771c", 
     "contractPeriod": {
-      "startDate": "2019-03-22T06:48:02.810677+02:00", 
-      "clarificationsUntil": "2019-03-27T06:48:02.810693+02:00", 
-      "endDate": "2019-03-28T06:48:04.284563+02:00"
+      "startDate": "2018-12-26T00:00:00+02:00", 
+      "clarificationsUntil": "2018-12-31T00:00:00+02:00", 
+      "endDate": "2019-01-01T00:10:00+02:00"
     }, 
     "documents": [
       {
@@ -93,36 +92,36 @@ Content-Type: application/json; charset=UTF-8
         "author": "tender_owner", 
         "language": "uk", 
         "title": "Notice.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/a59e85b620b247b1905c94936e891fc4?KeyID=3e304647&Signature=CNe4tk8%252BK9ckSte23EGMp2%252BxVlgarCucAjVg%2F5zpdIud%2FHmhdRiJNmKofh2z1VDXjjS3Ii7rYrIHzVoRI4%252BwAw%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/625c9edc30be4aa3acab470c93670fcd?KeyID=a8968c46&Signature=OZSKKisz1Ys04TuQN9jODI%2FjeDFEPi03ckPd7fJGgQ2eVZVjH8SvZfc2sbIIXfyU%252Bbd1eVsQc4nG8ouCooMVAw%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:47:54.755829+02:00", 
-        "id": "b1fde7d0b8a94f449971568152b9f129", 
-        "dateModified": "2019-03-28T06:47:54.755843+02:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "4e6fa5162eb147afb947f582bc3fa49b", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
         "author": "tender_owner", 
         "language": "uk", 
         "title": "AwardCriteria.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/b2319a2ab1874044b1d07ee56f89c222?KeyID=3e304647&Signature=i%2FTolsbrofI1bGJPPiOvUr82XFgYtEH1hoh7rdZLDJwyDdZxo1U51jGem8v%252BcH4f6TkbIpzIhQK3FbfTPCtgBA%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/1861716372954b42a0468782597cb9d3?KeyID=a8968c46&Signature=PWeg49bDvjE5QPGQod5KYk62C%2FDQdB4f2FvhK4K0Mn3P44OeSrQkSLACzaNnr0Pnb16lZK3r10vMgVwSysSkAQ%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:47:54.810506+02:00", 
-        "id": "07afd64e22a9480b801c516fb1f6c77d", 
-        "dateModified": "2019-03-28T06:47:54.810521+02:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "6ac2be61881f4b65a396cad52b8faf73", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
         "author": "tender_owner", 
         "language": "uk", 
         "title": "AwardCriteria-2.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/d4649506d3844a1aa75f2c9589fed54a?KeyID=3e304647&Signature=SJkScYSXaOAFu2giTZOIJ%252B4l65bMgFbAQU1aBxy0sHLpuiXRW5ZMH8B3vgD6Z%2FYfNBXRoTVDwraxSqAno0RUCA%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/a9d7f82659d747d790aaae6bb8a81e27?KeyID=a8968c46&Signature=f8UHsymuRS1CL%2Fr1jpaycVJqrTrGHKDZ49GFkfHFaZc4LiFdmuTsv5NWodN5xf%252BApbprhxRm7qV4uBiIgScMAw%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:47:54.810506+02:00", 
-        "id": "07afd64e22a9480b801c516fb1f6c77d", 
-        "dateModified": "2019-03-28T06:47:54.869658+02:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "6ac2be61881f4b65a396cad52b8faf73", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }
     ], 
     "title": "футляри до державних нагород", 
@@ -131,10 +130,10 @@ Content-Type: application/json; charset=UTF-8
         "status": "active", 
         "description": "Опис Лот №1", 
         "title": "Лот №1", 
-        "auctionUrl": "http://auction-sandbox.openprocurement.org/tenders/edf1ec35dd2442928d2473f51384621f_2e6f1f49c8894974a1c36e2b463b5b86", 
+        "auctionUrl": "http://auction-sandbox.prozorro.gov.ua/tenders/239ab2b4b65a46f8ac603eebcd77771c_474a13302d414c40b95a16f154cdd263", 
         "auctionPeriod": {
-          "startDate": "2019-03-17T06:48:01.487904+02:00", 
-          "endDate": "2019-03-18T06:48:01.487904+02:00"
+          "startDate": "2018-12-21T00:00:00+02:00", 
+          "endDate": "2018-12-22T00:00:00+02:00"
         }, 
         "value": {
           "currency": "UAH", 
@@ -146,8 +145,8 @@ Content-Type: application/json; charset=UTF-8
           "amount": 35.0, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2019-03-28T06:47:52.548924+02:00", 
-        "id": "2e6f1f49c8894974a1c36e2b463b5b86", 
+        "date": "2019-01-01T00:00:00+02:00", 
+        "id": "474a13302d414c40b95a16f154cdd263", 
         "guarantee": {
           "currency": "USD", 
           "amount": 8.0
@@ -155,47 +154,47 @@ Content-Type: application/json; charset=UTF-8
       }
     ], 
     "qualificationPeriod": {
-      "startDate": "2019-03-07T06:48:01.487904+02:00", 
-      "endDate": "2019-03-17T06:48:01.487904+02:00"
+      "startDate": "2018-12-11T00:00:00+02:00", 
+      "endDate": "2018-12-21T00:00:00+02:00"
     }, 
     "maxAwardsCount": 4, 
-    "tenderID": "UA-2019-03-28-000001", 
+    "tenderID": "UA-2019-01-01-000001", 
     "auctionPeriod": {
-      "startDate": "2019-03-17T06:48:01.487904+02:00", 
-      "endDate": "2019-03-18T06:48:01.487904+02:00"
+      "startDate": "2018-12-21T00:00:00+02:00", 
+      "endDate": "2018-12-22T00:00:00+02:00"
     }, 
     "guarantee": {
       "currency": "USD", 
       "amount": 8
     }, 
-    "dateModified": "2019-03-28T06:48:06.323143+02:00", 
+    "dateModified": "2019-01-01T00:10:00+02:00", 
     "agreements": [
       {
-        "agreementID": "UA-2019-03-28-000001-79ad41882a3344fab24c49132b70bcee1", 
+        "agreementID": "UA-2019-01-01-000001-ba302183716a4cf180d1de54c751f6641", 
         "status": "unsuccessful", 
         "documents": [
           {
             "hash": "md5:00000000000000000000000000000000", 
             "title": "agreement_first_document.doc", 
-            "url": "http://public.docs-sandbox.openprocurement.org/get/a0905eae2bdb4c648183976be1ec10a7?KeyID=3e304647&Signature=46y0YnejIWX3ITh76tu5iY133SAd3ZgI4DK8ANLlKiskh3b78Ma1DzdBwNPr%2FcLx5Bs6k56M%2FTLeWMmf2vfLCw%253D%253D", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/2e1d48da319d49a288fbd4a0a6d7fb0a?KeyID=a8968c46&Signature=qZyVtbFbEOonTYhCKUY3nSh1nlNCFGnOVwQRSqIc%252BHE1T5yjwMOiFk0C5QS8IxlHo30cO9G3EIRL2hyQkadQDg%253D%253D", 
             "format": "application/msword", 
             "documentOf": "tender", 
-            "datePublished": "2019-03-28T06:48:02.891424+02:00", 
-            "id": "a2ada34e0dc64831aea508482bb6d403", 
-            "dateModified": "2019-03-28T06:48:02.891441+02:00"
+            "datePublished": "2019-01-01T00:00:00+02:00", 
+            "id": "a47663b651dd40dcafe0635503763d84", 
+            "dateModified": "2019-01-01T00:00:00+02:00"
           }, 
           {
             "hash": "md5:00000000000000000000000000000000", 
             "language": "en", 
             "title": "agreement_second_document.doc", 
-            "url": "http://public.docs-sandbox.openprocurement.org/get/7e56f4c8c12e45b0bdb8533a48651c9e?KeyID=3e304647&Signature=SEKJ9ddjIaVMle1OtDuw8fhpxl9OpzJqti0M58yxRUpwLagyUqVnDICc6m%252BvK5THKQmsR4yDmwHEnbGdZuOODw%253D%253D", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/741d8b9e5e9f4f759e3059ef6f212962?KeyID=a8968c46&Signature=cgtOXU77MbLBfARuGq8V7MbCW79Z98kh3VKYbuU81KgIjoZSjvmBX6khW6vqBQeoFLfBBeN%2F8oflwD1OBW%2FKAg%253D%253D", 
             "format": "application/msword", 
             "title_en": "Title of Document", 
             "description_en": "Description of Document", 
-            "datePublished": "2019-03-28T06:48:03.230270+02:00", 
+            "datePublished": "2019-01-01T00:00:00+02:00", 
             "documentOf": "tender", 
-            "id": "f2dfd1e9d7794529ad5fe585ff2dec07", 
-            "dateModified": "2019-03-28T06:48:03.230292+02:00"
+            "id": "e64ca6d35eeb47a197ba09c7b691c6e3", 
+            "dateModified": "2019-01-01T00:00:00+02:00"
           }
         ], 
         "contracts": [
@@ -208,7 +207,7 @@ Content-Type: application/json; charset=UTF-8
                   "amount": 0.5, 
                   "valueAddedTaxIncluded": true
                 }, 
-                "relatedItem": "90759460567841e0aacf5d7c20c47baf"
+                "relatedItem": "a992fabdfbdb42ecbe35300382d3f565"
               }, 
               {
                 "value": {
@@ -216,7 +215,7 @@ Content-Type: application/json; charset=UTF-8
                   "amount": 0.5, 
                   "valueAddedTaxIncluded": true
                 }, 
-                "relatedItem": "2846075b9a7c45d7a6ba8384aabe5f37"
+                "relatedItem": "b576e7db35a04249b8b08cf468d36396"
               }
             ], 
             "suppliers": [
@@ -228,7 +227,7 @@ Content-Type: application/json; charset=UTF-8
                 }, 
                 "identifier": {
                   "scheme": "UA-EDR", 
-                  "id": "00137226", 
+                  "id": "00137227", 
                   "uri": "http://www.sc.gov.ua/"
                 }, 
                 "name": "«Снігур»", 
@@ -241,10 +240,10 @@ Content-Type: application/json; charset=UTF-8
                 }
               }
             ], 
-            "bidID": "5379199eb3c44e0f8fb7e7eda1b05954", 
-            "date": "2019-03-28T06:48:01.541592+02:00", 
-            "awardID": "4f6a5347ac7244e3be409468efb6a965", 
-            "id": "c792fe0836264a37b2154cd8f274adc9"
+            "bidID": "7ded07f482ac44dd815b1cd075d9b64c", 
+            "date": "2019-01-01T00:00:00+02:00", 
+            "awardID": "0edd79cfcea64eb3ad60dda8ab06399c", 
+            "id": "3089914a440f409eb830a3732c23dfe7"
           }, 
           {
             "status": "active", 
@@ -255,7 +254,7 @@ Content-Type: application/json; charset=UTF-8
                   "amount": 0.5, 
                   "valueAddedTaxIncluded": true
                 }, 
-                "relatedItem": "90759460567841e0aacf5d7c20c47baf"
+                "relatedItem": "a992fabdfbdb42ecbe35300382d3f565"
               }, 
               {
                 "value": {
@@ -263,7 +262,7 @@ Content-Type: application/json; charset=UTF-8
                   "amount": 0.5, 
                   "valueAddedTaxIncluded": true
                 }, 
-                "relatedItem": "2846075b9a7c45d7a6ba8384aabe5f37"
+                "relatedItem": "b576e7db35a04249b8b08cf468d36396"
               }
             ], 
             "suppliers": [
@@ -288,10 +287,10 @@ Content-Type: application/json; charset=UTF-8
                 }
               }
             ], 
-            "bidID": "936c5038211d4c6497ae90396d86e8ba", 
-            "date": "2019-03-28T06:48:01.541633+02:00", 
-            "awardID": "45d20288ceaa4ec39a08bbac22ecac72", 
-            "id": "991298c9a3a34e3fba58128666538fb1"
+            "bidID": "a21960990261432faab44db6275676d5", 
+            "date": "2019-01-01T00:00:00+02:00", 
+            "awardID": "c6dd7a24cf5b40f9836b62a2423474f7", 
+            "id": "117e4784329b41a28bbfa8680316ccf6"
           }, 
           {
             "status": "active", 
@@ -302,7 +301,7 @@ Content-Type: application/json; charset=UTF-8
                   "amount": 0.5, 
                   "valueAddedTaxIncluded": true
                 }, 
-                "relatedItem": "90759460567841e0aacf5d7c20c47baf"
+                "relatedItem": "a992fabdfbdb42ecbe35300382d3f565"
               }, 
               {
                 "value": {
@@ -310,7 +309,7 @@ Content-Type: application/json; charset=UTF-8
                   "amount": 0.5, 
                   "valueAddedTaxIncluded": true
                 }, 
-                "relatedItem": "2846075b9a7c45d7a6ba8384aabe5f37"
+                "relatedItem": "b576e7db35a04249b8b08cf468d36396"
               }
             ], 
             "suppliers": [
@@ -335,15 +334,15 @@ Content-Type: application/json; charset=UTF-8
                 }
               }
             ], 
-            "bidID": "b4589ca9eb684602b65a37e136f22c04", 
-            "date": "2019-03-28T06:48:01.541665+02:00", 
-            "awardID": "8328c443e83c49f6b0cf6c1597da0f10", 
-            "id": "05a0c07f90fc4198a54c85d4265deb40"
+            "bidID": "5b1584c69800457d9ea9df290ddb42ae", 
+            "date": "2019-01-01T00:00:00+02:00", 
+            "awardID": "ef1965ec0f204a36a50614bd7a1597bb", 
+            "id": "a4532aaf90714886a53d52db8f4a08c7"
           }
         ], 
         "items": [
           {
-            "relatedLot": "2e6f1f49c8894974a1c36e2b463b5b86", 
+            "relatedLot": "474a13302d414c40b95a16f154cdd263", 
             "description": "футляри до державних нагород", 
             "classification": {
               "scheme": "ДК021", 
@@ -369,7 +368,7 @@ Content-Type: application/json; charset=UTF-8
               "startDate": "2018-06-27T13:39:09.362837+03:00", 
               "endDate": "2018-06-30T13:39:09.362837+03:00"
             }, 
-            "id": "90759460567841e0aacf5d7c20c47baf", 
+            "id": "a992fabdfbdb42ecbe35300382d3f565", 
             "unit": {
               "code": "44617100-9", 
               "name": "item"
@@ -377,7 +376,7 @@ Content-Type: application/json; charset=UTF-8
             "quantity": 5.0
           }, 
           {
-            "relatedLot": "2e6f1f49c8894974a1c36e2b463b5b86", 
+            "relatedLot": "474a13302d414c40b95a16f154cdd263", 
             "description": "футляри до державних нагород", 
             "classification": {
               "scheme": "ДК021", 
@@ -403,7 +402,7 @@ Content-Type: application/json; charset=UTF-8
               "startDate": "2018-06-27T13:39:09.362837+03:00", 
               "endDate": "2018-06-30T13:39:09.362837+03:00"
             }, 
-            "id": "2846075b9a7c45d7a6ba8384aabe5f37", 
+            "id": "b576e7db35a04249b8b08cf468d36396", 
             "unit": {
               "code": "44617100-8", 
               "name": "item"
@@ -412,55 +411,55 @@ Content-Type: application/json; charset=UTF-8
           }
         ], 
         "period": {
-          "startDate": "2019-03-28T06:47:07.292012+02:00", 
-          "endDate": "2023-03-27T06:47:07.292012+02:00"
+          "startDate": "2019-01-01T00:10:00+02:00", 
+          "endDate": "2022-12-31T00:10:00+02:00"
         }, 
-        "dateSigned": "2019-03-28T06:48:03.845271+02:00", 
-        "date": "2019-03-28T06:48:06.323143+02:00", 
-        "id": "b75fa2d9a34149bb92d0434eb71b7968"
+        "dateSigned": "2019-01-01T00:10:00+02:00", 
+        "date": "2019-01-01T00:10:00+02:00", 
+        "id": "537065690fe34d19895c085d0e4aabb1"
       }
     ], 
     "numberOfBids": 0, 
     "tenderPeriod": {
-      "startDate": "2019-02-04T06:48:01.487904+02:00", 
-      "endDate": "2019-03-07T06:48:01.487904+02:00"
+      "startDate": "2018-11-10T00:00:00+02:00", 
+      "endDate": "2018-12-11T00:00:00+02:00"
     }, 
     "qualifications": [
       {
         "status": "active", 
-        "lotID": "2e6f1f49c8894974a1c36e2b463b5b86", 
+        "lotID": "474a13302d414c40b95a16f154cdd263", 
         "eligible": true, 
         "qualified": true, 
-        "bidID": "b4589ca9eb684602b65a37e136f22c04", 
-        "date": "2019-03-28T06:47:57.459028+02:00", 
-        "id": "189a0adc5a0c4c78a9fbac43f6b28b55"
+        "bidID": "5b1584c69800457d9ea9df290ddb42ae", 
+        "date": "2019-01-01T00:00:00+02:00", 
+        "id": "a3863dc755ff49ba9dfeb387cda380c9"
       }, 
       {
         "status": "active", 
-        "lotID": "2e6f1f49c8894974a1c36e2b463b5b86", 
+        "lotID": "474a13302d414c40b95a16f154cdd263", 
         "eligible": true, 
         "qualified": true, 
-        "bidID": "936c5038211d4c6497ae90396d86e8ba", 
-        "date": "2019-03-28T06:47:57.624776+02:00", 
-        "id": "4de343ffb1004662be9ebe38bed59b1f"
+        "bidID": "a21960990261432faab44db6275676d5", 
+        "date": "2019-01-01T00:00:00+02:00", 
+        "id": "06512832799f439d800972c71ad7a507"
       }, 
       {
         "status": "unsuccessful", 
-        "lotID": "2e6f1f49c8894974a1c36e2b463b5b86", 
+        "lotID": "474a13302d414c40b95a16f154cdd263", 
         "eligible": false, 
         "qualified": false, 
-        "bidID": "d509f3ed16464292bf24999ff36f51f6", 
-        "date": "2019-03-28T06:47:57.953833+02:00", 
-        "id": "78dcd292ecce421eb14a26c6caa3c4ce"
+        "bidID": "7dad4f355e2b4bb1b757c38127de7628", 
+        "date": "2019-01-01T00:00:00+02:00", 
+        "id": "426732aec3a4412396240e931f2ddd5f"
       }, 
       {
         "status": "active", 
-        "lotID": "2e6f1f49c8894974a1c36e2b463b5b86", 
+        "lotID": "474a13302d414c40b95a16f154cdd263", 
         "eligible": true, 
         "qualified": true, 
-        "bidID": "5379199eb3c44e0f8fb7e7eda1b05954", 
-        "date": "2019-03-28T06:47:57.765533+02:00", 
-        "id": "b00101cb28bb49fe94f78c08528db66e"
+        "bidID": "7ded07f482ac44dd815b1cd075d9b64c", 
+        "date": "2019-01-01T00:00:00+02:00", 
+        "id": "dd52d961a4ab42d6a4f91f1391d048c7"
       }
     ], 
     "title_en": "Cases for state awards", 
@@ -468,7 +467,7 @@ Content-Type: application/json; charset=UTF-8
     "awards": [
       {
         "status": "cancelled", 
-        "lotID": "2e6f1f49c8894974a1c36e2b463b5b86", 
+        "lotID": "474a13302d414c40b95a16f154cdd263", 
         "eligible": true, 
         "suppliers": [
           {
@@ -479,7 +478,7 @@ Content-Type: application/json; charset=UTF-8
             }, 
             "identifier": {
               "scheme": "UA-EDR", 
-              "id": "00137226", 
+              "id": "00137227", 
               "uri": "http://www.sc.gov.ua/"
             }, 
             "name": "«Снігур»", 
@@ -492,19 +491,19 @@ Content-Type: application/json; charset=UTF-8
             }
           }
         ], 
-        "bid_id": "5379199eb3c44e0f8fb7e7eda1b05954", 
+        "bid_id": "7ded07f482ac44dd815b1cd075d9b64c", 
         "value": {
           "currency": "UAH", 
           "amount": 5, 
           "valueAddedTaxIncluded": true
         }, 
         "qualified": true, 
-        "date": "2019-03-28T06:48:00.259555+02:00", 
-        "id": "b8dfa0c1f7ff4ec5b2f0a93b219000b5"
+        "date": "2019-01-01T00:00:00+02:00", 
+        "id": "f107c76b71284b6b94d4097f30494ee4"
       }, 
       {
         "status": "cancelled", 
-        "lotID": "2e6f1f49c8894974a1c36e2b463b5b86", 
+        "lotID": "474a13302d414c40b95a16f154cdd263", 
         "eligible": true, 
         "suppliers": [
           {
@@ -528,19 +527,19 @@ Content-Type: application/json; charset=UTF-8
             }
           }
         ], 
-        "bid_id": "936c5038211d4c6497ae90396d86e8ba", 
+        "bid_id": "a21960990261432faab44db6275676d5", 
         "value": {
           "currency": "UAH", 
           "amount": 499, 
           "valueAddedTaxIncluded": true
         }, 
         "qualified": true, 
-        "date": "2019-03-28T06:48:00.662808+02:00", 
-        "id": "150e3d220d05477e963e4928ac5dd686"
+        "date": "2019-01-01T00:00:00+02:00", 
+        "id": "ba2c57b037454f62956021bff5c2a204"
       }, 
       {
         "status": "cancelled", 
-        "lotID": "2e6f1f49c8894974a1c36e2b463b5b86", 
+        "lotID": "474a13302d414c40b95a16f154cdd263", 
         "eligible": true, 
         "suppliers": [
           {
@@ -564,19 +563,19 @@ Content-Type: application/json; charset=UTF-8
             }
           }
         ], 
-        "bid_id": "b4589ca9eb684602b65a37e136f22c04", 
+        "bid_id": "5b1584c69800457d9ea9df290ddb42ae", 
         "value": {
           "currency": "UAH", 
           "amount": 500.0, 
           "valueAddedTaxIncluded": true
         }, 
         "qualified": true, 
-        "date": "2019-03-28T06:48:00.662808+02:00", 
-        "id": "61330582ce514f9cb7f8b217decbdcd0"
+        "date": "2019-01-01T00:00:00+02:00", 
+        "id": "1ec0adc174c54bc1b78d78c818043da9"
       }, 
       {
         "status": "cancelled", 
-        "lotID": "2e6f1f49c8894974a1c36e2b463b5b86", 
+        "lotID": "474a13302d414c40b95a16f154cdd263", 
         "suppliers": [
           {
             "contactPoint": {
@@ -586,7 +585,7 @@ Content-Type: application/json; charset=UTF-8
             }, 
             "identifier": {
               "scheme": "UA-EDR", 
-              "id": "00137226", 
+              "id": "00137227", 
               "uri": "http://www.sc.gov.ua/"
             }, 
             "name": "«Снігур»", 
@@ -599,18 +598,18 @@ Content-Type: application/json; charset=UTF-8
             }
           }
         ], 
-        "bid_id": "5379199eb3c44e0f8fb7e7eda1b05954", 
+        "bid_id": "7ded07f482ac44dd815b1cd075d9b64c", 
         "value": {
           "currency": "UAH", 
           "amount": 5, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2019-03-28T06:48:00.662808+02:00", 
-        "id": "91fd7eb3dded43caad41a5c196cb0dfa"
+        "date": "2019-01-01T00:00:00+02:00", 
+        "id": "e2eecb06d50e416bb97cea7894989977"
       }, 
       {
         "status": "active", 
-        "lotID": "2e6f1f49c8894974a1c36e2b463b5b86", 
+        "lotID": "474a13302d414c40b95a16f154cdd263", 
         "eligible": true, 
         "suppliers": [
           {
@@ -621,7 +620,7 @@ Content-Type: application/json; charset=UTF-8
             }, 
             "identifier": {
               "scheme": "UA-EDR", 
-              "id": "00137226", 
+              "id": "00137227", 
               "uri": "http://www.sc.gov.ua/"
             }, 
             "name": "«Снігур»", 
@@ -635,22 +634,22 @@ Content-Type: application/json; charset=UTF-8
           }
         ], 
         "complaintPeriod": {
-          "startDate": "2019-03-18T06:48:01.487904+02:00", 
-          "endDate": "2019-03-28T06:48:01.487904+02:00"
+          "startDate": "2018-12-22T00:00:00+02:00", 
+          "endDate": "2019-01-01T00:00:00+02:00"
         }, 
-        "bid_id": "5379199eb3c44e0f8fb7e7eda1b05954", 
+        "bid_id": "7ded07f482ac44dd815b1cd075d9b64c", 
         "value": {
           "currency": "UAH", 
           "amount": 5, 
           "valueAddedTaxIncluded": true
         }, 
         "qualified": true, 
-        "date": "2019-03-28T06:48:00.933176+02:00", 
-        "id": "4f6a5347ac7244e3be409468efb6a965"
+        "date": "2019-01-01T00:00:00+02:00", 
+        "id": "0edd79cfcea64eb3ad60dda8ab06399c"
       }, 
       {
         "status": "active", 
-        "lotID": "2e6f1f49c8894974a1c36e2b463b5b86", 
+        "lotID": "474a13302d414c40b95a16f154cdd263", 
         "eligible": true, 
         "suppliers": [
           {
@@ -675,22 +674,22 @@ Content-Type: application/json; charset=UTF-8
           }
         ], 
         "complaintPeriod": {
-          "startDate": "2019-03-18T06:48:01.487904+02:00", 
-          "endDate": "2019-03-28T06:48:01.487904+02:00"
+          "startDate": "2018-12-22T00:00:00+02:00", 
+          "endDate": "2019-01-01T00:00:00+02:00"
         }, 
-        "bid_id": "936c5038211d4c6497ae90396d86e8ba", 
+        "bid_id": "a21960990261432faab44db6275676d5", 
         "value": {
           "currency": "UAH", 
           "amount": 499, 
           "valueAddedTaxIncluded": true
         }, 
         "qualified": true, 
-        "date": "2019-03-28T06:48:01.206261+02:00", 
-        "id": "45d20288ceaa4ec39a08bbac22ecac72"
+        "date": "2019-01-01T00:00:00+02:00", 
+        "id": "c6dd7a24cf5b40f9836b62a2423474f7"
       }, 
       {
         "status": "active", 
-        "lotID": "2e6f1f49c8894974a1c36e2b463b5b86", 
+        "lotID": "474a13302d414c40b95a16f154cdd263", 
         "eligible": true, 
         "suppliers": [
           {
@@ -715,21 +714,21 @@ Content-Type: application/json; charset=UTF-8
           }
         ], 
         "complaintPeriod": {
-          "startDate": "2019-03-18T06:48:01.487904+02:00", 
-          "endDate": "2019-03-28T06:48:01.487904+02:00"
+          "startDate": "2018-12-22T00:00:00+02:00", 
+          "endDate": "2019-01-01T00:00:00+02:00"
         }, 
-        "bid_id": "b4589ca9eb684602b65a37e136f22c04", 
+        "bid_id": "5b1584c69800457d9ea9df290ddb42ae", 
         "value": {
           "currency": "UAH", 
           "amount": 500.0, 
           "valueAddedTaxIncluded": true
         }, 
         "qualified": true, 
-        "date": "2019-03-28T06:48:01.395693+02:00", 
-        "id": "8328c443e83c49f6b0cf6c1597da0f10"
+        "date": "2019-01-01T00:00:00+02:00", 
+        "id": "ef1965ec0f204a36a50614bd7a1597bb"
       }
     ], 
-    "date": "2019-03-28T06:48:06.323143+02:00", 
+    "date": "2019-01-01T00:10:00+02:00", 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35, 
@@ -737,7 +736,7 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "items": [
       {
-        "relatedLot": "2e6f1f49c8894974a1c36e2b463b5b86", 
+        "relatedLot": "474a13302d414c40b95a16f154cdd263", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -763,7 +762,7 @@ Content-Type: application/json; charset=UTF-8
           "startDate": "2018-06-27T13:39:09.362837+03:00", 
           "endDate": "2018-06-30T13:39:09.362837+03:00"
         }, 
-        "id": "90759460567841e0aacf5d7c20c47baf", 
+        "id": "a992fabdfbdb42ecbe35300382d3f565", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -771,7 +770,7 @@ Content-Type: application/json; charset=UTF-8
         "quantity": 5.0
       }, 
       {
-        "relatedLot": "2e6f1f49c8894974a1c36e2b463b5b86", 
+        "relatedLot": "474a13302d414c40b95a16f154cdd263", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -797,7 +796,7 @@ Content-Type: application/json; charset=UTF-8
           "startDate": "2018-06-27T13:39:09.362837+03:00", 
           "endDate": "2018-06-30T13:39:09.362837+03:00"
         }, 
-        "id": "2846075b9a7c45d7a6ba8384aabe5f37", 
+        "id": "b576e7db35a04249b8b08cf468d36396", 
         "unit": {
           "code": "44617100-8", 
           "name": "item"

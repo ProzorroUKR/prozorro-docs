@@ -1,9 +1,9 @@
-POST /api/2.5/tenders/4e72a84032424e519ab51eb3c1c98dbf/bids HTTP/1.0
+POST /api/2.5/tenders/e370d1ede4574bb8aebd9cd6976fd5f8/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 757
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "status": "draft", 
@@ -13,9 +13,9 @@ Host: api-sandbox.openprocurement.org
     "tenderers": [
       {
         "contactPoint": {
+          "email": "soleksuk@gmail.com", 
           "telephone": "+380 (432) 21-69-30", 
-          "name": "Сергій Олексюк", 
-          "email": "soleksuk@gmail.com"
+          "name": "Сергій Олексюк"
         }, 
         "identifier": {
           "scheme": "UA-EDR", 
@@ -35,19 +35,17 @@ Host: api-sandbox.openprocurement.org
   }
 }
 
-
-201 Created
+Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/4e72a84032424e519ab51eb3c1c98dbf/bids/6b3eaa17b606452295b9e16491945b06
-
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e370d1ede4574bb8aebd9cd6976fd5f8/bids/52449e36dab845f9be9b0c127d838af9
 {
   "access": {
-    "token": "8c5782260d814d9391abc9ac7e42c667"
+    "token": "91dcc75d681d451ab8f2d1c1a9ab82a0"
   }, 
   "data": {
-    "date": "2019-03-28T06:47:20.548215+02:00", 
+    "date": "2019-01-01T00:10:00+02:00", 
     "status": "draft", 
-    "id": "6b3eaa17b606452295b9e16491945b06", 
+    "id": "52449e36dab845f9be9b0c127d838af9", 
     "value": {
       "currency": "UAH", 
       "amount": 500.0, 

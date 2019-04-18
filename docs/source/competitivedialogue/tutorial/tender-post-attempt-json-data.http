@@ -1,13 +1,13 @@
 POST /api/2.5/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 3782
+Content-Length: 3747
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
     "tenderPeriod": {
-      "endDate": "2019-04-28T06:47:07.975726+02:00"
+      "endDate": "2019-02-01T00:00:00+02:00"
     }, 
     "title": "Послуги шкільних їдалень", 
     "minimalStep": {
@@ -38,8 +38,8 @@ DATA:
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-17T06:47:07.975510+02:00", 
-          "endDate": "2019-05-17T06:47:07.975543+02:00"
+          "startDate": "2019-01-21T00:00:00+02:00", 
+          "endDate": "2019-02-20T00:00:00+02:00"
         }, 
         "unit": {
           "code": "44617100-9", 
@@ -70,8 +70,8 @@ DATA:
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-17T06:47:07.975557+02:00", 
-          "endDate": "2019-05-17T06:47:07.975571+02:00"
+          "startDate": "2019-01-21T00:00:00+02:00", 
+          "endDate": "2019-02-20T00:00:00+02:00"
         }, 
         "unit": {
           "code": "44617100-9", 
@@ -116,18 +116,18 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/73c2c3f9cc6349f0a144ed40c9e3dfa7
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ee151acde21d47749df3a412b1b1c5b9
 {
   "access": {
-    "token": "62a4f7692eab4a6cbb0af2c34f9dd6c0"
+    "token": "57e796bd207d4695964c4d14060285c7"
   }, 
   "data": {
     "procurementMethod": "open", 
     "status": "active.tendering", 
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
-      "startDate": "2019-03-28T06:48:31.968946+02:00", 
-      "endDate": "2019-04-28T06:47:07.975726+02:00"
+      "startDate": "2019-01-01T00:00:00+02:00", 
+      "endDate": "2019-02-01T00:00:00+02:00"
     }, 
     "title": "Послуги шкільних їдалень", 
     "minimalStep": {
@@ -136,13 +136,13 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/73c2c3f9cc6349f
       "valueAddedTaxIncluded": true
     }, 
     "enquiryPeriod": {
-      "startDate": "2019-03-28T06:48:31.968946+02:00", 
-      "clarificationsUntil": "2019-04-23T06:47:07.975726+02:00", 
-      "endDate": "2019-04-18T06:47:07.975726+02:00"
+      "startDate": "2019-01-01T00:00:00+02:00", 
+      "clarificationsUntil": "2019-01-25T00:00:00+02:00", 
+      "endDate": "2019-01-22T00:00:00+02:00"
     }, 
     "complaintPeriod": {
-      "startDate": "2019-03-28T06:48:31.968946+02:00", 
-      "endDate": "2019-04-24T00:00:00+03:00"
+      "startDate": "2019-01-01T00:00:00+02:00", 
+      "endDate": "2019-01-28T00:00:00+02:00"
     }, 
     "title_en": "Services in school canteens", 
     "value": {
@@ -151,8 +151,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/73c2c3f9cc6349f
       "valueAddedTaxIncluded": true
     }, 
     "submissionMethod": "electronicAuction", 
-    "date": "2019-03-28T06:48:31.990273+02:00", 
-    "dateModified": "2019-03-28T06:48:31.993027+02:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
+    "dateModified": "2019-01-01T00:00:00+02:00", 
     "procurementMethodType": "competitiveDialogueEU", 
     "procuringEntity": {
       "kind": "general", 
@@ -203,10 +203,10 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/73c2c3f9cc6349f
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-17T06:47:07.975510+02:00", 
-          "endDate": "2019-05-17T06:47:07.975543+02:00"
+          "startDate": "2019-01-21T00:00:00+02:00", 
+          "endDate": "2019-02-20T00:00:00+02:00"
         }, 
-        "id": "7f6efd4a2f2949d783da759c660da3d3", 
+        "id": "cfca772490ab4292aee7ff0f0eab2390", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -236,10 +236,10 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/73c2c3f9cc6349f
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-17T06:47:07.975557+02:00", 
-          "endDate": "2019-05-17T06:47:07.975571+02:00"
+          "startDate": "2019-01-21T00:00:00+02:00", 
+          "endDate": "2019-02-20T00:00:00+02:00"
         }, 
-        "id": "a4dfa4eea6864907b12cc3484dd9cc26", 
+        "id": "4bba6ec5ee784aacb5997ea0d08e4a1a", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -248,9 +248,9 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/73c2c3f9cc6349f
       }
     ], 
     "owner": "broker", 
-    "next_check": "2019-04-28T07:47:07.975726+03:00", 
-    "id": "73c2c3f9cc6349f0a144ed40c9e3dfa7", 
-    "tenderID": "UA-2019-03-28-000001"
+    "next_check": "2019-02-01T00:00:00+02:00", 
+    "id": "ee151acde21d47749df3a412b1b1c5b9", 
+    "tenderID": "UA-2019-01-01-000001"
   }
 }
 

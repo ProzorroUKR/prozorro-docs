@@ -1,8 +1,8 @@
-PATCH /api/2.5/tenders/d607e84d7f9e4d9fa51271833ac12baa/complaints/124ebc8ef27a418a8a536c1f0cfc3f46?acc_token=6c4f51ae41134b6785a57a2f8cfba2d3 HTTP/1.0
+PATCH /api/2.5/tenders/48b14561c9f44d339fdf26f0d4cdb624/complaints/8963f92202204406ba37027dd8a8f1e2?acc_token=9e7f54f8cb04461c9e429faacce44e36 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 150
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -19,11 +19,11 @@ Content-Type: application/json; charset=UTF-8
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
     "title": "Недостатньо інформації", 
     "cancellationReason": "Умови виправлено", 
-    "dateCanceled": "2019-03-28T06:48:57.123961+02:00", 
-    "complaintID": "UA-2019-03-28-000001.7", 
-    "date": "2019-03-28T06:48:57.133200+02:00", 
+    "dateCanceled": "2019-01-01T00:00:00+02:00", 
+    "complaintID": "UA-2019-01-01-000001.7", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "type": "claim", 
-    "id": "124ebc8ef27a418a8a536c1f0cfc3f46"
+    "id": "8963f92202204406ba37027dd8a8f1e2"
   }
 }
 

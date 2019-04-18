@@ -1,19 +1,17 @@
-PATCH /api/2.5/tenders/55fbfef6773941a68153e7e877673499/awards/1556373a399945c8ae237b89365fcafa?acc_token=fd113ea31c4145b2a5790646a65a9099 HTTP/1.0
+PATCH /api/2.5/tenders/4cdd6b38d69c459284b31ab81cbea097/awards/b502e88ae8124d6fbb27b44565ceed27?acc_token=55a1ff7e4b9c4fec90bca39c8e96fbd7 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 36
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "status": "unsuccessful"
   }
 }
 
-
-403 Forbidden
+Response: 403 Forbidden
 Content-Type: application/json; charset=UTF-8
-
 {
   "status": "error", 
   "errors": [

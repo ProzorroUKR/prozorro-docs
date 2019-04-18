@@ -1,19 +1,21 @@
-POST /api/2.5/tenders/73c2c3f9cc6349f0a144ed40c9e3dfa7/bids HTTP/1.0
+POST /api/2.5/tenders/ee151acde21d47749df3a412b1b1c5b9/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 910
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
     "status": "draft", 
     "selfEligible": true, 
+    "subcontractingDetails": "ДКП «Орфей», Україна", 
+    "selfQualified": true, 
     "tenderers": [
       {
         "contactPoint": {
-          "telephone": "+380 (432) 21-69-30", 
+          "email": "soleksuk@gmail.com", 
           "name": "Сергій Олексюк", 
-          "email": "soleksuk@gmail.com"
+          "telephone": "+380 (432) 21-69-30"
         }, 
         "identifier": {
           "scheme": "UA-EDR", 
@@ -29,18 +31,16 @@ DATA:
           "locality": "м. Вінниця"
         }
       }
-    ], 
-    "selfQualified": true, 
-    "subcontractingDetails": "ДКП «Орфей», Україна"
+    ]
   }
 }
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/73c2c3f9cc6349f0a144ed40c9e3dfa7/bids/a61a2127708340aaad0bf11bb627eb15
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ee151acde21d47749df3a412b1b1c5b9/bids/597f8b71d8db469398b44e7a96cbafd8
 {
   "access": {
-    "token": "38cdbf00fd9948b5bfdda4a75cb9dfa0"
+    "token": "5f58f48da5674b2cb4f489a5e8240849"
   }, 
   "data": {
     "status": "draft", 
@@ -69,8 +69,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/73c2c3f9cc6349f
         }
       }
     ], 
-    "date": "2019-03-28T06:48:32.712212+02:00", 
-    "id": "a61a2127708340aaad0bf11bb627eb15"
+    "date": "2019-01-01T00:00:00+02:00", 
+    "id": "597f8b71d8db469398b44e7a96cbafd8"
   }
 }
 

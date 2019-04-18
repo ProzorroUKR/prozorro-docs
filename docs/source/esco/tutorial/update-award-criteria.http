@@ -1,8 +1,16 @@
-PUT /api/2.5/tenders/deb082b3f3004fc1b115e78ee2d59f6c/documents/eb29307d552448f1b6821f6e0ead091f?acc_token=88277d181c4c406caa00d3386e096304 HTTP/1.0
+PUT /api/2.5/tenders/19e26a9aabb84578920993b1d57f719d/documents/8e771b56e1604a3d9706c5683cebfc35?acc_token=dee9fca567cd400c87a7c52c22c6eaec HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 194
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy43152350104$
-Host: api-sandbox.openprocurement.org
+Content-Length: 146
+Content-Type: multipart/form-data; boundary=BOUNDARY
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="AwardCriteria-2.pdf"
+Content-Type: application/pdf
+
+content2
+--BOUNDARY--
+
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
@@ -12,12 +20,12 @@ Content-Type: application/json; charset=UTF-8
     "author": "tender_owner", 
     "language": "uk", 
     "title": "AwardCriteria-2.pdf", 
-    "url": "http://public.docs-sandbox.openprocurement.org/get/18fc17d10d314f1389535f6daeaa9417?KeyID=4f21d124&Signature=fZ2I8KXsEGLP6y%2FLFv4Y2LFLIHGlhi3nm3SFwo%2FI%2Fe5v06grriLpW0T2oCT5ny3POBCnIG%2FMAhOYwWfqEqr5BA%253D%253D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/7ee8a737945c49cd9cafbc3435eae6cf?KeyID=a8968c46&Signature=bgZd14APIWUucu3ooM%2FN%2FiTf4bkKe7bv5WDqESj5etAjJz7peflxgag8KBu5ZYrq2ikKbzJQ3mJNxYXsMM7wBA%253D%253D", 
     "format": "application/pdf", 
     "documentOf": "tender", 
-    "datePublished": "2019-03-28T06:49:12.309112+02:00", 
-    "id": "eb29307d552448f1b6821f6e0ead091f", 
-    "dateModified": "2019-03-28T06:49:12.359674+02:00"
+    "datePublished": "2019-01-01T00:00:00+02:00", 
+    "id": "8e771b56e1604a3d9706c5683cebfc35", 
+    "dateModified": "2019-01-01T00:00:00+02:00"
   }
 }
 

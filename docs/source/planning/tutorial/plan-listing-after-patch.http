@@ -1,18 +1,18 @@
 GET /api/2.5/plans HTTP/1.0
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
 {
   "next_page": {
-    "path": "/api/2.5/plans?offset=2019-03-28T06%3A50%3A16.200643%2B02%3A00", 
-    "uri": "http://api-sandbox.openprocurement.org/api/2.5/plans?offset=2019-03-28T06%3A50%3A16.200643%2B02%3A00", 
-    "offset": "2019-03-28T06:50:16.200643+02:00"
+    "path": "/api/2.5/plans?offset=2019-01-01T00%3A00%3A00%2B02%3A00", 
+    "uri": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/plans?offset=2019-01-01T00%3A00%3A00%2B02%3A00", 
+    "offset": "2019-01-01T00:00:00+02:00"
   }, 
   "data": [
     {
-      "id": "0394b1674398493f8c9aa592e829afa4", 
-      "dateModified": "2019-03-28T06:50:16.200643+02:00"
+      "id": "23a60932190b48b68d41d1880277e4ca", 
+      "dateModified": "2019-01-01T00:00:00+02:00"
     }
   ]
 }

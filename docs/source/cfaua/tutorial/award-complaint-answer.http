@@ -1,8 +1,8 @@
-PATCH /api/2.5/tenders/c2be6cc98391434da02ceb5260928191/awards/b3ea07978dfa4489a4143af66ef6d18b/complaints/454d0d1397744bafb129654345ad9617?acc_token=c174b49051b24691b44d996f70ab8558 HTTP/1.0
+PATCH /api/2.5/tenders/bcd53594a1a245cdbecf00f8aa09cc36/awards/06d30f82e6b94bdfa1580f01aadfd48b/complaints/d564217a8dbd431f92e41ad488cce638?acc_token=f1e04bcd7e4c45f186b6aa3a2cae6944 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 387
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -16,7 +16,7 @@ Response: 200 OK
 Content-Type: application/json; charset=UTF-8
 {
   "data": {
-    "relatedLot": "2e6f1f49c8894974a1c36e2b463b5b86", 
+    "relatedLot": "e805ca07bcfd4410a873ceff155e669f", 
     "status": "answered", 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
     "author": {
@@ -27,9 +27,8 @@ Content-Type: application/json; charset=UTF-8
       }, 
       "identifier": {
         "scheme": "UA-EDR", 
-        "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
-        "id": "13313462", 
-        "uri": "http://sch10.edu.vn.ua/"
+        "id": "00137256", 
+        "uri": "http://www.sc.gov.ua/"
       }, 
       "name": "ДКП «Школяр»", 
       "address": {
@@ -43,12 +42,12 @@ Content-Type: application/json; charset=UTF-8
     "resolutionType": "resolved", 
     "type": "claim", 
     "title": "Недостатньо інформації", 
-    "dateAnswered": "2019-03-28T06:47:44.633421+02:00", 
-    "dateSubmitted": "2019-03-28T06:47:44.498840+02:00", 
-    "complaintID": "UA-2019-03-28-000001.6", 
-    "date": "2019-03-28T06:47:44.642883+02:00", 
+    "dateAnswered": "2019-01-01T00:10:00+02:00", 
+    "dateSubmitted": "2019-01-01T00:10:00+02:00", 
+    "complaintID": "UA-2019-01-01-000001.6", 
+    "date": "2019-01-01T00:10:00+02:00", 
     "resolution": "Умови виправлено, вибір переможня буде розгянуто повторно", 
-    "id": "454d0d1397744bafb129654345ad9617"
+    "id": "d564217a8dbd431f92e41ad488cce638"
   }
 }
 

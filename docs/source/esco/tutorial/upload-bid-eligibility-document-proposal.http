@@ -1,24 +1,32 @@
-POST /api/2.5/tenders/deb082b3f3004fc1b115e78ee2d59f6c/bids/3102235c7cae41248ae4659fd476247d/eligibility_documents?acc_token=f8cd3fed91934b21ab29b1433d34fdd9 HTTP/1.0
+POST /api/2.5/tenders/19e26a9aabb84578920993b1d57f719d/bids/2f36b22a71644508b4c978b6736da64c/eligibility_documents?acc_token=fa8d19c30bf344fa90e1c35ea71a8391 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 193
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy43330131589$
-Host: api-sandbox.openprocurement.org
+Content-Length: 145
+Content-Type: multipart/form-data; boundary=BOUNDARY
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="eligibility_doc.pdf"
+Content-Type: application/pdf
+
+content
+--BOUNDARY--
+
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/deb082b3f3004fc1b115e78ee2d59f6c/bids/3102235c7cae41248ae4659fd476247d/eligibility_documents/98385f0a7e6142f49bc1919c40a31bbb
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/19e26a9aabb84578920993b1d57f719d/bids/2f36b22a71644508b4c978b6736da64c/eligibility_documents/991a06fb507a4575aa003a5d0cd1ec68
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "confidentiality": "public", 
     "language": "uk", 
     "title": "eligibility_doc.pdf", 
-    "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/deb082b3f3004fc1b115e78ee2d59f6c/bids/3102235c7cae41248ae4659fd476247d/eligibility_documents/98385f0a7e6142f49bc1919c40a31bbb?download=5ec9e88e85324070b8d72614a6520045", 
+    "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/19e26a9aabb84578920993b1d57f719d/bids/2f36b22a71644508b4c978b6736da64c/eligibility_documents/991a06fb507a4575aa003a5d0cd1ec68?download=bd4b4be8b90443ee9ce091c9023638da", 
     "format": "application/pdf", 
     "documentOf": "tender", 
-    "datePublished": "2019-03-28T06:49:13.589454+02:00", 
-    "id": "98385f0a7e6142f49bc1919c40a31bbb", 
-    "dateModified": "2019-03-28T06:49:13.589468+02:00"
+    "datePublished": "2019-01-01T00:00:00+02:00", 
+    "id": "991a06fb507a4575aa003a5d0cd1ec68", 
+    "dateModified": "2019-01-01T00:00:00+02:00"
   }
 }
 

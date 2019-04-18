@@ -1,24 +1,31 @@
-POST /api/2.5/tenders/c368f2394a83454fbd86a8f66c5c1ab4/contracts/9e1c59bb29544f2bbc357a7eb8a27276/documents?acc_token=1b2bc07c22ac43e5811e5b0916da46b7 HTTP/1.0
+POST /api/2.5/tenders/2933880765e44c6abd98096c6de321ed/contracts/ad41cf8ed41948ebad74a706fa12947a/documents?acc_token=437d8c5ad28e44c38d7e7394a20a507b HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 208
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy0683214660256$
-Host: api-sandbox.openprocurement.org
+Content-Length: 156
+Content-Type: multipart/form-data; boundary=BOUNDARY
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="contract_first_document.doc"
+Content-Type: application/msword
+
+content
+--BOUNDARY--
 
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/c368f2394a83454fbd86a8f66c5c1ab4/contracts/9e1c59bb29544f2bbc357a7eb8a27276/documents/0f58555a8971485bb96b6d685f94f780
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/2933880765e44c6abd98096c6de321ed/contracts/ad41cf8ed41948ebad74a706fa12947a/documents/83a7026f534c422dac89ee121dd1c0f4
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "language": "uk", 
     "title": "contract_first_document.doc", 
-    "url": "http://public.docs-sandbox.openprocurement.org/get/819a6839be9e4eaba2fb54ba1ac89d89?KeyID=2d509c5e&Signature=8pRPluvvEtrGgvgACjf277huEZ%2Fs4bY0PRx%2Fb9rTPPmg%2FXjVSsIukcBwzF0fz2iVyIRnBaXdBq89mo%252Bgd6S%252BAQ%253D%253D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/bec9569bc8c642be934837780ee0c96a?KeyID=a8968c46&Signature=kMz7zvkeLKLYPJEROgVNBkUUUsPPUQByGSDoTahTFWIMOrCHWlCdZtWy1ZeqW7msrx4kkkbdfN8xnizZTQBICw%253D%253D", 
     "format": "application/msword", 
     "documentOf": "tender", 
-    "datePublished": "2019-03-28T06:48:41.489125+02:00", 
-    "id": "0f58555a8971485bb96b6d685f94f780", 
-    "dateModified": "2019-03-28T06:48:41.489145+02:00"
+    "datePublished": "2019-01-01T00:10:00+02:00", 
+    "id": "83a7026f534c422dac89ee121dd1c0f4", 
+    "dateModified": "2019-01-01T00:10:00+02:00"
   }
 }
 

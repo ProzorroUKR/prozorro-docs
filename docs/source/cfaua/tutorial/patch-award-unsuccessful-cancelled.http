@@ -1,8 +1,8 @@
-PATCH /api/2.5/tenders/edf1ec35dd2442928d2473f51384621f/awards/91fd7eb3dded43caad41a5c196cb0dfa?acc_token=cbe41c0fba54453ea52434ea6c0e1867 HTTP/1.0
+PATCH /api/2.5/tenders/239ab2b4b65a46f8ac603eebcd77771c/awards/e2eecb06d50e416bb97cea7894989977?acc_token=4fedc6c367a94e00ac51cd25b92bb6f8 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 33
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -15,7 +15,7 @@ Content-Type: application/json; charset=UTF-8
 {
   "data": {
     "status": "cancelled", 
-    "lotID": "2e6f1f49c8894974a1c36e2b463b5b86", 
+    "lotID": "474a13302d414c40b95a16f154cdd263", 
     "suppliers": [
       {
         "contactPoint": {
@@ -25,7 +25,7 @@ Content-Type: application/json; charset=UTF-8
         }, 
         "identifier": {
           "scheme": "UA-EDR", 
-          "id": "00137226", 
+          "id": "00137227", 
           "uri": "http://www.sc.gov.ua/"
         }, 
         "name": "«Снігур»", 
@@ -38,14 +38,14 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "bid_id": "5379199eb3c44e0f8fb7e7eda1b05954", 
+    "bid_id": "7ded07f482ac44dd815b1cd075d9b64c", 
     "value": {
       "currency": "UAH", 
       "amount": 5, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2019-03-28T06:48:00.662808+02:00", 
-    "id": "91fd7eb3dded43caad41a5c196cb0dfa"
+    "date": "2019-01-01T00:00:00+02:00", 
+    "id": "e2eecb06d50e416bb97cea7894989977"
   }
 }
 

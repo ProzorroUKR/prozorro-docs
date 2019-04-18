@@ -1,18 +1,23 @@
-POST /api/2.5/tenders/425a24b7b03d49759b19d37ac7e51561/bids HTTP/1.0
+POST /api/2.5/tenders/92f0a69805904e71be9e717fad623af5/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 1055
+Content-Length: 917
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
     "selfEligible": true, 
+    "subcontractingDetails": "ДКП «Орфей», Україна", 
+    "selfQualified": true, 
+    "value": {
+      "amount": 500
+    }, 
     "tenderers": [
       {
         "contactPoint": {
-          "telephone": "+380 (432) 21-69-30", 
+          "email": "soleksuk@gmail.com", 
           "name": "Сергій Олексюк", 
-          "email": "soleksuk@gmail.com"
+          "telephone": "+380 (432) 21-69-30"
         }, 
         "identifier": {
           "scheme": "UA-EDR", 
@@ -28,32 +33,27 @@ DATA:
           "locality": "м. Вінниця"
         }
       }
-    ], 
-    "selfQualified": true, 
-    "value": {
-      "amount": 500
-    }, 
-    "subcontractingDetails": "ДКП «книга», Україна, м. Львів, вул. Островського, 33"
+    ]
   }
 }
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/425a24b7b03d49759b19d37ac7e51561/bids/e920831b310443b99f8440100aeba552
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/92f0a69805904e71be9e717fad623af5/bids/617fdbca97e74b8296fab753fe5b07cc
 {
   "access": {
-    "token": "a3b64949aab54bd39172890842f6f747"
+    "token": "e5166e3c97b445f1938b09b2d58fb1dc"
   }, 
   "data": {
     "status": "active", 
     "selfEligible": true, 
-    "id": "e920831b310443b99f8440100aeba552", 
+    "id": "617fdbca97e74b8296fab753fe5b07cc", 
     "value": {
       "currency": "UAH", 
       "amount": 500.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "subcontractingDetails": "ДКП «книга», Україна, м. Львів, вул. Островського, 33", 
+    "subcontractingDetails": "ДКП «Орфей», Україна", 
     "tenderers": [
       {
         "contactPoint": {
@@ -76,7 +76,7 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/425a24b7b03d497
         }
       }
     ], 
-    "date": "2019-03-28T06:50:13.853880+02:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "selfQualified": true
   }
 }

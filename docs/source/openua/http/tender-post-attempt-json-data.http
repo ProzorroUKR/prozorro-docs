@@ -1,13 +1,13 @@
 POST /api/2.5/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 2508
+Content-Length: 2589
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
     "tenderPeriod": {
-      "endDate": "2019-04-13T06:47:08.962475+02:00"
+      "endDate": "2019-01-17T00:00:00+02:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -19,8 +19,8 @@ DATA:
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
-          "id": "37810000-9", 
-          "description": "Test"
+          "description": "Послуги з харчування у школах", 
+          "id": "55523100-3"
         }, 
         "additionalClassifications": [
           {
@@ -37,12 +37,8 @@ DATA:
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-17T06:47:08.962424+02:00", 
-          "endDate": "2019-05-17T06:47:08.962464+02:00"
-        }, 
-        "unit": {
-          "code": "44617100-9", 
-          "name": "item"
+          "startDate": "2019-01-21T00:00:00+02:00", 
+          "endDate": "2019-02-20T00:00:00+02:00"
         }, 
         "quantity": 1
       }
@@ -64,32 +60,32 @@ DATA:
         "name": "Куца Світлана Валентинівна", 
         "telephone": "+380 (432) 46-53-02"
       }, 
+      "name": "ЗОСШ #10 м.Вінниці", 
       "address": {
         "countryName": "Україна", 
         "postalCode": "21027", 
         "region": "м. Вінниця", 
         "streetAddress": "вул. Стахурського. 22", 
         "locality": "м. Вінниця"
-      }, 
-      "name": "ЗОСШ #10 м.Вінниці"
+      }
     }
   }
 }
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/c785cc0ce1ed46cba8e6a60ac6c2b0a5
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/46f36ebf30f949e9b44383ae04d53fcb
 {
   "access": {
-    "token": "04847faf43ee40a68a071a9d56ff3408"
+    "token": "c8be43e774d64f26b6218c98c8810565"
   }, 
   "data": {
     "procurementMethod": "open", 
     "status": "active.tendering", 
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
-      "startDate": "2019-03-28T06:50:15.705078+02:00", 
-      "endDate": "2019-04-13T06:47:08.962475+02:00"
+      "startDate": "2019-01-01T00:10:00+02:00", 
+      "endDate": "2019-01-17T00:00:00+02:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -98,13 +94,13 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/c785cc0ce1ed46c
       "valueAddedTaxIncluded": true
     }, 
     "enquiryPeriod": {
-      "startDate": "2019-03-28T06:50:15.705078+02:00", 
-      "clarificationsUntil": "2019-04-08T06:47:08.962475+02:00", 
-      "endDate": "2019-04-03T06:47:08.962475+02:00"
+      "startDate": "2019-01-01T00:10:00+02:00", 
+      "clarificationsUntil": "2019-01-14T00:00:00+02:00", 
+      "endDate": "2019-01-07T00:00:00+02:00"
     }, 
     "complaintPeriod": {
-      "startDate": "2019-03-28T06:50:15.705078+02:00", 
-      "endDate": "2019-04-09T00:00:00+03:00"
+      "startDate": "2019-01-01T00:10:00+02:00", 
+      "endDate": "2019-01-13T00:00:00+02:00"
     }, 
     "procurementMethodType": "aboveThresholdUA", 
     "value": {
@@ -113,8 +109,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/c785cc0ce1ed46c
       "valueAddedTaxIncluded": true
     }, 
     "submissionMethod": "electronicAuction", 
-    "date": "2019-03-28T06:50:15.736883+02:00", 
-    "next_check": "2019-04-13T07:47:08.962475+03:00", 
+    "date": "2019-01-01T00:10:00+02:00", 
+    "next_check": "2019-01-17T00:00:00+02:00", 
     "procuringEntity": {
       "contactPoint": {
         "url": "http://sch10.edu.vn.ua/", 
@@ -137,17 +133,17 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/c785cc0ce1ed46c
       }
     }, 
     "auctionPeriod": {
-      "shouldStartAfter": "2019-04-14T00:00:00+02:00"
+      "shouldStartAfter": "2019-01-17T00:00:00+02:00"
     }, 
     "owner": "broker", 
-    "dateModified": "2019-03-28T06:50:15.741218+02:00", 
+    "dateModified": "2019-01-01T00:10:00+02:00", 
     "items": [
       {
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
-          "description": "Test", 
-          "id": "37810000-9"
+          "description": "Послуги з харчування у школах", 
+          "id": "55523100-3"
         }, 
         "additionalClassifications": [
           {
@@ -164,19 +160,15 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/c785cc0ce1ed46c
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-17T06:47:08.962424+02:00", 
-          "endDate": "2019-05-17T06:47:08.962464+02:00"
+          "startDate": "2019-01-21T00:00:00+02:00", 
+          "endDate": "2019-02-20T00:00:00+02:00"
         }, 
-        "id": "98ed8157e0c449bea0dc57821b6d3170", 
-        "unit": {
-          "code": "44617100-9", 
-          "name": "item"
-        }, 
+        "id": "7e555b9adcc54dc08228096ee6340764", 
         "quantity": 1.0
       }
     ], 
-    "id": "c785cc0ce1ed46cba8e6a60ac6c2b0a5", 
-    "tenderID": "UA-2019-03-28-000002"
+    "id": "46f36ebf30f949e9b44383ae04d53fcb", 
+    "tenderID": "UA-2019-01-01-000002"
   }
 }
 

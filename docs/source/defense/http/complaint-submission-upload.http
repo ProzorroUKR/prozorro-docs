@@ -1,22 +1,31 @@
-POST /api/2.5/tenders/d607e84d7f9e4d9fa51271833ac12baa/complaints/c021209cc6e24b7d8ef4516005569b70/documents?acc_token=c5735593d8cd42629330c5d0a7ad6f42 HTTP/1.0
+POST /api/2.5/tenders/48b14561c9f44d339fdf26f0d4cdb624/complaints/dda9bf65ed9749789dec3bb86008a090/documents?acc_token=35ff8788c82b4b93aee46f569f54f8a0 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 201
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy713945147321$
-Host: api-sandbox.openprocurement.org
+Content-Length: 151
+Content-Type: multipart/form-data; boundary=BOUNDARY
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="Complaint_Attachement.pdf"
+Content-Type: application/pdf
+
+content
+--BOUNDARY--
+
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/d607e84d7f9e4d9fa51271833ac12baa/complaints/c021209cc6e24b7d8ef4516005569b70/documents/ffa8414f39df48afb1a8900ff5f55d12
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/48b14561c9f44d339fdf26f0d4cdb624/complaints/dda9bf65ed9749789dec3bb86008a090/documents/d3249ec2d35f44a9996aff12dbaf90df
 {
   "data": {
+    "hash": "md5:00000000000000000000000000000000", 
     "author": "complaint_owner", 
     "title": "Complaint_Attachement.pdf", 
-    "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/d607e84d7f9e4d9fa51271833ac12baa/complaints/c021209cc6e24b7d8ef4516005569b70/documents/ffa8414f39df48afb1a8900ff5f55d12?download=d176fa69fa4944aab9c175ffaaab4f92", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/00c4c9b56ed94517a0695bcad93d1523?KeyID=a8968c46&Signature=d1r%2FTsPV1TxFxxxRgDFaFdMuApHNyh05%2FhPohe%252BrsuJcuD0QV2KGwrQEtTN9k5qfic26XlpnZvKSeuzNtpkWBA%253D%253D", 
     "format": "application/pdf", 
     "documentOf": "tender", 
-    "datePublished": "2019-03-28T06:48:55.501296+02:00", 
-    "id": "ffa8414f39df48afb1a8900ff5f55d12", 
-    "dateModified": "2019-03-28T06:48:55.501314+02:00"
+    "datePublished": "2019-01-01T00:00:00+02:00", 
+    "id": "d3249ec2d35f44a9996aff12dbaf90df", 
+    "dateModified": "2019-01-01T00:00:00+02:00"
   }
 }
 

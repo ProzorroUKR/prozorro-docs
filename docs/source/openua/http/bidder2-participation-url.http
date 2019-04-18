@@ -1,6 +1,6 @@
-GET /api/2.5/tenders/425a24b7b03d49759b19d37ac7e51561/bids/bbb2dfb767fb40b29f191a7329d688f9?acc_token=5114869f3bcd4514b3bc92d993ff321a HTTP/1.0
+GET /api/2.5/tenders/92f0a69805904e71be9e717fad623af5/bids/60cfc2cf99c64973820fc4dd2780dc9c?acc_token=85b65e71192b437f9ed7654b805647c2 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
@@ -13,7 +13,7 @@ Content-Type: application/json; charset=UTF-8
       "amount": 499.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "id": "bbb2dfb767fb40b29f191a7329d688f9", 
+    "id": "60cfc2cf99c64973820fc4dd2780dc9c", 
     "tenderers": [
       {
         "contactPoint": {
@@ -36,9 +36,9 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "date": "2019-03-28T06:50:14.206366+02:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "selfQualified": true, 
-    "participationUrl": "http://auction-sandbox.openprocurement.org/tenders/425a24b7b03d49759b19d37ac7e51561?key_for_bid=bbb2dfb767fb40b29f191a7329d688f9"
+    "participationUrl": "http://auction-sandbox.prozorro.gov.ua/tenders/92f0a69805904e71be9e717fad623af5?key_for_bid=60cfc2cf99c64973820fc4dd2780dc9c"
   }
 }
 

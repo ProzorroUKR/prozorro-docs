@@ -1,8 +1,8 @@
-PATCH /api/2.5/tenders/07498e54a6b549ebbac4abb82359b858/complaints/1c5e222ef6da44408012aa2ae3f29c61 HTTP/1.0
+PATCH /api/2.5/tenders/545af3241b1c4572b0ad2c3cd05054af/complaints/d86ed9f7eb33444eb3338249311f95fc HTTP/1.0
 Authorization: Basic cmV2aWV3ZXI6
 Content-Length: 217
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -16,13 +16,13 @@ Content-Type: application/json; charset=UTF-8
 {
   "data": {
     "status": "stopped", 
-    "dateDecision": "2019-03-28T06:47:51.396276+02:00", 
+    "dateDecision": "2019-01-01T00:00:00+02:00", 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
     "title": "Недостатньо інформації", 
     "decision": "Тендер скасовується замовником", 
     "acceptance": true, 
-    "dateCanceled": "2019-03-28T06:47:51.396318+02:00", 
-    "dateAccepted": "2019-03-28T06:47:50.953698+02:00", 
+    "dateCanceled": "2019-01-01T00:00:00+02:00", 
+    "dateAccepted": "2019-01-01T00:00:00+02:00", 
     "author": {
       "contactPoint": {
         "email": "soleksuk@gmail.com", 
@@ -31,9 +31,8 @@ Content-Type: application/json; charset=UTF-8
       }, 
       "identifier": {
         "scheme": "UA-EDR", 
-        "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
-        "id": "13313462", 
-        "uri": "http://sch10.edu.vn.ua/"
+        "id": "00137256", 
+        "uri": "http://www.sc.gov.ua/"
       }, 
       "name": "ДКП «Школяр»", 
       "address": {
@@ -44,11 +43,11 @@ Content-Type: application/json; charset=UTF-8
         "locality": "м. Вінниця"
       }
     }, 
-    "dateSubmitted": "2019-03-28T06:47:50.539962+02:00", 
-    "complaintID": "UA-2019-03-28-000001.5", 
-    "date": "2019-03-28T06:47:51.401950+02:00", 
+    "dateSubmitted": "2019-01-01T00:00:00+02:00", 
+    "complaintID": "UA-2019-01-01-000001.5", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "type": "complaint", 
-    "id": "1c5e222ef6da44408012aa2ae3f29c61"
+    "id": "d86ed9f7eb33444eb3338249311f95fc"
   }
 }
 

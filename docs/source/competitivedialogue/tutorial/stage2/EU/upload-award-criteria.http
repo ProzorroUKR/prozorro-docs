@@ -1,25 +1,32 @@
-POST /api/2.5/tenders/c368f2394a83454fbd86a8f66c5c1ab4/documents?acc_token=1b2bc07c22ac43e5811e5b0916da46b7 HTTP/1.0
+POST /api/2.5/tenders/2933880765e44c6abd98096c6de321ed/documents?acc_token=437d8c5ad28e44c38d7e7394a20a507b HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 193
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy816515872612$
-Host: api-sandbox.openprocurement.org
+Content-Length: 143
+Content-Type: multipart/form-data; boundary=BOUNDARY
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="AwardCriteria.pdf"
+Content-Type: application/pdf
+
+content
+--BOUNDARY--
 
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/c368f2394a83454fbd86a8f66c5c1ab4/documents/921680ac697c48eabda9528ac1348ac7
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/2933880765e44c6abd98096c6de321ed/documents/73d74d271875432793f8fa2441263f3b
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "author": "tender_owner", 
     "language": "uk", 
     "title": "AwardCriteria.pdf", 
-    "url": "http://public.docs-sandbox.openprocurement.org/get/c8a304ff45d743b893511e23b1e9d017?KeyID=2d509c5e&Signature=4FPsTFl5Z9foLG0fDdz3L9nIAkgcvcJx7fLiLf5YhgTyOUhPVsjRXqD8gYhuTeA7f6a2v5f1jn6VJwETReG6CQ%253D%253D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/35988fadfa07433c9fc77d522d18f17e?KeyID=a8968c46&Signature=Gy9r9nY4JKXGDuRHB%2FAVLprbF%252BQ4ihbG090MfKswouWytABZE5kEFIgFT6Em0paO9SSo9uq9sZkR%252B7sLPkO%252BCw%253D%253D", 
     "format": "application/pdf", 
     "documentOf": "tender", 
-    "datePublished": "2019-03-28T06:48:37.467938+02:00", 
-    "id": "921680ac697c48eabda9528ac1348ac7", 
-    "dateModified": "2019-03-28T06:48:37.467957+02:00"
+    "datePublished": "2019-01-01T00:00:00+02:00", 
+    "id": "73d74d271875432793f8fa2441263f3b", 
+    "dateModified": "2019-01-01T00:00:00+02:00"
   }
 }
 

@@ -1,27 +1,31 @@
 # -*- coding: utf-8 -*-
 import os
 from copy import deepcopy
-
 from datetime import timedelta
 
-import openprocurement.tender.esco.tests.base as base_test
-
 from openprocurement.api.models import get_now
-
 from openprocurement.tender.esco.tests.base import BaseESCOWebTest
 
-from tests.base import DumpsWebTestApp, DOCS_HOST, AUCTIONS_HOST
-from tests.data import (
+from tests.base.test import DumpsWebTestApp, MockWebTestMixin
+from tests.base.constants import DOCS_HOST, AUCTIONS_HOST
+from tests.base.data import (
     complaint, question, subcontracting, qualified,
     tender_esco, bid_draft, bid2, bid3_with_docs,
     bid_document, bid_document2, lots
 )
 
 test_tender_data = deepcopy(tender_esco)
-
+test_lots = deepcopy(lots)
 bid = deepcopy(bid_draft)
+bid2 = deepcopy(bid2)
+bid3 = deepcopy(bid3_with_docs)
+bid_document2 = deepcopy(bid_document2)
+
 bid.update(subcontracting)
 bid.update(qualified)
+bid2.update(qualified)
+bid3.update(qualified)
+
 bid.update({
     "value": {
         "annualCostsReduction": [500] + [1000] * 20,
@@ -33,8 +37,6 @@ bid.update({
     }
 })
 
-bid2 = deepcopy(bid2)
-bid2.update(qualified)
 bid2.update({
     "value": {
         "annualCostsReduction": [400] + [900] * 20,
@@ -46,14 +48,6 @@ bid2.update({
     }
 })
 
-bid_document2_conf = deepcopy(bid_document2)
-bid_document2_conf.update({
-    'confidentiality': 'buyerOnly',
-    'confidentialityRationale': 'Only our company sells badgers with pink hair.'
-})
-
-bid3 = deepcopy(bid3_with_docs)
-bid3.update(qualified)
 bid3.update({
     "value": {
         "annualCostsReduction": [200] + [800] * 20,
@@ -64,9 +58,7 @@ bid3.update({
         }
     }
 })
-bid3["documents"] = [bid_document, bid_document2_conf]
 
-test_lots = deepcopy(lots)
 test_lots[0]['fundingKind'] = 'other'
 test_lots[0]['minimalStepPercentage'] = test_tender_data['minimalStepPercentage']
 test_lots[1]['fundingKind'] = 'other'
@@ -76,7 +68,7 @@ TARGET_DIR = 'docs/source/esco/tutorial/'
 TARGET_DIR_MULTIPLE = 'docs/source/esco/multiple_lots_tutorial/'
 
 
-class TenderResourceTest(BaseESCOWebTest):
+class TenderResourceTest(BaseESCOWebTest, MockWebTestMixin):
     initial_data = test_tender_data
     docservice = True
 
@@ -84,14 +76,16 @@ class TenderResourceTest(BaseESCOWebTest):
     auctions_host = AUCTIONS_HOST
 
     def setUp(self):
-        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
+        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(__file__))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
+        self.setUpMock()
         if self.docservice:
             self.setUpDS()
             self.app.app.registry.docservice_url = 'http://{}'.format(self.docs_host)
 
     def tearDown(self):
+        self.tearDownMock()
         self.couchdb_server.delete(self.db.name)
 
     def generate_docservice_url(self):
@@ -397,15 +391,21 @@ class TenderResourceTest(BaseESCOWebTest):
             bids_access[bid2_id] = response.json['access']['token']
             self.assertEqual(response.status, '201 Created')
 
+        bid_document2.update({
+            'confidentiality': 'buyerOnly',
+            'confidentialityRationale': 'Only our company sells badgers with pink hair.'
+        })
+        bid3["documents"] = [bid_document, bid_document2]
+        for document in bid3['documents']:
+            document['url'] = self.generate_docservice_url()
+        for document in bid3['eligibilityDocuments']:
+            document['url'] = self.generate_docservice_url()
+        for document in bid3['financialDocuments']:
+            document['url'] = self.generate_docservice_url()
+        for document in bid3['qualificationDocuments']:
+            document['url'] = self.generate_docservice_url()
+
         with open(TARGET_DIR + 'register-3rd-bidder.http', 'w') as self.app.file_obj:
-            for document in bid3['documents']:
-                document['url'] = self.generate_docservice_url()
-            for document in bid3['eligibilityDocuments']:
-                document['url'] = self.generate_docservice_url()
-            for document in bid3['financialDocuments']:
-                document['url'] = self.generate_docservice_url()
-            for document in bid3['qualificationDocuments']:
-                document['url'] = self.generate_docservice_url()
             response = self.app.post_json(
                 '/tenders/{}/bids'.format(self.tender_id),
                 {'data': bid3})
@@ -473,7 +473,6 @@ class TenderResourceTest(BaseESCOWebTest):
             self.assertEqual(response.status, "200 OK")
 
         # active.pre-qualification.stand-still
-
         with open(TARGET_DIR + 'pre-qualification-confirmation.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
                 '/tenders/{}?acc_token={}'.format(self.tender_id, owner_token),
@@ -549,6 +548,8 @@ class TenderResourceTest(BaseESCOWebTest):
         self.contract_id = response.json['data'][0]['id']
 
         ####  Set contract value
+
+        self.tick()
 
         tender = self.db.get(self.tender_id)
         for i in tender.get('awards', []):
@@ -986,6 +987,8 @@ class TenderResourceTest(BaseESCOWebTest):
                 }})
             self.assertEqual(response.status, "200 OK")
 
+        self.tick()
+
         # active.pre-qualification.stand-still
         response = self.app.patch_json(
             '/tenders/{}?acc_token={}'.format(self.tender_id, owner_token),
@@ -1318,6 +1321,8 @@ class TenderResourceTest(BaseESCOWebTest):
                 }})
             self.assertEqual(response.status, "200 OK")
 
+        self.tick()
+
         # active.pre-qualification.stand-still
         response = self.app.patch_json(
             '/tenders/{}?acc_token={}'.format(self.tender_id, owner_token),
@@ -1346,6 +1351,8 @@ class TenderResourceTest(BaseESCOWebTest):
                 "eligible": True
             }})
         self.assertEqual(response.status, '200 OK')
+
+        self.tick()
 
         with open(TARGET_DIR + 'award-complaint-submission.http', 'w') as self.app.file_obj:
             response = self.app.post_json(

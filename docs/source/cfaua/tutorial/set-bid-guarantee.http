@@ -1,8 +1,8 @@
-PATCH /api/2.5/tenders/edf1ec35dd2442928d2473f51384621f/lots/2e6f1f49c8894974a1c36e2b463b5b86?acc_token=cbe41c0fba54453ea52434ea6c0e1867 HTTP/1.0
+PATCH /api/2.5/tenders/239ab2b4b65a46f8ac603eebcd77771c/lots/474a13302d414c40b95a16f154cdd263?acc_token=4fedc6c367a94e00ac51cd25b92bb6f8 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 57
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -26,15 +26,15 @@ Content-Type: application/json; charset=UTF-8
       "valueAddedTaxIncluded": true
     }, 
     "auctionPeriod": {
-      "shouldStartAfter": "2019-06-02T00:00:00+02:00"
+      "shouldStartAfter": "2019-03-08T00:00:00+02:00"
     }, 
     "value": {
       "currency": "UAH", 
       "amount": 500.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2019-03-28T06:47:52.548924+02:00", 
-    "id": "2e6f1f49c8894974a1c36e2b463b5b86", 
+    "date": "2019-01-01T00:00:00+02:00", 
+    "id": "474a13302d414c40b95a16f154cdd263", 
     "guarantee": {
       "currency": "USD", 
       "amount": 8.0

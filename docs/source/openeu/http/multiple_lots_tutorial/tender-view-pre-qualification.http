@@ -1,6 +1,6 @@
-GET /api/2.5/tenders/d31f5c7085db4e08912359274057ea4d?acc_token=4d5dc6f3d89c4aeb8c5ff278c262ed54 HTTP/1.0
+GET /api/2.5/tenders/f79202ed72aa4df58b23e22a833948e3?acc_token=b74885a1dd3b4781927e9e335d2ee742 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
@@ -9,14 +9,14 @@ Content-Type: application/json; charset=UTF-8
     "procurementMethod": "open", 
     "status": "active.pre-qualification", 
     "complaintPeriod": {
-      "startDate": "2019-02-26T06:49:59.136885+02:00", 
-      "endDate": "2019-03-24T00:00:00+02:00"
+      "startDate": "2018-12-02T00:00:00+02:00", 
+      "endDate": "2018-12-28T00:00:00+02:00"
     }, 
     "enquiryPeriod": {
-      "startDate": "2019-02-26T06:49:59.136885+02:00", 
-      "clarificationsUntil": "2019-03-21T06:49:59.136885+02:00", 
-      "endDate": "2019-03-18T06:49:59.136885+02:00", 
-      "invalidationDate": "2019-03-28T06:49:58.934797+02:00"
+      "startDate": "2018-12-02T00:00:00+02:00", 
+      "clarificationsUntil": "2018-12-28T00:00:00+02:00", 
+      "endDate": "2018-12-22T00:00:00+02:00", 
+      "invalidationDate": "2019-01-01T00:00:00+02:00"
     }, 
     "submissionMethod": "electronicAuction", 
     "procuringEntity": {
@@ -46,7 +46,7 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "owner": "broker", 
     "title_en": "Services in school canteens", 
-    "id": "d31f5c7085db4e08912359274057ea4d", 
+    "id": "f79202ed72aa4df58b23e22a833948e3", 
     "title": "Послуги шкільних їдалень", 
     "lots": [
       {
@@ -63,8 +63,8 @@ Content-Type: application/json; charset=UTF-8
           "amount": 500.0, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2019-03-28T06:49:58.573794+02:00", 
-        "id": "d7e3888f747f4927a519c996c72eb677"
+        "date": "2019-01-01T00:00:00+02:00", 
+        "id": "9c681dd3701140aeb8c6d83ae1a31e38"
       }, 
       {
         "status": "unsuccessful", 
@@ -80,42 +80,42 @@ Content-Type: application/json; charset=UTF-8
           "amount": 400.0, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2019-03-28T06:49:59.232985+02:00", 
-        "id": "c3784ef3e3b448788bba15480aaed581"
+        "date": "2019-01-01T00:00:00+02:00", 
+        "id": "3f214e71a3894e7793214fef4dab684c"
       }
     ], 
     "qualificationPeriod": {
-      "startDate": "2019-03-28T06:49:59.227419+02:00"
+      "startDate": "2019-01-01T00:00:00+02:00"
     }, 
-    "tenderID": "UA-2019-03-28-000001", 
-    "dateModified": "2019-03-28T06:49:59.232985+02:00", 
+    "tenderID": "UA-2019-01-01-000001", 
+    "dateModified": "2019-01-01T00:00:00+02:00", 
     "numberOfBids": 2, 
     "tenderPeriod": {
-      "startDate": "2019-02-26T06:49:59.136885+02:00", 
-      "endDate": "2019-03-28T06:49:59.136885+02:00"
+      "startDate": "2018-12-02T00:00:00+02:00", 
+      "endDate": "2019-01-01T00:00:00+02:00"
     }, 
     "qualifications": [
       {
         "status": "pending", 
-        "lotID": "d7e3888f747f4927a519c996c72eb677", 
+        "lotID": "9c681dd3701140aeb8c6d83ae1a31e38", 
         "eligible": false, 
         "qualified": false, 
-        "bidID": "4a2d1aeb0f7f4519a6891437efead6ef", 
-        "date": "2019-03-28T06:49:59.228116+02:00", 
-        "id": "f2f65c47598c4249b705c9545b1fa623"
+        "bidID": "6b7fb0e3b86d4427aba6d08b7bf4c1b7", 
+        "date": "2019-01-01T00:00:00+02:00", 
+        "id": "c5410d234aa74254bd9636f3e2c1a651"
       }, 
       {
         "status": "pending", 
-        "lotID": "d7e3888f747f4927a519c996c72eb677", 
+        "lotID": "9c681dd3701140aeb8c6d83ae1a31e38", 
         "eligible": false, 
         "qualified": false, 
-        "bidID": "3e97dabd5f824c34b5dc05642eb4409a", 
-        "date": "2019-03-28T06:49:59.228314+02:00", 
-        "id": "f3e1193aa95940a1b0744220c76fd741"
+        "bidID": "92d3348340fa46f8b031aeec7990dba0", 
+        "date": "2019-01-01T00:00:00+02:00", 
+        "id": "795a11ac481d41d5b588f1f032fad07a"
       }
     ], 
     "procurementMethodType": "aboveThresholdEU", 
-    "date": "2019-03-28T06:49:59.232985+02:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35.0, 
@@ -123,7 +123,7 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "items": [
       {
-        "relatedLot": "d7e3888f747f4927a519c996c72eb677", 
+        "relatedLot": "9c681dd3701140aeb8c6d83ae1a31e38", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -146,18 +146,14 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-17T06:47:08.947035+02:00", 
-          "endDate": "2019-05-17T06:47:08.947066+02:00"
+          "startDate": "2019-01-21T00:00:00+02:00", 
+          "endDate": "2019-02-20T00:00:00+02:00"
         }, 
-        "id": "538450d2801d4fd29277a6265087452a", 
-        "unit": {
-          "code": "44617100-9", 
-          "name": "item"
-        }, 
+        "id": "dd27aa86304d4290847f89c131fd6710", 
         "quantity": 1.0
       }, 
       {
-        "relatedLot": "c3784ef3e3b448788bba15480aaed581", 
+        "relatedLot": "3f214e71a3894e7793214fef4dab684c", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -180,21 +176,17 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-17T06:47:08.947077+02:00", 
-          "endDate": "2019-05-17T06:47:08.947084+02:00"
+          "startDate": "2019-01-21T00:00:00+02:00", 
+          "endDate": "2019-02-20T00:00:00+02:00"
         }, 
-        "id": "318cc0eb0b0e45d589e5eb90d5e69b31", 
-        "unit": {
-          "code": "44617100-9", 
-          "name": "item"
-        }, 
+        "id": "224738480ac44d289068bd1ad943a2d8", 
         "quantity": 1.0
       }
     ], 
     "bids": [
       {
         "status": "pending", 
-        "id": "4a2d1aeb0f7f4519a6891437efead6ef", 
+        "id": "6b7fb0e3b86d4427aba6d08b7bf4c1b7", 
         "tenderers": [
           {
             "contactPoint": {
@@ -220,7 +212,7 @@ Content-Type: application/json; charset=UTF-8
       }, 
       {
         "status": "pending", 
-        "id": "3e97dabd5f824c34b5dc05642eb4409a", 
+        "id": "92d3348340fa46f8b031aeec7990dba0", 
         "tenderers": [
           {
             "contactPoint": {

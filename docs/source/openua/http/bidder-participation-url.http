@@ -1,6 +1,6 @@
-GET /api/2.5/tenders/425a24b7b03d49759b19d37ac7e51561/bids/e920831b310443b99f8440100aeba552?acc_token=a3b64949aab54bd39172890842f6f747 HTTP/1.0
+GET /api/2.5/tenders/92f0a69805904e71be9e717fad623af5/bids/617fdbca97e74b8296fab753fe5b07cc?acc_token=e5166e3c97b445f1938b09b2d58fb1dc HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
@@ -9,23 +9,24 @@ Content-Type: application/json; charset=UTF-8
     "status": "active", 
     "documents": [
       {
+        "hash": "md5:00000000000000000000000000000000", 
         "title": "Proposal.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/425a24b7b03d49759b19d37ac7e51561/bids/e920831b310443b99f8440100aeba552/documents/020cd8a1b8914b3a9991634670db246d?download=0d795a9b0dc64e11941b10e2dde985e1", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/92f0a69805904e71be9e717fad623af5/bids/617fdbca97e74b8296fab753fe5b07cc/documents/6674529e4a9e42e39a579b0ffe9e2d6b?download=d2a826d1085340a798b726a726958bf1", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:50:13.922896+02:00", 
-        "id": "020cd8a1b8914b3a9991634670db246d", 
-        "dateModified": "2019-03-28T06:50:13.922909+02:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "6674529e4a9e42e39a579b0ffe9e2d6b", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }
     ], 
     "selfEligible": true, 
-    "id": "e920831b310443b99f8440100aeba552", 
+    "id": "617fdbca97e74b8296fab753fe5b07cc", 
     "value": {
       "currency": "UAH", 
       "amount": 500.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "subcontractingDetails": "ДКП «книга», Україна, м. Львів, вул. Островського, 33", 
+    "subcontractingDetails": "ДКП «Орфей», Україна", 
     "tenderers": [
       {
         "contactPoint": {
@@ -48,9 +49,9 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "date": "2019-03-28T06:50:13.853880+02:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "selfQualified": true, 
-    "participationUrl": "http://auction-sandbox.openprocurement.org/tenders/425a24b7b03d49759b19d37ac7e51561?key_for_bid=e920831b310443b99f8440100aeba552"
+    "participationUrl": "http://auction-sandbox.prozorro.gov.ua/tenders/92f0a69805904e71be9e717fad623af5?key_for_bid=617fdbca97e74b8296fab753fe5b07cc"
   }
 }
 

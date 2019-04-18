@@ -1,8 +1,15 @@
-PUT /api/2.5/tenders/2bd2d6246680491fa01f7e1c51e03fcd/cancellations/5cbae87de9214ce0be0c174fd980264d/documents/b27e3e73568f459bad0341587153cada?acc_token=a02e17b4964743a29ad34331d588631c HTTP/1.0
+PUT /api/2.5/tenders/a40ca115d83d48e6a8ebb11e3a98803d/cancellations/d938bf6ff745413da26bec3bf0e93bcd/documents/c978eabff425476b9c39c912fbca2df8?acc_token=d11cb852e77b46ca8fd4aab19d39ec47 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 189
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy718254788847$
-Host: api-sandbox.openprocurement.org
+Content-Length: 139
+Content-Type: multipart/form-data; boundary=BOUNDARY
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="Notice-2.pdf"
+Content-Type: application/pdf
+
+content2
+--BOUNDARY--
 
 
 Response: 200 OK
@@ -13,12 +20,12 @@ Content-Type: application/json; charset=UTF-8
     "description": "Changed description", 
     "language": "uk", 
     "title": "Notice-2.pdf", 
-    "url": "http://public.docs-sandbox.openprocurement.org/get/1d4fd15ef87d440eab6f5a28c9926629?KeyID=71c53a63&Signature=kSTbvRj6pT2AnhojOABGbjw2HkvN2HtUg3E0LNVzvkx9ceKPxbP%2FwzDZsNh%2FBxzuUkQ0jbw3xbjOf%2FO8BLskCQ%253D%253D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/2ed457db45214f6c87dcd428ad4ad212?KeyID=a8968c46&Signature=hO8oOOnOsd43zdX8Pw%2FTZORu%252BNu7jEUBwBpQd7YPDpIPN5GL51uhUUuj1fYuCzDjma9d9GHtecaRyMg18rYnCQ%253D%253D", 
     "format": "application/pdf", 
     "documentOf": "tender", 
-    "datePublished": "2019-03-28T06:48:20.410766+02:00", 
-    "id": "b27e3e73568f459bad0341587153cada", 
-    "dateModified": "2019-03-28T06:48:20.490996+02:00"
+    "datePublished": "2019-01-01T00:00:00+02:00", 
+    "id": "c978eabff425476b9c39c912fbca2df8", 
+    "dateModified": "2019-01-01T00:00:00+02:00"
   }
 }
 

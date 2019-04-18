@@ -1,14 +1,14 @@
-PATCH /api/2.5/tenders/f930e795d51e4d0897efd6abd044cab3?acc_token=de5684b7316349acb1774b8332e102ab HTTP/1.0
+PATCH /api/2.5/tenders/9b64b7c8f5d548b0a278a80f697bd9c4?acc_token=519929395faa425897d1c7d67701a59a HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 73
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "items": [
       {
-        "relatedLot": "d24866d6eade408d988ac6dc679460fe"
+        "relatedLot": "f9b1b519f94d4d6abd60117c373007dc"
       }
     ]
   }
@@ -32,24 +32,23 @@ Content-Type: application/json; charset=UTF-8
           "amount": 500000.0, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2019-03-28T06:49:42.552349+02:00", 
-        "id": "d24866d6eade408d988ac6dc679460fe"
+        "date": "2019-01-01T00:00:00+02:00", 
+        "id": "f9b1b519f94d4d6abd60117c373007dc"
       }
     ], 
     "items": [
       {
-        "relatedLot": "d24866d6eade408d988ac6dc679460fe", 
+        "relatedLot": "f9b1b519f94d4d6abd60117c373007dc", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
           "description": "Послуги з харчування у школах", 
           "id": "55523100-3"
         }, 
-        "description_en": "Services in school canteens", 
         "additionalClassifications": [
           {
             "scheme": "ДКПП", 
-            "id": "55.51.10.300", 
+            "id": "17.21.1", 
             "description": "Послуги шкільних їдалень"
           }
         ], 
@@ -61,11 +60,11 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-03-30T06:47:08.632098+02:00", 
-          "endDate": "2019-04-02T06:47:08.632098+03:00"
+          "startDate": "2019-01-21T00:00:00+02:00", 
+          "endDate": "2019-02-20T00:00:00+02:00"
         }, 
-        "description_ru": "Услуги школьных столовых", 
-        "id": "2dc54675d6364e2baffbc0f8e74432ac"
+        "id": "f325078bf6f64de69f8dbf1ee1263f15", 
+        "quantity": 1.0
       }
     ], 
     "procurementMethodType": "negotiation.quick", 
@@ -74,9 +73,9 @@ Content-Type: application/json; charset=UTF-8
       "amount": 500000.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "dateModified": "2019-03-28T06:49:42.604242+02:00", 
+    "dateModified": "2019-01-01T00:00:00+02:00", 
     "causeDescription_ru": "оригинальный тендер не получился дважды", 
-    "date": "2019-03-28T06:49:42.527115+02:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "causeDescription_en": "original tender has failed twice", 
     "description_ru": "Услуги школьных столовых", 
     "description_en": "Services in school canteens", 
@@ -94,7 +93,7 @@ Content-Type: application/json; charset=UTF-8
         "legalName": "Заклад \"Загальноосвітня школа І-ІІІ ступенів № 10 Вінницької міської ради\""
       }, 
       "name": "ЗОСШ #10 м.Вінниці", 
-      "kind": "general", 
+      "kind": "special", 
       "address": {
         "postalCode": "21027", 
         "countryName": "Україна", 
@@ -104,8 +103,8 @@ Content-Type: application/json; charset=UTF-8
       }
     }, 
     "title_en": "Services in school canteens", 
-    "id": "f930e795d51e4d0897efd6abd044cab3", 
-    "tenderID": "UA-2019-03-28-000001"
+    "id": "9b64b7c8f5d548b0a278a80f697bd9c4", 
+    "tenderID": "UA-2019-01-01-000001"
   }
 }
 

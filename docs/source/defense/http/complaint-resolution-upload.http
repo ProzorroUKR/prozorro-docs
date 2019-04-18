@@ -1,22 +1,31 @@
-POST /api/2.5/tenders/d607e84d7f9e4d9fa51271833ac12baa/complaints/c021209cc6e24b7d8ef4516005569b70/documents HTTP/1.0
+POST /api/2.5/tenders/48b14561c9f44d339fdf26f0d4cdb624/complaints/dda9bf65ed9749789dec3bb86008a090/documents HTTP/1.0
 Authorization: Basic cmV2aWV3ZXI6
-Content-Length: 199
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy838201638639$
-Host: api-sandbox.openprocurement.org
+Content-Length: 149
+Content-Type: multipart/form-data; boundary=BOUNDARY
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="ComplaintResolution.pdf"
+Content-Type: application/pdf
+
+content
+--BOUNDARY--
+
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/d607e84d7f9e4d9fa51271833ac12baa/complaints/c021209cc6e24b7d8ef4516005569b70/documents/34e772d548a8420cb14590a7a6d55728
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/48b14561c9f44d339fdf26f0d4cdb624/complaints/dda9bf65ed9749789dec3bb86008a090/documents/8437444eee89446a8522d7bf2afca816
 {
   "data": {
+    "hash": "md5:00000000000000000000000000000000", 
     "author": "aboveThresholdReviewers", 
     "title": "ComplaintResolution.pdf", 
-    "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/d607e84d7f9e4d9fa51271833ac12baa/complaints/c021209cc6e24b7d8ef4516005569b70/documents/34e772d548a8420cb14590a7a6d55728?download=7cad9d91e19e413b8637f246ad0ac185", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/d2765115e6864755a96363b65b0fea3e?KeyID=a8968c46&Signature=7ZqfUNwibSSMBOw9TACFql2IKmFzscEXnoo%252BTtb3ytQEqedpziTT8DZQRB99keiHS%252Bsee%2FaPJAkghE%252B5FjnFDw%253D%253D", 
     "format": "application/pdf", 
     "documentOf": "tender", 
-    "datePublished": "2019-03-28T06:48:56.498142+02:00", 
-    "id": "34e772d548a8420cb14590a7a6d55728", 
-    "dateModified": "2019-03-28T06:48:56.498157+02:00"
+    "datePublished": "2019-01-01T00:00:00+02:00", 
+    "id": "8437444eee89446a8522d7bf2afca816", 
+    "dateModified": "2019-01-01T00:00:00+02:00"
   }
 }
 

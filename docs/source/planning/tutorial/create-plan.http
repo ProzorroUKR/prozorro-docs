@@ -1,9 +1,9 @@
 POST /api/2.5/plans?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 2536
+Content-Length: 2532
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "classification": {
@@ -27,7 +27,7 @@ Host: api-sandbox.openprocurement.org
           }
         ], 
         "deliveryDate": {
-          "endDate": "2019-04-12T06:47:09.005262"
+          "endDate": "2019-01-16T00:00:00+02:00"
         }, 
         "unit": {
           "code": "KGM", 
@@ -50,7 +50,7 @@ Host: api-sandbox.openprocurement.org
           }
         ], 
         "deliveryDate": {
-          "endDate": "2019-04-13T06:47:09.005262"
+          "endDate": "2019-01-17T00:00:00+02:00"
         }, 
         "unit": {
           "code": "KGM", 
@@ -73,7 +73,7 @@ Host: api-sandbox.openprocurement.org
           }
         ], 
         "deliveryDate": {
-          "endDate": "2019-04-14T06:47:09.005262"
+          "endDate": "2019-01-18T00:00:00+02:00"
         }, 
         "unit": {
           "code": "KGM", 
@@ -116,7 +116,7 @@ Host: api-sandbox.openprocurement.org
       "procurementMethod": "open", 
       "procurementMethodType": "belowThreshold", 
       "tenderPeriod": {
-        "startDate": "2019-04-04T06:47:09.005262"
+        "startDate": "2019-01-08T00:00:00+02:00"
       }
     }
   }
@@ -124,10 +124,10 @@ Host: api-sandbox.openprocurement.org
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/plans/0394b1674398493f8c9aa592e829afa4
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/plans/23a60932190b48b68d41d1880277e4ca
 {
   "access": {
-    "token": "5fa5abf31def493a80a046bc1ce59b9d"
+    "token": "28f7bd5c18d649bfa18b046d3d79d701"
   }, 
   "data": {
     "classification": {
@@ -151,9 +151,9 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/plans/0394b1674398493f8
           }
         ], 
         "deliveryDate": {
-          "endDate": "2019-04-12T06:47:09.005262+03:00"
+          "endDate": "2019-01-16T00:00:00+02:00"
         }, 
-        "id": "53ea0cf4b353443b8ef8caeab44b4e52", 
+        "id": "fa302ee5087b4d2bae32178b05d6f19f", 
         "unit": {
           "code": "KGM", 
           "name": "кг"
@@ -175,9 +175,9 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/plans/0394b1674398493f8
           }
         ], 
         "deliveryDate": {
-          "endDate": "2019-04-13T06:47:09.005262+03:00"
+          "endDate": "2019-01-17T00:00:00+02:00"
         }, 
-        "id": "4d33d7138f6c479e8edcdd8adbcb25d0", 
+        "id": "c21ce29bf7084a1db516fd7049abaa3e", 
         "unit": {
           "code": "KGM", 
           "name": "кг"
@@ -199,9 +199,9 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/plans/0394b1674398493f8
           }
         ], 
         "deliveryDate": {
-          "endDate": "2019-04-14T06:47:09.005262+03:00"
+          "endDate": "2019-01-18T00:00:00+02:00"
         }, 
-        "id": "0fa0e0eb031c44fab37341e64da3b46f", 
+        "id": "085c13555ce34b689ddc9cd69789455b", 
         "unit": {
           "code": "KGM", 
           "name": "кг"
@@ -209,7 +209,7 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/plans/0394b1674398493f8
         "quantity": 3000.0
       }
     ], 
-    "planID": "UA-P-2019-03-28-000001", 
+    "planID": "UA-P-2019-01-01-000001", 
     "budget": {
       "amountNet": 12222.0, 
       "description": "budget_description", 
@@ -225,12 +225,12 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/plans/0394b1674398493f8
       "amount": 10000.0, 
       "id": "12303111000-2"
     }, 
-    "datePublished": "2019-03-28T06:50:16.190988+02:00", 
+    "datePublished": "2019-01-01T00:00:00+02:00", 
     "tender": {
       "procurementMethod": "open", 
       "procurementMethodType": "belowThreshold", 
       "tenderPeriod": {
-        "startDate": "2019-04-04T06:47:09.005262+03:00"
+        "startDate": "2019-01-08T00:00:00+02:00"
       }
     }, 
     "additionalClassifications": [
@@ -249,8 +249,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/plans/0394b1674398493f8
       "name": "ДУС"
     }, 
     "owner": "broker", 
-    "dateModified": "2019-03-28T06:50:16.200643+02:00", 
-    "id": "0394b1674398493f8c9aa592e829afa4"
+    "dateModified": "2019-01-01T00:00:00+02:00", 
+    "id": "23a60932190b48b68d41d1880277e4ca"
   }
 }
 

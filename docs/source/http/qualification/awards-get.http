@@ -1,17 +1,15 @@
-GET /api/2.5/tenders/4bdc8f70ca4d45b0956ab3afbadcc50c/awards HTTP/1.0
+GET /api/2.5/tenders/40c17dbea3ba43fab389cc55c80183fc/awards HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
-
-200 OK
+Response: 200 OK
 Content-Type: application/json; charset=UTF-8
-
 {
   "data": [
     {
       "status": "pending", 
       "complaintPeriod": {
-        "startDate": "2019-03-28T06:47:14.843791+02:00"
+        "startDate": "2019-01-01T00:00:00+02:00"
       }, 
       "suppliers": [
         {
@@ -35,14 +33,14 @@ Content-Type: application/json; charset=UTF-8
           }
         }
       ], 
-      "bid_id": "cd3a7f9265fa40859ef7f3d7c905bcb3", 
+      "bid_id": "058beff354b44f24a1e4a44ab60f4801", 
       "value": {
         "currency": "UAH", 
         "amount": 450.0, 
         "valueAddedTaxIncluded": true
       }, 
-      "date": "2019-03-28T06:47:14.843779+02:00", 
-      "id": "32a97e4b24054e2db5f8d16d4bdd4fc0"
+      "date": "2019-01-01T00:00:00+02:00", 
+      "id": "8cba908aedee4f7d90a81f67a2b69ad7"
     }
   ]
 }

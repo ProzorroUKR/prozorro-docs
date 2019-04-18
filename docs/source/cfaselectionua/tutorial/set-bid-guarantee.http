@@ -1,9 +1,9 @@
-PATCH /api/2.5/tenders/55fbfef6773941a68153e7e877673499/lots/f95dd4f753684255832d7cfdc7b32368?acc_token=fd113ea31c4145b2a5790646a65a9099 HTTP/1.0
+PATCH /api/2.5/tenders/4cdd6b38d69c459284b31ab81cbea097/lots/8c48fa062b4d4df8bc6f4e57271b2112?acc_token=55a1ff7e4b9c4fec90bca39c8e96fbd7 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 57
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "guarantee": {
@@ -13,15 +13,13 @@ Host: api-sandbox.openprocurement.org
   }
 }
 
-
-200 OK
+Response: 200 OK
 Content-Type: application/json; charset=UTF-8
-
 {
   "data": {
     "status": "active", 
-    "description": "lot description", 
-    "title": "lot title", 
+    "description": "Опис Лот №1", 
+    "title": "Лот №1", 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 2.5, 
@@ -32,8 +30,8 @@ Content-Type: application/json; charset=UTF-8
       "amount": 600.67, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2019-04-03T14:34:42.419765+03:00", 
-    "id": "f95dd4f753684255832d7cfdc7b32368", 
+    "date": "2019-01-01T00:00:00+02:00", 
+    "id": "8c48fa062b4d4df8bc6f4e57271b2112", 
     "guarantee": {
       "currency": "USD", 
       "amount": 8.0

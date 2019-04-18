@@ -1,32 +1,32 @@
 # -*- coding: utf-8 -*-
 import os
-
 from copy import deepcopy
-
-from openprocurement.api.utils import get_now
 from uuid import uuid4
 
+from openprocurement.api.utils import get_now
 from openprocurement.tender.cfaua.tests.base import (
     BaseTenderWebTest, test_tender_data, test_lots
 )
-import openprocurement.agreement.cfaua.tests.base as base_test
 
-from tests.base import DumpsWebTestApp, DOCS_HOST
+from tests.base.test import DumpsWebTestApp, MockWebTestMixin
+from tests.base.constants import DOCS_HOST
 
 TARGET_DIR = 'docs/source/agreementcfaua/tutorial/'
 
 
-class TenderResourceTest(BaseTenderWebTest):
+class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
     docs_host = DOCS_HOST
 
     def setUp(self):
-        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
+        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(__file__))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
+        self.setUpMock()
         self.setUpDS()
         self.app.app.registry.docservice_url = 'http://{}'.format(self.docs_host)
 
     def tearDown(self):
+        self.tearDownMock()
         self.couchdb_server.delete(self.db.name)
 
     def generate_docservice_url(self):
@@ -153,9 +153,10 @@ class TenderResourceTest(BaseTenderWebTest):
             response = self.app.patch_json(
                 '/agreements/{}/documents/{}?acc_token={}'.format(
                     agreement_id, doc_id, agreement_token),
-                {"data": {"documentOf": "change",
-                          "relatedItem": change['id'],
-                          }})
+                {"data": {
+                    "documentOf": "change",
+                    "relatedItem": change['id'],
+                }})
             self.assertEqual(response.status, '200 OK')
 
         # patching change with modification

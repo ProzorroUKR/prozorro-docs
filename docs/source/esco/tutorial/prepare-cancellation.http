@@ -1,8 +1,8 @@
-POST /api/2.5/tenders/deb082b3f3004fc1b115e78ee2d59f6c/cancellations?acc_token=88277d181c4c406caa00d3386e096304 HTTP/1.0
+POST /api/2.5/tenders/19e26a9aabb84578920993b1d57f719d/cancellations?acc_token=dee9fca567cd400c87a7c52c22c6eaec HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 43
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -12,15 +12,15 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/deb082b3f3004fc1b115e78ee2d59f6c/cancellations/7a0208e3819c4a7ab7c5f958fa25a091
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/19e26a9aabb84578920993b1d57f719d/cancellations/f354e6e7bdd54b5ca26f4b29f456b9fc
 {
   "data": {
     "status": "pending", 
     "reason": "cancellation reason", 
     "reasonType": "cancelled", 
-    "date": "2019-03-28T06:49:18.536893+02:00", 
+    "date": "2019-01-01T00:10:00+02:00", 
     "cancellationOf": "tender", 
-    "id": "7a0208e3819c4a7ab7c5f958fa25a091"
+    "id": "f354e6e7bdd54b5ca26f4b29f456b9fc"
   }
 }
 

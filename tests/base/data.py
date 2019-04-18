@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 from copy import deepcopy
-
 from datetime import timedelta
-from openprocurement.api.utils import get_now
+from dateutil.parser import parse
 from hashlib import sha512
 from uuid import uuid4
+
+from tests.base.constants import MOCK_DATETIME
 
 parameters = [
     {'code': 'OCDS-123454-AIR-INTAKE', 'value': 0.1},
@@ -192,8 +193,6 @@ bid4 = {
     }
 }
 
-lot_uid = uuid4().hex
-
 lot_bid = {
     "tenderers": [tenderer],
     "status": "draft",
@@ -201,7 +200,7 @@ lot_bid = {
         "value": {
             "amount": 500
         },
-        "relatedLot": lot_uid
+        "relatedLot": "f" * 32
     }]
 
 }
@@ -212,7 +211,7 @@ lot_bid2 = {
         "value": {
             "amount": 499
         },
-        "relatedLot": lot_uid
+        "relatedLot": "f" * 32
     }]
 }
 
@@ -225,7 +224,7 @@ lot_bid3 = {
         "value": {
             "amount": 5
         },
-        "relatedLot": lot_uid
+        "relatedLot": "f" * 32
     }]
 }
 
@@ -241,13 +240,11 @@ question = {
     "title": "Калорійність"
 }
 
-test_max_uid = uuid4().hex
-
 features = [
     {
         "code": "OCDS-123454-AIR-INTAKE",
         "featureOf": "item",
-        "relatedItem": test_max_uid,
+        "relatedItem": "f" * 32,
         "title": u"Потужність всмоктування",
         "title_en": "Air Intake",
         "description": u"Ефективна потужність всмоктування пилососа, в ватах (аероватах)",
@@ -337,7 +334,7 @@ lots = [
 
 items = [
     {
-        "id": test_max_uid,
+        "id": "f" * 32,
         "description": u"футляри до державних нагород",
         "description_en": u"Cases with state awards",
         "description_ru": u"футляры к государственным наградам",
@@ -378,8 +375,8 @@ items_en = [
             "description": "Test"
         },
         "deliveryDate": {
-            "startDate": (get_now() + timedelta(days=20)).isoformat(),
-            "endDate": (get_now() + timedelta(days=50)).isoformat()
+            "startDate": (parse(MOCK_DATETIME) + timedelta(days=20)).isoformat(),
+            "endDate": (parse(MOCK_DATETIME) + timedelta(days=50)).isoformat()
         },
         "deliveryAddress": {
             "countryName": u"Україна",
@@ -406,8 +403,8 @@ items_en = [
         },
         "quantity": 1,
         "deliveryDate": {
-            "startDate": (get_now() + timedelta(days=20)).isoformat(),
-            "endDate": (get_now() + timedelta(days=50)).isoformat()
+            "startDate": (parse(MOCK_DATETIME) + timedelta(days=20)).isoformat(),
+            "endDate": (parse(MOCK_DATETIME) + timedelta(days=50)).isoformat()
         },
         "deliveryAddress": {
             "countryName": u"Україна",
@@ -444,8 +441,8 @@ items_ua = [
         ],
         "description": "Послуги шкільних їдалень",
         "deliveryDate": {
-            "startDate": (get_now() + timedelta(days=20)).isoformat(),
-            "endDate": (get_now() + timedelta(days=50)).isoformat()
+            "startDate": (parse(MOCK_DATETIME) + timedelta(days=20)).isoformat(),
+            "endDate": (parse(MOCK_DATETIME) + timedelta(days=50)).isoformat()
         },
         "deliveryAddress": {
             "countryName": u"Україна",
@@ -592,10 +589,10 @@ tender_below_maximum = {
     },
     "items": items,
     "enquiryPeriod": {
-        "endDate": (get_now() + timedelta(days=7)).isoformat()
+        "endDate": (parse(MOCK_DATETIME) + timedelta(days=7)).isoformat()
     },
     "tenderPeriod": {
-        "endDate": (get_now() + timedelta(days=14)).isoformat()
+        "endDate": (parse(MOCK_DATETIME) + timedelta(days=14)).isoformat()
     },
     "procurementMethodType": "belowThreshold",
     "mode": u"test",
@@ -731,7 +728,7 @@ tender_limited = {
 
 tender_openeu = {
     "tenderPeriod": {
-        "endDate": (get_now() + timedelta(days=31)).isoformat()
+        "endDate": (parse(MOCK_DATETIME) + timedelta(days=31)).isoformat()
     },
     "title": "Послуги шкільних їдалень",
     "title_en": "Services in school canteens",
@@ -750,7 +747,7 @@ tender_openeu = {
 
 tender_openua = {
     "tenderPeriod": {
-        "endDate": (get_now() + timedelta(days=16)).isoformat()
+        "endDate": (parse(MOCK_DATETIME) + timedelta(days=16)).isoformat()
     },
     "title": "футляри до державних нагород",
     "minimalStep": {
@@ -768,7 +765,7 @@ tender_openua = {
 
 tender_esco = {
     "tenderPeriod": {
-        "endDate": (get_now() + timedelta(days=31)).isoformat()
+        "endDate": (parse(MOCK_DATETIME) + timedelta(days=31)).isoformat()
     },
     "title": "Послуги шкільних їдалень",
     "title_en": "Services in school canteens",
@@ -783,7 +780,7 @@ tender_esco = {
 
 tender_defense = {
     "tenderPeriod": {
-        "endDate": (get_now() + timedelta(days=16)).isoformat()
+        "endDate": (parse(MOCK_DATETIME) + timedelta(days=16)).isoformat()
     },
     "title": "футляри до державних нагород",
     "minimalStep": {

@@ -1,23 +1,28 @@
 # -*- coding: utf-8 -*-
 import os
 from copy import deepcopy
+from uuid import uuid4
 
 from datetime import timedelta
 
-import openprocurement.tender.belowthreshold.tests.base as base_test
-from openprocurement.tender.belowthreshold.tests.base import test_tender_data, test_bids, test_lots
 from openprocurement.api.models import get_now
-from openprocurement.tender.belowthreshold.tests.base import BaseTenderWebTest
-
-from tests.base import DumpsWebTestApp, DOCS_HOST, AUCTIONS_HOST
-from tests.data import (
-    bid_draft, bid2_with_docs, question, tender_below_maximum, funder, complaint,
+from openprocurement.tender.belowthreshold.tests.base import (
+    BaseTenderWebTest, test_tender_data, test_bids, test_lots
 )
+
+from tests.base.test import DumpsWebTestApp, MockWebTestMixin
+from tests.base.constants import DOCS_HOST, AUCTIONS_HOST
+from tests.base.data import (
+    bid_draft, bid2_with_docs, question,
+    tender_below_maximum, funder, complaint,
+)
+
+test_tender_data = deepcopy(test_tender_data)
 
 TARGET_DIR = 'docs/source/http/'
 
 
-class TenderResourceTest(BaseTenderWebTest):
+class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
     initial_data = test_tender_data
     initial_bids = test_bids
     docservice = True
@@ -26,15 +31,17 @@ class TenderResourceTest(BaseTenderWebTest):
     auctions_host = AUCTIONS_HOST
 
     def setUp(self):
-        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
+        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(__file__))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
+        self.setUpMock()
         if self.docservice:
             self.setUpDS()
             self.app.app.registry.docservice_url = 'http://{}'.format(self.docs_host)
 
     def tearDown(self):
         self.couchdb_server.delete(self.db.name)
+        self.tearDownMock()
 
     def generate_docservice_url(self):
         url = super(TenderResourceTest, self).generate_docservice_url()
@@ -44,6 +51,17 @@ class TenderResourceTest(BaseTenderWebTest):
         self.app.authorization = ('Basic', ('broker', ''))
 
         # Creating tender in draft status
+
+        for item in test_tender_data['items']:
+            item['deliveryDate'] = {
+                "startDate": (get_now() + timedelta(days=2)).isoformat(),
+                "endDate": (get_now() + timedelta(days=5)).isoformat()
+            }
+
+        test_tender_data.update({
+            "enquiryPeriod": {"endDate": (get_now() + timedelta(days=7)).isoformat()},
+            "tenderPeriod": {"endDate": (get_now() + timedelta(days=14)).isoformat()}
+        })
 
         data = test_tender_data.copy()
         data['status'] = 'draft'
@@ -67,6 +85,7 @@ class TenderResourceTest(BaseTenderWebTest):
             self.assertEqual(response.status, '200 OK')
 
     def test_docs_tutorial(self):
+
         request_path = '/tenders?opt_pretty=1'
 
         # Exploring basic rules
@@ -91,6 +110,17 @@ class TenderResourceTest(BaseTenderWebTest):
 
         # Creating tender
 
+        for item in test_tender_data['items']:
+            item['deliveryDate'] = {
+                "startDate": (get_now() + timedelta(days=2)).isoformat(),
+                "endDate": (get_now() + timedelta(days=5)).isoformat()
+            }
+
+        test_tender_data.update({
+            "enquiryPeriod": {"endDate": (get_now() + timedelta(days=7)).isoformat()},
+            "tenderPeriod": {"endDate": (get_now() + timedelta(days=14)).isoformat()}
+        })
+
         with open(TARGET_DIR + 'tutorial/tender-post-attempt-json-data.http', 'w') as self.app.file_obj:
             response = self.app.post_json(
                 '/tenders?opt_pretty=1',
@@ -99,6 +129,9 @@ class TenderResourceTest(BaseTenderWebTest):
 
         tender = response.json['data']
         owner_token = response.json['access']['token']
+        self.tender_id = tender['id']
+
+        self.set_status('active.enquiries')
 
         with open(TARGET_DIR + 'tutorial/blank-tender-view.http', 'w') as self.app.file_obj:
             response = self.app.get('/tenders/{}'.format(tender['id']))
@@ -107,6 +140,11 @@ class TenderResourceTest(BaseTenderWebTest):
         with open(TARGET_DIR + 'tutorial/initial-tender-listing.http', 'w') as self.app.file_obj:
             response = self.app.get('/tenders')
             self.assertEqual(response.status, '200 OK')
+
+        tender_below_maximum['items'][0]['id'] = uuid4().hex
+        for feature in tender_below_maximum['features']:
+            if feature['featureOf'] == 'item':
+                feature['relatedItem'] = tender_below_maximum['items'][0]['id']
 
         with open(TARGET_DIR + 'tutorial/create-tender-procuringEntity.http', 'w') as self.app.file_obj:
             response = self.app.post_json(
@@ -135,6 +173,8 @@ class TenderResourceTest(BaseTenderWebTest):
 
         # Modifying tender
 
+        self.tick()
+
         tenderPeriod_endDate = get_now() + timedelta(days=15, seconds=10)
         with open(TARGET_DIR + 'tutorial/patch-items-value-periods.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
@@ -147,7 +187,6 @@ class TenderResourceTest(BaseTenderWebTest):
             self.assertEqual(response.status, '200 OK')
 
         self.app.authorization = ('Basic', ('broker', ''))
-        self.tender_id = tender['id']
 
         # Setting funders
 
@@ -266,6 +305,7 @@ class TenderResourceTest(BaseTenderWebTest):
         # Registering bid
 
         self.set_status('active.tendering')
+
         self.app.authorization = ('Basic', ('broker', ''))
         bids_access = {}
         with open(TARGET_DIR + 'tutorial/register-bidder.http', 'w') as self.app.file_obj:
@@ -399,7 +439,10 @@ class TenderResourceTest(BaseTenderWebTest):
         self.assertEqual(response.status, '200 OK')
         self.assertEqual(response.json['data']['value']['amount'], 238)
 
+
         #### Setting contract signature date
+
+        self.tick()
 
         with open(TARGET_DIR + 'tutorial/tender-contract-sign-date.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
@@ -539,6 +582,12 @@ class TenderResourceTest(BaseTenderWebTest):
         self.app.authorization = ('Basic', ('broker', ''))
 
         #### Claim Submission (with documents)
+
+        for item in test_tender_data['items']:
+            item['deliveryDate'] = {
+                "startDate": (get_now() + timedelta(days=2)).isoformat(),
+                "endDate": (get_now() + timedelta(days=5)).isoformat()
+            }
 
         self.create_tender()
 
@@ -813,6 +862,8 @@ class TenderResourceTest(BaseTenderWebTest):
 
         #### Tender Award Claim Submission (with documents)
 
+        self.tick()
+
         with open(TARGET_DIR + 'complaints/award-complaint-submission.http', 'w') as self.app.file_obj:
             response = self.app.post_json(
                 '/tenders/{}/awards/{}/complaints?acc_token={}'.format(
@@ -989,6 +1040,17 @@ class TenderResourceTest(BaseTenderWebTest):
     def test_docs_milestones(self):
         self.app.authorization = ('Basic', ('broker', ''))
 
+        for item in test_tender_data['items']:
+            item['deliveryDate'] = {
+                "startDate": (get_now() + timedelta(days=2)).isoformat(),
+                "endDate": (get_now() + timedelta(days=5)).isoformat()
+            }
+
+        test_tender_data.update({
+            "enquiryPeriod": {"endDate": (get_now() + timedelta(days=7)).isoformat()},
+            "tenderPeriod": {"endDate": (get_now() + timedelta(days=14)).isoformat()}
+        })
+
         data = dict(**test_tender_data)
         data["milestones"] = [
             {
@@ -1032,8 +1094,7 @@ class TenderResourceTest(BaseTenderWebTest):
 
         response = self.app.post_json(
             '/tenders/{}/lots?acc_token={}'.format(tender["id"], owner_token),
-            {'data': test_lots[0]}
-        )
+            {'data': test_lots[0]})
         self.assertEqual(response.status, '201 Created')
         lot = response.json["data"]
 

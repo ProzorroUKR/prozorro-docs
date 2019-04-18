@@ -1,21 +1,29 @@
-POST /api/2.5/contracts/2da2605ce00540ab896900209a9d3bbd/documents?acc_token=bb2d1340e85b4a33b1108c36928e6eed HTTP/1.0
+POST /api/2.5/contracts/67b7dce91c0b47b18c266d187c2a132c/documents?acc_token=bc3cb0a3a68149d982aa218bc75c15d2 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 199
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy177211186469$
-Host: api-sandbox.openprocurement.org
+Content-Length: 149
+Content-Type: multipart/form-data; boundary=BOUNDARY
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="contract_changes.doc"
+Content-Type: application/msword
+
+content
+--BOUNDARY--
+
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/contracts/2da2605ce00540ab896900209a9d3bbd/documents/23bafb857786461e9e6f65e99d34fbbc
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/contracts/67b7dce91c0b47b18c266d187c2a132c/documents/373d507a93244bc5a0c438df4e98c139
 {
   "data": {
     "title": "contract_changes.doc", 
-    "url": "http://api-sandbox.openprocurement.org/api/2.5/contracts/2da2605ce00540ab896900209a9d3bbd/documents/23bafb857786461e9e6f65e99d34fbbc?download=74e9fbe3ea8548c2a614c9880e708927", 
+    "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/contracts/67b7dce91c0b47b18c266d187c2a132c/documents/373d507a93244bc5a0c438df4e98c139?download=33b5900f28384463bbb357d7c172aa8a", 
     "format": "application/msword", 
     "documentOf": "contract", 
-    "datePublished": "2019-03-28T06:48:49.095199+02:00", 
-    "id": "23bafb857786461e9e6f65e99d34fbbc", 
-    "dateModified": "2019-03-28T06:48:49.095223+02:00"
+    "datePublished": "2019-01-01T00:10:00+02:00", 
+    "id": "373d507a93244bc5a0c438df4e98c139", 
+    "dateModified": "2019-01-01T00:10:00+02:00"
   }
 }
 

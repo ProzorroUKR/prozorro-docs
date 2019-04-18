@@ -1,6 +1,6 @@
-GET /api/2.5/tenders/deb082b3f3004fc1b115e78ee2d59f6c/bids/3102235c7cae41248ae4659fd476247d/documents?acc_token=f8cd3fed91934b21ab29b1433d34fdd9 HTTP/1.0
+GET /api/2.5/tenders/19e26a9aabb84578920993b1d57f719d/bids/2f36b22a71644508b4c978b6736da64c/documents?acc_token=fa8d19c30bf344fa90e1c35ea71a8391 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
@@ -8,28 +8,28 @@ Content-Type: application/json; charset=UTF-8
   "data": [
     {
       "hash": "md5:00000000000000000000000000000000", 
-      "confidentiality": "public", 
-      "language": "uk", 
-      "title": "Proposal.pdf", 
-      "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/deb082b3f3004fc1b115e78ee2d59f6c/bids/3102235c7cae41248ae4659fd476247d/documents/ef844414bf424986817bb502502d0ddc?download=560e41ee3074413cb40b1dc40b8a7ad3", 
-      "format": "application/pdf", 
-      "documentOf": "tender", 
-      "datePublished": "2019-03-28T06:49:12.919045+02:00", 
-      "id": "ef844414bf424986817bb502502d0ddc", 
-      "dateModified": "2019-03-28T06:49:12.919063+02:00"
-    }, 
-    {
-      "hash": "md5:00000000000000000000000000000000", 
       "confidentiality": "buyerOnly", 
       "language": "uk", 
       "format": "application/pdf", 
-      "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/deb082b3f3004fc1b115e78ee2d59f6c/bids/3102235c7cae41248ae4659fd476247d/documents/935859de20584d5cab59a427eed202c8?download=10e0c1c1ec724998868c762aa9a16417", 
+      "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/19e26a9aabb84578920993b1d57f719d/bids/2f36b22a71644508b4c978b6736da64c/documents/74e0aa3837d9448fa2f8ebd4ef3354f2?download=1406edb187bf4a98816cd4bd531f7d1b", 
       "confidentialityRationale": "Only our company sells badgers with pink hair.", 
       "title": "Proposal_top_secrets.pdf", 
       "documentOf": "tender", 
-      "datePublished": "2019-03-28T06:49:13.190648+02:00", 
-      "id": "935859de20584d5cab59a427eed202c8", 
-      "dateModified": "2019-03-28T06:49:13.190665+02:00"
+      "datePublished": "2019-01-01T00:00:00+02:00", 
+      "id": "74e0aa3837d9448fa2f8ebd4ef3354f2", 
+      "dateModified": "2019-01-01T00:00:00+02:00"
+    }, 
+    {
+      "hash": "md5:00000000000000000000000000000000", 
+      "confidentiality": "public", 
+      "language": "uk", 
+      "title": "Proposal.pdf", 
+      "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/19e26a9aabb84578920993b1d57f719d/bids/2f36b22a71644508b4c978b6736da64c/documents/a711398018c94246b5ebd2392922e705?download=d45965bcd55041a681e4bd1fa2776e45", 
+      "format": "application/pdf", 
+      "documentOf": "tender", 
+      "datePublished": "2019-01-01T00:00:00+02:00", 
+      "id": "a711398018c94246b5ebd2392922e705", 
+      "dateModified": "2019-01-01T00:00:00+02:00"
     }
   ]
 }

@@ -1,19 +1,19 @@
 GET /api/2.5/agreements HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
 {
   "next_page": {
-    "path": "/api/2.5/agreements?offset=2019-03-28T06%3A47%3A10.946848%2B02%3A00", 
-    "uri": "http://api-sandbox.openprocurement.org/api/2.5/agreements?offset=2019-03-28T06%3A47%3A10.946848%2B02%3A00", 
-    "offset": "2019-03-28T06:47:10.946848+02:00"
+    "path": "/api/2.5/agreements?offset=2019-01-01T00%3A00%3A00%2B02%3A00", 
+    "uri": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/agreements?offset=2019-01-01T00%3A00%3A00%2B02%3A00", 
+    "offset": "2019-01-01T00:00:00+02:00"
   }, 
   "data": [
     {
-      "id": "c37f8569c6104df8b9c909a2bd5e591d", 
-      "dateModified": "2019-03-28T06:47:10.946848+02:00"
+      "id": "83456a89ad0143b5b9dde8ca7ac28456", 
+      "dateModified": "2019-01-01T00:00:00+02:00"
     }
   ]
 }

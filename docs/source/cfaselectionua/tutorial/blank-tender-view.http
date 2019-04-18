@@ -1,29 +1,27 @@
-GET /api/2.5/tenders/bfc38e0727544f8bbcacbf60bd82358d HTTP/1.0
+GET /api/2.5/tenders/eb41fc8aa1bb45049e1c21d3b74c0a1f HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
-
-200 OK
+Response: 200 OK
 Content-Type: application/json; charset=UTF-8
-
 {
   "data": {
     "status": "draft", 
     "procurementMethod": "selective", 
-    "tenderID": "UA-2019-04-03-000001", 
+    "tenderID": "UA-2019-01-01-000001", 
     "title": "футляри до державних нагород", 
     "lots": [
       {
-        "date": "2019-04-03T14:34:33.852536+03:00", 
+        "date": "2019-01-01T00:00:00+02:00", 
         "status": "active", 
-        "title": "lot title", 
-        "description": "lot description", 
-        "id": "f95dd4f753684255832d7cfdc7b32368"
+        "title": "Лот №1", 
+        "description": "Опис Лот №1", 
+        "id": "8c48fa062b4d4df8bc6f4e57271b2112"
       }
     ], 
     "items": [
       {
-        "relatedLot": "f95dd4f753684255832d7cfdc7b32368", 
+        "relatedLot": "8c48fa062b4d4df8bc6f4e57271b2112", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -46,8 +44,8 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-05T14:34:32.392080+03:00", 
-          "endDate": "2019-04-08T14:34:32.392080+03:00"
+          "startDate": "2019-01-03T00:00:00+02:00", 
+          "endDate": "2019-01-06T00:00:00+02:00"
         }, 
         "id": "1662b0e1d59f4e2f8e2c5bd48e03a7bc", 
         "unit": {
@@ -59,16 +57,16 @@ Content-Type: application/json; charset=UTF-8
     ], 
     "procurementMethodType": "closeFrameworkAgreementSelectionUA", 
     "submissionMethod": "electronicAuction", 
-    "date": "2019-04-03T14:34:33.852536+03:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "agreements": [
       {
-        "id": "3c7c74b4eea74bbea027e6cdace4e7c9"
+        "id": "c2221c2d855b457db7952d960dc02611"
       }
     ], 
     "awardCriteria": "lowestCost", 
     "owner": "broker", 
-    "dateModified": "2019-04-03T14:34:33.855838+03:00", 
-    "id": "bfc38e0727544f8bbcacbf60bd82358d", 
+    "dateModified": "2019-01-01T00:00:00+02:00", 
+    "id": "eb41fc8aa1bb45049e1c21d3b74c0a1f", 
     "procuringEntity": {
       "kind": "general", 
       "name": "Державне управління справами", 

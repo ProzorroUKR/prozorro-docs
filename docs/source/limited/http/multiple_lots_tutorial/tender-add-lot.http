@@ -1,9 +1,9 @@
-POST /api/2.5/tenders/f930e795d51e4d0897efd6abd044cab3/lots?acc_token=de5684b7316349acb1774b8332e102ab HTTP/1.0
+POST /api/2.5/tenders/9b64b7c8f5d548b0a278a80f697bd9c4/lots?acc_token=519929395faa425897d1c7d67701a59a HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 199
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "description": "Опис Лот №1", 
@@ -18,7 +18,7 @@ Host: api-sandbox.openprocurement.org
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/f930e795d51e4d0897efd6abd044cab3/lots/d24866d6eade408d988ac6dc679460fe
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/9b64b7c8f5d548b0a278a80f697bd9c4/lots/f9b1b519f94d4d6abd60117c373007dc
 {
   "data": {
     "status": "active", 
@@ -29,8 +29,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/f930e795d51e4d0
       "amount": 500000.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2019-03-28T06:49:42.552349+02:00", 
-    "id": "d24866d6eade408d988ac6dc679460fe"
+    "date": "2019-01-01T00:00:00+02:00", 
+    "id": "f9b1b519f94d4d6abd60117c373007dc"
   }
 }
 

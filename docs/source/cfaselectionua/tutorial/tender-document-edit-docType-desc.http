@@ -1,32 +1,30 @@
-PATCH /api/2.5/tenders/55fbfef6773941a68153e7e877673499/documents/737468dbc4394e7b9ecd91adb26cd29f?acc_token=fd113ea31c4145b2a5790646a65a9099 HTTP/1.0
+PATCH /api/2.5/tenders/4cdd6b38d69c459284b31ab81cbea097/documents/75f46ad3e0094b93a0cbc45a8f289735?acc_token=55a1ff7e4b9c4fec90bca39c8e96fbd7 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 58
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "description": "document description modified"
   }
 }
 
-
-200 OK
+Response: 200 OK
 Content-Type: application/json; charset=UTF-8
-
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "description": "document description modified", 
     "title": "Notice.pdf", 
-    "url": "http://public.docs-sandbox.openprocurement.org/get/ab153c18ae17420faed899dee30de982?KeyID=cfd3c8d9&Signature=%252BYN0dG9IkxqpwRXPOuW%2F3uwIgILCpxtXWm17C%2FgSI5bsS529zr9rLOsQI8P2AoveJ%2Flf8HMlbD%252BsbjAH9v%2FaCQ%253D%253D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/058845deea5e44a2924d126939dc17b8?KeyID=a8968c46&Signature=ukiyus04BgWaA%252B5uVmBkAVAHJEEr5VZRj05WiGq0nc6QeHQiQ6L84MLrXzuSRevfDnnLM%252BzOy5R5jx5RJftNBw%253D%253D", 
     "format": "application/pdf", 
     "documentOf": "tender", 
-    "datePublished": "2019-04-03T14:34:43.284144+03:00", 
+    "datePublished": "2019-01-01T00:00:00+02:00", 
     "author": "tender_owner", 
     "documentType": "technicalSpecifications", 
-    "id": "737468dbc4394e7b9ecd91adb26cd29f", 
-    "dateModified": "2019-04-03T14:34:43.284158+03:00"
+    "id": "75f46ad3e0094b93a0cbc45a8f289735", 
+    "dateModified": "2019-01-01T00:00:00+02:00"
   }
 }
 

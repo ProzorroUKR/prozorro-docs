@@ -1,9 +1,9 @@
-PATCH /api/2.5/tenders/8ebbedbb7e114716a175fa053af7cda6/awards/ab93425d1b974090bbcf0c97e20269d7?acc_token=cd8238cb6f7449eeab3bfcf5cd5d6579 HTTP/1.0
+PATCH /api/2.5/tenders/411eba73a7e241eab1e17cf80cbe33c6/awards/efe76415cff24b1b97ccf889eecbe556?acc_token=aa8f9663e1ac4382ac0d69917f93e5f3 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 30
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
     "status": "active"
@@ -17,22 +17,24 @@ Content-Type: application/json; charset=UTF-8
     "status": "active", 
     "documents": [
       {
+        "hash": "md5:00000000000000000000000000000000", 
         "title": "award_first_document.doc", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/8ebbedbb7e114716a175fa053af7cda6/awards/ab93425d1b974090bbcf0c97e20269d7/documents/600f0c6f9da14eff9f30d110544d4b53?download=33977e6ed2f944fb8dae974d7c0a1f23", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/e87d89ada25646afa9d42bc5b4f37413?KeyID=a8968c46&Signature=XixrXActad0oujeUIEZ4uyUr3015FJArZkwGxyjqTU6ZsZ0nffMUlUsRq9Y2lFu4pjgAeACrT%252BRGKxsgy%252BagCA%253D%253D", 
         "format": "application/msword", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:49:30.713567+02:00", 
-        "id": "600f0c6f9da14eff9f30d110544d4b53", 
-        "dateModified": "2019-03-28T06:49:30.713601+02:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "622caec07fe746f19e95d014292d62e9", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }, 
       {
+        "hash": "md5:00000000000000000000000000000000", 
         "title": "award_second_document.doc", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/8ebbedbb7e114716a175fa053af7cda6/awards/ab93425d1b974090bbcf0c97e20269d7/documents/e714e804c6c9455b9462f189a4abb59d?download=25fe8a2888b04a69b967944a1f706251", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/d8fd8d3a8c314b46acedace54141d263?KeyID=a8968c46&Signature=b9jXCeFiAQOIFF5ykEKakYjfMV6Gfhr%2Fo064jLfyfd3Fu0JTYJr9pk3T8G45%2FsEs65L3Pp3bJduNlm6gHJnBCQ%253D%253D", 
         "format": "application/msword", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:49:30.812967+02:00", 
-        "id": "e714e804c6c9455b9462f189a4abb59d", 
-        "dateModified": "2019-03-28T06:49:30.812995+02:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "f5b9917436804b309600c99d40acae5c", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }
     ], 
     "suppliers": [
@@ -44,9 +46,8 @@ Content-Type: application/json; charset=UTF-8
         }, 
         "identifier": {
           "scheme": "UA-EDR", 
-          "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
-          "id": "13313462", 
-          "uri": "http://sch10.edu.vn.ua/"
+          "id": "00137256", 
+          "uri": "http://www.sc.gov.ua/"
         }, 
         "name": "ДКП «Школяр»", 
         "address": {
@@ -63,8 +64,8 @@ Content-Type: application/json; charset=UTF-8
       "amount": 475000.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2019-03-28T06:49:30.887872+02:00", 
-    "id": "ab93425d1b974090bbcf0c97e20269d7"
+    "date": "2019-01-01T00:00:00+02:00", 
+    "id": "efe76415cff24b1b97ccf889eecbe556"
   }
 }
 

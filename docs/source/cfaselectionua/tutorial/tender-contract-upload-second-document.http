@@ -1,32 +1,30 @@
-POST /api/2.5/tenders/55fbfef6773941a68153e7e877673499/contracts/f7a347eda6744daf9997077814cc00b1/documents?acc_token=fd113ea31c4145b2a5790646a65a9099 HTTP/1.0
+POST /api/2.5/tenders/4cdd6b38d69c459284b31ab81cbea097/contracts/dcf3565417d44143b47ae2a316a85892/documents?acc_token=55a1ff7e4b9c4fec90bca39c8e96fbd7 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 351
+Content-Length: 349
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
-
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
 {
   "data": {
-    "url": "http://public.docs-sandbox.openprocurement.org/get/bc6a405de27e42bba26cf5decf994460?KeyID=cfd3c8d9&Signature=WEz0ySl9sj5lLACuuwgkWyQbWhA7Wh51VxdjcdfEH7%2BOeZl1zKFS0Glh%2FxThVEJOd%2Bk8ekEfVoh%2FWhNrOBQgAg%3D%3D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/35bc340e85774e2a8c7018cd7aae1dd1?KeyID=a8968c46&Signature=MaXH412zm3Zytoq3ob4%2B5DHvk8lI%2BetkGJqQP1JLiu9OvV7RRGiqz%2FPT%2BU%2Fyqz60NhVGw4nTZlRTNpsla5KZBA%3D%3D", 
     "title": "contract_second_document.doc", 
     "hash": "md5:00000000000000000000000000000000", 
     "format": "application/msword"
   }
 }
 
-
-201 Created
+Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/55fbfef6773941a68153e7e877673499/contracts/f7a347eda6744daf9997077814cc00b1/documents/0a06d67f070d4dcc8953026c053b3a7f
-
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4cdd6b38d69c459284b31ab81cbea097/contracts/dcf3565417d44143b47ae2a316a85892/documents/cefd0fdccb3148c1b10ff96a07be09c1
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "title": "contract_second_document.doc", 
-    "url": "http://public.docs-sandbox.openprocurement.org/get/bc6a405de27e42bba26cf5decf994460?KeyID=cfd3c8d9&Signature=EVAUxm1s0OLSJpaFKIDECwEgaRAuX0KoBDJVHTXOXJpUd%252BB17wBWJSXoWFBDs0lrkzk5Mq7rzNGrF9SDoZcCCw%253D%253D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/35bc340e85774e2a8c7018cd7aae1dd1?KeyID=a8968c46&Signature=y64GFO%2FAoxzyA%2FRJebVUXtSZeMTK1Fpe8NFatPd7Ofe4q5wVn%2FXSR7r1vnuboCpRujLNIc6Ewx2SAi7WPwulAw%253D%253D", 
     "format": "application/msword", 
-    "datePublished": "2019-04-03T14:34:47.781825+03:00", 
-    "id": "0a06d67f070d4dcc8953026c053b3a7f", 
-    "dateModified": "2019-04-03T14:34:47.781838+03:00"
+    "datePublished": "2019-01-01T00:00:00+02:00", 
+    "id": "cefd0fdccb3148c1b10ff96a07be09c1", 
+    "dateModified": "2019-01-01T00:00:00+02:00"
   }
 }
 

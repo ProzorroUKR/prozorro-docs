@@ -1,8 +1,8 @@
-POST /api/2.5/tenders/73c2c3f9cc6349f0a144ed40c9e3dfa7/bids HTTP/1.0
+POST /api/2.5/tenders/ee151acde21d47749df3a412b1b1c5b9/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 749
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -14,9 +14,9 @@ DATA:
     "tenderers": [
       {
         "contactPoint": {
+          "email": "aagt@gmail.com", 
           "telephone": "+380 (322) 91-69-30", 
-          "name": "Андрій Олексюк", 
-          "email": "aagt@gmail.com"
+          "name": "Андрій Олексюк"
         }, 
         "identifier": {
           "scheme": "UA-EDR", 
@@ -38,10 +38,10 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/73c2c3f9cc6349f0a144ed40c9e3dfa7/bids/f1c05d51be8842d2838dfcadd6b621e5
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ee151acde21d47749df3a412b1b1c5b9/bids/947ede31121545498a322c94f57229ee
 {
   "access": {
-    "token": "a288aac6f6ca4ed485a6708e11ea21f4"
+    "token": "01d6ba83c24045dc85631255c27e95b2"
   }, 
   "data": {
     "status": "pending", 
@@ -69,8 +69,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/73c2c3f9cc6349f
         }
       }
     ], 
-    "date": "2019-03-28T06:48:33.608735+02:00", 
-    "id": "f1c05d51be8842d2838dfcadd6b621e5"
+    "date": "2019-01-01T00:00:00+02:00", 
+    "id": "947ede31121545498a322c94f57229ee"
   }
 }
 

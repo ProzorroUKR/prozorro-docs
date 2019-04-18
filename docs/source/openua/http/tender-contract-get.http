@@ -1,6 +1,6 @@
-GET /api/2.5/tenders/425a24b7b03d49759b19d37ac7e51561/contracts/3efe5c5edf2c40e39afa62819acb9ba4?acc_token=9339c9eca13f47388862c5e3b8cb3d23 HTTP/1.0
+GET /api/2.5/tenders/92f0a69805904e71be9e717fad623af5/contracts/83aa84d9945a43fcade770e95b4cd40c?acc_token=a7b6575bd2064c97b965ea003187c336 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
@@ -9,13 +9,14 @@ Content-Type: application/json; charset=UTF-8
     "status": "pending", 
     "documents": [
       {
+        "hash": "md5:00000000000000000000000000000000", 
         "title": "contract_document.doc", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/425a24b7b03d49759b19d37ac7e51561/contracts/3efe5c5edf2c40e39afa62819acb9ba4/documents/2d5eef76ff0441a8b729cbad4d29a1e8?download=3a8ec234a0cf470bb0c893ca8a23d1cb", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/c24cbf4587d84af3a3abeeb9779a9798?KeyID=a8968c46&Signature=emErPdFVHQYQutL5ynCi6dc5UFpKjX%252BzudIxNAFh3%252B%2FFN%252B5e64Z1sGjza5LfSOG1WZqw%2Fo3QhD8SkAyZQx%252BVDg%253D%253D", 
         "format": "application/msword", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:50:15.088092+02:00", 
-        "id": "2d5eef76ff0441a8b729cbad4d29a1e8", 
-        "dateModified": "2019-03-28T06:50:15.088114+02:00"
+        "datePublished": "2019-01-01T00:10:00+02:00", 
+        "id": "8b977d5f4ddb4831a6c773967234f550", 
+        "dateModified": "2019-01-01T00:10:00+02:00"
       }
     ], 
     "items": [
@@ -23,8 +24,8 @@ Content-Type: application/json; charset=UTF-8
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
-          "description": "Test", 
-          "id": "37810000-9"
+          "description": "Послуги з харчування у школах", 
+          "id": "55523100-3"
         }, 
         "additionalClassifications": [
           {
@@ -41,14 +42,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-17T06:47:08.962424+02:00", 
-          "endDate": "2019-05-17T06:47:08.962464+02:00"
+          "startDate": "2019-01-21T00:00:00+02:00", 
+          "endDate": "2019-02-20T00:00:00+02:00"
         }, 
-        "id": "55c10c6897b8430bbed91d63761a9ce7", 
-        "unit": {
-          "code": "44617100-9", 
-          "name": "item"
-        }, 
+        "id": "eaf082c0a64b4796947e934c4243330d", 
         "quantity": 1.0
       }
     ], 
@@ -75,20 +72,20 @@ Content-Type: application/json; charset=UTF-8
       }
     ], 
     "period": {
-      "startDate": "2019-03-28T06:50:14.951178+02:00", 
-      "endDate": "2020-03-27T06:50:14.951206+02:00"
+      "startDate": "2019-01-01T00:10:00+02:00", 
+      "endDate": "2020-01-01T00:10:00+02:00"
     }, 
-    "dateSigned": "2019-03-28T06:50:14.851540+02:00", 
+    "dateSigned": "2019-01-01T00:10:00+02:00", 
     "value": {
       "currency": "UAH", 
       "amount": 238.0, 
       "amountNet": 230.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2019-03-28T06:50:14.637004+02:00", 
-    "awardID": "ce51a7a410124584ad0d3a05fdfb68e4", 
-    "id": "3efe5c5edf2c40e39afa62819acb9ba4", 
-    "contractID": "UA-2019-03-28-000001-1"
+    "date": "2019-01-01T00:00:00+02:00", 
+    "awardID": "f745df3760b147aab165f3c5c424c84c", 
+    "id": "83aa84d9945a43fcade770e95b4cd40c", 
+    "contractID": "UA-2019-01-01-000001-1"
   }
 }
 

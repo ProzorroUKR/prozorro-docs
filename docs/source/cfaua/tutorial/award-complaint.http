@@ -1,37 +1,37 @@
-GET /api/2.5/tenders/c2be6cc98391434da02ceb5260928191/awards/b3ea07978dfa4489a4143af66ef6d18b/complaints/2a3afee011924c8fb39f5459cad480de HTTP/1.0
-Host: api-sandbox.openprocurement.org
+GET /api/2.5/tenders/bcd53594a1a245cdbecf00f8aa09cc36/awards/06d30f82e6b94bdfa1580f01aadfd48b/complaints/715e24d936174f29a289414ea9a60ea5 HTTP/1.0
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
 {
   "data": {
-    "relatedLot": "2e6f1f49c8894974a1c36e2b463b5b86", 
+    "relatedLot": "e805ca07bcfd4410a873ceff155e669f", 
     "status": "satisfied", 
-    "dateDecision": "2019-03-28T06:47:46.841978+02:00", 
+    "dateDecision": "2019-01-01T00:10:00+02:00", 
     "documents": [
       {
         "hash": "md5:00000000000000000000000000000000", 
         "author": "complaint_owner", 
         "language": "uk", 
         "title": "Complaint_Attachement.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/d048801338f640faadb38d04b87f2dcd?KeyID=25f399ce&Signature=KKzUjUNmCO3R7m6sqIxDY9VqQQbcQC6iMDYiCEVGxrqPGsZtvY%252Bp7gcvWrmNvLEhvUPxrDoS3RiQbi2jPH55AQ%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/7d62b510cbb54ec98b6096a0ba5d471b?KeyID=a8968c46&Signature=r0kBT1yfdxjOMg%2FNCToB4HtI7o8IgHbuq2q77Cj9l6PEup5Z1Ltzt1CYQTt0v7xK1v8NOOZF75GtKKGT0rZXDQ%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:47:43.727861+02:00", 
-        "id": "1af38b18fa754368a132b95e2902f57d", 
-        "dateModified": "2019-03-28T06:47:43.727890+02:00"
+        "datePublished": "2019-01-01T00:10:00+02:00", 
+        "id": "f2e1ee3b805d451a807e97e0be99253b", 
+        "dateModified": "2019-01-01T00:10:00+02:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
         "author": "aboveThresholdReviewers", 
         "language": "uk", 
         "title": "ComplaintResolution.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/da9d5773d0944fd59347b861340e0821?KeyID=25f399ce&Signature=FqE1m39kxYjYXzLLF6f16zB1lJP%2FCLpU%252Bl4oVa8ifzgYFVc87rwciqfAm8m%2FWgZuHUDCyw3jZammVpWeQpJODA%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/2e652ec2372741f6a1ca2251c8bb1ef4?KeyID=a8968c46&Signature=fJkZXw41uRNCcbc7b5jWzbUupozMCZo7ay5ZF5WYObAd9TkDt6oFdorAzwex%252B59Y6Y%252BEHiQ6P4HKw0ztWNAiDg%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:47:46.678729+02:00", 
-        "id": "09a0c358579c40c2ae0c2c3643cd377d", 
-        "dateModified": "2019-03-28T06:47:46.678748+02:00"
+        "datePublished": "2019-01-01T00:10:00+02:00", 
+        "id": "38addc149e964b0eb464b428ed07af32", 
+        "dateModified": "2019-01-01T00:10:00+02:00"
       }
     ], 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
@@ -43,9 +43,8 @@ Content-Type: application/json; charset=UTF-8
       }, 
       "identifier": {
         "scheme": "UA-EDR", 
-        "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
-        "id": "13313462", 
-        "uri": "http://sch10.edu.vn.ua/"
+        "id": "00137256", 
+        "uri": "http://www.sc.gov.ua/"
       }, 
       "name": "ДКП «Школяр»", 
       "address": {
@@ -57,13 +56,13 @@ Content-Type: application/json; charset=UTF-8
       }
     }, 
     "title": "Недостатньо інформації", 
-    "dateAccepted": "2019-03-28T06:47:45.939996+02:00", 
-    "dateSubmitted": "2019-03-28T06:47:43.849036+02:00", 
-    "complaintID": "UA-2019-03-28-000001.1", 
-    "date": "2019-03-28T06:47:46.850823+02:00", 
+    "dateAccepted": "2019-01-01T00:10:00+02:00", 
+    "dateSubmitted": "2019-01-01T00:10:00+02:00", 
+    "complaintID": "UA-2019-01-01-000001.1", 
+    "date": "2019-01-01T00:10:00+02:00", 
     "acceptance": true, 
     "type": "complaint", 
-    "id": "2a3afee011924c8fb39f5459cad480de"
+    "id": "715e24d936174f29a289414ea9a60ea5"
   }
 }
 

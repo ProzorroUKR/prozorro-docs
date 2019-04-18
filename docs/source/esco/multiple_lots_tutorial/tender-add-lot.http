@@ -1,8 +1,8 @@
-POST /api/2.5/tenders/a5737d7e05a4451a8a502a9d763357f0/lots?acc_token=108415e41c8546a99829fcbfe080d4e1 HTTP/1.0
+POST /api/2.5/tenders/860d74a785364c238fc2e06190d4c25d/lots?acc_token=6fe807aaf8204458b6b0b3ca4e5fe9b3 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 175
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -15,7 +15,7 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/a5737d7e05a4451a8a502a9d763357f0/lots/b7292dba1ee3436db63fee17b2d09579
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/860d74a785364c238fc2e06190d4c25d/lots/c610d778e48445eda6c38b497d348925
 {
   "data": {
     "status": "active", 
@@ -23,7 +23,7 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/a5737d7e05a4451
     "fundingKind": "other", 
     "title": "Лот №1", 
     "auctionPeriod": {
-      "shouldStartAfter": "2019-06-03T00:00:00+02:00"
+      "shouldStartAfter": "2019-03-08T00:00:00+02:00"
     }, 
     "minValue": {
       "currency": "UAH", 
@@ -32,8 +32,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/a5737d7e05a4451
     }, 
     "minimalStepPercentage": 0.006, 
     "yearlyPaymentsPercentageRange": 0.8, 
-    "date": "2019-03-28T06:49:20.419016+02:00", 
-    "id": "b7292dba1ee3436db63fee17b2d09579"
+    "date": "2019-01-01T00:00:00+02:00", 
+    "id": "c610d778e48445eda6c38b497d348925"
   }
 }
 

@@ -1,32 +1,30 @@
 # -*- coding: utf-8 -*-
 import os
 from copy import deepcopy
-
 from datetime import timedelta
 
-import openprocurement.tender.openuadefense.tests.base as base_test
 from openprocurement.api.models import get_now
 from openprocurement.tender.openuadefense.tests.tender import BaseTenderUAWebTest
 
-from tests.base import DumpsWebTestApp, DOCS_HOST, AUCTIONS_HOST
-from tests.data import (
-    question, complaint, tender_defense, subcontracting, qualified, bid, bid2
+from tests.base.test import DumpsWebTestApp, MockWebTestMixin
+from tests.base.constants import DOCS_HOST, AUCTIONS_HOST
+from tests.base.data import (
+    question, complaint, tender_defense, subcontracting,
+    qualified, bid, bid2
 )
 
 test_tender_ua_data = deepcopy(tender_defense)
-test_tender_ua_data["procuringEntity"]["kind"] = "defense"
-
 bid = deepcopy(bid)
+bid2 = deepcopy(bid2)
+
 bid.update(subcontracting)
 bid.update(qualified)
-
-bid2 = deepcopy(bid2)
 bid2.update(qualified)
 
 TARGET_DIR = 'docs/source/defense/http/'
 
 
-class TenderUAResourceTest(BaseTenderUAWebTest):
+class TenderUAResourceTest(BaseTenderUAWebTest, MockWebTestMixin):
     initial_data = test_tender_ua_data
     docservice = True
 
@@ -34,14 +32,16 @@ class TenderUAResourceTest(BaseTenderUAWebTest):
     auctions_host = AUCTIONS_HOST
 
     def setUp(self):
-        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(base_test.__file__))
+        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(__file__))
         self.couchdb_server = self.app.app.registry.couchdb_server
         self.db = self.app.app.registry.db
+        self.setUpMock()
         if self.docservice:
             self.setUpDS()
             self.app.app.registry.docservice_url = 'http://{}'.format(self.docs_host)
 
     def tearDown(self):
+        self.tearDownMock()
         self.couchdb_server.delete(self.db.name)
 
     def generate_docservice_url(self):
@@ -73,6 +73,8 @@ class TenderUAResourceTest(BaseTenderUAWebTest):
 
         #### Creating tender
 
+        test_tender_ua_data["procuringEntity"]["kind"] = "defense"
+
         with open(TARGET_DIR + 'tender-post-attempt-json-data.http', 'w') as self.app.file_obj:
             response = self.app.post_json(
                 '/tenders?opt_pretty=1',
@@ -99,13 +101,7 @@ class TenderUAResourceTest(BaseTenderUAWebTest):
         with open(TARGET_DIR + 'patch-items-value-periods.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
                 '/tenders/{}?acc_token={}'.format(tender['id'], owner_token),
-                {'data':
-                    {
-                        "tenderPeriod": {
-                            "endDate": tenderPeriod_endDate.isoformat()
-                        }
-                    }
-                })
+                {'data': {"tenderPeriod": {"endDate": tenderPeriod_endDate.isoformat()}}})
 
         with open(TARGET_DIR + 'tender-listing-after-patch.http', 'w') as self.app.file_obj:
             self.app.authorization = None
@@ -313,7 +309,6 @@ class TenderUAResourceTest(BaseTenderUAWebTest):
             self.assertEqual(response.status, '200 OK')
 
         #### Confirming qualification
-        # self.set_status('active.qualification')
         self.app.authorization = ('Basic', ('auction', ''))
         response = self.app.get('/tenders/{}/auction'.format(self.tender_id))
         auction_bids_data = response.json['data']['bids']
@@ -357,6 +352,8 @@ class TenderUAResourceTest(BaseTenderUAWebTest):
         self.assertEqual(response.json['data']['value']['amount'], 238)
 
         #### Setting contract signature date
+
+        self.tick()
 
         with open(TARGET_DIR + 'tender-contract-sign-date.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
@@ -449,6 +446,8 @@ class TenderUAResourceTest(BaseTenderUAWebTest):
 
     def test_complaints(self):
         self.app.authorization = ('Basic', ('broker', ''))
+
+        test_tender_ua_data["procuringEntity"]["kind"] = "defense"
 
         response = self.app.post_json(
             '/tenders?opt_pretty=1',
@@ -688,6 +687,8 @@ class TenderUAResourceTest(BaseTenderUAWebTest):
     def test_award_complaints(self):
         self.app.authorization = ('Basic', ('broker', ''))
 
+        test_tender_ua_data["procuringEntity"]["kind"] = "defense"
+
         response = self.app.post_json(
             '/tenders?opt_pretty=1',
             {'data': test_tender_ua_data})
@@ -720,6 +721,8 @@ class TenderUAResourceTest(BaseTenderUAWebTest):
         self.app.authorization = ('Basic', ('broker', ''))
         response = self.app.get('/tenders/{}/awards?acc_token={}'.format(
             self.tender_id, owner_token))
+
+        self.tick()
 
         # get pending award
         award_id = [i['id'] for i in response.json['data'] if i['status'] == 'pending'][0]

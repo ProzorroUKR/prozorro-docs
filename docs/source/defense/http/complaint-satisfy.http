@@ -1,8 +1,8 @@
-PATCH /api/2.5/tenders/d607e84d7f9e4d9fa51271833ac12baa/complaints/c1d57065abde4486a9e485f03157fdcf?acc_token=09b80c9a11864dc2acebf7f6d9acb03c HTTP/1.0
+PATCH /api/2.5/tenders/48b14561c9f44d339fdf26f0d4cdb624/complaints/d8b4c61723504dad9f5d975051034c82?acc_token=8e8cf9f6ca6d4ebdbe34d555185a344b HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 51
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -21,11 +21,11 @@ Content-Type: application/json; charset=UTF-8
     "resolutionType": "resolved", 
     "type": "claim", 
     "satisfied": true, 
-    "dateAnswered": "2019-03-28T06:48:55.792913+02:00", 
-    "complaintID": "UA-2019-03-28-000001.2", 
-    "date": "2019-03-28T06:48:55.902936+02:00", 
+    "dateAnswered": "2019-01-01T00:00:00+02:00", 
+    "complaintID": "UA-2019-01-01-000001.2", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "resolution": "Виправлено неконкурентні умови", 
-    "id": "c1d57065abde4486a9e485f03157fdcf"
+    "id": "d8b4c61723504dad9f5d975051034c82"
   }
 }
 

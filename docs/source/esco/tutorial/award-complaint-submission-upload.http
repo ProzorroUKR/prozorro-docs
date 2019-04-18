@@ -1,24 +1,32 @@
-POST /api/2.5/tenders/4e74deb4a2fc4935b49c9179e2b990f9/awards/5677a802219b4f8ea54c2bb1d7768b59/complaints/23e09f9d61da4422a582e2f42d315932/documents?acc_token=d0f9e321ff644765a2025f8dc7a1af59 HTTP/1.0
+POST /api/2.5/tenders/bde326779f8742d7ad93431f9c1f6dce/awards/ae69af4c17fb4b2b8df97ac8d6c007ec/complaints/81cda75dfa6341a5a611c6563dd991a9/documents?acc_token=07658b16e9f24636ab08313ad0bb65bb HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 203
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy0522159281361$
-Host: api-sandbox.openprocurement.org
+Content-Length: 151
+Content-Type: multipart/form-data; boundary=BOUNDARY
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="Complaint_Attachement.pdf"
+Content-Type: application/pdf
+
+content
+--BOUNDARY--
+
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/4e74deb4a2fc4935b49c9179e2b990f9/awards/5677a802219b4f8ea54c2bb1d7768b59/complaints/23e09f9d61da4422a582e2f42d315932/documents/7e31e25827f0418e905f93a5b8399304
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/bde326779f8742d7ad93431f9c1f6dce/awards/ae69af4c17fb4b2b8df97ac8d6c007ec/complaints/81cda75dfa6341a5a611c6563dd991a9/documents/50694bf6767f4e4db01d4258186a96c1
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "author": "complaint_owner", 
     "language": "uk", 
     "title": "Complaint_Attachement.pdf", 
-    "url": "http://public.docs-sandbox.openprocurement.org/get/6082ea27b07f4695929fa094f8a00659?KeyID=6a9b54e8&Signature=0drRHlmaN6O9jvih6PvnGxbqnLhik5fjr3ZlG2owrSAF%2Fw1LXfD0%2F2pODXlK626v878h9BnCMghKtGN62g6QBg%253D%253D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/44313eeab466475b8c360bf9ee1b0bfd?KeyID=a8968c46&Signature=WU3vSfo0%252BfR5DamXIp1%252Bu0CyO8be%252BDZlkS1eP9S9hChBDizYT4y%252BbCvZ1TR8Lgabg%2FQk%252BkrXQdCehfUAVSP8AA%253D%253D", 
     "format": "application/pdf", 
     "documentOf": "tender", 
-    "datePublished": "2019-03-28T06:49:02.968845+02:00", 
-    "id": "7e31e25827f0418e905f93a5b8399304", 
-    "dateModified": "2019-03-28T06:49:02.968862+02:00"
+    "datePublished": "2019-01-01T00:30:00+02:00", 
+    "id": "50694bf6767f4e4db01d4258186a96c1", 
+    "dateModified": "2019-01-01T00:30:00+02:00"
   }
 }
 

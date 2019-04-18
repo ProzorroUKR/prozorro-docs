@@ -1,6 +1,6 @@
-GET /api/2.5/tenders/ecf287a696234915834e93bd9c09f0f4/bids/a458a4a7fbfd49f0b437b76fc21a8189?acc_token=66ecf1d9db3c4e029fa9dc861e660ecd HTTP/1.0
+GET /api/2.5/tenders/2741dfda90ec4955a16232b29654f06e/bids/111b9f74b7b54ab889caa2f8826c0ee1?acc_token=6b997a9685e84d25a06a891bffc3907d HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
@@ -11,12 +11,12 @@ Content-Type: application/json; charset=UTF-8
       {
         "hash": "md5:00000000000000000000000000000000", 
         "title": "Proposal_part1.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.5/tenders/ecf287a696234915834e93bd9c09f0f4/bids/a458a4a7fbfd49f0b437b76fc21a8189/documents/b8c5e74d2c3942f79963b07929fa25f4?download=311428c9082a4c30934e4e3c3a1d77dc", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/2741dfda90ec4955a16232b29654f06e/bids/111b9f74b7b54ab889caa2f8826c0ee1/documents/1a95add0b1f24a8fb42e5a9ae1ed53c8?download=30ab1a77d600492c9204d2fdb8a63ccb", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:48:45.639354+02:00", 
-        "id": "b8c5e74d2c3942f79963b07929fa25f4", 
-        "dateModified": "2019-03-28T06:48:45.639366+02:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "1a95add0b1f24a8fb42e5a9ae1ed53c8", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }
     ], 
     "selfEligible": true, 
@@ -25,7 +25,7 @@ Content-Type: application/json; charset=UTF-8
       "amount": 499.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "id": "a458a4a7fbfd49f0b437b76fc21a8189", 
+    "id": "111b9f74b7b54ab889caa2f8826c0ee1", 
     "tenderers": [
       {
         "contactPoint": {
@@ -48,9 +48,9 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "date": "2019-03-28T06:48:45.638961+02:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "selfQualified": true, 
-    "participationUrl": "http://auction-sandbox.openprocurement.org/tenders/ecf287a696234915834e93bd9c09f0f4?key_for_bid=a458a4a7fbfd49f0b437b76fc21a8189"
+    "participationUrl": "http://auction-sandbox.prozorro.gov.ua/tenders/2741dfda90ec4955a16232b29654f06e?key_for_bid=111b9f74b7b54ab889caa2f8826c0ee1"
   }
 }
 

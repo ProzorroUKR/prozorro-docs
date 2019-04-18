@@ -1,6 +1,6 @@
-GET /api/2.5/tenders/dc07cf2d5fae45f88da7ef5b0917cd1f HTTP/1.0
+GET /api/2.5/tenders/24f6a0b9c9d24eb5887a9d6015b64218 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
@@ -10,8 +10,8 @@ Content-Type: application/json; charset=UTF-8
     "status": "active.tendering", 
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
-      "startDate": "2019-03-28T06:48:57.577034+02:00", 
-      "endDate": "2019-04-13T06:47:08.227127+02:00"
+      "startDate": "2019-01-01T00:00:00+02:00", 
+      "endDate": "2019-01-17T00:00:00+02:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -20,13 +20,13 @@ Content-Type: application/json; charset=UTF-8
       "valueAddedTaxIncluded": true
     }, 
     "enquiryPeriod": {
-      "startDate": "2019-03-28T06:48:57.577034+02:00", 
-      "clarificationsUntil": "2019-04-12T00:00:00+02:00", 
-      "endDate": "2019-04-10T00:00:00+02:00"
+      "startDate": "2019-01-01T00:00:00+02:00", 
+      "clarificationsUntil": "2019-01-16T00:00:00+02:00", 
+      "endDate": "2019-01-14T00:00:00+02:00"
     }, 
     "complaintPeriod": {
-      "startDate": "2019-03-28T06:48:57.577034+02:00", 
-      "endDate": "2019-04-11T00:00:00+03:00"
+      "startDate": "2019-01-01T00:00:00+02:00", 
+      "endDate": "2019-01-15T00:00:00+02:00"
     }, 
     "procurementMethodType": "aboveThresholdUA.defense", 
     "value": {
@@ -35,8 +35,8 @@ Content-Type: application/json; charset=UTF-8
       "valueAddedTaxIncluded": true
     }, 
     "submissionMethod": "electronicAuction", 
-    "date": "2019-03-28T06:48:57.591424+02:00", 
-    "next_check": "2019-04-13T07:47:08.227127+03:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
+    "next_check": "2019-01-17T00:00:00+02:00", 
     "procuringEntity": {
       "contactPoint": {
         "url": "http://sch10.edu.vn.ua/", 
@@ -59,17 +59,17 @@ Content-Type: application/json; charset=UTF-8
       "name": "ЗОСШ #10 м.Вінниці"
     }, 
     "auctionPeriod": {
-      "shouldStartAfter": "2019-04-14T00:00:00+02:00"
+      "shouldStartAfter": "2019-01-17T00:00:00+02:00"
     }, 
     "owner": "broker", 
-    "dateModified": "2019-03-28T06:48:57.593664+02:00", 
+    "dateModified": "2019-01-01T00:00:00+02:00", 
     "items": [
       {
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
-          "description": "Test", 
-          "id": "37810000-9"
+          "description": "Послуги з харчування у школах", 
+          "id": "55523100-3"
         }, 
         "additionalClassifications": [
           {
@@ -86,19 +86,15 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-17T06:47:08.227086+02:00", 
-          "endDate": "2019-05-17T06:47:08.227116+02:00"
+          "startDate": "2019-01-21T00:00:00+02:00", 
+          "endDate": "2019-02-20T00:00:00+02:00"
         }, 
-        "id": "bed8b4c1bf15429e9392a61a0b20eaa2", 
-        "unit": {
-          "code": "44617100-9", 
-          "name": "item"
-        }, 
+        "id": "b93e41624f46400d8930ca512f697c6b", 
         "quantity": 1.0
       }
     ], 
-    "id": "dc07cf2d5fae45f88da7ef5b0917cd1f", 
-    "tenderID": "UA-2019-03-28-000001"
+    "id": "24f6a0b9c9d24eb5887a9d6015b64218", 
+    "tenderID": "UA-2019-01-01-000001"
   }
 }
 

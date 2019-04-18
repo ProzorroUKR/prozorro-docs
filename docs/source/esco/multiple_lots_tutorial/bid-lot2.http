@@ -1,8 +1,8 @@
-POST /api/2.5/tenders/a5737d7e05a4451a8a502a9d763357f0/bids HTTP/1.0
+POST /api/2.5/tenders/860d74a785364c238fc2e06190d4c25d/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 1454
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
@@ -10,7 +10,7 @@ DATA:
     "selfQualified": true, 
     "lotValues": [
       {
-        "relatedLot": "b7292dba1ee3436db63fee17b2d09579", 
+        "relatedLot": "c610d778e48445eda6c38b497d348925", 
         "value": {
           "contractDuration": {
             "years": 7
@@ -42,7 +42,7 @@ DATA:
         }
       }, 
       {
-        "relatedLot": "9aa1ec08c6b04d25b5a908c62f978f5f", 
+        "relatedLot": "f9af5748098c4f3c90c620bfb83c1594", 
         "value": {
           "contractDuration": {
             "years": 9
@@ -78,9 +78,9 @@ DATA:
     "tenderers": [
       {
         "contactPoint": {
+          "email": "aagt@gmail.com", 
           "telephone": "+380 (322) 91-69-30", 
-          "name": "Андрій Олексюк", 
-          "email": "aagt@gmail.com"
+          "name": "Андрій Олексюк"
         }, 
         "identifier": {
           "scheme": "UA-EDR", 
@@ -102,29 +102,29 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/a5737d7e05a4451a8a502a9d763357f0/bids/cd09b8b5ea5b4259a2128e077ae0e557
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/860d74a785364c238fc2e06190d4c25d/bids/51573dd743594c138baebfec4a9f547a
 {
   "access": {
-    "token": "1fce02a0714b42b893df6ba28b879de2"
+    "token": "59b94ba51b0f444c9927ae68db056d94"
   }, 
   "data": {
     "status": "pending", 
     "selfEligible": true, 
     "lotValues": [
       {
-        "relatedLot": "b7292dba1ee3436db63fee17b2d09579", 
-        "date": "2019-03-28T06:49:20.720130+02:00", 
+        "relatedLot": "c610d778e48445eda6c38b497d348925", 
+        "date": "2019-01-01T00:00:00+02:00", 
         "status": "pending", 
         "value": {
           "yearlyPaymentsPercentage": 0.9, 
           "valueAddedTaxIncluded": true, 
           "currency": "UAH", 
-          "amount": 9613.23, 
+          "amount": 9273.95, 
           "contractDuration": {
             "days": 0, 
             "years": 7
           }, 
-          "amountPerformance": 2013.75, 
+          "amountPerformance": 1984.18, 
           "annualCostsReduction": [
             700.0, 
             1600.0, 
@@ -151,19 +151,19 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/a5737d7e05a4451
         }
       }, 
       {
-        "relatedLot": "9aa1ec08c6b04d25b5a908c62f978f5f", 
-        "date": "2019-03-28T06:49:20.720852+02:00", 
+        "relatedLot": "f9af5748098c4f3c90c620bfb83c1594", 
+        "date": "2019-01-01T00:00:00+02:00", 
         "status": "pending", 
         "value": {
           "yearlyPaymentsPercentage": 0.96, 
           "valueAddedTaxIncluded": true, 
           "currency": "UAH", 
-          "amount": 10066.59, 
+          "amount": 9795.16, 
           "contractDuration": {
             "days": 0, 
             "years": 9
           }, 
-          "amountPerformance": 894.04, 
+          "amountPerformance": 884.68, 
           "annualCostsReduction": [
             600.0, 
             1200.0, 
@@ -214,8 +214,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/a5737d7e05a4451
         }
       }
     ], 
-    "date": "2019-03-28T06:49:20.719909+02:00", 
-    "id": "cd09b8b5ea5b4259a2128e077ae0e557"
+    "date": "2019-01-01T00:00:00+02:00", 
+    "id": "51573dd743594c138baebfec4a9f547a"
   }
 }
 
