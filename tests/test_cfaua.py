@@ -261,15 +261,13 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
         with open(TARGET_DIR + 'upload-bid-proposal.http', 'w') as self.app.file_obj:
             response = self.app.post(
                 '/tenders/{}/bids/{}/documents?acc_token={}'.format(self.tender_id, bid1_id, bids_access[bid1_id]),
-                upload_files=[('file', 'Proposal.pdf', 'content')]
-            )
+                upload_files=[('file', 'Proposal.pdf', 'content')])
             self.assertEqual(response.status, '201 Created')
 
         with open(TARGET_DIR + 'upload-bid-private-proposal.http', 'w') as self.app.file_obj:
             response = self.app.post(
                 '/tenders/{}/bids/{}/documents?acc_token={}'.format(self.tender_id, bid1_id, bids_access[bid1_id]),
-                upload_files=[('file', 'Proposal_top_secrets.pdf', 'content')]
-            )
+                upload_files=[('file', 'Proposal_top_secrets.pdf', 'content')])
             self.assertEqual(response.status, '201 Created')
             priv_doc_id = response.json['data']['id']
 
@@ -286,8 +284,7 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
 
         with open(TARGET_DIR + 'bidder-documents.http', 'w') as self.app.file_obj:
             response = self.app.get('/tenders/{}/bids/{}/documents?acc_token={}'.format(
-                self.tender_id, bid1_id, bids_access[bid1_id]
-            ))
+                self.tender_id, bid1_id, bids_access[bid1_id]))
 
         with open(TARGET_DIR + 'upload-bid-financial-document-proposal.http', 'w') as self.app.file_obj:
             response = self.app.post(
@@ -299,8 +296,7 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
         response = self.app.post(
             '/tenders/{}/bids/{}/financial_documents?acc_token={}'.format(
                 self.tender_id, bid1_id, bids_access[bid1_id]),
-            upload_files=[('file', 'financial_doc2.pdf', '1000$')]
-        )
+            upload_files=[('file', 'financial_doc2.pdf', '1000$')])
         self.assertEqual(response.status, '201 Created')
         # financial_doc_id = response.json['data']['id']
 
