@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/e88963ba5b4f426e9c7a665f8cfd988a HTTP/1.0
+GET /api/2.5/tenders/2741dfda90ec4955a16232b29654f06e HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: lb-api-sandbox.prozorro.gov.ua
 
@@ -9,18 +9,18 @@ Content-Type: application/json; charset=UTF-8
     "procurementMethod": "selective", 
     "status": "active.auction", 
     "complaintPeriod": {
-      "startDate": "2019-04-02T13:04:10.651311+03:00", 
-      "endDate": "2019-04-14T00:00:00+03:00"
+      "startDate": "2018-12-16T00:00:00+02:00", 
+      "endDate": "2018-12-28T00:00:00+02:00"
     }, 
-    "auctionUrl": "http://auction-sandbox.prozorro.gov.ua/tenders/e88963ba5b4f426e9c7a665f8cfd988a", 
+    "auctionUrl": "http://auction-sandbox.prozorro.gov.ua/tenders/2741dfda90ec4955a16232b29654f06e", 
     "enquiryPeriod": {
-      "startDate": "2019-04-02T13:04:10.651311+03:00", 
-      "clarificationsUntil": "2019-04-11T13:04:10.651311+03:00", 
-      "endDate": "2019-04-08T13:04:10.651311+03:00", 
-      "invalidationDate": "2019-04-18T13:07:15.960960+03:00"
+      "startDate": "2018-12-16T00:00:00+02:00", 
+      "clarificationsUntil": "2018-12-28T00:00:00+02:00", 
+      "endDate": "2018-12-22T00:00:00+02:00", 
+      "invalidationDate": "2019-01-01T00:00:00+02:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "next_check": "2019-04-18T13:40:10.651311+03:00", 
+    "next_check": "2019-01-01T00:36:00+02:00", 
     "procuringEntity": {
       "contactPoint": {
         "url": "http://sch10.edu.vn.ua/", 
@@ -45,49 +45,49 @@ Content-Type: application/json; charset=UTF-8
     "questions": [
       {
         "description": "Просимо додати таблицю потрібної калорійності харчування", 
-        "dateAnswered": "2019-04-18T13:07:15.454080+03:00", 
+        "dateAnswered": "2019-01-01T00:00:00+02:00", 
         "title": "Калорійність", 
-        "date": "2019-04-18T13:07:15.404424+03:00", 
+        "date": "2019-01-01T00:00:00+02:00", 
         "answer": "Таблицю додано в файлі \"Kalorijnist.xslx\"", 
-        "id": "177f8698dc4e47008523a5adb2e20f48", 
+        "id": "22dd9841b45746d1a09df905399ded5f", 
         "questionOf": "tender"
       }
     ], 
     "owner": "broker", 
-    "id": "e88963ba5b4f426e9c7a665f8cfd988a", 
+    "id": "2741dfda90ec4955a16232b29654f06e", 
     "documents": [
       {
         "hash": "md5:00000000000000000000000000000000", 
         "author": "tender_owner", 
         "title": "Notice.pdf", 
-        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/b29915c1f70447f99a46b80aead3d5a8?KeyID=a8968c46&Signature=GjYI0yTiUlKbGib5yzxtPVGdZ6vA4dPG56Ihow6tO7fOQvJSYkFCRfEHyJZjczaMkjabHbscA1263CWaJ2LuDg%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/fb8e1160dd464bc281ae1e0e98639c09?KeyID=a8968c46&Signature=XVOpl6FlqiLLa5fYxMQxbHnUy8GsCctl6V7FlymLyMlIynzmOWkJGYBJtdk8%2FThpOl3UEN%252BodGsmpvPF4dnrBQ%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-04-18T13:07:15.236574+03:00", 
-        "id": "f8f8e952353d442aa9ae51c610907438", 
-        "dateModified": "2019-04-18T13:07:15.236588+03:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "907cca0303ec41ceb413a9467a30bbf8", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
         "author": "tender_owner", 
         "title": "AwardCriteria.pdf", 
-        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/183600a0b3484987b6a8fee00f1c430e?KeyID=a8968c46&Signature=C0IFo6tjmkqnOSHZlG7pNMZ%252B6iucIvbEw4DKI%2FP%252BENcbgrd4toy3i6trwZ%2FaMkASQlsAWSq6sxYG1GiYnOE%2FAg%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/83727bd3fd174d6eb46b572ccd76b068?KeyID=a8968c46&Signature=80obBdZSzrNiBD3lML3QDGrzoTd9EUDix4QGGerLPuDFj49Q4809rhKsjmfUZ4RlAZ9IdypTy4ZlkYZWmbH%252BDw%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-04-18T13:07:15.278533+03:00", 
-        "id": "ddc23071c36148c7858efb69bb5f1d36", 
-        "dateModified": "2019-04-18T13:07:15.278548+03:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "7e217ea67b02400aac93c88b3fd0f77e", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
         "author": "tender_owner", 
         "title": "AwardCriteria-2.pdf", 
-        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/b372c2d4455e466ebfa20bba271f8796?KeyID=a8968c46&Signature=ATNyddDg3nBPpCxSLn1XqGhVR0KWv1vEyh%252BVuPrrgikiQk6yI0iuUn7iRPrLY9oA%252BsgDHv8emv%252BeTjrajhwrBg%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/598c341ea25e40a0b8d38764e0a08c48?KeyID=a8968c46&Signature=cLEj37u8cJRsLpY5cFOxcjiyrHw7TPOXyMPllvc3lSv2xzf%252Bnw7502r%2FjlkKFcXRHrvPq5fR1cyTD13yDVuTAQ%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-04-18T13:07:15.278533+03:00", 
-        "id": "ddc23071c36148c7858efb69bb5f1d36", 
-        "dateModified": "2019-04-18T13:07:15.323240+03:00"
+        "datePublished": "2019-01-01T00:00:00+02:00", 
+        "id": "7e217ea67b02400aac93c88b3fd0f77e", 
+        "dateModified": "2019-01-01T00:00:00+02:00"
       }
     ], 
     "title": "футляри до державних нагород", 
@@ -117,19 +117,19 @@ Content-Type: application/json; charset=UTF-8
         "name": "«Кенгуру»"
       }
     ], 
-    "tenderID": "UA-2019-04-18-000001", 
-    "dateModified": "2019-04-18T13:07:16.321647+03:00", 
+    "tenderID": "UA-2019-01-01-000001", 
+    "dateModified": "2019-01-01T00:00:00+02:00", 
     "numberOfBids": 2, 
     "tenderPeriod": {
-      "startDate": "2019-04-02T13:04:10.651311+03:00", 
-      "endDate": "2019-04-18T13:04:10.651311+03:00"
+      "startDate": "2018-12-16T00:00:00+02:00", 
+      "endDate": "2019-01-01T00:00:00+02:00"
     }, 
     "auctionPeriod": {
-      "startDate": "2019-04-18T13:04:10.651311+03:00", 
-      "shouldStartAfter": "2019-04-19T00:00:00+03:00"
+      "startDate": "2019-01-01T00:00:00+02:00", 
+      "shouldStartAfter": "2019-01-01T00:00:00+02:00"
     }, 
     "procurementMethodType": "competitiveDialogueUA.stage2", 
-    "date": "2019-04-18T13:07:15.189632+03:00", 
+    "date": "2019-01-01T00:00:00+02:00", 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35.0, 
@@ -159,9 +159,9 @@ Content-Type: application/json; charset=UTF-8
         }, 
         "deliveryDate": {
           "startDate": "2019-01-21T00:00:00+02:00", 
-          "endDate": "2019-05-18T13:07:25.536435+03:00"
+          "endDate": "2019-01-31T00:00:10+02:00"
         }, 
-        "id": "0c10ff3e2dd645f1816b0c8dd0e26360", 
+        "id": "b2a91ce4f84c48a4be5bd48763c40e1e", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
