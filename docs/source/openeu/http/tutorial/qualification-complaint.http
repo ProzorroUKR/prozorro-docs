@@ -1,41 +1,40 @@
-GET /api/2.5/tenders/7a8abe303b8c47b49a9ff7d612a5fbc7/qualifications/1733653bd6344bd195081adda1a0cffb/complaints/c8062a7c4cd64694ad1a44f2a68a8464 HTTP/1.0
-Host: api-sandbox.openprocurement.org
+GET /api/2.5/tenders/0724be8be323436b997b4efbcc4a7003/qualifications/93b4447bdba2455ca05ea882c76c6c54/complaints/44f4f39a4ef94b59ae5418634ea5c8c7 HTTP/1.0
+Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
 {
   "data": {
     "status": "resolved", 
-    "dateDecision": "2019-03-28T06:50:04.441673+02:00", 
-    "tendererActionDate": "2019-03-28T06:50:04.863595+02:00", 
-    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+    "dateDecision": "2019-01-01T00:10:00+02:00", 
+    "tendererActionDate": "2019-01-01T00:10:00+02:00", 
+    "description": "Просимо додати таблицю потрібної калорійності харчування", 
     "author": {
       "contactPoint": {
-        "email": "soleksuk@gmail.com", 
-        "telephone": "+380 (432) 21-69-30", 
-        "name": "Сергій Олексюк"
+        "email": "aagt@gmail.com", 
+        "telephone": "+380 (322) 91-69-30", 
+        "name": "Андрій Олексюк"
       }, 
       "identifier": {
         "scheme": "UA-EDR", 
-        "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
-        "id": "13313462", 
-        "uri": "http://sch10.edu.vn.ua/"
+        "id": "00137226", 
+        "uri": "http://www.sc.gov.ua/"
       }, 
-      "name": "ДКП «Школяр»", 
+      "name": "ДКП «Книга»", 
       "address": {
-        "postalCode": "21100", 
+        "postalCode": "79013", 
         "countryName": "Україна", 
-        "streetAddress": "вул. Островського, 33", 
-        "region": "м. Вінниця", 
-        "locality": "м. Вінниця"
+        "streetAddress": "вул. Островського, 34", 
+        "region": "м. Львів", 
+        "locality": "м. Львів"
       }
     }, 
-    "title": "Недостатньо інформації", 
-    "id": "c8062a7c4cd64694ad1a44f2a68a8464", 
+    "title": "Калорійність", 
+    "id": "44f4f39a4ef94b59ae5418634ea5c8c7", 
     "tendererAction": "Умови виправлено", 
-    "dateSubmitted": "2019-03-28T06:50:02.048834+02:00", 
-    "complaintID": "UA-2019-03-28-000001.1", 
-    "date": "2019-03-28T06:50:04.871056+02:00", 
+    "dateSubmitted": "2019-01-01T00:10:00+02:00", 
+    "complaintID": "UA-2019-01-01-000001.1", 
+    "date": "2019-01-01T00:10:00+02:00", 
     "acceptance": true, 
     "type": "complaint", 
     "documents": [
@@ -44,27 +43,27 @@ Content-Type: application/json; charset=UTF-8
         "author": "complaint_owner", 
         "language": "uk", 
         "title": "Complaint_Attachement.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/f6f08d7c3a7347c4a8721db0721e0b7f?KeyID=05922d01&Signature=m6SJM5gm0zrrSz7wGy8GfOQZFAMfDvR9vOTx07BG5mV27mU66Vi%252B2QRQwT9ThBu9Z%2FKUWV%252BSM5REHZ71IcRzBg%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/b2b91d6f4bda46baa776d95692e3358b?KeyID=a8968c46&Signature=%252BSWPLUA%2FJWgWYThSvpkQ0gbmqF8sNsOkOXZhGIHcGLcpvpHF4e%252BPKsn7DwGRYfMYcKNvzwGoClTK5Cyq6c8QBg%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:50:01.979254+02:00", 
-        "id": "5b2e20a052ae4479ab25cba01de403d8", 
-        "dateModified": "2019-03-28T06:50:01.979286+02:00"
+        "datePublished": "2019-01-01T00:10:00+02:00", 
+        "id": "02610b8a2aee4fdd9283859d7b6d78d5", 
+        "dateModified": "2019-01-01T00:10:00+02:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
         "author": "aboveThresholdReviewers", 
         "language": "uk", 
         "title": "ComplaintResolution.pdf", 
-        "url": "http://public.docs-sandbox.openprocurement.org/get/f45394e63307466285883072ec2f25c7?KeyID=05922d01&Signature=O5RPSH66tdK5zBAChXzSU1nqcZ%2FjtfJi8nE87SYvJirtyGc%2FcNyH3bQuVdO8tG39LLNf%252BywJI0RLSdjxHf%252BUCg%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/d275190427084ffd8fec71c4c13fc4e2?KeyID=a8968c46&Signature=Lh4gEXxHoqgY%252BJRQ%252B8oFmvOSBkWQvyaAFkUeiZCQyh8mRGofKGhWmdMJRl3UAItc%252BtImrWbqekGgyVymON9aDw%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-03-28T06:50:04.315468+02:00", 
-        "id": "7eca0d1a0f3040cb9231099689bc4ea5", 
-        "dateModified": "2019-03-28T06:50:04.315485+02:00"
+        "datePublished": "2019-01-01T00:10:00+02:00", 
+        "id": "dc2a7ecc43b34b498904b7ae3e4c8c01", 
+        "dateModified": "2019-01-01T00:10:00+02:00"
       }
     ], 
-    "dateAccepted": "2019-03-28T06:50:03.736834+02:00"
+    "dateAccepted": "2019-01-01T00:10:00+02:00"
   }
 }
 

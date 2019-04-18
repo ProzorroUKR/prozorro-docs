@@ -1,24 +1,32 @@
-POST /api/2.5/tenders/7a8abe303b8c47b49a9ff7d612a5fbc7/qualifications/1733653bd6344bd195081adda1a0cffb/complaints/c8062a7c4cd64694ad1a44f2a68a8464/documents HTTP/1.0
+POST /api/2.5/tenders/0724be8be323436b997b4efbcc4a7003/qualifications/93b4447bdba2455ca05ea882c76c6c54/complaints/44f4f39a4ef94b59ae5418634ea5c8c7/documents HTTP/1.0
 Authorization: Basic cmV2aWV3ZXI6
-Content-Length: 199
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy846453273211$
-Host: api-sandbox.openprocurement.org
+Content-Length: 149
+Content-Type: multipart/form-data; boundary=BOUNDARY
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="ComplaintResolution.pdf"
+Content-Type: application/pdf
+
+content
+--BOUNDARY--
+
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/7a8abe303b8c47b49a9ff7d612a5fbc7/qualifications/1733653bd6344bd195081adda1a0cffb/complaints/c8062a7c4cd64694ad1a44f2a68a8464/documents/7eca0d1a0f3040cb9231099689bc4ea5
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/0724be8be323436b997b4efbcc4a7003/qualifications/93b4447bdba2455ca05ea882c76c6c54/complaints/44f4f39a4ef94b59ae5418634ea5c8c7/documents/dc2a7ecc43b34b498904b7ae3e4c8c01
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "author": "aboveThresholdReviewers", 
     "language": "uk", 
     "title": "ComplaintResolution.pdf", 
-    "url": "http://public.docs-sandbox.openprocurement.org/get/f45394e63307466285883072ec2f25c7?KeyID=05922d01&Signature=O5RPSH66tdK5zBAChXzSU1nqcZ%2FjtfJi8nE87SYvJirtyGc%2FcNyH3bQuVdO8tG39LLNf%252BywJI0RLSdjxHf%252BUCg%253D%253D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/d275190427084ffd8fec71c4c13fc4e2?KeyID=a8968c46&Signature=Lh4gEXxHoqgY%252BJRQ%252B8oFmvOSBkWQvyaAFkUeiZCQyh8mRGofKGhWmdMJRl3UAItc%252BtImrWbqekGgyVymON9aDw%253D%253D", 
     "format": "application/pdf", 
     "documentOf": "tender", 
-    "datePublished": "2019-03-28T06:50:04.315468+02:00", 
-    "id": "7eca0d1a0f3040cb9231099689bc4ea5", 
-    "dateModified": "2019-03-28T06:50:04.315485+02:00"
+    "datePublished": "2019-01-01T00:10:00+02:00", 
+    "id": "dc2a7ecc43b34b498904b7ae3e4c8c01", 
+    "dateModified": "2019-01-01T00:10:00+02:00"
   }
 }
 

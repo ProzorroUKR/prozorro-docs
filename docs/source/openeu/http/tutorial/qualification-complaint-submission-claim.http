@@ -1,14 +1,12 @@
-POST /api/2.5/tenders/7a8abe303b8c47b49a9ff7d612a5fbc7/qualifications/1733653bd6344bd195081adda1a0cffb/complaints?acc_token=7e773739d0254ee8a87586dcc132cacb HTTP/1.0
+POST /api/2.5/tenders/0724be8be323436b997b4efbcc4a7003/qualifications/93b4447bdba2455ca05ea882c76c6c54/complaints?acc_token=f915bb05efa443dca1e5df68bccd578d HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 1701
+Content-Length: 1317
 Content-Type: application/json
-Host: api-sandbox.openprocurement.org
+Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
     "status": "claim", 
-    "title": "Недостатньо інформації", 
-    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
     "author": {
       "contactPoint": {
         "telephone": "+380 (432) 21-69-30", 
@@ -17,9 +15,8 @@ DATA:
       }, 
       "identifier": {
         "scheme": "UA-EDR", 
-        "legalName": "Державне комунальне підприємство громадського харчування «Школяр»", 
-        "id": "13313462", 
-        "uri": "http://sch10.edu.vn.ua/"
+        "id": "00137256", 
+        "uri": "http://www.sc.gov.ua/"
       }, 
       "name": "ДКП «Школяр»", 
       "address": {
@@ -29,27 +26,29 @@ DATA:
         "streetAddress": "вул. Островського, 33", 
         "locality": "м. Вінниця"
       }
-    }
+    }, 
+    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+    "title": "Недостатньо інформації"
   }
 }
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.5/tenders/7a8abe303b8c47b49a9ff7d612a5fbc7/qualifications/1733653bd6344bd195081adda1a0cffb/complaints/aff7ecace5c848a08553eb589bcaf584
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/0724be8be323436b997b4efbcc4a7003/qualifications/93b4447bdba2455ca05ea882c76c6c54/complaints/9799e27cd3eb48e59d9ef13857c5f6b2
 {
   "access": {
-    "token": "b608a8f46343412787c4bbbfe2091a96"
+    "token": "7c308be79fa14ce4bbdfd771238b9666"
   }, 
   "data": {
     "status": "claim", 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
     "title": "Недостатньо інформації", 
-    "bid_id": "d56e1dbabc9946b0892b26460cef1c95", 
-    "dateSubmitted": "2019-03-28T06:50:02.455462+02:00", 
-    "complaintID": "UA-2019-03-28-000001.6", 
-    "date": "2019-03-28T06:50:02.455357+02:00", 
+    "bid_id": "3452ad4012604e918d098f69612e9fb5", 
+    "dateSubmitted": "2019-01-01T00:10:00+02:00", 
+    "complaintID": "UA-2019-01-01-000001.6", 
+    "date": "2019-01-01T00:10:00+02:00", 
     "type": "claim", 
-    "id": "aff7ecace5c848a08553eb589bcaf584"
+    "id": "9799e27cd3eb48e59d9ef13857c5f6b2"
   }
 }
 
