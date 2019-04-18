@@ -1,8 +1,16 @@
 POST /api/2.5/tenders/239ab2b4b65a46f8ac603eebcd77771c/agreements/537065690fe34d19895c085d0e4aabb1/documents?acc_token=4fedc6c367a94e00ac51cd25b92bb6f8 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 206
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy97607674805$
+Content-Length: 158
+Content-Type: multipart/form-data; boundary=BOUNDARY
 Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="agreement_second_document.doc"
+Content-Type: application/msword
+
+content
+--BOUNDARY--
+
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8

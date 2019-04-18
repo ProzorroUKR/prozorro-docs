@@ -1,8 +1,16 @@
 PUT /api/2.5/tenders/411eba73a7e241eab1e17cf80cbe33c6/documents/380aef0d0cc146c89d87abdc9ef0fdc3?acc_token=aa8f9663e1ac4382ac0d69917f93e5f3 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 189
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy557126188954$
+Content-Length: 139
+Content-Type: multipart/form-data; boundary=BOUNDARY
 Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="Notice-2.pdf"
+Content-Type: application/pdf
+
+content2
+--BOUNDARY--
+
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8

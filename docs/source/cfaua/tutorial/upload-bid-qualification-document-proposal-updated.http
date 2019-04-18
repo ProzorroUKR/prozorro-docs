@@ -1,8 +1,16 @@
 PUT /api/2.5/tenders/239ab2b4b65a46f8ac603eebcd77771c/bids/5b1584c69800457d9ea9df290ddb42ae/qualification_documents/4413b4dbc2a142ab935d2eb56fb3c358?acc_token=117ebc612ee44d1e94e699f91e64bc22 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 203
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy477764250907$
+Content-Length: 153
+Content-Type: multipart/form-data; boundary=BOUNDARY
 Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="qualification_document2.pdf"
+Content-Type: application/pdf
+
+content
+--BOUNDARY--
+
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8

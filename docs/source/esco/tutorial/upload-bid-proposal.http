@@ -1,8 +1,16 @@
 POST /api/2.5/tenders/19e26a9aabb84578920993b1d57f719d/bids/2f36b22a71644508b4c978b6736da64c/documents?acc_token=fa8d19c30bf344fa90e1c35ea71a8391 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 188
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy933005235073$
+Content-Length: 138
+Content-Type: multipart/form-data; boundary=BOUNDARY
 Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="Proposal.pdf"
+Content-Type: application/pdf
+
+content
+--BOUNDARY--
+
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8

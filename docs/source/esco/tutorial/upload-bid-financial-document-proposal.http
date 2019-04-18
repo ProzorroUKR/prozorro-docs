@@ -1,8 +1,16 @@
 POST /api/2.5/tenders/19e26a9aabb84578920993b1d57f719d/bids/2f36b22a71644508b4c978b6736da64c/financial_documents?acc_token=fa8d19c30bf344fa90e1c35ea71a8391 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 191
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy555346500692$
+Content-Length: 141
+Content-Type: multipart/form-data; boundary=BOUNDARY
 Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="financial_doc.pdf"
+Content-Type: application/pdf
+
+1000$
+--BOUNDARY--
+
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
@@ -24,9 +32,17 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/19e26a9aabb84578
 
 POST /api/2.5/tenders/19e26a9aabb84578920993b1d57f719d/bids/2f36b22a71644508b4c978b6736da64c/financial_documents?acc_token=fa8d19c30bf344fa90e1c35ea71a8391 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 190
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy82364801207$
+Content-Length: 142
+Content-Type: multipart/form-data; boundary=BOUNDARY
 Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="financial_doc2.pdf"
+Content-Type: application/pdf
+
+1000$
+--BOUNDARY--
+
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8

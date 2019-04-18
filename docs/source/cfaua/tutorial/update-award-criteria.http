@@ -1,8 +1,16 @@
 PUT /api/2.5/tenders/239ab2b4b65a46f8ac603eebcd77771c/documents/6ac2be61881f4b65a396cad52b8faf73?acc_token=4fedc6c367a94e00ac51cd25b92bb6f8 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 194
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy67843945883$
+Content-Length: 146
+Content-Type: multipart/form-data; boundary=BOUNDARY
 Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="AwardCriteria-2.pdf"
+Content-Type: application/pdf
+
+content2
+--BOUNDARY--
+
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8

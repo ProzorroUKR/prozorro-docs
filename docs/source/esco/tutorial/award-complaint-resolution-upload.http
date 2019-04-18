@@ -1,8 +1,16 @@
 POST /api/2.5/tenders/bde326779f8742d7ad93431f9c1f6dce/awards/ae69af4c17fb4b2b8df97ac8d6c007ec/complaints/81cda75dfa6341a5a611c6563dd991a9/documents HTTP/1.0
 Authorization: Basic cmV2aWV3ZXI6
-Content-Length: 197
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy74984952635$
+Content-Length: 149
+Content-Type: multipart/form-data; boundary=BOUNDARY
 Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="ComplaintResolution.pdf"
+Content-Type: application/pdf
+
+content
+--BOUNDARY--
+
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8

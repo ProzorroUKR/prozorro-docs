@@ -1,8 +1,16 @@
 POST /api/2.5/agreements/83456a89ad0143b5b9dde8ca7ac28456/documents?acc_token=7b93503ebb914e35ac86ce4cf565018f HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 216
-Content-Type: multipart/form-data; boundary=----------a_BoUnDaRy224733274851$
+Content-Length: 166
+Content-Type: multipart/form-data; boundary=BOUNDARY
 Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="agreement_additional_docs.doc"
+Content-Type: application/msword
+
+additional info
+--BOUNDARY--
+
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
