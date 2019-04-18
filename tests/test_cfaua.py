@@ -24,15 +24,11 @@ second_item['unit']['code'] = '44617100-8'
 test_tender_data = deepcopy(test_tender_data)
 test_tender_data['items'] = [test_tender_data['items'][0], second_item]
 
-lot_id = uuid4().hex
-
 bid = deepcopy(lot_bid)
-bid['lotValues'][0]['relatedLot'] = lot_id
 bid.update(subcontracting)
 bid.update(qualified)
 
 bid2 = deepcopy(lot_bid2)
-bid2['lotValues'][0]['relatedLot'] = lot_id
 bid2.update(qualified)
 
 bid_document2_conf = deepcopy(bid_document2)
@@ -42,18 +38,12 @@ bid_document2_conf.update({
 })
 
 bid3 = deepcopy(lot_bid3_with_docs)
-bid3['lotValues'][0]['relatedLot'] = lot_id
 bid3["documents"] = [bid_document, bid_document2_conf]
 bid3.update(qualified)
 
 test_lots = deepcopy(lots)
-test_lots[0]['id'] = lot_id
 test_lots[0]['value'] = test_tender_data['value']
 test_lots[0]['minimalStep'] = test_tender_data['minimalStep']
-
-test_tender_data['lots'] = [test_lots[0]]
-for item in test_tender_data['items']:
-    item['relatedLot'] = lot_id
 
 TARGET_DIR = 'docs/source/cfaua/tutorial/'
 
@@ -104,6 +94,12 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
 
         # Creating tender
 
+        lot = deepcopy(test_lots[0])
+        lot['id'] = uuid4().hex
+        test_tender_data['lots'] = [lot]
+        for item in test_tender_data['items']:
+            item['relatedLot'] = lot['id']
+
         self.app.authorization = ('Basic', ('broker', ''))
         with open(TARGET_DIR + 'tender-post-attempt-json-data.http', 'w') as self.app.file_obj:
             response = self.app.post_json(
@@ -150,7 +146,7 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
 
         with open(TARGET_DIR + 'set-bid-guarantee.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
-                '/tenders/{}/lots/{}?acc_token={}'.format(self.tender_id, lot_id, owner_token),
+                '/tenders/{}/lots/{}?acc_token={}'.format(self.tender_id, lot['id'], owner_token),
                 {"data": {"guarantee": {"amount": 8, "currency": "USD"}}}
             )
             self.assertEqual(response.status, '200 OK')
@@ -250,6 +246,7 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
 
         bids_access = {}
         with open(TARGET_DIR + 'register-bidder.http', 'w') as self.app.file_obj:
+            bid['lotValues'][0]['relatedLot'] = lot['id']
             response = self.app.post_json(
                 '/tenders/{}/bids'.format(self.tender_id),
                 {'data': bid})
@@ -366,6 +363,7 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
             self.assertEqual(response.status, '200 OK')
 
         with open(TARGET_DIR + 'register-2nd-bidder.http', 'w') as self.app.file_obj:
+            bid2['lotValues'][0]['relatedLot'] = lot['id']
             response = self.app.post_json(
                 '/tenders/{}/bids'.format(self.tender_id),
                 {'data': bid2})
@@ -374,6 +372,7 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
             self.assertEqual(response.status, '201 Created')
 
         with open(TARGET_DIR + 'register-3rd-bidder.http', 'w') as self.app.file_obj:
+            bid3['lotValues'][0]['relatedLot'] = lot['id']
             for document in bid3['documents']:
                 document['url'] = self.generate_docservice_url()
             for document in bid3['eligibilityDocuments']:
@@ -390,6 +389,7 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
             self.assertEqual(response.status, '201 Created')
 
         with open(TARGET_DIR + 'register-4rd-bidder.http', 'w') as self.app.file_obj:
+            bid3['lotValues'][0]['relatedLot'] = lot['id']
             response = self.app.post_json(
                 '/tenders/{}/bids'.format(self.tender_id),
                 {'data': bid3})
@@ -479,7 +479,7 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
 
         self.set_status('active.auction')
         self.app.authorization = ('Basic', ('auction', ''))
-        auction_url = u'http://{}/tenders/{}_{}'.format(self.auctions_host, self.tender_id, lot_id)
+        auction_url = u'http://{}/tenders/{}_{}'.format(self.auctions_host, self.tender_id, lot['id'])
         patch_data = {
             'lots': [{
                 'auctionUrl': auction_url,
@@ -498,7 +498,7 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
             }]
         }
         response = self.app.patch_json(
-            '/tenders/{}/auction/{}?acc_token={}'.format(self.tender_id, lot_id, owner_token),
+            '/tenders/{}/auction/{}?acc_token={}'.format(self.tender_id, lot['id'], owner_token),
             {'data': patch_data})
         self.assertEqual(response.status, '200 OK')
 
@@ -531,7 +531,7 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
         response = self.app.get('/tenders/{}/auction'.format(self.tender_id))
         auction_bids_data = response.json['data']['bids']
         response = self.app.post_json(
-            '/tenders/{}/auction/{}'.format(self.tender_id, lot_id),
+            '/tenders/{}/auction/{}'.format(self.tender_id, lot['id']),
             {'data': {'bids': auction_bids_data}})
 
         self.app.authorization = ('Basic', ('broker', ''))
@@ -795,6 +795,12 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
     def test_complaints(self):
         self.app.authorization = ('Basic', ('broker', ''))
 
+        lot = deepcopy(test_lots[0])
+        lot['id'] = uuid4().hex
+        test_tender_data['lots'] = [lot]
+        for item in test_tender_data['items']:
+            item['relatedLot'] = lot['id']
+
         response = self.app.post_json(
             '/tenders?opt_pretty=1',
             {'data': test_tender_data})
@@ -1035,6 +1041,12 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
     def test_qualification_complaints(self):
         self.app.authorization = ('Basic', ('broker', ''))
 
+        lot = deepcopy(test_lots[0])
+        lot['id'] = uuid4().hex
+        test_tender_data['lots'] = [lot]
+        for item in test_tender_data['items']:
+            item['relatedLot'] = lot['id']
+
         response = self.app.post_json(
             '/tenders?opt_pretty=1',
             {'data': test_tender_data})
@@ -1044,6 +1056,7 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
         owner_token = response.json['access']['token']
         self.tender_id = tender['id']
 
+        bid['lotValues'][0]['relatedLot'] = lot['id']
         response = self.app.post_json(
             '/tenders/{}/bids'.format(self.tender_id),
             {'data': bid})
@@ -1056,6 +1069,7 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
             {'data': {"status": "pending"}})
 
         # create second and third bid
+        bid2['lotValues'][0]['relatedLot'] = lot['id']
         self.app.authorization = ('Basic', ('broker', ''))
         for _ in range(2):
             self.app.post_json(
@@ -1370,6 +1384,12 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
     def test_award_complaints(self):
         self.app.authorization = ('Basic', ('broker', ''))
 
+        lot = deepcopy(test_lots[0])
+        lot['id'] = uuid4().hex
+        test_tender_data['lots'] = [lot]
+        for item in test_tender_data['items']:
+            item['relatedLot'] = lot['id']
+
         response = self.app.post_json(
             '/tenders?opt_pretty=1',
             {'data': test_tender_data})
@@ -1379,6 +1399,7 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
         owner_token = response.json['access']['token']
         self.tender_id = tender['id']
 
+        bid['lotValues'][0]['relatedLot'] = lot['id']
         response = self.app.post_json(
             '/tenders/{}/bids'.format(self.tender_id),
             {'data': bid})
@@ -1391,6 +1412,7 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
             {'data': {"status": "pending"}})
         # create second and third bid
         self.app.authorization = ('Basic', ('broker', ''))
+        bid2['lotValues'][0]['relatedLot'] = lot['id']
         for _ in range(2):
             response = self.app.post_json(
                 '/tenders/{}/bids'.format(self.tender_id),
@@ -1433,7 +1455,7 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
         response = self.app.get('/tenders/{}/auction'.format(self.tender_id))
         auction_bids_data = response.json['data']['bids']
         self.app.post_json(
-            '/tenders/{}/auction/{}'.format(self.tender_id, lot_id),
+            '/tenders/{}/auction/{}'.format(self.tender_id, lot['id']),
             {'data': {'bids': auction_bids_data}})
 
         self.app.authorization = ('Basic', ('broker', ''))
