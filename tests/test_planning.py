@@ -45,15 +45,10 @@ class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
         self.assertEqual(response.json['data'], [])
 
         # create plan
-        test_plan_data['items'][0].update({
-            "deliveryDate": {"endDate": (get_now() + timedelta(days=15)).isoformat()}
-        })
-        test_plan_data['items'][1].update({
-            "deliveryDate": {"endDate": (get_now() + timedelta(days=16)).isoformat()}
-        })
-        test_plan_data['items'][2].update({
-            "deliveryDate": {"endDate": (get_now() + timedelta(days=17)).isoformat()}
-        })
+        test_plan_data['tender'].update({"tenderPeriod": {"startDate": (get_now() + timedelta(days=7)).isoformat()}})
+        test_plan_data['items'][0].update({"deliveryDate": {"endDate": (get_now() + timedelta(days=15)).isoformat()}})
+        test_plan_data['items'][1].update({"deliveryDate": {"endDate": (get_now() + timedelta(days=16)).isoformat()}})
+        test_plan_data['items'][2].update({"deliveryDate": {"endDate": (get_now() + timedelta(days=17)).isoformat()}})
 
         with open(TARGET_DIR + 'create-plan.http', 'w') as self.app.file_obj:
             response = self.app.post_json(
