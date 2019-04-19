@@ -1,6 +1,6 @@
 POST /api/2.5/tenders/2741dfda90ec4955a16232b29654f06e/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 871
+Content-Length: 887
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
@@ -19,13 +19,14 @@ DATA:
           "name": "Вільям Поле", 
           "email": "pole@gmail.com"
         }, 
+        "scale": "mid", 
+        "name": "ТОВ \"Бур\"", 
         "identifier": {
           "scheme": "UA-EDR", 
           "legalName": "ТОВ Бур", 
           "id": "00137230", 
           "uri": "http://pole.edu.vn.ua/"
         }, 
-        "name": "ТОВ \"Бур\"", 
         "address": {
           "countryName": "Україна", 
           "postalCode": "21100", 

@@ -1,6 +1,6 @@
 POST /api/2.5/tenders/19e26a9aabb84578920993b1d57f719d/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 2785
+Content-Length: 2801
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
@@ -84,12 +84,13 @@ DATA:
           "name": "Андрій Олексюк", 
           "telephone": "+380 (322) 91-69-30"
         }, 
+        "scale": "sme", 
+        "name": "ДКП «Книга»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137226", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "ДКП «Книга»", 
         "address": {
           "countryName": "Україна", 
           "postalCode": "79013", 
@@ -211,12 +212,13 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/19e26a9aabb84578
           "telephone": "+380 (322) 91-69-30", 
           "name": "Андрій Олексюк"
         }, 
+        "scale": "sme", 
+        "name": "ДКП «Книга»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137226", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "ДКП «Книга»", 
         "address": {
           "postalCode": "79013", 
           "countryName": "Україна", 

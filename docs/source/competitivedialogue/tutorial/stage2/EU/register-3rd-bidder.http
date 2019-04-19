@@ -1,6 +1,6 @@
 POST /api/2.5/tenders/2933880765e44c6abd98096c6de321ed/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 2604
+Content-Length: 2622
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
@@ -50,12 +50,13 @@ DATA:
           "name": "Іван Карпенко", 
           "telephone": "+380 (322) 12-34-56"
         }, 
+        "scale": "large", 
+        "name": "«Кенгуру»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137228", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "«Кенгуру»", 
         "address": {
           "countryName": "Україна", 
           "postalCode": "79013", 
@@ -155,12 +156,13 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/2933880765e44c6a
           "telephone": "+380 (322) 12-34-56", 
           "name": "Іван Карпенко"
         }, 
+        "scale": "large", 
+        "name": "«Кенгуру»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137228", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "«Кенгуру»", 
         "address": {
           "postalCode": "79013", 
           "countryName": "Україна", 

@@ -1,6 +1,6 @@
 POST /api/2.5/tenders/e079d0f147d74fcebf76f53f477ad16c/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 958
+Content-Length: 976
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
@@ -21,12 +21,13 @@ DATA:
           "name": "Сергій Олексюк", 
           "telephone": "+380 (432) 21-69-30"
         }, 
+        "scale": "micro", 
+        "name": "ДКП «Школяр»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137256", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "ДКП «Школяр»", 
         "address": {
           "countryName": "Україна", 
           "postalCode": "21100", 
@@ -65,12 +66,13 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e079d0f147d74fce
           "telephone": "+380 (432) 21-69-30", 
           "name": "Сергій Олексюк"
         }, 
+        "scale": "micro", 
+        "name": "ДКП «Школяр»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137256", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "ДКП «Школяр»", 
         "address": {
           "postalCode": "21100", 
           "countryName": "Україна", 
