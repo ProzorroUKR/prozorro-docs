@@ -30,8 +30,12 @@ tenderer = {
         "id": u"00137256",
         "uri": u"http://www.sc.gov.ua/"
     },
-    "name": "ДКП «Школяр»"
+    "name": "ДКП «Школяр»",
+    "scale": "micro"
 }
+
+author = deepcopy(tenderer)
+del author['scale']
 
 tenderer2 = {
     "address": {
@@ -51,8 +55,12 @@ tenderer2 = {
         "id": u"00137226",
         "uri": u"http://www.sc.gov.ua/"
     },
-    "name": "ДКП «Книга»"
+    "name": "ДКП «Книга»",
+    "scale": "sme"
 }
+
+author2 = deepcopy(tenderer2)
+del author2['scale']
 
 tenderer3 = {
     "address": {
@@ -72,7 +80,8 @@ tenderer3 = {
         "id": u"00137227",
         "uri": u"http://www.sc.gov.ua/"
     },
-    "name": "«Снігур»"
+    "name": "«Снігур»",
+    "scale": "mid"
 }
 
 tenderer4 = {
@@ -93,7 +102,8 @@ tenderer4 = {
         "id": u"00137228",
         "uri": u"http://www.sc.gov.ua/"
     },
-    "name": "«Кенгуру»"
+    "name": "«Кенгуру»",
+    "scale": "large"
 }
 
 bad_participant = {
@@ -115,8 +125,12 @@ bad_participant = {
         "scheme": "UA-EDR",
         "uri": "http://pole.edu.vn.ua/"
     },
-    "name": "ТОВ \"Бур\""
+    "name": "ТОВ \"Бур\"",
+    "scale": "mid"
 }
+
+bad_author = deepcopy(bad_participant)
+del bad_author['scale']
 
 bid_document = {
     'title': u'Proposal_part1.pdf',
@@ -235,7 +249,7 @@ lot_bid3_with_docs["financialDocuments"] = [bid_document4_financialy]
 lot_bid3_with_docs["qualificationDocuments"] = [bid_document5_qualification]
 
 question = {
-    "author": tenderer2,
+    "author": author2,
     "description": "Просимо додати таблицю потрібної калорійності харчування",
     "title": "Калорійність"
 }
@@ -309,7 +323,7 @@ funder = {
 complaint = {
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.",
     "title": "Недостатньо інформації",
-    'author': tenderer
+    'author': author
 }
 
 qualified = {
