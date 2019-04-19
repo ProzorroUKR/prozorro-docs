@@ -16,8 +16,8 @@ Content-Type: application/json; charset=UTF-8
   "data": {
     "status": "cancelled", 
     "complaintPeriod": {
-      "startDate": "2019-01-01T00:00:00+02:00", 
-      "endDate": "2019-01-01T00:10:00+02:00"
+      "startDate": "2019-04-01T01:00:00+03:00", 
+      "endDate": "2019-04-01T01:10:00+03:00"
     }, 
     "suppliers": [
       {
@@ -46,12 +46,12 @@ Content-Type: application/json; charset=UTF-8
       "amount": 475000.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2019-01-01T00:10:00+02:00", 
+    "date": "2019-04-01T01:10:00+03:00", 
     "qualified": true, 
     "complaints": [
       {
         "status": "satisfied", 
-        "dateDecision": "2019-01-01T00:10:00+02:00", 
+        "dateDecision": "2019-04-01T01:10:00+03:00", 
         "documents": [
           {
             "hash": "md5:00000000000000000000000000000000", 
@@ -60,9 +60,9 @@ Content-Type: application/json; charset=UTF-8
             "url": "http://public-docs-sandbox.prozorro.gov.ua/get/96009f501632419fa2419da84922c313?KeyID=a8968c46&Signature=Y%2FqAHiUURFF5Onir7D7J23u8VLMfFpshkbjowTXCOG6YngpEn6W4qCfySskKM8SXZydhcqviyMoqIm2UiouhAg%253D%253D", 
             "format": "application/pdf", 
             "documentOf": "tender", 
-            "datePublished": "2019-01-01T00:10:00+02:00", 
+            "datePublished": "2019-04-01T01:10:00+03:00", 
             "id": "44b80c37bd104e6b9e31378ec38ef053", 
-            "dateModified": "2019-01-01T00:10:00+02:00"
+            "dateModified": "2019-04-01T01:10:00+03:00"
           }, 
           {
             "hash": "md5:00000000000000000000000000000000", 
@@ -71,9 +71,9 @@ Content-Type: application/json; charset=UTF-8
             "url": "http://public-docs-sandbox.prozorro.gov.ua/get/77da84d43b154ee6aa4415a42c8c2159?KeyID=a8968c46&Signature=OgxsH93Qgx7KT0h3VJTduH76BVYCbEphorNBGs%2F4vzmFPJ1CaqyL4tiPI9bdnnzIdryIF48ecBkwDp2AHYVYCg%253D%253D", 
             "format": "application/pdf", 
             "documentOf": "tender", 
-            "datePublished": "2019-01-01T00:10:00+02:00", 
+            "datePublished": "2019-04-01T01:10:00+03:00", 
             "id": "39d573232a4142eca319c297e1551b67", 
-            "dateModified": "2019-01-01T00:10:00+02:00"
+            "dateModified": "2019-04-01T01:10:00+03:00"
           }
         ], 
         "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
@@ -98,17 +98,17 @@ Content-Type: application/json; charset=UTF-8
             "locality": "м. Вінниця"
           }
         }, 
-        "dateAccepted": "2019-01-01T00:10:00+02:00", 
-        "dateSubmitted": "2019-01-01T00:10:00+02:00", 
-        "complaintID": "UA-2019-01-01-000001.1", 
-        "date": "2019-01-01T00:10:00+02:00", 
+        "dateAccepted": "2019-04-01T01:10:00+03:00", 
+        "dateSubmitted": "2019-04-01T01:10:00+03:00", 
+        "complaintID": "UA-2019-04-01-000001.1", 
+        "date": "2019-04-01T01:10:00+03:00", 
         "acceptance": true, 
         "type": "complaint", 
         "id": "729344721bff4cee98e4dcff3e1ed1ae"
       }, 
       {
         "status": "invalid", 
-        "dateDecision": "2019-01-01T00:10:00+02:00", 
+        "dateDecision": "2019-04-01T01:10:00+03:00", 
         "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
         "author": {
           "contactPoint": {
@@ -131,16 +131,16 @@ Content-Type: application/json; charset=UTF-8
           }
         }, 
         "acceptance": false, 
-        "dateSubmitted": "2019-01-01T00:10:00+02:00", 
-        "complaintID": "UA-2019-01-01-000001.2", 
-        "date": "2019-01-01T00:10:00+02:00", 
+        "dateSubmitted": "2019-04-01T01:10:00+03:00", 
+        "complaintID": "UA-2019-04-01-000001.2", 
+        "date": "2019-04-01T01:10:00+03:00", 
         "title": "Недостатньо інформації", 
         "type": "complaint", 
         "id": "185eb2296cda4e719111ea46595d67e9"
       }, 
       {
         "status": "declined", 
-        "dateDecision": "2019-01-01T00:10:00+02:00", 
+        "dateDecision": "2019-04-01T01:10:00+03:00", 
         "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
         "author": {
           "contactPoint": {
@@ -163,10 +163,10 @@ Content-Type: application/json; charset=UTF-8
           }
         }, 
         "acceptance": true, 
-        "dateAccepted": "2019-01-01T00:10:00+02:00", 
-        "dateSubmitted": "2019-01-01T00:10:00+02:00", 
-        "complaintID": "UA-2019-01-01-000001.3", 
-        "date": "2019-01-01T00:10:00+02:00", 
+        "dateAccepted": "2019-04-01T01:10:00+03:00", 
+        "dateSubmitted": "2019-04-01T01:10:00+03:00", 
+        "complaintID": "UA-2019-04-01-000001.3", 
+        "date": "2019-04-01T01:10:00+03:00", 
         "title": "Недостатньо інформації", 
         "type": "complaint", 
         "id": "39b5444fd9e0448da1ee8487d8b4eaa4"
@@ -195,23 +195,23 @@ Content-Type: application/json; charset=UTF-8
           }
         }, 
         "acceptance": true, 
-        "dateAccepted": "2019-01-01T00:10:00+02:00", 
-        "dateSubmitted": "2019-01-01T00:10:00+02:00", 
-        "complaintID": "UA-2019-01-01-000001.4", 
-        "date": "2019-01-01T00:10:00+02:00", 
+        "dateAccepted": "2019-04-01T01:10:00+03:00", 
+        "dateSubmitted": "2019-04-01T01:10:00+03:00", 
+        "complaintID": "UA-2019-04-01-000001.4", 
+        "date": "2019-04-01T01:10:00+03:00", 
         "title": "Недостатньо інформації", 
         "type": "complaint", 
         "id": "eeee2b6828604fc3b8f94ee89946ad29"
       }, 
       {
         "status": "stopped", 
-        "dateDecision": "2019-01-01T00:10:00+02:00", 
+        "dateDecision": "2019-04-01T01:10:00+03:00", 
         "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
         "title": "Недостатньо інформації", 
         "decision": "Тендер скасовується замовником", 
         "acceptance": true, 
-        "dateCanceled": "2019-01-01T00:10:00+02:00", 
-        "dateAccepted": "2019-01-01T00:10:00+02:00", 
+        "dateCanceled": "2019-04-01T01:10:00+03:00", 
+        "dateAccepted": "2019-04-01T01:10:00+03:00", 
         "author": {
           "contactPoint": {
             "email": "soleksuk@gmail.com", 
@@ -232,9 +232,9 @@ Content-Type: application/json; charset=UTF-8
             "locality": "м. Вінниця"
           }
         }, 
-        "dateSubmitted": "2019-01-01T00:10:00+02:00", 
-        "complaintID": "UA-2019-01-01-000001.5", 
-        "date": "2019-01-01T00:10:00+02:00", 
+        "dateSubmitted": "2019-04-01T01:10:00+03:00", 
+        "complaintID": "UA-2019-04-01-000001.5", 
+        "date": "2019-04-01T01:10:00+03:00", 
         "type": "complaint", 
         "id": "767beb46f08b47b8a0e2b0f781e6cbe7"
       }

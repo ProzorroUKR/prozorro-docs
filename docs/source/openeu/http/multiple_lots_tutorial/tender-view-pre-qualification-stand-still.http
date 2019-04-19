@@ -17,17 +17,17 @@ Content-Type: application/json; charset=UTF-8
     "procurementMethod": "open", 
     "status": "active.pre-qualification.stand-still", 
     "complaintPeriod": {
-      "startDate": "2018-12-02T00:00:00+02:00", 
-      "endDate": "2018-12-28T00:00:00+02:00"
+      "startDate": "2019-03-02T01:00:00+03:00", 
+      "endDate": "2019-03-28T00:00:00+03:00"
     }, 
     "enquiryPeriod": {
-      "startDate": "2018-12-02T00:00:00+02:00", 
-      "clarificationsUntil": "2018-12-28T00:00:00+02:00", 
-      "endDate": "2018-12-22T00:00:00+02:00", 
-      "invalidationDate": "2019-01-01T00:00:00+02:00"
+      "startDate": "2019-03-02T01:00:00+03:00", 
+      "clarificationsUntil": "2019-03-27T01:00:00+03:00", 
+      "endDate": "2019-03-22T01:00:00+03:00", 
+      "invalidationDate": "2019-04-01T01:00:00+03:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "next_check": "2019-01-07T00:00:00+02:00", 
+    "next_check": "2019-04-07T00:00:00+03:00", 
     "procuringEntity": {
       "kind": "general", 
       "name": "ЗОСШ #10 м.Вінниці", 
@@ -68,14 +68,14 @@ Content-Type: application/json; charset=UTF-8
           "valueAddedTaxIncluded": true
         }, 
         "auctionPeriod": {
-          "shouldStartAfter": "2019-01-07T00:00:00+02:00"
+          "shouldStartAfter": "2019-04-07T00:00:00+03:00"
         }, 
         "value": {
           "currency": "UAH", 
           "amount": 500.0, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2019-01-01T00:00:00+02:00", 
+        "date": "2019-04-01T01:00:00+03:00", 
         "id": "9c681dd3701140aeb8c6d83ae1a31e38"
       }, 
       {
@@ -92,20 +92,20 @@ Content-Type: application/json; charset=UTF-8
           "amount": 400.0, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2019-01-01T00:00:00+02:00", 
+        "date": "2019-04-01T01:00:00+03:00", 
         "id": "3f214e71a3894e7793214fef4dab684c"
       }
     ], 
     "qualificationPeriod": {
-      "startDate": "2019-01-01T00:00:00+02:00", 
-      "endDate": "2019-01-07T00:00:00+02:00"
+      "startDate": "2019-04-01T01:00:00+03:00", 
+      "endDate": "2019-04-07T00:00:00+03:00"
     }, 
-    "tenderID": "UA-2019-01-01-000001", 
-    "dateModified": "2019-01-01T00:00:00+02:00", 
+    "tenderID": "UA-2019-04-01-000001", 
+    "dateModified": "2019-04-01T01:00:00+03:00", 
     "numberOfBids": 2, 
     "tenderPeriod": {
-      "startDate": "2018-12-02T00:00:00+02:00", 
-      "endDate": "2019-01-01T00:00:00+02:00"
+      "startDate": "2019-03-02T01:00:00+03:00", 
+      "endDate": "2019-04-01T01:00:00+03:00"
     }, 
     "qualifications": [
       {
@@ -114,7 +114,7 @@ Content-Type: application/json; charset=UTF-8
         "eligible": true, 
         "qualified": true, 
         "bidID": "6b7fb0e3b86d4427aba6d08b7bf4c1b7", 
-        "date": "2019-01-01T00:00:00+02:00", 
+        "date": "2019-04-01T01:00:00+03:00", 
         "id": "c5410d234aa74254bd9636f3e2c1a651"
       }, 
       {
@@ -123,12 +123,12 @@ Content-Type: application/json; charset=UTF-8
         "eligible": true, 
         "qualified": true, 
         "bidID": "92d3348340fa46f8b031aeec7990dba0", 
-        "date": "2019-01-01T00:00:00+02:00", 
+        "date": "2019-04-01T01:00:00+03:00", 
         "id": "795a11ac481d41d5b588f1f032fad07a"
       }
     ], 
     "procurementMethodType": "aboveThresholdEU", 
-    "date": "2019-01-01T00:00:00+02:00", 
+    "date": "2019-04-01T01:00:00+03:00", 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35.0, 
@@ -159,8 +159,8 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-01-21T00:00:00+02:00", 
-          "endDate": "2019-02-20T00:00:00+02:00"
+          "startDate": "2019-04-21T00:00:00+02:00", 
+          "endDate": "2019-05-21T00:00:00+02:00"
         }, 
         "id": "dd27aa86304d4290847f89c131fd6710", 
         "quantity": 1.0
@@ -189,8 +189,8 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-01-21T00:00:00+02:00", 
-          "endDate": "2019-02-20T00:00:00+02:00"
+          "startDate": "2019-04-21T00:00:00+02:00", 
+          "endDate": "2019-05-21T00:00:00+02:00"
         }, 
         "id": "224738480ac44d289068bd1ad943a2d8", 
         "quantity": 1.0

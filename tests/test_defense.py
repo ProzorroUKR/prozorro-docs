@@ -189,6 +189,7 @@ class TenderUAResourceTest(BaseTenderUAWebTest, MockWebTestMixin):
             self.assertEqual(response.status, '200 OK')
 
         self.go_to_enquiryPeriod_end()
+        self.tick()
         self.app.authorization = ('Basic', ('broker', ''))
         with open(TARGET_DIR + 'update-tender-after-enqiery.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
