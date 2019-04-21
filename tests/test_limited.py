@@ -7,7 +7,7 @@ from openprocurement.api.utils import get_now
 from openprocurement.tender.limited.tests.tender import BaseTenderWebTest
 
 from tests.base.test import DumpsWebTestApp, MockWebTestMixin
-from tests.base.constants import DOCS_HOST
+from tests.base.constants import DOCS_URL, AUCTIONS_URL
 from tests.base.data import complaint, award, tender_limited, lots
 
 test_tender_data = deepcopy(tender_limited)
@@ -33,27 +33,21 @@ TARGET_DIR = 'docs/source/limited/http/'
 
 
 class TenderLimitedResourceTest(BaseTenderWebTest, MockWebTestMixin):
+    AppClass = DumpsWebTestApp
+
+    relative_to = os.path.dirname(__file__)
     initial_data = test_tender_data
     docservice = True
-
-    docs_host = DOCS_HOST
+    docservice_url = DOCS_URL
+    auctions_url = AUCTIONS_URL
 
     def setUp(self):
-        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(__file__))
-        self.couchdb_server = self.app.app.registry.couchdb_server
-        self.db = self.app.app.registry.db
+        super(TenderLimitedResourceTest, self).setUp()
         self.setUpMock()
-        if self.docservice:
-            self.setUpDS()
-            self.app.app.registry.docservice_url = 'http://{}'.format(self.docs_host)
 
     def tearDown(self):
         self.tearDownMock()
-        self.couchdb_server.delete(self.db.name)
-
-    def generate_docservice_url(self):
-        url = super(TenderLimitedResourceTest, self).generate_docservice_url()
-        return url.replace('localhost', DOCS_HOST)
+        super(TenderLimitedResourceTest, self).tearDown()
 
     def test_docs(self):
         request_path = '/tenders?opt_pretty=1'

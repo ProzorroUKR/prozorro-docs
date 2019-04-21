@@ -9,7 +9,7 @@ from openprocurement.contracting.api.tests.base import test_contract_data
 from openprocurement.tender.belowthreshold.tests.base import test_tender_data, test_organization
 
 from tests.base.test import DumpsWebTestApp, MockWebTestMixin
-from tests.base.constants import DOCS_HOST
+from tests.base.constants import DOCS_URL
 
 test_tender_data = deepcopy(test_tender_data)
 
@@ -17,19 +17,20 @@ TARGET_DIR = 'docs/source/contracting/http/'
 
 
 class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
-    initial_data = test_contract_data
+    AppClass = DumpsWebTestApp
 
-    docs_host = DOCS_HOST
+    relative_to = os.path.dirname(__file__)
+    initial_data = test_contract_data
+    docservice = False
+    docservice_url = DOCS_URL
 
     def setUp(self):
-        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(__file__))
-        self.couchdb_server = self.app.app.registry.couchdb_server
-        self.db = self.app.app.registry.db
+        super(TenderResourceTest, self).setUp()
         self.setUpMock()
 
     def tearDown(self):
         self.tearDownMock()
-        self.couchdb_server.delete(self.db.name)
+        super(TenderResourceTest, self).tearDown()
 
     def test_docs(self):
         self.app.authorization = ('Basic', ('broker', ''))

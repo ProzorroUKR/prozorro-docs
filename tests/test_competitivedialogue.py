@@ -11,7 +11,7 @@ from openprocurement.tender.competitivedialogue.tests.base import (
 )
 
 from tests.base.test import DumpsWebTestApp, MockWebTestMixin
-from tests.base.constants import DOCS_HOST, AUCTIONS_HOST
+from tests.base.constants import DOCS_URL, AUCTIONS_URL
 from tests.base.data import (
     bid_draft, bid2, bid3, bid4, bad_participant, question, complaint, qualified,
     bid_document, bid_document2, lots, subcontracting,
@@ -59,28 +59,22 @@ TARGET_DIR_MULTIPLE = 'docs/source/competitivedialogue/multiple_lots_tutorial/'
 
 
 class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):
+    AppClass = DumpsWebTestApp
+
+    relative_to = os.path.dirname(__file__)
     initial_data = test_tender_data_stage1
     docservice = True
+    docservice_url = DOCS_URL
+    auctions_url = AUCTIONS_URL
 
-    docs_host = DOCS_HOST
-    auctions_host = AUCTIONS_HOST
 
     def setUp(self):
-        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(__file__))
-        self.couchdb_server = self.app.app.registry.couchdb_server
-        self.db = self.app.app.registry.db
+        super(TenderResourceTest, self).setUp()
         self.setUpMock()
-        if self.docservice:
-            self.setUpDS()
-            self.app.app.registry.docservice_url = 'http://{}'.format(self.docs_host)
 
     def tearDown(self):
         self.tearDownMock()
-        self.couchdb_server.delete(self.db.name)
-
-    def generate_docservice_url(self):
-        url = super(TenderResourceTest, self).generate_docservice_url()
-        return url.replace('localhost', self.docs_host)
+        super(TenderResourceTest, self).tearDown()
 
     def test_stage1(self):
         request_path = '/tenders?opt_pretty=1'
@@ -862,7 +856,7 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):
 
         self.set_status('active.auction')
         self.app.authorization = ('Basic', ('auction', ''))
-        auction_url = u'http://{}/tenders/{}'.format(self.auctions_host, self.tender_id)
+        auction_url = u'{}/tenders/{}'.format(self.auctions_url, self.tender_id)
         patch_data = {
             'auctionUrl': auction_url,
             'bids': [{
@@ -2177,28 +2171,22 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):
 
 
 class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest, MockWebTestMixin):
-    docservice = True
-    initial_data = test_tender_data_stage1
+    AppClass = DumpsWebTestApp
 
-    docs_host = DOCS_HOST
-    auctions_host = AUCTIONS_HOST
+    relative_to = os.path.dirname(__file__)
+    initial_data = test_tender_data_stage1
+    docservice = True
+    docservice_url = DOCS_URL
+    auctions_url = AUCTIONS_URL
+
 
     def setUp(self):
-        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(__file__))
-        self.couchdb_server = self.app.app.registry.couchdb_server
-        self.db = self.app.app.registry.db
+        super(TenderResourceTestStage2UA, self).setUp()
         self.setUpMock()
-        if self.docservice:
-            self.setUpDS()
-            self.app.app.registry.docservice_url = 'http://{}'.format(self.docs_host)
 
     def tearDown(self):
-        self.couchdb_server.delete(self.db.name)
         self.tearDownMock()
-
-    def generate_docservice_url(self):
-        url = super(TenderResourceTestStage2UA, self).generate_docservice_url()
-        return url.replace('localhost', self.docs_host)
+        super(TenderResourceTestStage2UA, self).tearDown()
 
     def test_stage2_UA(self):
         request_path = '/tenders?opt_pretty=1'
@@ -2314,7 +2302,7 @@ class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest, MockWebTe
             response = self.app.get('/tenders/{}/questions/{}'.format(self.tender_id, question_id))
             self.assertEqual(response.status, '200 OK')
 
-        self.go_to_enquiryPeriod_end()
+        self.set_enquiry_period_end()
         self.app.authorization = ('Basic', ('broker', ''))
         endDate = (get_now() + timedelta(days=30, seconds=10)).isoformat()
         with open(TARGET_DIR + 'stage2/UA/update-tender-after-enqiery.http', 'w') as self.app.file_obj:
@@ -2412,7 +2400,7 @@ class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest, MockWebTe
         #### Auction
         self.set_status('active.auction')
         self.app.authorization = ('Basic', ('auction', ''))
-        auction_url = u'http://{}/tenders/{}'.format(self.auctions_host, self.tender_id)
+        auction_url = u'{}/tenders/{}'.format(self.auctions_url, self.tender_id)
         patch_data = {
             'auctionUrl': auction_url,
             'bids': [{

@@ -9,29 +9,25 @@ from openprocurement.tender.cfaua.tests.base import (
 )
 
 from tests.base.test import DumpsWebTestApp, MockWebTestMixin
-from tests.base.constants import DOCS_HOST
+from tests.base.constants import DOCS_URL
 
 TARGET_DIR = 'docs/source/agreementcfaua/tutorial/'
 
 
 class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
-    docs_host = DOCS_HOST
+    AppClass = DumpsWebTestApp
+
+    relative_to = os.path.dirname(__file__)
+    docservice = True
+    docservice_url = DOCS_URL
 
     def setUp(self):
-        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(__file__))
-        self.couchdb_server = self.app.app.registry.couchdb_server
-        self.db = self.app.app.registry.db
+        super(TenderResourceTest, self).setUp()
         self.setUpMock()
-        self.setUpDS()
-        self.app.app.registry.docservice_url = 'http://{}'.format(self.docs_host)
 
     def tearDown(self):
         self.tearDownMock()
-        self.couchdb_server.delete(self.db.name)
-
-    def generate_docservice_url(self):
-        url = super(TenderResourceTest, self).generate_docservice_url()
-        return url.replace('localhost', self.docs_host)
+        super(TenderResourceTest, self).tearDown()
 
     def test_docs(self):
         self.app.authorization = ('Basic', ('broker', ''))

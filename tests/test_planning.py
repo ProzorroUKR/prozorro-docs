@@ -7,8 +7,8 @@ from openprocurement.api.utils import get_now
 from openprocurement.planning.api.tests.base import BasePlanWebTest
 from openprocurement.planning.api.tests.base import test_plan_data
 
+from tests.base.constants import DOCS_URL
 from tests.base.test import DumpsWebTestApp, MockWebTestMixin
-from tests.base.constants import DOCS_HOST
 
 TARGET_DIR = 'docs/source/planning/tutorial/'
 
@@ -16,27 +16,23 @@ test_plan_data = deepcopy(test_plan_data)
 
 
 class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
+    AppClass = DumpsWebTestApp
+
+    relative_to = os.path.dirname(__file__)
     initial_data = test_plan_data
     docservice = True
-
-    docs_host = DOCS_HOST
+    docservice_url = DOCS_URL
 
     def setUp(self):
-        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(__file__))
-        self.couchdb_server = self.app.app.registry.couchdb_server
-        self.db = self.app.app.registry.db
+        super(PlanResourceTest, self).setUp()
         self.setUpMock()
-        if self.docservice:
-            self.setUpDS()
-            self.app.app.registry.docservice_url = 'http://{}'.format(self.docs_host)
 
     def tearDown(self):
         self.tearDownMock()
-        self.couchdb_server.delete(self.db.name)
+        super(PlanResourceTest, self).tearDown()
 
-    def generate_docservice_url(self):
-        url = super(PlanResourceTest, self).generate_docservice_url()
-        return url.replace('localhost', self.docs_host)
+    def create_plan(self):
+        pass
 
     def test_docs(self):
         self.app.authorization = ('Basic', ('broker', ''))

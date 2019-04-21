@@ -6,8 +6,8 @@ from datetime import timedelta
 from openprocurement.api.models import get_now
 from openprocurement.tender.openeu.tests.tender import BaseTenderWebTest
 
+from tests.base.constants import DOCS_URL, AUCTIONS_URL
 from tests.base.test import DumpsWebTestApp, MockWebTestMixin
-from tests.base.constants import DOCS_HOST, AUCTIONS_HOST
 from tests.base.data import (
     question, complaint, lots, subcontracting,
     bid_draft, bid2, bid3_with_docs,
@@ -35,28 +35,21 @@ TARGET_DIR_MULTI = 'docs/source/openeu/http/multiple_lots_tutorial/'
 
 
 class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
+    AppClass = DumpsWebTestApp
+
+    relative_to = os.path.dirname(__file__)
     initial_data = test_tender_data
     docservice = True
-
-    docs_host = DOCS_HOST
-    auctions_host = AUCTIONS_HOST
+    docservice_url = DOCS_URL
+    auctions_url = AUCTIONS_URL
 
     def setUp(self):
-        self.app = DumpsWebTestApp("config:tests.ini", relative_to=os.path.dirname(__file__))
-        self.couchdb_server = self.app.app.registry.couchdb_server
-        self.db = self.app.app.registry.db
+        super(TenderResourceTest, self).setUp()
         self.setUpMock()
-        if self.docservice:
-            self.setUpDS()
-            self.app.app.registry.docservice_url = 'http://{}'.format(self.docs_host)
 
     def tearDown(self):
         self.tearDownMock()
-        self.couchdb_server.delete(self.db.name)
-
-    def generate_docservice_url(self):
-        url = super(TenderResourceTest, self).generate_docservice_url()
-        return url.replace('localhost', self.docs_host)
+        super(TenderResourceTest, self).tearDown()
 
     def test_docs(self):
         request_path = '/tenders?opt_pretty=1'
@@ -425,7 +418,7 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
 
         self.set_status('active.auction')
         self.app.authorization = ('Basic', ('auction', ''))
-        auction_url = u'http://{}/tenders/{}'.format(self.auctions_host, self.tender_id)
+        auction_url = u'{}/tenders/{}'.format(self.auctions_url, self.tender_id)
         patch_data = {
             'auctionUrl': auction_url,
             'bids': [{
