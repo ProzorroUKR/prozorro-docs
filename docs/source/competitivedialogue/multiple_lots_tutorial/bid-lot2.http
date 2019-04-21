@@ -1,6 +1,6 @@
 POST /api/2.5/tenders/e079d0f147d74fcebf76f53f477ad16c/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 975
+Content-Length: 991
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
@@ -24,12 +24,13 @@ DATA:
           "telephone": "+380 (322) 12-34-56", 
           "name": "Іван Іваненко"
         }, 
+        "scale": "mid", 
+        "name": "«Снігур»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137227", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "«Снігур»", 
         "address": {
           "countryName": "Україна", 
           "postalCode": "79013", 
@@ -73,12 +74,13 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e079d0f147d74fce
           "telephone": "+380 (322) 12-34-56", 
           "name": "Іван Іваненко"
         }, 
+        "scale": "mid", 
+        "name": "«Снігур»", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00137227", 
           "uri": "http://www.sc.gov.ua/"
         }, 
-        "name": "«Снігур»", 
         "address": {
           "postalCode": "79013", 
           "countryName": "Україна", 

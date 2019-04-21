@@ -1,6 +1,6 @@
 POST /api/2.5/tenders/4cdd6b38d69c459284b31ab81cbea097/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 1686
+Content-Length: 1704
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
@@ -44,12 +44,13 @@ DATA:
           "name": "Державне управління справами", 
           "telephone": "0440000000"
         }, 
+        "scale": "micro", 
+        "name": "Державне управління справами", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00037257", 
           "uri": "http://www.dus.gov.ua/"
         }, 
-        "name": "Державне управління справами", 
         "address": {
           "postalCode": "01220", 
           "countryName": "Україна", 
@@ -120,12 +121,13 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4cdd6b38d69c4592
           "name": "Державне управління справами", 
           "telephone": "0440000000"
         }, 
+        "scale": "micro", 
+        "name": "Державне управління справами", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00037257", 
           "uri": "http://www.dus.gov.ua/"
         }, 
-        "name": "Державне управління справами", 
         "address": {
           "postalCode": "01220", 
           "countryName": "Україна", 

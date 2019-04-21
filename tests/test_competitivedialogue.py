@@ -17,8 +17,8 @@ from tests.base.data import (
     bid_document, bid_document2, lots, subcontracting,
     bid_document3_eligibility, bid_document4_financialy,
     bid_document5_qualification, tender_stage1, tender_stage2_multiple_lots,
-    tender_stage2EU, tender_stage2UA
-)
+    tender_stage2EU, tender_stage2UA,
+    bad_author)
 
 test_tender_data_stage1 = deepcopy(tender_stage1)
 test_tender_data_stage2_multiple_lots = deepcopy(tender_stage2_multiple_lots)
@@ -598,7 +598,7 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):
             response = self.app.post_json(
                 '/tenders/{}/questions'.format(self.tender_id),
                 {'data': {
-                    "author": bad_participant,
+                    "author": bad_author,
                     "description": "Просимо додати таблицю потрібної калорійності харчування",
                     "title": "Калорійність"
                 }}, status=403)
@@ -2286,7 +2286,7 @@ class TenderResourceTestStage2UA(BaseCompetitiveDialogUAStage2WebTest, MockWebTe
             response = self.app.post_json(
                 '/tenders/{}/questions'.format(self.tender_id),
                 {'data': {
-                    "author": bad_participant,
+                    "author": bad_author,
                     "description": "Просимо додати таблицю потрібної калорійності харчування",
                     "title": "Калорійність"
                 }}, status=403)
