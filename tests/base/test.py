@@ -152,7 +152,7 @@ class MockWebTestMixin(object):
     tick_delta = None
 
     whitelist = ('/openprocurement/', '/tests/')
-    blacklist = ('/tests/base.py',)
+    blacklist = ('/tests/base/tests.py',)
 
     def setUpMock(self):
         self.uuid_patch = mock.patch('uuid.UUID', side_effect=self.uuid)
@@ -172,8 +172,13 @@ class MockWebTestMixin(object):
         return UUID(bytes=hash[:16], version=version)
 
     def stack(self):
+        def trim_path(path):
+            for whitelist_item in self.whitelist:
+                pos = path.find(whitelist_item)
+                if pos > -1:
+                    return path[pos:]
         stack = traceback.extract_stack()
-        return [(item[0], item[2], item[3]) for item in stack if all([
+        return [(trim_path(item[0]), item[2], item[3]) for item in stack if all([
             any([path in item[0] for path in self.whitelist]),
             all([path not in item[0] for path in self.blacklist])
         ])]
