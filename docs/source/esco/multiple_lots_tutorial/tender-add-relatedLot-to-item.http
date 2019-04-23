@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/860d74a785364c238fc2e06190d4c25d?acc_token=6fe807aaf8204458b6b0b3ca4e5fe9b3 HTTP/1.0
+PATCH /api/2.5/tenders/d4132712eb7b4d3f91083564bc1ddf26?acc_token=8dbe405e21b44fb7b40a411b4a9fa159 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 125
 Content-Type: application/json
@@ -8,10 +8,10 @@ DATA:
   "data": {
     "items": [
       {
-        "relatedLot": "c610d778e48445eda6c38b497d348925"
+        "relatedLot": "cd0a788afea24ea0a3d145f1702f419f"
       }, 
       {
-        "relatedLot": "f9af5748098c4f3c90c620bfb83c1594"
+        "relatedLot": "df160680e58d4428ab078fdb1b494578"
       }
     ]
   }
@@ -61,7 +61,7 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "owner": "broker", 
     "title_en": "Services in school canteens", 
-    "id": "860d74a785364c238fc2e06190d4c25d", 
+    "id": "d4132712eb7b4d3f91083564bc1ddf26", 
     "title": "Послуги шкільних їдалень", 
     "lots": [
       {
@@ -80,7 +80,7 @@ Content-Type: application/json; charset=UTF-8
         "minimalStepPercentage": 0.006, 
         "yearlyPaymentsPercentageRange": 0.8, 
         "date": "2019-04-01T01:00:00+03:00", 
-        "id": "c610d778e48445eda6c38b497d348925"
+        "id": "cd0a788afea24ea0a3d145f1702f419f"
       }, 
       {
         "status": "active", 
@@ -98,7 +98,7 @@ Content-Type: application/json; charset=UTF-8
         "minimalStepPercentage": 0.006, 
         "yearlyPaymentsPercentageRange": 0.8, 
         "date": "2019-04-01T01:00:00+03:00", 
-        "id": "f9af5748098c4f3c90c620bfb83c1594"
+        "id": "df160680e58d4428ab078fdb1b494578"
       }
     ], 
     "tenderID": "UA-2019-04-01-000001", 
@@ -121,7 +121,7 @@ Content-Type: application/json; charset=UTF-8
     "fundingKind": "other", 
     "items": [
       {
-        "relatedLot": "c610d778e48445eda6c38b497d348925", 
+        "relatedLot": "cd0a788afea24ea0a3d145f1702f419f", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -143,14 +143,14 @@ Content-Type: application/json; charset=UTF-8
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "ac8fdb243bd3494fbd5b9a8d185cf8ee", 
+        "id": "228e7f73cbc24e9cb2ae38360271bc79", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }
       }, 
       {
-        "relatedLot": "f9af5748098c4f3c90c620bfb83c1594", 
+        "relatedLot": "df160680e58d4428ab078fdb1b494578", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -172,7 +172,7 @@ Content-Type: application/json; charset=UTF-8
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "510f7dd337e1490b9fd012f3127964ae", 
+        "id": "9b5830c544224466a0be153578264fcf", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"

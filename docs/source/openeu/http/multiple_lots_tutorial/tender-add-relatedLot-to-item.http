@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/f79202ed72aa4df58b23e22a833948e3?acc_token=b74885a1dd3b4781927e9e335d2ee742 HTTP/1.0
+PATCH /api/2.5/tenders/167bc218c6a347f0affb12c1cb33f317?acc_token=1c6df7c6b242477a971912ece9a0a193 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 125
 Content-Type: application/json
@@ -8,10 +8,10 @@ DATA:
   "data": {
     "items": [
       {
-        "relatedLot": "9c681dd3701140aeb8c6d83ae1a31e38"
+        "relatedLot": "dd22c9c085f64e019f943999b5b41fe5"
       }, 
       {
-        "relatedLot": "3f214e71a3894e7793214fef4dab684c"
+        "relatedLot": "9d4fc4783ebb4a99b10cc9a2f7d7552f"
       }
     ]
   }
@@ -65,7 +65,7 @@ Content-Type: application/json; charset=UTF-8
           "valueAddedTaxIncluded": true
         }, 
         "date": "2019-04-01T01:00:00+03:00", 
-        "id": "9c681dd3701140aeb8c6d83ae1a31e38"
+        "id": "dd22c9c085f64e019f943999b5b41fe5"
       }, 
       {
         "status": "active", 
@@ -85,7 +85,7 @@ Content-Type: application/json; charset=UTF-8
           "valueAddedTaxIncluded": true
         }, 
         "date": "2019-04-01T01:00:00+03:00", 
-        "id": "3f214e71a3894e7793214fef4dab684c"
+        "id": "9d4fc4783ebb4a99b10cc9a2f7d7552f"
       }
     ], 
     "next_check": "2019-05-02T01:00:00+03:00", 
@@ -125,7 +125,7 @@ Content-Type: application/json; charset=UTF-8
     "dateModified": "2019-04-01T01:00:00+03:00", 
     "items": [
       {
-        "relatedLot": "9c681dd3701140aeb8c6d83ae1a31e38", 
+        "relatedLot": "dd22c9c085f64e019f943999b5b41fe5", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -151,11 +151,11 @@ Content-Type: application/json; charset=UTF-8
           "startDate": "2019-04-21T00:00:00+02:00", 
           "endDate": "2019-05-21T00:00:00+02:00"
         }, 
-        "id": "dd27aa86304d4290847f89c131fd6710", 
+        "id": "152ca90705c3459582ee46e379277a46", 
         "quantity": 1.0
       }, 
       {
-        "relatedLot": "3f214e71a3894e7793214fef4dab684c", 
+        "relatedLot": "9d4fc4783ebb4a99b10cc9a2f7d7552f", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -181,11 +181,11 @@ Content-Type: application/json; charset=UTF-8
           "startDate": "2019-04-21T00:00:00+02:00", 
           "endDate": "2019-05-21T00:00:00+02:00"
         }, 
-        "id": "224738480ac44d289068bd1ad943a2d8", 
+        "id": "fb0987badfa74683b6c24d8be4738c88", 
         "quantity": 1.0
       }
     ], 
-    "id": "f79202ed72aa4df58b23e22a833948e3", 
+    "id": "167bc218c6a347f0affb12c1cb33f317", 
     "tenderID": "UA-2019-04-01-000001"
   }
 }

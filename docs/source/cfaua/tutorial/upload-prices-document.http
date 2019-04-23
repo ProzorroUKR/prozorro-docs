@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/239ab2b4b65a46f8ac603eebcd77771c/bids/5b1584c69800457d9ea9df290ddb42ae/financial_documents?acc_token=117ebc612ee44d1e94e699f91e64bc22 HTTP/1.0
+POST /api/2.5/tenders/eeda351577cb475894b560d00bb57c20/bids/3cb5698d987f4fc7a12c4fe9b19637e3/financial_documents?acc_token=68c78b9b1da24d37bdf110962b1cec17 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 195
 Content-Type: multipart/form-data; boundary=BOUNDARY
@@ -14,18 +14,18 @@ Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/239ab2b4b65a46f8ac603eebcd77771c/bids/5b1584c69800457d9ea9df290ddb42ae/financial_documents/7038f476f7a745798ef720fafa3a82f5
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/eeda351577cb475894b560d00bb57c20/bids/3cb5698d987f4fc7a12c4fe9b19637e3/financial_documents/2d2bb154b27b4155b2c9ba486bdc09dc
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "confidentiality": "public", 
     "language": "uk", 
     "title": "prices.xlsx", 
-    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/331072fec6ae4caeb2cee39500accad0?KeyID=a8968c46&Signature=0QSIupVKl1k06cP36YvPSwRPAvM4elVjC6GCRminDgOCkHrOc%2FkaEWygljyfSmU5ivlf8YJPDEa%2Fwb7wbIkQDQ%253D%253D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/12aa5e0838a947ce9cec3fe180ed9fc3?KeyID=a8968c46&Signature=nZSTVXS92pkyEwYn8iM560alhH3ZIvKpx3%2FHtLmrE6SwZLpJDeZDZtaT1XHnDSivloLB%252By7odIjiaFOobr%2FhBQ%253D%253D", 
     "format": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", 
     "documentOf": "tender", 
     "datePublished": "2019-04-01T01:00:00+03:00", 
-    "id": "7038f476f7a745798ef720fafa3a82f5", 
+    "id": "2d2bb154b27b4155b2c9ba486bdc09dc", 
     "dateModified": "2019-04-01T01:00:00+03:00"
   }
 }

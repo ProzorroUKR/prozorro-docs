@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/ac935cfbfbd34309a964891a8d29e35e/awards/86f7a213eac2456d84d2f679a49e8706?acc_token=8f1678da1c364bf39c80f7334e64c5d1 HTTP/1.0
+PATCH /api/2.5/tenders/8bbbf1f4060944ebad43e1a68e72cb38/awards/6cbaa9eddb444226a7714f082577fd46?acc_token=f42f85be45e84f69b038382e9824c4ba HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 33
 Content-Type: application/json
@@ -12,7 +12,7 @@ DATA:
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ac935cfbfbd34309a964891a8d29e35e/awards/1e762f7d83574fe49917d5121edcb7de
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/8bbbf1f4060944ebad43e1a68e72cb38/awards/c439248c900641c589d85505329a9e9a
 {
   "data": {
     "status": "cancelled", 
@@ -44,7 +44,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ac935cfbfbd34309
       "startDate": "2019-04-01T01:00:00+03:00", 
       "endDate": "2019-04-01T01:10:00+03:00"
     }, 
-    "bid_id": "2dc5dd8dc7e54feb90a1e5443be0e947", 
+    "bid_id": "664b207e71934f7cae0135f0bf24522a", 
     "value": {
       "currency": "UAH", 
       "amount": 499.0, 
@@ -61,22 +61,22 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ac935cfbfbd34309
             "hash": "md5:00000000000000000000000000000000", 
             "author": "complaint_owner", 
             "title": "Complaint_Attachement.pdf", 
-            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/d2125c26316140aca8c2b023e6664b51?KeyID=a8968c46&Signature=trnffKo4OkKQ1IcnQBrZattAYIVJKzOqcfe%2FBgi0D6CMAlIGCK2mtSkgxXRbR2D190wbxbw39Et7g5RGSf4gAQ%253D%253D", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/7a4aa8249d284e8c981314ef69f1982b?KeyID=a8968c46&Signature=IK%2FyfChcJgMeQLzXRye0untsLrEQxmTFMB7dBpvIjiOC2Ncpgg1%252BzzRgmjAhJBGP3U6JJJBUDYXCSFdsHYjUAg%253D%253D", 
             "format": "application/pdf", 
             "documentOf": "tender", 
             "datePublished": "2019-04-01T01:10:00+03:00", 
-            "id": "d7771534f59049faa50cb10d248a3968", 
+            "id": "f82dcf44645b45b29ca1f0d568b6e2be", 
             "dateModified": "2019-04-01T01:10:00+03:00"
           }, 
           {
             "hash": "md5:00000000000000000000000000000000", 
             "author": "aboveThresholdReviewers", 
             "title": "ComplaintResolution.pdf", 
-            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/af789c5ad9dd438b98215cdb9a0e7ac1?KeyID=a8968c46&Signature=IBjxfMDQde9OnqUZUDpPFyJi%2FfTWqzqXLWbDphtWEc14e2N9LJE%252BqG1q0JvLGpn1mfN%252Bzb0EJ5QuuxezhNJNBw%253D%253D", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/3bd568b98cf44b8c968fac46ada518ce?KeyID=a8968c46&Signature=qAzPRIqRnjTcrCNeQiDoL8Hz1Fpb7i5IDP6ch8CGr8Ey2vsgModjAk%252BFF%252BnGlOgY5rpo8nL4wRunywc9oFE8Bg%253D%253D", 
             "format": "application/pdf", 
             "documentOf": "tender", 
             "datePublished": "2019-04-01T01:10:00+03:00", 
-            "id": "030c85b1d5d34600997b0e63e50b7e55", 
+            "id": "fb4c0e2e6ad34bdf860b57c38d1574c6", 
             "dateModified": "2019-04-01T01:10:00+03:00"
           }
         ], 
@@ -109,7 +109,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ac935cfbfbd34309
         "date": "2019-04-01T01:10:00+03:00", 
         "acceptance": true, 
         "type": "complaint", 
-        "id": "a4105e3df0634f969bec7c4cbb9f66d5", 
+        "id": "a237331b41014e298048b747586a08a5", 
         "dateAccepted": "2019-04-01T01:10:00+03:00"
       }, 
       {
@@ -142,7 +142,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ac935cfbfbd34309
         "date": "2019-04-01T01:10:00+03:00", 
         "title": "Недостатньо інформації", 
         "type": "complaint", 
-        "id": "ad1e8fe7246044b98b8c3cfa165c3f5d"
+        "id": "e53bdf45e0264ab280b84be90218c0be"
       }, 
       {
         "status": "declined", 
@@ -175,7 +175,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ac935cfbfbd34309
         "date": "2019-04-01T01:10:00+03:00", 
         "title": "Недостатньо інформації", 
         "type": "complaint", 
-        "id": "5acbf391257e4245b9304255b42671d1"
+        "id": "b1d60e5efec843099aa35c0698f549d5"
       }, 
       {
         "status": "stopped", 
@@ -211,7 +211,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ac935cfbfbd34309
         "complaintID": "UA-2019-04-01-000001.4", 
         "date": "2019-04-01T01:10:00+03:00", 
         "type": "complaint", 
-        "id": "9b9aa4d603a64d54a1d8960bd210cbcc"
+        "id": "171d4c016e79467bb1c5955b5e7b9653"
       }, 
       {
         "status": "stopped", 
@@ -246,7 +246,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ac935cfbfbd34309
         "complaintID": "UA-2019-04-01-000001.5", 
         "date": "2019-04-01T01:10:00+03:00", 
         "type": "complaint", 
-        "id": "90d85842abde4fb88a6f7ce0622d21bd"
+        "id": "8ca28f14b81d4bb9ab230a8497f4235b"
       }, 
       {
         "status": "answered", 
@@ -280,7 +280,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ac935cfbfbd34309
         "complaintID": "UA-2019-04-01-000001.6", 
         "date": "2019-04-01T01:10:00+03:00", 
         "resolution": "Умови виправлено, вибір переможня буде розгянуто повторно", 
-        "id": "97a6e913c28341a39bfbb236d3f93d65"
+        "id": "44727f7eb5aa4106843cbaaa9a665d36"
       }, 
       {
         "status": "answered", 
@@ -314,7 +314,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ac935cfbfbd34309
         "complaintID": "UA-2019-04-01-000001.7", 
         "date": "2019-04-01T01:10:00+03:00", 
         "resolution": "Вимога не відповідає предмету закупівлі", 
-        "id": "cec05d3a1c094cde82c327e967279702"
+        "id": "ce6312b3039e4a31a2abba59fc0ca23b"
       }, 
       {
         "status": "claim", 
@@ -344,10 +344,10 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ac935cfbfbd34309
         "complaintID": "UA-2019-04-01-000001.8", 
         "date": "2019-04-01T01:10:00+03:00", 
         "type": "claim", 
-        "id": "85c7c4917ac04f5e8b627a658cad88b0"
+        "id": "f8cca7c19363420495635f2238a00697"
       }
     ], 
-    "id": "86f7a213eac2456d84d2f679a49e8706"
+    "id": "6cbaa9eddb444226a7714f082577fd46"
   }
 }
 

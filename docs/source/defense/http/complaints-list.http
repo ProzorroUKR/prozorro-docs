@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/48b14561c9f44d339fdf26f0d4cdb624/complaints HTTP/1.0
+GET /api/2.5/tenders/0c33a5c063d04b6c8a5a429d187fda21/complaints HTTP/1.0
 Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
@@ -13,22 +13,22 @@ Content-Type: application/json; charset=UTF-8
           "hash": "md5:00000000000000000000000000000000", 
           "author": "complaint_owner", 
           "title": "Complaint_Attachement.pdf", 
-          "url": "http://public-docs-sandbox.prozorro.gov.ua/get/e0e14910515145a7a65ac83415950b3b?KeyID=a8968c46&Signature=FqJ%2FBYMIOPpRFKDshuamuc%2FfJWHml35tqRc7s2ioXHD4EWoHcwXQjpOtZ3w6DBMzG6qznTvb7qwK1r%252BUThVrAQ%253D%253D", 
+          "url": "http://public-docs-sandbox.prozorro.gov.ua/get/9c219dbd46ee407fb8fab4c18b6daba3?KeyID=a8968c46&Signature=LueicQ0wGbgdTze8mj4SwDoozXBqGbXa2cROrME4DwjcSUS0bkAPc7PxyWgWpl9gN1p5xaRA4Kax5HiZDrYDCw%253D%253D", 
           "format": "application/pdf", 
           "documentOf": "tender", 
           "datePublished": "2019-04-01T01:00:00+03:00", 
-          "id": "d3249ec2d35f44a9996aff12dbaf90df", 
+          "id": "25c456c2fe6743b99b992185d09fed1f", 
           "dateModified": "2019-04-01T01:00:00+03:00"
         }, 
         {
           "hash": "md5:00000000000000000000000000000000", 
           "author": "aboveThresholdReviewers", 
           "title": "ComplaintResolution.pdf", 
-          "url": "http://public-docs-sandbox.prozorro.gov.ua/get/e7dd24a73069472d803388c9a3009288?KeyID=a8968c46&Signature=XcjW1ygDubpIaT6OtqSebllAt3RCOVZipJs1Y4AfVLgmEjfGjtAgFJJUZ7CVPn%2FfEFy%2FJ2V2%252B1H9QdrBr5N2CQ%253D%253D", 
+          "url": "http://public-docs-sandbox.prozorro.gov.ua/get/c62529ea99f346b6bd96f03b7666ddf4?KeyID=a8968c46&Signature=DoyTmK5VMKst9%2FlQsZ6ENJOJIdb6%2FmFR13dHAp41m3SPj0xyU4p2UOHUZiIKnPlj%2FnIKAd0HXj3isRLbFTOxDQ%253D%253D", 
           "format": "application/pdf", 
           "documentOf": "tender", 
           "datePublished": "2019-04-01T01:00:00+03:00", 
-          "id": "8437444eee89446a8522d7bf2afca816", 
+          "id": "9d3162fb6ce3408a969c8026450817d0", 
           "dateModified": "2019-04-01T01:00:00+03:00"
         }
       ], 
@@ -61,7 +61,7 @@ Content-Type: application/json; charset=UTF-8
       "date": "2019-04-01T01:00:00+03:00", 
       "acceptance": true, 
       "type": "complaint", 
-      "id": "dda9bf65ed9749789dec3bb86008a090", 
+      "id": "491d2315c54844269c7e1bab75ec63b0", 
       "dateAccepted": "2019-04-01T01:00:00+03:00"
     }, 
     {
@@ -75,7 +75,7 @@ Content-Type: application/json; charset=UTF-8
       "complaintID": "UA-2019-04-01-000001.2", 
       "date": "2019-04-01T01:00:00+03:00", 
       "resolution": "Виправлено неконкурентні умови", 
-      "id": "d8b4c61723504dad9f5d975051034c82"
+      "id": "55797ce5faa14d25bde59ced89eea128"
     }, 
     {
       "status": "declined", 
@@ -108,7 +108,7 @@ Content-Type: application/json; charset=UTF-8
       "date": "2019-04-01T01:00:00+03:00", 
       "title": "Недостатньо інформації", 
       "type": "complaint", 
-      "id": "bcd933b8af3044b19302faa363ce613f"
+      "id": "714fa87052234e8ab2131ad5e1d9d85d"
     }, 
     {
       "status": "invalid", 
@@ -144,7 +144,7 @@ Content-Type: application/json; charset=UTF-8
       "complaintID": "UA-2019-04-01-000001.4", 
       "date": "2019-04-01T01:00:00+03:00", 
       "resolution": "Вимога не відповідає предмету закупівлі", 
-      "id": "f03c00f8ada24459b325b6a0052f029c"
+      "id": "d61ec195800849059069ad8cad973799"
     }, 
     {
       "status": "stopped", 
@@ -179,7 +179,7 @@ Content-Type: application/json; charset=UTF-8
       "complaintID": "UA-2019-04-01-000001.5", 
       "date": "2019-04-01T01:00:00+03:00", 
       "type": "complaint", 
-      "id": "f6c467f714e940ac9897a4bfda64905d"
+      "id": "4d6956ede2bd458a8a1832b3b085850c"
     }, 
     {
       "status": "stopped", 
@@ -215,7 +215,7 @@ Content-Type: application/json; charset=UTF-8
       "complaintID": "UA-2019-04-01-000001.6", 
       "date": "2019-04-01T01:00:00+03:00", 
       "type": "complaint", 
-      "id": "cfbb834c68114d11a9844157684f3e66"
+      "id": "ac3a05462fdf4adaad52e64fec1658c1"
     }, 
     {
       "status": "cancelled", 
@@ -226,7 +226,7 @@ Content-Type: application/json; charset=UTF-8
       "complaintID": "UA-2019-04-01-000001.7", 
       "date": "2019-04-01T01:00:00+03:00", 
       "type": "claim", 
-      "id": "8963f92202204406ba37027dd8a8f1e2"
+      "id": "c194231d66d24fe985d5961220450c63"
     }
   ]
 }

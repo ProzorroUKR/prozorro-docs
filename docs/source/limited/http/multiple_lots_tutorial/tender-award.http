@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/9b64b7c8f5d548b0a278a80f697bd9c4/awards?acc_token=519929395faa425897d1c7d67701a59a HTTP/1.0
+POST /api/2.5/tenders/4c2fb227599241228a172c3850ebdb4a/awards?acc_token=3f25dc8beb7f4dc691a7f23bfdc0c758 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 875
 Content-Type: application/json
@@ -30,7 +30,7 @@ DATA:
         }
       }
     ], 
-    "lotID": "f9b1b519f94d4d6abd60117c373007dc", 
+    "lotID": "66824bb712784e6c9d7906090f54bd2e", 
     "value": {
       "currency": "UAH", 
       "amount": 475000, 
@@ -41,11 +41,11 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/9b64b7c8f5d548b0a278a80f697bd9c4/awards/8ec7a62ccc524682bb19f8e92880136d
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4c2fb227599241228a172c3850ebdb4a/awards/c8f5d1885039455382a094b59bdde62b
 {
   "data": {
     "status": "pending", 
-    "lotID": "f9b1b519f94d4d6abd60117c373007dc", 
+    "lotID": "66824bb712784e6c9d7906090f54bd2e", 
     "complaintPeriod": {
       "startDate": "2019-04-01T01:00:00+03:00"
     }, 
@@ -78,7 +78,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/9b64b7c8f5d548b0
       "valueAddedTaxIncluded": true
     }, 
     "date": "2019-04-01T01:00:00+03:00", 
-    "id": "8ec7a62ccc524682bb19f8e92880136d"
+    "id": "c8f5d1885039455382a094b59bdde62b"
   }
 }
 

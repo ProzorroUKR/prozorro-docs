@@ -1,12 +1,12 @@
-POST /api/2.5/tenders/e370d1ede4574bb8aebd9cd6976fd5f8/documents?acc_token=855549743758426abe02dad7618aea90 HTTP/1.0
+POST /api/2.5/tenders/2fc8039bb7864bfabe6dc2c3ab451b69/documents?acc_token=c51d5449ff804fa4a8f52a47ac9fc180 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 320
+Content-Length: 324
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
-    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/34b0ab40d38542488d5b4715522a42ac?KeyID=a8968c46&Signature=qNjX8LkjT0IJ4nHsN4qZZBUgILluS2jBnOdjWZHSprTLlBOTYOMy462V3F9Fk%2FDKyJybP3JdIbjzHj9GaHQDBQ%3D%3D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/43bf8d44f69a45a1be501ef8543fe888?KeyID=a8968c46&Signature=V9H2EZgo%2FASHAfLhAeG8yOG3ov7VLBmz91FZ7KVMSl2ykKOm7JCT3sPGvZbaSN%2BVsUMQXWNCH7cIOaCPzoz%2BDQ%3D%3D", 
     "title": "Notice.pdf", 
     "hash": "md5:00000000000000000000000000000000", 
     "format": "application/pdf"
@@ -15,17 +15,17 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e370d1ede4574bb8aebd9cd6976fd5f8/documents/36ca1b00125549b69c226b4fe8185f44
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/2fc8039bb7864bfabe6dc2c3ab451b69/documents/1cacd13139d34e8596ca5b500043714b
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "author": "tender_owner", 
     "title": "Notice.pdf", 
-    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/34b0ab40d38542488d5b4715522a42ac?KeyID=a8968c46&Signature=asaWqF0DXIH%252BYgVmBxPc2ro2KG2ozXH3D9vDcSXO3511rALwNAp7E7K9SFGca3rFngsc%252BgBoBvhiTc813vnJBQ%253D%253D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/43bf8d44f69a45a1be501ef8543fe888?KeyID=a8968c46&Signature=V0A%252BnAfQdFw5QGH1bCI8GX909z9NcfPdxtEYuncC6YkYpZQUvpv866phhVa45bh4e0luFbN%2F3o7qJjmZIy3aDw%253D%253D", 
     "format": "application/pdf", 
     "documentOf": "tender", 
     "datePublished": "2019-04-01T01:10:00+03:00", 
-    "id": "36ca1b00125549b69c226b4fe8185f44", 
+    "id": "1cacd13139d34e8596ca5b500043714b", 
     "dateModified": "2019-04-01T01:10:00+03:00"
   }
 }
