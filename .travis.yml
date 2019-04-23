@@ -19,5 +19,4 @@ before_script:
   - sudo apt-get install libsodium13 -y
 script:
   - ./bin/py.test tests -v --color=yes
-  - git diff
-  - (set -e; [[ $(git diff) ]] && exit 1 || exit 0)
+  - (set -e; [[ $(git diff) ]] && { git diff | head -n 30; exit 1; } || exit 0)
