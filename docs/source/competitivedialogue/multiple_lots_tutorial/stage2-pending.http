@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/e079d0f147d74fcebf76f53f477ad16c?acc_token=5ae97b21ba424d95bb8004e7f3835124 HTTP/1.0
+GET /api/2.5/tenders/c79e08c6a0e5419cabffd9243348f55e?acc_token=0a7bdc42eca242b1948d33209bd28aa0 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: lb-api-sandbox.prozorro.gov.ua
 
@@ -46,7 +46,7 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "owner": "broker", 
     "title_en": "Services in school canteens", 
-    "id": "e079d0f147d74fcebf76f53f477ad16c", 
+    "id": "c79e08c6a0e5419cabffd9243348f55e", 
     "title": "Послуги шкільних їдалень", 
     "lots": [
       {
@@ -64,7 +64,7 @@ Content-Type: application/json; charset=UTF-8
           "valueAddedTaxIncluded": true
         }, 
         "date": "2019-04-01T01:00:00+03:00", 
-        "id": "faa9f6fda9cb4f63bce56c634875eb06"
+        "id": "97b0f691d1164b5d91171adf7f6e2bc7"
       }, 
       {
         "status": "unsuccessful", 
@@ -81,7 +81,7 @@ Content-Type: application/json; charset=UTF-8
           "valueAddedTaxIncluded": true
         }, 
         "date": "2019-04-01T01:00:00+03:00", 
-        "id": "d0775ff07b4d4b88976c6eedc6df8fb2"
+        "id": "e04e45269cb94d11a4e0525ef7d13cf3"
       }
     ], 
     "qualificationPeriod": {
@@ -98,30 +98,30 @@ Content-Type: application/json; charset=UTF-8
     "qualifications": [
       {
         "status": "active", 
-        "lotID": "faa9f6fda9cb4f63bce56c634875eb06", 
+        "lotID": "97b0f691d1164b5d91171adf7f6e2bc7", 
         "eligible": true, 
         "qualified": true, 
-        "bidID": "7d3f302088144e8c9a3713a68be51e56", 
+        "bidID": "1cfa6572b5844df4bea8e46def1fef70", 
         "date": "2019-04-01T01:00:00+03:00", 
-        "id": "b8c0f79680aa46589e33167f790919b0"
+        "id": "eeb58e562d794eb2bd0c3a1ddf1e6775"
       }, 
       {
         "status": "active", 
-        "lotID": "faa9f6fda9cb4f63bce56c634875eb06", 
+        "lotID": "97b0f691d1164b5d91171adf7f6e2bc7", 
         "eligible": true, 
         "qualified": true, 
-        "bidID": "c272f463989c4fd3b38beb15a21e3d82", 
+        "bidID": "76bcde2b2b7041629b47617efb62a9ac", 
         "date": "2019-04-01T01:00:00+03:00", 
-        "id": "cb2b55e888de4daabe7fae110aec211f"
+        "id": "bba617e66254408daf99a49d0283d4f0"
       }, 
       {
         "status": "active", 
-        "lotID": "faa9f6fda9cb4f63bce56c634875eb06", 
+        "lotID": "97b0f691d1164b5d91171adf7f6e2bc7", 
         "eligible": true, 
         "qualified": true, 
-        "bidID": "4db56ab06ab94a9a92fd67b7cf21f35d", 
+        "bidID": "a5b3a9d381184f26a5fdcd2b6133c7e7", 
         "date": "2019-04-01T01:00:00+03:00", 
-        "id": "d955b773f4a24366b32aa024d5315a60"
+        "id": "bdadcab825b14224800603a233e50279"
       }
     ], 
     "procurementMethodType": "competitiveDialogueEU", 
@@ -133,7 +133,7 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "items": [
       {
-        "relatedLot": "faa9f6fda9cb4f63bce56c634875eb06", 
+        "relatedLot": "97b0f691d1164b5d91171adf7f6e2bc7", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -159,7 +159,7 @@ Content-Type: application/json; charset=UTF-8
           "startDate": "2019-04-21T00:00:00+02:00", 
           "endDate": "2019-05-21T00:00:00+02:00"
         }, 
-        "id": "431f103482084ba3aef4afb82d5324fb", 
+        "id": "053ab126d456441cbadffc971b7a8a24", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -167,7 +167,7 @@ Content-Type: application/json; charset=UTF-8
         "quantity": 1.0
       }, 
       {
-        "relatedLot": "d0775ff07b4d4b88976c6eedc6df8fb2", 
+        "relatedLot": "e04e45269cb94d11a4e0525ef7d13cf3", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -193,7 +193,7 @@ Content-Type: application/json; charset=UTF-8
           "startDate": "2019-04-21T00:00:00+02:00", 
           "endDate": "2019-05-21T00:00:00+02:00"
         }, 
-        "id": "b2a658f3fe6649dda848fa8f61657bdc", 
+        "id": "67c0a1e7960f46b58a15e8be4f0822e5", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -204,7 +204,7 @@ Content-Type: application/json; charset=UTF-8
     "bids": [
       {
         "status": "active", 
-        "id": "7d3f302088144e8c9a3713a68be51e56", 
+        "id": "1cfa6572b5844df4bea8e46def1fef70", 
         "tenderers": [
           {
             "contactPoint": {
@@ -231,7 +231,7 @@ Content-Type: application/json; charset=UTF-8
       }, 
       {
         "status": "active", 
-        "id": "c272f463989c4fd3b38beb15a21e3d82", 
+        "id": "76bcde2b2b7041629b47617efb62a9ac", 
         "tenderers": [
           {
             "contactPoint": {
@@ -258,7 +258,7 @@ Content-Type: application/json; charset=UTF-8
       }, 
       {
         "status": "active", 
-        "id": "4db56ab06ab94a9a92fd67b7cf21f35d", 
+        "id": "a5b3a9d381184f26a5fdcd2b6133c7e7", 
         "tenderers": [
           {
             "contactPoint": {

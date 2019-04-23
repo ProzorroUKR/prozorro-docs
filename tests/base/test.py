@@ -5,6 +5,7 @@ from datetime import timedelta
 
 import mock
 from freezegun import freeze_time
+from openprocurement.api.tests.base import BaseTestApp
 from openprocurement.api.utils import get_now
 from six import text_type
 
@@ -17,16 +18,7 @@ from webtest.compat import to_bytes
 from tests.base.constants import API_HOST, MOCK_DATETIME
 
 
-class PrefixedRequestClass(TestRequest):
-    @classmethod
-    def blank(cls, path, *args, **kwargs):
-        path = '/api/%s%s' % (VERSION, path)
-        return TestRequest.blank(path, *args, **kwargs)
-
-
-class DumpsWebTestApp(TestApp):
-    RequestClass = PrefixedRequestClass
-
+class DumpsWebTestApp(BaseTestApp):
     hostname = API_HOST
     indent = 2
     ensure_ascii = False
@@ -152,7 +144,7 @@ class MockWebTestMixin(object):
     tick_delta = None
 
     whitelist = ('/openprocurement/', '/tests/')
-    blacklist = ('/tests/base.py',)
+    blacklist = ('/tests/base/tests.py',)
 
     def setUpMock(self):
         self.uuid_patch = mock.patch('uuid.UUID', side_effect=self.uuid)
@@ -172,8 +164,13 @@ class MockWebTestMixin(object):
         return UUID(bytes=hash[:16], version=version)
 
     def stack(self):
+        def trim_path(path):
+            for whitelist_item in self.whitelist:
+                pos = path.find(whitelist_item)
+                if pos > -1:
+                    return path[pos:]
         stack = traceback.extract_stack()
-        return [(item[0], item[2], item[3]) for item in stack if all([
+        return [(trim_path(item[0]), item[2], item[3]) for item in stack if all([
             any([path in item[0] for path in self.whitelist]),
             all([path not in item[0] for path in self.blacklist])
         ])]
@@ -186,9 +183,9 @@ class MockWebTestMixin(object):
         self.uuid_counters[name] += 1
         return self.uuid_counters[name]
 
-    def tick(self, delta=timedelta(minutes=10)):
+    def tick(self, delta=timedelta(seconds=1)):
         if not self.tick_delta:
-            self.tick_delta = timedelta(minutes=0)
+            self.tick_delta = timedelta(seconds=0)
         self.tick_delta += delta
         freeze = get_now() + self.tick_delta
         self.freezer.stop()

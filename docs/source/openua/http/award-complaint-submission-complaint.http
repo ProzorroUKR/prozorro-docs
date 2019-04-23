@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/38d68080c5124a30af149c1e30f0b756/awards/9ce60d53dd6046b5847c2f9244dc271a/complaints?acc_token=46cc21b3f38e4959a9d79dc400b9c64a HTTP/1.0
+POST /api/2.5/tenders/cdccba79f0c74fe296abccac30a5fec2/awards/bae29eaf1b1a4e06ae034e3ceb94ccd8/complaints?acc_token=151141cb9a7249d7b2052eb1cc6222bf HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 1319
 Content-Type: application/json
@@ -34,10 +34,10 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/38d68080c5124a30af149c1e30f0b756/awards/9ce60d53dd6046b5847c2f9244dc271a/complaints/c0f509b8d6404a28b1dfbf6062718371
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/cdccba79f0c74fe296abccac30a5fec2/awards/bae29eaf1b1a4e06ae034e3ceb94ccd8/complaints/4d0e2b1ea1d444d38541d2c852e1fee7
 {
   "access": {
-    "token": "071b044db0d24382a0c722ceaf202e43"
+    "token": "6e7d346c5dc64454931aa7545cc00a9a"
   }, 
   "data": {
     "status": "pending", 
@@ -63,11 +63,11 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/38d68080c5124a30
       }
     }, 
     "title": "Недостатньо інформації", 
-    "dateSubmitted": "2019-04-01T01:10:00+03:00", 
+    "dateSubmitted": "2019-04-01T01:00:01+03:00", 
     "complaintID": "UA-2019-04-01-000001.2", 
-    "date": "2019-04-01T01:10:00+03:00", 
+    "date": "2019-04-01T01:00:01+03:00", 
     "type": "complaint", 
-    "id": "c0f509b8d6404a28b1dfbf6062718371"
+    "id": "4d0e2b1ea1d444d38541d2c852e1fee7"
   }
 }
 

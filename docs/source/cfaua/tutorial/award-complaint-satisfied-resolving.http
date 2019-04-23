@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/bcd53594a1a245cdbecf00f8aa09cc36/awards/06d30f82e6b94bdfa1580f01aadfd48b?acc_token=f1e04bcd7e4c45f186b6aa3a2cae6944 HTTP/1.0
+PATCH /api/2.5/tenders/7b005fa4dbfc44f588d4b10b52c9d64f/awards/89a7ba79e27c4a1e8c7a88dbb8959661?acc_token=67228510eb684717839f23f61a218659 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 33
 Content-Type: application/json
@@ -15,7 +15,7 @@ Content-Type: application/json; charset=UTF-8
 {
   "data": {
     "status": "cancelled", 
-    "lotID": "e805ca07bcfd4410a873ceff155e669f", 
+    "lotID": "98be3ab3e0504351a55c9391a9e1a061", 
     "eligible": true, 
     "suppliers": [
       {
@@ -44,20 +44,20 @@ Content-Type: application/json; charset=UTF-8
       "startDate": "2019-04-01T01:00:00+03:00", 
       "endDate": "2019-04-11T01:00:00+03:00"
     }, 
-    "bid_id": "a41db0b45bcf4eee85cd327c4a80cad7", 
+    "bid_id": "6fa2a3aa0e8f439189947513651753fc", 
     "value": {
       "currency": "UAH", 
       "amount": 499, 
       "valueAddedTaxIncluded": true
     }, 
-    "date": "2019-04-01T01:10:00+03:00", 
+    "date": "2019-04-01T01:00:01+03:00", 
     "qualified": true, 
     "complaints": [
       {
-        "relatedLot": "e805ca07bcfd4410a873ceff155e669f", 
+        "relatedLot": "98be3ab3e0504351a55c9391a9e1a061", 
         "status": "resolved", 
-        "dateDecision": "2019-04-01T01:10:00+03:00", 
-        "tendererActionDate": "2019-04-01T01:10:00+03:00", 
+        "dateDecision": "2019-04-01T01:00:01+03:00", 
+        "tendererActionDate": "2019-04-01T01:00:01+03:00", 
         "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
         "author": {
           "contactPoint": {
@@ -80,11 +80,11 @@ Content-Type: application/json; charset=UTF-8
           }
         }, 
         "title": "Недостатньо інформації", 
-        "id": "715e24d936174f29a289414ea9a60ea5", 
+        "id": "2fd245ad97014eda9dbb95fe2949f4b0", 
         "tendererAction": "Умови виправлено, вибір переможня буде розгянуто повторно", 
-        "dateSubmitted": "2019-04-01T01:10:00+03:00", 
+        "dateSubmitted": "2019-04-01T01:00:01+03:00", 
         "complaintID": "UA-2019-04-01-000001.1", 
-        "date": "2019-04-01T01:10:00+03:00", 
+        "date": "2019-04-01T01:00:01+03:00", 
         "acceptance": true, 
         "type": "complaint", 
         "documents": [
@@ -93,32 +93,32 @@ Content-Type: application/json; charset=UTF-8
             "author": "complaint_owner", 
             "language": "uk", 
             "title": "Complaint_Attachement.pdf", 
-            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/7d62b510cbb54ec98b6096a0ba5d471b?KeyID=a8968c46&Signature=r0kBT1yfdxjOMg%2FNCToB4HtI7o8IgHbuq2q77Cj9l6PEup5Z1Ltzt1CYQTt0v7xK1v8NOOZF75GtKKGT0rZXDQ%253D%253D", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/ab6be0be2e0c468994ddfd65c81cc5c3?KeyID=a8968c46&Signature=SwvV1e6UjSUUUIPMSl%2Famc%2FZjOOkmD%2FPD3TvAxtnsQ2ntTrj1ttC7y4tDkoBBzhOYdfCLHOWwkF5xOel73qGBA%253D%253D", 
             "format": "application/pdf", 
             "documentOf": "tender", 
-            "datePublished": "2019-04-01T01:10:00+03:00", 
-            "id": "f2e1ee3b805d451a807e97e0be99253b", 
-            "dateModified": "2019-04-01T01:10:00+03:00"
+            "datePublished": "2019-04-01T01:00:01+03:00", 
+            "id": "093fdefce74f4837aa2650a4edf773f6", 
+            "dateModified": "2019-04-01T01:00:01+03:00"
           }, 
           {
             "hash": "md5:00000000000000000000000000000000", 
             "author": "aboveThresholdReviewers", 
             "language": "uk", 
             "title": "ComplaintResolution.pdf", 
-            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/2e652ec2372741f6a1ca2251c8bb1ef4?KeyID=a8968c46&Signature=fJkZXw41uRNCcbc7b5jWzbUupozMCZo7ay5ZF5WYObAd9TkDt6oFdorAzwex%252B59Y6Y%252BEHiQ6P4HKw0ztWNAiDg%253D%253D", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/0185adfa081b4460b9d2ea94729349c2?KeyID=a8968c46&Signature=UpT07wb6GahONE%252Bi5rZrcOR0ERyGPvMmXy4rUqThPcO9876Hjfw7hHI7r0Lbfse%2Fwjz1WX%2FhqAxqxufijXEeAg%253D%253D", 
             "format": "application/pdf", 
             "documentOf": "tender", 
-            "datePublished": "2019-04-01T01:10:00+03:00", 
-            "id": "38addc149e964b0eb464b428ed07af32", 
-            "dateModified": "2019-04-01T01:10:00+03:00"
+            "datePublished": "2019-04-01T01:00:01+03:00", 
+            "id": "3a3d5cd54bb24024a48d5bbc273affc6", 
+            "dateModified": "2019-04-01T01:00:01+03:00"
           }
         ], 
-        "dateAccepted": "2019-04-01T01:10:00+03:00"
+        "dateAccepted": "2019-04-01T01:00:01+03:00"
       }, 
       {
-        "relatedLot": "e805ca07bcfd4410a873ceff155e669f", 
+        "relatedLot": "98be3ab3e0504351a55c9391a9e1a061", 
         "status": "invalid", 
-        "dateDecision": "2019-04-01T01:10:00+03:00", 
+        "dateDecision": "2019-04-01T01:00:01+03:00", 
         "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
         "author": {
           "contactPoint": {
@@ -141,17 +141,17 @@ Content-Type: application/json; charset=UTF-8
           }
         }, 
         "acceptance": false, 
-        "dateSubmitted": "2019-04-01T01:10:00+03:00", 
+        "dateSubmitted": "2019-04-01T01:00:01+03:00", 
         "complaintID": "UA-2019-04-01-000001.2", 
-        "date": "2019-04-01T01:10:00+03:00", 
+        "date": "2019-04-01T01:00:01+03:00", 
         "title": "Недостатньо інформації", 
         "type": "complaint", 
-        "id": "815f8e6baaff42299b35efed0913e5cf"
+        "id": "df99c55f75be499ebcce8ec1671aafcf"
       }, 
       {
-        "relatedLot": "e805ca07bcfd4410a873ceff155e669f", 
+        "relatedLot": "98be3ab3e0504351a55c9391a9e1a061", 
         "status": "declined", 
-        "dateDecision": "2019-04-01T01:10:00+03:00", 
+        "dateDecision": "2019-04-01T01:00:01+03:00", 
         "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
         "author": {
           "contactPoint": {
@@ -174,18 +174,18 @@ Content-Type: application/json; charset=UTF-8
           }
         }, 
         "acceptance": true, 
-        "dateAccepted": "2019-04-01T01:10:00+03:00", 
-        "dateSubmitted": "2019-04-01T01:10:00+03:00", 
+        "dateAccepted": "2019-04-01T01:00:01+03:00", 
+        "dateSubmitted": "2019-04-01T01:00:01+03:00", 
         "complaintID": "UA-2019-04-01-000001.3", 
-        "date": "2019-04-01T01:10:00+03:00", 
+        "date": "2019-04-01T01:00:01+03:00", 
         "title": "Недостатньо інформації", 
         "type": "complaint", 
-        "id": "0a3e63bdd0c341cf8c6b9995d5bb0782"
+        "id": "bbe26f3069dd491689e589e41887a3a8"
       }, 
       {
-        "relatedLot": "e805ca07bcfd4410a873ceff155e669f", 
+        "relatedLot": "98be3ab3e0504351a55c9391a9e1a061", 
         "status": "stopped", 
-        "dateDecision": "2019-04-01T01:10:00+03:00", 
+        "dateDecision": "2019-04-01T01:00:01+03:00", 
         "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
         "author": {
           "contactPoint": {
@@ -210,19 +210,19 @@ Content-Type: application/json; charset=UTF-8
         "decision": "Тендер скасовується замовником", 
         "acceptance": true, 
         "cancellationReason": "Тендер скасовується замовником", 
-        "dateCanceled": "2019-04-01T01:10:00+03:00", 
-        "dateAccepted": "2019-04-01T01:10:00+03:00", 
-        "dateSubmitted": "2019-04-01T01:10:00+03:00", 
+        "dateCanceled": "2019-04-01T01:00:01+03:00", 
+        "dateAccepted": "2019-04-01T01:00:01+03:00", 
+        "dateSubmitted": "2019-04-01T01:00:01+03:00", 
         "complaintID": "UA-2019-04-01-000001.4", 
-        "date": "2019-04-01T01:10:00+03:00", 
+        "date": "2019-04-01T01:00:01+03:00", 
         "title": "Недостатньо інформації", 
         "type": "complaint", 
-        "id": "7da8d84669624680aae89c7464084246"
+        "id": "582c75e4217a432597538aafae3361d8"
       }, 
       {
-        "relatedLot": "e805ca07bcfd4410a873ceff155e669f", 
+        "relatedLot": "98be3ab3e0504351a55c9391a9e1a061", 
         "status": "stopped", 
-        "dateDecision": "2019-04-01T01:10:00+03:00", 
+        "dateDecision": "2019-04-01T01:00:01+03:00", 
         "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
         "author": {
           "contactPoint": {
@@ -246,17 +246,17 @@ Content-Type: application/json; charset=UTF-8
         }, 
         "decision": "Тендер скасовується замовником", 
         "acceptance": true, 
-        "dateCanceled": "2019-04-01T01:10:00+03:00", 
-        "dateAccepted": "2019-04-01T01:10:00+03:00", 
-        "dateSubmitted": "2019-04-01T01:10:00+03:00", 
+        "dateCanceled": "2019-04-01T01:00:01+03:00", 
+        "dateAccepted": "2019-04-01T01:00:01+03:00", 
+        "dateSubmitted": "2019-04-01T01:00:01+03:00", 
         "complaintID": "UA-2019-04-01-000001.5", 
-        "date": "2019-04-01T01:10:00+03:00", 
+        "date": "2019-04-01T01:00:01+03:00", 
         "title": "Недостатньо інформації", 
         "type": "complaint", 
-        "id": "bb3dcc82fb85454f9ac690397e9b5e46"
+        "id": "e48efd01a942448db5a5c51b3504d8cb"
       }, 
       {
-        "relatedLot": "e805ca07bcfd4410a873ceff155e669f", 
+        "relatedLot": "98be3ab3e0504351a55c9391a9e1a061", 
         "status": "answered", 
         "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
         "author": {
@@ -283,15 +283,15 @@ Content-Type: application/json; charset=UTF-8
         "type": "claim", 
         "title": "Недостатньо інформації", 
         "satisfied": true, 
-        "dateAnswered": "2019-04-01T01:10:00+03:00", 
-        "dateSubmitted": "2019-04-01T01:10:00+03:00", 
+        "dateAnswered": "2019-04-01T01:00:01+03:00", 
+        "dateSubmitted": "2019-04-01T01:00:01+03:00", 
         "complaintID": "UA-2019-04-01-000001.6", 
-        "date": "2019-04-01T01:10:00+03:00", 
+        "date": "2019-04-01T01:00:01+03:00", 
         "resolution": "Умови виправлено, вибір переможня буде розгянуто повторно", 
-        "id": "d564217a8dbd431f92e41ad488cce638"
+        "id": "cfd66d61f8e8478996486b8cc232d035"
       }, 
       {
-        "relatedLot": "e805ca07bcfd4410a873ceff155e669f", 
+        "relatedLot": "98be3ab3e0504351a55c9391a9e1a061", 
         "status": "answered", 
         "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
         "author": {
@@ -318,15 +318,15 @@ Content-Type: application/json; charset=UTF-8
         "type": "claim", 
         "title": "Недостатньо інформації", 
         "satisfied": false, 
-        "dateAnswered": "2019-04-01T01:10:00+03:00", 
-        "dateSubmitted": "2019-04-01T01:10:00+03:00", 
+        "dateAnswered": "2019-04-01T01:00:01+03:00", 
+        "dateSubmitted": "2019-04-01T01:00:01+03:00", 
         "complaintID": "UA-2019-04-01-000001.7", 
-        "date": "2019-04-01T01:10:00+03:00", 
+        "date": "2019-04-01T01:00:01+03:00", 
         "resolution": "Вимога не відповідає предмету закупівлі", 
-        "id": "1579441ae82a405e965bda921c769df3"
+        "id": "3db97a9828bb44a58587e44937703f0a"
       }, 
       {
-        "relatedLot": "e805ca07bcfd4410a873ceff155e669f", 
+        "relatedLot": "98be3ab3e0504351a55c9391a9e1a061", 
         "status": "claim", 
         "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
         "title": "Недостатньо інформації", 
@@ -350,14 +350,14 @@ Content-Type: application/json; charset=UTF-8
             "locality": "м. Вінниця"
           }
         }, 
-        "dateSubmitted": "2019-04-01T01:10:00+03:00", 
+        "dateSubmitted": "2019-04-01T01:00:01+03:00", 
         "complaintID": "UA-2019-04-01-000001.8", 
-        "date": "2019-04-01T01:10:00+03:00", 
+        "date": "2019-04-01T01:00:01+03:00", 
         "type": "claim", 
-        "id": "5926c2146c544faf836eab5211495e2a"
+        "id": "729c0be536da4886b44031099cc4b8b1"
       }
     ], 
-    "id": "06d30f82e6b94bdfa1580f01aadfd48b"
+    "id": "89a7ba79e27c4a1e8c7a88dbb8959661"
   }
 }
 

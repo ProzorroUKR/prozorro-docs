@@ -1,0 +1,22 @@
+language: python
+sudo: required
+python:
+  - "2.7"
+services:
+  - couchdb
+env:
+  global:
+    - TZ=Europe/Kiev
+cache: pip
+addons:
+  hosts:
+   - couchdb
+before_install:
+  - ./bootstrap.sh
+before_script:
+  - sudo add-apt-repository ppa:chris-lea/libsodium -y
+  - sudo apt-get -qq update
+  - sudo apt-get install libsodium13 -y
+script:
+  - ./bin/py.test tests -v --color=yes
+  - (set -e; [[ $(git diff) ]] && { git diff | head -n 30; exit 1; } || exit 0)
