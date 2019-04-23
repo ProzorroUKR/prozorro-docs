@@ -5,6 +5,7 @@ from datetime import timedelta
 
 import mock
 from freezegun import freeze_time
+from openprocurement.api.tests.base import BaseTestApp
 from openprocurement.api.utils import get_now
 from six import text_type
 
@@ -17,16 +18,7 @@ from webtest.compat import to_bytes
 from tests.base.constants import API_HOST, MOCK_DATETIME
 
 
-class PrefixedRequestClass(TestRequest):
-    @classmethod
-    def blank(cls, path, *args, **kwargs):
-        path = '/api/%s%s' % (VERSION, path)
-        return TestRequest.blank(path, *args, **kwargs)
-
-
-class DumpsWebTestApp(TestApp):
-    RequestClass = PrefixedRequestClass
-
+class DumpsWebTestApp(BaseTestApp):
     hostname = API_HOST
     indent = 2
     ensure_ascii = False
