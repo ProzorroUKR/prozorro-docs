@@ -191,9 +191,9 @@ class MockWebTestMixin(object):
         self.uuid_counters[name] += 1
         return self.uuid_counters[name]
 
-    def tick(self, delta=timedelta(minutes=10)):
+    def tick(self, delta=timedelta(seconds=1)):
         if not self.tick_delta:
-            self.tick_delta = timedelta(minutes=0)
+            self.tick_delta = timedelta(seconds=0)
         self.tick_delta += delta
         freeze = get_now() + self.tick_delta
         self.freezer.stop()

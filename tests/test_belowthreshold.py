@@ -195,8 +195,7 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
 
         with open(TARGET_DIR + 'tutorial/set-bid-guarantee.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
-                '/tenders/{}?acc_token={}'.format(
-                    self.tender_id, owner_token),
+                '/tenders/{}?acc_token={}'.format(self.tender_id, owner_token),
                 {'data': {"guarantee": {"amount": 8, "currency": "USD"}}})
             self.assertEqual(response.status, '200 OK')
             self.assertIn('guarantee', response.json['data'])
@@ -342,8 +341,7 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
             for document in bid2_with_docs['documents']:
                 document['url'] = self.generate_docservice_url()
             response = self.app.post_json(
-                '/tenders/{}/bids'.format(
-                    self.tender_id),
+                '/tenders/{}/bids'.format(self.tender_id),
                 {'data': bid2_with_docs})
             bid2_id = response.json['data']['id']
             bids_access[bid2_id] = response.json['access']['token']
