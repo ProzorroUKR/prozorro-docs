@@ -466,7 +466,7 @@ Schema
 
 :shortlistedFirms:
 
-    :ref:`shortlistedFirms`, auto-generated, read-only
+    List of :ref:`Firm` objects, auto-generated, read-only
 
     |ocdsDescription|
     List of firm which can register bid on tender
