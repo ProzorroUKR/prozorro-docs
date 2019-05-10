@@ -125,6 +125,7 @@ You may modify the following fields on this stage of procedure:
    * in :ref:`Lot` - `title`, `description`, `title_en`, `description_en`, `minimalStep`, `amount`
    * in :ref:`Item` - `description`, `description_en`, `deliveryAddress`, `deliveryDate`, `quantity`
    * :ref:`Guarantee`
+
 `tenderPeriod`:`endDate` should differ from tender publication date at least on three days.
 
 You can modify the same fields on this stage of procedure in the case of multiple :ref:`Item` selected.
