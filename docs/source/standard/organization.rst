@@ -16,7 +16,7 @@ Schema
 
     Additionally in :ref:`openeu` and :ref:`esco`:
 
-    uk (title) and en (title_en) translations are required
+    uk (name) and en (name_en) translations are required
     
     |ocdsDescription|
     The common name of the organization.
@@ -57,7 +57,7 @@ Schema
 
     Additionally in :ref:`openeu` and :ref:`esco`:
 
-    uk (title) and en (title_en) translations are required
+    uk (name) and en (name_en) translations are required
 
     |ocdsDescription|
     The common name of the organization.
