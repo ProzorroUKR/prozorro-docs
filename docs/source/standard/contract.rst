@@ -75,7 +75,7 @@ Schema
     The goods, services, and any intangible outcomes in this contract. Note: If the items are the same as the award do not repeat.
 
 :suppliers:
-    List of :ref:`Organization` objects, auto-generated, read-only
+    List of :ref:`BusinessOrganization` objects, auto-generated, read-only
 
 :value:
     :ref:`ContractValue` object, auto-generated
@@ -209,7 +209,7 @@ Schema
     List of :ref:`Parameter` objects, auto-generated, read-only
 
 :suppliers:
-    List of :ref:`Organization` objects, auto-generated, read-only
+    List of :ref:`BusinessOrganization` objects, auto-generated, read-only
 
 :status:
     string, required

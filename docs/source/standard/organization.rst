@@ -42,6 +42,57 @@ Additionally in :ref:`openeu`:
     List of :ref:`ContactPoint` objects
 
 
+.. index:: BusinessOrganization, Company
+
+.. _BusinessOrganization:
+
+BusinessOrganization
+====================
+
+Schema
+------
+
+:name:
+    string, multilingual
+
+    Additionally in :ref:`openeu` and :ref:`esco`:
+
+    uk (title) and en (title_en) translations are required
+
+    |ocdsDescription|
+    The common name of the organization.
+
+:identifier:
+    :ref:`Identifier`
+
+    |ocdsDescription|
+    The primary identifier for this organization.
+
+:additionalIdentifiers:
+    List of :ref:`identifier` objects
+
+:address:
+    :ref:`Address`, required
+
+:contactPoint:
+    :ref:`ContactPoint`, required
+
+Additionally in :ref:`openeu`:
+
+:additionalContactPoints:
+    List of :ref:`ContactPoint` objects
+
+:scale:
+    string, required
+
+    Possible values are:
+
+    * `micro`
+    * `sme`
+    * `large`
+    * `mid`
+
+
 .. index:: Company, id
 
 .. _Identifier:
