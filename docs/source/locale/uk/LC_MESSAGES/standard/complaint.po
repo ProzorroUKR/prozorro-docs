@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.api 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-18 09:32+0200\n"
+"POT-Creation-Date: 2019-05-10 13:47+0300\n"
 "PO-Revision-Date: 2018-08-17 14:48+0300\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
 "Language-Team: Ukrainian <info@quintagroup.com>\n"
@@ -20,9 +20,17 @@ msgstr "Complaint"
 msgid "Schema"
 msgstr "Схема"
 
+#: ../../source/standard/complaint.rst:0
+msgid "id"
+msgstr ""
+
 #: ../../source/standard/complaint.rst:15
 msgid "uid, auto-generated"
 msgstr "uid, генерується автоматично"
+
+#: ../../source/standard/complaint.rst:0
+msgid "author"
+msgstr ""
 
 #: ../../source/standard/complaint.rst:18
 msgid ":ref:`Organization`, required"
@@ -36,6 +44,10 @@ msgstr ""
 "Організація, яка подає скаргу (contactPoint - людина, identification - "
 "організація, яку ця людина представляє)."
 
+#: ../../source/standard/complaint.rst:0
+msgid "title"
+msgstr ""
+
 #: ../../source/standard/complaint.rst:23
 msgid "string, required"
 msgstr "рядок, обов’язковий"
@@ -44,9 +56,17 @@ msgstr "рядок, обов’язковий"
 msgid "Title of the complaint."
 msgstr "Заголовок скарги."
 
+#: ../../source/standard/complaint.rst:0
+msgid "description"
+msgstr ""
+
 #: ../../source/standard/complaint.rst:28
 msgid "Description of the issue."
 msgstr "Опис запитання."
+
+#: ../../source/standard/complaint.rst:0
+msgid "date"
+msgstr ""
 
 #: ../../source/standard/complaint.rst:31
 #: ../../source/standard/complaint.rst:36
@@ -63,25 +83,49 @@ msgstr "рядок, :ref:`date`, генерується автоматично"
 msgid "Date of posting."
 msgstr "Дата подання."
 
+#: ../../source/standard/complaint.rst:0
+msgid "dateSubmitted"
+msgstr ""
+
 #: ../../source/standard/complaint.rst:38
 msgid "Date when claim was submitted."
 msgstr "Дата, коли вимога була подана."
+
+#: ../../source/standard/complaint.rst:0
+msgid "dateAnswered"
+msgstr ""
 
 #: ../../source/standard/complaint.rst:43
 msgid "Date when Procuring entity answered the claim."
 msgstr "Дата, коли замовник відповів на вимогу."
 
+#: ../../source/standard/complaint.rst:0
+msgid "dateEscalated"
+msgstr ""
+
 #: ../../source/standard/complaint.rst:48
 msgid "Date of claim to complaint escalation."
 msgstr "Дата ескалації (перетворення вимоги на скаргу)."
+
+#: ../../source/standard/complaint.rst:0
+msgid "dateDecision"
+msgstr ""
 
 #: ../../source/standard/complaint.rst:53
 msgid "Date of complaint decision."
 msgstr "День прийняття рішення по вимозі."
 
+#: ../../source/standard/complaint.rst:0
+msgid "dateCanceled"
+msgstr ""
+
 #: ../../source/standard/complaint.rst:58
 msgid "Date of cancelling."
 msgstr "Дата відхилення."
+
+#: ../../source/standard/complaint.rst:0
+msgid "status"
+msgstr ""
 
 #: ../../source/standard/complaint.rst:61
 #: ../../source/standard/complaint.rst:87
@@ -146,14 +190,18 @@ msgid "`cancelled`"
 msgstr "`cancelled` - відхилено"
 
 #: ../../source/standard/complaint.rst:74
-#, fuzzy
 msgid ""
 "Possible values in :ref:`defense`, :ref:`esco`, :ref:`openua` and "
 ":ref:`openeu` are:"
-msgstr "Можливі значення у :ref:`defense`, :ref:`openua` та :ref:`openeu`:"
+msgstr "Можливі значення у :ref:`defense`, :ref:`esco`, :ref:`openua` та "
+":ref:`openeu`:"
 
 #: ../../source/standard/complaint.rst:84
 msgid "`accepted`"
+msgstr ""
+
+#: ../../source/standard/complaint.rst:0
+msgid "type"
 msgstr ""
 
 #: ../../source/standard/complaint.rst:89
@@ -164,13 +212,25 @@ msgstr "Можливі значення типу:"
 msgid "`complaint`"
 msgstr "`complaint` - скарга"
 
+#: ../../source/standard/complaint.rst:0
+msgid "resolution"
+msgstr ""
+
 #: ../../source/standard/complaint.rst:97
 msgid "Resolution of Procuring entity."
 msgstr "Рішення замовника."
 
+#: ../../source/standard/complaint.rst:0
+msgid "resolutionType"
+msgstr ""
+
 #: ../../source/standard/complaint.rst:102
 msgid "Possible values of resolution type are:"
 msgstr "Можливі значення типу вирішення:"
+
+#: ../../source/standard/complaint.rst:0
+msgid "satisfied"
+msgstr ""
 
 #: ../../source/standard/complaint.rst:109
 #: ../../source/standard/complaint.rst:144
@@ -182,36 +242,68 @@ msgstr "булеве значення"
 msgid "Claim is satisfied?"
 msgstr "Вимога задовільнена?"
 
+#: ../../source/standard/complaint.rst:0
+msgid "decision"
+msgstr ""
+
 #: ../../source/standard/complaint.rst:116
 msgid "Reviewer decision."
 msgstr "Рішення органу оскарження."
+
+#: ../../source/standard/complaint.rst:0
+msgid "cancellationReason"
+msgstr ""
 
 #: ../../source/standard/complaint.rst:121
 msgid "Cancellation reason."
 msgstr "Причини відхилення."
 
+#: ../../source/standard/complaint.rst:0
+msgid "documents"
+msgstr ""
+
 #: ../../source/standard/complaint.rst:124
 msgid "List of :ref:`Document` objects"
 msgstr "Список об’єктів :ref:`Document`"
+
+#: ../../source/standard/complaint.rst:0
+msgid "relatedLot"
+msgstr ""
 
 #: ../../source/standard/complaint.rst:129
 msgid "Id of related :ref:`lot`."
 msgstr "Ідентифікатор пов’язаного :ref:`lot`-а."
 
+#: ../../source/standard/complaint.rst:0
+msgid "tendererAction"
+msgstr ""
+
 #: ../../source/standard/complaint.rst:134
 msgid "Tenderer action."
 msgstr "Дія учасника."
+
+#: ../../source/standard/complaint.rst:0
+msgid "tendererActionDate"
+msgstr ""
 
 #: ../../source/standard/complaint.rst:139
 msgid "Date of tenderer action."
 msgstr "Дата дії учасника."
 
 #: ../../source/standard/complaint.rst:141
-#, fuzzy
 msgid ""
 "Additionally in :ref:`defense`, :ref:`esco`, :ref:`openua` and "
 ":ref:`openeu`:"
-msgstr "Можливі значення у :ref:`defense`, :ref:`openua` and :ref:`openeu`:"
+msgstr "Можливі значення у :ref:`defense`, :ref:`esco`, :ref:`openua` та "
+":ref:`openeu`:"
+
+#: ../../source/standard/complaint.rst:0
+msgid "acceptance"
+msgstr ""
+
+#: ../../source/standard/complaint.rst:0
+msgid "rejectReason"
+msgstr ""
 
 #: ../../source/standard/complaint.rst:151
 msgid "Possible values of reject reason in :ref:`defense` are:"
@@ -245,13 +337,25 @@ msgstr ""
 msgid "`fixed`"
 msgstr ""
 
+#: ../../source/standard/complaint.rst:0
+msgid "rejectReasonDescription"
+msgstr ""
+
 #: ../../source/standard/complaint.rst:166
 msgid "Reject reason description."
 msgstr "Опис причин відхилення."
 
+#: ../../source/standard/complaint.rst:0
+msgid "reviewDate"
+msgstr ""
+
 #: ../../source/standard/complaint.rst:171
 msgid "Date of review."
 msgstr "Дата розгляду."
+
+#: ../../source/standard/complaint.rst:0
+msgid "reviewPlace"
+msgstr ""
 
 #: ../../source/standard/complaint.rst:176
 msgid "Place of review."

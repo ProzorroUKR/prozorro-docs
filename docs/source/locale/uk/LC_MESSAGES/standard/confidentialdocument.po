@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.tender.openeu 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-18 09:32+0200\n"
+"POT-Creation-Date: 2019-05-10 13:47+0300\n"
 "PO-Revision-Date: 2018-08-17 15:16+0300\n"
 "Last-Translator: sorenabell <sorenabell@quintagroup.com>\n"
 "Language-Team: Ukrainian <support@quintagroup.com>\n"
@@ -20,10 +20,18 @@ msgstr "ConfidentialDocument"
 msgid "Schema"
 msgstr "Схема"
 
+#: ../../source/standard/confidentialdocument.rst:0
+msgid "id"
+msgstr ""
+
 #: ../../source/standard/confidentialdocument.rst:15
 #: ../../source/standard/confidentialdocument.rst:133
 msgid "string, auto-generated"
 msgstr "рядок, генерується автоматично"
+
+#: ../../source/standard/confidentialdocument.rst:0
+msgid "documentType"
+msgstr ""
 
 #: ../../source/standard/confidentialdocument.rst:18
 #: ../../source/standard/confidentialdocument.rst:127
@@ -254,6 +262,10 @@ msgstr ""
 "`eligibilityDocuments`  повинні міститись у конверті "
 "`eligibilityDocuments`. Див. :ref:`bid`."
 
+#: ../../source/standard/confidentialdocument.rst:0
+msgid "title"
+msgstr ""
+
 #: ../../source/standard/confidentialdocument.rst:115
 #: ../../source/standard/confidentialdocument.rst:121
 msgid "string, multilingual"
@@ -262,6 +274,10 @@ msgstr "рядок, багатомовний"
 #: ../../source/standard/confidentialdocument.rst:117
 msgid "|ocdsDescription| The document title."
 msgstr "|ocdsDescription| Назва документа."
+
+#: ../../source/standard/confidentialdocument.rst:0
+msgid "description"
+msgstr ""
 
 #: ../../source/standard/confidentialdocument.rst:123
 msgid ""
@@ -272,6 +288,10 @@ msgstr ""
 "|ocdsDescription| Короткий опис документа. Якщо документ не буде "
 "доступний онлайн, то поле опису можна використати для вказання способу "
 "отримання копії документа."
+
+#: ../../source/standard/confidentialdocument.rst:0
+msgid "format"
+msgstr ""
 
 #: ../../source/standard/confidentialdocument.rst:129
 msgid ""
@@ -286,9 +306,17 @@ msgstr ""
 "значенням 'offline/print', що буде використовуватись, коли запис цього "
 "документа використовується для опису офлайнової публікації документа."
 
+#: ../../source/standard/confidentialdocument.rst:0
+msgid "url"
+msgstr ""
+
 #: ../../source/standard/confidentialdocument.rst:135
 msgid "|ocdsDescription| Direct link to the document or attachment."
 msgstr "|ocdsDescription| Пряме посилання на документ або додаток."
+
+#: ../../source/standard/confidentialdocument.rst:0
+msgid "confidentiality"
+msgstr ""
 
 #: ../../source/standard/confidentialdocument.rst:141
 #: ../../source/standard/confidentialdocument.rst:166
@@ -304,9 +332,17 @@ msgstr "`public` - публічний документ"
 msgid "`buyerOnly`"
 msgstr "`buyerOnly` - приватний документ"
 
+#: ../../source/standard/confidentialdocument.rst:0
+msgid "confidentialityRationale"
+msgstr ""
+
 #: ../../source/standard/confidentialdocument.rst:149
 msgid "Reasons for confidentiality of documents."
 msgstr "Причина для конфіденційності документів."
+
+#: ../../source/standard/confidentialdocument.rst:0
+msgid "datePublished"
+msgstr ""
 
 #: ../../source/standard/confidentialdocument.rst:152
 #: ../../source/standard/confidentialdocument.rst:158
@@ -317,9 +353,17 @@ msgstr "рядок, :ref:`date`"
 msgid "|ocdsDescription| The date on which the document was first published."
 msgstr "|ocdsDescription| Дата, коли документ був опублікований вперше."
 
+#: ../../source/standard/confidentialdocument.rst:0
+msgid "dateModified"
+msgstr ""
+
 #: ../../source/standard/confidentialdocument.rst:160
 msgid "|ocdsDescription| Date that the document was last modified"
 msgstr "|ocdsDescription| Дата, коли документ був змінений востаннє"
+
+#: ../../source/standard/confidentialdocument.rst:0
+msgid "language"
+msgstr ""
 
 #: ../../source/standard/confidentialdocument.rst:164
 msgid "string, default = `uk`"
@@ -350,6 +394,10 @@ msgstr ""
 " або розширений `BCP47 language tags "
 "<http://www.w3.org/International/articles/language-tags/>`_."
 
+#: ../../source/standard/confidentialdocument.rst:0
+msgid "documentOf"
+msgstr ""
+
 #: ../../source/standard/confidentialdocument.rst:180
 msgid "`tender`"
 msgstr "`tender`"
@@ -362,12 +410,20 @@ msgstr "`item`"
 msgid "`lot`"
 msgstr "`lot`"
 
+#: ../../source/standard/confidentialdocument.rst:0
+msgid "relatedItem"
+msgstr ""
+
 #: ../../source/standard/confidentialdocument.rst:187
 msgid "ID of related :ref:`lot` or :ref:`item`."
 msgstr "Ідентифікатор пов'язаних об'єктів :ref:`lot` або :ref:`item`."
 
 #: ../../source/standard/confidentialdocument.rst:189
 msgid "Additionally in :ref:`competitivedialogue` (first stage):"
+msgstr ""
+
+#: ../../source/standard/confidentialdocument.rst:0
+msgid "isDescriptionDecision"
 msgstr ""
 
 #: ../../source/standard/confidentialdocument.rst:192

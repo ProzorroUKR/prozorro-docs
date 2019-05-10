@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.agreement.cfaua 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-18 09:32+0200\n"
+"POT-Creation-Date: 2019-05-10 13:47+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,6 +22,10 @@ msgstr ""
 msgid "Schema"
 msgstr "Схема"
 
+#: ../../source/standard/base_change.rst:0
+msgid "id"
+msgstr ""
+
 #: ../../source/standard/base_change.rst:4
 msgid "uid, auto-generated"
 msgstr "uid, генерується автоматично"
@@ -29,6 +33,10 @@ msgstr "uid, генерується автоматично"
 #: ../../source/standard/base_change.rst:6
 msgid "The identifier for this Change."
 msgstr "Ідентифікатор для об'єкта Change"
+
+#: ../../source/standard/base_change.rst:0
+msgid "rationale"
+msgstr ""
 
 #: ../../source/standard/base_change.rst:9
 msgid "string, multilingual, required"
@@ -38,13 +46,25 @@ msgstr "рядок, багатомовний, обов'язковий"
 msgid "Reason for agreement change"
 msgstr "Причина для зміни угоди"
 
+#: ../../source/standard/base_change.rst:0
+msgid "date"
+msgstr ""
+
 #: ../../source/standard/base_change.rst:14
 msgid "string, :ref:`date`, auto-generated"
 msgstr "рядок, :ref:`date`, генерується автоматично"
 
+#: ../../source/standard/base_change.rst:0
+msgid "dateSigned"
+msgstr ""
+
 #: ../../source/standard/base_change.rst:17
 msgid "string, :ref:`date`"
 msgstr "рядок, :ref:`date`"
+
+#: ../../source/standard/base_change.rst:0
+msgid "agreementNumber"
+msgstr ""
 
 #: ../../source/standard/base_change.rst:20 ../../source/standard/change.rst:16
 #: ../../source/standard/change.rst:37 ../../source/standard/change.rst:58
@@ -52,6 +72,10 @@ msgstr "рядок, :ref:`date`"
 #: ../../source/standard/change.rst:121
 msgid "string"
 msgstr "рядок"
+
+#: ../../source/standard/base_change.rst:0
+msgid "status"
+msgstr ""
 
 #: ../../source/standard/base_change.rst:23
 #: ../../source/standard/change.rst:126
@@ -78,9 +102,17 @@ msgstr "`active` - ця зміна була підтверджена."
 msgid "`cancelled` - this change has been cancelled."
 msgstr "`cancelled` - ця зміна скасована."
 
+#: ../../source/standard/change.rst:0
+msgid "rationaleType"
+msgstr ""
+
 #: ../../source/standard/change.rst:18
 msgid "Default value is `taxRate`."
 msgstr "Значення за замовчуванням - `taxRate`. "
+
+#: ../../source/standard/change.rst:0
+msgid "modifications"
+msgstr ""
 
 #: ../../source/standard/change.rst:21 ../../source/standard/change.rst:42
 #: ../../source/standard/change.rst:63
@@ -143,9 +175,17 @@ msgstr "Список об'єктів :ref:`ContractModification`"
 msgid "UnitPriceModification in :ref:`cfaua`"
 msgstr ""
 
+#: ../../source/standard/change.rst:0
+msgid "itemId"
+msgstr ""
+
 #: ../../source/standard/change.rst:98 ../../source/standard/change.rst:123
 msgid "Id of changing item."
 msgstr "Ідентифікатор змінюваного об'єкту."
+
+#: ../../source/standard/change.rst:0
+msgid "factor"
+msgstr ""
 
 #: ../../source/standard/change.rst:101 ../../source/standard/change.rst:106
 msgid "decimal"
@@ -154,6 +194,10 @@ msgstr "неціле число"
 #: ../../source/standard/change.rst:103
 msgid "Min value is 0.0 ."
 msgstr "Мінімальне значення - 0.0."
+
+#: ../../source/standard/change.rst:0
+msgid "addend"
+msgstr ""
 
 #: ../../source/standard/change.rst:108
 msgid ""
@@ -165,6 +209,10 @@ msgstr ""
 
 #: ../../source/standard/change.rst:115
 msgid "ContractModification in :ref:`cfaua`"
+msgstr ""
+
+#: ../../source/standard/change.rst:0
+msgid "contractId"
 msgstr ""
 
 #: ../../source/standard/change.rst:130

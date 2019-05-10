@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.api 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-18 09:32+0200\n"
+"POT-Creation-Date: 2019-05-10 13:47+0300\n"
 "PO-Revision-Date: 2018-09-12 16:50+0300\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
 "Language-Team: Ukrainian <info@quintagroup.com>\n"
@@ -20,9 +20,17 @@ msgstr "Question"
 msgid "Schema"
 msgstr "Схема"
 
+#: ../../source/standard/question.rst:0
+msgid "id"
+msgstr ""
+
 #: ../../source/standard/question.rst:13
 msgid "uid, auto-generated"
 msgstr "uid, генерується автоматично"
+
+#: ../../source/standard/question.rst:0
+msgid "author"
+msgstr ""
 
 #: ../../source/standard/question.rst:16
 msgid ":ref:`Organization`, required"
@@ -36,6 +44,10 @@ msgstr ""
 "Хто задає питання (contactPoint - людина, identification - організація, "
 "яку ця людина представляє)."
 
+#: ../../source/standard/question.rst:0
+msgid "title"
+msgstr ""
+
 #: ../../source/standard/question.rst:21
 msgid "string, required"
 msgstr "рядок, обов’язковий"
@@ -43,6 +55,10 @@ msgstr "рядок, обов’язковий"
 #: ../../source/standard/question.rst:23
 msgid "Title of the question."
 msgstr "Назва запитання."
+
+#: ../../source/standard/question.rst:0
+msgid "description"
+msgstr ""
 
 #: ../../source/standard/question.rst:26 ../../source/standard/question.rst:41
 #: ../../source/standard/question.rst:46 ../../source/standard/question.rst:55
@@ -53,6 +69,10 @@ msgstr "рядок"
 msgid "Description of the question."
 msgstr "Опис запитання."
 
+#: ../../source/standard/question.rst:0
+msgid "date"
+msgstr ""
+
 #: ../../source/standard/question.rst:31 ../../source/standard/question.rst:36
 msgid "string, :ref:`date`, auto-generated"
 msgstr "рядок, :ref:`date`, генерується автоматично"
@@ -61,13 +81,25 @@ msgstr "рядок, :ref:`date`, генерується автоматично"
 msgid "Date of posting."
 msgstr "Дата публікації."
 
+#: ../../source/standard/question.rst:0
+msgid "dateAnswered"
+msgstr ""
+
 #: ../../source/standard/question.rst:38
 msgid "Date when answer has been provided."
 msgstr "Дата, коли було надано відповідь."
 
+#: ../../source/standard/question.rst:0
+msgid "answer"
+msgstr ""
+
 #: ../../source/standard/question.rst:43
 msgid "Answer for the question asked."
 msgstr "Відповідь на задане питання."
+
+#: ../../source/standard/question.rst:0
+msgid "questionOf"
+msgstr ""
 
 #: ../../source/standard/question.rst:48
 msgid "Possible values are:"
@@ -84,6 +116,10 @@ msgstr "`item`"
 #: ../../source/standard/question.rst:52
 msgid "`lot`"
 msgstr "`lot`"
+
+#: ../../source/standard/question.rst:0
+msgid "relatedItem"
+msgstr ""
 
 #: ../../source/standard/question.rst:57
 msgid "Id of related :ref:`lot` or :ref:`item`."

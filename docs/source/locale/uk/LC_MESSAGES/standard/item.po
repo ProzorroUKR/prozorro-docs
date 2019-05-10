@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.api 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-18 09:32+0200\n"
+"POT-Creation-Date: 2019-05-10 13:47+0300\n"
 "PO-Revision-Date: 2019-03-14 09:37+0200\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
 "Language-Team: Ukrainian <info@quintagroup.com>\n"
@@ -21,9 +21,17 @@ msgstr "Item"
 msgid "Schema"
 msgstr "Схема"
 
+#: ../../source/standard/item.rst:0
+msgid "id"
+msgstr ""
+
 #: ../../source/standard/item.rst:15
 msgid "string, auto-generated"
 msgstr "рядок, генерується автоматично"
+
+#: ../../source/standard/item.rst:0
+msgid "description"
+msgstr ""
 
 #: ../../source/standard/item.rst:18
 msgid "string, multilingual, required"
@@ -32,6 +40,10 @@ msgstr "рядок, багатомовний, обов’язковий"
 #: ../../source/standard/item.rst:20
 msgid "|ocdsDescription| A description of the goods, services to be provided."
 msgstr "|ocdsDescription| Опис товарів та послуг, які повинні бути надані."
+
+#: ../../source/standard/item.rst:0
+msgid "classification"
+msgstr ""
 
 #: ../../source/standard/item.rst:24
 msgid ":ref:`Classification`"
@@ -54,6 +66,10 @@ msgid ""
 msgstr ""
 "Класифікація `classification.scheme` обов’язково повинна бути `CPV` або "
 "`ДК021`. `classification.id` повинно бути дійсним CPV або ДК021 кодом."
+
+#: ../../source/standard/item.rst:0
+msgid "additionalClassifications"
+msgstr ""
 
 #: ../../source/standard/item.rst:35
 msgid "List of :ref:`Classification` objects"
@@ -92,6 +108,10 @@ msgstr ""
 msgid "It is mandatory to have at least one item with `ДКПП` as `scheme`."
 msgstr "Обов’язково мати хоча б один елемент з `ДКПП` у стрічці `scheme`."
 
+#: ../../source/standard/item.rst:0
+msgid "unit"
+msgstr ""
+
 #: ../../source/standard/item.rst:53
 msgid ":ref:`Unit`"
 msgstr ":ref:`Unit`"
@@ -103,6 +123,10 @@ msgid ""
 msgstr ""
 "|ocdsDescription| Опис одиниці виміру товару, наприклад, години, "
 "кілограми. Складається з назви одиниці та значення однієї одиниці."
+
+#: ../../source/standard/item.rst:0
+msgid "quantity"
+msgstr ""
 
 #: ../../source/standard/item.rst:60
 msgid "integer"
@@ -116,6 +140,10 @@ msgstr "|ocdsDescription| Кількість необхідних одиниць
 msgid "Absent in :ref:`esco`"
 msgstr ""
 
+#: ../../source/standard/item.rst:0
+msgid "deliveryDate"
+msgstr ""
+
 #: ../../source/standard/item.rst:68
 msgid ":ref:`Period`"
 msgstr ":ref:`Period`"
@@ -124,6 +152,10 @@ msgstr ":ref:`Period`"
 msgid "Period during which the item should be delivered."
 msgstr "Період, протягом якого елемент повинен бути доставлений."
 
+#: ../../source/standard/item.rst:0
+msgid "deliveryAddress"
+msgstr ""
+
 #: ../../source/standard/item.rst:75
 msgid ":ref:`Address`"
 msgstr ":ref:`Address`"
@@ -131,6 +163,10 @@ msgstr ":ref:`Address`"
 #: ../../source/standard/item.rst:77
 msgid "Address, where the item should be delivered."
 msgstr "Адреса місця, куди елемент повинен бути доставлений."
+
+#: ../../source/standard/item.rst:0
+msgid "deliveryLocation"
+msgstr ""
 
 #: ../../source/standard/item.rst:80
 msgid "dictionary"
@@ -142,10 +178,22 @@ msgid ""
 "following items:"
 msgstr "Географічні координати місця доставки. Складається з таких компонентів:"
 
+#: ../../source/standard/item.rst:0
+msgid "latitude"
+msgstr ""
+
 #: ../../source/standard/item.rst:85 ../../source/standard/item.rst:87
 #: ../../source/standard/item.rst:145
 msgid "string, required"
 msgstr "рядок, обов’язковий"
+
+#: ../../source/standard/item.rst:0
+msgid "longitude"
+msgstr ""
+
+#: ../../source/standard/item.rst:0
+msgid "elevation"
+msgstr ""
 
 #: ../../source/standard/item.rst:89
 msgid "string, optional, usually not used"
@@ -158,6 +206,10 @@ msgid ""
 msgstr ""
 "`deliveryLocation` зазвичай має вищий пріоритет ніж `deliveryAddress`, "
 "якщо вони обидва вказані."
+
+#: ../../source/standard/item.rst:0
+msgid "relatedLot"
+msgstr ""
 
 #: ../../source/standard/item.rst:94 ../../source/standard/item.rst:108
 #: ../../source/standard/item.rst:117 ../../source/standard/item.rst:123
@@ -172,6 +224,10 @@ msgstr "ID пов’язаного :ref:`lot`."
 #: ../../source/standard/item.rst:102
 msgid "Classification"
 msgstr "Classification"
+
+#: ../../source/standard/item.rst:0
+msgid "scheme"
+msgstr ""
 
 #: ../../source/standard/item.rst:110
 msgid ""
@@ -195,7 +251,7 @@ msgstr "|ocdsDescription| Код класифікації взятий з виб
 msgid "|ocdsDescription| A textual description or title for the code."
 msgstr "|ocdsDescription| Текстовий опис або назва коду."
 
-#: ../../source/standard/item.rst:129
+#: ../../source/standard/item.rst:0 ../../source/standard/item.rst:129
 msgid "uri"
 msgstr "uri"
 
@@ -213,9 +269,17 @@ msgstr ""
 msgid "Unit"
 msgstr "Unit"
 
+#: ../../source/standard/item.rst:0
+msgid "code"
+msgstr ""
+
 #: ../../source/standard/item.rst:147
 msgid "UN/CEFACT Recommendation 20 unit code."
 msgstr "Код одиниці в UN/CEFACT Recommendation 20."
+
+#: ../../source/standard/item.rst:0
+msgid "name"
+msgstr ""
 
 #: ../../source/standard/item.rst:152
 msgid "|ocdsDescription| Name of the unit"
@@ -224,6 +288,10 @@ msgstr "|ocdsDescription| Назва одиниці"
 #: ../../source/standard/item.rst:155
 msgid "Additionally in :ref:`limited`:"
 msgstr "Додатково у :ref:`limited`:"
+
+#: ../../source/standard/item.rst:0
+msgid "value"
+msgstr ""
 
 #: ../../source/standard/item.rst:158
 msgid ":ref:`Value`"

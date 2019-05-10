@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.api 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-18 09:32+0200\n"
+"POT-Creation-Date: 2019-05-10 13:47+0300\n"
 "PO-Revision-Date: 2018-11-20 10:32+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -25,9 +25,17 @@ msgstr ""
 msgid "Schema"
 msgstr "Схема"
 
+#: ../../source/standard/milestone.rst:0
+msgid "id"
+msgstr ""
+
 #: ../../source/standard/milestone.rst:12
 msgid "uid, auto-generated"
 msgstr "uid, генерується автоматично"
+
+#: ../../source/standard/milestone.rst:0
+msgid "title"
+msgstr ""
 
 #: ../../source/standard/milestone.rst:15
 #: ../../source/standard/milestone.rst:32
@@ -74,9 +82,17 @@ msgstr ""
 msgid "`anotherEvent`"
 msgstr ""
 
+#: ../../source/standard/milestone.rst:0
+msgid "description"
+msgstr ""
+
 #: ../../source/standard/milestone.rst:29
 msgid "string, required if title == `anotherEvent`"
 msgstr "рядок, обов’язковий якщо title == `anotherEvent`"
+
+#: ../../source/standard/milestone.rst:0
+msgid "type"
+msgstr ""
 
 #: ../../source/standard/milestone.rst:34
 msgid "The only possible value is:"
@@ -84,6 +100,10 @@ msgstr "Єдине можливе значення:"
 
 #: ../../source/standard/milestone.rst:36
 msgid "`financing`"
+msgstr ""
+
+#: ../../source/standard/milestone.rst:0
+msgid "code"
 msgstr ""
 
 #: ../../source/standard/milestone.rst:43
@@ -94,6 +114,10 @@ msgstr ""
 msgid "`postpayment`"
 msgstr ""
 
+#: ../../source/standard/milestone.rst:0
+msgid "percentage"
+msgstr ""
+
 #: ../../source/standard/milestone.rst:47
 msgid "float, required, 0..100"
 msgstr "float, обов’язково, 0..100"
@@ -102,13 +126,25 @@ msgstr "float, обов’язково, 0..100"
 msgid "Sum of all tender (or lot) milestones should be 100"
 msgstr "Сума всіх milestone тендеру (або лоту) повинна бути 100"
 
+#: ../../source/standard/milestone.rst:0
+msgid "duration"
+msgstr ""
+
 #: ../../source/standard/milestone.rst:52
 msgid ":ref:`Duration` object, required"
 msgstr ":ref:`Duration`, обов’язково"
 
+#: ../../source/standard/milestone.rst:0
+msgid "sequenceNumber"
+msgstr ""
+
 #: ../../source/standard/milestone.rst:55
 msgid "integer, required, non negative"
 msgstr "integer, обов’язковий, не негативний"
+
+#: ../../source/standard/milestone.rst:0
+msgid "relatedLot"
+msgstr ""
 
 #: ../../source/standard/milestone.rst:58
 msgid "uid"
@@ -120,6 +156,10 @@ msgstr "ID пов’язаного :ref:`lot`."
 
 #: ../../source/standard/milestone.rst:66
 msgid "Duration"
+msgstr ""
+
+#: ../../source/standard/milestone.rst:0
+msgid "days"
 msgstr ""
 
 #: ../../source/standard/milestone.rst:72
