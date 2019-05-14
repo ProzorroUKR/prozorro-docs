@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.api 0.8.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-18 09:32+0200\n"
+"POT-Creation-Date: 2019-05-10 13:47+0300\n"
 "PO-Revision-Date: 2018-08-17 15:17+0300\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
 "Language-Team: Ukrainian <info@quintagroup.com>\n"
@@ -20,6 +20,10 @@ msgstr "Feature"
 msgid "Schema"
 msgstr "Схема"
 
+#: ../../source/standard/feature.rst:0
+msgid "code"
+msgstr ""
+
 #: ../../source/standard/feature.rst:15
 msgid "string, auto-generated"
 msgstr "рядок, генерується автоматично"
@@ -27,6 +31,10 @@ msgstr "рядок, генерується автоматично"
 #: ../../source/standard/feature.rst:17
 msgid "Code of the feature."
 msgstr "Код нецінового критерію."
+
+#: ../../source/standard/feature.rst:0
+msgid "featureOf"
+msgstr ""
 
 #: ../../source/standard/feature.rst:20
 msgid "string, required"
@@ -48,6 +56,10 @@ msgstr "`lot`"
 msgid "`item`"
 msgstr "`item`"
 
+#: ../../source/standard/feature.rst:0
+msgid "relatedItem"
+msgstr ""
+
 #: ../../source/standard/feature.rst:29
 msgid "string"
 msgstr "рядок"
@@ -60,6 +72,10 @@ msgstr ""
 "ID пов’язаного :ref:`item` або :ref:`lot` (якщо значення ``featureOf`` "
 "дорівнює ``item`` або ``lot``)."
 
+#: ../../source/standard/feature.rst:0
+msgid "title"
+msgstr ""
+
 #: ../../source/standard/feature.rst:34 ../../source/standard/feature.rst:54
 msgid "string, multilingual, required"
 msgstr "рядок, багатомовний, обов’язковий"
@@ -67,6 +83,10 @@ msgstr "рядок, багатомовний, обов’язковий"
 #: ../../source/standard/feature.rst:36
 msgid "Title of the feature."
 msgstr "Назва критерію."
+
+#: ../../source/standard/feature.rst:0
+msgid "description"
+msgstr ""
 
 #: ../../source/standard/feature.rst:39 ../../source/standard/feature.rst:59
 msgid "string, multilingual"
@@ -76,6 +96,10 @@ msgstr "рядок, багатомовний"
 msgid "Description of the feature."
 msgstr "Опис критерію."
 
+#: ../../source/standard/feature.rst:0
+msgid "enum"
+msgstr ""
+
 #: ../../source/standard/feature.rst:44
 msgid "list"
 msgstr "список"
@@ -83,6 +107,10 @@ msgstr "список"
 #: ../../source/standard/feature.rst:46
 msgid "List of values:"
 msgstr "Список значень:"
+
+#: ../../source/standard/feature.rst:0
+msgid "value"
+msgstr ""
 
 #: ../../source/standard/feature.rst:49
 msgid "float, required"

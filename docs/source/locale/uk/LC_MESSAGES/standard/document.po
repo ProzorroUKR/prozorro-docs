@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.api 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-18 09:32+0200\n"
+"POT-Creation-Date: 2019-05-10 13:47+0300\n"
 "PO-Revision-Date: 2019-02-04 11:33+0200\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
 "Language-Team: Ukrainian <info@quintagroup.com>\n"
@@ -20,9 +20,17 @@ msgstr "Document"
 msgid "Schema"
 msgstr "Схема"
 
+#: ../../source/standard/document.rst:0
+msgid "id"
+msgstr ""
+
 #: ../../source/standard/document.rst:15 ../../source/standard/document.rst:159
 msgid "string, auto-generated"
 msgstr "рядок, генерується автоматично"
+
+#: ../../source/standard/document.rst:0
+msgid "documentType"
+msgstr ""
 
 #: ../../source/standard/document.rst:18 ../../source/standard/document.rst:153
 #: ../../source/standard/document.rst:177
@@ -282,6 +290,10 @@ msgstr "`contractArrangements` - **Заходи для припинення Ра
 msgid "`contractAnnexe` - **Annexes to the Framework agreement**"
 msgstr "`contractAnnexe` - **Додатки до Рамкової угоди**"
 
+#: ../../source/standard/document.rst:0
+msgid "title"
+msgstr ""
+
 #: ../../source/standard/document.rst:141
 #: ../../source/standard/document.rst:147
 msgid "string, multilingual"
@@ -290,6 +302,10 @@ msgstr "рядок, багатомовний"
 #: ../../source/standard/document.rst:143
 msgid "|ocdsDescription| The document title."
 msgstr "|ocdsDescription| Назва документа."
+
+#: ../../source/standard/document.rst:0
+msgid "description"
+msgstr ""
 
 #: ../../source/standard/document.rst:149
 msgid ""
@@ -300,6 +316,10 @@ msgstr ""
 "|ocdsDescription| Короткий опис документа. Якщо документ не буде "
 "доступний онлайн, то поле опису можна використати для вказання способу "
 "отримання копії документа."
+
+#: ../../source/standard/document.rst:0
+msgid "format"
+msgstr ""
 
 #: ../../source/standard/document.rst:155
 msgid ""
@@ -314,9 +334,17 @@ msgstr ""
 "значенням 'offline/print', що буде використовуватись, коли запис цього "
 "документа використовується для опису офлайнової публікації документа."
 
+#: ../../source/standard/document.rst:0
+msgid "url"
+msgstr ""
+
 #: ../../source/standard/document.rst:161
 msgid "|ocdsDescription| Direct link to the document or attachment."
 msgstr "|ocdsDescription| Пряме посилання на документ чи додаток."
+
+#: ../../source/standard/document.rst:0
+msgid "datePublished"
+msgstr ""
 
 #: ../../source/standard/document.rst:165
 #: ../../source/standard/document.rst:171
@@ -327,9 +355,17 @@ msgstr "рядок, :ref:`date`"
 msgid "|ocdsDescription| The date on which the document was first published."
 msgstr "|ocdsDescription| Дата, коли документ був опублікований вперше."
 
+#: ../../source/standard/document.rst:0
+msgid "dateModified"
+msgstr ""
+
 #: ../../source/standard/document.rst:173
 msgid "|ocdsDescription| Date that the document was last modified"
 msgstr "|ocdsDescription| Дата, коли документ був змінений востаннє"
+
+#: ../../source/standard/document.rst:0
+msgid "language"
+msgstr ""
 
 #: ../../source/standard/document.rst:179
 #: ../../source/standard/document.rst:191
@@ -361,6 +397,10 @@ msgstr ""
 " або розширений `BCP47 language tags "
 "<http://www.w3.org/International/articles/language-tags/>`_."
 
+#: ../../source/standard/document.rst:0
+msgid "documentOf"
+msgstr ""
+
 #: ../../source/standard/document.rst:193
 msgid "`tender`"
 msgstr "`tender`"
@@ -380,6 +420,10 @@ msgstr "`item`"
 #: ../../source/standard/document.rst:197
 msgid "`lot`"
 msgstr "`lot`"
+
+#: ../../source/standard/document.rst:0
+msgid "relatedItem"
+msgstr ""
 
 #: ../../source/standard/document.rst:202
 msgid "Id of related :ref:`contract`, :ref:`change`, :ref:`lot` or :ref:`item`."

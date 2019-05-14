@@ -13,7 +13,7 @@ Listing awards
 
 The pending award can be retrieved via request to list all available awards:
 
-.. include:: qualification/awards-get.http
+.. include:: ../http/qualification/awards-get.http
    :code:
 
 
@@ -27,7 +27,7 @@ The protocol of Qualification Committee decision should be uploaded as
 document into award and later its status should switch to either `active`
 (if it is accepted) or `unsuccessful` (if rejected).
 
-.. include:: qualification/award-pending-upload.http
+.. include:: ../http/qualification/award-pending-upload.http
    :code:
 
 The Qualification Committee can upload several documents, for example, decisions to
@@ -36,7 +36,7 @@ necessary documents or correct errors.  Such documents would help to have
 procedure as transparent as possible and will reduce risk of cancellation by
 Complaint Review Body.
 
-.. include:: qualification/award-pending-unsuccessful.http
+.. include:: ../http/qualification/award-pending-unsuccessful.http
    :code:
 
 Note that after award rejection the next bid in the value-sorted bid
@@ -85,21 +85,21 @@ to reject approved award and disqualify Bid afterwards.
 
 After we have Award with active status:
 
-.. include:: qualification/award-active-get.http
+.. include:: ../http/qualification/award-active-get.http
    :code:
 
 There is need to cancel it:
 
-.. include:: qualification/award-active-cancel.http
+.. include:: ../http/qualification/award-active-cancel.http
    :code:
 
 Note that there is Location header returned that aids in locating the "fresh"
 award that is most likely subject for disqualification:
 
-.. include:: qualification/award-active-cancel-upload.http
+.. include:: ../http/qualification/award-active-cancel-upload.http
    :code:
 
-.. include:: qualification/award-active-cancel-disqualify.http
+.. include:: ../http/qualification/award-active-cancel-disqualify.http
    :code:
 
 In the case when there is another Bid for qualification, there will be
@@ -111,7 +111,7 @@ Influence of Complaint Satisfaction
 
 If decision of the procuring entity is unfair any bidder can file
 complaint and after proper review the whole awarding process can start from
-the award in question.  
+the award in question.
 
 Disqualification decision of procuring entity's qualification committee can be cancelled in the following cases:
 
@@ -122,11 +122,11 @@ Disqualification decision of procuring entity's qualification committee can be c
 
 After the disqualification decision cancellation it receives ``cancelled`` status. New pending award is generated and procuring entity is obliged to qualify it again (taking into consideration recommendations from the report of Complaint Review Body if there is one).
 
-.. include:: qualification/awards-unsuccessful-get1.http
+.. include:: ../http/qualification/awards-unsuccessful-get1.http
    :code:
 
-.. include:: qualification/award-unsuccessful-cancel.http
+.. include:: ../http/qualification/award-unsuccessful-cancel.http
    :code:
 
-.. include:: qualification/awards-unsuccessful-get2.http
+.. include:: ../http/qualification/awards-unsuccessful-get2.http
    :code:

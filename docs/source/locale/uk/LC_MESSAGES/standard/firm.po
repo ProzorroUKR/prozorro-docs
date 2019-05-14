@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.tender.openeu 2.3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-18 09:32+0200\n"
+"POT-Creation-Date: 2019-05-10 13:47+0300\n"
 "PO-Revision-Date: 2018-09-12 16:49+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -12,53 +12,58 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
 
-#: ../../source/standard/shortlistedFirms.rst:8
-msgid "shortlistedFirms"
-msgstr "shortlistedFirms"
+#: ../../source/standard/firm.rst:8
+msgid "Firm"
+msgstr ""
 
-#: ../../source/standard/shortlistedFirms.rst:11
-#: ../../source/standard/shortlistedFirms.rst:33
+#: ../../source/standard/firm.rst:11 ../../source/standard/firm.rst:36
 msgid "Schema"
 msgstr "Схема"
 
-#: ../../source/standard/shortlistedFirms.rst:14
+#: ../../source/standard/firm.rst:0
+msgid "name"
+msgstr ""
+
+#: ../../source/standard/firm.rst:14
 msgid "string, firm name, required"
 msgstr "рядок, назва фірми, обов’язковий"
 
-#: ../../source/standard/shortlistedFirms.rst:17
+#: ../../source/standard/firm.rst:0
+msgid "identifier"
+msgstr ""
+
+#: ../../source/standard/firm.rst:17
 msgid ":ref:`Identifier`"
 msgstr ":ref:`Identifier`"
 
-#: ../../source/standard/shortlistedFirms.rst:19
+#: ../../source/standard/firm.rst:19
 msgid "|ocdsDescription| The primary identifier for this organization."
 msgstr "|ocdsDescription| Ідентифікатор цієї організації."
 
-#: ../../source/standard/shortlistedFirms.rst:24
-msgid "list of :ref:`lots` objects."
-msgstr "список з :ref:`lots` об'єктів."
-
-#: ../../source/standard/shortlistedFirms.rst:26
-msgid "|ocdsDescription| List of lots"
-msgstr "|ocdsDescription| Список з id лотів"
-
-#: ../../source/standard/shortlistedFirms.rst:30
+#: ../../source/standard/firm.rst:0
 msgid "lots"
 msgstr "lots"
 
-#: ../../source/standard/shortlistedFirms.rst:36
+#: ../../source/standard/firm.rst:24
+msgid "list of :ref:`LotId` objects."
+msgstr "список з :ref:`LotId` об'єктів."
+
+#: ../../source/standard/firm.rst:26
+msgid "|ocdsDescription| List of lots"
+msgstr "|ocdsDescription| Список з id лотів"
+
+#: ../../source/standard/firm.rst:33
+msgid "LotId"
+msgstr ""
+
+#: ../../source/standard/firm.rst:0
+msgid "id"
+msgstr ""
+
+#: ../../source/standard/firm.rst:39
 msgid ":ref:`lot`"
 msgstr ":ref:`lot`"
 
-#: ../../source/standard/shortlistedFirms.rst:38
+#: ../../source/standard/firm.rst:41
 msgid "|ocdsDescription| The primary identifier for lot."
 msgstr "|ocdsDescription| Ідентифікатор лоту."
-
-#~ msgid "name"
-#~ msgstr ""
-
-#~ msgid "identifier"
-#~ msgstr ""
-
-#~ msgid "id"
-#~ msgstr ""
-

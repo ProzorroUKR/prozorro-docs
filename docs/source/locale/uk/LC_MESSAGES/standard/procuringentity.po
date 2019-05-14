@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.api 0.12a1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-18 09:32+0200\n"
+"POT-Creation-Date: 2019-05-10 13:47+0300\n"
 "PO-Revision-Date: 2016-04-15 14:04+0300\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
 "Language-Team: Ukrainian <info@quintagroup.com>\n"
@@ -20,6 +20,10 @@ msgstr "ProcuringEntity"
 msgid "Schema"
 msgstr "Схема"
 
+#: ../../source/standard/procuringentity.rst:0
+msgid "name"
+msgstr ""
+
 #: ../../source/standard/procuringentity.rst:15
 msgid "string, multilingual"
 msgstr "рядок, багатомовний"
@@ -27,6 +31,10 @@ msgstr "рядок, багатомовний"
 #: ../../source/standard/procuringentity.rst:17
 msgid "|ocdsDescription| The common name of the organization."
 msgstr "|ocdsDescription| Назва організації."
+
+#: ../../source/standard/procuringentity.rst:0
+msgid "identifier"
+msgstr ""
 
 #: ../../source/standard/procuringentity.rst:21
 msgid ":ref:`Identifier`"
@@ -36,17 +44,33 @@ msgstr ":ref:`Identifier`"
 msgid "|ocdsDescription| The primary identifier for this organization."
 msgstr "|ocdsDescription| Ідентифікатор цієї організації."
 
+#: ../../source/standard/procuringentity.rst:0
+msgid "additionalIdentifiers"
+msgstr ""
+
 #: ../../source/standard/procuringentity.rst:27
 msgid "List of :ref:`identifier` objects"
 msgstr "Список об’єктів :ref:`identifier`"
+
+#: ../../source/standard/procuringentity.rst:0
+msgid "address"
+msgstr ""
 
 #: ../../source/standard/procuringentity.rst:30
 msgid ":ref:`Address`, required"
 msgstr ":ref:`Address`, обов’язково"
 
+#: ../../source/standard/procuringentity.rst:0
+msgid "contactPoint"
+msgstr ""
+
 #: ../../source/standard/procuringentity.rst:33
 msgid ":ref:`ContactPoint`, required"
 msgstr ":ref:`ContactPoint`, обов’язково"
+
+#: ../../source/standard/procuringentity.rst:0
+msgid "kind"
+msgstr ""
 
 #: ../../source/standard/procuringentity.rst:36
 msgid "string"

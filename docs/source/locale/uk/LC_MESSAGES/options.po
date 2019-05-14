@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.api 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-18 09:32+0200\n"
+"POT-Creation-Date: 2019-05-10 13:47+0300\n"
 "PO-Revision-Date: 2018-09-12 11:35+0300\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
 "Language-Team: Ukrainian <info@quintagroup.com>\n"
@@ -41,6 +41,10 @@ msgstr ""
 "Ці опції можна комбінувати в одному запиті, хоча деякі з них можуть "
 "викликати конфлікт у відповіді."
 
+#: ../../source/options.rst:0
+msgid "pretty"
+msgstr "pretty"
+
 #: ../../source/options.rst:18
 msgid "`?opt_pretty`"
 msgstr "`?opt_pretty`"
@@ -61,6 +65,10 @@ msgstr ""
 "додатковий час і збільшить розмір відповіді, тому краще буде "
 "використовувати цю опцію тільки під час налагоджування (debugging)."
 
+#: ../../source/options.rst:0
+msgid "jsonp"
+msgstr "jsonp"
+
 #: ../../source/options.rst:27
 msgid "`?opt_jsonp=myCallback`"
 msgstr "`?opt_jsonp=myCallback`"
@@ -79,6 +87,10 @@ msgstr ""
 "параметра `opt_jsonp` буде викликана з одним аргументом - JavaScript "
 "об’єктом, що представляє відповідь."
 
+#: ../../source/options.rst:0
+msgid "fields"
+msgstr "fields"
+
 #: ../../source/options.rst:36
 msgid "`?opt_fields=comma,separated,field,list`"
 msgstr "`?opt_fields=comma,separated,field,list`"
@@ -86,13 +98,3 @@ msgstr "`?opt_fields=comma,separated,field,list`"
 #: ../../source/options.rst:38
 msgid "List of extra fields to include in response."
 msgstr "Список додаткових полів, що міститимуться у відповіді."
-
-#~ msgid "pretty"
-#~ msgstr ""
-
-#~ msgid "jsonp"
-#~ msgstr ""
-
-#~ msgid "fields"
-#~ msgstr ""
-

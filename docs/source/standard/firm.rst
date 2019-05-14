@@ -2,9 +2,9 @@
 .. include:: defs.hrst
 
 .. index:: Tender, Auction
-.. _shortlistedFirms:
+.. _Firm:
 
-shortlistedFirms
+Firm
 ================
 
 Schema
@@ -21,13 +21,16 @@ Schema
 
 :lots:
 
-   list of :ref:`lots` objects.
+   list of :ref:`LotId` objects.
 
    |ocdsDescription|
    List of lots
 
-lots
-====
+
+.. _LotId:
+
+LotId
+=====
 
 Schema
 ------

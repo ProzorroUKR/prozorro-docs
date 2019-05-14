@@ -1,15 +1,12 @@
-# SOME DESCRIPTIVE TITLE.
+#
 # Copyright (C) 2014-2015, Quintagroup, Ltd
 # This file is distributed under the same license as the openprocurement.api
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.api 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-18 09:32+0200\n"
+"POT-Creation-Date: 2019-05-10 13:47+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,18 +23,34 @@ msgstr ""
 msgid "Schema"
 msgstr "Схема"
 
+#: ../../source/standard/agreement.rst:0
+msgid "id"
+msgstr ""
+
 #: ../../source/standard/agreement.rst:13
 msgid "uid, required, auto-generated"
 msgstr "ID користувача, обов'язково, генерується автоматично"
+
+#: ../../source/standard/agreement.rst:0
+msgid "agreementID"
+msgstr ""
 
 #: ../../source/standard/agreement.rst:16
 msgid "string, auto-generated, read-only"
 msgstr "рядок, генерується автоматично, лише для читання "
 
+#: ../../source/standard/agreement.rst:0
+msgid "agreementNumber"
+msgstr ""
+
 #: ../../source/standard/agreement.rst:19
 #: ../../source/standard/agreement.rst:70
 msgid "string"
 msgstr "рядок"
+
+#: ../../source/standard/agreement.rst:0
+msgid "changes"
+msgstr ""
 
 #: ../../source/standard/agreement.rst:22
 msgid ""
@@ -51,6 +64,10 @@ msgstr ""
 msgid "Only in `agreements` container."
 msgstr "Тільки в контейнері `agreements`."
 
+#: ../../source/standard/agreement.rst:0
+msgid "date"
+msgstr ""
+
 #: ../../source/standard/agreement.rst:27
 msgid "string, :ref:`date`, auto-generated, read-only"
 msgstr "рядок, :ref:`date`, генерується автоматично, лише для читання"
@@ -59,6 +76,10 @@ msgstr "рядок, :ref:`date`, генерується автоматично, 
 msgid "The date of the agreement change."
 msgstr "Дата зміни угоди"
 
+#: ../../source/standard/agreement.rst:0
+msgid "dateSigned"
+msgstr ""
+
 #: ../../source/standard/agreement.rst:32
 msgid "string, :ref:`date`"
 msgstr "рядок, :ref:`date`"
@@ -66,6 +87,10 @@ msgstr "рядок, :ref:`date`"
 #: ../../source/standard/agreement.rst:34
 msgid "The date of the agreement signed."
 msgstr "Дата підписання угоди"
+
+#: ../../source/standard/agreement.rst:0
+msgid "description"
+msgstr ""
 
 #: ../../source/standard/agreement.rst:37
 #: ../../source/standard/agreement.rst:42
@@ -79,6 +104,18 @@ msgstr "рядок, багатомовний"
 msgid "Agreement description"
 msgstr "Опис договору"
 
+#: ../../source/standard/agreement.rst:0
+msgid "description_en"
+msgstr ""
+
+#: ../../source/standard/agreement.rst:0
+msgid "description_ru"
+msgstr ""
+
+#: ../../source/standard/agreement.rst:0
+msgid "documents"
+msgstr ""
+
 #: ../../source/standard/agreement.rst:52
 msgid "List of :ref:`Document` objects"
 msgstr "Список об'єктів :ref:`Document`"
@@ -91,9 +128,17 @@ msgstr ""
 "|ocdsDescription| Всі документи і додатки, що стосуються угоди, в тому "
 "числі будь-які сповіщення."
 
+#: ../../source/standard/agreement.rst:0
+msgid "items"
+msgstr ""
+
 #: ../../source/standard/agreement.rst:58
 msgid "List of :ref:`Item` objects"
 msgstr "Список об'єктів :ref:`Item`"
+
+#: ../../source/standard/agreement.rst:0
+msgid "period"
+msgstr ""
 
 #: ../../source/standard/agreement.rst:61
 msgid ":ref:`Period`"
@@ -103,9 +148,17 @@ msgstr ":ref:`Period`"
 msgid "The timeframe when agreement is in force. Maximum 4 years."
 msgstr "Період чинності угоди. Щонайбільше 4 роки. "
 
+#: ../../source/standard/agreement.rst:0
+msgid "clarificationsUntil"
+msgstr ""
+
 #: ../../source/standard/agreement.rst:67
 msgid "Deadline for participants to submit price documents"
 msgstr "Крайній термін подання документів з цінами учасниками"
+
+#: ../../source/standard/agreement.rst:0
+msgid "status"
+msgstr ""
 
 #: ../../source/standard/agreement.rst:72
 msgid "The current status of agreement. Possible values are:"
@@ -155,9 +208,17 @@ msgstr ""
 "`terminated` - угода не може бути використана для створення `selection` "
 "процедури"
 
+#: ../../source/standard/agreement.rst:0
+msgid "contracts"
+msgstr ""
+
 #: ../../source/standard/agreement.rst:87
 msgid "List of :ref:`Contract` objects"
 msgstr "Список об'єктів :ref:`Contract` "
+
+#: ../../source/standard/agreement.rst:0
+msgid "title"
+msgstr ""
 
 #: ../../source/standard/agreement.rst:90
 #: ../../source/standard/agreement.rst:95
@@ -170,6 +231,14 @@ msgstr "рядок, обов'язково"
 #: ../../source/standard/agreement.rst:102
 msgid "Agreement title"
 msgstr "Назва угоди"
+
+#: ../../source/standard/agreement.rst:0
+msgid "title_ru"
+msgstr ""
+
+#: ../../source/standard/agreement.rst:0
+msgid "title_en"
+msgstr ""
 
 #: ../../source/standard/agreement.rst:105
 msgid "Workflow"

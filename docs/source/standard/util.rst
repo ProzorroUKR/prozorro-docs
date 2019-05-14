@@ -124,13 +124,13 @@ Additionally in :ref:`esco`:
 
 :contractDuration:
 
-    :ref:`Contract duration <contact_duration>`, required.
+    :ref:`ContractDuration <contact_duration>`, required.
 
 
 .. _contact_duration:
 
-Contract duration
-=================
+ContractDuration
+================
 
 Schema
 ------

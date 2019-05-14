@@ -69,7 +69,7 @@ Schema
     `Value` object
 
 :suppliers:
-    List of :ref:`Organization` objects, auto-generated, read-only
+    List of :ref:`BusinessOrganization` objects, auto-generated, read-only
     
     |ocdsDescription|
     The suppliers awarded with this award.
