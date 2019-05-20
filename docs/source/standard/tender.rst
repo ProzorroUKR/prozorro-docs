@@ -60,6 +60,9 @@ Schema
 :procurementMethodType:
     string
 
+    :`belowThreshold`:
+        below threshold procedure indentifier
+
     :`aboveThresholdUA`:
         above threshold procedure indentifier
 
@@ -255,6 +258,12 @@ Schema
 :milestones:
 
    List of :ref:`Milestone` objects.
+
+
+:plan_id:
+   string, auto-generated, read-only
+
+   ``id`` of the linked plan object. See :ref:`Tender creation from a procurement plan`
 
 :status:
    string

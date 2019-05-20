@@ -77,3 +77,79 @@ msgstr ""
 #: ../../source/tutorial.rst:19
 msgid "Let's check what plan registry contains:"
 msgstr "Перевіримо, що містить реєстр планів закупівель:"
+
+#: ../../source/planning/tutorial.rst:36
+msgid "Checking the listing again reflects the new modification date:"
+msgstr "Ще одна перевірка списку відображає нову дату модифікації:"
+
+#: ../../source/planning/tutorial.rst:44
+msgid "Tender creation from a procurement plan"
+msgstr "Створення закупівлі з плану"
+
+#: ../../source/planning/tutorial.rst:46
+msgid ""
+"A tender can be created from your procurement plan. This tender will be linked "
+"with the plan using :ref:`plan_id<tender>` and :ref:`tender_id` fields to "
+"ensure 1-1 relation between these entities."
+msgstr ""
+"Тендер може бути створений з плану закупівель. Цей тендер буде пов'язаний з "
+"планом за допомогою :ref:`plan_id <tender>` і :ref:`tender_id` полів для "
+"забезпечення 1-1 зв'язку між цими сутностями."
+
+#: ../../source/planning/tutorial.rst:0
+msgid ""
+"System failures during tender-from-plan creation can produce tenders that are "
+"not linked with their plans by :ref:`tender_id`."
+msgstr ""
+"Системні збої під час створення тендеру з плану можуть призвести до тендерів, "
+"які не пов’язані з їхніми планами по :ref:`tender_id`."
+
+#: ../../source/planning/tutorial.rst:0
+msgid ""
+"Make sure you do use :ref:`2pc` and do not proceed with these error state "
+"tender objects (create new ones)."
+msgstr ""
+"Переконайтеся, що ви використовуєте :ref:`2pc` і не проводте ці помилкові "
+"тендери (створюйте нові натомість)."
+
+#: ../../source/planning/tutorial.rst:56
+msgid "Tender creation requires plan owner token"
+msgstr "Для створення тендеру токен маркер власника плану"
+
+#: ../../source/planning/tutorial.rst:61
+msgid ""
+"There are validation rules that are supposed to decline the chance of making a "
+"mistake"
+msgstr ""
+"Встановлені правила валідації, які повинні знижувати шанси зробити помилку"
+
+#: ../../source/planning/tutorial.rst:66
+msgid "There are three of them:"
+msgstr "Усього їх три:"
+
+#: ../../source/planning/tutorial.rst:68
+msgid "procurementMethodType"
+msgstr ""
+
+#: ../../source/planning/tutorial.rst:69
+msgid ""
+"procuringEntity.identifier - matching id and scheme with the same fields in "
+"tender data"
+msgstr ""
+"procuringEntity.identifier - відповідність id і scheme з тими ж полями в "
+"тендерних даних"
+
+#: ../../source/planning/tutorial.rst:70
+msgid ""
+"classification.id  - matching with tender item classification codes using first "
+"4 digits (``336`` is exception)"
+msgstr ""
+"classification.id - відповідність item.classification кодів з використанням "
+"перших 4 цифр (``336`` виняток)"
+
+#: ../../source/planning/tutorial.rst:72
+msgid "A successful example looks like this:"
+msgstr "Успішний приклад виглядає так:"
+
+#~ msgid "Plan creation"
+#~ msgstr "Створення плану"

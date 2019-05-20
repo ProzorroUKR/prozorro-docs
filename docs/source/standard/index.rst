@@ -20,15 +20,16 @@ areas that were not covered by it.
    contract
    document
    feature
+   firm
    item
    lot
    milestone
    organization
+   plan
+   procuringentity
    qualification
    question
-   procuringentity
    tender
-   firm
    unitPrice
    util
    transfer

@@ -1,7 +1,7 @@
 
 .. include:: defs.hrst
 
-.. index:: ProcuringEntity
+.. index:: ProcuringEntity, PlanOrganization
 
 .. _ProcuringEntity:
 
@@ -43,3 +43,25 @@ Schema
         - ``defense`` - Procuring entity that conducts procurement for the defense needs
         - ``other`` -  Legal persons that are not procuring entities in the sense of the Law, but are state, utility, public enterprises, economic partnerships or associations of enterprises in which state or public utility share is 50 percent or more
 
+
+
+.. _PlanOrganization:
+
+
+PlanOrganization
+================
+
+Schema
+------
+
+:name:
+    string, multilingual
+
+    |ocdsDescription|
+    The common name of the organization.
+
+:identifier:
+    :ref:`Identifier`
+
+    |ocdsDescription|
+    The primary identifier for this organization.

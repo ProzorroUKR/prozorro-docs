@@ -3,11 +3,8 @@
 Tutorial
 ========
 
-Plan creation
----------------
-
 Creating plan procurement
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------
 
 Let’s create a plan:
 
@@ -25,7 +22,7 @@ We do see the internal `id` of a plan (that can be used to construct full URL by
 
 
 Modifying plan
-~~~~~~~~~~~~~~~~
+--------------
 
 Let's update plan by supplementing it with all other essential properties:
 
@@ -39,4 +36,41 @@ We see the added properies have merged with existing plan data. Additionally, th
 Checking the listing again reflects the new modification date:
 
 .. include:: tutorial/plan-listing-after-patch.http
+   :code:
+
+.. _tender-from-plan:
+
+
+Tender creation from a procurement plan
+---------------------------------------
+
+A tender can be created from your procurement plan. This tender will be linked with the plan
+using :ref:`plan_id<tender>` and :ref:`tender_id` fields to ensure 1-1 relation between these entities.
+
+
+
+.. note::
+    | System failures during tender-from-plan creation can produce tenders that are not linked with their plans by :ref:`tender_id`.
+    | Make sure you do use :ref:`2pc` and do not proceed with these error state tender objects (create new ones).
+
+
+Tender creation requires plan owner token
+
+.. include:: tutorial/tender-from-plan-auth-fail.http
+   :code:
+
+There are validation rules that are supposed to decline the chance of making a mistake
+
+.. include:: tutorial/tender-from-plan-validation.http
+   :code:
+
+There are three of them:
+
+    * procurementMethodType
+    * procuringEntity.identifier - matching id and scheme with the same fields in tender data
+    * classification.id  - matching with tender item classification codes using first 4 digits (``336`` is exception)
+
+A successful example looks like this:
+
+.. include:: tutorial/tender-from-plan.http
    :code:

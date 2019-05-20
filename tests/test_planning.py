@@ -4,15 +4,17 @@ from copy import deepcopy
 from datetime import timedelta
 
 from openprocurement.api.utils import get_now
-from openprocurement.planning.api.tests.base import BasePlanWebTest
-from openprocurement.planning.api.tests.base import test_plan_data
-
+from openprocurement.planning.api.tests.base import BasePlanWebTest, test_plan_data
+from openprocurement.tender.belowthreshold.tests.base import test_tender_data
+from tests.base.data import tender_openeu
 from tests.base.constants import DOCS_URL
 from tests.base.test import DumpsWebTestApp, MockWebTestMixin
 
 TARGET_DIR = 'docs/source/planning/tutorial/'
 
 test_plan_data = deepcopy(test_plan_data)
+tender_openeu = deepcopy(tender_openeu)
+test_tender_data = deepcopy(test_tender_data)
 
 
 class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
@@ -53,11 +55,8 @@ class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
             self.assertEqual(response.status, '201 Created')
 
         plan = response.json['data']
-        plan_id = self.plan_id = response.json['data']['id']
+        self.plan_id = plan["id"]
         owner_token = response.json['access']['token']
-
-        with open(TARGET_DIR + 'example_plan.http', 'w') as self.app.file_obj:
-            response = self.app.get('/plans/{}'.format(plan_id))
 
         with open(TARGET_DIR + 'plan-listing.http', 'w') as self.app.file_obj:
             self.app.authorization = None
@@ -102,3 +101,33 @@ class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
             response = self.app.get('/plans')
             self.assertEqual(response.status, '200 OK')
             self.app.file_obj.write("\n")
+
+        # tender creation
+
+        self.app.authorization = ('Basic', ('broker', ''))
+        with open(TARGET_DIR + 'tender-from-plan-auth-fail.http', 'w') as self.app.file_obj:
+            self.app.post_json(
+                '/plans/{}/tenders'.format(plan['id'], owner_token),
+                {'data': {}},
+                status=403
+            )
+
+        with open(TARGET_DIR + 'tender-from-plan-validation.http', 'w') as self.app.file_obj:
+            self.app.post_json(
+                '/plans/{}/tenders?acc_token={}'.format(plan['id'], owner_token),
+                {'data': tender_openeu},
+                status=422
+            )
+
+        test_tender_data["items"] = test_plan_data["items"]
+        test_tender_data["enquiryPeriod"]["endDate"] = (get_now() + timedelta(days=14)).isoformat()
+        test_tender_data["tenderPeriod"]["endDate"] = (get_now() + timedelta(days=21)).isoformat()
+        test_tender_data["procuringEntity"]["identifier"] = test_plan_data["procuringEntity"]["identifier"]
+        test_tender_data["title"] = u"Насіння"
+        test_tender_data["status"] = "draft"
+
+        with open(TARGET_DIR + 'tender-from-plan.http', 'w') as self.app.file_obj:
+            self.app.post_json(
+                '/plans/{}/tenders?acc_token={}'.format(plan['id'], owner_token),
+                {'data': test_tender_data},
+            )
