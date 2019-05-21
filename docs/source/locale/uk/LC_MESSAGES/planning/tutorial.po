@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: openprocurement.tender.limited 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-15 13:01+0200\n"
-"PO-Revision-Date: 2019-05-21 10:38+0300\n"
+"PO-Revision-Date: 2019-05-21 15:30+0300\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
 "Language-Team: Ukrainian <info@quintagroup.com>\n"
 "MIME-Version: 1.0\n"
@@ -88,17 +88,17 @@ msgid ""
 "linked with the plan using :ref:`plan_id<tender>` and :ref:`tender_id` "
 "fields to ensure 1-1 relation between these entities."
 msgstr ""
-"Тендер може бути створений з плану закупівель. Цей тендер буде пов'язаний з "
-"планом за допомогою :ref:`plan_id <tender>` і :ref:`tender_id` полів для "
-"забезпечення 1-1 зв'язку між цими сутностями."
+"Закупівля може бути створена з відповідного їй плану закупівлі. Для "
+"забезпечення зв’язки 1-1 закупівля буде пов’язана з планом за допомогою "
+"полів :ref:`plan_id <tender>` і :ref:`tender_id`."
 
 #: ../../source/planning/tutorial.rst:0
 msgid ""
 "System failures during tender-from-plan creation can produce tenders that "
 "are not linked with their plans by :ref:`tender_id`."
 msgstr ""
-"Системні збої під час створення тендеру з плану можуть призвести до "
-"тендерів, які не пов’язані з їхніми планами по :ref:`tender_id`."
+"Системні збої під час створення закупівлі з плану можуть призвести до "
+"закупівель, які не пов’язані з їхніми планами по :ref:`tender_id`."
 
 #: ../../source/planning/tutorial.rst:0
 msgid ""
@@ -106,18 +106,20 @@ msgid ""
 "tender objects (create new ones)."
 msgstr ""
 "Переконайтеся, що ви використовуєте :ref:`2pc` і не проводте ці помилкові "
-"тендери (створюйте нові натомість)."
+"закупівлі (створюйте нові натомість)."
 
 #: ../../source/planning/tutorial.rst:56
 msgid "Tender creation requires plan owner token"
-msgstr "Для створення тендеру потрібен токен маркер власника плану"
+msgstr ""
+"Для створення закупівлі обов’язково потрібен токен маркер власника плану"
 
 #: ../../source/planning/tutorial.rst:61
 msgid ""
 "There are validation rules that are supposed to decline the chance of making "
 "a mistake"
 msgstr ""
-"Встановлені правила валідації, які повинні знижувати шанси зробити помилку"
+"Для зменшення шансів зробити помилку та зв’язати закупівлю з неправильним "
+"планом, встановлені правила валідації."
 
 #: ../../source/planning/tutorial.rst:66
 msgid "There are three of them:"
@@ -125,23 +127,23 @@ msgstr "Усього їх три:"
 
 #: ../../source/planning/tutorial.rst:68
 msgid "procurementMethodType"
-msgstr ""
+msgstr "procurementMethodType - відповідність типу процедури плана і тендера"
 
 #: ../../source/planning/tutorial.rst:69
 msgid ""
 "procuringEntity.identifier - matching id and scheme with the same fields in "
 "tender data"
 msgstr ""
-"procuringEntity.identifier - відповідність id і scheme з тими ж полями в "
-"тендерних даних"
+"procuringEntity.identifier - відповідність полів id і scheme для плана і "
+"тендера"
 
 #: ../../source/planning/tutorial.rst:70
 msgid ""
 "classification.id  - matching with tender item classification codes using "
 "first 4 digits (``336`` is exception)"
 msgstr ""
-"classification.id - відповідність item.classification кодів з використанням "
-"перших 4 цифр (``336`` виняток)"
+"classification.id - відповідність перших 4-х цифр кодів класифікатора плана "
+"і тендера (336 виняток - відповідність перших 3-х цифр)"
 
 #: ../../source/planning/tutorial.rst:72
 msgid "A successful example looks like this:"
