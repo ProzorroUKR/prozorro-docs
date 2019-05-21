@@ -263,7 +263,7 @@ Schema
 :plan_id:
    string, auto-generated, read-only
 
-   ``id`` of the linked plan object. See :ref:`Tender creation from a procurement plan`
+   ``id`` of the linked plan object. See :ref:`tender-from-plan`
 
 :status:
    string
