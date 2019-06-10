@@ -105,16 +105,9 @@ class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
         # tender creation
 
         self.app.authorization = ('Basic', ('broker', ''))
-        with open(TARGET_DIR + 'tender-from-plan-auth-fail.http', 'w') as self.app.file_obj:
-            self.app.post_json(
-                '/plans/{}/tenders'.format(plan['id'], owner_token),
-                {'data': {}},
-                status=403
-            )
-
         with open(TARGET_DIR + 'tender-from-plan-validation.http', 'w') as self.app.file_obj:
             self.app.post_json(
-                '/plans/{}/tenders?acc_token={}'.format(plan['id'], owner_token),
+                '/plans/{}/tenders'.format(plan['id']),
                 {'data': tender_openeu},
                 status=422
             )
@@ -128,6 +121,6 @@ class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
 
         with open(TARGET_DIR + 'tender-from-plan.http', 'w') as self.app.file_obj:
             self.app.post_json(
-                '/plans/{}/tenders?acc_token={}'.format(plan['id'], owner_token),
+                '/plans/{}/tenders'.format(plan['id']),
                 {'data': test_tender_data},
             )

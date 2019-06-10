@@ -54,20 +54,14 @@ using :ref:`plan_id<tender>` and :ref:`tender_id` fields to ensure 1-1 relation 
     | Make sure you do use :ref:`2pc` and do not proceed with these error state tender objects (create new ones).
 
 
-Tender creation requires plan owner token
-
-.. include:: tutorial/tender-from-plan-auth-fail.http
-   :code:
-
 There are validation rules that are supposed to decline the chance of making a mistake
 
 .. include:: tutorial/tender-from-plan-validation.http
    :code:
 
-There are three of them:
+There are two of them:
 
     * procurementMethodType
-    * procuringEntity.identifier - matching id and scheme with the same fields in tender data
     * classification.id  - matching with tender item classification codes using first 4 digits (``336`` is exception)
 
 A successful example looks like this:
