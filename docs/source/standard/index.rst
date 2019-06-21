@@ -27,6 +27,7 @@ areas that were not covered by it.
    organization
    plan
    procuringentity
+   planorganization
    qualification
    question
    tender

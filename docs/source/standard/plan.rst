@@ -24,6 +24,12 @@ procuringEntity
    |ocdsDescription|
    The entity managing the procurement, which may be different from the buyer who is paying / using the items being procured.
 
+buyers
+------
+   List of :ref:`PlanOrganization` objects, required at least 1 object
+
+   Identifications of the subjects in whose interests the purchase is made
+
 tender
 ------
    :ref:`PlanTender`, required

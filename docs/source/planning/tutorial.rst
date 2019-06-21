@@ -59,9 +59,10 @@ There are validation rules that are supposed to decline the chance of making a m
 .. include:: tutorial/tender-from-plan-validation.http
    :code:
 
-There are two of them:
+There are three of them:
 
     * procurementMethodType
+    * procuringEntity.identifier - matching id and scheme with the same fields in tender data
     * classification.id  - matching with tender item classification codes using first 4 digits (``336`` is exception)
 
 A successful example looks like this:
