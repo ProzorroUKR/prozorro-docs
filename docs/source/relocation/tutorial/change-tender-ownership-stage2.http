@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/7ad5dd33d7bc4b1086be2712df2537a6/ownership HTTP/1.0
+POST /api/2.5/tenders/26775c44b67241edb26627e2ea592acc/ownership HTTP/1.0
 Authorization: Basic YnJva2VyMzo=
 Content-Length: 100
 Content-Type: application/json
@@ -7,7 +7,7 @@ DATA:
 {
   "data": {
     "transfer": "012faccdaa4e4b63b1fdf340fe872f17", 
-    "id": "e910d1255a0a5dcdaabbee9f0f4e249e"
+    "id": "9bd9ded8ee1a1b68b2c227ebab05349c"
   }
 }
 
@@ -17,7 +17,7 @@ Content-Type: application/json; charset=UTF-8
   "data": {
     "status": "draft.stage2", 
     "numberOfBids": 0, 
-    "dialogueID": "1a074848f9a54241936d3acb276ad6cb", 
+    "dialogueID": "132640849e3e41ecab88ac8125065393", 
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
       "startDate": "2019-04-01T01:00:00+03:00", 
@@ -116,10 +116,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-06-28T04:52:26.210959+03:00", 
-          "endDate": "2019-07-01T04:52:26.210959+03:00"
+          "startDate": "2019-04-03T01:00:00+03:00", 
+          "endDate": "2019-04-06T01:00:00+03:00"
         }, 
-        "id": "a505130b91d047d88f81d1c60fc39f32", 
+        "id": "a425b7352fef485885f0d8a7d5850583", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -129,7 +129,7 @@ Content-Type: application/json; charset=UTF-8
     ], 
     "owner": "broker3", 
     "dateModified": "2019-04-01T01:00:00+03:00", 
-    "id": "7ad5dd33d7bc4b1086be2712df2537a6", 
+    "id": "26775c44b67241edb26627e2ea592acc", 
     "procurementMethod": "selective", 
     "tenderID": "UA-2019-04-01-000001"
   }

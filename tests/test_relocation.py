@@ -2,12 +2,16 @@
 import os
 
 from copy import deepcopy
+from datetime import timedelta
+
 from openprocurement.tender.belowthreshold.tests.base import (
-    test_tender_data, test_organization,
+    test_tender_data,
+    test_organization,
     test_author)
 from openprocurement.relocation.api.tests.base import (
     OwnershipWebTest, test_transfer_data, OpenEUOwnershipWebTest, test_ua_bid_data
 )
+from openprocurement.tender.openeu.constants import TENDERING_DAYS
 from openprocurement.tender.openeu.tests.base import test_tender_data as test_eu_tender_data
 from openprocurement.contracting.api.tests.base import test_contract_data, test_tender_token
 from openprocurement.tender.competitivedialogue.tests.base import (
@@ -39,6 +43,13 @@ class TransferDocsTest(OwnershipWebTest, MockWebTestMixin):
 
     def test_docs(self):
         data = deepcopy(test_tender_data)
+        now = get_now()
+        data['items'][0].update({"deliveryDate": {
+             "startDate": (now + timedelta(days=2)).isoformat(),
+             "endDate": (now + timedelta(days=5)).isoformat()}})
+        data.update({
+            "enquiryPeriod": {"endDate": (now + timedelta(days=7)).isoformat()},
+            "tenderPeriod": {"endDate": (now + timedelta(days=14)).isoformat()}})
         self.app.authorization = ('Basic', ('broker', ''))
 
         with open('docs/source/relocation/tutorial/create-tender.http', 'w') as self.app.file_obj:
@@ -221,6 +232,7 @@ class TransferDocsTest(OwnershipWebTest, MockWebTestMixin):
         ########################
 
         data = deepcopy(test_contract_data)
+        data["dateSigned"] = get_now().isoformat()
         tender_token = data['tender_token']
         self.app.authorization = ('Basic', ('contracting', ''))
 
@@ -318,7 +330,12 @@ class EuTransferDocsTest(OpenEUOwnershipWebTest, MockWebTestMixin):
         ##############################
 
         self.app.authorization = ('Basic', ('broker', ''))
+        now = get_now()
         data = deepcopy(test_eu_tender_data)
+        data['items'][0].update({"deliveryDate": {
+             "startDate": (now + timedelta(days=2)).isoformat(),
+             "endDate": (now + timedelta(days=5)).isoformat()}})
+        data.update({"tenderPeriod": {"endDate": (now + timedelta(days=TENDERING_DAYS + 1)).isoformat()}})
         with open('docs/source/relocation/tutorial/create-tender-for-qualification.http', 'w') as self.app.file_obj:
             response = self.app.post_json('/tenders?opt_pretty=1', {"data": data})
             self.assertEqual(response.status, '201 Created')
@@ -412,7 +429,13 @@ class CompetitiveDialogueStage2TransferDocsTest(BaseCompetitiveDialogWebTest, Mo
     def test_stage2(self):
         # create tender with bridge
         self.app.authorization = ('Basic', ('competitive_dialogue', ''))
-        response = self.app.post_json('/tenders?opt_pretty=1', {"data": test_tender_stage2_data_ua})
+        now = get_now()
+        data = deepcopy(test_tender_stage2_data_ua)
+        data['items'][0].update({"deliveryDate": {
+             "startDate": (now + timedelta(days=2)).isoformat(),
+             "endDate": (now + timedelta(days=5)).isoformat()}})
+        data.update({"tenderPeriod": {"endDate": (now + timedelta(days=TENDERING_DAYS + 1)).isoformat()}})
+        response = self.app.post_json('/tenders?opt_pretty=1', {"data": data})
         self.assertEqual(response.status, '201 Created')
         self.tender_id = response.json['data']['id']
         tender = response.json['data']

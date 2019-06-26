@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/0c33a5c063d04b6c8a5a429d187fda21/complaints/d61ec195800849059069ad8cad973799?acc_token=f80a85928c6544769ba2b52a91e614f2 HTTP/1.0
+PATCH /api/2.5/tenders/6806848e66424adfbac0e5acbfb7b40e/complaints/4ee6645f2cab40abad99c276a48baee6?acc_token=871f0c37585a441eb6724decc1af75aa HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 51
 Content-Type: application/json
@@ -16,7 +16,10 @@ Content-Type: application/json; charset=UTF-8
 {
   "data": {
     "status": "pending", 
-    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+    "transfer_token": "7026415b8e11e7b7f4575964db088e70d1cde202e8b63984f77c3b7706d238383111e1418e767a06d3950cf48372ac37b97b515a267f14259ca105f9792c4567", 
+    "title": "Недостатньо інформації", 
+    "resolutionType": "invalid", 
+    "type": "complaint", 
     "author": {
       "contactPoint": {
         "email": "soleksuk@gmail.com", 
@@ -37,16 +40,14 @@ Content-Type: application/json; charset=UTF-8
         "locality": "м. Вінниця"
       }
     }, 
-    "resolutionType": "invalid", 
-    "type": "complaint", 
-    "title": "Недостатньо інформації", 
     "satisfied": false, 
     "dateEscalated": "2019-04-01T01:00:00+03:00", 
     "dateAnswered": "2019-04-01T01:00:00+03:00", 
     "complaintID": "UA-2019-04-01-000001.4", 
     "date": "2019-04-01T01:00:00+03:00", 
     "resolution": "Вимога не відповідає предмету закупівлі", 
-    "id": "d61ec195800849059069ad8cad973799"
+    "id": "4ee6645f2cab40abad99c276a48baee6", 
+    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс."
   }
 }
 

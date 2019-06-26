@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/397f9e9102654d1cb12fde651d750819/awards/5c514497ce984e92a30e49375a00f764/complaints?acc_token=7848ce12b1c347c78340ea4e9bd795bf HTTP/1.0
+POST /api/2.5/tenders/e234fb168a9a4eae96cf2776aac2c690/awards/f3d8f89b9552466cb3f84cae3e0deb5a/complaints?acc_token=f877b151148e4600916ce4b50a92cc7f HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 1319
 Content-Type: application/json
@@ -34,14 +34,16 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/397f9e9102654d1cb12fde651d750819/awards/5c514497ce984e92a30e49375a00f764/complaints/671551acb88b463aad4e7ebd61307560
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e234fb168a9a4eae96cf2776aac2c690/awards/f3d8f89b9552466cb3f84cae3e0deb5a/complaints/5adaa5b896494b82b07cecc2feb9c5ad
 {
   "access": {
-    "token": "6231d8352a7546149fdd743b19e66404"
+    "transfer": "81d0471df3f34548a0b686b3b07c2200", 
+    "token": "e689d00a2adc4fb282c0222a7cbed8b5"
   }, 
   "data": {
     "status": "pending", 
-    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+    "transfer_token": "61587954c3321f7b65149a685794fa4f424bcb2cfa6f3940c163e5daaaf9af4f3fb3ac91b4f6cff92e44177160b2ab41693a0a06a267ee9e2a1a2d6b7edd6961", 
+    "title": "Недостатньо інформації", 
     "author": {
       "contactPoint": {
         "email": "soleksuk@gmail.com", 
@@ -62,12 +64,12 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/397f9e9102654d1c
         "locality": "м. Вінниця"
       }
     }, 
-    "title": "Недостатньо інформації", 
     "dateSubmitted": "2019-04-01T01:00:03+03:00", 
     "complaintID": "UA-2019-04-01-000001.2", 
     "date": "2019-04-01T01:00:03+03:00", 
     "type": "complaint", 
-    "id": "671551acb88b463aad4e7ebd61307560"
+    "id": "5adaa5b896494b82b07cecc2feb9c5ad", 
+    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс."
   }
 }
 

@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/d4132712eb7b4d3f91083564bc1ddf26/bids HTTP/1.0
+POST /api/2.5/tenders/db8f78603c144a8aac15730f9c763584/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 1470
 Content-Type: application/json
@@ -10,7 +10,7 @@ DATA:
     "selfQualified": true, 
     "lotValues": [
       {
-        "relatedLot": "cd0a788afea24ea0a3d145f1702f419f", 
+        "relatedLot": "3c84167877eb48d693c12efd2c6cb01e", 
         "value": {
           "contractDuration": {
             "years": 7
@@ -42,7 +42,7 @@ DATA:
         }
       }, 
       {
-        "relatedLot": "df160680e58d4428ab078fdb1b494578", 
+        "relatedLot": "92e4a20a9d7f4dada89d434409f951d8", 
         "value": {
           "contractDuration": {
             "years": 9
@@ -103,17 +103,18 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/d4132712eb7b4d3f91083564bc1ddf26/bids/db9c3692e9e34e789d708bf8d92c9a04
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/db8f78603c144a8aac15730f9c763584/bids/e330641f19174449b434b4988cccf0c6
 {
   "access": {
-    "token": "dc28318f3f344c729239495a0ef58d46"
+    "transfer": "09c47fa5005d433dadde01808925656c", 
+    "token": "1eefabf7d7e741df9f88509718bac900"
   }, 
   "data": {
     "status": "pending", 
     "selfEligible": true, 
     "lotValues": [
       {
-        "relatedLot": "cd0a788afea24ea0a3d145f1702f419f", 
+        "relatedLot": "3c84167877eb48d693c12efd2c6cb01e", 
         "date": "2019-04-01T01:00:00+03:00", 
         "status": "pending", 
         "value": {
@@ -152,7 +153,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/d4132712eb7b4d3f
         }
       }, 
       {
-        "relatedLot": "df160680e58d4428ab078fdb1b494578", 
+        "relatedLot": "92e4a20a9d7f4dada89d434409f951d8", 
         "date": "2019-04-01T01:00:00+03:00", 
         "status": "pending", 
         "value": {
@@ -217,7 +218,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/d4132712eb7b4d3f
       }
     ], 
     "date": "2019-04-01T01:00:00+03:00", 
-    "id": "db9c3692e9e34e789d708bf8d92c9a04"
+    "id": "e330641f19174449b434b4988cccf0c6"
   }
 }
 

@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/b3b518464b274354b841065be848658b/qualifications/aabb043ee27f451ebf0b54cc997c3027/complaints?acc_token=2019737040e24a208a32f9684e09c1dd HTTP/1.0
+POST /api/2.5/tenders/96c58765139d4dfb9ff274018c231eb8/qualifications/6f34bf7d14e94a5bae1658e16d777f8f/complaints?acc_token=ac5539ceab4d4b5ca0dc96fd6531f1f8 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 1088
 Content-Type: application/json
@@ -33,20 +33,21 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/b3b518464b274354b841065be848658b/qualifications/aabb043ee27f451ebf0b54cc997c3027/complaints/7c9825c9e2ae4badaf87c757bea624ab
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/96c58765139d4dfb9ff274018c231eb8/qualifications/6f34bf7d14e94a5bae1658e16d777f8f/complaints/91b4ff9fd2ea4cf0a3f514415544d394
 {
   "access": {
-    "token": "85389a9edbeb4feca9a2a54ae4db879e"
+    "transfer": "fbc47c0b699f4f5ca60313d6bfdea755", 
+    "token": "d3babba73c59450393687d4a0b428605"
   }, 
   "data": {
     "status": "draft", 
     "description": "Просимо додати таблицю потрібної калорійності харчування", 
     "title": "Калорійність", 
-    "bid_id": "28676013bb8949c798543345fcd3aab5", 
+    "bid_id": "c1eb30e6f1dd4063b94519c80ff7c1e8", 
     "complaintID": "UA-2019-04-01-000001.1", 
     "date": "2019-04-01T01:00:01+03:00", 
     "type": "claim", 
-    "id": "7c9825c9e2ae4badaf87c757bea624ab"
+    "id": "91b4ff9fd2ea4cf0a3f514415544d394"
   }
 }
 

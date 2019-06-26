@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/167bc218c6a347f0affb12c1cb33f317/bids HTTP/1.0
+POST /api/2.5/tenders/52f1b75138ab4b2c87feff205f2a06f4/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 1002
 Content-Type: application/json
@@ -10,7 +10,7 @@ DATA:
     "selfQualified": true, 
     "lotValues": [
       {
-        "relatedLot": "dd22c9c085f64e019f943999b5b41fe5", 
+        "relatedLot": "a678eaf5090d45db8077d4ecd36154e0", 
         "value": {
           "amount": 500
         }, 
@@ -45,17 +45,18 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/167bc218c6a347f0affb12c1cb33f317/bids/023f299e08ee4038a95448e0ed8a46b3
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/52f1b75138ab4b2c87feff205f2a06f4/bids/1db2a89bad604311b7166807eb63d4e3
 {
   "access": {
-    "token": "59d1cd571ea04e759da050bed38a3d45"
+    "transfer": "2dad90674a194befaeb85142d8ae2e22", 
+    "token": "54d541dfa06146e2a6a08281ec8f847a"
   }, 
   "data": {
     "status": "pending", 
     "selfEligible": true, 
     "lotValues": [
       {
-        "relatedLot": "dd22c9c085f64e019f943999b5b41fe5", 
+        "relatedLot": "a678eaf5090d45db8077d4ecd36154e0", 
         "date": "2019-04-01T01:00:00+03:00", 
         "status": "pending", 
         "value": {
@@ -91,7 +92,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/167bc218c6a347f0
       }
     ], 
     "date": "2019-04-01T01:00:00+03:00", 
-    "id": "023f299e08ee4038a95448e0ed8a46b3"
+    "id": "1db2a89bad604311b7166807eb63d4e3"
   }
 }
 

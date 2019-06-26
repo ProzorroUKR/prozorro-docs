@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/4734fdc349674070a77a0f59d097d45d/awards/ca1663f6e324456c9c65c54ca71588ca/complaints/1a0d16a4082543fe9bf46d0bf9b0906c?acc_token=2a4ec80277964bf2ab8035ef472af027 HTTP/1.0
+PATCH /api/2.5/tenders/3380abd6dac247a394ea054cfe23249b/awards/d65eaae49f3c464aa161387ed37dda21/complaints/5733cb37cfe7450382b32cc6567a2958?acc_token=7ef9f848f8824131a07fbf9309e82bfc HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 150
 Content-Type: application/json
@@ -16,7 +16,8 @@ Content-Type: application/json; charset=UTF-8
 {
   "data": {
     "status": "cancelled", 
-    "description": "Просимо додати таблицю потрібної калорійності харчування", 
+    "transfer_token": "2ffbc8395809b18e1ffcdcda9d97c38ace735f9179dbb7288cb9630de4a05967cd3d1ff3f535c1bee98b7f636933b50c347e321ce01568f69c1ed35eb27870ef", 
+    "title": "Калорійність", 
     "author": {
       "contactPoint": {
         "email": "aagt@gmail.com", 
@@ -37,13 +38,13 @@ Content-Type: application/json; charset=UTF-8
         "locality": "м. Львів"
       }
     }, 
-    "title": "Калорійність", 
     "cancellationReason": "Умови виправлено", 
     "dateCanceled": "2019-04-01T01:00:01+03:00", 
     "complaintID": "UA-2019-04-01-000001.9", 
     "date": "2019-04-01T01:00:01+03:00", 
     "type": "claim", 
-    "id": "1a0d16a4082543fe9bf46d0bf9b0906c"
+    "id": "5733cb37cfe7450382b32cc6567a2958", 
+    "description": "Просимо додати таблицю потрібної калорійності харчування"
   }
 }
 

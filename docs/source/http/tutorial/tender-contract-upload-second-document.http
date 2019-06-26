@@ -1,12 +1,12 @@
-POST /api/2.5/tenders/2fc8039bb7864bfabe6dc2c3ab451b69/contracts/c5e474c0f1da4c11890902435e04748d/documents?acc_token=39ff2f89f67742519e7b78cad264aeac HTTP/1.0
+POST /api/2.5/tenders/bc3a9016b29d4fed894cc62d3ff59680/contracts/6561180a1c084a59bfc5a18e06460e6a/documents?acc_token=e6bb69a4c5474e4987130585951b6f3e HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 343
+Content-Length: 347
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
-    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/41d50bd754e14c399f7168a9dd7cae58?KeyID=a8968c46&Signature=x7mvOD%2FshnyZzQJXs3svuYOhCiFJ7DyyEGQUQF7nWw0Aag7f9IGeB22H56ploZF%2ByE0ICRWAxO8GZ8zCPwBJBA%3D%3D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/a2aa5b35517c445ca3778b7b25560cc9?KeyID=a8968c46&Signature=zj7WEkFY43cHRXABDNCQqrUFkuol7wJYMfiHE5o%2FXjgO%2Fp4vQlCK9ShocdlceSYRjZz%2FehAyLf%2BLlEzvxPJWBA%3D%3D", 
     "title": "contract_second_document.doc", 
     "hash": "md5:00000000000000000000000000000000", 
     "format": "application/msword"
@@ -15,16 +15,16 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/2fc8039bb7864bfabe6dc2c3ab451b69/contracts/c5e474c0f1da4c11890902435e04748d/documents/37987725166a4af28590bd85396d9fb6
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/bc3a9016b29d4fed894cc62d3ff59680/contracts/6561180a1c084a59bfc5a18e06460e6a/documents/d0c4000793a24e009a3057b4434ae119
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "title": "contract_second_document.doc", 
-    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/41d50bd754e14c399f7168a9dd7cae58?KeyID=a8968c46&Signature=91HzI%2FiYzzJmMvEo3VYrnVjN7bVaxWMleRwCZ1YafT2YBZKNkK%2F%2FzPwx44HOqiaiOzhMNCJo5eUanzulSZcuDw%253D%253D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/a2aa5b35517c445ca3778b7b25560cc9?KeyID=a8968c46&Signature=VkkdjRhMvrxZzXFjmULpNVxzcq52P09KEEXjD2Fe%252BBMNBH9FUupk0ZN6hHIwAFGr5lYmPcm2HzuX83tijpfOBw%253D%253D", 
     "format": "application/msword", 
     "documentOf": "tender", 
     "datePublished": "2019-04-01T01:00:03+03:00", 
-    "id": "37987725166a4af28590bd85396d9fb6", 
+    "id": "d0c4000793a24e009a3057b4434ae119", 
     "dateModified": "2019-04-01T01:00:03+03:00"
   }
 }

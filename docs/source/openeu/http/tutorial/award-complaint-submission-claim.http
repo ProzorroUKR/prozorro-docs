@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/4734fdc349674070a77a0f59d097d45d/awards/56b5a4db28a54443ad835bdae1dd0222/complaints?acc_token=6d601aa3e5b64b67ae5a3bf3de8bccb8 HTTP/1.0
+POST /api/2.5/tenders/3380abd6dac247a394ea054cfe23249b/awards/7d0fc5fee1a44f5582ba938096c7a12c/complaints?acc_token=38b39069108e4b50bd8eafbe6941704d HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 1317
 Content-Type: application/json
@@ -34,14 +34,16 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4734fdc349674070a77a0f59d097d45d/awards/56b5a4db28a54443ad835bdae1dd0222/complaints/46e5149932b24ad786e272c9572157e5
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/3380abd6dac247a394ea054cfe23249b/awards/7d0fc5fee1a44f5582ba938096c7a12c/complaints/caf6344f82884a81837df3158aef22e8
 {
   "access": {
-    "token": "705cd6299ea64925b7b5a15a520a8b60"
+    "transfer": "9a2ca11809f84a4a82367a62decb63bf", 
+    "token": "ba36ac76d0e44eaca034755b1ffe6faf"
   }, 
   "data": {
     "status": "claim", 
-    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+    "transfer_token": "c7a3b0b234461bb5209a391fca716bad6016423013f5acdff86b94633545e94bd4b4e5f77cd9f8e1f3c1ff10c316cdb836a3e0323f4cd4254f9ebefbbb459442", 
+    "title": "Недостатньо інформації", 
     "author": {
       "contactPoint": {
         "email": "soleksuk@gmail.com", 
@@ -62,12 +64,12 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4734fdc349674070
         "locality": "м. Вінниця"
       }
     }, 
-    "title": "Недостатньо інформації", 
     "dateSubmitted": "2019-04-01T01:00:01+03:00", 
     "complaintID": "UA-2019-04-01-000001.6", 
     "date": "2019-04-01T01:00:01+03:00", 
     "type": "claim", 
-    "id": "46e5149932b24ad786e272c9572157e5"
+    "id": "caf6344f82884a81837df3158aef22e8", 
+    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс."
   }
 }
 

@@ -1,13 +1,13 @@
 POST /api/2.5/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 2483
+Content-Length: 2480
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
     "tenderPeriod": {
-      "endDate": "2019-07-27T04:52:26.221409"
+      "endDate": "2019-05-02T01:00:00+03:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -38,8 +38,8 @@ DATA:
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-06-28T04:52:26.221409", 
-          "endDate": "2019-07-01T04:52:26.221409"
+          "startDate": "2019-04-03T01:00:00+03:00", 
+          "endDate": "2019-04-06T01:00:00+03:00"
         }, 
         "unit": {
           "code": "44617100-9", 
@@ -94,7 +94,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/b4e9b2dd0609413b
     "awardCriteria": "lowestCost", 
     "tenderPeriod": {
       "startDate": "2019-04-01T01:00:00+03:00", 
-      "endDate": "2019-07-27T04:52:26.221409+03:00"
+      "endDate": "2019-05-02T01:00:00+03:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -103,11 +103,11 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/b4e9b2dd0609413b
       "valueAddedTaxIncluded": true
     }, 
     "auctionPeriod": {
-      "shouldStartAfter": "2019-09-01T00:00:00+03:00"
+      "shouldStartAfter": "2019-06-07T00:00:00+03:00"
     }, 
     "complaintPeriod": {
       "startDate": "2019-04-01T01:00:00+03:00", 
-      "endDate": "2019-07-23T00:00:00+03:00"
+      "endDate": "2019-04-28T00:00:00+03:00"
     }, 
     "title_en": "Cases for state awards", 
     "value": {
@@ -145,11 +145,11 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/b4e9b2dd0609413b
     }, 
     "enquiryPeriod": {
       "startDate": "2019-04-01T01:00:00+03:00", 
-      "clarificationsUntil": "2019-07-22T04:52:26.221409+03:00", 
-      "endDate": "2019-07-17T04:52:26.221409+03:00"
+      "clarificationsUntil": "2019-04-25T01:00:00+03:00", 
+      "endDate": "2019-04-22T01:00:00+03:00"
     }, 
     "owner": "broker", 
-    "next_check": "2019-07-27T04:52:26.221409+03:00", 
+    "next_check": "2019-05-02T01:00:00+03:00", 
     "items": [
       {
         "description": "футляри до державних нагород", 
@@ -174,8 +174,8 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/b4e9b2dd0609413b
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-06-28T04:52:26.221409+03:00", 
-          "endDate": "2019-07-01T04:52:26.221409+03:00"
+          "startDate": "2019-04-03T01:00:00+03:00", 
+          "endDate": "2019-04-06T01:00:00+03:00"
         }, 
         "id": "4bf0351086e34dcc898f3232480e6bea", 
         "unit": {

@@ -1,12 +1,12 @@
-POST /api/2.5/tenders/c21b3c11169449d684596322700b7c79/awards/9085cb51b74344c0ae6a075286e5fc6a/complaints/257ad3081a6c4fa89ea75496be2e36f1/documents?acc_token=bd607665f5d7498887ebffd3c402e8ce HTTP/1.0
+POST /api/2.5/tenders/bd77618b8d904261bcbdeb67bbf0a695/awards/4c1ad94c349345a69f7e118d51660a7c/complaints/81b1c6e4fb1e416d9ed8c9aca0ab08b5/documents?acc_token=bac2eb9108de423baee63faf468c958b HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 339
+Content-Length: 343
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
-    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/430697ce2570408d8c3c536a32a9be37?KeyID=a8968c46&Signature=VruDJgeo6LGGmon7HJWz%2FTOzqH2m2pPIPMC4a2tGq7%2Fw9vZrdzS7pg1sM0mmOL1F79BCjgSwL9HOZ%2BhgrqRDBA%3D%3D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/e55bd0cbdb214899a3bc41c036451dc6?KeyID=a8968c46&Signature=ONf6GFZ7xvZ%2BuCclqrDFOfQSPtW6ptpRj%2FNoP%2FDKUvUIkRZw%2FrjdxKayY112r9HCoeh6K%2Bym1jRTj1t8zQvwCQ%3D%3D", 
     "title": "Complaint_Attachement.pdf", 
     "hash": "md5:00000000000000000000000000000000", 
     "format": "application/pdf"
@@ -15,17 +15,17 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/c21b3c11169449d684596322700b7c79/awards/9085cb51b74344c0ae6a075286e5fc6a/complaints/257ad3081a6c4fa89ea75496be2e36f1/documents/0f2d8f70e0144e08a3e39885b9741311
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/bd77618b8d904261bcbdeb67bbf0a695/awards/4c1ad94c349345a69f7e118d51660a7c/complaints/81b1c6e4fb1e416d9ed8c9aca0ab08b5/documents/ccf172362f3e4e69853506fcf14d0cb7
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "author": "complaint_owner", 
     "title": "Complaint_Attachement.pdf", 
-    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/430697ce2570408d8c3c536a32a9be37?KeyID=a8968c46&Signature=bFG%252B4neeuHZIhog3A1Kn8%2FakLxrs3gdHti9sA7H1YPR9HDh1xpJho5cDrCxLSfBLmHsEAkig3KdtdhQZhWlUBw%253D%253D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/e55bd0cbdb214899a3bc41c036451dc6?KeyID=a8968c46&Signature=sKar7aqK3NIsXwWy8a4Wgfd2rgrqXOPf7EZolZwKlkRrUuvGM0xBj52UJe0B1mf5kYV%252BFVNg7qU8SkODumFUCA%253D%253D", 
     "format": "application/pdf", 
     "documentOf": "tender", 
     "datePublished": "2019-04-01T01:00:01+03:00", 
-    "id": "0f2d8f70e0144e08a3e39885b9741311", 
+    "id": "ccf172362f3e4e69853506fcf14d0cb7", 
     "dateModified": "2019-04-01T01:00:01+03:00"
   }
 }

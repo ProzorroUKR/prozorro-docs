@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/b7d72feed52443d495445a562a4753fa/qualifications/db65225fe2b04ebf842a22c1156f8211/complaints/179a0214863d4055bacce55d041d4308?acc_token=081920ba14b840889d713f7c12d827d0 HTTP/1.0
+PATCH /api/2.5/tenders/5133e89c95af4bea9a9c805c6e02f950/qualifications/7062a8144cf74f999eff42e04151db9b/complaints/2c1728b7a8854d37a7b701160f6e5564?acc_token=b553ea0077b44067aa4fd52836981c5b HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 145
 Content-Type: application/json
@@ -18,6 +18,8 @@ Content-Type: application/json; charset=UTF-8
     "status": "resolved", 
     "dateDecision": "2019-04-01T01:00:03+03:00", 
     "tendererActionDate": "2019-04-01T01:00:03+03:00", 
+    "transfer_token": "82be09a5c6f935b1cc8a207539cfc82d5df1c5c3ae5a2da3f91c94d282f662a31b684024ce02066a29ce908f3e3a41bdf8196befbd583ed7cdb30596a85f0461", 
+    "title": "Недостатньо інформації", 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
     "author": {
       "contactPoint": {
@@ -39,25 +41,18 @@ Content-Type: application/json; charset=UTF-8
         "locality": "м. Вінниця"
       }
     }, 
-    "title": "Недостатньо інформації", 
-    "id": "179a0214863d4055bacce55d041d4308", 
     "tendererAction": "Умови виправлено", 
-    "dateSubmitted": "2019-04-01T01:00:03+03:00", 
-    "complaintID": "UA-2019-04-01-000001.1", 
-    "date": "2019-04-01T01:00:03+03:00", 
-    "acceptance": true, 
-    "type": "complaint", 
     "documents": [
       {
         "hash": "md5:00000000000000000000000000000000", 
         "author": "complaint_owner", 
         "language": "uk", 
         "title": "Complaint_Attachement.pdf", 
-        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/973415a2fa1843259235eedcc4ce8369?KeyID=a8968c46&Signature=UD%252Bjry4b05xgfeb0V%2F%2FEgAdzPzipMos4DG%252BSeI5HxzkcbD8c2LghAWnWqlryscVZ9ZIY0iHA46ohpqQVmRNcDg%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/84adc90ce6e741a4abe11979ed9381dc?KeyID=a8968c46&Signature=R8wcASyfa0ZGrqMyggygw2yFq9Qot93nxKDktXRSnVwZYBD1VMZ6qU0R7IwkPIDr3yjzapvuaSYmVv1wy705CA%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
         "datePublished": "2019-04-01T01:00:03+03:00", 
-        "id": "ac2e7cc0f53c495aa4fd87a38f05322a", 
+        "id": "239c700e025f4021b61da13c49a045c4", 
         "dateModified": "2019-04-01T01:00:03+03:00"
       }, 
       {
@@ -65,14 +60,20 @@ Content-Type: application/json; charset=UTF-8
         "author": "aboveThresholdReviewers", 
         "language": "uk", 
         "title": "ComplaintResolution.pdf", 
-        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/67691637cc1049b39dd0b70a83a89516?KeyID=a8968c46&Signature=WmU0ubxlvbU1mky8MaQ2CtQ%2FXnzJqpDcWfdQGFc2rzxHfZhS7oVXdm1qSrXfr6raOFoa7pXWDKpFJ9C2bcndAA%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/db1d38af9db14efeb59a072158fd1a98?KeyID=a8968c46&Signature=GvzpLq88iGu%252BP6cdQ0fVzPPj9Azre%2FU%2FSE%2Fa%2F5Gcl84C8StmySn9muHhYNLLXbZOHykakA09Q9qjlLeryF5iCA%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
         "datePublished": "2019-04-01T01:00:03+03:00", 
-        "id": "f27d7ebcab99456aa9810c55596bc2ed", 
+        "id": "d6f9d371e6c0420cb936d6d6359fa5fb", 
         "dateModified": "2019-04-01T01:00:03+03:00"
       }
     ], 
+    "dateSubmitted": "2019-04-01T01:00:03+03:00", 
+    "complaintID": "UA-2019-04-01-000001.1", 
+    "date": "2019-04-01T01:00:03+03:00", 
+    "acceptance": true, 
+    "type": "complaint", 
+    "id": "2c1728b7a8854d37a7b701160f6e5564", 
     "dateAccepted": "2019-04-01T01:00:03+03:00"
   }
 }

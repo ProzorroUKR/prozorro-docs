@@ -1,6 +1,6 @@
-POST /api/2.5/tenders/2fc8039bb7864bfabe6dc2c3ab451b69/bids HTTP/1.0
+POST /api/2.5/tenders/bc3a9016b29d4fed894cc62d3ff59680/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 1377
+Content-Length: 1379
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
@@ -8,13 +8,13 @@ DATA:
   "data": {
     "documents": [
       {
-        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/bedb498035d14457a2ff19f714e66742?KeyID=a8968c46&Signature=ROYWP6tfJHpdZepAkTYPekeNA90ZB%2F6YOxWU5fRn0stnJmJppRNEqZTyTLXnuF1Vxkcv6Avq6rj5B9FWrVdGAA%3D%3D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/9152e77768004ab1ba6b843902ac3f12?KeyID=a8968c46&Signature=3H0tSgzex8XiKB4e4Nh9ZHKW%2F9u4%2F6Cd2UVGNv1u4QxLxVTRzIYWJU7zUv5IpvsR5YDPEpPrjchy6WOtvXYHBQ%3D%3D", 
         "title": "Proposal_part1.pdf", 
         "hash": "md5:00000000000000000000000000000000", 
         "format": "application/pdf"
       }, 
       {
-        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/0cdf947d136649f69f7899ad3a397f35?KeyID=a8968c46&Signature=t4tlxjgotIowcY%2BHYRxz8VmhqoWflMtYcsJZgfytDfo75h2MOP0GAWnGRjXfqhgBd0j7cv%2BGQIA31oM3hGwtCw%3D%3D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/99993315a2cd472f9387941fe22ee6d5?KeyID=a8968c46&Signature=JC61gfgroCheOPgh8ZAwt9xaK3RFgepC%2FJZoBm5B85D4LmmF8%2FPEzhDSakryyJnhFVnlSvMo4f3PwswdPyCgBA%3D%3D", 
         "title": "Proposal_part2.pdf", 
         "hash": "md5:00000000000000000000000000000000", 
         "format": "application/pdf"
@@ -51,11 +51,11 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/2fc8039bb7864bfabe6dc2c3ab451b69/bids/dd2dfd7fc83b40f08daeaeaf947bf53c
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/bc3a9016b29d4fed894cc62d3ff59680/bids/694f980947ff4d0b870d9a18384f23fe
 {
   "access": {
-    "transfer": "abad43963b7f455c873815eb9933fb05", 
-    "token": "22b0178d4eb94ee88ac125059564b32d"
+    "transfer": "8992310021484143abd2c8a8f5e7a13a", 
+    "token": "cfa7d625bdd049c79e3dfa84d8835a53"
   }, 
   "data": {
     "status": "active", 
@@ -63,21 +63,21 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/2fc8039bb7864bfa
       {
         "hash": "md5:00000000000000000000000000000000", 
         "title": "Proposal_part1.pdf", 
-        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/2fc8039bb7864bfabe6dc2c3ab451b69/bids/dd2dfd7fc83b40f08daeaeaf947bf53c/documents/9d2e753fda8242e3b39e80713ce4b01f?download=bedb498035d14457a2ff19f714e66742", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/bc3a9016b29d4fed894cc62d3ff59680/bids/694f980947ff4d0b870d9a18384f23fe/documents/ce114f673cf14b039c1ee9705b07c00b?download=9152e77768004ab1ba6b843902ac3f12", 
         "format": "application/pdf", 
         "documentOf": "tender", 
         "datePublished": "2019-04-01T01:00:01+03:00", 
-        "id": "9d2e753fda8242e3b39e80713ce4b01f", 
+        "id": "ce114f673cf14b039c1ee9705b07c00b", 
         "dateModified": "2019-04-01T01:00:01+03:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
         "title": "Proposal_part2.pdf", 
-        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/2fc8039bb7864bfabe6dc2c3ab451b69/bids/dd2dfd7fc83b40f08daeaeaf947bf53c/documents/7e09f0eb2da8400cbfd4fc9cdf4cc25f?download=0cdf947d136649f69f7899ad3a397f35", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/bc3a9016b29d4fed894cc62d3ff59680/bids/694f980947ff4d0b870d9a18384f23fe/documents/8baccb56ed4a44a18ef4c13ef8a4094b?download=99993315a2cd472f9387941fe22ee6d5", 
         "format": "application/pdf", 
         "documentOf": "tender", 
         "datePublished": "2019-04-01T01:00:01+03:00", 
-        "id": "7e09f0eb2da8400cbfd4fc9cdf4cc25f", 
+        "id": "8baccb56ed4a44a18ef4c13ef8a4094b", 
         "dateModified": "2019-04-01T01:00:01+03:00"
       }
     ], 
@@ -110,7 +110,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/2fc8039bb7864bfa
       }
     ], 
     "date": "2019-04-01T01:00:01+03:00", 
-    "id": "dd2dfd7fc83b40f08daeaeaf947bf53c"
+    "id": "694f980947ff4d0b870d9a18384f23fe"
   }
 }
 
