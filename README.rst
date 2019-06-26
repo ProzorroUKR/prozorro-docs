@@ -38,7 +38,7 @@ or::
 
     cd docs
 
-    make html SPHINXBUILD=../bin/sphinx-build
+    make html SPHINXBUILD=../venv/bin/sphinx-build
 
 Translation
 -----------
@@ -49,7 +49,7 @@ For translation into *uk* (2 letter ISO language code), you have to follow the s
 
     cd docs
 
-    make gettext SPHINXBUILD=../bin/sphinx-build
+    make gettext SPHINXBUILD=../venv/bin/sphinx-build
 
 2. Update translation with new/changed strings::
 
