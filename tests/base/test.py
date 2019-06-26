@@ -11,8 +11,7 @@ from six import text_type
 
 from uuid import UUID
 from hashlib import md5
-from webtest import TestApp, TestRequest, forms
-from openprocurement.api.constants import VERSION
+from webtest import forms
 from webtest.compat import to_bytes
 
 from tests.base.constants import API_HOST, MOCK_DATETIME
@@ -144,7 +143,7 @@ class MockWebTestMixin(object):
     tick_delta = None
 
     whitelist = ('/openprocurement/', '/tests/')
-    blacklist = ('/tests/base/tests.py',)
+    blacklist = ('/tests/base/test.py',)
 
     def setUpMock(self):
         self.uuid_patch = mock.patch('uuid.UUID', side_effect=self.uuid)

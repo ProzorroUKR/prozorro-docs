@@ -1,0 +1,78 @@
+POST /api/2.5/tenders/9fc052c7d8c94d93abebd1c68246f240/bids HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 861
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "value": {
+      "amount": 500
+    }, 
+    "tenderers": [
+      {
+        "contactPoint": {
+          "name": "Державне управління справами", 
+          "telephone": "0440000000"
+        }, 
+        "scale": "micro", 
+        "name": "Державне управління справами", 
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "00037256", 
+          "uri": "http://www.dus.gov.ua/"
+        }, 
+        "address": {
+          "countryName": "Україна", 
+          "postalCode": "01220", 
+          "region": "м. Київ", 
+          "streetAddress": "вул. Банкова, 11, корпус 1", 
+          "locality": "м. Київ"
+        }
+      }
+    ]
+  }
+}
+
+Response: 201 Created
+Content-Type: application/json; charset=UTF-8
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/9fc052c7d8c94d93abebd1c68246f240/bids/b4cdbe31132f4419a9cc29074c9d9712
+{
+  "access": {
+    "transfer": "94974858d5e74115817e5a2962c8fc8e", 
+    "token": "08347fa4b97f434f98026507295cf4af"
+  }, 
+  "data": {
+    "date": "2019-04-01T01:00:01+03:00", 
+    "status": "active", 
+    "id": "b4cdbe31132f4419a9cc29074c9d9712", 
+    "value": {
+      "currency": "UAH", 
+      "amount": 500.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "tenderers": [
+      {
+        "contactPoint": {
+          "name": "Державне управління справами", 
+          "telephone": "0440000000"
+        }, 
+        "scale": "micro", 
+        "name": "Державне управління справами", 
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "00037256", 
+          "uri": "http://www.dus.gov.ua/"
+        }, 
+        "address": {
+          "postalCode": "01220", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова, 11, корпус 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,72 @@
+POST /api/2.5/tenders/9fc052c7d8c94d93abebd1c68246f240/complaints HTTP/1.0
+Authorization: Basic YnJva2VyMjo=
+Content-Length: 899
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "status": "claim", 
+    "title": "complaint title", 
+    "description": "complaint description", 
+    "author": {
+      "contactPoint": {
+        "name": "Державне управління справами", 
+        "telephone": "0440000000"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "00037256", 
+        "uri": "http://www.dus.gov.ua/"
+      }, 
+      "name": "Державне управління справами", 
+      "address": {
+        "countryName": "Україна", 
+        "postalCode": "01220", 
+        "region": "м. Київ", 
+        "streetAddress": "вул. Банкова, 11, корпус 1", 
+        "locality": "м. Київ"
+      }
+    }
+  }
+}
+
+Response: 201 Created
+Content-Type: application/json; charset=UTF-8
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/9fc052c7d8c94d93abebd1c68246f240/complaints/d533dbd0327c4b29983a479a778872d6
+{
+  "access": {
+    "transfer": "37c7cac2473749b5b20fa0beddeb12eb", 
+    "token": "c377d4281e7148b7b8d16763ed1fbc30"
+  }, 
+  "data": {
+    "status": "claim", 
+    "description": "complaint description", 
+    "title": "complaint title", 
+    "author": {
+      "contactPoint": {
+        "name": "Державне управління справами", 
+        "telephone": "0440000000"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "00037256", 
+        "uri": "http://www.dus.gov.ua/"
+      }, 
+      "name": "Державне управління справами", 
+      "address": {
+        "postalCode": "01220", 
+        "countryName": "Україна", 
+        "streetAddress": "вул. Банкова, 11, корпус 1", 
+        "region": "м. Київ", 
+        "locality": "м. Київ"
+      }
+    }, 
+    "dateSubmitted": "2019-04-01T01:00:01+03:00", 
+    "complaintID": "UA-2019-04-01-000001.1", 
+    "date": "2019-04-01T01:00:01+03:00", 
+    "type": "claim", 
+    "id": "d533dbd0327c4b29983a479a778872d6"
+  }
+}
+

@@ -1,0 +1,28 @@
+POST /api/2.5/tenders/9fc052c7d8c94d93abebd1c68246f240/complaints/d533dbd0327c4b29983a479a778872d6/ownership HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 100
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "transfer": "37c7cac2473749b5b20fa0beddeb12eb", 
+    "id": "e910d1255a0a5dcdaabbee9f0f4e0961"
+  }
+}
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "status": "claim", 
+    "description": "complaint description", 
+    "title": "complaint title", 
+    "dateSubmitted": "2019-04-01T01:00:01+03:00", 
+    "complaintID": "UA-2019-04-01-000001.1", 
+    "date": "2019-04-01T01:00:01+03:00", 
+    "type": "claim", 
+    "id": "d533dbd0327c4b29983a479a778872d6"
+  }
+}
+

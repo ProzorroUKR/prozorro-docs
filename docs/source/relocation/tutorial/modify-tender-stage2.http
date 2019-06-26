@@ -1,0 +1,137 @@
+PATCH /api/2.5/tenders/7ad5dd33d7bc4b1086be2712df2537a6?acc_token=96ff7823b41e481ba10abf7a42878ad5 HTTP/1.0
+Authorization: Basic YnJva2VyMzo=
+Content-Length: 68
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "tenderPeriod": {
+      "endDate": "2019-05-01T01:00:00+03:00"
+    }
+  }
+}
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "status": "draft.stage2", 
+    "procurementMethod": "selective", 
+    "dialogueID": "1a074848f9a54241936d3acb276ad6cb", 
+    "awardCriteria": "lowestCost", 
+    "tenderPeriod": {
+      "startDate": "2019-04-01T01:00:00+03:00", 
+      "endDate": "2019-05-01T01:00:00+03:00"
+    }, 
+    "title": "футляри до державних нагород", 
+    "minimalStep": {
+      "currency": "UAH", 
+      "amount": 35.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "enquiryPeriod": {
+      "startDate": "2019-04-01T01:00:00+03:00", 
+      "clarificationsUntil": "2019-04-25T00:00:00+03:00", 
+      "endDate": "2019-04-21T01:00:00+03:00"
+    }, 
+    "complaintPeriod": {
+      "startDate": "2019-04-01T01:00:00+03:00", 
+      "endDate": "2019-04-27T00:00:00+03:00"
+    }, 
+    "procurementMethodType": "competitiveDialogueUA.stage2", 
+    "value": {
+      "currency": "UAH", 
+      "amount": 500.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "submissionMethod": "electronicAuction", 
+    "shortlistedFirms": [
+      {
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "00037257", 
+          "uri": "http://www.dus.gov.ua/"
+        }, 
+        "name": "Test org name 1"
+      }, 
+      {
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "00037257", 
+          "uri": "http://www.dus.gov.ua/"
+        }, 
+        "name": "Test org name 2"
+      }, 
+      {
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "00037257", 
+          "uri": "http://www.dus.gov.ua/"
+        }, 
+        "name": "Test org name 3"
+      }
+    ], 
+    "date": "2019-04-01T01:00:00+03:00", 
+    "procuringEntity": {
+      "contactPoint": {
+        "name": "Державне управління справами", 
+        "telephone": "0440000000"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "00037256", 
+        "uri": "http://www.dus.gov.ua/"
+      }, 
+      "name": "Державне управління справами", 
+      "kind": "general", 
+      "address": {
+        "postalCode": "01220", 
+        "countryName": "Україна", 
+        "streetAddress": "вул. Банкова, 11, корпус 1", 
+        "region": "м. Київ", 
+        "locality": "м. Київ"
+      }
+    }, 
+    "items": [
+      {
+        "description": "футляри до державних нагород", 
+        "classification": {
+          "scheme": "CPV", 
+          "description": "Cartons", 
+          "id": "44617100-9"
+        }, 
+        "description_en": "Cases for state awards", 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "папір і картон гофровані, паперова й картонна тара"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "deliveryDate": {
+          "startDate": "2019-06-28T04:52:26.210959+03:00", 
+          "endDate": "2019-07-01T04:52:26.210959+03:00"
+        }, 
+        "id": "a505130b91d047d88f81d1c60fc39f32", 
+        "unit": {
+          "code": "44617100-9", 
+          "name": "item"
+        }, 
+        "quantity": 5.0
+      }
+    ], 
+    "owner": "broker3", 
+    "dateModified": "2019-04-01T01:00:00+03:00", 
+    "id": "7ad5dd33d7bc4b1086be2712df2537a6", 
+    "tenderID": "UA-2019-04-01-000001"
+  }
+}
+

@@ -1,0 +1,14 @@
+GET /api/2.5/transfers/e910d1255a0a5dcdaabbee9f0f4e18f9 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Host: lb-api-sandbox.prozorro.gov.ua
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "date": "2019-04-01T01:00:01+03:00", 
+    "id": "e910d1255a0a5dcdaabbee9f0f4e18f9", 
+    "usedFor": "/tenders/9fc052c7d8c94d93abebd1c68246f240/awards/9920bc6b368f4954a3e95d6bf0a7bb03/complaints/b6a826c55ad24cfba0dabf11fd3ca299"
+  }
+}
+

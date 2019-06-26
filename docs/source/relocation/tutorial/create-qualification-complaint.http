@@ -1,0 +1,54 @@
+POST /api/2.5/tenders/b4e9b2dd0609413b95193ac1797e5295/qualifications/c26bfa8499324872968f3e5e2b3764e5/complaints?acc_token=a840da130e704bb2826cced23a1998ed HTTP/1.0
+Authorization: Basic YnJva2VyNDo=
+Content-Length: 899
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "status": "claim", 
+    "title": "complaint title", 
+    "description": "complaint description", 
+    "author": {
+      "contactPoint": {
+        "name": "Державне управління справами", 
+        "telephone": "0440000000"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "00037256", 
+        "uri": "http://www.dus.gov.ua/"
+      }, 
+      "name": "Державне управління справами", 
+      "address": {
+        "countryName": "Україна", 
+        "postalCode": "01220", 
+        "region": "м. Київ", 
+        "streetAddress": "вул. Банкова, 11, корпус 1", 
+        "locality": "м. Київ"
+      }
+    }
+  }
+}
+
+Response: 201 Created
+Content-Type: application/json; charset=UTF-8
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/b4e9b2dd0609413b95193ac1797e5295/qualifications/c26bfa8499324872968f3e5e2b3764e5/complaints/56eae2cb739f4224aa1fc5d441e8af89
+{
+  "access": {
+    "transfer": "8b8ecc554eac45fd93abd114f1b014d6", 
+    "token": "58fa5835237845509452ebf520538191"
+  }, 
+  "data": {
+    "status": "claim", 
+    "description": "complaint description", 
+    "title": "complaint title", 
+    "bid_id": "a6cfef7e9dbb428fb7771fcaf0a91930", 
+    "dateSubmitted": "2019-04-01T01:00:03+03:00", 
+    "complaintID": "UA-2019-04-01-000001.1", 
+    "date": "2019-04-01T01:00:03+03:00", 
+    "type": "claim", 
+    "id": "56eae2cb739f4224aa1fc5d441e8af89"
+  }
+}
+

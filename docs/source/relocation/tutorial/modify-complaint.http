@@ -1,0 +1,30 @@
+PATCH /api/2.5/tenders/9fc052c7d8c94d93abebd1c68246f240/complaints/d533dbd0327c4b29983a479a778872d6?acc_token=4bc49849ef09435ab3e61eccfb1115af HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 75
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "status": "cancelled", 
+    "cancellationReason": "Important reason"
+  }
+}
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "status": "cancelled", 
+    "description": "complaint description", 
+    "title": "complaint title", 
+    "cancellationReason": "Important reason", 
+    "dateCanceled": "2019-04-01T01:00:01+03:00", 
+    "dateSubmitted": "2019-04-01T01:00:01+03:00", 
+    "complaintID": "UA-2019-04-01-000001.1", 
+    "date": "2019-04-01T01:00:01+03:00", 
+    "type": "claim", 
+    "id": "d533dbd0327c4b29983a479a778872d6"
+  }
+}
+

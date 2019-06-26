@@ -1,0 +1,72 @@
+POST /api/2.5/tenders/9fc052c7d8c94d93abebd1c68246f240/awards/9920bc6b368f4954a3e95d6bf0a7bb03/complaints?acc_token=5ad79ef551e14d918fe4c31304b063c8 HTTP/1.0
+Authorization: Basic YnJva2VyMjo=
+Content-Length: 899
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "status": "claim", 
+    "title": "complaint title", 
+    "description": "complaint description", 
+    "author": {
+      "contactPoint": {
+        "name": "Державне управління справами", 
+        "telephone": "0440000000"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "00037256", 
+        "uri": "http://www.dus.gov.ua/"
+      }, 
+      "name": "Державне управління справами", 
+      "address": {
+        "countryName": "Україна", 
+        "postalCode": "01220", 
+        "region": "м. Київ", 
+        "streetAddress": "вул. Банкова, 11, корпус 1", 
+        "locality": "м. Київ"
+      }
+    }
+  }
+}
+
+Response: 201 Created
+Content-Type: application/json; charset=UTF-8
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/9fc052c7d8c94d93abebd1c68246f240/awards/9920bc6b368f4954a3e95d6bf0a7bb03/complaints/b6a826c55ad24cfba0dabf11fd3ca299
+{
+  "access": {
+    "transfer": "cb244977786743a1821349b07e72e80a", 
+    "token": "4e16fd28d9df452a8ac16910ed1ed8f9"
+  }, 
+  "data": {
+    "status": "claim", 
+    "description": "complaint description", 
+    "title": "complaint title", 
+    "author": {
+      "contactPoint": {
+        "name": "Державне управління справами", 
+        "telephone": "0440000000"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "00037256", 
+        "uri": "http://www.dus.gov.ua/"
+      }, 
+      "name": "Державне управління справами", 
+      "address": {
+        "postalCode": "01220", 
+        "countryName": "Україна", 
+        "streetAddress": "вул. Банкова, 11, корпус 1", 
+        "region": "м. Київ", 
+        "locality": "м. Київ"
+      }
+    }, 
+    "dateSubmitted": "2019-04-01T01:00:01+03:00", 
+    "complaintID": "UA-2019-04-01-000001.2", 
+    "date": "2019-04-01T01:00:01+03:00", 
+    "type": "claim", 
+    "id": "b6a826c55ad24cfba0dabf11fd3ca299"
+  }
+}
+
