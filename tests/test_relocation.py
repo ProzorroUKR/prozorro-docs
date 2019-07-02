@@ -3,22 +3,24 @@ import os
 
 from copy import deepcopy
 from datetime import timedelta
+from uuid import uuid4
+from hashlib import sha512
 
 from openprocurement.tender.belowthreshold.tests.base import (
     test_tender_data,
     test_organization,
     test_author)
 from openprocurement.relocation.api.tests.base import (
-    OwnershipWebTest, test_transfer_data, OpenEUOwnershipWebTest, test_ua_bid_data
-)
+    OwnershipWebTest,
+    OpenEUOwnershipWebTest,
+    test_ua_bid_data)
 from openprocurement.tender.openeu.constants import TENDERING_DAYS
 from openprocurement.tender.openeu.tests.base import test_tender_data as test_eu_tender_data
-from openprocurement.contracting.api.tests.base import test_contract_data, test_tender_token
+from openprocurement.contracting.api.tests.base import test_contract_data
 from openprocurement.tender.competitivedialogue.tests.base import (
     BaseCompetitiveDialogWebTest,
     test_tender_stage2_data_ua,
-    test_access_token_stage1
-)
+    test_access_token_stage1)
 from openprocurement.tender.openeu.models import TENDERING_DURATION
 from openprocurement.api.models import get_now
 
@@ -231,8 +233,14 @@ class TransferDocsTest(OwnershipWebTest, MockWebTestMixin):
         # Contracting transfer #
         ########################
 
+        test_tender_token = uuid4().hex
         data = deepcopy(test_contract_data)
-        data["dateSigned"] = get_now().isoformat()
+        data.update({
+            u"dateSigned": get_now().isoformat(),
+            u"id": uuid4().hex,
+            u"tender_id": uuid4().hex,
+            u"tender_token": sha512(test_tender_token).hexdigest()
+        })
         tender_token = data['tender_token']
         self.app.authorization = ('Basic', ('contracting', ''))
 
@@ -253,7 +261,7 @@ class TransferDocsTest(OwnershipWebTest, MockWebTestMixin):
 
         self.app.authorization = ('Basic', ('broker3', ''))
         with open('docs/source/relocation/tutorial/create-contract-transfer.http', 'w') as self.app.file_obj:
-            response = self.app.post_json('/transfers', {"data": test_transfer_data})
+            response = self.app.post_json('/transfers', {"data": {}})
             self.assertEqual(response.status, '201 Created')
             transfer = response.json['data']
             self.assertIn('date', transfer)
@@ -395,7 +403,7 @@ class EuTransferDocsTest(OpenEUOwnershipWebTest, MockWebTestMixin):
         # broker4 create Transfer
         self.app.authorization = ('Basic', ('broker4', ''))
         with open('docs/source/relocation/tutorial/create-qualification-complaint-transfer.http', 'w') as self.app.file_obj:
-            response = self.app.post_json('/transfers', {"data": test_transfer_data})
+            response = self.app.post_json('/transfers', {"data": {}})
             self.assertEqual(response.status, '201 Created')
             transfer = response.json['data']
             self.assertIn('date', transfer)
@@ -432,9 +440,11 @@ class CompetitiveDialogueStage2TransferDocsTest(BaseCompetitiveDialogWebTest, Mo
         now = get_now()
         data = deepcopy(test_tender_stage2_data_ua)
         data['items'][0].update({"deliveryDate": {
-             "startDate": (now + timedelta(days=2)).isoformat(),
-             "endDate": (now + timedelta(days=5)).isoformat()}})
-        data.update({"tenderPeriod": {"endDate": (now + timedelta(days=TENDERING_DAYS + 1)).isoformat()}})
+            "startDate": (now + timedelta(days=2)).isoformat(),
+            "endDate": (now + timedelta(days=5)).isoformat()}})
+        data.update({
+            "tenderPeriod": {"endDate": (now + timedelta(days=TENDERING_DAYS + 1)).isoformat()},
+            "dialogueID": uuid4().hex})
         response = self.app.post_json('/tenders?opt_pretty=1', {"data": data})
         self.assertEqual(response.status, '201 Created')
         self.tender_id = response.json['data']['id']
@@ -453,7 +463,7 @@ class CompetitiveDialogueStage2TransferDocsTest(BaseCompetitiveDialogWebTest, Mo
         # change tender owner
         self.app.authorization = ('Basic', ('broker3', ''))
         with open('docs/source/relocation/tutorial/create-transfer-stage2.http', 'w') as self.app.file_obj:
-            response = self.app.post_json('/transfers', {"data": test_transfer_data})
+            response = self.app.post_json('/transfers', {"data": {}})
             self.assertEqual(response.status, '201 Created')
             transfer = response.json['data']
             self.assertIn('date', transfer)
