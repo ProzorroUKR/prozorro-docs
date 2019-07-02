@@ -12,6 +12,7 @@ addons:
   hosts:
    - couchdb
 before_install:
+  - export BRANCH=${TRAVIS_PULL_REQUEST_BRANCH:-$TRAVIS_BRANCH}
   - ./bootstrap.sh
 before_script:
   - sudo apt-get -qq update
