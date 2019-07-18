@@ -23,5 +23,8 @@ Constraints
 Claims and Complaits
 ~~~~~~~~~~~~~~~~~~~~
 
-  - Award complaint period is 2 working days.
+ - Claims can be submitted only if there are more than 3 days left
+   in tenderPeriod.
 
+ - Complaints can be submitted only if there are 2 or more days left in
+   tenderPeriod.

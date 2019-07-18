@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.tender.openua 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-18 15:52+0300\n"
+"POT-Creation-Date: 2019-07-18 17:08+0300\n"
 "PO-Revision-Date: 2016-01-27 14:57+0200\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
 "Language-Team: Ukrainian <info@quintagroup.com>\n"
@@ -43,17 +43,20 @@ msgstr ""
 #: ../../source/openua/tendering.rst:20
 msgid ""
 "If tender conditions are modified with less than 7 days left to "
-"`tenderPeriod.endDate`, it has to be extended to meet the constraint."
-msgstr ""
-"Якщо умови закупівлі змінюються менше ніж за 7 днів до завершення періоду"
-" подання пропозицій `tenderPeriod.endDate`, цей період треба продовжити "
-"на 7 днів."
+"`tenderPeriod.endDate`, this period should be extended so that from the "
+"moment of the change in the tender documentation until "
+"`tenderPeriod.endDate` has remained at least 7 days."
+msgstr "Якщо умови закупівлі змінюються менше ніж за 7 днів до "
+"завершення періоду подання пропозицій, цей період треба продовжити "
+"таким чином, щоб з моменту внесення змін до тендерної документації до "
+"закінчення строку подання тендерних пропозицій залишалося не менше "
+"ніж 7 днів."
 
-#: ../../source/openua/tendering.rst:24
+#: ../../source/openua/tendering.rst:26
 msgid "Claims and Complaits"
 msgstr "Вимоги та скарги"
 
-#: ../../source/openua/tendering.rst:26
+#: ../../source/openua/tendering.rst:28
 msgid ""
 "Claims can be submitted only if there are more than 10 days left in "
 "tenderPeriod."
@@ -61,11 +64,10 @@ msgstr ""
 "Вимоги можна подавати не пізніше ніж за 10 днів до завершення періоду "
 "подання пропозицій."
 
-#: ../../source/openua/tendering.rst:29
+#: ../../source/openua/tendering.rst:31
 msgid ""
 "Complaints can be submitted only if there are 4 or more days left in "
 "tenderPeriod."
 msgstr ""
 "Скарги можна подавати не пізніше ніж за 4 дні до завершення періоду "
 "подання пропозицій."
-
