@@ -6,6 +6,16 @@ Response: 200 OK
 Content-Type: application/json; charset=UTF-8
 {
   "data": {
+    "buyers": [
+      {
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "111983", 
+          "legalName": "ДП Державне Управління Справами"
+        }, 
+        "name": "ДУС"
+      }
+    ], 
     "classification": {
       "scheme": "ДК021", 
       "description": "Seeds", 

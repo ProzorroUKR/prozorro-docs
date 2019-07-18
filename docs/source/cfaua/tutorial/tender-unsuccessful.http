@@ -12,6 +12,7 @@ Content-Type: application/json; charset=UTF-8
       "startDate": "2019-03-22T01:00:00+03:00", 
       "endDate": "2019-04-01T01:00:00+03:00"
     }, 
+    "mainProcurementCategory": "goods", 
     "complaintPeriod": {
       "startDate": "2019-02-08T01:00:00+03:00", 
       "endDate": "2019-03-07T00:00:00+02:00"
@@ -24,30 +25,7 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "submissionMethod": "electronicAuction", 
     "procurementMethodType": "closeFrameworkAgreementUA", 
-    "procuringEntity": {
-      "kind": "general", 
-      "name": "Державне управління справами", 
-      "address": {
-        "postalCode": "01220", 
-        "countryName": "Україна", 
-        "streetAddress": "вул. Банкова, 11, корпус 1", 
-        "region": "м. Київ", 
-        "locality": "м. Київ"
-      }, 
-      "contactPoint": {
-        "name_en": "State administration", 
-        "name": "Державне управління справами", 
-        "availableLanguage": "uk", 
-        "telephone": "0440000000"
-      }, 
-      "identifier": {
-        "scheme": "UA-EDR", 
-        "legalName_en": "dus.gov.ua", 
-        "id": "00037256", 
-        "uri": "http://www.dus.gov.ua/"
-      }, 
-      "name_en": "State administration"
-    }, 
+    "awardCriteria": "lowestCost", 
     "questions": [
       {
         "description": "Просимо додати таблицю потрібної калорійності харчування", 
@@ -158,16 +136,6 @@ Content-Type: application/json; charset=UTF-8
       "endDate": "2019-03-21T01:00:00+03:00"
     }, 
     "maxAwardsCount": 4, 
-    "tenderID": "UA-2019-04-01-000001", 
-    "auctionPeriod": {
-      "startDate": "2019-03-21T01:00:00+03:00", 
-      "endDate": "2019-03-22T01:00:00+03:00"
-    }, 
-    "guarantee": {
-      "currency": "USD", 
-      "amount": 8
-    }, 
-    "dateModified": "2019-04-01T01:00:01+03:00", 
     "agreements": [
       {
         "agreementID": "UA-2019-04-01-000001-796f3c11d16541829b11d2e26affeaab1", 
@@ -422,6 +390,16 @@ Content-Type: application/json; charset=UTF-8
         "id": "9c9b9267b5f045c5898d6d4ae2ba3855"
       }
     ], 
+    "auctionPeriod": {
+      "startDate": "2019-03-21T01:00:00+03:00", 
+      "endDate": "2019-03-22T01:00:00+03:00"
+    }, 
+    "guarantee": {
+      "currency": "USD", 
+      "amount": 8
+    }, 
+    "dateModified": "2019-04-01T01:00:01+03:00", 
+    "tenderID": "UA-2019-04-01-000001", 
     "numberOfBids": 0, 
     "tenderPeriod": {
       "startDate": "2019-02-08T01:00:00+03:00", 
@@ -739,6 +717,20 @@ Content-Type: application/json; charset=UTF-8
       }
     ], 
     "date": "2019-04-01T01:00:01+03:00", 
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 100.0, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    ], 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35, 
@@ -819,7 +811,30 @@ Content-Type: application/json; charset=UTF-8
       "amount": 500.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "awardCriteria": "lowestCost"
+    "procuringEntity": {
+      "kind": "general", 
+      "name": "Державне управління справами", 
+      "address": {
+        "postalCode": "01220", 
+        "countryName": "Україна", 
+        "streetAddress": "вул. Банкова, 11, корпус 1", 
+        "region": "м. Київ", 
+        "locality": "м. Київ"
+      }, 
+      "contactPoint": {
+        "name_en": "State administration", 
+        "name": "Державне управління справами", 
+        "availableLanguage": "uk", 
+        "telephone": "0440000000"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "legalName_en": "dus.gov.ua", 
+        "id": "00037256", 
+        "uri": "http://www.dus.gov.ua/"
+      }, 
+      "name_en": "State administration"
+    }
   }
 }
 

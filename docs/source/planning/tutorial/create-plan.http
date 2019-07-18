@@ -1,11 +1,21 @@
 POST /api/2.5/plans?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 2532
+Content-Length: 2816
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
+    "buyers": [
+      {
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "111983", 
+          "legalName": "ДП Державне Управління Справами"
+        }, 
+        "name": "ДУС"
+      }
+    ], 
     "classification": {
       "scheme": "ДК021", 
       "description": "Seeds", 
@@ -130,6 +140,16 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/plans/19dbbba6144046119c
     "token": "a60c40c906c949bd880081f30636d262"
   }, 
   "data": {
+    "buyers": [
+      {
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "111983", 
+          "legalName": "ДП Державне Управління Справами"
+        }, 
+        "name": "ДУС"
+      }
+    ], 
     "classification": {
       "scheme": "ДК021", 
       "description": "Seeds", 

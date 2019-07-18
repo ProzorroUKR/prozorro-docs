@@ -31,6 +31,7 @@ Content-Type: application/json; charset=UTF-8
       }
     ], 
     "procurementMethod": "open", 
+    "mainProcurementCategory": "goods", 
     "auctionUrl": "http://auction-sandbox.prozorro.gov.ua/tenders/2fc8039bb7864bfabe6dc2c3ab451b69", 
     "enquiryPeriod": {
       "startDate": "2019-03-18T01:00:01+03:00", 
@@ -126,6 +127,32 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "procurementMethodType": "belowThreshold", 
     "date": "2019-04-01T01:00:00+03:00", 
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 45.55, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }, 
+      {
+        "code": "postpayment", 
+        "sequenceNumber": 0, 
+        "title": "deliveryOfGoods", 
+        "duration": {
+          "type": "calendar", 
+          "days": 900
+        }, 
+        "percentage": 54.45, 
+        "type": "financing", 
+        "id": "7ea97dff6e40474a8d7b07bf27af9983"
+      }
+    ], 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35.0, 

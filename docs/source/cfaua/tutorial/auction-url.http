@@ -8,6 +8,7 @@ Content-Type: application/json; charset=UTF-8
   "data": {
     "procurementMethod": "open", 
     "status": "active.auction", 
+    "mainProcurementCategory": "goods", 
     "complaintPeriod": {
       "startDate": "2019-02-19T01:00:00+03:00", 
       "endDate": "2019-03-18T00:00:00+02:00"
@@ -185,6 +186,20 @@ Content-Type: application/json; charset=UTF-8
     "agreementDuration": "P3Y3M3D", 
     "date": "2019-04-01T01:00:00+03:00", 
     "procurementMethodType": "closeFrameworkAgreementUA", 
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 100.0, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    ], 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35, 

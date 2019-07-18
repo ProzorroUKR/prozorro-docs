@@ -12,6 +12,7 @@ Content-Type: application/json; charset=UTF-8
       "startDate": "2019-03-16T01:00:00+03:00", 
       "endDate": "2019-03-26T01:00:00+03:00"
     }, 
+    "mainProcurementCategory": "goods", 
     "complaintPeriod": {
       "startDate": "2019-02-02T01:00:00+03:00", 
       "endDate": "2019-03-01T00:00:00+02:00"
@@ -48,35 +49,6 @@ Content-Type: application/json; charset=UTF-8
       "name_en": "State administration"
     }, 
     "owner": "broker", 
-    "qualifications": [
-      {
-        "status": "active", 
-        "lotID": "cb69eb42737442d0a8d9339fdd88e1a2", 
-        "eligible": true, 
-        "qualified": true, 
-        "bidID": "b910550c7cfb4c77a4206bc0771466c7", 
-        "date": "2019-03-05T01:00:00+03:00", 
-        "id": "4d26b8362c9f4111a79461c07bfc7fa8"
-      }, 
-      {
-        "status": "active", 
-        "lotID": "cb69eb42737442d0a8d9339fdd88e1a2", 
-        "eligible": true, 
-        "qualified": true, 
-        "bidID": "3c17bfb7c436420f9a31ef48801bba02", 
-        "date": "2019-03-05T01:00:00+03:00", 
-        "id": "2a91d462f6f54a75a4c886f394320a7b"
-      }, 
-      {
-        "status": "active", 
-        "lotID": "cb69eb42737442d0a8d9339fdd88e1a2", 
-        "eligible": true, 
-        "qualified": true, 
-        "bidID": "43815aacd1dd458e8b139de1243d8e28", 
-        "date": "2019-03-05T01:00:00+03:00", 
-        "id": "718fb15571e6492eab52a46dbb652d31"
-      }
-    ], 
     "id": "263f348886e44321b39bd072cbd50225", 
     "contractPeriod": {
       "startDate": "2019-03-26T01:00:00+03:00", 
@@ -112,8 +84,6 @@ Content-Type: application/json; charset=UTF-8
       "endDate": "2019-03-15T01:00:00+03:00"
     }, 
     "maxAwardsCount": 4, 
-    "tenderID": "UA-2019-04-01-000001", 
-    "dateModified": "2019-04-01T01:00:00+03:00", 
     "agreements": [
       {
         "agreementID": "UA-2019-04-01-000001-e45a5748dc23439aa5180176c1c265871", 
@@ -286,15 +256,46 @@ Content-Type: application/json; charset=UTF-8
         "id": "5288ba4e6b2548228693339fe56536b8"
       }
     ], 
+    "auctionPeriod": {
+      "startDate": "2019-03-15T01:00:00+03:00", 
+      "endDate": "2019-03-16T01:00:00+03:00"
+    }, 
+    "dateModified": "2019-04-01T01:00:00+03:00", 
+    "tenderID": "UA-2019-04-01-000001", 
     "numberOfBids": 3, 
     "tenderPeriod": {
       "startDate": "2019-02-02T01:00:00+03:00", 
       "endDate": "2019-03-05T01:00:00+03:00"
     }, 
-    "auctionPeriod": {
-      "startDate": "2019-03-15T01:00:00+03:00", 
-      "endDate": "2019-03-16T01:00:00+03:00"
-    }, 
+    "qualifications": [
+      {
+        "status": "active", 
+        "lotID": "cb69eb42737442d0a8d9339fdd88e1a2", 
+        "eligible": true, 
+        "qualified": true, 
+        "bidID": "b910550c7cfb4c77a4206bc0771466c7", 
+        "date": "2019-03-05T01:00:00+03:00", 
+        "id": "4d26b8362c9f4111a79461c07bfc7fa8"
+      }, 
+      {
+        "status": "active", 
+        "lotID": "cb69eb42737442d0a8d9339fdd88e1a2", 
+        "eligible": true, 
+        "qualified": true, 
+        "bidID": "3c17bfb7c436420f9a31ef48801bba02", 
+        "date": "2019-03-05T01:00:00+03:00", 
+        "id": "2a91d462f6f54a75a4c886f394320a7b"
+      }, 
+      {
+        "status": "active", 
+        "lotID": "cb69eb42737442d0a8d9339fdd88e1a2", 
+        "eligible": true, 
+        "qualified": true, 
+        "bidID": "43815aacd1dd458e8b139de1243d8e28", 
+        "date": "2019-03-05T01:00:00+03:00", 
+        "id": "718fb15571e6492eab52a46dbb652d31"
+      }
+    ], 
     "title_en": "Cases for state awards", 
     "agreementDuration": "P3Y3M3D", 
     "awards": [
@@ -423,6 +424,20 @@ Content-Type: application/json; charset=UTF-8
       }
     ], 
     "date": "2019-04-01T01:00:00+03:00", 
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 100.0, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    ], 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35, 

@@ -15,10 +15,12 @@ Constraints
 
  - `tenderPeriod` cannot be shorter than 15 days.
 
- - `enquiryPeriod` always ends 3 days before tenderPeriod ends.
+ - `enquiryPeriod` always ends 10 days before tenderPeriod ends.
 
  - If tender conditions are modified with less than 7 days left to
-   `tenderPeriod.endDate`, it has to be extended to meet the constraint.
+   `tenderPeriod.endDate`, this period should be extended so that
+   from the moment of the change in the tender documentation until
+   `tenderPeriod.endDate` has remained at least 7 days.
 
 Claims and Complaits
 ~~~~~~~~~~~~~~~~~~~~

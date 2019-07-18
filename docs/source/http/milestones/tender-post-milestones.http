@@ -1,6 +1,6 @@
 POST /api/2.5/tenders HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 2694
+Content-Length: 2730
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
@@ -30,6 +30,7 @@ DATA:
         "type": "financing"
       }
     ], 
+    "mainProcurementCategory": "goods", 
     "tenderPeriod": {
       "endDate": "2019-04-15T01:00:00+03:00"
     }, 
@@ -138,7 +139,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/62ebb2e01205479c
         "id": "1a4c7330c71f4a9ca86b41066614bb51"
       }
     ], 
-    "awardCriteria": "lowestCost", 
+    "mainProcurementCategory": "goods", 
     "tenderPeriod": {
       "startDate": "2019-04-08T01:00:00+03:00", 
       "endDate": "2019-04-15T01:00:00+03:00"
@@ -212,6 +213,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/62ebb2e01205479c
         "locality": "м. Київ"
       }
     }, 
+    "awardCriteria": "lowestCost", 
     "enquiryPeriod": {
       "startDate": "2019-04-01T01:00:00+03:00", 
       "endDate": "2019-04-08T01:00:00+03:00"
