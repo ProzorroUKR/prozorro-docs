@@ -12,6 +12,7 @@ Content-Type: application/json; charset=UTF-8
       "startDate": "2019-03-22T01:00:00+03:00", 
       "endDate": "2019-03-22T01:00:00+03:00"
     }, 
+    "mainProcurementCategory": "goods", 
     "enquiryPeriod": {
       "startDate": "2019-03-07T01:00:00+03:00", 
       "endDate": "2019-03-14T01:00:00+03:00"
@@ -196,6 +197,32 @@ Content-Type: application/json; charset=UTF-8
       }
     ], 
     "date": "2019-04-01T01:00:01+03:00", 
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 45.55, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }, 
+      {
+        "code": "postpayment", 
+        "sequenceNumber": 0, 
+        "title": "deliveryOfGoods", 
+        "duration": {
+          "type": "calendar", 
+          "days": 900
+        }, 
+        "percentage": 54.45, 
+        "type": "financing", 
+        "id": "16c8ac4ebfa24e858c9bb993afdf6c03"
+      }
+    ], 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35.0, 

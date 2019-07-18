@@ -1,11 +1,26 @@
 POST /api/2.5/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 4155
+Content-Length: 4409
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 100, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    ], 
+    "mainProcurementCategory": "goods", 
     "tenderPeriod": {
       "endDate": "2019-05-02T01:00:00+03:00"
     }, 
@@ -83,7 +98,7 @@ DATA:
         "quantity": 5
       }
     ], 
-    "title_en": "Cases for state awards", 
+    "procurementMethodType": "closeFrameworkAgreementUA", 
     "agreementDuration": "P3Y3M3D", 
     "value": {
       "currency": "UAH", 
@@ -108,7 +123,6 @@ DATA:
       }
     ], 
     "maxAwardsCount": 4, 
-    "procurementMethodType": "closeFrameworkAgreementUA", 
     "procuringEntity": {
       "kind": "general", 
       "name": "Державне управління справами", 
@@ -131,7 +145,8 @@ DATA:
         "name": "Державне управління справами", 
         "telephone": "0440000000"
       }
-    }
+    }, 
+    "title_en": "Cases for state awards"
   }
 }
 
@@ -144,6 +159,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/eeda351577cb4758
   }, 
   "data": {
     "procurementMethod": "open", 
+    "mainProcurementCategory": "goods", 
     "complaintPeriod": {
       "startDate": "2019-04-01T01:00:00+03:00", 
       "endDate": "2019-04-28T00:00:00+03:00"
@@ -216,6 +232,20 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/eeda351577cb4758
     "procurementMethodType": "closeFrameworkAgreementUA", 
     "agreementDuration": "P3Y3M3D", 
     "date": "2019-04-01T01:00:00+03:00", 
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 100.0, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    ], 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35, 
