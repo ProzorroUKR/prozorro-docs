@@ -91,6 +91,7 @@ Additionally in :ref:`openeu`:
     * `sme`
     * `large`
     * `mid`
+    * `not specified`
 
 
 .. index:: Company, id
