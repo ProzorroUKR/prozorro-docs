@@ -1,0 +1,23 @@
+POST /api/2.5/transfers HTTP/1.0
+Authorization: Basic YnJva2VyMTo=
+Content-Length: 12
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {}
+}
+
+Response: 201 Created
+Content-Type: application/json; charset=UTF-8
+{
+  "access": {
+    "transfer": "6bd39a87d9ee4f4c95079d92accc9a0c", 
+    "token": "0f5df593e06c412a900d06c6540abce5"
+  }, 
+  "data": {
+    "date": "2019-04-01T01:00:00+03:00", 
+    "id": "e38e1f0bf67542548a79cd491990e080"
+  }
+}
+

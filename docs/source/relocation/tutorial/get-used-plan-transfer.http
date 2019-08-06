@@ -1,0 +1,14 @@
+GET /api/2.5/transfers/e38e1f0bf67542548a79cd491990e080 HTTP/1.0
+Authorization: Basic YnJva2VyMTo=
+Host: lb-api-sandbox.prozorro.gov.ua
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "date": "2019-04-01T01:00:00+03:00", 
+    "id": "e38e1f0bf67542548a79cd491990e080", 
+    "usedFor": "/plans/f0b2403cba3040acaaf3d6d45dc953be"
+  }
+}
+

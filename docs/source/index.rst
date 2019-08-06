@@ -19,6 +19,7 @@ Contents:
    medicines-registry/index
    agreementcfaua/index
    contracting/index
+   relocation/index
    dates
    performance
    cluster
