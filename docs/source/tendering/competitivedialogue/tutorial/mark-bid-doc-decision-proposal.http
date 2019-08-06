@@ -1,0 +1,30 @@
+PATCH /api/2.5/tenders/35f93e8dd5484abb8b90687952c82010/bids/9161500fb17744ce90346052ddf8479c/documents/00f32ca50b094277b327d8260178bd99?acc_token=e35a7d4470cc4f5e96ee298f582e5828 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 41
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "isDescriptionDecision": true
+  }
+}
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "hash": "md5:00000000000000000000000000000000", 
+    "confidentiality": "public", 
+    "language": "uk", 
+    "title": "DescriptiveProposal.pdf", 
+    "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/35f93e8dd5484abb8b90687952c82010/bids/9161500fb17744ce90346052ddf8479c/documents/00f32ca50b094277b327d8260178bd99?download=1091151c873d47cabfa752199b84a7ee", 
+    "format": "application/pdf", 
+    "isDescriptionDecision": true, 
+    "documentOf": "tender", 
+    "datePublished": "2019-04-01T01:00:00+03:00", 
+    "id": "00f32ca50b094277b327d8260178bd99", 
+    "dateModified": "2019-04-01T01:00:00+03:00"
+  }
+}
+

@@ -1,0 +1,67 @@
+GET /api/2.5/tenders/e234fb168a9a4eae96cf2776aac2c690/awards/f3d8f89b9552466cb3f84cae3e0deb5a/complaints/b7e603d352b84065ac337d4ed5348b8e HTTP/1.0
+Host: lb-api-sandbox.prozorro.gov.ua
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "status": "satisfied", 
+    "dateDecision": "2019-04-01T01:00:03+03:00", 
+    "documents": [
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "author": "complaint_owner", 
+        "language": "uk", 
+        "title": "Complaint_Attachement.pdf", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/3d27a490aa5c43fea1629d2e49eeb9d4?KeyID=a8968c46&Signature=5WxrVJO29EexjbE5xbY0KQ%2FNe%2FNe5ocjqgdLHnnfhlNQ0hTFTYSF%2Fh2Uys37CB47A%252B21HMm9WTSJaV7sqrFpDQ%253D%253D", 
+        "format": "application/pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2019-04-01T01:00:03+03:00", 
+        "id": "bd4be7fbbbdf405899375929a0e50b28", 
+        "dateModified": "2019-04-01T01:00:03+03:00"
+      }, 
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "author": "aboveThresholdReviewers", 
+        "language": "uk", 
+        "title": "ComplaintResolution.pdf", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/bfcda5c06c7f43398c322691a52db2d2?KeyID=a8968c46&Signature=ADPSinEj7k%252BNmTqe8ixJz%2FOY%252BsmI5mjFQ8wIclR4EoPM%2F9HDIbg9Et2%2Flt92d9iOfD2bpTqUNmJzR2wXyxthCw%253D%253D", 
+        "format": "application/pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2019-04-01T01:00:03+03:00", 
+        "id": "c57fb86fa532499d99eda9ab3db017ac", 
+        "dateModified": "2019-04-01T01:00:03+03:00"
+      }
+    ], 
+    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+    "author": {
+      "contactPoint": {
+        "email": "soleksuk@gmail.com", 
+        "telephone": "+380 (432) 21-69-30", 
+        "name": "Сергій Олексюк"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "00137256", 
+        "uri": "http://www.sc.gov.ua/"
+      }, 
+      "name": "ДКП «Школяр»", 
+      "address": {
+        "postalCode": "21100", 
+        "countryName": "Україна", 
+        "streetAddress": "вул. Островського, 33", 
+        "region": "м. Вінниця", 
+        "locality": "м. Вінниця"
+      }
+    }, 
+    "acceptance": true, 
+    "dateAccepted": "2019-04-01T01:00:03+03:00", 
+    "dateSubmitted": "2019-04-01T01:00:03+03:00", 
+    "complaintID": "UA-2019-04-01-000001.1", 
+    "date": "2019-04-01T01:00:03+03:00", 
+    "title": "Недостатньо інформації", 
+    "type": "complaint", 
+    "id": "b7e603d352b84065ac337d4ed5348b8e"
+  }
+}
+

@@ -1,0 +1,166 @@
+PATCH /api/2.5/tenders/7898ec9992af47ccbc9b8bf1b8539660?acc_token=2b27a9c765904007a9910ceb41888d93 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 113
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "tenderPeriod": {
+      "endDate": "2019-04-09T01:00:00+03:00"
+    }, 
+    "value": {
+      "currency": "UAH", 
+      "amount": 501
+    }
+  }
+}
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "procurementMethod": "open", 
+    "complaintPeriod": {
+      "startDate": "2019-03-19T01:00:00+03:00", 
+      "endDate": "2019-04-05T00:00:00+03:00"
+    }, 
+    "enquiryPeriod": {
+      "startDate": "2019-03-19T01:00:00+03:00", 
+      "clarificationsUntil": "2019-04-04T00:00:00+03:00", 
+      "endDate": "2019-03-30T01:00:00+03:00", 
+      "invalidationDate": "2019-04-01T01:00:00+03:00"
+    }, 
+    "submissionMethod": "electronicAuction", 
+    "next_check": "2019-04-09T01:00:00+03:00", 
+    "procuringEntity": {
+      "contactPoint": {
+        "url": "http://sch10.edu.vn.ua/", 
+        "name": "Куца Світлана Валентинівна", 
+        "telephone": "+380 (432) 46-53-02"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "21725150", 
+        "legalName": "Заклад \"Загальноосвітня школа І-ІІІ ступенів № 10 Вінницької міської ради\""
+      }, 
+      "name": "ЗОСШ #10 м.Вінниці", 
+      "kind": "special", 
+      "address": {
+        "postalCode": "21027", 
+        "countryName": "Україна", 
+        "streetAddress": "вул. Стахурського. 22", 
+        "region": "м. Вінниця", 
+        "locality": "м. Вінниця"
+      }
+    }, 
+    "questions": [
+      {
+        "description": "Просимо додати таблицю потрібної калорійності харчування", 
+        "dateAnswered": "2019-04-01T01:00:00+03:00", 
+        "title": "Калорійність", 
+        "date": "2019-04-01T01:00:00+03:00", 
+        "answer": "Таблицю додано в файлі \"Kalorijnist.xslx\"", 
+        "id": "65f9591952ca461c89bdf888ef0d7f44", 
+        "questionOf": "tender"
+      }
+    ], 
+    "owner": "broker", 
+    "id": "7898ec9992af47ccbc9b8bf1b8539660", 
+    "guarantee": {
+      "currency": "USD", 
+      "amount": 8.0
+    }, 
+    "documents": [
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "author": "tender_owner", 
+        "title": "Notice.pdf", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/ce6d30cb20c740859202bd18be97d374?KeyID=a8968c46&Signature=fzw4hXYdBeKIaRhsZEQbbWTQ9QwgPDSnjovT4jWvgi9AGWJYoe5EX%2FccE4%2Fiw%252BCAlFdy8gV%252B2IGvKpRc8tf5Cw%253D%253D", 
+        "format": "application/pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "id": "cb73bf938bba425aa0e3adddff957191", 
+        "dateModified": "2019-04-01T01:00:00+03:00"
+      }, 
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "author": "tender_owner", 
+        "title": "AwardCriteria.pdf", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/270a7feabfa548c898c342bb400ef695?KeyID=a8968c46&Signature=QssIo4XkshfIyg0z2hUu9oyUX4UWHTM8RxUdn%252B%252BmzgmU8%252BboAYc5i9uj9wBvL1%2FstsUKjmAeb1JcZHIddUIcDQ%253D%253D", 
+        "format": "application/pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "id": "f1d8659ef73a4e499b4aa6d1913d4982", 
+        "dateModified": "2019-04-01T01:00:00+03:00"
+      }, 
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "author": "tender_owner", 
+        "title": "AwardCriteria-2.pdf", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/7cf8e8e3fb7d47e9af5e5e371ef4c2ce?KeyID=a8968c46&Signature=gIuByAdela%2FYtePEqV2zWNV2y8ss0kd%252B5e2PoS4R%252BViy9A759FNIzWdQpILW8UB43ZcJ0S9cARWZj8cZsOioAA%253D%253D", 
+        "format": "application/pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "id": "f1d8659ef73a4e499b4aa6d1913d4982", 
+        "dateModified": "2019-04-01T01:00:00+03:00"
+      }
+    ], 
+    "title": "футляри до державних нагород", 
+    "tenderID": "UA-2019-04-01-000001", 
+    "dateModified": "2019-04-01T01:00:00+03:00", 
+    "status": "active.tendering", 
+    "tenderPeriod": {
+      "startDate": "2019-03-19T01:00:00+03:00", 
+      "endDate": "2019-04-09T01:00:00+03:00"
+    }, 
+    "auctionPeriod": {
+      "startDate": "2019-04-03T01:00:00+03:00", 
+      "shouldStartAfter": "2019-04-10T00:00:00+03:00"
+    }, 
+    "procurementMethodType": "aboveThresholdUA", 
+    "date": "2019-04-01T01:00:00+03:00", 
+    "minimalStep": {
+      "currency": "UAH", 
+      "amount": 35.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "items": [
+      {
+        "description": "Послуги шкільних їдалень", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Послуги з харчування у школах", 
+          "id": "55523100-3"
+        }, 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "Послуги шкільних їдалень"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "deliveryDate": {
+          "startDate": "2019-04-21T00:00:00+02:00", 
+          "endDate": "2019-05-21T00:00:00+02:00"
+        }, 
+        "id": "e755d433ef04489f957b7e95e13cf164", 
+        "quantity": 1.0
+      }
+    ], 
+    "value": {
+      "currency": "UAH", 
+      "amount": 501.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "awardCriteria": "lowestCost"
+  }
+}
+

@@ -29,7 +29,7 @@ test_tender_negotiation_quick_data['causeDescription_en'] = "original tender has
 test_tender_negotiation_quick_data['causeDescription_ru'] = "оригинальный тендер не получился дважды"
 test_lots[0]['value'] = test_tender_negotiation_data['value']
 
-TARGET_DIR = 'docs/source/limited/http/'
+TARGET_DIR = 'docs/source/tendering/limited/http/'
 
 
 class TenderLimitedResourceTest(BaseTenderWebTest, MockWebTestMixin):

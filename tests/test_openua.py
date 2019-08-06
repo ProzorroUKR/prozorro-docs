@@ -21,7 +21,7 @@ bid2.update(qualified)
 bid.update(subcontracting)
 bid.update(qualified)
 
-TARGET_DIR = 'docs/source/openua/http/'
+TARGET_DIR = 'docs/source/tendering/openua/http/'
 
 
 class TenderUAResourceTest(BaseTenderUAWebTest, MockWebTestMixin):

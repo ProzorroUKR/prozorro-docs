@@ -1,0 +1,153 @@
+PATCH /api/2.5/tenders/e5172ebc4c4c411f84f376ce6ede43b8/bids/410cb59a0945497eb61cc4461f661569?acc_token=90deaa7bd79d4f6caaff4985ba3e3840 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 31
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "status": "pending"
+  }
+}
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "status": "pending", 
+    "documents": [
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "confidentiality": "public", 
+        "language": "uk", 
+        "title": "Proposal.pdf", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e5172ebc4c4c411f84f376ce6ede43b8/bids/410cb59a0945497eb61cc4461f661569/documents/eb4a68ceafb6447a9281c86c1abb6408?download=cb2da3765b23454f938d391a16901551", 
+        "format": "application/pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "id": "eb4a68ceafb6447a9281c86c1abb6408", 
+        "dateModified": "2019-04-01T01:00:00+03:00"
+      }, 
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "confidentiality": "buyerOnly", 
+        "language": "uk", 
+        "format": "application/pdf", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e5172ebc4c4c411f84f376ce6ede43b8/bids/410cb59a0945497eb61cc4461f661569/documents/2c9b558559ab403eb20c4e653c4d4dc5?download=5656ff8dbb094f5c84cf6e1b79fc53e6", 
+        "confidentialityRationale": "Only our company sells badgers with pink hair.", 
+        "title": "Proposal_top_secrets.pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "id": "2c9b558559ab403eb20c4e653c4d4dc5", 
+        "dateModified": "2019-04-01T01:00:00+03:00"
+      }
+    ], 
+    "eligibilityDocuments": [
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "confidentiality": "public", 
+        "language": "uk", 
+        "title": "eligibility_doc.pdf", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e5172ebc4c4c411f84f376ce6ede43b8/bids/410cb59a0945497eb61cc4461f661569/eligibility_documents/c90e19255c0949bd9233c4d7e4cdc6a0?download=0e516093da834b5eb6041091ed3ccdbd", 
+        "format": "application/pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "id": "c90e19255c0949bd9233c4d7e4cdc6a0", 
+        "dateModified": "2019-04-01T01:00:00+03:00"
+      }
+    ], 
+    "selfEligible": true, 
+    "id": "410cb59a0945497eb61cc4461f661569", 
+    "lotValues": [
+      {
+        "relatedLot": "c7555f1bb878434d8815dea318304673", 
+        "date": "2019-04-01T01:00:00+03:00", 
+        "status": "pending", 
+        "value": {
+          "currency": "UAH", 
+          "amount": 500.0, 
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ], 
+    "selfQualified": true, 
+    "financialDocuments": [
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "confidentiality": "public", 
+        "language": "uk", 
+        "title": "financial_doc.pdf", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e5172ebc4c4c411f84f376ce6ede43b8/bids/410cb59a0945497eb61cc4461f661569/financial_documents/e419dc2127a94e73aca08ed36af587a2?download=d6c857c3ebe348eb9e525b1c3a8c4c32", 
+        "format": "application/pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "id": "e419dc2127a94e73aca08ed36af587a2", 
+        "dateModified": "2019-04-01T01:00:00+03:00"
+      }, 
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "confidentiality": "public", 
+        "language": "uk", 
+        "title": "financial_doc2.pdf", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e5172ebc4c4c411f84f376ce6ede43b8/bids/410cb59a0945497eb61cc4461f661569/financial_documents/1a5b6ef82df4498a82e36e24bd4b06e9?download=92e2b89987844ce599fee28ddc311141", 
+        "format": "application/pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "id": "1a5b6ef82df4498a82e36e24bd4b06e9", 
+        "dateModified": "2019-04-01T01:00:00+03:00"
+      }
+    ], 
+    "tenderers": [
+      {
+        "contactPoint": {
+          "email": "soleksuk@gmail.com", 
+          "telephone": "+380 (432) 21-69-30", 
+          "name": "Сергій Олексюк"
+        }, 
+        "scale": "micro", 
+        "name": "ДКП «Школяр»", 
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "00137256", 
+          "uri": "http://www.sc.gov.ua/"
+        }, 
+        "address": {
+          "postalCode": "21100", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Островського, 33", 
+          "region": "м. Вінниця", 
+          "locality": "м. Вінниця"
+        }
+      }
+    ], 
+    "date": "2019-04-01T01:00:00+03:00", 
+    "subcontractingDetails": "ДКП «Орфей», Україна", 
+    "qualificationDocuments": [
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "confidentiality": "public", 
+        "language": "uk", 
+        "title": "qualification_document.pdf", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e5172ebc4c4c411f84f376ce6ede43b8/bids/410cb59a0945497eb61cc4461f661569/qualification_documents/36e0844e335d43539ded14ec34991e09?download=c836c188f5004fbb8475ddc4039682fe", 
+        "format": "application/pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "id": "36e0844e335d43539ded14ec34991e09", 
+        "dateModified": "2019-04-01T01:00:00+03:00"
+      }, 
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "confidentiality": "public", 
+        "language": "uk", 
+        "title": "qualification_document2.pdf", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e5172ebc4c4c411f84f376ce6ede43b8/bids/410cb59a0945497eb61cc4461f661569/qualification_documents/36e0844e335d43539ded14ec34991e09?download=1731d2d1ca194e6b843937cd8d259136", 
+        "format": "application/pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "id": "36e0844e335d43539ded14ec34991e09", 
+        "dateModified": "2019-04-01T01:00:00+03:00"
+      }
+    ]
+  }
+}
+

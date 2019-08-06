@@ -1,0 +1,28 @@
+PATCH /api/2.5/tenders/96c58765139d4dfb9ff274018c231eb8/qualifications/6f34bf7d14e94a5bae1658e16d777f8f/complaints/ae2f38235cfe4bd19664f7fcc385abc1?acc_token=58c069509d2549389c40fccbe38b7f67 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 29
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "status": "claim"
+  }
+}
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "status": "claim", 
+    "description": "Просимо додати таблицю потрібної калорійності харчування", 
+    "title": "Калорійність", 
+    "bid_id": "c1eb30e6f1dd4063b94519c80ff7c1e8", 
+    "dateSubmitted": "2019-04-01T01:00:01+03:00", 
+    "complaintID": "UA-2019-04-01-000001.8", 
+    "date": "2019-04-01T01:00:01+03:00", 
+    "type": "claim", 
+    "id": "ae2f38235cfe4bd19664f7fcc385abc1"
+  }
+}
+

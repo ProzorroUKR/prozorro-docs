@@ -13,25 +13,15 @@ Contents:
    authentication
    errors
    options
-   dates
-   tutorial
-   basic-actions/index
    standard/index
+   tendering/index
    planning/index
-   openua/index
-   openeu/index
-   competitivedialogue/index
-   esco/index
-   limited/index
-   defense/index
    medicines-registry/index
-   cfaua/index
    agreementcfaua/index
-   cfaselectionua/index
    contracting/index
+   dates
    performance
    cluster
-   2pc
    acceleration
 
 

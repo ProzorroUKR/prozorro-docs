@@ -1,0 +1,86 @@
+PATCH /api/2.5/tenders/7898ec9992af47ccbc9b8bf1b8539660/contracts/9142b316fc484b90a5abf5c100f52f8b?acc_token=2b27a9c765904007a9910ceb41888d93 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 54
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "value": {
+      "amount": 238, 
+      "amountNet": 230
+    }
+  }
+}
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "status": "pending", 
+    "items": [
+      {
+        "description": "Послуги шкільних їдалень", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Послуги з харчування у школах", 
+          "id": "55523100-3"
+        }, 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "Послуги шкільних їдалень"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "deliveryDate": {
+          "startDate": "2019-04-21T00:00:00+02:00", 
+          "endDate": "2019-05-21T00:00:00+02:00"
+        }, 
+        "id": "e755d433ef04489f957b7e95e13cf164", 
+        "quantity": 1.0
+      }
+    ], 
+    "suppliers": [
+      {
+        "contactPoint": {
+          "email": "aagt@gmail.com", 
+          "telephone": "+380 (322) 91-69-30", 
+          "name": "Андрій Олексюк"
+        }, 
+        "scale": "sme", 
+        "name": "ДКП «Книга»", 
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "00137226", 
+          "uri": "http://www.sc.gov.ua/"
+        }, 
+        "address": {
+          "postalCode": "79013", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Островського, 34", 
+          "region": "м. Львів", 
+          "locality": "м. Львів"
+        }
+      }
+    ], 
+    "value": {
+      "currency": "UAH", 
+      "amount": 238.0, 
+      "amountNet": 230.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "date": "2019-04-01T01:00:00+03:00", 
+    "awardID": "4ec60072454d4b8784c0919274961954", 
+    "id": "9142b316fc484b90a5abf5c100f52f8b", 
+    "contractID": "UA-2019-04-01-000001-1"
+  }
+}
+

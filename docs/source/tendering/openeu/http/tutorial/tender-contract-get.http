@@ -1,0 +1,137 @@
+GET /api/2.5/tenders/ef61695c05174b37b2bb6a8da114cc9d/contracts/32ad680cb26743a7bd92a40ac9a5aea0?acc_token=13e38459f2944eb0a08a6e5152a10b3e HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Host: lb-api-sandbox.prozorro.gov.ua
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "status": "pending", 
+    "documents": [
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "language": "uk", 
+        "title": "contract_first_document.doc", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/b17fa860470146bb86167b41e7547e31?KeyID=a8968c46&Signature=hs45%2FsE850aWIwZllYHbS4hKZZYkgSOqHwcH7PboaekAijXyeDYcP8WaGCLIkCHCazSJhQjXbDQ%2FH%2FT%2F3cFODQ%253D%253D", 
+        "format": "application/msword", 
+        "documentOf": "tender", 
+        "datePublished": "2019-04-01T01:00:01+03:00", 
+        "id": "0d035a95e5f84499a8639fa0c70d02f3", 
+        "dateModified": "2019-04-01T01:00:01+03:00"
+      }, 
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "language": "en", 
+        "title": "contract_second_document.doc", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/6b47a359b4104b0cb633ae1ea8a9b51a?KeyID=a8968c46&Signature=5kHDmBXPPLPz%2FuJLUPqT6uXb3zOJHEOV%252B83uXCCB3Ge%2FtQfMGG5Of4E131si8PBCF%2FBmbmyUuwgbC9NUXbhRCg%253D%253D", 
+        "format": "application/msword", 
+        "title_en": "Title of Document", 
+        "description_en": "Description of Document", 
+        "datePublished": "2019-04-01T01:00:01+03:00", 
+        "documentOf": "tender", 
+        "id": "ff7fd62260ff4ba7857d120c8236b52f", 
+        "dateModified": "2019-04-01T01:00:01+03:00"
+      }
+    ], 
+    "items": [
+      {
+        "description": "Послуги шкільних їдалень", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Test", 
+          "id": "37810000-9"
+        }, 
+        "description_en": "Services in school canteens", 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "Послуги шкільних їдалень"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "deliveryDate": {
+          "startDate": "2019-04-21T00:00:00+02:00", 
+          "endDate": "2019-05-21T00:00:00+02:00"
+        }, 
+        "id": "d2fae6b5562b4d86acb60dc3400fc96c", 
+        "quantity": 1.0
+      }, 
+      {
+        "description": "Послуги шкільних їдалень", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Test", 
+          "id": "37810000-9"
+        }, 
+        "description_en": "Services in school canteens", 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "Послуги шкільних їдалень"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "deliveryDate": {
+          "startDate": "2019-04-21T00:00:00+02:00", 
+          "endDate": "2019-05-21T00:00:00+02:00"
+        }, 
+        "id": "3a9ed691f4a447b1b27a7d04b90a1234", 
+        "quantity": 1.0
+      }
+    ], 
+    "suppliers": [
+      {
+        "contactPoint": {
+          "email": "aagt@gmail.com", 
+          "telephone": "+380 (322) 91-69-30", 
+          "name": "Андрій Олексюк"
+        }, 
+        "scale": "sme", 
+        "name": "ДКП «Книга»", 
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "00137226", 
+          "uri": "http://www.sc.gov.ua/"
+        }, 
+        "address": {
+          "postalCode": "79013", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Островського, 34", 
+          "region": "м. Львів", 
+          "locality": "м. Львів"
+        }
+      }
+    ], 
+    "contractNumber": "contract#1", 
+    "period": {
+      "startDate": "2019-04-01T01:00:01+03:00", 
+      "endDate": "2020-03-31T01:00:01+03:00"
+    }, 
+    "dateSigned": "2019-04-01T01:00:01+03:00", 
+    "value": {
+      "currency": "UAH", 
+      "amount": 238.0, 
+      "amountNet": 230.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "date": "2019-04-01T01:00:00+03:00", 
+    "awardID": "402b756c5da4415f9abcd3c05f830c6b", 
+    "id": "32ad680cb26743a7bd92a40ac9a5aea0", 
+    "contractID": "UA-2019-04-01-000001-1"
+  }
+}
+

@@ -1,0 +1,38 @@
+GET /api/2.5/tenders/ef61695c05174b37b2bb6a8da114cc9d/bids/300d8d13119e4450b4fa9cab0c0e9507?acc_token=13e38459f2944eb0a08a6e5152a10b3e HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Host: lb-api-sandbox.prozorro.gov.ua
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "status": "unsuccessful", 
+    "selfEligible": true, 
+    "tenderers": [
+      {
+        "contactPoint": {
+          "email": "aagt@gmail.com", 
+          "telephone": "+380 (322) 91-69-30", 
+          "name": "Андрій Олексюк"
+        }, 
+        "scale": "sme", 
+        "name": "ДКП «Книга»", 
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "00137226", 
+          "uri": "http://www.sc.gov.ua/"
+        }, 
+        "address": {
+          "postalCode": "79013", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Островського, 34", 
+          "region": "м. Львів", 
+          "locality": "м. Львів"
+        }
+      }
+    ], 
+    "selfQualified": true, 
+    "id": "300d8d13119e4450b4fa9cab0c0e9507"
+  }
+}
+

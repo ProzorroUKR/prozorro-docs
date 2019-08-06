@@ -1,0 +1,32 @@
+POST /api/2.5/tenders/e5172ebc4c4c411f84f376ce6ede43b8/bids/410cb59a0945497eb61cc4461f661569/qualification_documents?acc_token=90deaa7bd79d4f6caaff4985ba3e3840 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 152
+Content-Type: multipart/form-data; boundary=BOUNDARY
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="qualification_document.pdf"
+Content-Type: application/pdf
+
+content
+--BOUNDARY--
+
+
+Response: 201 Created
+Content-Type: application/json; charset=UTF-8
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e5172ebc4c4c411f84f376ce6ede43b8/bids/410cb59a0945497eb61cc4461f661569/qualification_documents/36e0844e335d43539ded14ec34991e09
+{
+  "data": {
+    "hash": "md5:00000000000000000000000000000000", 
+    "confidentiality": "public", 
+    "language": "uk", 
+    "title": "qualification_document.pdf", 
+    "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e5172ebc4c4c411f84f376ce6ede43b8/bids/410cb59a0945497eb61cc4461f661569/qualification_documents/36e0844e335d43539ded14ec34991e09?download=c836c188f5004fbb8475ddc4039682fe", 
+    "format": "application/pdf", 
+    "documentOf": "tender", 
+    "datePublished": "2019-04-01T01:00:00+03:00", 
+    "id": "36e0844e335d43539ded14ec34991e09", 
+    "dateModified": "2019-04-01T01:00:00+03:00"
+  }
+}
+

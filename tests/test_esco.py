@@ -64,8 +64,8 @@ test_lots[0]['minimalStepPercentage'] = test_tender_data['minimalStepPercentage'
 test_lots[1]['fundingKind'] = 'other'
 test_lots[1]['minimalStepPercentage'] = test_tender_data['minimalStepPercentage']
 
-TARGET_DIR = 'docs/source/esco/tutorial/'
-TARGET_DIR_MULTIPLE = 'docs/source/esco/multiple_lots_tutorial/'
+TARGET_DIR = 'docs/source/tendering/esco/tutorial/'
+TARGET_DIR_MULTIPLE = 'docs/source/tendering/esco/multiple_lots_tutorial/'
 
 
 class TenderResourceTest(BaseESCOWebTest, MockWebTestMixin):

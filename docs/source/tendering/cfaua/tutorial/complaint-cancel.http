@@ -1,0 +1,29 @@
+PATCH /api/2.5/tenders/eb9e3bc5967c4db0b2dac4faca46fa52/complaints/78a4c95fb5fb49209e455ae768d90a85?acc_token=b6247fde4eae4c7f98a2505f189ede5c HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 150
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "status": "cancelled", 
+    "cancellationReason": "Умови виправлено"
+  }
+}
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "status": "cancelled", 
+    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+    "title": "Недостатньо інформації", 
+    "cancellationReason": "Умови виправлено", 
+    "dateCanceled": "2019-04-01T01:00:00+03:00", 
+    "complaintID": "UA-2019-04-01-000001.7", 
+    "date": "2019-04-01T01:00:00+03:00", 
+    "type": "claim", 
+    "id": "78a4c95fb5fb49209e455ae768d90a85"
+  }
+}
+

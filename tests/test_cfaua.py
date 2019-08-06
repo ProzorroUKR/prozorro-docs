@@ -31,7 +31,7 @@ bid.update(qualified)
 bid2.update(qualified)
 bid3.update(qualified)
 
-TARGET_DIR = 'docs/source/cfaua/tutorial/'
+TARGET_DIR = 'docs/source/tendering/cfaua/tutorial/'
 
 
 class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):

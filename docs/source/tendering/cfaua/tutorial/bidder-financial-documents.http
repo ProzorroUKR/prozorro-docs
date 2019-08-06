@@ -1,0 +1,35 @@
+GET /api/2.5/tenders/e5172ebc4c4c411f84f376ce6ede43b8/bids/410cb59a0945497eb61cc4461f661569/financial_documents?acc_token=90deaa7bd79d4f6caaff4985ba3e3840 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Host: lb-api-sandbox.prozorro.gov.ua
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": [
+    {
+      "hash": "md5:00000000000000000000000000000000", 
+      "confidentiality": "public", 
+      "language": "uk", 
+      "title": "financial_doc.pdf", 
+      "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e5172ebc4c4c411f84f376ce6ede43b8/bids/410cb59a0945497eb61cc4461f661569/financial_documents/e419dc2127a94e73aca08ed36af587a2?download=d6c857c3ebe348eb9e525b1c3a8c4c32", 
+      "format": "application/pdf", 
+      "documentOf": "tender", 
+      "datePublished": "2019-04-01T01:00:00+03:00", 
+      "id": "e419dc2127a94e73aca08ed36af587a2", 
+      "dateModified": "2019-04-01T01:00:00+03:00"
+    }, 
+    {
+      "hash": "md5:00000000000000000000000000000000", 
+      "confidentiality": "public", 
+      "language": "uk", 
+      "title": "financial_doc2.pdf", 
+      "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e5172ebc4c4c411f84f376ce6ede43b8/bids/410cb59a0945497eb61cc4461f661569/financial_documents/1a5b6ef82df4498a82e36e24bd4b06e9?download=92e2b89987844ce599fee28ddc311141", 
+      "format": "application/pdf", 
+      "documentOf": "tender", 
+      "datePublished": "2019-04-01T01:00:00+03:00", 
+      "id": "1a5b6ef82df4498a82e36e24bd4b06e9", 
+      "dateModified": "2019-04-01T01:00:00+03:00"
+    }
+  ]
+}
+

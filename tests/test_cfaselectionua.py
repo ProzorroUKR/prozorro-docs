@@ -25,7 +25,7 @@ test_agreement = deepcopy(test_agreement)
 test_lots = deepcopy(lots)
 test_tender_maximum_data = deepcopy(tender_cfaselectionua_maximum)
 
-TARGET_DIR = 'docs/source/cfaselectionua/tutorial/'
+TARGET_DIR = 'docs/source/tendering/cfaselectionua/tutorial/'
 
 
 class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):

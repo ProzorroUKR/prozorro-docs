@@ -1,0 +1,29 @@
+PATCH /api/2.5/tenders/e5172ebc4c4c411f84f376ce6ede43b8/cancellations/5c22115bd57a4d56bad766fcf88a788b/documents/17c620ed5d36441793245bd12aa6fe05?acc_token=1307a9159aab4852b48cb39c8fc17f67 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 48
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "description": "Changed description"
+  }
+}
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "hash": "md5:00000000000000000000000000000000", 
+    "description": "Changed description", 
+    "language": "uk", 
+    "title": "Notice.pdf", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/95857c9072c94a018ff6fea3d33ec1c2?KeyID=a8968c46&Signature=6phJnF%252BRE9AKjhLlQLUFjccpht7P2rh9w0hEinFrLusCOygMSG86Qxw6ZOA19%2F9mXxJ%252BORakwC6hpcGMi9McAA%253D%253D", 
+    "format": "application/pdf", 
+    "documentOf": "tender", 
+    "datePublished": "2019-04-01T01:00:01+03:00", 
+    "id": "17c620ed5d36441793245bd12aa6fe05", 
+    "dateModified": "2019-04-01T01:00:01+03:00"
+  }
+}
+

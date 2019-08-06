@@ -1,0 +1,71 @@
+POST /api/2.5/tenders/12de7035f98f441388cc86e2a6086c64/awards/cc92f7a9fc3a478ba2aab6489c7dc51e/complaints?acc_token=8ba6578c45eb4f98ae5d831f95965f64 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 1298
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "title": "Недостатньо інформації", 
+    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+    "author": {
+      "contactPoint": {
+        "email": "soleksuk@gmail.com", 
+        "telephone": "+380 (432) 21-69-30", 
+        "name": "Сергій Олексюк"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "00137256", 
+        "uri": "http://www.sc.gov.ua/"
+      }, 
+      "name": "ДКП «Школяр»", 
+      "address": {
+        "countryName": "Україна", 
+        "postalCode": "21100", 
+        "region": "м. Вінниця", 
+        "streetAddress": "вул. Островського, 33", 
+        "locality": "м. Вінниця"
+      }
+    }
+  }
+}
+
+Response: 201 Created
+Content-Type: application/json; charset=UTF-8
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/12de7035f98f441388cc86e2a6086c64/awards/cc92f7a9fc3a478ba2aab6489c7dc51e/complaints/00163df9223e41069e6bd0ac5d3d647f
+{
+  "access": {
+    "token": "1e80cc44f3a04f97ba7a34ba34092d90"
+  }, 
+  "data": {
+    "status": "draft", 
+    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+    "author": {
+      "contactPoint": {
+        "email": "soleksuk@gmail.com", 
+        "telephone": "+380 (432) 21-69-30", 
+        "name": "Сергій Олексюк"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "00137256", 
+        "uri": "http://www.sc.gov.ua/"
+      }, 
+      "name": "ДКП «Школяр»", 
+      "address": {
+        "postalCode": "21100", 
+        "countryName": "Україна", 
+        "streetAddress": "вул. Островського, 33", 
+        "region": "м. Вінниця", 
+        "locality": "м. Вінниця"
+      }
+    }, 
+    "title": "Недостатньо інформації", 
+    "complaintID": "UA-2019-04-01-000001.1", 
+    "date": "2019-04-01T01:00:01+03:00", 
+    "type": "claim", 
+    "id": "00163df9223e41069e6bd0ac5d3d647f"
+  }
+}
+

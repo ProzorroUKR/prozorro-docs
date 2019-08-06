@@ -1,0 +1,127 @@
+GET /api/2.5/tenders/ef61695c05174b37b2bb6a8da114cc9d/bids/ce6fe53ed8074a8993c306b027fa9a53?acc_token=36687d7db995482d9739772ebd7de5bb HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Host: lb-api-sandbox.prozorro.gov.ua
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "status": "active", 
+    "documents": [
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "confidentiality": "public", 
+        "language": "uk", 
+        "title": "Proposal.pdf", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/be522ebe55184a0785d4ae23174e4172?KeyID=a8968c46&Signature=EaJKUS9uYShLWYTTp0e7%2Fh5TuikfyAQDmt3RZuIghzw6EnKcWh6z3zk0yfjbdw%2FfoWQ5OOWAaleuZz52pNhFAQ%253D%253D", 
+        "format": "application/pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "id": "a2a66b3c0d8642879b6adf261fa6aee4", 
+        "dateModified": "2019-04-01T01:00:00+03:00"
+      }, 
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "confidentiality": "buyerOnly", 
+        "language": "uk", 
+        "format": "application/pdf", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ef61695c05174b37b2bb6a8da114cc9d/bids/ce6fe53ed8074a8993c306b027fa9a53/documents/2049f880252f44e98d6ef8451a2a64c9?download=cf400ff43cc54901aa129979706ed763", 
+        "confidentialityRationale": "Only our company sells badgers with pink hair.", 
+        "title": "Proposal_top_secrets.pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "id": "2049f880252f44e98d6ef8451a2a64c9", 
+        "dateModified": "2019-04-01T01:00:00+03:00"
+      }
+    ], 
+    "eligibilityDocuments": [
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "confidentiality": "public", 
+        "language": "uk", 
+        "title": "eligibility_doc.pdf", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/783f72885bc64e9fa5a031429357a29c?KeyID=a8968c46&Signature=3XxKb8lnlv7Cbt9GdqrC3wT%2FJnsyRNRsnyR01ZblD0Xi9MYqqYfcpCM%252BSxuvCw4naoUkpl8%2FLZCWNJWddaPLCQ%253D%253D", 
+        "format": "application/pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "id": "9533018e265a4608ac5d78d118ce4c2e", 
+        "dateModified": "2019-04-01T01:00:00+03:00"
+      }
+    ], 
+    "selfEligible": true, 
+    "id": "ce6fe53ed8074a8993c306b027fa9a53", 
+    "value": {
+      "currency": "UAH", 
+      "amount": 500.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "selfQualified": true, 
+    "financialDocuments": [
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "confidentiality": "public", 
+        "language": "uk", 
+        "title": "financial_doc.pdf", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ef61695c05174b37b2bb6a8da114cc9d/bids/ce6fe53ed8074a8993c306b027fa9a53/financial_documents/fcaba0245e834282bae9b69a009c1c21?download=6856b3fde897467885bdbeb3095e5d37", 
+        "format": "application/pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "id": "fcaba0245e834282bae9b69a009c1c21", 
+        "dateModified": "2019-04-01T01:00:00+03:00"
+      }, 
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "confidentiality": "public", 
+        "language": "uk", 
+        "title": "financial_doc2.pdf", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ef61695c05174b37b2bb6a8da114cc9d/bids/ce6fe53ed8074a8993c306b027fa9a53/financial_documents/b3edf658de5f4556bf8fd1a38745c6e5?download=f43a774e76b0459893ec6c11241a2674", 
+        "format": "application/pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "id": "b3edf658de5f4556bf8fd1a38745c6e5", 
+        "dateModified": "2019-04-01T01:00:00+03:00"
+      }
+    ], 
+    "tenderers": [
+      {
+        "contactPoint": {
+          "email": "soleksuk@gmail.com", 
+          "telephone": "+380 (432) 21-69-30", 
+          "name": "Сергій Олексюк"
+        }, 
+        "scale": "micro", 
+        "name": "ДКП «Школяр»", 
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "00137256", 
+          "uri": "http://www.sc.gov.ua/"
+        }, 
+        "address": {
+          "postalCode": "21100", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Островського, 33", 
+          "region": "м. Вінниця", 
+          "locality": "м. Вінниця"
+        }
+      }
+    ], 
+    "date": "2019-04-01T01:00:00+03:00", 
+    "subcontractingDetails": "ДКП «Орфей», Україна", 
+    "qualificationDocuments": [
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "confidentiality": "public", 
+        "language": "uk", 
+        "title": "qualification_document.pdf", 
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ef61695c05174b37b2bb6a8da114cc9d/bids/ce6fe53ed8074a8993c306b027fa9a53/qualification_documents/505687f669dc40889d8ea756b57f7307?download=b01cc40fedea4c7b87ffd07824218a93", 
+        "format": "application/pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "id": "505687f669dc40889d8ea756b57f7307", 
+        "dateModified": "2019-04-01T01:00:00+03:00"
+      }
+    ], 
+    "participationUrl": "http://auction-sandbox.prozorro.gov.ua/tenders/ef61695c05174b37b2bb6a8da114cc9d?key_for_bid=ce6fe53ed8074a8993c306b027fa9a53"
+  }
+}
+

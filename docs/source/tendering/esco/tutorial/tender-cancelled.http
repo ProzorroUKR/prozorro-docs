@@ -1,0 +1,791 @@
+GET /api/2.5/tenders/0aac695e27804293a2854dff7bed4be8?acc_token=52689c044242401f975bcb264331aea7 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Host: lb-api-sandbox.prozorro.gov.ua
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "procurementMethod": "open", 
+    "status": "cancelled", 
+    "awardPeriod": {
+      "startDate": "2019-04-01T01:00:00+03:00", 
+      "endDate": "2019-04-01T01:00:00+03:00"
+    }, 
+    "complaintPeriod": {
+      "startDate": "2019-02-19T01:00:00+03:00", 
+      "endDate": "2019-03-18T00:00:00+02:00"
+    }, 
+    "auctionUrl": "http://auction-sandbox.prozorro.gov.ua/tenders/0aac695e27804293a2854dff7bed4be8", 
+    "enquiryPeriod": {
+      "startDate": "2019-02-19T01:00:00+03:00", 
+      "clarificationsUntil": "2019-03-15T01:00:00+03:00", 
+      "endDate": "2019-03-12T01:00:00+03:00", 
+      "invalidationDate": "2019-04-01T01:00:00+03:00"
+    }, 
+    "submissionMethod": "electronicAuction", 
+    "title_en": "Services in school canteens", 
+    "procuringEntity": {
+      "kind": "general", 
+      "name": "ЗОСШ #10 м.Вінниці", 
+      "address": {
+        "postalCode": "21027", 
+        "countryName": "Україна", 
+        "streetAddress": "вул. Стахурського. 22", 
+        "region": "м. Вінниця", 
+        "locality": "м. Вінниця"
+      }, 
+      "contactPoint": {
+        "url": "http://sch10.edu.vn.ua/", 
+        "name_en": "Kutsa Svitlana V.", 
+        "name": "Куца Світлана Валентинівна", 
+        "availableLanguage": "uk", 
+        "telephone": "+380 (432) 46-53-02"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "legalName_en": "The institution \"Secondary school I-III levels № 10 Vinnitsa City Council\"", 
+        "id": "21725150", 
+        "legalName": "Заклад \"Загальноосвітня школа І-ІІІ ступенів № 10 Вінницької міської ради\""
+      }, 
+      "name_en": "School #10 of Vinnytsia"
+    }, 
+    "questions": [
+      {
+        "description": "Просимо додати таблицю потрібної калорійності харчування", 
+        "author": {
+          "contactPoint": {
+            "email": "aagt@gmail.com", 
+            "telephone": "+380 (322) 91-69-30", 
+            "name": "Андрій Олексюк"
+          }, 
+          "identifier": {
+            "scheme": "UA-EDR", 
+            "id": "00137226", 
+            "uri": "http://www.sc.gov.ua/"
+          }, 
+          "name": "ДКП «Книга»", 
+          "address": {
+            "postalCode": "79013", 
+            "countryName": "Україна", 
+            "streetAddress": "вул. Островського, 34", 
+            "region": "м. Львів", 
+            "locality": "м. Львів"
+          }
+        }, 
+        "title": "Калорійність", 
+        "date": "2019-04-01T01:00:00+03:00", 
+        "answer": "Таблицю додано в файлі \"Kalorijnist.xslx\"", 
+        "dateAnswered": "2019-04-01T01:00:00+03:00", 
+        "id": "c0ace3dda24e4cfab1c52c61462ceae8", 
+        "questionOf": "tender"
+      }
+    ], 
+    "owner": "broker", 
+    "qualifications": [
+      {
+        "status": "active", 
+        "eligible": true, 
+        "qualified": true, 
+        "bidID": "e4528bc92c0f463ca1f661381961e106", 
+        "date": "2019-04-01T01:00:00+03:00", 
+        "id": "e303b0cd252740c7a727e995fa009e19"
+      }, 
+      {
+        "status": "active", 
+        "eligible": true, 
+        "qualified": true, 
+        "bidID": "b649b9b2575142159fd240c728c87298", 
+        "date": "2019-04-01T01:00:00+03:00", 
+        "id": "a6c0ca8b630d49d7a72ca9fe50b57309"
+      }, 
+      {
+        "status": "unsuccessful", 
+        "eligible": false, 
+        "qualified": false, 
+        "bidID": "5e79c825b4c54c36a179b22db2dae23b", 
+        "date": "2019-04-01T01:00:00+03:00", 
+        "id": "5144ce4ac92649dd9892d531811c6a86"
+      }
+    ], 
+    "id": "0aac695e27804293a2854dff7bed4be8", 
+    "guarantee": {
+      "currency": "USD", 
+      "amount": 8.0
+    }, 
+    "documents": [
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "author": "tender_owner", 
+        "language": "uk", 
+        "title": "Notice.pdf", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/258787538ea040998aa3827fa2ddc2e3?KeyID=a8968c46&Signature=%2FDHEOPLrURa1SSjfbD%2F5h90eFDzyZ%2F1JhOCU7o83YIz5TQ6AvGxzJkrGeLSf3FND%252BJfcuBoAbOgC11FD5bRJAw%253D%253D", 
+        "format": "application/pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "id": "c3d3fd2430b345d4b42a71495ea4e69c", 
+        "dateModified": "2019-04-01T01:00:00+03:00"
+      }, 
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "author": "tender_owner", 
+        "language": "uk", 
+        "title": "AwardCriteria.pdf", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/59756eb62bd540e295f1dc22e5ee6f17?KeyID=a8968c46&Signature=ySBWWXiMIpTq21gQbBogDkEzKK57yN%252BFR9NPFRczfMHnl3t%252B0S0XxAetGUAoE4ZYvvjYZi9GZ6WI8guJoF6iAA%253D%253D", 
+        "format": "application/pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "id": "b911ae7b05114f0bb201ee77f8a09395", 
+        "dateModified": "2019-04-01T01:00:00+03:00"
+      }, 
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "author": "tender_owner", 
+        "language": "uk", 
+        "title": "AwardCriteria-2.pdf", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/cc098689893848579b1e1f8837bd4c5b?KeyID=a8968c46&Signature=ZfEYLIRw9YaeXQvTP8XRxfS6yLpOGwQyvPZV%252B%252B9cVGiZcgRA9ujl56M5Ea6YhJ7x2oKiE77IFTcy5HmLymqbDQ%253D%253D", 
+        "format": "application/pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "id": "b911ae7b05114f0bb201ee77f8a09395", 
+        "dateModified": "2019-04-01T01:00:00+03:00"
+      }
+    ], 
+    "title": "Послуги шкільних їдалень", 
+    "qualificationPeriod": {
+      "startDate": "2019-03-22T01:00:00+03:00", 
+      "endDate": "2019-04-01T01:00:00+03:00"
+    }, 
+    "tenderID": "UA-2019-04-01-000001", 
+    "minimalStepPercentage": 0.006, 
+    "auctionPeriod": {
+      "startDate": "2019-04-01T01:00:00+03:00", 
+      "endDate": "2019-04-01T01:00:00+03:00"
+    }, 
+    "dateModified": "2019-04-01T01:00:01+03:00", 
+    "numberOfBids": 2, 
+    "tenderPeriod": {
+      "startDate": "2019-02-19T01:00:00+03:00", 
+      "endDate": "2019-03-22T01:00:00+03:00"
+    }, 
+    "contracts": [
+      {
+        "status": "pending", 
+        "documents": [
+          {
+            "hash": "md5:00000000000000000000000000000000", 
+            "language": "uk", 
+            "title": "contract_first_document.doc", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/1d4f29d469cd4488ab75b50ca141cb82?KeyID=a8968c46&Signature=Sda1aLJN6zHPbnzOhvDPHloZDZPejEHjmP0v1gr9XrVmLReT2Nt8GldPqSHkMj18%2FJ6vdn%252B%252BVTpgkTeePfptBw%253D%253D", 
+            "format": "application/msword", 
+            "documentOf": "tender", 
+            "datePublished": "2019-04-01T01:00:01+03:00", 
+            "id": "111859f8fc5b47809b3e4b4e4bc96d28", 
+            "dateModified": "2019-04-01T01:00:01+03:00"
+          }, 
+          {
+            "hash": "md5:00000000000000000000000000000000", 
+            "language": "en", 
+            "title": "contract_second_document.doc", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/f12df78353d14531864852b1b3e7a2ef?KeyID=a8968c46&Signature=aVwzZKNpBpYDD%2FIcREiw8b7GBjMll6u48UPYXPHIsuUcx6y0cIjE%2FpEIlIQTH0XeJGi2blXX5Pi5VER%252B8IV2Ag%253D%253D", 
+            "format": "application/msword", 
+            "title_en": "Title of Document", 
+            "description_en": "Description of Document", 
+            "datePublished": "2019-04-01T01:00:01+03:00", 
+            "documentOf": "tender", 
+            "id": "9a739f0742e5482dab0275f8165bfa79", 
+            "dateModified": "2019-04-01T01:00:01+03:00"
+          }
+        ], 
+        "items": [
+          {
+            "description": "Послуги шкільних їдалень", 
+            "classification": {
+              "scheme": "ДК021", 
+              "description": "Test", 
+              "id": "37810000-9"
+            }, 
+            "description_en": "Services in school canteens", 
+            "additionalClassifications": [
+              {
+                "scheme": "ДКПП", 
+                "id": "17.21.1", 
+                "description": "Послуги шкільних їдалень"
+              }
+            ], 
+            "deliveryAddress": {
+              "postalCode": "79000", 
+              "countryName": "Україна", 
+              "streetAddress": "вул. Банкова 1", 
+              "region": "м. Київ", 
+              "locality": "м. Київ"
+            }, 
+            "id": "9b5a00f9260f4dbc8b3eb92732a9fb36", 
+            "unit": {
+              "code": "44617100-9", 
+              "name": "item"
+            }
+          }, 
+          {
+            "description": "Послуги шкільних їдалень", 
+            "classification": {
+              "scheme": "ДК021", 
+              "description": "Test", 
+              "id": "37810000-9"
+            }, 
+            "description_en": "Services in school canteens", 
+            "additionalClassifications": [
+              {
+                "scheme": "ДКПП", 
+                "id": "17.21.1", 
+                "description": "Послуги шкільних їдалень"
+              }
+            ], 
+            "deliveryAddress": {
+              "postalCode": "79000", 
+              "countryName": "Україна", 
+              "streetAddress": "вул. Банкова 1", 
+              "region": "м. Київ", 
+              "locality": "м. Київ"
+            }, 
+            "id": "3b01fd236aa44993b2883859053d43a9", 
+            "unit": {
+              "code": "44617100-9", 
+              "name": "item"
+            }
+          }
+        ], 
+        "suppliers": [
+          {
+            "contactPoint": {
+              "email": "soleksuk@gmail.com", 
+              "telephone": "+380 (432) 21-69-30", 
+              "name": "Сергій Олексюк"
+            }, 
+            "scale": "micro", 
+            "name": "ДКП «Школяр»", 
+            "identifier": {
+              "scheme": "UA-EDR", 
+              "id": "00137256", 
+              "uri": "http://www.sc.gov.ua/"
+            }, 
+            "address": {
+              "postalCode": "21100", 
+              "countryName": "Україна", 
+              "streetAddress": "вул. Островського, 33", 
+              "region": "м. Вінниця", 
+              "locality": "м. Вінниця"
+            }
+          }
+        ], 
+        "contractNumber": "contract#1", 
+        "period": {
+          "startDate": "2019-04-01T01:00:01+03:00", 
+          "endDate": "2020-03-31T01:00:01+03:00"
+        }, 
+        "dateSigned": "2019-04-01T01:00:01+03:00", 
+        "value": {
+          "yearlyPaymentsPercentage": 0.9, 
+          "amountNet": 8955.85, 
+          "amountPerformance": 819.72, 
+          "currency": "UAH", 
+          "amount": 8956.85, 
+          "contractDuration": {
+            "days": 74, 
+            "years": 10
+          }, 
+          "valueAddedTaxIncluded": true, 
+          "annualCostsReduction": [
+            500.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0
+          ]
+        }, 
+        "date": "2019-04-01T01:00:00+03:00", 
+        "awardID": "a1ba5db5ba024345a654cc10eacb8c3e", 
+        "id": "cdf8a9a09d534e989a3b032b121e382f", 
+        "contractID": "UA-2019-04-01-000001-1"
+      }
+    ], 
+    "NBUdiscountRate": 0.22986, 
+    "yearlyPaymentsPercentageRange": 0.8, 
+    "procurementMethodType": "esco", 
+    "awards": [
+      {
+        "status": "active", 
+        "eligible": true, 
+        "suppliers": [
+          {
+            "contactPoint": {
+              "email": "soleksuk@gmail.com", 
+              "telephone": "+380 (432) 21-69-30", 
+              "name": "Сергій Олексюк"
+            }, 
+            "scale": "micro", 
+            "name": "ДКП «Школяр»", 
+            "identifier": {
+              "scheme": "UA-EDR", 
+              "id": "00137256", 
+              "uri": "http://www.sc.gov.ua/"
+            }, 
+            "address": {
+              "postalCode": "21100", 
+              "countryName": "Україна", 
+              "streetAddress": "вул. Островського, 33", 
+              "region": "м. Вінниця", 
+              "locality": "м. Вінниця"
+            }
+          }
+        ], 
+        "complaintPeriod": {
+          "startDate": "2019-04-01T01:00:00+03:00", 
+          "endDate": "2019-04-01T01:00:00+03:00"
+        }, 
+        "bid_id": "e4528bc92c0f463ca1f661381961e106", 
+        "value": {
+          "yearlyPaymentsPercentage": 0.9, 
+          "valueAddedTaxIncluded": true, 
+          "currency": "UAH", 
+          "amount": 8956.85, 
+          "contractDuration": {
+            "days": 74, 
+            "years": 10
+          }, 
+          "amountPerformance": 819.72, 
+          "annualCostsReduction": [
+            500.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0
+          ]
+        }, 
+        "qualified": true, 
+        "date": "2019-04-01T01:00:00+03:00", 
+        "id": "a1ba5db5ba024345a654cc10eacb8c3e"
+      }
+    ], 
+    "date": "2019-04-01T01:00:01+03:00", 
+    "minValue": {
+      "currency": "UAH", 
+      "amount": 0.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "fundingKind": "other", 
+    "items": [
+      {
+        "description": "Послуги шкільних їдалень", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Test", 
+          "id": "37810000-9"
+        }, 
+        "description_en": "Services in school canteens", 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "Послуги шкільних їдалень"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "id": "9b5a00f9260f4dbc8b3eb92732a9fb36", 
+        "unit": {
+          "code": "44617100-9", 
+          "name": "item"
+        }
+      }, 
+      {
+        "description": "Послуги шкільних їдалень", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Test", 
+          "id": "37810000-9"
+        }, 
+        "description_en": "Services in school canteens", 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "Послуги шкільних їдалень"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "id": "3b01fd236aa44993b2883859053d43a9", 
+        "unit": {
+          "code": "44617100-9", 
+          "name": "item"
+        }
+      }
+    ], 
+    "bids": [
+      {
+        "status": "active", 
+        "documents": [
+          {
+            "hash": "md5:00000000000000000000000000000000", 
+            "confidentiality": "public", 
+            "language": "uk", 
+            "title": "Proposal.pdf", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/3857ea484ff34a5c81869f1d92835c26?KeyID=a8968c46&Signature=QI9I277Uxrr%252BLHrkfRBGFR%252BeUccYJBARxmRVcWNoaEuKiP%2FsjqYHPN37YgCH0fKXm1F%2F5%2F9CrMdB3FEO3Sm8CQ%253D%253D", 
+            "format": "application/pdf", 
+            "documentOf": "tender", 
+            "datePublished": "2019-04-01T01:00:00+03:00", 
+            "id": "c6f7defe9a2d43d6ae3eb3da429f9e90", 
+            "dateModified": "2019-04-01T01:00:00+03:00"
+          }, 
+          {
+            "hash": "md5:00000000000000000000000000000000", 
+            "confidentiality": "buyerOnly", 
+            "language": "uk", 
+            "format": "application/pdf", 
+            "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/0aac695e27804293a2854dff7bed4be8/bids/e4528bc92c0f463ca1f661381961e106/documents/d1b87979a38047e08108b474f1797eae?download=7e2528bcceb74289affec2d1ceaad500", 
+            "confidentialityRationale": "Only our company sells badgers with pink hair.", 
+            "title": "Proposal_top_secrets.pdf", 
+            "documentOf": "tender", 
+            "datePublished": "2019-04-01T01:00:00+03:00", 
+            "id": "d1b87979a38047e08108b474f1797eae", 
+            "dateModified": "2019-04-01T01:00:00+03:00"
+          }
+        ], 
+        "eligibilityDocuments": [
+          {
+            "hash": "md5:00000000000000000000000000000000", 
+            "confidentiality": "public", 
+            "language": "uk", 
+            "title": "eligibility_doc.pdf", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/75bd9202b24d469491ef8945f576cd4e?KeyID=a8968c46&Signature=IfTrfIqb70DfbVUy3E356RBkd34ZHjqEbJloTsZlZUAFL0LcyscRYKqyvx3cFtXa3oZhRkGwRlb01Ze4kqbNCg%253D%253D", 
+            "format": "application/pdf", 
+            "documentOf": "tender", 
+            "datePublished": "2019-04-01T01:00:00+03:00", 
+            "id": "9087beb3628b4234881ebf10bec43311", 
+            "dateModified": "2019-04-01T01:00:00+03:00"
+          }
+        ], 
+        "selfEligible": true, 
+        "id": "e4528bc92c0f463ca1f661381961e106", 
+        "value": {
+          "yearlyPaymentsPercentage": 0.9, 
+          "valueAddedTaxIncluded": true, 
+          "currency": "UAH", 
+          "amount": 8956.85, 
+          "contractDuration": {
+            "days": 74, 
+            "years": 10
+          }, 
+          "amountPerformance": 819.72, 
+          "annualCostsReduction": [
+            500.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0, 
+            1000.0
+          ]
+        }, 
+        "selfQualified": true, 
+        "financialDocuments": [
+          {
+            "hash": "md5:00000000000000000000000000000000", 
+            "confidentiality": "public", 
+            "language": "uk", 
+            "title": "financial_doc.pdf", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/3f029a8402a04558af012ea172e2ed34?KeyID=a8968c46&Signature=EDp5WdfsCDDS%252Bit7RzzANtgBKteiWCCQ0MS%252BP56IexASB%252Bi5CDa4eLo6lgobK5LMNdnTezCuRDzxsDqkAjMNAQ%253D%253D", 
+            "format": "application/pdf", 
+            "documentOf": "tender", 
+            "datePublished": "2019-04-01T01:00:00+03:00", 
+            "id": "02a434ed52f04b94810e96fb376d4d8e", 
+            "dateModified": "2019-04-01T01:00:00+03:00"
+          }, 
+          {
+            "hash": "md5:00000000000000000000000000000000", 
+            "confidentiality": "public", 
+            "language": "uk", 
+            "title": "financial_doc2.pdf", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/c4ab4a221113428e8ad83393aba4849e?KeyID=a8968c46&Signature=7z203xMV4q6nM5N4zRunerE6j9jO6tRZfHA23vba%252BasOrr8TSQrDgzCRMUiuTdC8u1QHFIzUpSGgje%252BpoGt%252BCQ%253D%253D", 
+            "format": "application/pdf", 
+            "documentOf": "tender", 
+            "datePublished": "2019-04-01T01:00:00+03:00", 
+            "id": "4f7c1c3c12a942c09d91e8888832641f", 
+            "dateModified": "2019-04-01T01:00:00+03:00"
+          }
+        ], 
+        "tenderers": [
+          {
+            "contactPoint": {
+              "email": "soleksuk@gmail.com", 
+              "telephone": "+380 (432) 21-69-30", 
+              "name": "Сергій Олексюк"
+            }, 
+            "scale": "micro", 
+            "name": "ДКП «Школяр»", 
+            "identifier": {
+              "scheme": "UA-EDR", 
+              "id": "00137256", 
+              "uri": "http://www.sc.gov.ua/"
+            }, 
+            "address": {
+              "postalCode": "21100", 
+              "countryName": "Україна", 
+              "streetAddress": "вул. Островського, 33", 
+              "region": "м. Вінниця", 
+              "locality": "м. Вінниця"
+            }
+          }
+        ], 
+        "date": "2019-04-01T01:00:00+03:00", 
+        "subcontractingDetails": "ДКП «Орфей», Україна", 
+        "qualificationDocuments": [
+          {
+            "hash": "md5:00000000000000000000000000000000", 
+            "confidentiality": "public", 
+            "language": "uk", 
+            "title": "qualification_document.pdf", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/ffbd63b7d16e4b5d821b8667429090ef?KeyID=a8968c46&Signature=i8RR%2FKaK0s2aDhijaE9%2FLT7dmCnZirhSwXyh7FlQc8Al5eNFKAU3D0BIKH2Bci4bt7n9OfqYsfeiyNT5ynY0AQ%253D%253D", 
+            "format": "application/pdf", 
+            "documentOf": "tender", 
+            "datePublished": "2019-04-01T01:00:00+03:00", 
+            "id": "4b9ec199ac584bf4bc5cff333dcb8019", 
+            "dateModified": "2019-04-01T01:00:00+03:00"
+          }
+        ], 
+        "participationUrl": "http://auction-sandbox.prozorro.gov.ua/tenders/0aac695e27804293a2854dff7bed4be8?key_for_bid=e4528bc92c0f463ca1f661381961e106"
+      }, 
+      {
+        "status": "active", 
+        "selfEligible": true, 
+        "value": {
+          "yearlyPaymentsPercentage": 0.85, 
+          "valueAddedTaxIncluded": true, 
+          "currency": "UAH", 
+          "amount": 9364.9, 
+          "contractDuration": {
+            "days": 200, 
+            "years": 12
+          }, 
+          "amountPerformance": 738.16, 
+          "annualCostsReduction": [
+            400.0, 
+            900.0, 
+            900.0, 
+            900.0, 
+            900.0, 
+            900.0, 
+            900.0, 
+            900.0, 
+            900.0, 
+            900.0, 
+            900.0, 
+            900.0, 
+            900.0, 
+            900.0, 
+            900.0, 
+            900.0, 
+            900.0, 
+            900.0, 
+            900.0, 
+            900.0, 
+            900.0
+          ]
+        }, 
+        "id": "b649b9b2575142159fd240c728c87298", 
+        "tenderers": [
+          {
+            "contactPoint": {
+              "email": "aagt@gmail.com", 
+              "telephone": "+380 (322) 91-69-30", 
+              "name": "Андрій Олексюк"
+            }, 
+            "scale": "sme", 
+            "name": "ДКП «Книга»", 
+            "identifier": {
+              "scheme": "UA-EDR", 
+              "id": "00137226", 
+              "uri": "http://www.sc.gov.ua/"
+            }, 
+            "address": {
+              "postalCode": "79013", 
+              "countryName": "Україна", 
+              "streetAddress": "вул. Островського, 34", 
+              "region": "м. Львів", 
+              "locality": "м. Львів"
+            }
+          }
+        ], 
+        "date": "2019-04-01T01:00:00+03:00", 
+        "selfQualified": true, 
+        "participationUrl": "http://auction-sandbox.prozorro.gov.ua/tenders/0aac695e27804293a2854dff7bed4be8?key_for_bid=b649b9b2575142159fd240c728c87298"
+      }, 
+      {
+        "status": "unsuccessful", 
+        "documents": [
+          {
+            "hash": "md5:00000000000000000000000000000000", 
+            "confidentiality": "public", 
+            "language": "uk", 
+            "title": "Proposal_part1.pdf", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/21ef16b5420c40b48a8d16d91f49eeb4?KeyID=a8968c46&Signature=J%252Bkr%2F2u2h8MUKvkpSzmXoA1nT4SG9QOg4ijLwpZ9V93dmDn%252BIa9%252BD%2FNLZ3A9ciZp2R8tISmjpTHIzMCH6j%2FTAg%253D%253D", 
+            "format": "application/pdf", 
+            "documentOf": "tender", 
+            "datePublished": "2019-04-01T01:00:00+03:00", 
+            "id": "824f270cc0b749bd989983329634a5de", 
+            "dateModified": "2019-04-01T01:00:00+03:00"
+          }, 
+          {
+            "hash": "md5:00000000000000000000000000000000", 
+            "confidentiality": "buyerOnly", 
+            "language": "uk", 
+            "format": "application/pdf", 
+            "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/0aac695e27804293a2854dff7bed4be8/bids/5e79c825b4c54c36a179b22db2dae23b/documents/fc90022e9584421e90d0438c8b331cc8?download=368ab90ae6a748e6be48d5d2151aee66", 
+            "confidentialityRationale": "Only our company sells badgers with pink hair.", 
+            "title": "Proposal_part2.pdf", 
+            "documentOf": "tender", 
+            "datePublished": "2019-04-01T01:00:00+03:00", 
+            "id": "fc90022e9584421e90d0438c8b331cc8", 
+            "dateModified": "2019-04-01T01:00:00+03:00"
+          }
+        ], 
+        "eligibilityDocuments": [
+          {
+            "hash": "md5:00000000000000000000000000000000", 
+            "confidentiality": "public", 
+            "language": "uk", 
+            "title": "eligibility_doc.pdf", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/2ee8fe8abbb94b7ebefa67990b15a743?KeyID=a8968c46&Signature=ryUc0j3Pmy63gc3K%252BVAlJ9qnmc6VvYjUU4Xnon3q5Dppv8O4HJ4rgMkyp%252BM42OsOTo9pHn9bSxPzdLzP8Xk9DA%253D%253D", 
+            "format": "application/pdf", 
+            "documentOf": "tender", 
+            "datePublished": "2019-04-01T01:00:00+03:00", 
+            "id": "7adad4419c2f4b30b066e8e584a62f25", 
+            "dateModified": "2019-04-01T01:00:00+03:00"
+          }
+        ], 
+        "selfEligible": true, 
+        "selfQualified": true, 
+        "tenderers": [
+          {
+            "contactPoint": {
+              "email": "aagt@gmail.com", 
+              "telephone": "+380 (322) 91-69-30", 
+              "name": "Андрій Олексюк"
+            }, 
+            "scale": "sme", 
+            "name": "ДКП «Книга»", 
+            "identifier": {
+              "scheme": "UA-EDR", 
+              "id": "00137226", 
+              "uri": "http://www.sc.gov.ua/"
+            }, 
+            "address": {
+              "postalCode": "79013", 
+              "countryName": "Україна", 
+              "streetAddress": "вул. Островського, 34", 
+              "region": "м. Львів", 
+              "locality": "м. Львів"
+            }
+          }
+        ], 
+        "id": "5e79c825b4c54c36a179b22db2dae23b"
+      }
+    ], 
+    "cancellations": [
+      {
+        "status": "active", 
+        "documents": [
+          {
+            "hash": "md5:00000000000000000000000000000000", 
+            "description": "Changed description", 
+            "language": "uk", 
+            "title": "Notice.pdf", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/71d6f6d2cec345c38c88ba9c41722081?KeyID=a8968c46&Signature=eBZBkc%252BTI88y48%2FzYKrEV%252BtBHYln0Ddoj6SmItIZ67ovnwVOL8hBDbKgc3HGSaTeNia3gAHkL0IBAcA%2FxN0eBg%253D%253D", 
+            "format": "application/pdf", 
+            "documentOf": "tender", 
+            "datePublished": "2019-04-01T01:00:01+03:00", 
+            "id": "6359da0c2c38494ba9e64a4d4ee48d33", 
+            "dateModified": "2019-04-01T01:00:01+03:00"
+          }, 
+          {
+            "hash": "md5:00000000000000000000000000000000", 
+            "description": "Changed description", 
+            "language": "uk", 
+            "title": "Notice-2.pdf", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/d370254c4d274a08a246628a75c53f4f?KeyID=a8968c46&Signature=XMCfThBQe0qpY0ySztr%252BK7g9unLro407pc3El1fLCNNDaoXKyY8Nvoz1qU03CdneN02tvhMsiPx8zRGCVCZeDA%253D%253D", 
+            "format": "application/pdf", 
+            "documentOf": "tender", 
+            "datePublished": "2019-04-01T01:00:01+03:00", 
+            "id": "6359da0c2c38494ba9e64a4d4ee48d33", 
+            "dateModified": "2019-04-01T01:00:01+03:00"
+          }
+        ], 
+        "reason": "cancellation reason", 
+        "reasonType": "unsuccessful", 
+        "date": "2019-04-01T01:00:01+03:00", 
+        "cancellationOf": "tender", 
+        "id": "340d917daa2d41599bb71c6f330fdd43"
+      }
+    ], 
+    "noticePublicationDate": "2019-04-01T01:00:00+03:00", 
+    "awardCriteria": "ratedCriteria"
+  }
+}
+

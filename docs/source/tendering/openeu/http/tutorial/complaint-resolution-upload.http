@@ -1,0 +1,32 @@
+POST /api/2.5/tenders/71c0e0ebf297470aa18a89c42f80fb55/complaints/06ef5a30aba04b5db7c0b44f95a3e046/documents HTTP/1.0
+Authorization: Basic cmV2aWV3ZXI6
+Content-Length: 149
+Content-Type: multipart/form-data; boundary=BOUNDARY
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="ComplaintResolution.pdf"
+Content-Type: application/pdf
+
+content
+--BOUNDARY--
+
+
+Response: 201 Created
+Content-Type: application/json; charset=UTF-8
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/71c0e0ebf297470aa18a89c42f80fb55/complaints/06ef5a30aba04b5db7c0b44f95a3e046/documents/36a64198ff264c499a41ee19196e47d6
+{
+  "data": {
+    "hash": "md5:00000000000000000000000000000000", 
+    "author": "aboveThresholdReviewers", 
+    "language": "uk", 
+    "title": "ComplaintResolution.pdf", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/defd15d0d4d54e7cbca1c30c67b7bd97?KeyID=a8968c46&Signature=3C%2FFXPdv%252BpTcKKM9iKlvfdU1BeA5uuGb9Q1N399h4v9V3hGBKKfgYNm01nVPULwOx1HvQkOM7bgeXUO%252Br622Dw%253D%253D", 
+    "format": "application/pdf", 
+    "documentOf": "tender", 
+    "datePublished": "2019-04-01T01:00:00+03:00", 
+    "id": "36a64198ff264c499a41ee19196e47d6", 
+    "dateModified": "2019-04-01T01:00:00+03:00"
+  }
+}
+

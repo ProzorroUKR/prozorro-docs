@@ -1,0 +1,22 @@
+GET /api/2.5/tenders/50c82523038349969f53f3e238932c46/contracts/06cf1c4f280e4718b19fd8537a62323e/documents HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Host: lb-api-sandbox.prozorro.gov.ua
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": [
+    {
+      "hash": "md5:00000000000000000000000000000000", 
+      "language": "uk", 
+      "title": "contract_first_document.doc", 
+      "url": "http://public-docs-sandbox.prozorro.gov.ua/get/3048137c4e0a4960b225d4982d7ad88d?KeyID=a8968c46&Signature=n5snYgAEfN0tupic3d0DmnmSnbaLW3Foz8%252B3N%252BoJj1VNdvNzM8vLqil9gXarynoO5TJqpVa3ufAJRQvtc0sjBQ%253D%253D", 
+      "format": "application/msword", 
+      "documentOf": "tender", 
+      "datePublished": "2019-04-01T01:00:01+03:00", 
+      "id": "0c462feb8c684f76adea65aa8a145cc1", 
+      "dateModified": "2019-04-01T01:00:01+03:00"
+    }
+  ]
+}
+

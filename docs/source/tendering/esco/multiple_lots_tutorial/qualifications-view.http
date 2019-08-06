@@ -1,0 +1,29 @@
+GET /api/2.5/tenders/db8f78603c144a8aac15730f9c763584/qualifications?acc_token=82ef608a467b4128bdc199b13452c06f HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Host: lb-api-sandbox.prozorro.gov.ua
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": [
+    {
+      "status": "pending", 
+      "lotID": "3c84167877eb48d693c12efd2c6cb01e", 
+      "eligible": false, 
+      "qualified": false, 
+      "bidID": "b797c74bba014457870ceda8104f0444", 
+      "date": "2019-04-01T01:00:00+03:00", 
+      "id": "5b8ed3eca3354b918a0810c13b3b15cd"
+    }, 
+    {
+      "status": "pending", 
+      "lotID": "3c84167877eb48d693c12efd2c6cb01e", 
+      "eligible": false, 
+      "qualified": false, 
+      "bidID": "e330641f19174449b434b4988cccf0c6", 
+      "date": "2019-04-01T01:00:00+03:00", 
+      "id": "f12f2ca9a7f74ff1affca438285aa89d"
+    }
+  ]
+}
+

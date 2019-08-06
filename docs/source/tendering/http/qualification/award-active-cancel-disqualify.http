@@ -1,0 +1,68 @@
+PATCH /api/2.5/tenders/bd77618b8d904261bcbdeb67bbf0a695/awards/0c1710d159af462585b4aa19194f1aab?acc_token=2e1ede01f7d34a9eb1db0fcc503916fc HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 36
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "status": "unsuccessful"
+  }
+}
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/bd77618b8d904261bcbdeb67bbf0a695/awards/1f19f6bf8ed3471ea1607fcb7a127290
+{
+  "data": {
+    "status": "unsuccessful", 
+    "documents": [
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "author": "tender_owner", 
+        "title": "Cancellation_Reason.pdf", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/202da44fbd4a476ab11b90bd9ced7836?KeyID=a8968c46&Signature=rehA9N6KolRKnxG5ygjtgzct88rEE5YUxJJ7HaBbKiGVgFdmfyPPUMqb%2Fi43kxXqgQYOtAsGveBR1aBura4kBw%253D%253D", 
+        "format": "application/pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "id": "4344cd13743b4c93bf4c5750a99b40e2", 
+        "dateModified": "2019-04-01T01:00:00+03:00"
+      }
+    ], 
+    "complaintPeriod": {
+      "startDate": "2019-04-01T01:00:00+03:00", 
+      "endDate": "2019-04-03T01:00:00+03:00"
+    }, 
+    "suppliers": [
+      {
+        "contactPoint": {
+          "name": "Державне управління справами", 
+          "telephone": "0440000000"
+        }, 
+        "scale": "micro", 
+        "name": "Державне управління справами", 
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "00037256", 
+          "uri": "http://www.dus.gov.ua/"
+        }, 
+        "address": {
+          "postalCode": "01220", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова, 11, корпус 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }
+      }
+    ], 
+    "bid_id": "0d5516d28bee4302b80ec7db08133022", 
+    "value": {
+      "currency": "UAH", 
+      "amount": 469.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "date": "2019-04-01T01:00:00+03:00", 
+    "id": "0c1710d159af462585b4aa19194f1aab"
+  }
+}
+

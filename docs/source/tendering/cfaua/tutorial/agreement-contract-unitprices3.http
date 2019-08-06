@@ -1,0 +1,78 @@
+PATCH /api/2.5/tenders/e5172ebc4c4c411f84f376ce6ede43b8/agreements/6b5a0c11f61040cf9cf3b2ecb7c71e86/contracts/046f445603f84b6db53e703025b94b1d?acc_token=1307a9159aab4852b48cb39c8fc17f67 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 184
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "unitPrices": [
+      {
+        "value": {
+          "amount": 0.5
+        }, 
+        "relatedItem": "c5a343809a7843f59dec1ee14447d1c0"
+      }, 
+      {
+        "value": {
+          "amount": 0.5
+        }, 
+        "relatedItem": "3728902bfd744ce1a7b1b0fcdf4ca112"
+      }
+    ]
+  }
+}
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "status": "active", 
+    "unitPrices": [
+      {
+        "value": {
+          "currency": "UAH", 
+          "amount": 0.5, 
+          "valueAddedTaxIncluded": true
+        }, 
+        "relatedItem": "c5a343809a7843f59dec1ee14447d1c0"
+      }, 
+      {
+        "value": {
+          "currency": "UAH", 
+          "amount": 0.5, 
+          "valueAddedTaxIncluded": true
+        }, 
+        "relatedItem": "3728902bfd744ce1a7b1b0fcdf4ca112"
+      }
+    ], 
+    "suppliers": [
+      {
+        "contactPoint": {
+          "email": "soleksuk@gmail.com", 
+          "telephone": "+380 (432) 21-69-30", 
+          "name": "Сергій Олексюк"
+        }, 
+        "scale": "micro", 
+        "name": "ДКП «Школяр»", 
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "00137256", 
+          "uri": "http://www.sc.gov.ua/"
+        }, 
+        "address": {
+          "postalCode": "21100", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Островського, 33", 
+          "region": "м. Вінниця", 
+          "locality": "м. Вінниця"
+        }
+      }
+    ], 
+    "bidID": "410cb59a0945497eb61cc4461f661569", 
+    "date": "2019-04-01T01:00:00+03:00", 
+    "awardID": "c260339c8b714126844f2d63c30f339c", 
+    "id": "046f445603f84b6db53e703025b94b1d"
+  }
+}
+

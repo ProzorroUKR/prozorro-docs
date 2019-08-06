@@ -1,0 +1,93 @@
+PATCH /api/2.5/tenders/5fb29c8fb65c4a12b69dd3531cfe7bce/contracts/58ac53c9808c41f6b9bef2cc04d5235f?acc_token=5041e53aff3940fb94a230a261500765 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 53
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "dateSigned": "2019-04-01T01:00:00+03:00"
+  }
+}
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "status": "pending", 
+    "items": [
+      {
+        "description": "Послуги шкільних їдалень", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Послуги з харчування у школах", 
+          "id": "55523100-3"
+        }, 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "Послуги шкільних їдалень"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "deliveryDate": {
+          "startDate": "2019-04-21T00:00:00+02:00", 
+          "endDate": "2019-05-21T00:00:00+02:00"
+        }, 
+        "id": "56144396a6a743e5adb938d12c35b86e", 
+        "unit": {
+          "code": "MON", 
+          "name": "month", 
+          "value": {
+            "currency": "UAH", 
+            "amount": 12.0, 
+            "valueAddedTaxIncluded": true
+          }
+        }, 
+        "quantity": 9.0
+      }
+    ], 
+    "suppliers": [
+      {
+        "contactPoint": {
+          "email": "soleksuk@gmail.com", 
+          "telephone": "+380 (432) 21-69-30", 
+          "name": "Сергій Олексюк"
+        }, 
+        "scale": "micro", 
+        "name": "ДКП «Школяр»", 
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "00137256", 
+          "uri": "http://www.sc.gov.ua/"
+        }, 
+        "address": {
+          "postalCode": "21100", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Островського, 33", 
+          "region": "м. Вінниця", 
+          "locality": "м. Вінниця"
+        }
+      }
+    ], 
+    "value": {
+      "currency": "UAH", 
+      "amount": 238.0, 
+      "amountNet": 230.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "dateSigned": "2019-04-01T01:00:00+03:00", 
+    "date": "2019-04-01T01:00:00+03:00", 
+    "awardID": "68ea182233e3452d9017623a786375bf", 
+    "id": "58ac53c9808c41f6b9bef2cc04d5235f", 
+    "contractID": "UA-2019-04-01-000001-1"
+  }
+}
+

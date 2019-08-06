@@ -1,0 +1,26 @@
+POST /api/2.5/tenders/e5172ebc4c4c411f84f376ce6ede43b8/cancellations?acc_token=1307a9159aab4852b48cb39c8fc17f67 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 43
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "reason": "cancellation reason"
+  }
+}
+
+Response: 201 Created
+Content-Type: application/json; charset=UTF-8
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e5172ebc4c4c411f84f376ce6ede43b8/cancellations/5c22115bd57a4d56bad766fcf88a788b
+{
+  "data": {
+    "status": "pending", 
+    "reason": "cancellation reason", 
+    "reasonType": "cancelled", 
+    "date": "2019-04-01T01:00:01+03:00", 
+    "cancellationOf": "tender", 
+    "id": "5c22115bd57a4d56bad766fcf88a788b"
+  }
+}
+

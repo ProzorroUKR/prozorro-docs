@@ -1,0 +1,32 @@
+POST /api/2.5/tenders/3dc3a680d9564656a49e22ae78aef1e9/qualifications/402a1119609041c7a7ae0218a5ced15a/complaints/529f778689d34c97a404c229ce734912/documents?acc_token=996767ebf46f4892a40118c9b985fb66 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 151
+Content-Type: multipart/form-data; boundary=BOUNDARY
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="Complaint_Attachement.pdf"
+Content-Type: application/pdf
+
+content
+--BOUNDARY--
+
+
+Response: 201 Created
+Content-Type: application/json; charset=UTF-8
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/3dc3a680d9564656a49e22ae78aef1e9/qualifications/402a1119609041c7a7ae0218a5ced15a/complaints/529f778689d34c97a404c229ce734912/documents/e4165ebc0b7544e5958550b5110e50b6
+{
+  "data": {
+    "hash": "md5:00000000000000000000000000000000", 
+    "author": "complaint_owner", 
+    "language": "uk", 
+    "title": "Complaint_Attachement.pdf", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/f73132dc90a24451ad46747abb919422?KeyID=a8968c46&Signature=EEOnyHJBx9Lg%2F6JFHRpzEFTlJoU9FC5VQnFHzvx6EP0PSUTDDPGfQ%252BzUkVdM3DOgYKXzeZULlpy8ykIsxAcWBA%253D%253D", 
+    "format": "application/pdf", 
+    "documentOf": "tender", 
+    "datePublished": "2019-04-01T01:00:01+03:00", 
+    "id": "e4165ebc0b7544e5958550b5110e50b6", 
+    "dateModified": "2019-04-01T01:00:01+03:00"
+  }
+}
+
