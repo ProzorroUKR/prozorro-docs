@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/e993c22e00e04a7aa24bf6820fc7ca4f/bids HTTP/1.0
+POST /api/2.5/tenders/ef61695c05174b37b2bb6a8da114cc9d/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 765
 Content-Type: application/json
@@ -39,10 +39,11 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e993c22e00e04a7aa24bf6820fc7ca4f/bids/f20fd7b8bf9b4724bed5c3749cefab12
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ef61695c05174b37b2bb6a8da114cc9d/bids/8bb3878e6aa347bf8d402a8988d6475c
 {
   "access": {
-    "token": "2f8f2ad2a66249d883dc40092bcd0ffa"
+    "transfer": "07f47c14667d482eb9264e6a9c878dd5", 
+    "token": "4c86f3c193ba4dde91d152256b445d0e"
   }, 
   "data": {
     "status": "pending", 
@@ -77,7 +78,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e993c22e00e04a7a
       }
     ], 
     "date": "2019-04-01T01:00:00+03:00", 
-    "id": "f20fd7b8bf9b4724bed5c3749cefab12"
+    "id": "8bb3878e6aa347bf8d402a8988d6475c"
   }
 }
 

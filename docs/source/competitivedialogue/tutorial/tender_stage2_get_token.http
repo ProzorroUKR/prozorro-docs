@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/287688b914034a95bf319eb4e2dd20d1/credentials?acc_token=7ac178c1bd1d4afa85045400eac1f72c HTTP/1.0
+PATCH /api/2.5/tenders/785f8bdb2f804fe4be16b2cc4134dec6/credentials?acc_token=67e88a4fa34541c2bbdd1b66c8b11b71 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 2
 Content-Type: application/json
@@ -10,7 +10,8 @@ Response: 200 OK
 Content-Type: application/json; charset=UTF-8
 {
   "access": {
-    "token": "037ac47afba444579a7fcbf91fa728aa"
+    "transfer": "9eb7c60c9b5246f3a84bfa8094343442", 
+    "token": "e14403b324d64b32b07f6d5355a3ca47"
   }, 
   "data": {
     "status": "draft.stage2", 
@@ -122,7 +123,7 @@ Content-Type: application/json; charset=UTF-8
           "startDate": "2019-04-21T00:00:00+02:00", 
           "endDate": "2019-05-21T00:00:00+02:00"
         }, 
-        "id": "ced4cde3d6d84ef7a398527e219d468b", 
+        "id": "e80090104e86496eb8c81a72d1c3fb7b", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -155,7 +156,7 @@ Content-Type: application/json; charset=UTF-8
           "startDate": "2019-04-21T00:00:00+02:00", 
           "endDate": "2019-05-21T00:00:00+02:00"
         }, 
-        "id": "5829b8f1752749e8aacbf968c4c3991b", 
+        "id": "931498ffc6a241a5a608427d2816e2fa", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -165,7 +166,7 @@ Content-Type: application/json; charset=UTF-8
     ], 
     "owner": "broker", 
     "dateModified": "2019-04-01T01:00:00+03:00", 
-    "id": "287688b914034a95bf319eb4e2dd20d1", 
+    "id": "785f8bdb2f804fe4be16b2cc4134dec6", 
     "procurementMethod": "selective", 
     "tenderID": "UA-2019-04-01-000002"
   }

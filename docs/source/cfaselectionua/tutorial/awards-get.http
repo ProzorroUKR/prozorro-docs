@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/dfcf142d4b674c9392b10e98e3ee5060/awards HTTP/1.0
+GET /api/2.5/tenders/6ccc95c340c94e32bcf0b8c2183e62f7/awards HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: lb-api-sandbox.prozorro.gov.ua
 
@@ -8,7 +8,7 @@ Content-Type: application/json; charset=UTF-8
   "data": [
     {
       "status": "pending", 
-      "lotID": "e74b7c92ab634829a22f7d7ca3bf7021", 
+      "lotID": "1b75c06ee58f4909a4201255b4ba5831", 
       "suppliers": [
         {
           "contactPoint": {
@@ -31,14 +31,14 @@ Content-Type: application/json; charset=UTF-8
           }
         }
       ], 
-      "bid_id": "ccb688f82a1e44d1a3913e55c93edf44", 
+      "bid_id": "d3401f691dc94a84ba7daa8eb8e0c4f0", 
       "value": {
         "currency": "UAH", 
         "amount": 499.0, 
         "valueAddedTaxIncluded": true
       }, 
       "date": "2019-04-01T01:00:00+03:00", 
-      "id": "243761fcb76b4031be3f16c79f6b3526"
+      "id": "f62dbde0edcb4b7088c2be54c7007308"
     }
   ]
 }

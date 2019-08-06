@@ -33,6 +33,7 @@ Contents:
    cluster
    2pc
    acceleration
+   relocation/index
 
 
 Indices and tables

@@ -81,10 +81,11 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/b6934cbe916b49a5a9a3038d005b56ef
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/083d97e76d36428cb47a7dc8cb434ea4
 {
   "access": {
-    "token": "7036cdd7c0b0465db50b8537bf728edb"
+    "transfer": "aa28aab95cff47eba1fbb9e2a72567ec", 
+    "token": "5b2ae9f768c64628a64f47699417e67b"
   }, 
   "data": {
     "procurementMethod": "open", 
@@ -126,7 +127,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/b6934cbe916b49a5
           "startDate": "2019-04-03T01:00:00+03:00", 
           "endDate": "2019-04-06T01:00:00+03:00"
         }, 
-        "id": "3990d32a9a944a829f72bca9dcbffc8c", 
+        "id": "902337c4b3df42238e2b34cfb5a80e15", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -168,7 +169,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/b6934cbe916b49a5
     }, 
     "owner": "broker", 
     "dateModified": "2019-04-01T01:00:00+03:00", 
-    "id": "b6934cbe916b49a5a9a3038d005b56ef", 
+    "id": "083d97e76d36428cb47a7dc8cb434ea4", 
     "tenderID": "UA-2019-04-01-000001"
   }
 }

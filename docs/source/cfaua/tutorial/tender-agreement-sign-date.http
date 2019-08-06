@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/eeda351577cb475894b560d00bb57c20/agreements/9c9b9267b5f045c5898d6d4ae2ba3855?acc_token=084aca35cabe4d629dd5a4fbe8b47c05 HTTP/1.0
+PATCH /api/2.5/tenders/e5172ebc4c4c411f84f376ce6ede43b8/agreements/6b5a0c11f61040cf9cf3b2ecb7c71e86?acc_token=1e40f3cf3fd64b8ebca3076b70a86e71 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 53
 Content-Type: application/json
@@ -14,30 +14,30 @@ Response: 200 OK
 Content-Type: application/json; charset=UTF-8
 {
   "data": {
-    "agreementID": "UA-2019-04-01-000001-796f3c11d16541829b11d2e26affeaab1", 
+    "agreementID": "UA-2019-04-01-000001-c86b4541a9024b3a9c6e847e856cc6d51", 
     "status": "pending", 
     "documents": [
       {
         "hash": "md5:00000000000000000000000000000000", 
         "title": "agreement_first_document.doc", 
-        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/aca7d141756245db8ac8b692b3c58a87?KeyID=a8968c46&Signature=kNHulgSlpGmulWN8ECAXGbG7g9Gq%252BiagFvEw7jzIVkkHNPazg2Kp4KRnAX14lXYKJ3cNg4vnbFsiqkcNnoDMCQ%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/09de1a3adfa94f0d8fa30909841193f0?KeyID=a8968c46&Signature=XuB%252BruGjl58IgbNXob6CpnwpD3ae5H%2FjtZaBRmxPcGiDrzqNJWxpxBgwp3C6R1sJRFrVPhw6hzPUBHgF4R3sAA%253D%253D", 
         "format": "application/msword", 
         "documentOf": "tender", 
         "datePublished": "2019-04-01T01:00:00+03:00", 
-        "id": "3b34c3f614d34aa9925a7fab9a174152", 
+        "id": "67af38dacd1640569b88d396caf212b1", 
         "dateModified": "2019-04-01T01:00:00+03:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
         "language": "en", 
         "title": "agreement_second_document.doc", 
-        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/5d3ed5054f7f4435b39ba0e0069c7d25?KeyID=a8968c46&Signature=1YQ9FjQl%252BtWQzyuc7%252BuTUpbaL1hD0vF%252BMt6BqX%252BmDxiaXnqaFDuhIz7aY5C2Uw%2FDWKhefvYawxCnAoMQF9YlDA%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/6463825d07e249eaa65f8c3c8abf9c3c?KeyID=a8968c46&Signature=vpsW%252BjrQFImSYdrHbWrhJUZSbWr0XMcREz5tJlHNoDKHPgWo4d%252BdCjBpmepSz9%2Fm5PBiE1%252BTFA2CdFGSo%2FixAQ%253D%253D", 
         "format": "application/msword", 
         "title_en": "Title of Document", 
         "description_en": "Description of Document", 
         "datePublished": "2019-04-01T01:00:00+03:00", 
         "documentOf": "tender", 
-        "id": "62cbc169988b442fa43b88e63ce2f6ba", 
+        "id": "c3d2c2c5ba1f40e5a6dccce245515afb", 
         "dateModified": "2019-04-01T01:00:00+03:00"
       }
     ], 
@@ -51,7 +51,7 @@ Content-Type: application/json; charset=UTF-8
               "amount": 0.5, 
               "valueAddedTaxIncluded": true
             }, 
-            "relatedItem": "cfa79c4a7e2041d3812508870da99986"
+            "relatedItem": "c5a343809a7843f59dec1ee14447d1c0"
           }, 
           {
             "value": {
@@ -59,7 +59,7 @@ Content-Type: application/json; charset=UTF-8
               "amount": 0.5, 
               "valueAddedTaxIncluded": true
             }, 
-            "relatedItem": "0dc90ed37b0446b5b48e9695a5ef4a73"
+            "relatedItem": "3728902bfd744ce1a7b1b0fcdf4ca112"
           }
         ], 
         "suppliers": [
@@ -85,10 +85,10 @@ Content-Type: application/json; charset=UTF-8
             }
           }
         ], 
-        "bidID": "1f042d35e8464a89aa530d18a5ea7f18", 
+        "bidID": "5a84740ed0bd4aa3830adfb56c49ed62", 
         "date": "2019-04-01T01:00:00+03:00", 
-        "awardID": "f47232081b04408a9469c9c1d78b9ccf", 
-        "id": "3b5dbef9344844068fa970e5db24050f"
+        "awardID": "39bc6ae6efb64cac8bb10d2ca57f2b1e", 
+        "id": "e0f4fda1d0024203998a4ae7d621ec5a"
       }, 
       {
         "status": "active", 
@@ -99,7 +99,7 @@ Content-Type: application/json; charset=UTF-8
               "amount": 0.5, 
               "valueAddedTaxIncluded": true
             }, 
-            "relatedItem": "cfa79c4a7e2041d3812508870da99986"
+            "relatedItem": "c5a343809a7843f59dec1ee14447d1c0"
           }, 
           {
             "value": {
@@ -107,7 +107,7 @@ Content-Type: application/json; charset=UTF-8
               "amount": 0.5, 
               "valueAddedTaxIncluded": true
             }, 
-            "relatedItem": "0dc90ed37b0446b5b48e9695a5ef4a73"
+            "relatedItem": "3728902bfd744ce1a7b1b0fcdf4ca112"
           }
         ], 
         "suppliers": [
@@ -133,10 +133,10 @@ Content-Type: application/json; charset=UTF-8
             }
           }
         ], 
-        "bidID": "19d5bd6c111c4b8d8fd79bc5c0ba6f6a", 
+        "bidID": "e88e8fc3020640178a79c6e66d3dfd5f", 
         "date": "2019-04-01T01:00:00+03:00", 
-        "awardID": "adb090daca2d4a559a1edfb75e583e59", 
-        "id": "0f601a4a29704b72a84a77f5fac2c0ed"
+        "awardID": "9bfbd12de219435586207e6b54b9dd21", 
+        "id": "ecc998848a9247d39404c21b3c0dca17"
       }, 
       {
         "status": "active", 
@@ -147,7 +147,7 @@ Content-Type: application/json; charset=UTF-8
               "amount": 0.5, 
               "valueAddedTaxIncluded": true
             }, 
-            "relatedItem": "cfa79c4a7e2041d3812508870da99986"
+            "relatedItem": "c5a343809a7843f59dec1ee14447d1c0"
           }, 
           {
             "value": {
@@ -155,7 +155,7 @@ Content-Type: application/json; charset=UTF-8
               "amount": 0.5, 
               "valueAddedTaxIncluded": true
             }, 
-            "relatedItem": "0dc90ed37b0446b5b48e9695a5ef4a73"
+            "relatedItem": "3728902bfd744ce1a7b1b0fcdf4ca112"
           }
         ], 
         "suppliers": [
@@ -181,15 +181,15 @@ Content-Type: application/json; charset=UTF-8
             }
           }
         ], 
-        "bidID": "3cb5698d987f4fc7a12c4fe9b19637e3", 
+        "bidID": "410cb59a0945497eb61cc4461f661569", 
         "date": "2019-04-01T01:00:00+03:00", 
-        "awardID": "b3baf1b1c2334308985589e140a1b8bd", 
-        "id": "ac102f965bf64e4788e8a00e7f2a530f"
+        "awardID": "c260339c8b714126844f2d63c30f339c", 
+        "id": "046f445603f84b6db53e703025b94b1d"
       }
     ], 
     "items": [
       {
-        "relatedLot": "f074dc96c19a4b2ab186871f70f47fd9", 
+        "relatedLot": "c7555f1bb878434d8815dea318304673", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -215,7 +215,7 @@ Content-Type: application/json; charset=UTF-8
           "startDate": "2018-06-27T13:39:09.362837+03:00", 
           "endDate": "2018-06-30T13:39:09.362837+03:00"
         }, 
-        "id": "cfa79c4a7e2041d3812508870da99986", 
+        "id": "c5a343809a7843f59dec1ee14447d1c0", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -223,7 +223,7 @@ Content-Type: application/json; charset=UTF-8
         "quantity": 5.0
       }, 
       {
-        "relatedLot": "f074dc96c19a4b2ab186871f70f47fd9", 
+        "relatedLot": "c7555f1bb878434d8815dea318304673", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -249,7 +249,7 @@ Content-Type: application/json; charset=UTF-8
           "startDate": "2018-06-27T13:39:09.362837+03:00", 
           "endDate": "2018-06-30T13:39:09.362837+03:00"
         }, 
-        "id": "0dc90ed37b0446b5b48e9695a5ef4a73", 
+        "id": "3728902bfd744ce1a7b1b0fcdf4ca112", 
         "unit": {
           "code": "44617100-8", 
           "name": "item"
@@ -259,7 +259,7 @@ Content-Type: application/json; charset=UTF-8
     ], 
     "dateSigned": "2019-04-01T01:00:01+03:00", 
     "date": "2019-04-01T01:00:00+03:00", 
-    "id": "9c9b9267b5f045c5898d6d4ae2ba3855"
+    "id": "6b5a0c11f61040cf9cf3b2ecb7c71e86"
   }
 }
 

@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/d4132712eb7b4d3f91083564bc1ddf26 HTTP/1.0
+GET /api/2.5/tenders/db8f78603c144a8aac15730f9c763584 HTTP/1.0
 Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
@@ -45,7 +45,7 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "owner": "broker", 
     "title_en": "Services in school canteens", 
-    "id": "d4132712eb7b4d3f91083564bc1ddf26", 
+    "id": "db8f78603c144a8aac15730f9c763584", 
     "title": "Послуги шкільних їдалень", 
     "lots": [
       {
@@ -64,7 +64,7 @@ Content-Type: application/json; charset=UTF-8
         "minimalStepPercentage": 0.006, 
         "yearlyPaymentsPercentageRange": 0.8, 
         "date": "2019-04-01T01:00:00+03:00", 
-        "id": "cd0a788afea24ea0a3d145f1702f419f"
+        "id": "3c84167877eb48d693c12efd2c6cb01e"
       }, 
       {
         "status": "active", 
@@ -82,7 +82,7 @@ Content-Type: application/json; charset=UTF-8
         "minimalStepPercentage": 0.006, 
         "yearlyPaymentsPercentageRange": 0.8, 
         "date": "2019-04-01T01:00:00+03:00", 
-        "id": "df160680e58d4428ab078fdb1b494578"
+        "id": "92e4a20a9d7f4dada89d434409f951d8"
       }
     ], 
     "tenderID": "UA-2019-04-01-000001", 
@@ -105,7 +105,7 @@ Content-Type: application/json; charset=UTF-8
     "fundingKind": "other", 
     "items": [
       {
-        "relatedLot": "cd0a788afea24ea0a3d145f1702f419f", 
+        "relatedLot": "3c84167877eb48d693c12efd2c6cb01e", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -127,14 +127,14 @@ Content-Type: application/json; charset=UTF-8
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "228e7f73cbc24e9cb2ae38360271bc79", 
+        "id": "fa1ab62942584a95a99aacdeddfffcf7", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
         }
       }, 
       {
-        "relatedLot": "df160680e58d4428ab078fdb1b494578", 
+        "relatedLot": "92e4a20a9d7f4dada89d434409f951d8", 
         "description": "Послуги шкільних їдалень", 
         "classification": {
           "scheme": "ДК021", 
@@ -156,7 +156,7 @@ Content-Type: application/json; charset=UTF-8
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "9b5830c544224466a0be153578264fcf", 
+        "id": "0ad5fe4a103342329fec5ccfe2a20fb3", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"

@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/37d9f9c8f1734692bc4958b73cd220e6/qualifications/aae340b510b64b258a82677c2f271a45/complaints HTTP/1.0
+GET /api/2.5/tenders/3dc3a680d9564656a49e22ae78aef1e9/qualifications/402a1119609041c7a7ae0218a5ced15a/complaints HTTP/1.0
 Host: lb-api-sandbox.prozorro.gov.ua
 
 Response: 200 OK
@@ -9,6 +9,8 @@ Content-Type: application/json; charset=UTF-8
       "status": "resolved", 
       "dateDecision": "2019-04-01T01:00:01+03:00", 
       "tendererActionDate": "2019-04-01T01:00:01+03:00", 
+      "transfer_token": "e57461528f7ccc46a2f5aa2eb747787ca0a8135556ba3f7e2f2514ab4ef8baf9d7c27f405e3bc631ea556891da0b9499ea099d1e2e6955e80510c54373476d73", 
+      "title": "Недостатньо інформації", 
       "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
       "author": {
         "contactPoint": {
@@ -30,25 +32,18 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Вінниця"
         }
       }, 
-      "title": "Недостатньо інформації", 
-      "id": "d1d343244559496f99d151d9e6942b78", 
       "tendererAction": "Умови виправлено", 
-      "dateSubmitted": "2019-04-01T01:00:01+03:00", 
-      "complaintID": "UA-2019-04-01-000001.1", 
-      "date": "2019-04-01T01:00:01+03:00", 
-      "acceptance": true, 
-      "type": "complaint", 
       "documents": [
         {
           "hash": "md5:00000000000000000000000000000000", 
           "author": "complaint_owner", 
           "language": "uk", 
           "title": "Complaint_Attachement.pdf", 
-          "url": "http://public-docs-sandbox.prozorro.gov.ua/get/bb7ad73b0a6749828585ac227eac9013?KeyID=a8968c46&Signature=ARtsWktLZLgneAUm4c5dk41Jm6E0tlWP%252BEghSq1Z2ggi5N0xRH9r0hsMqWh%2FXr7KLWKf3fzzPCkjMz4JVfpvBw%253D%253D", 
+          "url": "http://public-docs-sandbox.prozorro.gov.ua/get/f73132dc90a24451ad46747abb919422?KeyID=a8968c46&Signature=EEOnyHJBx9Lg%2F6JFHRpzEFTlJoU9FC5VQnFHzvx6EP0PSUTDDPGfQ%252BzUkVdM3DOgYKXzeZULlpy8ykIsxAcWBA%253D%253D", 
           "format": "application/pdf", 
           "documentOf": "tender", 
           "datePublished": "2019-04-01T01:00:01+03:00", 
-          "id": "d00f2c4db5984ad7a8e0cd282c4074b2", 
+          "id": "e4165ebc0b7544e5958550b5110e50b6", 
           "dateModified": "2019-04-01T01:00:01+03:00"
         }, 
         {
@@ -56,20 +51,28 @@ Content-Type: application/json; charset=UTF-8
           "author": "aboveThresholdReviewers", 
           "language": "uk", 
           "title": "ComplaintResolution.pdf", 
-          "url": "http://public-docs-sandbox.prozorro.gov.ua/get/b9b4f3b2179d4f948a6703eadef3fdfe?KeyID=a8968c46&Signature=Y0jLVtacAtq7ZLdGY5sxA14qTgW0PANAAaWr2tHgkU1qr%252B8mI8j1zRfmawFwcj9k8iyo3TOhx1kyUqS23ah7DA%253D%253D", 
+          "url": "http://public-docs-sandbox.prozorro.gov.ua/get/01887b8d4211496a80d64ca964e11981?KeyID=a8968c46&Signature=vW9fqhWQW6rahj8RbfTGsgo4SBdJjkuOz4ek8Tdt8q0e1CpNjUlpZbkxRNrwXwcmE6rhv0ZIXfeb0bvtu8xSDQ%253D%253D", 
           "format": "application/pdf", 
           "documentOf": "tender", 
           "datePublished": "2019-04-01T01:00:01+03:00", 
-          "id": "600e972a1d4649a896bfa7edcb78f2ef", 
+          "id": "cc996641ee0e40158a9ea1358bebe9e5", 
           "dateModified": "2019-04-01T01:00:01+03:00"
         }
       ], 
+      "dateSubmitted": "2019-04-01T01:00:01+03:00", 
+      "complaintID": "UA-2019-04-01-000001.1", 
+      "date": "2019-04-01T01:00:01+03:00", 
+      "acceptance": true, 
+      "type": "complaint", 
+      "id": "529f778689d34c97a404c229ce734912", 
       "dateAccepted": "2019-04-01T01:00:01+03:00"
     }, 
     {
       "status": "invalid", 
       "dateDecision": "2019-04-01T01:00:01+03:00", 
-      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+      "transfer_token": "607daad9daca3ca052ec18acc607d403434603f85c7950833fcce96c6dfafb919f37c99d2e1deb35b899df4cd59eceb45e08a54bb5be8c7ce0996a42b9f1a1e2", 
+      "title": "Недостатньо інформації", 
+      "acceptance": false, 
       "author": {
         "contactPoint": {
           "email": "soleksuk@gmail.com", 
@@ -90,18 +93,20 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Вінниця"
         }
       }, 
-      "acceptance": false, 
       "dateSubmitted": "2019-04-01T01:00:01+03:00", 
       "complaintID": "UA-2019-04-01-000001.2", 
       "date": "2019-04-01T01:00:01+03:00", 
-      "title": "Недостатньо інформації", 
       "type": "complaint", 
-      "id": "8751d29175ae49189b89470268be5bc4"
+      "id": "74c469d056274350a6dfe6937056c2e9", 
+      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс."
     }, 
     {
       "status": "declined", 
       "dateDecision": "2019-04-01T01:00:01+03:00", 
-      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+      "transfer_token": "d3237724cd6167eeed80556d5d38f7b0ba6c9590401445a9056ef86c2e6aa15333a5119662b8a0d560f6709f9aec9482b5bbdd25f90a5ac0d28428078877798a", 
+      "title": "Недостатньо інформації", 
+      "acceptance": true, 
+      "dateAccepted": "2019-04-01T01:00:01+03:00", 
       "author": {
         "contactPoint": {
           "email": "soleksuk@gmail.com", 
@@ -122,60 +127,54 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Вінниця"
         }
       }, 
-      "acceptance": true, 
-      "dateAccepted": "2019-04-01T01:00:01+03:00", 
       "dateSubmitted": "2019-04-01T01:00:01+03:00", 
       "complaintID": "UA-2019-04-01-000001.3", 
       "date": "2019-04-01T01:00:01+03:00", 
-      "title": "Недостатньо інформації", 
       "type": "complaint", 
-      "id": "b4eaf5536b64418faad00fe66f7e3820"
+      "id": "1485770b9c8a4f6e8bb80123c0b33afd", 
+      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс."
     }, 
     {
       "status": "stopped", 
       "dateDecision": "2019-04-01T01:00:01+03:00", 
-      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
-      "title": "Недостатньо інформації", 
+      "transfer_token": "e481ca697706418fd3e27c17fc2da67bdd63be57a12e7abff10b82a5951cbd21219a4d31806628f051c09f0fc85f15e29de9f0081b7b5c69d3caade26da61468", 
+      "author": {
+        "contactPoint": {
+          "email": "soleksuk@gmail.com", 
+          "telephone": "+380 (432) 21-69-30", 
+          "name": "Сергій Олексюк"
+        }, 
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "00137256", 
+          "uri": "http://www.sc.gov.ua/"
+        }, 
+        "name": "ДКП «Школяр»", 
+        "address": {
+          "postalCode": "21100", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Островського, 33", 
+          "region": "м. Вінниця", 
+          "locality": "м. Вінниця"
+        }
+      }, 
       "decision": "Тендер скасовується замовником", 
       "acceptance": true, 
       "cancellationReason": "Тендер скасовується замовником", 
       "dateCanceled": "2019-04-01T01:00:01+03:00", 
       "dateAccepted": "2019-04-01T01:00:01+03:00", 
-      "author": {
-        "contactPoint": {
-          "email": "soleksuk@gmail.com", 
-          "telephone": "+380 (432) 21-69-30", 
-          "name": "Сергій Олексюк"
-        }, 
-        "identifier": {
-          "scheme": "UA-EDR", 
-          "id": "00137256", 
-          "uri": "http://www.sc.gov.ua/"
-        }, 
-        "name": "ДКП «Школяр»", 
-        "address": {
-          "postalCode": "21100", 
-          "countryName": "Україна", 
-          "streetAddress": "вул. Островського, 33", 
-          "region": "м. Вінниця", 
-          "locality": "м. Вінниця"
-        }
-      }, 
       "dateSubmitted": "2019-04-01T01:00:01+03:00", 
       "complaintID": "UA-2019-04-01-000001.4", 
       "date": "2019-04-01T01:00:01+03:00", 
+      "title": "Недостатньо інформації", 
       "type": "complaint", 
-      "id": "a14d12486c9445c894f24161597fc772"
+      "id": "8b96f15f452a4cd09d42fd384ada86bb", 
+      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс."
     }, 
     {
       "status": "stopped", 
       "dateDecision": "2019-04-01T01:00:01+03:00", 
-      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
-      "title": "Недостатньо інформації", 
-      "decision": "Тендер скасовується замовником", 
-      "acceptance": true, 
-      "dateCanceled": "2019-04-01T01:00:01+03:00", 
-      "dateAccepted": "2019-04-01T01:00:01+03:00", 
+      "transfer_token": "6e209ffac3dffad2f6adc852d1202156329781e42e7148b9e8717468c98bb1fb17755d23ca5f6396005657391c31c596957f4de726fe9c1845bc9d146f6f0e55", 
       "author": {
         "contactPoint": {
           "email": "soleksuk@gmail.com", 
@@ -196,11 +195,17 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Вінниця"
         }
       }, 
+      "decision": "Тендер скасовується замовником", 
+      "acceptance": true, 
+      "dateCanceled": "2019-04-01T01:00:01+03:00", 
+      "dateAccepted": "2019-04-01T01:00:01+03:00", 
       "dateSubmitted": "2019-04-01T01:00:01+03:00", 
       "complaintID": "UA-2019-04-01-000001.5", 
       "date": "2019-04-01T01:00:01+03:00", 
+      "title": "Недостатньо інформації", 
       "type": "complaint", 
-      "id": "1781143cbdc945eda8912c69fd0b695a"
+      "id": "b0cf1d7220324ffd829daf924a058a75", 
+      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс."
     }, 
     {
       "status": "answered", 
@@ -209,13 +214,13 @@ Content-Type: application/json; charset=UTF-8
       "resolutionType": "resolved", 
       "type": "claim", 
       "satisfied": true, 
-      "bid_id": "3ffba8d99a234b1d824b032600c7d2bf", 
+      "bid_id": "07ef7940cbfc44f084f456feb07ee37b", 
       "dateAnswered": "2019-04-01T01:00:01+03:00", 
       "dateSubmitted": "2019-04-01T01:00:01+03:00", 
       "complaintID": "UA-2019-04-01-000001.6", 
       "date": "2019-04-01T01:00:01+03:00", 
       "resolution": "Умови виправлено, вибір переможня буде розгянуто повторно", 
-      "id": "7ff590f916d04c0db1ad63949019a6b7"
+      "id": "29828df8ea5e493fbd4517be5daac3c0"
     }, 
     {
       "status": "answered", 
@@ -224,36 +229,36 @@ Content-Type: application/json; charset=UTF-8
       "resolutionType": "invalid", 
       "type": "claim", 
       "satisfied": false, 
-      "bid_id": "3ffba8d99a234b1d824b032600c7d2bf", 
+      "bid_id": "07ef7940cbfc44f084f456feb07ee37b", 
       "dateAnswered": "2019-04-01T01:00:01+03:00", 
       "dateSubmitted": "2019-04-01T01:00:01+03:00", 
       "complaintID": "UA-2019-04-01-000001.7", 
       "date": "2019-04-01T01:00:01+03:00", 
       "resolution": "Вимога не відповідає предмету закупівлі", 
-      "id": "2c04a1fcd15d4065a0a32b82a3e591e5"
+      "id": "2c8daaa22b9e4fc89c0500c66f0b5b82"
     }, 
     {
       "status": "claim", 
       "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
       "title": "Недостатньо інформації", 
-      "bid_id": "3ffba8d99a234b1d824b032600c7d2bf", 
+      "bid_id": "07ef7940cbfc44f084f456feb07ee37b", 
       "dateSubmitted": "2019-04-01T01:00:01+03:00", 
       "complaintID": "UA-2019-04-01-000001.8", 
       "date": "2019-04-01T01:00:01+03:00", 
       "type": "claim", 
-      "id": "5005ce35006d479aaac21d80c57c25a4"
+      "id": "ba431b03ee154ff3a3d5c38e89e299ad"
     }, 
     {
       "status": "cancelled", 
       "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
       "title": "Недостатньо інформації", 
-      "bid_id": "3ffba8d99a234b1d824b032600c7d2bf", 
+      "bid_id": "07ef7940cbfc44f084f456feb07ee37b", 
       "cancellationReason": "Умови виправлено", 
       "dateCanceled": "2019-04-01T01:00:01+03:00", 
       "complaintID": "UA-2019-04-01-000001.9", 
       "date": "2019-04-01T01:00:01+03:00", 
       "type": "claim", 
-      "id": "100ad8070b4a43638371412648a74697"
+      "id": "6b3c9c25e09647b1b9f0307aca6c4978"
     }
   ]
 }

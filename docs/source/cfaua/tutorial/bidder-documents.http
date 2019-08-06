@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/eeda351577cb475894b560d00bb57c20/bids/3cb5698d987f4fc7a12c4fe9b19637e3/documents?acc_token=68c78b9b1da24d37bdf110962b1cec17 HTTP/1.0
+GET /api/2.5/tenders/e5172ebc4c4c411f84f376ce6ede43b8/bids/410cb59a0945497eb61cc4461f661569/documents?acc_token=7ba8d77208c04422b161882dc2c4b5c2 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: lb-api-sandbox.prozorro.gov.ua
 
@@ -8,27 +8,27 @@ Content-Type: application/json; charset=UTF-8
   "data": [
     {
       "hash": "md5:00000000000000000000000000000000", 
-      "confidentiality": "buyerOnly", 
+      "confidentiality": "public", 
       "language": "uk", 
+      "title": "Proposal.pdf", 
+      "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e5172ebc4c4c411f84f376ce6ede43b8/bids/410cb59a0945497eb61cc4461f661569/documents/eb4a68ceafb6447a9281c86c1abb6408?download=cb2da3765b23454f938d391a16901551", 
       "format": "application/pdf", 
-      "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/eeda351577cb475894b560d00bb57c20/bids/3cb5698d987f4fc7a12c4fe9b19637e3/documents/779c318ff1024b92819100b89a14ab05?download=cf1fdb6a736f4d2698e7d07b33815250", 
-      "confidentialityRationale": "Only our company sells badgers with pink hair.", 
-      "title": "Proposal_top_secrets.pdf", 
       "documentOf": "tender", 
       "datePublished": "2019-04-01T01:00:00+03:00", 
-      "id": "779c318ff1024b92819100b89a14ab05", 
+      "id": "eb4a68ceafb6447a9281c86c1abb6408", 
       "dateModified": "2019-04-01T01:00:00+03:00"
     }, 
     {
       "hash": "md5:00000000000000000000000000000000", 
-      "confidentiality": "public", 
+      "confidentiality": "buyerOnly", 
       "language": "uk", 
-      "title": "Proposal.pdf", 
-      "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/eeda351577cb475894b560d00bb57c20/bids/3cb5698d987f4fc7a12c4fe9b19637e3/documents/5ae9cd6028a74acf830a7aee315a0832?download=3280fbb5c4314f8b8b64518b2aa70b04", 
       "format": "application/pdf", 
+      "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e5172ebc4c4c411f84f376ce6ede43b8/bids/410cb59a0945497eb61cc4461f661569/documents/2c9b558559ab403eb20c4e653c4d4dc5?download=5656ff8dbb094f5c84cf6e1b79fc53e6", 
+      "confidentialityRationale": "Only our company sells badgers with pink hair.", 
+      "title": "Proposal_top_secrets.pdf", 
       "documentOf": "tender", 
       "datePublished": "2019-04-01T01:00:00+03:00", 
-      "id": "5ae9cd6028a74acf830a7aee315a0832", 
+      "id": "2c9b558559ab403eb20c4e653c4d4dc5", 
       "dateModified": "2019-04-01T01:00:00+03:00"
     }
   ]

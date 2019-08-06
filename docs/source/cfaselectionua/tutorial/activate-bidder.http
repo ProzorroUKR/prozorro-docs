@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/dfcf142d4b674c9392b10e98e3ee5060/bids/1d987535549b42b2a24a0014e1cfd671?acc_token=d2342bbf987741bd901b7d9b47fe493b HTTP/1.0
+PATCH /api/2.5/tenders/6ccc95c340c94e32bcf0b8c2183e62f7/bids/cc8919c6d27b47e89829b7c64b3a7878?acc_token=ebff7d432d3d4d0a8756f67f9bb07ef5 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 30
 Content-Type: application/json
@@ -27,7 +27,7 @@ Content-Type: application/json; charset=UTF-8
     ], 
     "lotValues": [
       {
-        "relatedLot": "e74b7c92ab634829a22f7d7ca3bf7021", 
+        "relatedLot": "1b75c06ee58f4909a4201255b4ba5831", 
         "date": "2019-04-01T01:00:00+03:00", 
         "value": {
           "currency": "UAH", 
@@ -42,13 +42,12 @@ Content-Type: application/json; charset=UTF-8
           "name": "Державне управління справами", 
           "telephone": "0440000000"
         }, 
-        "scale": "micro", 
-        "name": "Державне управління справами", 
         "identifier": {
           "scheme": "UA-EDR", 
           "id": "00037256", 
           "uri": "http://www.dus.gov.ua/"
         }, 
+        "name": "Державне управління справами", 
         "address": {
           "postalCode": "01220", 
           "countryName": "Україна", 
@@ -59,7 +58,7 @@ Content-Type: application/json; charset=UTF-8
       }
     ], 
     "date": "2019-04-01T01:00:00+03:00", 
-    "id": "1d987535549b42b2a24a0014e1cfd671"
+    "id": "cc8919c6d27b47e89829b7c64b3a7878"
   }
 }
 

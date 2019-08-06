@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/721d337eefaf4ebf8e73f0edef07f382/bids HTTP/1.0
+POST /api/2.5/tenders/c4eafa4139e24f1d84c1ce5ccbb4560d/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 954
 Content-Type: application/json
@@ -41,15 +41,16 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/721d337eefaf4ebf8e73f0edef07f382/bids/015ccd38230b4285bb9ff36ecd2d5341
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/c4eafa4139e24f1d84c1ce5ccbb4560d/bids/4e7e80c7beff4410a7871440df169e6d
 {
   "access": {
-    "token": "2bdf6e65fd9f4cbab4bfcb72f6e8660a"
+    "transfer": "c13126b3db0c4fb0a45bdcb9ccf96913", 
+    "token": "1796bfdc0c804563a47cc56d748e68bb"
   }, 
   "data": {
     "status": "draft", 
     "selfEligible": true, 
-    "id": "015ccd38230b4285bb9ff36ecd2d5341", 
+    "id": "4e7e80c7beff4410a7871440df169e6d", 
     "value": {
       "currency": "UAH", 
       "amount": 500.0, 
