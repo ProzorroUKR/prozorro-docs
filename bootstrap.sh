@@ -1,8 +1,13 @@
 #!/bin/sh
-virtualenv -p python2.7 .
 
-./bin/pip install -r requirements.txt
+REPO=https://github.com/ProzorroUKR/openprocurement.api.git
+DEST=src/openprocurement.api
 
-git clone https://github.com/ProzorroUKR/openprocurement.api.git src/openprocurement.api
-./bin/pip install -r src/openprocurement.api/requirements.txt
-./bin/pip install -e src/openprocurement.api/
+virtualenv -p python2.7 venv
+
+./venv/bin/pip install -r requirements.txt
+
+git clone --branch ${BRANCH:-master} ${REPO} ${DEST} || git clone ${REPO} ${DEST}
+
+./venv/bin/pip install -r $DEST/requirements.txt
+./venv/bin/pip install -e $DEST/

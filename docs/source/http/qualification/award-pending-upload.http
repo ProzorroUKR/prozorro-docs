@@ -1,12 +1,12 @@
-POST /api/2.5/tenders/c21b3c11169449d684596322700b7c79/awards/9085cb51b74344c0ae6a075286e5fc6a/documents?acc_token=5701d5e2dcad463f8d50c38af49d375b HTTP/1.0
+POST /api/2.5/tenders/bd77618b8d904261bcbdeb67bbf0a695/awards/4c1ad94c349345a69f7e118d51660a7c/documents?acc_token=fa39e292e4344046b10ec35a1ffbba9f HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 339
+Content-Length: 337
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
-    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/2fd8b62c50b34285b0712addc30b656d?KeyID=a8968c46&Signature=AafVemf6wYpdG4F3spw2vjZN%2FOBdbC9fhZz9ZHxo%2FselXYgew9xRi8l0Ql4Q6%2FpX%2BRGF38w3fdK7eZC0NE47DQ%3D%3D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/c4087a504904433ca2224fa31614bd0e?KeyID=a8968c46&Signature=I3NkAjKFYqfzfb2cEUts7mxCmLeOfrAWBsbH6HjLfIcqpJxE0f6x8vIyXfld5UHRX%2FcMzX31oeCb4gJP%2FW7%2BAw%3D%3D", 
     "title": "Unsuccessful_Reason.pdf", 
     "hash": "md5:00000000000000000000000000000000", 
     "format": "application/pdf"
@@ -15,17 +15,17 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/c21b3c11169449d684596322700b7c79/awards/9085cb51b74344c0ae6a075286e5fc6a/documents/1570061f33d44076ada0cd0513026684
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/bd77618b8d904261bcbdeb67bbf0a695/awards/4c1ad94c349345a69f7e118d51660a7c/documents/5eebee63bc33464f870b39c9874f1b15
 {
   "data": {
     "hash": "md5:00000000000000000000000000000000", 
     "author": "tender_owner", 
     "title": "Unsuccessful_Reason.pdf", 
-    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/2fd8b62c50b34285b0712addc30b656d?KeyID=a8968c46&Signature=6%252Bx%2FWnQaJRDmWGQAi9tulwYZp8Wd45YUJO37Vp4TVt1WVoiC8JrZyGoCvnrOwhG9xBqRvfY%252B4hahyWL8CEm6Aw%253D%253D", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/c4087a504904433ca2224fa31614bd0e?KeyID=a8968c46&Signature=bjX%252B5FOq9uzfpKCEuieeVkBabMkG2M4HmQHiQ4lE6xwrl78acB46%2F7DHQyOyfgB12o9hRlj3tWu0gJFe5uqgCA%253D%253D", 
     "format": "application/pdf", 
     "documentOf": "tender", 
     "datePublished": "2019-04-01T01:00:00+03:00", 
-    "id": "1570061f33d44076ada0cd0513026684", 
+    "id": "5eebee63bc33464f870b39c9874f1b15", 
     "dateModified": "2019-04-01T01:00:00+03:00"
   }
 }

@@ -1,11 +1,26 @@
 POST /api/2.5/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 4155
+Content-Length: 4409
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 100, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    ], 
+    "mainProcurementCategory": "goods", 
     "tenderPeriod": {
       "endDate": "2019-05-02T01:00:00+03:00"
     }, 
@@ -17,7 +32,7 @@ DATA:
     }, 
     "items": [
       {
-        "relatedLot": "f074dc96c19a4b2ab186871f70f47fd9", 
+        "relatedLot": "c7555f1bb878434d8815dea318304673", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -50,7 +65,7 @@ DATA:
         "quantity": 5
       }, 
       {
-        "relatedLot": "f074dc96c19a4b2ab186871f70f47fd9", 
+        "relatedLot": "c7555f1bb878434d8815dea318304673", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -83,7 +98,7 @@ DATA:
         "quantity": 5
       }
     ], 
-    "title_en": "Cases for state awards", 
+    "procurementMethodType": "closeFrameworkAgreementUA", 
     "agreementDuration": "P3Y3M3D", 
     "value": {
       "currency": "UAH", 
@@ -98,7 +113,7 @@ DATA:
           "valueAddedTaxIncluded": true
         }, 
         "title": "Лот №1", 
-        "id": "f074dc96c19a4b2ab186871f70f47fd9", 
+        "id": "c7555f1bb878434d8815dea318304673", 
         "value": {
           "currency": "UAH", 
           "amount": 500, 
@@ -108,7 +123,6 @@ DATA:
       }
     ], 
     "maxAwardsCount": 4, 
-    "procurementMethodType": "closeFrameworkAgreementUA", 
     "procuringEntity": {
       "kind": "general", 
       "name": "Державне управління справами", 
@@ -131,19 +145,22 @@ DATA:
         "name": "Державне управління справами", 
         "telephone": "0440000000"
       }
-    }
+    }, 
+    "title_en": "Cases for state awards"
   }
 }
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/eeda351577cb475894b560d00bb57c20
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/e5172ebc4c4c411f84f376ce6ede43b8
 {
   "access": {
-    "token": "084aca35cabe4d629dd5a4fbe8b47c05"
+    "transfer": "13b7e819f2264a058a9592293731603f", 
+    "token": "1e40f3cf3fd64b8ebca3076b70a86e71"
   }, 
   "data": {
     "procurementMethod": "open", 
+    "mainProcurementCategory": "goods", 
     "complaintPeriod": {
       "startDate": "2019-04-01T01:00:00+03:00", 
       "endDate": "2019-04-28T00:00:00+03:00"
@@ -180,7 +197,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/eeda351577cb4758
       "name_en": "State administration"
     }, 
     "owner": "broker", 
-    "id": "eeda351577cb475894b560d00bb57c20", 
+    "id": "e5172ebc4c4c411f84f376ce6ede43b8", 
     "title": "футляри до державних нагород", 
     "lots": [
       {
@@ -201,7 +218,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/eeda351577cb4758
           "valueAddedTaxIncluded": true
         }, 
         "date": "2019-04-01T01:00:00+03:00", 
-        "id": "f074dc96c19a4b2ab186871f70f47fd9"
+        "id": "c7555f1bb878434d8815dea318304673"
       }
     ], 
     "maxAwardsCount": 4, 
@@ -216,6 +233,20 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/eeda351577cb4758
     "procurementMethodType": "closeFrameworkAgreementUA", 
     "agreementDuration": "P3Y3M3D", 
     "date": "2019-04-01T01:00:00+03:00", 
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 100.0, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    ], 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35, 
@@ -223,7 +254,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/eeda351577cb4758
     }, 
     "items": [
       {
-        "relatedLot": "f074dc96c19a4b2ab186871f70f47fd9", 
+        "relatedLot": "c7555f1bb878434d8815dea318304673", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -249,7 +280,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/eeda351577cb4758
           "startDate": "2018-06-27T13:39:09.362837+03:00", 
           "endDate": "2018-06-30T13:39:09.362837+03:00"
         }, 
-        "id": "cfa79c4a7e2041d3812508870da99986", 
+        "id": "c5a343809a7843f59dec1ee14447d1c0", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -257,7 +288,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/eeda351577cb4758
         "quantity": 5.0
       }, 
       {
-        "relatedLot": "f074dc96c19a4b2ab186871f70f47fd9", 
+        "relatedLot": "c7555f1bb878434d8815dea318304673", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -283,7 +314,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/eeda351577cb4758
           "startDate": "2018-06-27T13:39:09.362837+03:00", 
           "endDate": "2018-06-30T13:39:09.362837+03:00"
         }, 
-        "id": "0dc90ed37b0446b5b48e9695a5ef4a73", 
+        "id": "3728902bfd744ce1a7b1b0fcdf4ca112", 
         "unit": {
           "code": "44617100-8", 
           "name": "item"

@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/aedef41fc3b741efb99611912f00f88c HTTP/1.0
+GET /api/2.5/tenders/ffa3d33ea0004692a4a30af55a8f6a5b HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: lb-api-sandbox.prozorro.gov.ua
 
@@ -12,6 +12,7 @@ Content-Type: application/json; charset=UTF-8
       "startDate": "2019-03-22T01:00:00+03:00", 
       "endDate": "2019-03-22T01:00:00+03:00"
     }, 
+    "mainProcurementCategory": "goods", 
     "enquiryPeriod": {
       "startDate": "2019-03-07T01:00:00+03:00", 
       "endDate": "2019-03-14T01:00:00+03:00"
@@ -38,7 +39,7 @@ Content-Type: application/json; charset=UTF-8
       }
     }, 
     "owner": "broker", 
-    "id": "aedef41fc3b741efb99611912f00f88c", 
+    "id": "ffa3d33ea0004692a4a30af55a8f6a5b", 
     "title": "футляри до державних нагород", 
     "tenderID": "UA-2019-04-01-000001", 
     "dateModified": "2019-04-01T01:00:01+03:00", 
@@ -76,7 +77,7 @@ Content-Type: application/json; charset=UTF-8
               "startDate": "2019-04-03T01:00:00+03:00", 
               "endDate": "2019-04-06T01:00:00+03:00"
             }, 
-            "id": "998c1ce2719a4cf3bc01e14f0dfd0c90", 
+            "id": "5d1b398864854306bf07da8011844854", 
             "unit": {
               "code": "44617100-9", 
               "name": "item"
@@ -108,7 +109,7 @@ Content-Type: application/json; charset=UTF-8
               "startDate": "2019-04-03T01:00:00+03:00", 
               "endDate": "2019-04-06T01:00:00+03:00"
             }, 
-            "id": "d9cb2c5dd4954f628c18ecd73d9983dd", 
+            "id": "376fe97c1fa847b28ac004eb5b7021f5", 
             "unit": {
               "code": "44617100-9", 
               "name": "item"
@@ -146,8 +147,8 @@ Content-Type: application/json; charset=UTF-8
         }, 
         "dateSigned": "2019-04-01T01:00:01+03:00", 
         "date": "2019-04-01T01:00:01+03:00", 
-        "awardID": "4db8cf4618a34a36902f09e813273843", 
-        "id": "14d0f12860df4c97b17c8bc67f7a2584", 
+        "awardID": "195853427f27443584f9dc2d277c1184", 
+        "id": "9625765acafb4677b7dc16e21a0caf1c", 
         "contractID": "UA-2019-04-01-000001-1"
       }
     ], 
@@ -185,17 +186,43 @@ Content-Type: application/json; charset=UTF-8
             }
           }
         ], 
-        "bid_id": "d7581ad6ad4a4f05be105928602d1c52", 
+        "bid_id": "3d16be5bb3704544abcd23f64a7f0dfa", 
         "value": {
           "currency": "UAH", 
           "amount": 500.0, 
           "valueAddedTaxIncluded": true
         }, 
         "date": "2019-04-01T01:00:00+03:00", 
-        "id": "4db8cf4618a34a36902f09e813273843"
+        "id": "195853427f27443584f9dc2d277c1184"
       }
     ], 
     "date": "2019-04-01T01:00:01+03:00", 
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 45.55, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }, 
+      {
+        "code": "postpayment", 
+        "sequenceNumber": 0, 
+        "title": "deliveryOfGoods", 
+        "duration": {
+          "type": "calendar", 
+          "days": 900
+        }, 
+        "percentage": 54.45, 
+        "type": "financing", 
+        "id": "1686d73467f14d029fc5554438bfd4ff"
+      }
+    ], 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35.0, 
@@ -227,7 +254,7 @@ Content-Type: application/json; charset=UTF-8
           "startDate": "2019-04-03T01:00:00+03:00", 
           "endDate": "2019-04-06T01:00:00+03:00"
         }, 
-        "id": "998c1ce2719a4cf3bc01e14f0dfd0c90", 
+        "id": "5d1b398864854306bf07da8011844854", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -259,7 +286,7 @@ Content-Type: application/json; charset=UTF-8
           "startDate": "2019-04-03T01:00:00+03:00", 
           "endDate": "2019-04-06T01:00:00+03:00"
         }, 
-        "id": "d9cb2c5dd4954f628c18ecd73d9983dd", 
+        "id": "376fe97c1fa847b28ac004eb5b7021f5", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -271,7 +298,7 @@ Content-Type: application/json; charset=UTF-8
       {
         "date": "2019-04-01T01:00:00+03:00", 
         "status": "active", 
-        "id": "d7581ad6ad4a4f05be105928602d1c52", 
+        "id": "3d16be5bb3704544abcd23f64a7f0dfa", 
         "value": {
           "currency": "UAH", 
           "amount": 500.0, 

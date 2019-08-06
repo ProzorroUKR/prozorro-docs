@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/62ebb2e01205479c96e5f437e1e227fa?acc_token=d1fb6ff8ec5a48249622c8b4d6497f04 HTTP/1.0
+PATCH /api/2.5/tenders/7e23f3f26faf4146af5f668247cf04f4?acc_token=1fa15f3780344958b25159593e9b4836 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 130
 Content-Type: application/json
@@ -8,10 +8,10 @@ DATA:
   "data": {
     "milestones": [
       {
-        "relatedLot": "e0aec28a670540d89cb08652b5bdaa58"
+        "relatedLot": "db096b31c7ef4b2e95516f47a34a07e1"
       }, 
       {
-        "relatedLot": "e0aec28a670540d89cb08652b5bdaa58"
+        "relatedLot": "db096b31c7ef4b2e95516f47a34a07e1"
       }
     ]
   }
@@ -25,7 +25,7 @@ Content-Type: application/json; charset=UTF-8
     "status": "active.enquiries", 
     "milestones": [
       {
-        "relatedLot": "e0aec28a670540d89cb08652b5bdaa58", 
+        "relatedLot": "db096b31c7ef4b2e95516f47a34a07e1", 
         "code": "prepayment", 
         "sequenceNumber": 0, 
         "title": "signingTheContract", 
@@ -35,10 +35,10 @@ Content-Type: application/json; charset=UTF-8
         }, 
         "percentage": 45.55, 
         "type": "financing", 
-        "id": "0d1a2de2a0fd4bcc9d9bfcc3a2ee9ef9"
+        "id": "7e7e9d6ea4704c5495e8a5ea1ec15c4c"
       }, 
       {
-        "relatedLot": "e0aec28a670540d89cb08652b5bdaa58", 
+        "relatedLot": "db096b31c7ef4b2e95516f47a34a07e1", 
         "code": "postpayment", 
         "description": "Підозрілий опис", 
         "sequenceNumber": 1, 
@@ -49,10 +49,10 @@ Content-Type: application/json; charset=UTF-8
         }, 
         "percentage": 54.45, 
         "type": "financing", 
-        "id": "1a4c7330c71f4a9ca86b41066614bb51"
+        "id": "8e8f7355871e4feab3d49c7d59f47826"
       }
     ], 
-    "awardCriteria": "lowestCost", 
+    "mainProcurementCategory": "goods", 
     "tenderPeriod": {
       "startDate": "2019-04-08T01:00:00+03:00", 
       "endDate": "2019-04-15T01:00:00+03:00"
@@ -89,7 +89,7 @@ Content-Type: application/json; charset=UTF-8
           "startDate": "2019-04-03T01:00:00+03:00", 
           "endDate": "2019-04-06T01:00:00+03:00"
         }, 
-        "id": "cad66b8fcb564e56998653ab103c4cba", 
+        "id": "d10357460c6143bb99a3b37f25ba876b", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -126,6 +126,7 @@ Content-Type: application/json; charset=UTF-8
         "locality": "м. Київ"
       }
     }, 
+    "awardCriteria": "lowestCost", 
     "enquiryPeriod": {
       "startDate": "2019-04-01T01:00:00+03:00", 
       "endDate": "2019-04-08T01:00:00+03:00"
@@ -148,10 +149,10 @@ Content-Type: application/json; charset=UTF-8
           "valueAddedTaxIncluded": true
         }, 
         "date": "2019-04-01T01:00:00+03:00", 
-        "id": "e0aec28a670540d89cb08652b5bdaa58"
+        "id": "db096b31c7ef4b2e95516f47a34a07e1"
       }
     ], 
-    "id": "62ebb2e01205479c96e5f437e1e227fa", 
+    "id": "7e23f3f26faf4146af5f668247cf04f4", 
     "tenderID": "UA-2019-04-01-000001"
   }
 }

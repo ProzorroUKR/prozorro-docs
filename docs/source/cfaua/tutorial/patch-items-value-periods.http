@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/eeda351577cb475894b560d00bb57c20?acc_token=084aca35cabe4d629dd5a4fbe8b47c05 HTTP/1.0
+PATCH /api/2.5/tenders/e5172ebc4c4c411f84f376ce6ede43b8?acc_token=1e40f3cf3fd64b8ebca3076b70a86e71 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 68
 Content-Type: application/json
@@ -17,6 +17,7 @@ Content-Type: application/json; charset=UTF-8
 {
   "data": {
     "procurementMethod": "open", 
+    "mainProcurementCategory": "goods", 
     "complaintPeriod": {
       "startDate": "2019-04-01T01:00:00+03:00", 
       "endDate": "2019-04-27T00:00:00+03:00"
@@ -54,7 +55,7 @@ Content-Type: application/json; charset=UTF-8
       "name_en": "State administration"
     }, 
     "owner": "broker", 
-    "id": "eeda351577cb475894b560d00bb57c20", 
+    "id": "e5172ebc4c4c411f84f376ce6ede43b8", 
     "title": "футляри до державних нагород", 
     "lots": [
       {
@@ -75,7 +76,7 @@ Content-Type: application/json; charset=UTF-8
           "valueAddedTaxIncluded": true
         }, 
         "date": "2019-04-01T01:00:00+03:00", 
-        "id": "f074dc96c19a4b2ab186871f70f47fd9"
+        "id": "c7555f1bb878434d8815dea318304673"
       }
     ], 
     "maxAwardsCount": 4, 
@@ -90,6 +91,20 @@ Content-Type: application/json; charset=UTF-8
     "procurementMethodType": "closeFrameworkAgreementUA", 
     "agreementDuration": "P3Y3M3D", 
     "date": "2019-04-01T01:00:00+03:00", 
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 100.0, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    ], 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35, 
@@ -97,7 +112,7 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "items": [
       {
-        "relatedLot": "f074dc96c19a4b2ab186871f70f47fd9", 
+        "relatedLot": "c7555f1bb878434d8815dea318304673", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -123,7 +138,7 @@ Content-Type: application/json; charset=UTF-8
           "startDate": "2018-06-27T13:39:09.362837+03:00", 
           "endDate": "2018-06-30T13:39:09.362837+03:00"
         }, 
-        "id": "cfa79c4a7e2041d3812508870da99986", 
+        "id": "c5a343809a7843f59dec1ee14447d1c0", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -131,7 +146,7 @@ Content-Type: application/json; charset=UTF-8
         "quantity": 5.0
       }, 
       {
-        "relatedLot": "f074dc96c19a4b2ab186871f70f47fd9", 
+        "relatedLot": "c7555f1bb878434d8815dea318304673", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -157,7 +172,7 @@ Content-Type: application/json; charset=UTF-8
           "startDate": "2018-06-27T13:39:09.362837+03:00", 
           "endDate": "2018-06-30T13:39:09.362837+03:00"
         }, 
-        "id": "0dc90ed37b0446b5b48e9695a5ef4a73", 
+        "id": "3728902bfd744ce1a7b1b0fcdf4ca112", 
         "unit": {
           "code": "44617100-8", 
           "name": "item"

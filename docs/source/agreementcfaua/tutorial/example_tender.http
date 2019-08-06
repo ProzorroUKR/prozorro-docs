@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/263f348886e44321b39bd072cbd50225 HTTP/1.0
+GET /api/2.5/tenders/3b7af763f1e2441080bbb1c6bdb75005 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: lb-api-sandbox.prozorro.gov.ua
 
@@ -12,6 +12,7 @@ Content-Type: application/json; charset=UTF-8
       "startDate": "2019-03-16T01:00:00+03:00", 
       "endDate": "2019-03-26T01:00:00+03:00"
     }, 
+    "mainProcurementCategory": "goods", 
     "complaintPeriod": {
       "startDate": "2019-02-02T01:00:00+03:00", 
       "endDate": "2019-03-01T00:00:00+02:00"
@@ -48,36 +49,7 @@ Content-Type: application/json; charset=UTF-8
       "name_en": "State administration"
     }, 
     "owner": "broker", 
-    "qualifications": [
-      {
-        "status": "active", 
-        "lotID": "cb69eb42737442d0a8d9339fdd88e1a2", 
-        "eligible": true, 
-        "qualified": true, 
-        "bidID": "b910550c7cfb4c77a4206bc0771466c7", 
-        "date": "2019-03-05T01:00:00+03:00", 
-        "id": "4d26b8362c9f4111a79461c07bfc7fa8"
-      }, 
-      {
-        "status": "active", 
-        "lotID": "cb69eb42737442d0a8d9339fdd88e1a2", 
-        "eligible": true, 
-        "qualified": true, 
-        "bidID": "3c17bfb7c436420f9a31ef48801bba02", 
-        "date": "2019-03-05T01:00:00+03:00", 
-        "id": "2a91d462f6f54a75a4c886f394320a7b"
-      }, 
-      {
-        "status": "active", 
-        "lotID": "cb69eb42737442d0a8d9339fdd88e1a2", 
-        "eligible": true, 
-        "qualified": true, 
-        "bidID": "43815aacd1dd458e8b139de1243d8e28", 
-        "date": "2019-03-05T01:00:00+03:00", 
-        "id": "718fb15571e6492eab52a46dbb652d31"
-      }
-    ], 
-    "id": "263f348886e44321b39bd072cbd50225", 
+    "id": "3b7af763f1e2441080bbb1c6bdb75005", 
     "contractPeriod": {
       "startDate": "2019-03-26T01:00:00+03:00", 
       "clarificationsUntil": "2019-03-31T01:00:00+03:00", 
@@ -104,7 +76,7 @@ Content-Type: application/json; charset=UTF-8
           "valueAddedTaxIncluded": true
         }, 
         "date": "2019-04-01T01:00:00+03:00", 
-        "id": "cb69eb42737442d0a8d9339fdd88e1a2"
+        "id": "2b33a80c73cb4c39957170a963adfe52"
       }
     ], 
     "qualificationPeriod": {
@@ -112,11 +84,9 @@ Content-Type: application/json; charset=UTF-8
       "endDate": "2019-03-15T01:00:00+03:00"
     }, 
     "maxAwardsCount": 4, 
-    "tenderID": "UA-2019-04-01-000001", 
-    "dateModified": "2019-04-01T01:00:00+03:00", 
     "agreements": [
       {
-        "agreementID": "UA-2019-04-01-000001-e45a5748dc23439aa5180176c1c265871", 
+        "agreementID": "UA-2019-04-01-000001-c0020a8c90ab4fa5b812bce6fc90c3871", 
         "status": "active", 
         "contracts": [
           {
@@ -128,7 +98,7 @@ Content-Type: application/json; charset=UTF-8
                   "amount": 93, 
                   "valueAddedTaxIncluded": true
                 }, 
-                "relatedItem": "555cc9ac1f214baaad0eb18b3e9afa85"
+                "relatedItem": "4f89f9d4a4214593b43c21ddd0d9e035"
               }
             ], 
             "suppliers": [
@@ -156,10 +126,10 @@ Content-Type: application/json; charset=UTF-8
                 }
               }
             ], 
-            "bidID": "b910550c7cfb4c77a4206bc0771466c7", 
+            "bidID": "a980f94421f24fbe92f9d910e9858ea2", 
             "date": "2019-04-01T01:00:00+03:00", 
-            "awardID": "5bd680b226444f12ab26a6a03a8e47f8", 
-            "id": "2114e333f3294599b648525cb8ea8869"
+            "awardID": "578b2f5fc4704697a33639c665d658f6", 
+            "id": "8aa8074ea3fd4e45afccbf42693eb919"
           }, 
           {
             "status": "active", 
@@ -170,7 +140,7 @@ Content-Type: application/json; charset=UTF-8
                   "amount": 93, 
                   "valueAddedTaxIncluded": true
                 }, 
-                "relatedItem": "555cc9ac1f214baaad0eb18b3e9afa85"
+                "relatedItem": "4f89f9d4a4214593b43c21ddd0d9e035"
               }
             ], 
             "suppliers": [
@@ -198,10 +168,10 @@ Content-Type: application/json; charset=UTF-8
                 }
               }
             ], 
-            "bidID": "3c17bfb7c436420f9a31ef48801bba02", 
+            "bidID": "d3387930d21c46e78c6411b4de2727d1", 
             "date": "2019-04-01T01:00:00+03:00", 
-            "awardID": "e8eaabcdd36642dd8e9bbb16529a30ff", 
-            "id": "79abc3777ec44693b88917f672702763"
+            "awardID": "c93cd768c20f4d559e42a751e508911a", 
+            "id": "5745deb462a74af28cfe4f38b0007c7c"
           }, 
           {
             "status": "active", 
@@ -212,7 +182,7 @@ Content-Type: application/json; charset=UTF-8
                   "amount": 93, 
                   "valueAddedTaxIncluded": true
                 }, 
-                "relatedItem": "555cc9ac1f214baaad0eb18b3e9afa85"
+                "relatedItem": "4f89f9d4a4214593b43c21ddd0d9e035"
               }
             ], 
             "suppliers": [
@@ -240,15 +210,15 @@ Content-Type: application/json; charset=UTF-8
                 }
               }
             ], 
-            "bidID": "43815aacd1dd458e8b139de1243d8e28", 
+            "bidID": "9546133ebacc4fa884a2bcf107e07f4f", 
             "date": "2019-04-01T01:00:00+03:00", 
-            "awardID": "d196469b8a5b4c31ad54d88e6906b5f5", 
-            "id": "33470ac1b8fa4db19068ca5289f4d12d"
+            "awardID": "6d5c60d61d324b02b18e3661e46d63fd", 
+            "id": "fa8bfba5854949d58ec92b2f7400eb6b"
           }
         ], 
         "items": [
           {
-            "relatedLot": "cb69eb42737442d0a8d9339fdd88e1a2", 
+            "relatedLot": "2b33a80c73cb4c39957170a963adfe52", 
             "description": "футляри до державних нагород", 
             "classification": {
               "scheme": "ДК021", 
@@ -274,7 +244,7 @@ Content-Type: application/json; charset=UTF-8
               "startDate": "2018-06-27T13:39:09.362837+03:00", 
               "endDate": "2018-06-30T13:39:09.362837+03:00"
             }, 
-            "id": "555cc9ac1f214baaad0eb18b3e9afa85", 
+            "id": "4f89f9d4a4214593b43c21ddd0d9e035", 
             "unit": {
               "code": "44617100-9", 
               "name": "item"
@@ -283,24 +253,55 @@ Content-Type: application/json; charset=UTF-8
           }
         ], 
         "date": "2019-04-01T01:00:00+03:00", 
-        "id": "5288ba4e6b2548228693339fe56536b8"
+        "id": "9a49a7db3ada48519aa5b2c9a4ec5d30"
       }
     ], 
+    "auctionPeriod": {
+      "startDate": "2019-03-15T01:00:00+03:00", 
+      "endDate": "2019-03-16T01:00:00+03:00"
+    }, 
+    "dateModified": "2019-04-01T01:00:00+03:00", 
+    "tenderID": "UA-2019-04-01-000001", 
     "numberOfBids": 3, 
     "tenderPeriod": {
       "startDate": "2019-02-02T01:00:00+03:00", 
       "endDate": "2019-03-05T01:00:00+03:00"
     }, 
-    "auctionPeriod": {
-      "startDate": "2019-03-15T01:00:00+03:00", 
-      "endDate": "2019-03-16T01:00:00+03:00"
-    }, 
+    "qualifications": [
+      {
+        "status": "active", 
+        "lotID": "2b33a80c73cb4c39957170a963adfe52", 
+        "eligible": true, 
+        "qualified": true, 
+        "bidID": "a980f94421f24fbe92f9d910e9858ea2", 
+        "date": "2019-03-05T01:00:00+03:00", 
+        "id": "b3c48de2c44149a0af08482f1183cbe2"
+      }, 
+      {
+        "status": "active", 
+        "lotID": "2b33a80c73cb4c39957170a963adfe52", 
+        "eligible": true, 
+        "qualified": true, 
+        "bidID": "d3387930d21c46e78c6411b4de2727d1", 
+        "date": "2019-03-05T01:00:00+03:00", 
+        "id": "693d4a4a10df4db6b818582a49ba0b46"
+      }, 
+      {
+        "status": "active", 
+        "lotID": "2b33a80c73cb4c39957170a963adfe52", 
+        "eligible": true, 
+        "qualified": true, 
+        "bidID": "9546133ebacc4fa884a2bcf107e07f4f", 
+        "date": "2019-03-05T01:00:00+03:00", 
+        "id": "77eb33bf7ab345f6ab2f8d9e644a24da"
+      }
+    ], 
     "title_en": "Cases for state awards", 
     "agreementDuration": "P3Y3M3D", 
     "awards": [
       {
         "status": "active", 
-        "lotID": "cb69eb42737442d0a8d9339fdd88e1a2", 
+        "lotID": "2b33a80c73cb4c39957170a963adfe52", 
         "complaintPeriod": {
           "startDate": "2019-03-16T01:00:00+03:00", 
           "endDate": "2019-03-26T01:00:00+03:00"
@@ -330,18 +331,18 @@ Content-Type: application/json; charset=UTF-8
             }
           }
         ], 
-        "bid_id": "b910550c7cfb4c77a4206bc0771466c7", 
+        "bid_id": "a980f94421f24fbe92f9d910e9858ea2", 
         "value": {
           "currency": "UAH", 
           "amount": 469, 
           "valueAddedTaxIncluded": true
         }, 
         "date": "2019-03-16T01:00:00+03:00", 
-        "id": "5bd680b226444f12ab26a6a03a8e47f8"
+        "id": "578b2f5fc4704697a33639c665d658f6"
       }, 
       {
         "status": "active", 
-        "lotID": "cb69eb42737442d0a8d9339fdd88e1a2", 
+        "lotID": "2b33a80c73cb4c39957170a963adfe52", 
         "complaintPeriod": {
           "startDate": "2019-03-16T01:00:00+03:00", 
           "endDate": "2019-03-26T01:00:00+03:00"
@@ -371,18 +372,18 @@ Content-Type: application/json; charset=UTF-8
             }
           }
         ], 
-        "bid_id": "3c17bfb7c436420f9a31ef48801bba02", 
+        "bid_id": "d3387930d21c46e78c6411b4de2727d1", 
         "value": {
           "currency": "UAH", 
           "amount": 470.0, 
           "valueAddedTaxIncluded": true
         }, 
         "date": "2019-03-16T01:00:00+03:00", 
-        "id": "e8eaabcdd36642dd8e9bbb16529a30ff"
+        "id": "c93cd768c20f4d559e42a751e508911a"
       }, 
       {
         "status": "active", 
-        "lotID": "cb69eb42737442d0a8d9339fdd88e1a2", 
+        "lotID": "2b33a80c73cb4c39957170a963adfe52", 
         "complaintPeriod": {
           "startDate": "2019-03-16T01:00:00+03:00", 
           "endDate": "2019-03-26T01:00:00+03:00"
@@ -412,17 +413,31 @@ Content-Type: application/json; charset=UTF-8
             }
           }
         ], 
-        "bid_id": "43815aacd1dd458e8b139de1243d8e28", 
+        "bid_id": "9546133ebacc4fa884a2bcf107e07f4f", 
         "value": {
           "currency": "UAH", 
           "amount": 471, 
           "valueAddedTaxIncluded": true
         }, 
         "date": "2019-03-16T01:00:00+03:00", 
-        "id": "d196469b8a5b4c31ad54d88e6906b5f5"
+        "id": "6d5c60d61d324b02b18e3661e46d63fd"
       }
     ], 
     "date": "2019-04-01T01:00:00+03:00", 
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 100.0, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    ], 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35, 
@@ -430,7 +445,7 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "items": [
       {
-        "relatedLot": "cb69eb42737442d0a8d9339fdd88e1a2", 
+        "relatedLot": "2b33a80c73cb4c39957170a963adfe52", 
         "description": "футляри до державних нагород", 
         "classification": {
           "scheme": "ДК021", 
@@ -456,7 +471,7 @@ Content-Type: application/json; charset=UTF-8
           "startDate": "2018-06-27T13:39:09.362837+03:00", 
           "endDate": "2018-06-30T13:39:09.362837+03:00"
         }, 
-        "id": "555cc9ac1f214baaad0eb18b3e9afa85", 
+        "id": "4f89f9d4a4214593b43c21ddd0d9e035", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -470,7 +485,7 @@ Content-Type: application/json; charset=UTF-8
         "selfEligible": true, 
         "lotValues": [
           {
-            "relatedLot": "cb69eb42737442d0a8d9339fdd88e1a2", 
+            "relatedLot": "2b33a80c73cb4c39957170a963adfe52", 
             "date": "2019-04-01T01:00:00+03:00", 
             "status": "active", 
             "value": {
@@ -507,14 +522,14 @@ Content-Type: application/json; charset=UTF-8
           }
         ], 
         "date": "2019-02-02T01:00:01+03:00", 
-        "id": "b910550c7cfb4c77a4206bc0771466c7"
+        "id": "a980f94421f24fbe92f9d910e9858ea2"
       }, 
       {
         "status": "active", 
         "selfEligible": true, 
         "lotValues": [
           {
-            "relatedLot": "cb69eb42737442d0a8d9339fdd88e1a2", 
+            "relatedLot": "2b33a80c73cb4c39957170a963adfe52", 
             "date": "2019-04-01T01:00:00+03:00", 
             "status": "active", 
             "value": {
@@ -551,14 +566,14 @@ Content-Type: application/json; charset=UTF-8
           }
         ], 
         "date": "2019-02-02T01:00:02+03:00", 
-        "id": "3c17bfb7c436420f9a31ef48801bba02"
+        "id": "d3387930d21c46e78c6411b4de2727d1"
       }, 
       {
         "status": "active", 
         "selfEligible": true, 
         "lotValues": [
           {
-            "relatedLot": "cb69eb42737442d0a8d9339fdd88e1a2", 
+            "relatedLot": "2b33a80c73cb4c39957170a963adfe52", 
             "date": "2019-04-01T01:00:00+03:00", 
             "status": "active", 
             "value": {
@@ -595,7 +610,7 @@ Content-Type: application/json; charset=UTF-8
           }
         ], 
         "date": "2019-02-02T01:00:03+03:00", 
-        "id": "43815aacd1dd458e8b139de1243d8e28"
+        "id": "9546133ebacc4fa884a2bcf107e07f4f"
       }
     ], 
     "value": {

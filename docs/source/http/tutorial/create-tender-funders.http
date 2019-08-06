@@ -1,6 +1,6 @@
 POST /api/2.5/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 3253
+Content-Length: 3672
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
@@ -31,6 +31,32 @@ DATA:
         }
       }
     ], 
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 45.55, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }, 
+      {
+        "code": "postpayment", 
+        "sequenceNumber": 0, 
+        "title": "deliveryOfGoods", 
+        "duration": {
+          "type": "calendar", 
+          "days": 900
+        }, 
+        "percentage": 54.45, 
+        "type": "financing"
+      }
+    ], 
+    "mainProcurementCategory": "goods", 
     "tenderPeriod": {
       "endDate": "2019-04-15T01:00:00+03:00"
     }, 
@@ -105,10 +131,11 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/9284ab183b2342f5a2d19fa6f470ebce
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/360cfcaeb0ec43948ba2c03584e41ea0
 {
   "access": {
-    "token": "6025999d463a4cde8877ed6aed532bf2"
+    "transfer": "0842188b93a94bfda035c3fb6c97c59a", 
+    "token": "b04f8dbb303a4d1a9f6eaca0b322a8b8"
   }, 
   "data": {
     "funders": [
@@ -136,7 +163,33 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/9284ab183b2342f5
       }
     ], 
     "procurementMethod": "open", 
-    "awardCriteria": "lowestCost", 
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 45.55, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }, 
+      {
+        "code": "postpayment", 
+        "sequenceNumber": 0, 
+        "title": "deliveryOfGoods", 
+        "duration": {
+          "type": "calendar", 
+          "days": 900
+        }, 
+        "percentage": 54.45, 
+        "type": "financing", 
+        "id": "3de48dd06f7e45c68bf349f3ec4b1821"
+      }
+    ], 
+    "mainProcurementCategory": "goods", 
     "tenderPeriod": {
       "startDate": "2019-04-08T01:00:00+03:00", 
       "endDate": "2019-04-15T01:00:00+03:00"
@@ -173,7 +226,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/9284ab183b2342f5
           "startDate": "2019-04-03T01:00:00+03:00", 
           "endDate": "2019-04-06T01:00:00+03:00"
         }, 
-        "id": "cbea8b9b21a04b6b84a936f9a28d22c6", 
+        "id": "ae5dd9f213194af496088ba7b9275f12", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -211,13 +264,14 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/9284ab183b2342f5
         "locality": "м. Київ"
       }
     }, 
+    "awardCriteria": "lowestCost", 
     "enquiryPeriod": {
       "startDate": "2019-04-01T01:00:00+03:00", 
       "endDate": "2019-04-08T01:00:00+03:00"
     }, 
     "owner": "broker", 
     "next_check": "2019-04-08T01:00:00+03:00", 
-    "id": "9284ab183b2342f5a2d19fa6f470ebce", 
+    "id": "360cfcaeb0ec43948ba2c03584e41ea0", 
     "tenderID": "UA-2019-04-01-000003"
   }
 }

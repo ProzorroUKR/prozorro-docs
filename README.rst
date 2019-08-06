@@ -5,44 +5,63 @@ Prozorro Documentation for openprocurement.api
     :target: https://prozorro-api-docs.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
 
+Install
+-------
 
-Install for the docs development::
+1. Install requirements by running::
 
-    1) `./bootstrap.sh` install requirements
+    ./bootstrap.sh
 
-    2) add "couchdb" to be resolved to localhost in /etc/hosts
+2. Add "couchdb" to be resolved to localhost in /etc/hosts::
 
-    3) `docker-compose up -d` (to run couchdb if you don't have one)
+    echo "127.0.0.1 couchdb" >> /etc/hosts
 
+3. To run couchdb if you don't have one::
 
+    docker-compose up -d
+
+Update
+------
 Running tests to update http files::
 
+    ./venv/bin/py.test tests  # all
+    ./venv/bin/py.test tests/test_belowthreshold.py -k test_docs_milestones  # specific
 
-    ./bin/py.test tests  # all
-    ./bin/py.test tests/test_belowthreshold.py -k test_docs_milestones  # specific
+Build
+-----
 
-Run build::
+Run::
 
-    ./bin/sphinx-build docs/source/ html
+    ./venv/bin/sphinx-build docs/source/ html
 
-    or
+or::
 
-    cd docs; make html SPHINXBUILD=../bin/sphinx-build
+    cd docs
+
+    make html SPHINXBUILD=../venv/bin/sphinx-build
+
+Translation
+-----------
 
 For translation into *uk* (2 letter ISO language code), you have to follow the scenario:
 
- 1. Pull all translatable strings out of documentation::
+1. Pull all translatable strings out of documentation::
 
-     make gettext  SPHINXBUILD=../bin/sphinx-build
+    cd docs
 
+    make gettext SPHINXBUILD=../venv/bin/sphinx-build
 
- 2. Update translation with new/changed strings::
+2. Update translation with new/changed strings::
 
-     ../bin/sphinx-intl update -p build/locale -l uk
+    cd docs
 
- 3. Update updated/missing strings in `docs/source/locale/<lang>/LC_MESSAGES/*.po` with your-favorite-editor/poedit/transifex/pootle/etc. to have all translations complete/updated.
+    ../venv/bin/sphinx-intl update -p build/locale -l uk
 
- 4. Compile the translation::
+3. Update updated/missing strings in `docs/source/locale/<lang>/LC_MESSAGES/*.po` with your-favorite-editor/poedit/transifex/pootle/etc. to have all translations complete/updated.
 
-      ../../bin/sphinx-intl build
+4. Compile the translation::
+
+    cd docs
+
+    ../venv/bin/sphinx-intl build
 

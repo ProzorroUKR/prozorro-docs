@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/7b005fa4dbfc44f588d4b10b52c9d64f/awards/89a7ba79e27c4a1e8c7a88dbb8959661/complaints/2fd245ad97014eda9dbb95fe2949f4b0 HTTP/1.0
+PATCH /api/2.5/tenders/6427779ef1904a858ed980c275f8eac4/awards/9e6d8342d23c45a6a140c88b60db287d/complaints/f04e480d25a64953a951c4dce690202c HTTP/1.0
 Authorization: Basic cmV2aWV3ZXI6
 Content-Length: 32
 Content-Type: application/json
@@ -14,7 +14,7 @@ Response: 200 OK
 Content-Type: application/json; charset=UTF-8
 {
   "data": {
-    "relatedLot": "98be3ab3e0504351a55c9391a9e1a061", 
+    "relatedLot": "0da753f5904c4a159f596f5f86fd0fb7", 
     "status": "accepted", 
     "documents": [
       {
@@ -22,11 +22,11 @@ Content-Type: application/json; charset=UTF-8
         "author": "complaint_owner", 
         "language": "uk", 
         "title": "Complaint_Attachement.pdf", 
-        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/ab6be0be2e0c468994ddfd65c81cc5c3?KeyID=a8968c46&Signature=SwvV1e6UjSUUUIPMSl%2Famc%2FZjOOkmD%2FPD3TvAxtnsQ2ntTrj1ttC7y4tDkoBBzhOYdfCLHOWwkF5xOel73qGBA%253D%253D", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/78350f97e68f48d1b0e7f1db70cca5cd?KeyID=a8968c46&Signature=S1yUbl%2FitVwn2Rq6Y%252BXZHqkOW3H5iOzLFsp%2Fwaf20XtQTV12d1sqL0EgBJMGqgCTu3ZDNogC%252Bu1qFpB6o0JUCQ%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
         "datePublished": "2019-04-01T01:00:01+03:00", 
-        "id": "093fdefce74f4837aa2650a4edf773f6", 
+        "id": "c52ac3e6cbd243888bed156b02043f39", 
         "dateModified": "2019-04-01T01:00:01+03:00"
       }
     ], 
@@ -58,7 +58,7 @@ Content-Type: application/json; charset=UTF-8
     "date": "2019-04-01T01:00:01+03:00", 
     "acceptance": true, 
     "type": "complaint", 
-    "id": "2fd245ad97014eda9dbb95fe2949f4b0"
+    "id": "f04e480d25a64953a951c4dce690202c"
   }
 }
 

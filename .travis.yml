@@ -12,11 +12,11 @@ addons:
   hosts:
    - couchdb
 before_install:
+  - export BRANCH=${TRAVIS_PULL_REQUEST_BRANCH:-$TRAVIS_BRANCH}
   - ./bootstrap.sh
 before_script:
-  - sudo add-apt-repository ppa:chris-lea/libsodium -y
   - sudo apt-get -qq update
-  - sudo apt-get install libsodium13 -y
+  - sudo apt-get install -y libsodium-dev
 script:
-  - ./bin/py.test tests -v --color=yes
+  - ./venv/bin/py.test tests -v --color=yes
   - (set -e; [[ $(git diff) ]] && { git diff | head -n 30; exit 1; } || exit 0)

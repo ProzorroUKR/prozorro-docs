@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/0c33a5c063d04b6c8a5a429d187fda21/complaints HTTP/1.0
+POST /api/2.5/tenders/6806848e66424adfbac0e5acbfb7b40e/complaints HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 1317
 Content-Type: application/json
@@ -34,10 +34,11 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/0c33a5c063d04b6c8a5a429d187fda21/complaints/55797ce5faa14d25bde59ced89eea128
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/6806848e66424adfbac0e5acbfb7b40e/complaints/12fcebb8e2264d3f83f2267cc877f6ba
 {
   "access": {
-    "token": "4afde617ae9344eb9203a89167f1118d"
+    "transfer": "62a1e2a7f9144da08b6ebb228c5dddb8", 
+    "token": "91cc26cf8f914e38831b034380c3c077"
   }, 
   "data": {
     "status": "claim", 
@@ -66,7 +67,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/0c33a5c063d04b6c
     "complaintID": "UA-2019-04-01-000001.2", 
     "date": "2019-04-01T01:00:00+03:00", 
     "type": "claim", 
-    "id": "55797ce5faa14d25bde59ced89eea128"
+    "id": "12fcebb8e2264d3f83f2267cc877f6ba"
   }
 }
 

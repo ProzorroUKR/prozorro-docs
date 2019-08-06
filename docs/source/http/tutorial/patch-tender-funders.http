@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/2fc8039bb7864bfabe6dc2c3ab451b69?acc_token=c51d5449ff804fa4a8f52a47ac9fc180 HTTP/1.0
+PATCH /api/2.5/tenders/bc3a9016b29d4fed894cc62d3ff59680?acc_token=e6bb69a4c5474e4987130585951b6f3e HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 908
 Content-Type: application/json
@@ -63,7 +63,33 @@ Content-Type: application/json; charset=UTF-8
       }
     ], 
     "procurementMethod": "open", 
-    "awardCriteria": "lowestCost", 
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 45.55, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }, 
+      {
+        "code": "postpayment", 
+        "sequenceNumber": 0, 
+        "title": "deliveryOfGoods", 
+        "duration": {
+          "type": "calendar", 
+          "days": 900
+        }, 
+        "percentage": 54.45, 
+        "type": "financing", 
+        "id": "921f467094e347d1977e812ce6e2f333"
+      }
+    ], 
+    "mainProcurementCategory": "goods", 
     "tenderPeriod": {
       "startDate": "2019-04-08T01:00:00+03:00", 
       "endDate": "2019-04-16T01:00:11+03:00"
@@ -100,7 +126,7 @@ Content-Type: application/json; charset=UTF-8
           "startDate": "2019-04-03T01:00:00+03:00", 
           "endDate": "2019-04-06T01:00:00+03:00"
         }, 
-        "id": "a5ae5e7676734c5aba4e4aa6277b9af0", 
+        "id": "70c6173a43c94feb83363762981ac66f", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -138,13 +164,14 @@ Content-Type: application/json; charset=UTF-8
         "locality": "м. Київ"
       }
     }, 
+    "awardCriteria": "lowestCost", 
     "enquiryPeriod": {
       "startDate": "2019-04-01T01:00:00+03:00", 
       "endDate": "2019-04-08T01:00:00+03:00"
     }, 
     "owner": "broker", 
     "next_check": "2019-04-08T01:00:00+03:00", 
-    "id": "2fc8039bb7864bfabe6dc2c3ab451b69", 
+    "id": "bc3a9016b29d4fed894cc62d3ff59680", 
     "tenderID": "UA-2019-04-01-000001"
   }
 }
