@@ -116,8 +116,8 @@ Workflow
          A -> D;
     }
 
-Workflow in agreement container
--------------------------------
+Workflow in :ref:`agreementcfaua`
+---------------------------------
 
 .. graphviz::
 

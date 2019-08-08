@@ -1,4 +1,4 @@
-.. _tutorial:
+.. _cfaselection_tutorial:
 
 Tutorial
 ========
