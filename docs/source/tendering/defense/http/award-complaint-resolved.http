@@ -1,0 +1,77 @@
+PATCH /api/2.5/tenders/12de7035f98f441388cc86e2a6086c64/awards/cc92f7a9fc3a478ba2aab6489c7dc51e/complaints/00163df9223e41069e6bd0ac5d3d647f?acc_token=b314a3b0b1ff44a88528bc78689f79a8 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 361
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "status": "resolved", 
+    "tendererAction": "Умови виправлено, вибір переможня буде розгянуто повторно"
+  }
+}
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "status": "resolved", 
+    "dateDecision": "2019-04-01T01:00:01+03:00", 
+    "documents": [
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "author": "complaint_owner", 
+        "title": "Complaint_Attachement.pdf", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/14a2e340406b477eb8a2a2dde9699a46?KeyID=a8968c46&Signature=w%2FyNuiRYlkE%2FNrvdCLR32rlpUN%2FKy4Q94HhDwmV%2FPNTB2BNYYBWxpxuYajPl75q6aDlhCRdoME1v%252BAGYUTl0Cg%253D%253D", 
+        "format": "application/pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2019-04-01T01:00:01+03:00", 
+        "id": "7ab8712ee85e457db5993d369c27cbbe", 
+        "dateModified": "2019-04-01T01:00:01+03:00"
+      }, 
+      {
+        "hash": "md5:00000000000000000000000000000000", 
+        "author": "aboveThresholdReviewers", 
+        "title": "ComplaintResolution.pdf", 
+        "url": "http://public-docs-sandbox.prozorro.gov.ua/get/f7e42517108d4639a0860a7561d8d126?KeyID=a8968c46&Signature=bNuoBKgffdeReH0C7fWBlSyKP4kBHMstc2sYPzZ8XyFqa8C5bs5yFhEZasUuKgt8I81E3EVKUx6TB41OG3%2FUDw%253D%253D", 
+        "format": "application/pdf", 
+        "documentOf": "tender", 
+        "datePublished": "2019-04-01T01:00:01+03:00", 
+        "id": "8d814ddfad5343e591aebffdc7b80153", 
+        "dateModified": "2019-04-01T01:00:01+03:00"
+      }
+    ], 
+    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+    "author": {
+      "contactPoint": {
+        "email": "soleksuk@gmail.com", 
+        "telephone": "+380 (432) 21-69-30", 
+        "name": "Сергій Олексюк"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "00137256", 
+        "uri": "http://www.sc.gov.ua/"
+      }, 
+      "name": "ДКП «Школяр»", 
+      "address": {
+        "postalCode": "21100", 
+        "countryName": "Україна", 
+        "streetAddress": "вул. Островського, 33", 
+        "region": "м. Вінниця", 
+        "locality": "м. Вінниця"
+      }
+    }, 
+    "title": "Недостатньо інформації", 
+    "tendererAction": "Умови виправлено, вибір переможня буде розгянуто повторно", 
+    "tendererActionDate": "2019-04-01T01:00:01+03:00", 
+    "dateSubmitted": "2019-04-01T01:00:01+03:00", 
+    "complaintID": "UA-2019-04-01-000001.1", 
+    "date": "2019-04-01T01:00:01+03:00", 
+    "acceptance": true, 
+    "type": "complaint", 
+    "id": "00163df9223e41069e6bd0ac5d3d647f", 
+    "dateAccepted": "2019-04-01T01:00:01+03:00"
+  }
+}
+

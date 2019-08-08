@@ -19,7 +19,7 @@ from tests.base.data import (
 
 test_tender_data = deepcopy(test_tender_data)
 
-TARGET_DIR = 'docs/source/http/'
+TARGET_DIR = 'docs/source/tendering/http/'
 
 
 class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):

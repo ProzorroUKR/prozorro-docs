@@ -21,7 +21,7 @@ bid.update(subcontracting)
 bid.update(qualified)
 bid2.update(qualified)
 
-TARGET_DIR = 'docs/source/defense/http/'
+TARGET_DIR = 'docs/source/tendering/defense/http/'
 
 
 class TenderUAResourceTest(BaseTenderUAWebTest, MockWebTestMixin):

@@ -1,6 +1,6 @@
 .. _planning:
 
-Procurement plan
+Planning API interface to OpenProcurement database
 ================
 
 

@@ -1,0 +1,174 @@
+POST /api/2.5/tenders?opt_pretty=1 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 2589
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "tenderPeriod": {
+      "endDate": "2019-04-17T00:00:00+02:00"
+    }, 
+    "title": "футляри до державних нагород", 
+    "minimalStep": {
+      "currency": "UAH", 
+      "amount": 35
+    }, 
+    "items": [
+      {
+        "description": "Послуги шкільних їдалень", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Послуги з харчування у школах", 
+          "id": "55523100-3"
+        }, 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "Послуги шкільних їдалень"
+          }
+        ], 
+        "deliveryAddress": {
+          "countryName": "Україна", 
+          "postalCode": "79000", 
+          "region": "м. Київ", 
+          "streetAddress": "вул. Банкова 1", 
+          "locality": "м. Київ"
+        }, 
+        "deliveryDate": {
+          "startDate": "2019-04-21T00:00:00+02:00", 
+          "endDate": "2019-05-21T00:00:00+02:00"
+        }, 
+        "quantity": 1
+      }
+    ], 
+    "procurementMethodType": "aboveThresholdUA", 
+    "value": {
+      "currency": "UAH", 
+      "amount": 500
+    }, 
+    "procuringEntity": {
+      "kind": "special", 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "21725150", 
+        "legalName": "Заклад \"Загальноосвітня школа І-ІІІ ступенів № 10 Вінницької міської ради\""
+      }, 
+      "contactPoint": {
+        "url": "http://sch10.edu.vn.ua/", 
+        "name": "Куца Світлана Валентинівна", 
+        "telephone": "+380 (432) 46-53-02"
+      }, 
+      "name": "ЗОСШ #10 м.Вінниці", 
+      "address": {
+        "countryName": "Україна", 
+        "postalCode": "21027", 
+        "region": "м. Вінниця", 
+        "streetAddress": "вул. Стахурського. 22", 
+        "locality": "м. Вінниця"
+      }
+    }
+  }
+}
+
+Response: 201 Created
+Content-Type: application/json; charset=UTF-8
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/437cd309c59b42df958631eac101ab7d
+{
+  "access": {
+    "token": "fe1fd1e77fff4f639dc8eccdc2aac5ef"
+  }, 
+  "data": {
+    "procurementMethod": "open", 
+    "status": "active.tendering", 
+    "awardCriteria": "lowestCost", 
+    "tenderPeriod": {
+      "startDate": "2019-04-01T01:00:01+03:00", 
+      "endDate": "2019-04-17T00:00:00+02:00"
+    }, 
+    "title": "футляри до державних нагород", 
+    "minimalStep": {
+      "currency": "UAH", 
+      "amount": 35.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "enquiryPeriod": {
+      "startDate": "2019-04-01T01:00:01+03:00", 
+      "clarificationsUntil": "2019-04-11T00:00:00+02:00", 
+      "endDate": "2019-04-07T00:00:00+02:00"
+    }, 
+    "complaintPeriod": {
+      "startDate": "2019-04-01T01:00:01+03:00", 
+      "endDate": "2019-04-13T00:00:00+03:00"
+    }, 
+    "procurementMethodType": "aboveThresholdUA", 
+    "value": {
+      "currency": "UAH", 
+      "amount": 500.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "submissionMethod": "electronicAuction", 
+    "date": "2019-04-01T01:00:01+03:00", 
+    "next_check": "2019-04-17T01:00:00+03:00", 
+    "procuringEntity": {
+      "contactPoint": {
+        "url": "http://sch10.edu.vn.ua/", 
+        "name": "Куца Світлана Валентинівна", 
+        "telephone": "+380 (432) 46-53-02"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "21725150", 
+        "legalName": "Заклад \"Загальноосвітня школа І-ІІІ ступенів № 10 Вінницької міської ради\""
+      }, 
+      "name": "ЗОСШ #10 м.Вінниці", 
+      "kind": "special", 
+      "address": {
+        "postalCode": "21027", 
+        "countryName": "Україна", 
+        "streetAddress": "вул. Стахурського. 22", 
+        "region": "м. Вінниця", 
+        "locality": "м. Вінниця"
+      }
+    }, 
+    "auctionPeriod": {
+      "shouldStartAfter": "2019-04-17T00:00:00+02:00"
+    }, 
+    "owner": "broker", 
+    "dateModified": "2019-04-01T01:00:01+03:00", 
+    "items": [
+      {
+        "description": "Послуги шкільних їдалень", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Послуги з харчування у школах", 
+          "id": "55523100-3"
+        }, 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "Послуги шкільних їдалень"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "deliveryDate": {
+          "startDate": "2019-04-21T00:00:00+02:00", 
+          "endDate": "2019-05-21T00:00:00+02:00"
+        }, 
+        "id": "c41b9968f92b4cc284e73f6fbab24644", 
+        "quantity": 1.0
+      }
+    ], 
+    "id": "437cd309c59b42df958631eac101ab7d", 
+    "tenderID": "UA-2019-04-01-000002"
+  }
+}
+

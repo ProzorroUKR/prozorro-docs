@@ -1,0 +1,52 @@
+POST /api/2.5/tenders/3dc3a680d9564656a49e22ae78aef1e9/qualifications/402a1119609041c7a7ae0218a5ced15a/complaints?acc_token=eee0ed41c9da4b4182811fd69d14a76e HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 1298
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "title": "Недостатньо інформації", 
+    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+    "author": {
+      "contactPoint": {
+        "email": "soleksuk@gmail.com", 
+        "telephone": "+380 (432) 21-69-30", 
+        "name": "Сергій Олексюк"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "00137256", 
+        "uri": "http://www.sc.gov.ua/"
+      }, 
+      "name": "ДКП «Школяр»", 
+      "address": {
+        "countryName": "Україна", 
+        "postalCode": "21100", 
+        "region": "м. Вінниця", 
+        "streetAddress": "вул. Островського, 33", 
+        "locality": "м. Вінниця"
+      }
+    }
+  }
+}
+
+Response: 201 Created
+Content-Type: application/json; charset=UTF-8
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/3dc3a680d9564656a49e22ae78aef1e9/qualifications/402a1119609041c7a7ae0218a5ced15a/complaints/529f778689d34c97a404c229ce734912
+{
+  "access": {
+    "token": "996767ebf46f4892a40118c9b985fb66"
+  }, 
+  "data": {
+    "status": "draft", 
+    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+    "title": "Недостатньо інформації", 
+    "bid_id": "07ef7940cbfc44f084f456feb07ee37b", 
+    "complaintID": "UA-2019-04-01-000001.1", 
+    "date": "2019-04-01T01:00:01+03:00", 
+    "type": "claim", 
+    "id": "529f778689d34c97a404c229ce734912"
+  }
+}
+

@@ -1,0 +1,100 @@
+PATCH /api/2.5/tenders/5fb29c8fb65c4a12b69dd3531cfe7bce?acc_token=5041e53aff3940fb94a230a261500765 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 80
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "items": [
+      {
+        "unit": {
+          "code": "MON", 
+          "name": "month"
+        }, 
+        "quantity": 9
+      }
+    ]
+  }
+}
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "procurementMethod": "limited", 
+    "status": "active", 
+    "title": "Послуги шкільних їдалень", 
+    "items": [
+      {
+        "description": "Послуги шкільних їдалень", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Послуги з харчування у школах", 
+          "id": "55523100-3"
+        }, 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "Послуги шкільних їдалень"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "deliveryDate": {
+          "startDate": "2019-04-21T00:00:00+02:00", 
+          "endDate": "2019-05-21T00:00:00+02:00"
+        }, 
+        "id": "56144396a6a743e5adb938d12c35b86e", 
+        "unit": {
+          "code": "MON", 
+          "name": "month"
+        }, 
+        "quantity": 9.0
+      }
+    ], 
+    "title_en": "Services in school canteens", 
+    "value": {
+      "currency": "UAH", 
+      "amount": 500000.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "dateModified": "2019-04-01T01:00:00+03:00", 
+    "procuringEntity": {
+      "contactPoint": {
+        "url": "http://sch10.edu.vn.ua/", 
+        "name": "Куца Світлана Валентинівна", 
+        "telephone": "+380 (432) 46-53-02"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "21725150", 
+        "legalName": "Заклад \"Загальноосвітня школа І-ІІІ ступенів № 10 Вінницької міської ради\""
+      }, 
+      "name": "ЗОСШ #10 м.Вінниці", 
+      "kind": "special", 
+      "address": {
+        "postalCode": "21027", 
+        "countryName": "Україна", 
+        "streetAddress": "вул. Стахурського. 22", 
+        "region": "м. Вінниця", 
+        "locality": "м. Вінниця"
+      }
+    }, 
+    "date": "2019-04-01T01:00:00+03:00", 
+    "procurementMethodType": "reporting", 
+    "description_en": "Services in school canteens", 
+    "title_ru": "Услуги школьных столовых", 
+    "owner": "broker", 
+    "description_ru": "Услуги школьных столовых", 
+    "id": "5fb29c8fb65c4a12b69dd3531cfe7bce", 
+    "tenderID": "UA-2019-04-01-000001"
+  }
+}
+

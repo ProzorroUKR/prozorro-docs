@@ -1,0 +1,257 @@
+PATCH /api/2.5/tenders/db8f78603c144a8aac15730f9c763584?acc_token=82ef608a467b4128bdc199b13452c06f HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 60
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "status": "active.pre-qualification.stand-still"
+  }
+}
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "procurementMethod": "open", 
+    "status": "active.pre-qualification.stand-still", 
+    "complaintPeriod": {
+      "startDate": "2019-03-02T01:00:00+03:00", 
+      "endDate": "2019-03-28T00:00:00+03:00"
+    }, 
+    "enquiryPeriod": {
+      "startDate": "2019-03-02T01:00:00+03:00", 
+      "clarificationsUntil": "2019-03-27T01:00:00+03:00", 
+      "endDate": "2019-03-22T01:00:00+03:00", 
+      "invalidationDate": "2019-04-01T01:00:00+03:00"
+    }, 
+    "submissionMethod": "electronicAuction", 
+    "next_check": "2019-04-07T00:00:00+03:00", 
+    "procuringEntity": {
+      "kind": "general", 
+      "name": "ЗОСШ #10 м.Вінниці", 
+      "address": {
+        "postalCode": "21027", 
+        "countryName": "Україна", 
+        "streetAddress": "вул. Стахурського. 22", 
+        "region": "м. Вінниця", 
+        "locality": "м. Вінниця"
+      }, 
+      "contactPoint": {
+        "url": "http://sch10.edu.vn.ua/", 
+        "name_en": "Kutsa Svitlana V.", 
+        "name": "Куца Світлана Валентинівна", 
+        "availableLanguage": "uk", 
+        "telephone": "+380 (432) 46-53-02"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "legalName_en": "The institution \"Secondary school I-III levels № 10 Vinnitsa City Council\"", 
+        "id": "21725150", 
+        "legalName": "Заклад \"Загальноосвітня школа І-ІІІ ступенів № 10 Вінницької міської ради\""
+      }, 
+      "name_en": "School #10 of Vinnytsia"
+    }, 
+    "owner": "broker", 
+    "title_en": "Services in school canteens", 
+    "id": "db8f78603c144a8aac15730f9c763584", 
+    "title": "Послуги шкільних їдалень", 
+    "lots": [
+      {
+        "status": "active", 
+        "description": "Опис Лот №1", 
+        "fundingKind": "other", 
+        "title": "Лот №1", 
+        "auctionPeriod": {
+          "shouldStartAfter": "2019-04-07T00:00:00+03:00"
+        }, 
+        "minValue": {
+          "currency": "UAH", 
+          "amount": 0.0, 
+          "valueAddedTaxIncluded": true
+        }, 
+        "minimalStepPercentage": 0.006, 
+        "yearlyPaymentsPercentageRange": 0.8, 
+        "date": "2019-04-01T01:00:00+03:00", 
+        "id": "3c84167877eb48d693c12efd2c6cb01e"
+      }, 
+      {
+        "status": "unsuccessful", 
+        "description": "Опис Лот №2", 
+        "fundingKind": "other", 
+        "title": "Лот №2", 
+        "minValue": {
+          "currency": "UAH", 
+          "amount": 0.0, 
+          "valueAddedTaxIncluded": true
+        }, 
+        "minimalStepPercentage": 0.006, 
+        "yearlyPaymentsPercentageRange": 0.8, 
+        "date": "2019-04-01T01:00:00+03:00", 
+        "id": "92e4a20a9d7f4dada89d434409f951d8"
+      }
+    ], 
+    "qualificationPeriod": {
+      "startDate": "2019-04-01T01:00:00+03:00", 
+      "endDate": "2019-04-07T00:00:00+03:00"
+    }, 
+    "tenderID": "UA-2019-04-01-000001", 
+    "minimalStepPercentage": 0.006, 
+    "yearlyPaymentsPercentageRange": 0.8, 
+    "dateModified": "2019-04-01T01:00:00+03:00", 
+    "numberOfBids": 2, 
+    "tenderPeriod": {
+      "startDate": "2019-03-02T01:00:00+03:00", 
+      "endDate": "2019-04-01T01:00:00+03:00"
+    }, 
+    "qualifications": [
+      {
+        "status": "active", 
+        "lotID": "3c84167877eb48d693c12efd2c6cb01e", 
+        "eligible": true, 
+        "qualified": true, 
+        "bidID": "b797c74bba014457870ceda8104f0444", 
+        "date": "2019-04-01T01:00:00+03:00", 
+        "id": "5b8ed3eca3354b918a0810c13b3b15cd"
+      }, 
+      {
+        "status": "active", 
+        "lotID": "3c84167877eb48d693c12efd2c6cb01e", 
+        "eligible": true, 
+        "qualified": true, 
+        "bidID": "e330641f19174449b434b4988cccf0c6", 
+        "date": "2019-04-01T01:00:00+03:00", 
+        "id": "f12f2ca9a7f74ff1affca438285aa89d"
+      }
+    ], 
+    "procurementMethodType": "esco", 
+    "date": "2019-04-01T01:00:00+03:00", 
+    "NBUdiscountRate": 0.22986, 
+    "minValue": {
+      "currency": "UAH", 
+      "amount": 0.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "fundingKind": "other", 
+    "items": [
+      {
+        "relatedLot": "3c84167877eb48d693c12efd2c6cb01e", 
+        "description": "Послуги шкільних їдалень", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Test", 
+          "id": "37810000-9"
+        }, 
+        "description_en": "Services in school canteens", 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "Послуги шкільних їдалень"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "id": "fa1ab62942584a95a99aacdeddfffcf7", 
+        "unit": {
+          "code": "44617100-9", 
+          "name": "item"
+        }
+      }, 
+      {
+        "relatedLot": "92e4a20a9d7f4dada89d434409f951d8", 
+        "description": "Послуги шкільних їдалень", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Test", 
+          "id": "37810000-9"
+        }, 
+        "description_en": "Services in school canteens", 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "Послуги шкільних їдалень"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "id": "0ad5fe4a103342329fec5ccfe2a20fb3", 
+        "unit": {
+          "code": "44617100-9", 
+          "name": "item"
+        }
+      }
+    ], 
+    "bids": [
+      {
+        "status": "active", 
+        "id": "b797c74bba014457870ceda8104f0444", 
+        "tenderers": [
+          {
+            "contactPoint": {
+              "email": "soleksuk@gmail.com", 
+              "telephone": "+380 (432) 21-69-30", 
+              "name": "Сергій Олексюк"
+            }, 
+            "scale": "micro", 
+            "name": "ДКП «Школяр»", 
+            "identifier": {
+              "scheme": "UA-EDR", 
+              "id": "00137256", 
+              "uri": "http://www.sc.gov.ua/"
+            }, 
+            "address": {
+              "postalCode": "21100", 
+              "countryName": "Україна", 
+              "streetAddress": "вул. Островського, 33", 
+              "region": "м. Вінниця", 
+              "locality": "м. Вінниця"
+            }
+          }
+        ]
+      }, 
+      {
+        "status": "active", 
+        "id": "e330641f19174449b434b4988cccf0c6", 
+        "tenderers": [
+          {
+            "contactPoint": {
+              "email": "aagt@gmail.com", 
+              "telephone": "+380 (322) 91-69-30", 
+              "name": "Андрій Олексюк"
+            }, 
+            "scale": "sme", 
+            "name": "ДКП «Книга»", 
+            "identifier": {
+              "scheme": "UA-EDR", 
+              "id": "00137226", 
+              "uri": "http://www.sc.gov.ua/"
+            }, 
+            "address": {
+              "postalCode": "79013", 
+              "countryName": "Україна", 
+              "streetAddress": "вул. Островського, 34", 
+              "region": "м. Львів", 
+              "locality": "м. Львів"
+            }
+          }
+        ]
+      }
+    ], 
+    "noticePublicationDate": "2019-04-01T01:00:00+03:00", 
+    "awardCriteria": "ratedCriteria"
+  }
+}
+

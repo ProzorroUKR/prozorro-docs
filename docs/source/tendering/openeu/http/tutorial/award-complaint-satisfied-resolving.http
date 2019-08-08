@@ -1,0 +1,355 @@
+PATCH /api/2.5/tenders/3380abd6dac247a394ea054cfe23249b/awards/7d0fc5fee1a44f5582ba938096c7a12c?acc_token=94c0942eee3249f4b6d5af02b98e1798 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 33
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "status": "cancelled"
+  }
+}
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/3380abd6dac247a394ea054cfe23249b/awards/d65eaae49f3c464aa161387ed37dda21
+{
+  "data": {
+    "status": "cancelled", 
+    "eligible": true, 
+    "suppliers": [
+      {
+        "contactPoint": {
+          "email": "aagt@gmail.com", 
+          "telephone": "+380 (322) 91-69-30", 
+          "name": "Андрій Олексюк"
+        }, 
+        "scale": "sme", 
+        "name": "ДКП «Книга»", 
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "00137226", 
+          "uri": "http://www.sc.gov.ua/"
+        }, 
+        "address": {
+          "postalCode": "79013", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Островського, 34", 
+          "region": "м. Львів", 
+          "locality": "м. Львів"
+        }
+      }
+    ], 
+    "complaintPeriod": {
+      "startDate": "2019-04-01T01:00:00+03:00", 
+      "endDate": "2019-04-01T01:00:01+03:00"
+    }, 
+    "bid_id": "1bfd210314da4a559cbdefd37d4b225a", 
+    "value": {
+      "currency": "UAH", 
+      "amount": 499.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "date": "2019-04-01T01:00:01+03:00", 
+    "qualified": true, 
+    "complaints": [
+      {
+        "status": "resolved", 
+        "dateDecision": "2019-04-01T01:00:01+03:00", 
+        "tendererActionDate": "2019-04-01T01:00:01+03:00", 
+        "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+        "author": {
+          "contactPoint": {
+            "email": "soleksuk@gmail.com", 
+            "telephone": "+380 (432) 21-69-30", 
+            "name": "Сергій Олексюк"
+          }, 
+          "identifier": {
+            "scheme": "UA-EDR", 
+            "id": "00137256", 
+            "uri": "http://www.sc.gov.ua/"
+          }, 
+          "name": "ДКП «Школяр»", 
+          "address": {
+            "postalCode": "21100", 
+            "countryName": "Україна", 
+            "streetAddress": "вул. Островського, 33", 
+            "region": "м. Вінниця", 
+            "locality": "м. Вінниця"
+          }
+        }, 
+        "title": "Недостатньо інформації", 
+        "id": "61ccc02d23a1432480391158988f2ff1", 
+        "tendererAction": "Умови виправлено, вибір переможня буде розгянуто повторно", 
+        "dateSubmitted": "2019-04-01T01:00:01+03:00", 
+        "complaintID": "UA-2019-04-01-000001.1", 
+        "date": "2019-04-01T01:00:01+03:00", 
+        "acceptance": true, 
+        "type": "complaint", 
+        "documents": [
+          {
+            "hash": "md5:00000000000000000000000000000000", 
+            "author": "complaint_owner", 
+            "language": "uk", 
+            "title": "Complaint_Attachement.pdf", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/6890e107d8db45bd99c884c514d24fad?KeyID=a8968c46&Signature=VOqUttBQapV1EL5aT3Z7PL8Ft%2FhjQSAoAn%252BLFTvVVY%2FXz3n0%252BCbPamzQFryw0IZkcL66alfh289Izf%252BxL%2FgnAA%253D%253D", 
+            "format": "application/pdf", 
+            "documentOf": "tender", 
+            "datePublished": "2019-04-01T01:00:01+03:00", 
+            "id": "376dba185f094f8abac8e0814122e1b4", 
+            "dateModified": "2019-04-01T01:00:01+03:00"
+          }, 
+          {
+            "hash": "md5:00000000000000000000000000000000", 
+            "author": "aboveThresholdReviewers", 
+            "language": "uk", 
+            "title": "ComplaintResolution.pdf", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/ae0f4552051946caa87a3c71d15ec8f5?KeyID=a8968c46&Signature=DXA73FNxljV%252Bi8qCs0EoPF%252B%2F7zhPUjEfRdve4YA5cFK9ZLZTht9mLproZpZEh5bF6XsZ5oaBsoXwDM%252B%252Brm%252BzBA%253D%253D", 
+            "format": "application/pdf", 
+            "documentOf": "tender", 
+            "datePublished": "2019-04-01T01:00:01+03:00", 
+            "id": "74de63325dd943d19f809fc381d9fc8e", 
+            "dateModified": "2019-04-01T01:00:01+03:00"
+          }
+        ], 
+        "dateAccepted": "2019-04-01T01:00:01+03:00"
+      }, 
+      {
+        "status": "invalid", 
+        "dateDecision": "2019-04-01T01:00:01+03:00", 
+        "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+        "author": {
+          "contactPoint": {
+            "email": "soleksuk@gmail.com", 
+            "telephone": "+380 (432) 21-69-30", 
+            "name": "Сергій Олексюк"
+          }, 
+          "identifier": {
+            "scheme": "UA-EDR", 
+            "id": "00137256", 
+            "uri": "http://www.sc.gov.ua/"
+          }, 
+          "name": "ДКП «Школяр»", 
+          "address": {
+            "postalCode": "21100", 
+            "countryName": "Україна", 
+            "streetAddress": "вул. Островського, 33", 
+            "region": "м. Вінниця", 
+            "locality": "м. Вінниця"
+          }
+        }, 
+        "acceptance": false, 
+        "dateSubmitted": "2019-04-01T01:00:01+03:00", 
+        "complaintID": "UA-2019-04-01-000001.2", 
+        "date": "2019-04-01T01:00:01+03:00", 
+        "title": "Недостатньо інформації", 
+        "type": "complaint", 
+        "id": "9bbba3b10b73436f86c179f790a913da"
+      }, 
+      {
+        "status": "declined", 
+        "dateDecision": "2019-04-01T01:00:01+03:00", 
+        "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+        "author": {
+          "contactPoint": {
+            "email": "soleksuk@gmail.com", 
+            "telephone": "+380 (432) 21-69-30", 
+            "name": "Сергій Олексюк"
+          }, 
+          "identifier": {
+            "scheme": "UA-EDR", 
+            "id": "00137256", 
+            "uri": "http://www.sc.gov.ua/"
+          }, 
+          "name": "ДКП «Школяр»", 
+          "address": {
+            "postalCode": "21100", 
+            "countryName": "Україна", 
+            "streetAddress": "вул. Островського, 33", 
+            "region": "м. Вінниця", 
+            "locality": "м. Вінниця"
+          }
+        }, 
+        "acceptance": true, 
+        "dateAccepted": "2019-04-01T01:00:01+03:00", 
+        "dateSubmitted": "2019-04-01T01:00:01+03:00", 
+        "complaintID": "UA-2019-04-01-000001.3", 
+        "date": "2019-04-01T01:00:01+03:00", 
+        "title": "Недостатньо інформації", 
+        "type": "complaint", 
+        "id": "3036d53b8cb84388ab5963f8236f8e96"
+      }, 
+      {
+        "status": "stopped", 
+        "dateDecision": "2019-04-01T01:00:01+03:00", 
+        "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+        "title": "Недостатньо інформації", 
+        "decision": "Тендер скасовується замовником", 
+        "acceptance": true, 
+        "cancellationReason": "Тендер скасовується замовником", 
+        "dateCanceled": "2019-04-01T01:00:01+03:00", 
+        "dateAccepted": "2019-04-01T01:00:01+03:00", 
+        "author": {
+          "contactPoint": {
+            "email": "soleksuk@gmail.com", 
+            "telephone": "+380 (432) 21-69-30", 
+            "name": "Сергій Олексюк"
+          }, 
+          "identifier": {
+            "scheme": "UA-EDR", 
+            "id": "00137256", 
+            "uri": "http://www.sc.gov.ua/"
+          }, 
+          "name": "ДКП «Школяр»", 
+          "address": {
+            "postalCode": "21100", 
+            "countryName": "Україна", 
+            "streetAddress": "вул. Островського, 33", 
+            "region": "м. Вінниця", 
+            "locality": "м. Вінниця"
+          }
+        }, 
+        "dateSubmitted": "2019-04-01T01:00:01+03:00", 
+        "complaintID": "UA-2019-04-01-000001.4", 
+        "date": "2019-04-01T01:00:01+03:00", 
+        "type": "complaint", 
+        "id": "7d5077092eed4938936955958adc366c"
+      }, 
+      {
+        "status": "stopped", 
+        "dateDecision": "2019-04-01T01:00:01+03:00", 
+        "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+        "title": "Недостатньо інформації", 
+        "decision": "Тендер скасовується замовником", 
+        "acceptance": true, 
+        "dateCanceled": "2019-04-01T01:00:01+03:00", 
+        "dateAccepted": "2019-04-01T01:00:01+03:00", 
+        "author": {
+          "contactPoint": {
+            "email": "soleksuk@gmail.com", 
+            "telephone": "+380 (432) 21-69-30", 
+            "name": "Сергій Олексюк"
+          }, 
+          "identifier": {
+            "scheme": "UA-EDR", 
+            "id": "00137256", 
+            "uri": "http://www.sc.gov.ua/"
+          }, 
+          "name": "ДКП «Школяр»", 
+          "address": {
+            "postalCode": "21100", 
+            "countryName": "Україна", 
+            "streetAddress": "вул. Островського, 33", 
+            "region": "м. Вінниця", 
+            "locality": "м. Вінниця"
+          }
+        }, 
+        "dateSubmitted": "2019-04-01T01:00:01+03:00", 
+        "complaintID": "UA-2019-04-01-000001.5", 
+        "date": "2019-04-01T01:00:01+03:00", 
+        "type": "complaint", 
+        "id": "9c712ccca08b4bc5a3a3da2693d0329e"
+      }, 
+      {
+        "status": "answered", 
+        "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+        "author": {
+          "contactPoint": {
+            "email": "soleksuk@gmail.com", 
+            "telephone": "+380 (432) 21-69-30", 
+            "name": "Сергій Олексюк"
+          }, 
+          "identifier": {
+            "scheme": "UA-EDR", 
+            "id": "00137256", 
+            "uri": "http://www.sc.gov.ua/"
+          }, 
+          "name": "ДКП «Школяр»", 
+          "address": {
+            "postalCode": "21100", 
+            "countryName": "Україна", 
+            "streetAddress": "вул. Островського, 33", 
+            "region": "м. Вінниця", 
+            "locality": "м. Вінниця"
+          }
+        }, 
+        "resolutionType": "resolved", 
+        "type": "claim", 
+        "title": "Недостатньо інформації", 
+        "satisfied": true, 
+        "dateAnswered": "2019-04-01T01:00:01+03:00", 
+        "dateSubmitted": "2019-04-01T01:00:01+03:00", 
+        "complaintID": "UA-2019-04-01-000001.6", 
+        "date": "2019-04-01T01:00:01+03:00", 
+        "resolution": "Умови виправлено, вибір переможня буде розгянуто повторно", 
+        "id": "caf6344f82884a81837df3158aef22e8"
+      }, 
+      {
+        "status": "answered", 
+        "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+        "author": {
+          "contactPoint": {
+            "email": "soleksuk@gmail.com", 
+            "telephone": "+380 (432) 21-69-30", 
+            "name": "Сергій Олексюк"
+          }, 
+          "identifier": {
+            "scheme": "UA-EDR", 
+            "id": "00137256", 
+            "uri": "http://www.sc.gov.ua/"
+          }, 
+          "name": "ДКП «Школяр»", 
+          "address": {
+            "postalCode": "21100", 
+            "countryName": "Україна", 
+            "streetAddress": "вул. Островського, 33", 
+            "region": "м. Вінниця", 
+            "locality": "м. Вінниця"
+          }
+        }, 
+        "resolutionType": "invalid", 
+        "type": "claim", 
+        "title": "Недостатньо інформації", 
+        "satisfied": false, 
+        "dateAnswered": "2019-04-01T01:00:01+03:00", 
+        "dateSubmitted": "2019-04-01T01:00:01+03:00", 
+        "complaintID": "UA-2019-04-01-000001.7", 
+        "date": "2019-04-01T01:00:01+03:00", 
+        "resolution": "Вимога не відповідає предмету закупівлі", 
+        "id": "dd1ad4fb3d82435ea17cc27abe3e0898"
+      }, 
+      {
+        "status": "claim", 
+        "description": "Просимо додати таблицю потрібної калорійності харчування", 
+        "author": {
+          "contactPoint": {
+            "email": "aagt@gmail.com", 
+            "telephone": "+380 (322) 91-69-30", 
+            "name": "Андрій Олексюк"
+          }, 
+          "identifier": {
+            "scheme": "UA-EDR", 
+            "id": "00137226", 
+            "uri": "http://www.sc.gov.ua/"
+          }, 
+          "name": "ДКП «Книга»", 
+          "address": {
+            "postalCode": "79013", 
+            "countryName": "Україна", 
+            "streetAddress": "вул. Островського, 34", 
+            "region": "м. Львів", 
+            "locality": "м. Львів"
+          }
+        }, 
+        "title": "Калорійність", 
+        "dateSubmitted": "2019-04-01T01:00:01+03:00", 
+        "complaintID": "UA-2019-04-01-000001.8", 
+        "date": "2019-04-01T01:00:01+03:00", 
+        "type": "claim", 
+        "id": "976e6b644c684ffc804f608d33621da3"
+      }
+    ], 
+    "id": "7d0fc5fee1a44f5582ba938096c7a12c"
+  }
+}
+

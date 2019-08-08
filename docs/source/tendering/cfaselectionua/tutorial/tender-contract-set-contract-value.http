@@ -1,0 +1,93 @@
+PATCH /api/2.5/tenders/6ccc95c340c94e32bcf0b8c2183e62f7/contracts/06f4335c2dcf4c5f9a7ae9068539ea93?acc_token=41212666054442d6b76f020191851fd7 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 91
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "contractNumber": "contract #13111", 
+    "value": {
+      "amount": 238, 
+      "amountNet": 230
+    }
+  }
+}
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "status": "pending", 
+    "items": [
+      {
+        "relatedLot": "1b75c06ee58f4909a4201255b4ba5831", 
+        "description": "футляри до державних нагород", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "New Cartons", 
+          "id": "44617100-9"
+        }, 
+        "description_en": "futliary do derzhavnyh nagorod", 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "папір і картон гофровані, паперова й картонна тара"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "deliveryDate": {
+          "startDate": "2019-04-03T01:00:00+03:00", 
+          "endDate": "2019-04-06T01:00:00+03:00"
+        }, 
+        "id": "1662b0e1d59f4e2f8e2c5bd48e03a7bc", 
+        "unit": {
+          "code": "44617100-9", 
+          "name": "item"
+        }, 
+        "quantity": 6.0
+      }
+    ], 
+    "suppliers": [
+      {
+        "contactPoint": {
+          "name": "Державне управління справами", 
+          "telephone": "0440000000"
+        }, 
+        "scale": "micro", 
+        "name": "Державне управління справами", 
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "00037258", 
+          "uri": "http://www.dus.gov.ua/"
+        }, 
+        "address": {
+          "postalCode": "01220", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова, 11, корпус 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }
+      }
+    ], 
+    "contractNumber": "contract #13111", 
+    "value": {
+      "currency": "UAH", 
+      "amount": 238.0, 
+      "amountNet": 230.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "date": "2019-04-01T01:00:00+03:00", 
+    "awardID": "29c107dbe86047c09b6f49347cbce3c9", 
+    "id": "06f4335c2dcf4c5f9a7ae9068539ea93", 
+    "contractID": "UA-2019-04-01-000004-2"
+  }
+}
+

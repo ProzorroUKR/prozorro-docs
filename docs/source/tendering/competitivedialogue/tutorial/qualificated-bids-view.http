@@ -1,0 +1,192 @@
+GET /api/2.5/tenders/35f93e8dd5484abb8b90687952c82010/bids?acc_token=07345e719fc74031bf4a634e95cb3dd8 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Host: lb-api-sandbox.prozorro.gov.ua
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": [
+    {
+      "status": "active", 
+      "documents": [
+        {
+          "hash": "md5:00000000000000000000000000000000", 
+          "confidentiality": "public", 
+          "language": "uk", 
+          "title": "Proposal.pdf", 
+          "url": "http://public-docs-sandbox.prozorro.gov.ua/get/da249fe20e1040a0b8d07ad03ba80477?KeyID=a8968c46&Signature=hE%252BnAo6UgLiRKHIIQy5Fxr%2F6ogDT2Bwk58KoHfyQiryjOjLDaA%252BFDyn%252BoKK0sEdJpga9IO%2Fui0muCMt%252B1wZgAA%253D%253D", 
+          "format": "application/pdf", 
+          "isDescriptionDecision": false, 
+          "documentOf": "tender", 
+          "datePublished": "2019-04-01T01:00:00+03:00", 
+          "id": "fc7beec424624d31875661408ba11cdb", 
+          "dateModified": "2019-04-01T01:00:00+03:00"
+        }, 
+        {
+          "hash": "md5:00000000000000000000000000000000", 
+          "confidentiality": "buyerOnly", 
+          "language": "uk", 
+          "title": "DescriptiveProposal.pdf", 
+          "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/35f93e8dd5484abb8b90687952c82010/bids/9161500fb17744ce90346052ddf8479c/documents/00f32ca50b094277b327d8260178bd99?download=1091151c873d47cabfa752199b84a7ee", 
+          "format": "application/pdf", 
+          "isDescriptionDecision": true, 
+          "documentOf": "tender", 
+          "datePublished": "2019-04-01T01:00:00+03:00", 
+          "id": "00f32ca50b094277b327d8260178bd99", 
+          "dateModified": "2019-04-01T01:00:00+03:00"
+        }, 
+        {
+          "hash": "md5:00000000000000000000000000000000", 
+          "confidentiality": "buyerOnly", 
+          "language": "uk", 
+          "format": "application/pdf", 
+          "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/35f93e8dd5484abb8b90687952c82010/bids/9161500fb17744ce90346052ddf8479c/documents/05122126164848348d88537ba181face?download=7717b20f15c247f0bc8e56f48af62b53", 
+          "confidentialityRationale": "Only our company sells badgers with pink hair.", 
+          "title": "Proposal_top_secrets.pdf", 
+          "isDescriptionDecision": false, 
+          "documentOf": "tender", 
+          "datePublished": "2019-04-01T01:00:00+03:00", 
+          "id": "05122126164848348d88537ba181face", 
+          "dateModified": "2019-04-01T01:00:00+03:00"
+        }
+      ], 
+      "id": "9161500fb17744ce90346052ddf8479c", 
+      "tenderers": [
+        {
+          "contactPoint": {
+            "email": "soleksuk@gmail.com", 
+            "telephone": "+380 (432) 21-69-30", 
+            "name": "Сергій Олексюк"
+          }, 
+          "scale": "micro", 
+          "name": "ДКП «Школяр»", 
+          "identifier": {
+            "scheme": "UA-EDR", 
+            "id": "00137256", 
+            "uri": "http://www.sc.gov.ua/"
+          }, 
+          "address": {
+            "postalCode": "21100", 
+            "countryName": "Україна", 
+            "streetAddress": "вул. Островського, 33", 
+            "region": "м. Вінниця", 
+            "locality": "м. Вінниця"
+          }
+        }
+      ]
+    }, 
+    {
+      "status": "active", 
+      "id": "253a8b6e43504db9a3d4ec839dc7e5ce", 
+      "tenderers": [
+        {
+          "contactPoint": {
+            "email": "aagt@gmail.com", 
+            "telephone": "+380 (322) 91-69-30", 
+            "name": "Андрій Олексюк"
+          }, 
+          "scale": "sme", 
+          "name": "ДКП «Книга»", 
+          "identifier": {
+            "scheme": "UA-EDR", 
+            "id": "00137226", 
+            "uri": "http://www.sc.gov.ua/"
+          }, 
+          "address": {
+            "postalCode": "79013", 
+            "countryName": "Україна", 
+            "streetAddress": "вул. Островського, 34", 
+            "region": "м. Львів", 
+            "locality": "м. Львів"
+          }
+        }
+      ]
+    }, 
+    {
+      "status": "unsuccessful", 
+      "selfEligible": true, 
+      "tenderers": [
+        {
+          "contactPoint": {
+            "email": "fake@mail.com", 
+            "telephone": "+380 (322) 12-34-56", 
+            "name": "Іван Іваненко"
+          }, 
+          "scale": "mid", 
+          "name": "«Снігур»", 
+          "identifier": {
+            "scheme": "UA-EDR", 
+            "id": "00137227", 
+            "uri": "http://www.sc.gov.ua/"
+          }, 
+          "address": {
+            "postalCode": "79013", 
+            "countryName": "Україна", 
+            "streetAddress": "вул. Островського, 35", 
+            "region": "м. Львів", 
+            "locality": "м. Львів"
+          }
+        }
+      ], 
+      "selfQualified": true, 
+      "id": "d2423013b43642f98ce4b78bc3c99d66"
+    }, 
+    {
+      "status": "active", 
+      "documents": [
+        {
+          "hash": "md5:00000000000000000000000000000000", 
+          "confidentiality": "public", 
+          "language": "uk", 
+          "title": "Proposal_part1.pdf", 
+          "url": "http://public-docs-sandbox.prozorro.gov.ua/get/19d7c62da8e144799eb146bcd5501b48?KeyID=a8968c46&Signature=FIMSeD6yEWVtDOwH59G9AdzY6%252BG6sMCieLgltXtOaDdFJ%2F%252Bq00eiD0RVWW%2FnXEPn%252BC84bpaMYkE%252BcMWdmtb1DQ%253D%253D", 
+          "format": "application/pdf", 
+          "isDescriptionDecision": false, 
+          "documentOf": "tender", 
+          "datePublished": "2019-04-01T01:00:00+03:00", 
+          "id": "e92a237d2cc241d1ae1047f4599874c7", 
+          "dateModified": "2019-04-01T01:00:00+03:00"
+        }, 
+        {
+          "hash": "md5:00000000000000000000000000000000", 
+          "confidentiality": "buyerOnly", 
+          "language": "uk", 
+          "format": "application/pdf", 
+          "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/35f93e8dd5484abb8b90687952c82010/bids/8fe55741897d438581a0af90c21cc42d/documents/3ee0045cc6314ac78ba7a67aa8c90a52?download=9256c48555a442f9991381bf30f8f2c2", 
+          "confidentialityRationale": "Only our company sells badgers with pink hair.", 
+          "title": "Proposal_part2.pdf", 
+          "isDescriptionDecision": false, 
+          "documentOf": "tender", 
+          "datePublished": "2019-04-01T01:00:00+03:00", 
+          "id": "3ee0045cc6314ac78ba7a67aa8c90a52", 
+          "dateModified": "2019-04-01T01:00:00+03:00"
+        }
+      ], 
+      "id": "8fe55741897d438581a0af90c21cc42d", 
+      "tenderers": [
+        {
+          "contactPoint": {
+            "email": "fake@mail.com", 
+            "telephone": "+380 (322) 12-34-56", 
+            "name": "Іван Карпенко"
+          }, 
+          "scale": "large", 
+          "name": "«Кенгуру»", 
+          "identifier": {
+            "scheme": "UA-EDR", 
+            "id": "00137228", 
+            "uri": "http://www.sc.gov.ua/"
+          }, 
+          "address": {
+            "postalCode": "79013", 
+            "countryName": "Україна", 
+            "streetAddress": "вул. Коцюбинського, 15", 
+            "region": "м. Запоріжжя", 
+            "locality": "м. Запоріжя"
+          }
+        }
+      ]
+    }
+  ]
+}
+

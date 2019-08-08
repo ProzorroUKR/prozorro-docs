@@ -1,0 +1,34 @@
+GET /api/2.5/tenders/e5172ebc4c4c411f84f376ce6ede43b8/agreements/6b5a0c11f61040cf9cf3b2ecb7c71e86/documents HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Host: lb-api-sandbox.prozorro.gov.ua
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": [
+    {
+      "hash": "md5:00000000000000000000000000000000", 
+      "title": "agreement_first_document.doc", 
+      "url": "http://public-docs-sandbox.prozorro.gov.ua/get/09de1a3adfa94f0d8fa30909841193f0?KeyID=a8968c46&Signature=XuB%252BruGjl58IgbNXob6CpnwpD3ae5H%2FjtZaBRmxPcGiDrzqNJWxpxBgwp3C6R1sJRFrVPhw6hzPUBHgF4R3sAA%253D%253D", 
+      "format": "application/msword", 
+      "documentOf": "tender", 
+      "datePublished": "2019-04-01T01:00:00+03:00", 
+      "id": "67af38dacd1640569b88d396caf212b1", 
+      "dateModified": "2019-04-01T01:00:00+03:00"
+    }, 
+    {
+      "hash": "md5:00000000000000000000000000000000", 
+      "language": "en", 
+      "title": "agreement_second_document.doc", 
+      "url": "http://public-docs-sandbox.prozorro.gov.ua/get/6463825d07e249eaa65f8c3c8abf9c3c?KeyID=a8968c46&Signature=vpsW%252BjrQFImSYdrHbWrhJUZSbWr0XMcREz5tJlHNoDKHPgWo4d%252BdCjBpmepSz9%2Fm5PBiE1%252BTFA2CdFGSo%2FixAQ%253D%253D", 
+      "format": "application/msword", 
+      "title_en": "Title of Document", 
+      "description_en": "Description of Document", 
+      "datePublished": "2019-04-01T01:00:00+03:00", 
+      "documentOf": "tender", 
+      "id": "c3d2c2c5ba1f40e5a6dccce245515afb", 
+      "dateModified": "2019-04-01T01:00:00+03:00"
+    }
+  ]
+}
+

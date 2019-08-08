@@ -1,0 +1,327 @@
+GET /api/2.5/tenders/086edc68f12d4a248ded4f9cea52e69c?acc_token=96d8a738626243e08b1e0d273244477a HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Host: lb-api-sandbox.prozorro.gov.ua
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "procurementMethod": "open", 
+    "status": "complete", 
+    "complaintPeriod": {
+      "startDate": "2019-02-19T01:00:00+03:00", 
+      "endDate": "2019-03-18T00:00:00+02:00"
+    }, 
+    "enquiryPeriod": {
+      "startDate": "2019-02-19T01:00:00+03:00", 
+      "clarificationsUntil": "2019-03-15T01:00:00+03:00", 
+      "endDate": "2019-03-12T01:00:00+03:00", 
+      "invalidationDate": "2019-04-01T01:00:00+03:00"
+    }, 
+    "submissionMethod": "electronicAuction", 
+    "procuringEntity": {
+      "kind": "general", 
+      "name": "ЗОСШ #10 м.Вінниці", 
+      "address": {
+        "postalCode": "21027", 
+        "countryName": "Україна", 
+        "streetAddress": "вул. Стахурського. 22", 
+        "region": "м. Вінниця", 
+        "locality": "м. Вінниця"
+      }, 
+      "contactPoint": {
+        "url": "http://sch10.edu.vn.ua/", 
+        "name_en": "Kutsa Svitlana V.", 
+        "name": "Куца Світлана Валентинівна", 
+        "availableLanguage": "uk", 
+        "telephone": "+380 (432) 46-53-02"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "legalName_en": "The institution \"Secondary school I-III levels № 10 Vinnitsa City Council\"", 
+        "id": "21725150", 
+        "legalName": "Заклад \"Загальноосвітня школа І-ІІІ ступенів № 10 Вінницької міської ради\""
+      }, 
+      "name_en": "School #10 of Vinnytsia"
+    }, 
+    "owner": "broker", 
+    "title_en": "Services in school canteens", 
+    "id": "086edc68f12d4a248ded4f9cea52e69c", 
+    "title": "Послуги шкільних їдалень", 
+    "lots": [
+      {
+        "status": "active", 
+        "description": "Опис Лот №1", 
+        "title": "Лот №1", 
+        "minimalStep": {
+          "currency": "UAH", 
+          "amount": 35.0, 
+          "valueAddedTaxIncluded": true
+        }, 
+        "value": {
+          "currency": "UAH", 
+          "amount": 500.0, 
+          "valueAddedTaxIncluded": true
+        }, 
+        "date": "2019-04-01T01:00:00+03:00", 
+        "id": "e928726a47b7461a9d8a00258123cf3d"
+      }, 
+      {
+        "status": "unsuccessful", 
+        "description": "Опис Лот №2", 
+        "title": "Лот №2", 
+        "minimalStep": {
+          "currency": "UAH", 
+          "amount": 35.0, 
+          "valueAddedTaxIncluded": true
+        }, 
+        "value": {
+          "currency": "UAH", 
+          "amount": 400.0, 
+          "valueAddedTaxIncluded": true
+        }, 
+        "date": "2019-04-01T01:00:00+03:00", 
+        "id": "8de1614007d74757970d83c1d60ebc76"
+      }
+    ], 
+    "qualificationPeriod": {
+      "startDate": "2019-03-22T01:00:00+03:00", 
+      "endDate": "2019-04-01T01:00:00+03:00"
+    }, 
+    "tenderID": "UA-2019-04-01-000001", 
+    "dateModified": "2019-04-01T01:00:00+03:00", 
+    "numberOfBids": 3, 
+    "tenderPeriod": {
+      "startDate": "2019-02-19T01:00:00+03:00", 
+      "endDate": "2019-03-22T01:00:00+03:00"
+    }, 
+    "stage2TenderID": "d99c61237b1945578b8cde56d011dbef", 
+    "qualifications": [
+      {
+        "status": "active", 
+        "lotID": "e928726a47b7461a9d8a00258123cf3d", 
+        "eligible": true, 
+        "qualified": true, 
+        "bidID": "5c57011a1a184851aa1a971e0f443b6c", 
+        "date": "2019-04-01T01:00:00+03:00", 
+        "id": "a16346645ffd4af3b8bbeea05d93fe7c"
+      }, 
+      {
+        "status": "active", 
+        "lotID": "e928726a47b7461a9d8a00258123cf3d", 
+        "eligible": true, 
+        "qualified": true, 
+        "bidID": "44e377d158fa42f3b8d4437c84bdda52", 
+        "date": "2019-04-01T01:00:00+03:00", 
+        "id": "16ff73824b4d4a0e9ae525d4f8a0f863"
+      }, 
+      {
+        "status": "active", 
+        "lotID": "e928726a47b7461a9d8a00258123cf3d", 
+        "eligible": true, 
+        "qualified": true, 
+        "bidID": "eb8b16e4d30d4a81b046cae41632ed2d", 
+        "date": "2019-04-01T01:00:00+03:00", 
+        "id": "1f6555ff47b746b1a856cb44bb62bbd9"
+      }
+    ], 
+    "procurementMethodType": "competitiveDialogueEU", 
+    "date": "2019-04-01T01:00:00+03:00", 
+    "minimalStep": {
+      "currency": "UAH", 
+      "amount": 35.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "items": [
+      {
+        "relatedLot": "e928726a47b7461a9d8a00258123cf3d", 
+        "description": "Послуги шкільних їдалень", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Test", 
+          "id": "37810000-9"
+        }, 
+        "description_en": "Services in school canteens", 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "Послуги шкільних їдалень"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "deliveryDate": {
+          "startDate": "2019-04-21T00:00:00+02:00", 
+          "endDate": "2019-05-21T00:00:00+02:00"
+        }, 
+        "id": "ad21b87802114030bb0b6731e653d8d1", 
+        "unit": {
+          "code": "44617100-9", 
+          "name": "item"
+        }, 
+        "quantity": 1.0
+      }, 
+      {
+        "relatedLot": "8de1614007d74757970d83c1d60ebc76", 
+        "description": "Послуги шкільних їдалень", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Test", 
+          "id": "37810000-9"
+        }, 
+        "description_en": "Services in school canteens", 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "Послуги шкільних їдалень"
+          }
+        ], 
+        "deliveryAddress": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "deliveryDate": {
+          "startDate": "2019-04-21T00:00:00+02:00", 
+          "endDate": "2019-05-21T00:00:00+02:00"
+        }, 
+        "id": "910b4477203149af8ab94b82f030cd0f", 
+        "unit": {
+          "code": "44617100-9", 
+          "name": "item"
+        }, 
+        "quantity": 1.0
+      }
+    ], 
+    "bids": [
+      {
+        "status": "active", 
+        "selfEligible": true, 
+        "lotValues": [
+          {
+            "relatedLot": "e928726a47b7461a9d8a00258123cf3d", 
+            "date": "2019-04-01T01:00:00+03:00", 
+            "status": "active", 
+            "subcontractingDetails": "ДКП «Орфей»"
+          }
+        ], 
+        "selfQualified": true, 
+        "tenderers": [
+          {
+            "contactPoint": {
+              "email": "soleksuk@gmail.com", 
+              "telephone": "+380 (432) 21-69-30", 
+              "name": "Сергій Олексюк"
+            }, 
+            "scale": "micro", 
+            "name": "ДКП «Школяр»", 
+            "identifier": {
+              "scheme": "UA-EDR", 
+              "id": "00137256", 
+              "uri": "http://www.sc.gov.ua/"
+            }, 
+            "address": {
+              "postalCode": "21100", 
+              "countryName": "Україна", 
+              "streetAddress": "вул. Островського, 33", 
+              "region": "м. Вінниця", 
+              "locality": "м. Вінниця"
+            }
+          }
+        ], 
+        "date": "2019-04-01T01:00:00+03:00", 
+        "id": "5c57011a1a184851aa1a971e0f443b6c"
+      }, 
+      {
+        "status": "active", 
+        "selfEligible": true, 
+        "lotValues": [
+          {
+            "relatedLot": "e928726a47b7461a9d8a00258123cf3d", 
+            "date": "2019-04-01T01:00:00+03:00", 
+            "status": "active"
+          }
+        ], 
+        "selfQualified": true, 
+        "tenderers": [
+          {
+            "contactPoint": {
+              "email": "aagt@gmail.com", 
+              "telephone": "+380 (322) 91-69-30", 
+              "name": "Андрій Олексюк"
+            }, 
+            "scale": "sme", 
+            "name": "ДКП «Книга»", 
+            "identifier": {
+              "scheme": "UA-EDR", 
+              "id": "00137226", 
+              "uri": "http://www.sc.gov.ua/"
+            }, 
+            "address": {
+              "postalCode": "79013", 
+              "countryName": "Україна", 
+              "streetAddress": "вул. Островського, 34", 
+              "region": "м. Львів", 
+              "locality": "м. Львів"
+            }
+          }
+        ], 
+        "date": "2019-04-01T01:00:00+03:00", 
+        "id": "44e377d158fa42f3b8d4437c84bdda52"
+      }, 
+      {
+        "status": "active", 
+        "selfEligible": true, 
+        "lotValues": [
+          {
+            "relatedLot": "e928726a47b7461a9d8a00258123cf3d", 
+            "date": "2019-04-01T01:00:00+03:00", 
+            "status": "active"
+          }
+        ], 
+        "selfQualified": true, 
+        "tenderers": [
+          {
+            "contactPoint": {
+              "email": "fake@mail.com", 
+              "telephone": "+380 (322) 12-34-56", 
+              "name": "Іван Іваненко"
+            }, 
+            "scale": "mid", 
+            "name": "«Снігур»", 
+            "identifier": {
+              "scheme": "UA-EDR", 
+              "id": "00137227", 
+              "uri": "http://www.sc.gov.ua/"
+            }, 
+            "address": {
+              "postalCode": "79013", 
+              "countryName": "Україна", 
+              "streetAddress": "вул. Островського, 35", 
+              "region": "м. Львів", 
+              "locality": "м. Львів"
+            }
+          }
+        ], 
+        "date": "2019-04-01T01:00:00+03:00", 
+        "id": "eb8b16e4d30d4a81b046cae41632ed2d"
+      }
+    ], 
+    "value": {
+      "currency": "UAH", 
+      "amount": 900.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "awardCriteria": "lowestCost"
+  }
+}
+

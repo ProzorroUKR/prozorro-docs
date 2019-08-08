@@ -54,8 +54,8 @@ test_lots[0]['minimalStep'] = test_tender_data_stage1['minimalStep']
 test_lots[1]['value'] = test_tender_data_stage1['value']
 test_lots[1]['minimalStep'] = test_tender_data_stage1['minimalStep']
 
-TARGET_DIR = 'docs/source/competitivedialogue/tutorial/'
-TARGET_DIR_MULTIPLE = 'docs/source/competitivedialogue/multiple_lots_tutorial/'
+TARGET_DIR = 'docs/source/tendering/competitivedialogue/tutorial/'
+TARGET_DIR_MULTIPLE = 'docs/source/tendering/competitivedialogue/multiple_lots_tutorial/'
 
 
 class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):

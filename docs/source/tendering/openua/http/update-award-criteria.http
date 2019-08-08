@@ -1,0 +1,30 @@
+PUT /api/2.5/tenders/7898ec9992af47ccbc9b8bf1b8539660/documents/f1d8659ef73a4e499b4aa6d1913d4982?acc_token=2b27a9c765904007a9910ceb41888d93 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 146
+Content-Type: multipart/form-data; boundary=BOUNDARY
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="AwardCriteria-2.pdf"
+Content-Type: application/pdf
+
+content2
+--BOUNDARY--
+
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "hash": "md5:00000000000000000000000000000000", 
+    "author": "tender_owner", 
+    "title": "AwardCriteria-2.pdf", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/7cf8e8e3fb7d47e9af5e5e371ef4c2ce?KeyID=a8968c46&Signature=gIuByAdela%2FYtePEqV2zWNV2y8ss0kd%252B5e2PoS4R%252BViy9A759FNIzWdQpILW8UB43ZcJ0S9cARWZj8cZsOioAA%253D%253D", 
+    "format": "application/pdf", 
+    "documentOf": "tender", 
+    "datePublished": "2019-04-01T01:00:00+03:00", 
+    "id": "f1d8659ef73a4e499b4aa6d1913d4982", 
+    "dateModified": "2019-04-01T01:00:00+03:00"
+  }
+}
+

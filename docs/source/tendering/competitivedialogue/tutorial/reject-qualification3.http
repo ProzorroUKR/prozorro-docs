@@ -1,0 +1,25 @@
+PATCH /api/2.5/tenders/35f93e8dd5484abb8b90687952c82010/qualifications/ec9baa1cb5d54975bfbe68c0ef30b5e6?acc_token=07345e719fc74031bf4a634e95cb3dd8 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 36
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "status": "unsuccessful"
+  }
+}
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "status": "unsuccessful", 
+    "eligible": false, 
+    "qualified": false, 
+    "bidID": "d2423013b43642f98ce4b78bc3c99d66", 
+    "date": "2019-04-01T01:00:00+03:00", 
+    "id": "ec9baa1cb5d54975bfbe68c0ef30b5e6"
+  }
+}
+

@@ -1,0 +1,31 @@
+POST /api/2.5/tenders/50c82523038349969f53f3e238932c46/contracts/06cf1c4f280e4718b19fd8537a62323e/documents?acc_token=a07ea239d2d2462cad2a62a440a50238 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 157
+Content-Type: multipart/form-data; boundary=BOUNDARY
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+--BOUNDARY
+Content-Disposition: form-data; name="file"; filename="contract_second_document.doc"
+Content-Type: application/msword
+
+content
+--BOUNDARY--
+
+
+Response: 201 Created
+Content-Type: application/json; charset=UTF-8
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/50c82523038349969f53f3e238932c46/contracts/06cf1c4f280e4718b19fd8537a62323e/documents/bbde84c8248042a7b03d54a0a9acaf34
+{
+  "data": {
+    "hash": "md5:00000000000000000000000000000000", 
+    "language": "uk", 
+    "title": "contract_second_document.doc", 
+    "url": "http://public-docs-sandbox.prozorro.gov.ua/get/ffd0ab88d7ba448ba72474fb8f5bdcd4?KeyID=a8968c46&Signature=c2qvpRtxB%252BBrbLnijCxynIbb5T0IEFRqdt%2FYV%2FBvEFyuUg%252BKIpqQf21Stbegg5idVw7S7feVlDmFlvKudWuVDQ%253D%253D", 
+    "format": "application/msword", 
+    "documentOf": "tender", 
+    "datePublished": "2019-04-01T01:00:01+03:00", 
+    "id": "bbde84c8248042a7b03d54a0a9acaf34", 
+    "dateModified": "2019-04-01T01:00:01+03:00"
+  }
+}
+

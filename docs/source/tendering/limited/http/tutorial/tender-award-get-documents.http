@@ -1,0 +1,21 @@
+GET /api/2.5/tenders/5fb29c8fb65c4a12b69dd3531cfe7bce/awards/68ea182233e3452d9017623a786375bf/documents?acc_token=5041e53aff3940fb94a230a261500765 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Host: lb-api-sandbox.prozorro.gov.ua
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": [
+    {
+      "hash": "md5:00000000000000000000000000000000", 
+      "title": "award_first_document.doc", 
+      "url": "http://public-docs-sandbox.prozorro.gov.ua/get/c00dc0ef03604ed0a3494286fe577382?KeyID=a8968c46&Signature=4qQHtNuTth0RRN5EcduSPMd1yjv3uHQRwjAI45jph4KVgpnR8P06n7vcTygakQZnnsC75cZjjnF%2FLWHJff8UBA%253D%253D", 
+      "format": "application/msword", 
+      "documentOf": "tender", 
+      "datePublished": "2019-04-01T01:00:00+03:00", 
+      "id": "82229d1dba0a4707afea375ed95de89a", 
+      "dateModified": "2019-04-01T01:00:00+03:00"
+    }
+  ]
+}
+

@@ -1,0 +1,52 @@
+PATCH /api/2.5/tenders/6ccc95c340c94e32bcf0b8c2183e62f7/awards/83715d984ebe457d9073667aab4215ff?acc_token=41212666054442d6b76f020191851fd7 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 36
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "status": "unsuccessful"
+  }
+}
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/6ccc95c340c94e32bcf0b8c2183e62f7/awards/29c107dbe86047c09b6f49347cbce3c9
+{
+  "data": {
+    "status": "unsuccessful", 
+    "lotID": "1b75c06ee58f4909a4201255b4ba5831", 
+    "suppliers": [
+      {
+        "contactPoint": {
+          "name": "Державне управління справами", 
+          "telephone": "0440000000"
+        }, 
+        "scale": "micro", 
+        "name": "Державне управління справами", 
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "00037257", 
+          "uri": "http://www.dus.gov.ua/"
+        }, 
+        "address": {
+          "postalCode": "01220", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова, 11, корпус 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }
+      }
+    ], 
+    "bid_id": "d3401f691dc94a84ba7daa8eb8e0c4f0", 
+    "value": {
+      "currency": "UAH", 
+      "amount": 499.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "date": "2019-04-01T01:00:00+03:00", 
+    "id": "83715d984ebe457d9073667aab4215ff"
+  }
+}
+
