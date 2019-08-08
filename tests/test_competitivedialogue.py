@@ -2102,13 +2102,13 @@ class TenderResourceTest(BaseCompetitiveDialogEUWebTest, MockWebTestMixin):
 
         with open(TARGET_DIR + 'award-complaints-list.http', 'w') as self.app.file_obj:
             self.app.authorization = None
-        response = self.app.get('/tenders/{}/awards/{}/complaints'.format(self.tender_id, award_id))
+            response = self.app.get('/tenders/{}/awards/{}/complaints'.format(self.tender_id, award_id))
         self.assertEqual(response.status, '200 OK')
 
         with open(TARGET_DIR + 'award-complaint.http', 'w') as self.app.file_obj:
             self.app.authorization = None
-        response = self.app.get(
-            '/tenders/{}/awards/{}/complaints/{}'.format(self.tender_id, award_id, complaint1_id))
+            response = self.app.get(
+                '/tenders/{}/awards/{}/complaints/{}'.format(self.tender_id, award_id, complaint1_id))
         self.assertEqual(response.status, '200 OK')
 
         self.app.authorization = ('Basic', ('broker', ''))

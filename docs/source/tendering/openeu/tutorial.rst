@@ -229,7 +229,7 @@ It is possible to check the uploaded documents:
 .. include:: http/tutorial/bidder-documents.http
    :code:
 
-.. _envelopes:
+.. _openeu_envelopes:
 
 Financial, eligibility and qualification documents uploading
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

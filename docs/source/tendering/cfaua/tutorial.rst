@@ -1,4 +1,4 @@
-.. _tutorial:
+.. _cfaua_tutorial:
 
 Tutorial
 ========

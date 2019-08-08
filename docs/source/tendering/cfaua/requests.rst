@@ -1,4 +1,4 @@
-.. _requests:
+.. _cfaua_requests:
 
 REST API specification
 ======================
