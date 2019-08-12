@@ -9,3 +9,4 @@ When customer needs to change current broker this customer should provide new pr
    tenders
    contracts
    plans
+   agreements
