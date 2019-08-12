@@ -36,6 +36,16 @@ Broker that is going to become new agreement owner should create a `Transfer`.
 Changing agreement's owner
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+An ability to change agreement's ownership depends on agreement's status:
+
++---------+-------------+
+| Allowed | Not Allowed |
++---------+-------------+
+| active  | pending     |
+|         |             |
+|         | terminated  |
++---------+-------------+
+
 In order to change agreement's ownership new broker should send POST request to appropriate `/agreements/id/` with `data` section containing ``id`` of `Transfer` and ``transfer`` token received from customer:
 
 .. include:: tutorial/change-agreement-ownership.http

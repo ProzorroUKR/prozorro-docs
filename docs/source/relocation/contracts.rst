@@ -36,6 +36,16 @@ Broker that is going to become new contract owner should create a `Transfer`.
 Changing contract's owner
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
+An ability to change contract's ownership depends on contract's status:
+
++---------+-------------+
+| Allowed | Not Allowed |
++---------+-------------+
+| active  | pending     |
+|         |             |
+|         | terminated  |
++---------+-------------+
+
 In order to change contract's ownership new broker should send POST request to appropriate `/contracts/id/` with `data` section containing ``id`` of `Transfer` and ``transfer`` token received from customer:
 
 .. include:: tutorial/change-contract-ownership.http
