@@ -31,13 +31,17 @@ class TransferDocsTest(BaseWebTest, MockWebTestMixin):
 
     def test_tenders_docs(self):
         data = deepcopy(test_tender_data)
+
         now = get_now()
-        data['items'][0].update({"deliveryDate": {
-            "startDate": (now + timedelta(days=2)).isoformat(),
-            "endDate": (now + timedelta(days=5)).isoformat()}})
+        for item in data['items']:
+            item['deliveryDate'] = {
+                "startDate": (get_now() + timedelta(days=2)).isoformat(),
+                "endDate": (get_now() + timedelta(days=5)).isoformat()
+            }
         data.update({
             "enquiryPeriod": {"endDate": (now + timedelta(days=7)).isoformat()},
             "tenderPeriod": {"endDate": (now + timedelta(days=14)).isoformat()}})
+
         self.app.authorization = ('Basic', ('broker', ''))
 
         with open('docs/source/relocation/tutorial/create-tender.http', 'w') as self.app.file_obj:
@@ -143,6 +147,17 @@ class TransferDocsTest(BaseWebTest, MockWebTestMixin):
 
     def test_plans_docs(self):
         data = deepcopy(test_plan_data)
+
+        now = get_now()
+        for item in data['items']:
+            item['deliveryDate'] = {
+                "startDate": (get_now() + timedelta(days=2)).isoformat(),
+                "endDate": (get_now() + timedelta(days=5)).isoformat()
+            }
+        data['tender']['tenderPeriod'].update({
+            "startDate": (get_now() + timedelta(days=7)).isoformat()
+        })
+
         self.app.authorization = ('Basic', ('broker', ''))
 
         with open('docs/source/relocation/tutorial/create-plan.http', 'w') as self.app.file_obj:
@@ -192,6 +207,7 @@ class TransferDocsTest(BaseWebTest, MockWebTestMixin):
         test_tender_token = uuid4().hex
         data = deepcopy(test_agreement_data)
         data.update({
+            u"dateSigned": get_now().isoformat(),
             u"id": uuid4().hex,
             u"tender_id": uuid4().hex,
             u"tender_token": sha512(test_tender_token).hexdigest()
