@@ -45,7 +45,7 @@ Tender creation from a procurement plan
 ---------------------------------------
 
 A tender can be created from your procurement plan. This tender will be linked with the plan
-using :ref:`plan_id<tender>` and :ref:`tender_id` fields to ensure 1-1 relation between these entities.
+using :ref:`tender's plans <tender>` and :ref:`plan's tender_id <tender_id>` fields.
 
 
 

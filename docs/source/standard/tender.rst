@@ -260,10 +260,8 @@ Schema
    List of :ref:`Milestone` objects.
 
 
-:plan_id:
-   string, auto-generated, read-only
-
-   ``id`` of the linked plan object. See :ref:`tender-from-plan`
+:plans:
+   List of :ref:`PlanRelation` objects.
 
 :status:
    string
