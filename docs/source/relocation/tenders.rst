@@ -197,8 +197,6 @@ An ability to change tender's ownership depends on tender's status:
 | active                               | complete              |
 +--------------------------------------+-----------------------+
 
-Pay attention that only broker with appropriate accreditation level can become new owner. Otherwise broker will be forbidden from this action.
-
 To change tender's ownership new broker should send POST request to appropriate `/tenders/id/` with `data` section containing ``id`` of `Transfer` and ``transfer`` token received from customer:
 
 .. include:: tutorial/change-tender-ownership.http
@@ -218,4 +216,14 @@ After `Transfer` is applied it stores tender path in ``usedFor`` property:
 Let's try to change the tender using ``token`` received on `Transfer` creation:
 
 .. include:: tutorial/modify-tender.http
+   :code:
+
+Pay attention that only broker with appropriate accreditation level can become new owner. Otherwise broker will be forbidden from this action.
+
+.. include:: tutorial/change-tender-ownership-forbidden.http
+   :code:
+
+Also ownership change is allowed for tender that have owner with a special accreditation level that allows ownership change:
+
+.. include:: tutorial/change-tender-ownership-forbidden-owner.http
    :code:

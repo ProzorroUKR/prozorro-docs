@@ -1,13 +1,13 @@
-PATCH /api/2.5/plans/f0b2403cba3040acaaf3d6d45dc953be?acc_token=0f5df593e06c412a900d06c6540abce5 HTTP/1.0
+PATCH /api/2.5/plans/f0b2403cba3040acaaf3d6d45dc953be?acc_token=9d7d2c3c4b5440858b61229096473cfe HTTP/1.0
 Authorization: Basic YnJva2VyMTo=
-Content-Length: 74
+Content-Length: 72
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
     "budget": {
-      "description": "broker1 now can change the tender"
+      "description": "broker1 now can change the plan"
     }
   }
 }
@@ -111,7 +111,7 @@ Content-Type: application/json; charset=UTF-8
     "planID": "UA-P-2019-04-01-000001", 
     "budget": {
       "amountNet": 12222.0, 
-      "description": "broker1 now can change the tender", 
+      "description": "broker1 now can change the plan", 
       "period": {
         "startDate": "2019-01-01T00:00:00+02:00", 
         "endDate": "2019-12-31T00:00:00+02:00"

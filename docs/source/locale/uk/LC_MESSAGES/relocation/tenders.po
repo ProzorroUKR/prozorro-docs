@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.relocation.api 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-12 12:56+0300\n"
+"POT-Creation-Date: 2019-08-15 12:08+0300\n"
 "PO-Revision-Date: 2016-11-01 12:23+0200\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
 "Language-Team: Ukrainian <support@quintagroup.com>\n"
@@ -306,15 +306,6 @@ msgstr ""
 
 #: ../../source/relocation/tenders.rst:200
 msgid ""
-"Pay attention that only broker with appropriate accreditation level can "
-"become new owner. Otherwise broker will be forbidden from this action."
-msgstr ""
-"Зверніть увагу, що тільки майданчик з відповідним рівнем акредитації може"
-" стати новим власником. В іншому випадку майданчику така дія буде "
-"заборонена."
-
-#: ../../source/relocation/tenders.rst:202
-msgid ""
 "To change tender's ownership new broker should send POST request to "
 "appropriate `/tenders/id/` with `data` section containing ``id`` of "
 "`Transfer` and ``transfer`` token received from customer:"
@@ -324,13 +315,13 @@ msgstr ""
 "ідентифікатор ``id`` для `Transfer` та ключ ``transfer`` отриманий від "
 "клієнта:"
 
-#: ../../source/relocation/tenders.rst:207
+#: ../../source/relocation/tenders.rst:205
 msgid "Updated ``owner`` value indicates that ownership is successfully changed."
 msgstr ""
 "Оновлене значення властивості ``owner`` вказує, що власник був успішно "
 "змінений."
 
-#: ../../source/relocation/tenders.rst:209
+#: ../../source/relocation/tenders.rst:207
 msgid ""
 "Note that new broker has to provide its customer with new ``transfer`` "
 "key (generated in `Transfer` object)."
@@ -338,23 +329,40 @@ msgstr ""
 "Зверніть увагу, що новий майданчик повинен довести до відома клієнта "
 "новий ключ ``transfer`` (згенерований в об'єкті `Transfer`)."
 
-#: ../../source/relocation/tenders.rst:211
+#: ../../source/relocation/tenders.rst:209
 msgid "After `Transfer` is applied it stores tender path in ``usedFor`` property:"
 msgstr ""
 "Після того, як об'єкт `Transfer` було застосовано, для нього генерується "
 "властивість ``usedFor`` (вказується шлях до об'єкта, власника якого було "
 "змінено):"
 
-#: ../../source/relocation/tenders.rst:216
+#: ../../source/relocation/tenders.rst:214
 msgid "'Used' `Transfer` can't be applied to any other object."
 msgstr ""
 "'Використаний' об'єкт `Transfer` вже не можна застосувати до іншого "
 "об'єкта. "
 
-#: ../../source/relocation/tenders.rst:218
+#: ../../source/relocation/tenders.rst:216
 msgid ""
 "Let's try to change the tender using ``token`` received on `Transfer` "
 "creation:"
 msgstr ""
 "Спробуємо змінити закупівлю за допомогою ключа ``token``, отриманого при "
 "створенні об'єкта `Transfer`."
+
+#: ../../source/relocation/tenders.rst:221
+msgid ""
+"Pay attention that only broker with appropriate accreditation level can "
+"become new owner. Otherwise broker will be forbidden from this action."
+msgstr ""
+"Зверніть увагу, що тільки майданчик з відповідним рівнем акредитації може"
+" стати новим власником. В іншому випадку майданчику така дія буде "
+"заборонена."
+
+#: ../../source/relocation/tenders.rst:226
+msgid ""
+"Also ownership change is allowed for tender that have owner with a "
+"special accreditation level that allows ownership change:"
+msgstr ""
+"Також зміна власника можлива для тендеру який наразі має власника "
+"зі спеціальним рівнем акредетації що дозволяє зміну власника:"

@@ -39,8 +39,6 @@ Broker that is going to become new plan owner should create a `Transfer`.
 Changing plan's owner
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Pay attention that only broker with appropriate accreditation level can become new owner. Otherwise broker will be forbidden from this action.
-
 To change plan's ownership new broker should send POST request to appropriate `/plans/id/` with `data` section containing ``id`` of `Transfer` and ``transfer`` token received from customer:
 
 .. include:: tutorial/change-plan-ownership.http
@@ -60,4 +58,14 @@ After `Transfer` is applied it stores plan path in ``usedFor`` property:
 Let's try to change the plan using ``token`` received on `Transfer` creation:
 
 .. include:: tutorial/modify-plan.http
+   :code:
+
+Pay attention that only broker with appropriate accreditation level can become new owner. Otherwise broker will be forbidden from this action.
+
+.. include:: tutorial/change-plan-ownership-forbidden.http
+   :code:
+
+Also ownership change is allowed for plan that have owner with a special accreditation level that allows ownership change:
+
+.. include:: tutorial/change-plan-ownership-forbidden-owner.http
    :code:

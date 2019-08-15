@@ -64,3 +64,13 @@ Let's try to change the agreement using ``token`` received on `Transfer` creatio
 
 .. include:: tutorial/modify-agreement.http
    :code:
+
+Pay attention that only broker with appropriate accreditation level can become new owner. Otherwise broker will be forbidden from this action.
+
+.. include:: tutorial/change-agreement-ownership-forbidden.http
+   :code:
+
+Also ownership change is allowed for agreement that have owner with a special accreditation level that allows ownership change:
+
+.. include:: tutorial/change-agreement-ownership-forbidden-owner.http
+   :code:
