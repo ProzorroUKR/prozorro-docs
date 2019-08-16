@@ -53,6 +53,25 @@ class TransferDocsTest(BaseWebTest, MockWebTestMixin):
         owner_token = response.json['access']['token']
         orig_tender_transfer_token = response.json['access']['transfer']
 
+        self.app.authorization = ('Basic', ('broker2', ''))
+
+        response = self.app.post_json('/transfers', {"data": {}})
+        self.assertEqual(response.status, '201 Created')
+        self.assertEqual(response.content_type, 'application/json')
+        transfer = response.json['data']
+        access = response.json['access']
+        new_access_token = access['token']
+        new_transfer_token = access['transfer']
+
+        with open('docs/source/relocation/tutorial/change-tender-ownership-forbidden.http', 'w') as self.app.file_obj:
+            response = self.app.post_json(
+                '/tenders/{}/ownership'.format(tender_id),
+                {"data": {"id": transfer['id'], 'transfer': orig_tender_transfer_token}}, status=403)
+            self.assertEqual(response.status, '403 Forbidden')
+            self.assertEqual(
+                response.json['errors'][0]['description'],
+                'Broker Accreditation level does not permit ownership change')
+
         self.app.authorization = ('Basic', ('broker1', ''))
 
         with open('docs/source/relocation/tutorial/create-tender-transfer.http', 'w') as self.app.file_obj:
@@ -87,6 +106,25 @@ class TransferDocsTest(BaseWebTest, MockWebTestMixin):
             self.assertEqual(response.status, '200 OK')
             self.assertEqual(response.json['data']['description'], 'broker1 now can change the tender')
 
+        self.app.authorization = ('Basic', ('broker', ''))
+
+        response = self.app.post_json('/transfers', {"data": {}})
+        self.assertEqual(response.status, '201 Created')
+        self.assertEqual(response.content_type, 'application/json')
+        transfer = response.json['data']
+        access = response.json['access']
+        new_access_token = access['token']
+        new_transfer_token = access['transfer']
+
+        with open('docs/source/relocation/tutorial/change-tender-ownership-forbidden-owner.http', 'w') as self.app.file_obj:
+            response = self.app.post_json(
+                '/tenders/{}/ownership'.format(tender_id),
+                {"data": {"id": transfer['id'], 'transfer': orig_tender_transfer_token}}, status=403)
+            self.assertEqual(response.status, '403 Forbidden')
+            self.assertEqual(
+                response.json['errors'][0]['description'],
+                'Owner Accreditation level does not permit ownership change')
+
     def test_contracts_docs(self):
         test_tender_token = uuid4().hex
         data = deepcopy(test_contract_data)
@@ -115,7 +153,27 @@ class TransferDocsTest(BaseWebTest, MockWebTestMixin):
             token = access['token']
             contract_transfer = access['transfer']
 
+        self.app.authorization = ('Basic', ('broker2', ''))
+
+        response = self.app.post_json('/transfers', {"data": {}})
+        self.assertEqual(response.status, '201 Created')
+        self.assertEqual(response.content_type, 'application/json')
+        transfer = response.json['data']
+        access = response.json['access']
+        new_access_token = access['token']
+        new_transfer_token = access['transfer']
+
+        with open('docs/source/relocation/tutorial/change-contract-ownership-forbidden.http', 'w') as self.app.file_obj:
+            response = self.app.post_json(
+                '/contracts/{}/ownership'.format(contract_id),
+                {"data": {"id": transfer['id'], 'transfer': contract_transfer}}, status=403)
+            self.assertEqual(response.status, '403 Forbidden')
+            self.assertEqual(
+                response.json['errors'][0]['description'],
+                'Broker Accreditation level does not permit ownership change')
+
         self.app.authorization = ('Basic', ('broker3', ''))
+
         with open('docs/source/relocation/tutorial/create-contract-transfer.http', 'w') as self.app.file_obj:
             response = self.app.post_json('/transfers', {"data": {}})
             self.assertEqual(response.status, '201 Created')
@@ -145,6 +203,25 @@ class TransferDocsTest(BaseWebTest, MockWebTestMixin):
         with open('docs/source/relocation/tutorial/get-used-contract-transfer.http', 'w') as self.app.file_obj:
             response = self.app.get('/transfers/{}'.format(transfer['id']))
 
+        self.app.authorization = ('Basic', ('broker', ''))
+
+        response = self.app.post_json('/transfers', {"data": {}})
+        self.assertEqual(response.status, '201 Created')
+        self.assertEqual(response.content_type, 'application/json')
+        transfer = response.json['data']
+        access = response.json['access']
+        new_access_token = access['token']
+        new_transfer_token = access['transfer']
+
+        with open('docs/source/relocation/tutorial/change-contract-ownership-forbidden-owner.http', 'w') as self.app.file_obj:
+            response = self.app.post_json(
+                '/contracts/{}/ownership'.format(contract_id),
+                {"data": {"id": transfer['id'], 'transfer': contract_transfer}}, status=403)
+            self.assertEqual(response.status, '403 Forbidden')
+            self.assertEqual(
+                response.json['errors'][0]['description'],
+                'Owner Accreditation level does not permit ownership change')
+
     def test_plans_docs(self):
         data = deepcopy(test_plan_data)
 
@@ -169,6 +246,25 @@ class TransferDocsTest(BaseWebTest, MockWebTestMixin):
         access = response.json['access']
         owner_token = access['token']
         orig_plan_transfer_token = access['transfer']
+
+        self.app.authorization = ('Basic', ('broker2', ''))
+
+        response = self.app.post_json('/transfers', {"data": {}})
+        self.assertEqual(response.status, '201 Created')
+        self.assertEqual(response.content_type, 'application/json')
+        transfer = response.json['data']
+        access = response.json['access']
+        new_access_token = access['token']
+        new_transfer_token = access['transfer']
+
+        with open('docs/source/relocation/tutorial/change-plan-ownership-forbidden.http', 'w') as self.app.file_obj:
+            response = self.app.post_json(
+                '/plans/{}/ownership'.format(plan_id),
+                {"data": {"id": transfer['id'], 'transfer': orig_plan_transfer_token}}, status=403)
+            self.assertEqual(response.status, '403 Forbidden')
+            self.assertEqual(
+                response.json['errors'][0]['description'],
+                'Broker Accreditation level does not permit ownership change')
 
         self.app.authorization = ('Basic', ('broker1', ''))
 
@@ -199,9 +295,28 @@ class TransferDocsTest(BaseWebTest, MockWebTestMixin):
         with open('docs/source/relocation/tutorial/modify-plan.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
                 '/plans/{}?acc_token={}'.format(plan_id, new_access_token),
-                {"data": {"budget": {"description": "broker1 now can change the tender"}}})
+                {"data": {"budget": {"description": "broker1 now can change the plan"}}})
             self.assertEqual(response.status, '200 OK')
-            self.assertEqual(response.json['data']['budget']['description'], 'broker1 now can change the tender')
+            self.assertEqual(response.json['data']['budget']['description'], 'broker1 now can change the plan')
+
+        self.app.authorization = ('Basic', ('broker', ''))
+
+        response = self.app.post_json('/transfers', {"data": {}})
+        self.assertEqual(response.status, '201 Created')
+        self.assertEqual(response.content_type, 'application/json')
+        transfer = response.json['data']
+        access = response.json['access']
+        new_access_token = access['token']
+        new_transfer_token = access['transfer']
+
+        with open('docs/source/relocation/tutorial/change-plan-ownership-forbidden-owner.http', 'w') as self.app.file_obj:
+            response = self.app.post_json(
+                '/plans/{}/ownership'.format(plan_id),
+                {"data": {"id": transfer['id'], 'transfer': orig_plan_transfer_token}}, status=403)
+            self.assertEqual(response.status, '403 Forbidden')
+            self.assertEqual(
+                response.json['errors'][0]['description'],
+                'Owner Accreditation level does not permit ownership change')
 
     def test_agreements_docs(self):
         test_tender_token = uuid4().hex
@@ -230,6 +345,25 @@ class TransferDocsTest(BaseWebTest, MockWebTestMixin):
             access = response.json['access']
             token = access['token']
             agreement_transfer = access['transfer']
+
+        self.app.authorization = ('Basic', ('broker2', ''))
+
+        response = self.app.post_json('/transfers', {"data": {}})
+        self.assertEqual(response.status, '201 Created')
+        self.assertEqual(response.content_type, 'application/json')
+        transfer = response.json['data']
+        access = response.json['access']
+        new_access_token = access['token']
+        new_transfer_token = access['transfer']
+
+        with open('docs/source/relocation/tutorial/change-agreement-ownership-forbidden.http', 'w') as self.app.file_obj:
+            response = self.app.post_json(
+                '/agreements/{}/ownership'.format(agreement_id),
+                {"data": {"id": transfer['id'], 'transfer': agreement_transfer}}, status=403)
+            self.assertEqual(response.status, '403 Forbidden')
+            self.assertEqual(
+                response.json['errors'][0]['description'],
+                'Broker Accreditation level does not permit ownership change')
 
         self.app.authorization = ('Basic', ('broker3', ''))
         with open('docs/source/relocation/tutorial/create-agreement-transfer.http', 'w') as self.app.file_obj:
@@ -260,3 +394,22 @@ class TransferDocsTest(BaseWebTest, MockWebTestMixin):
 
         with open('docs/source/relocation/tutorial/get-used-agreement-transfer.http', 'w') as self.app.file_obj:
             response = self.app.get('/transfers/{}'.format(transfer['id']))
+
+        self.app.authorization = ('Basic', ('broker', ''))
+
+        response = self.app.post_json('/transfers', {"data": {}})
+        self.assertEqual(response.status, '201 Created')
+        self.assertEqual(response.content_type, 'application/json')
+        transfer = response.json['data']
+        access = response.json['access']
+        new_access_token = access['token']
+        new_transfer_token = access['transfer']
+
+        with open('docs/source/relocation/tutorial/change-agreement-ownership-forbidden-owner.http', 'w') as self.app.file_obj:
+            response = self.app.post_json(
+                '/agreements/{}/ownership'.format(agreement_id),
+                {"data": {"id": transfer['id'], 'transfer': agreement_transfer}}, status=403)
+            self.assertEqual(response.status, '403 Forbidden')
+            self.assertEqual(
+                response.json['errors'][0]['description'],
+                'Owner Accreditation level does not permit ownership change')
