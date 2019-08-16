@@ -65,7 +65,7 @@ Pay attention that only broker with appropriate accreditation level can become n
 .. include:: tutorial/change-plan-ownership-forbidden.http
    :code:
 
-Also ownership change is allowed for plan that have owner with a special accreditation level that allows ownership change:
+Also ownership change is allowed only if current owner has a special accreditation level that allows ownership change:
 
 .. include:: tutorial/change-plan-ownership-forbidden-owner.http
    :code:
