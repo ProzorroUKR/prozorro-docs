@@ -42,4 +42,3 @@ Schema
         - ``special`` - Procuring entity that operates in certain spheres of economic activity
         - ``defense`` - Procuring entity that conducts procurement for the defense needs
         - ``other`` -  Legal persons that are not procuring entities in the sense of the Law, but are state, utility, public enterprises, economic partnerships or associations of enterprises in which state or public utility share is 50 percent or more
-

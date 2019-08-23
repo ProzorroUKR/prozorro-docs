@@ -60,6 +60,9 @@ Schema
 :procurementMethodType:
     string
 
+    :`belowThreshold`:
+        below threshold procedure indentifier
+
     :`aboveThresholdUA`:
         above threshold procedure indentifier
 
@@ -255,6 +258,10 @@ Schema
 :milestones:
 
    List of :ref:`Milestone` objects.
+
+
+:plans:
+   List of :ref:`PlanRelation` objects.
 
 :status:
    string
