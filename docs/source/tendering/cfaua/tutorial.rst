@@ -372,7 +372,7 @@ Procuring entity approves qualifications by switching to next status:
 .. include:: tutorial/pre-qualification-confirmation.http
    :code:
 
-Procuring entity can upload ``qualificationDocuments`` for each Bidder. Also Procuring entity may change ``status`` of Bid on opposite during `active.prequalification`.
+Procuring entity may change ``status`` of Bid on opposite during `active.prequalification`.
 
 You may notice 10 day stand-still time set in `qualificationPeriod`.
 
@@ -448,8 +448,6 @@ Finally we confirm all `pending` awards via the following call:
    :code:
 
 Procuring entity may specify reasons of Bidder disqualification in the ``description`` field.
-
-Procuring entity can upload ``qualificationDocuments`` for each Bidder.
 
 Procuring entity may continue consideration of decision for some :ref:`award` if it is needed. Procuring entity should upload a document for that.
 
