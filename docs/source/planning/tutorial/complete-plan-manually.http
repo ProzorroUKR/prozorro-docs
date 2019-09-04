@@ -1,36 +1,12 @@
-PATCH /api/2.5/plans/f580aa1bdcf84194995a102bc3a96d2d?acc_token=34e936cda57c43f7aa3f2f88ed895e85 HTTP/1.0
+PATCH /api/2.5/plans/c6255f3084f0409cb80fe4220c16c2ae?acc_token=e5ec3a59efa244868a9c59c8821e4540 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 652
+Content-Length: 32
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
-    "items": [
-      {
-        "description": "Насіння овочевих культур", 
-        "classification": {
-          "scheme": "ДК021", 
-          "description": "Vegetable seeds", 
-          "id": "03111700-9"
-        }, 
-        "additionalClassifications": [
-          {
-            "scheme": "ДКПП", 
-            "id": "01.13.6", 
-            "description": "Насіння овочевих культур"
-          }
-        ], 
-        "deliveryDate": {
-          "endDate": "2016-06-01T23:06:30.023018+03:00"
-        }, 
-        "unit": {
-          "code": "KGM", 
-          "name": "кг"
-        }, 
-        "quantity": 5000
-      }
-    ]
+    "status": "complete"
   }
 }
 
@@ -38,7 +14,7 @@ Response: 200 OK
 Content-Type: application/json; charset=UTF-8
 {
   "data": {
-    "status": "scheduled", 
+    "status": "complete", 
     "buyers": [
       {
         "identifier": {
@@ -56,31 +32,79 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "items": [
       {
-        "description": "Насіння овочевих культур", 
+        "description": "Насіння гірчиці", 
         "classification": {
           "scheme": "ДК021", 
-          "description": "Vegetable seeds", 
-          "id": "03111700-9"
+          "description": "Mustard seeds", 
+          "id": "03111600-8"
         }, 
         "additionalClassifications": [
           {
             "scheme": "ДКПП", 
-            "id": "01.13.6", 
-            "description": "Насіння овочевих культур"
+            "id": "01.11.92", 
+            "description": "Насіння гірчиці"
           }
         ], 
         "deliveryDate": {
-          "endDate": "2016-06-01T23:06:30.023018+03:00"
+          "endDate": "2019-04-16T01:00:00+03:00"
         }, 
-        "id": "ef7b5e000cca4ed28113f2065d2c4123", 
+        "id": "a550ab2001284846a8e1e1acacfd103f", 
         "unit": {
           "code": "KGM", 
           "name": "кг"
         }, 
-        "quantity": 5000.0
+        "quantity": 1000.0
+      }, 
+      {
+        "description": "Насіння соняшнику", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Sunflower seeds", 
+          "id": "03111300-5"
+        }, 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "01.11.95", 
+            "description": "Насіння соняшнику"
+          }
+        ], 
+        "deliveryDate": {
+          "endDate": "2019-04-17T01:00:00+03:00"
+        }, 
+        "id": "2d727c1cf6aa408a8b49e494a8bda1d0", 
+        "unit": {
+          "code": "KGM", 
+          "name": "кг"
+        }, 
+        "quantity": 2000.0
+      }, 
+      {
+        "description": "Насіння бавовнику", 
+        "classification": {
+          "scheme": "ДК021", 
+          "description": "Cotton seeds", 
+          "id": "03111400-6"
+        }, 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "01.11.84", 
+            "description": "Насіння бавовнику"
+          }
+        ], 
+        "deliveryDate": {
+          "endDate": "2019-04-18T01:00:00+03:00"
+        }, 
+        "id": "7d7304ed340a40f48f30d7ed62fbc4ae", 
+        "unit": {
+          "code": "KGM", 
+          "name": "кг"
+        }, 
+        "quantity": 3000.0
       }
     ], 
-    "planID": "UA-P-2019-04-01-000001", 
+    "planID": "UA-P-2019-04-01-000002", 
     "budget": {
       "amountNet": 12222.0, 
       "description": "budget_description", 
@@ -121,7 +145,7 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "owner": "broker", 
     "dateModified": "2019-04-01T01:00:00+03:00", 
-    "id": "f580aa1bdcf84194995a102bc3a96d2d"
+    "id": "c6255f3084f0409cb80fe4220c16c2ae"
   }
 }
 

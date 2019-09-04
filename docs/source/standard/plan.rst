@@ -24,6 +24,59 @@ procuringEntity
    |ocdsDescription|
    The entity managing the procurement, which may be different from the buyer who is paying / using the items being procured.
 
+status
+------
+
+   string
+
+   Possible values:
+        * draft
+        * scheduled
+        * cancelled
+        * complete
+
+   Status of the Plan.
+
+   .. graphviz::
+
+        digraph G {
+
+            rankdir = LR
+
+            draft [
+                shape = circle
+                fixedsize = true
+                width = .9
+                style = filled
+                fillcolor = cadetblue1
+            ]
+            scheduled [
+                shape = circle
+                fixedsize = true
+                width = .9
+                style = filled
+                fillcolor = deepskyblue1
+            ]
+            complete [
+                shape = circle
+                fixedsize = true
+                width = .9
+                style = filled
+                fillcolor = aquamarine3
+            ]
+            cancelled [
+                shape = circle
+                fixedsize = true
+                width = .9
+                style = filled
+                fillcolor = coral1
+            ]
+
+            draft -> scheduled
+            scheduled -> complete
+            scheduled -> cancelled
+        }
+
 buyers
 ------
    List of :ref:`PlanOrganization` objects, required at least 1 object
@@ -104,6 +157,12 @@ items
 
    |ocdsDescription|
    The goods and services to be purchased, broken into line items wherever possible. Items should not be duplicated, but a quantity of 2 specified instead.
+
+cancellation
+------------
+
+    :ref:`PlanCancellation`
+
 
 dateModified
 ------------

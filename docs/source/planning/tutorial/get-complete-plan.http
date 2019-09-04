@@ -1,44 +1,12 @@
-PATCH /api/2.5/plans/f580aa1bdcf84194995a102bc3a96d2d?acc_token=34e936cda57c43f7aa3f2f88ed895e85 HTTP/1.0
+GET /api/2.5/plans/f580aa1bdcf84194995a102bc3a96d2d HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 652
-Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
-DATA:
-{
-  "data": {
-    "items": [
-      {
-        "description": "Насіння овочевих культур", 
-        "classification": {
-          "scheme": "ДК021", 
-          "description": "Vegetable seeds", 
-          "id": "03111700-9"
-        }, 
-        "additionalClassifications": [
-          {
-            "scheme": "ДКПП", 
-            "id": "01.13.6", 
-            "description": "Насіння овочевих культур"
-          }
-        ], 
-        "deliveryDate": {
-          "endDate": "2016-06-01T23:06:30.023018+03:00"
-        }, 
-        "unit": {
-          "code": "KGM", 
-          "name": "кг"
-        }, 
-        "quantity": 5000
-      }
-    ]
-  }
-}
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
 {
   "data": {
-    "status": "scheduled", 
+    "status": "complete", 
     "buyers": [
       {
         "identifier": {
@@ -121,7 +89,8 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "owner": "broker", 
     "dateModified": "2019-04-01T01:00:00+03:00", 
-    "id": "f580aa1bdcf84194995a102bc3a96d2d"
+    "id": "f580aa1bdcf84194995a102bc3a96d2d", 
+    "tender_id": "821592d97e83442cbb6f2aee3a5367b1"
   }
 }
 

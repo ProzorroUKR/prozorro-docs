@@ -43,6 +43,7 @@ class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
         self.assertEqual(response.json['data'], [])
 
         # create plan
+        test_plan_data['status'] = "draft"
         test_plan_data['tender'].update({"tenderPeriod": {"startDate": (get_now() + timedelta(days=7)).isoformat()}})
         test_plan_data['items'][0].update({"deliveryDate": {"endDate": (get_now() + timedelta(days=15)).isoformat()}})
         test_plan_data['items'][1].update({"deliveryDate": {"endDate": (get_now() + timedelta(days=16)).isoformat()}})
@@ -57,6 +58,13 @@ class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
         plan = response.json['data']
         self.plan_id = plan["id"]
         owner_token = response.json['access']['token']
+
+        with open(TARGET_DIR + 'patch-plan-status-scheduled.http', 'w') as self.app.file_obj:
+            response = self.app.patch_json(
+                '/plans/{}?acc_token={}'.format(plan['id'], owner_token),
+                {'data': {"status": "scheduled"}}
+            )
+            self.assertEqual(response.json["data"]["status"], "scheduled")
 
         with open(TARGET_DIR + 'plan-listing.http', 'w') as self.app.file_obj:
             self.app.authorization = None
@@ -124,3 +132,46 @@ class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
                 '/plans/{}/tenders'.format(plan['id']),
                 {'data': test_tender_data},
             )
+
+        with open(TARGET_DIR + 'get-complete-plan.http', 'w') as self.app.file_obj:
+            response = self.app.get('/plans/{}'.format(plan['id']))
+        self.assertEqual(response.json["data"]["status"], "complete")
+
+        # tender manually completion
+        response = self.app.post_json('/plans', {'data': test_plan_data})
+        self.assertEqual(response.status, '201 Created')
+
+        with open(TARGET_DIR + 'complete-plan-manually.http', 'w') as self.app.file_obj:
+            response = self.app.patch_json(
+                '/plans/{}?acc_token={}'.format(response.json['data']['id'], response.json['access']['token']),
+                {'data': {"status": "complete"}}
+            )
+            self.assertEqual(response.json["data"]["status"], "complete")
+
+        # tender cancellation
+        test_plan_data["status"] = "scheduled"
+        response = self.app.post_json('/plans', {'data': test_plan_data})
+        self.assertEqual(response.status, '201 Created')
+
+        plan_id = response.json['data']['id']
+        acc_token = response.json['access']['token']
+
+        with open(TARGET_DIR + 'plan-cancellation.http', 'w') as self.app.file_obj:
+            response = self.app.patch_json(
+                '/plans/{}?acc_token={}'.format(plan_id, acc_token),
+                {'data': {"cancellation": {
+                    "reason": "Підстава для скасування",
+                    "reason_en": "Reason of the cancellation",
+                }}}
+            )
+        self.assertEqual(response.json["data"]["status"], "scheduled")
+
+        with open(TARGET_DIR + 'plan-cancellation-activation.http', 'w') as self.app.file_obj:
+            response = self.app.patch_json(
+                '/plans/{}?acc_token={}'.format(plan_id, acc_token),
+                {'data': {"cancellation": {
+                    "status": "active",
+                }}}
+            )
+        self.assertEqual(response.json["data"]["status"], "cancelled")
+

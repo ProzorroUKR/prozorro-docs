@@ -6,12 +6,19 @@ Tutorial
 Creating plan procurement
 -------------------------
 
+We strongly recommend creating plans in `draft` status.
+
 Let’s create a plan:
 
 .. include:: tutorial/create-plan.http
    :code:
 
 We have `201 Created` response code, `Location` header and body with extra `id`, `planID`, and `dateModified` properties.
+
+The second step is moving the plan to `scheduled` status so that it becomes actually published:
+
+.. include:: tutorial/patch-plan-status-scheduled.http
+   :code:
 
 Let's check what plan registry contains:
 
@@ -68,4 +75,39 @@ There are three of them:
 A successful example looks like this:
 
 .. include:: tutorial/tender-from-plan.http
+   :code:
+
+Let's check that the plan status was switched to `complete`:
+
+.. include:: tutorial/get-complete-plan.http
+   :code:
+
+
+
+Plan completing without tendering
+---------------------------------
+
+There is a way to complete a plan without tender creation:
+
+.. include:: tutorial/complete-plan-manually.http
+   :code:
+
+This only works if `procurementMethodType` is one of the following:
+
+    * ``belowThreshold``
+    * ``reporting``
+    * empty string
+
+
+Plan cancellation
+-----------------
+
+A plan can be cancelled using :ref:`plancancellation`:
+
+.. include:: tutorial/plan-cancellation.http
+   :code:
+
+Making the cancellation object ``active`` cancels the plan:
+
+.. include:: tutorial/plan-cancellation-activation.http
    :code:
