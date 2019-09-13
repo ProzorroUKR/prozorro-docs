@@ -138,8 +138,9 @@ procurementMethod
     string
 
     Possible values:
-        * open
-        * limited
+        * ''
+        * 'open'
+        * 'limited'
 
     Procurement Method of the Tender.
 
@@ -147,8 +148,12 @@ procurementMethod
 procurementMethodType
 ---------------------
     string
+    Possible values for `procurementMethod` == `''`:
 
-    Possible values for `procurementMethod` == `open`:
+    * '' - Without using an electronic system
+    * 'centralizedProcurement' - Procurement via Central Purchasing Body
+
+    Possible values for `procurementMethod` == `'open'`:
 
     * belowThreshold
     * aboveThresholdUA
@@ -159,7 +164,7 @@ procurementMethodType
     * competitiveDialogueEU
     * competitiveDialogueUA
 
-    Possible values for `procurementMethod` == `limited`:
+    Possible values for `procurementMethod` == `'limited'`:
 
     * reporting
     * negotiation
