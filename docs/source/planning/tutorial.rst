@@ -54,8 +54,6 @@ Tender creation from a procurement plan
 A tender can be created from your procurement plan. This tender will be linked with the plan
 using :ref:`tender's plans <tender>` and :ref:`plan's tender_id <tender_id>` fields.
 
-
-
 .. note::
     | System failures during tender-from-plan creation can produce tenders that are not linked with their plans by :ref:`tender_id`.
     | Make sure you do use :ref:`2pc` and do not proceed with these error state tender objects (create new ones).
@@ -72,9 +70,24 @@ There are three of them:
     * procuringEntity.identifier - matching id and scheme with the same fields in tender data
     * classification.id  - matching with tender item classification codes using first 4 digits (``336`` is exception)
 
+Plan should contain budget breakdown, otherwise it will be an error during tender creation:
+
+.. include:: tutorial/tender-from-plan-breakdown.http
+   :code:
+
+Let's add budget breakdown to plan:
+
+.. include:: tutorial/patch-plan-breakdown.http
+   :code:
+
 A successful example looks like this:
 
 .. include:: tutorial/tender-from-plan.http
+   :code:
+
+After tender was created from plan it's no longer allowed to change `procuringEntity` and `budget.breakdown` fields:
+
+.. include:: tutorial/tender-from-plan-readonly-fields.http
    :code:
 
 Let's check that the plan status was switched to `complete`:

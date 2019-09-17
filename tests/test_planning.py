@@ -49,6 +49,9 @@ class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
         test_plan_data['items'][1].update({"deliveryDate": {"endDate": (get_now() + timedelta(days=16)).isoformat()}})
         test_plan_data['items'][2].update({"deliveryDate": {"endDate": (get_now() + timedelta(days=17)).isoformat()}})
 
+        test_breakdown = deepcopy(test_plan_data['budget']['breakdown'])
+        del test_plan_data['budget']['breakdown']
+
         with open(TARGET_DIR + 'create-plan.http', 'w') as self.app.file_obj:
             response = self.app.post_json(
                 '/plans?opt_pretty=1',
@@ -113,6 +116,7 @@ class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
         # tender creation
 
         self.app.authorization = ('Basic', ('broker', ''))
+
         with open(TARGET_DIR + 'tender-from-plan-validation.http', 'w') as self.app.file_obj:
             self.app.post_json(
                 '/plans/{}/tenders'.format(plan['id']),
@@ -127,10 +131,46 @@ class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
         test_tender_data["title"] = u"Насіння"
         test_tender_data["status"] = "draft"
 
+        with open(TARGET_DIR + 'tender-from-plan-breakdown.http', 'w') as self.app.file_obj:
+            self.app.post_json(
+                '/plans/{}/tenders'.format(plan['id']),
+                {'data': test_tender_data},
+                status=422
+            )
+
+        with open(TARGET_DIR + 'patch-plan-breakdown.http', 'w') as self.app.file_obj:
+            response = self.app.patch_json(
+                '/plans/{}?acc_token={}'.format(plan['id'], owner_token),
+                {'data': {"budget": {'breakdown': test_breakdown}}}
+            )
+
         with open(TARGET_DIR + 'tender-from-plan.http', 'w') as self.app.file_obj:
             self.app.post_json(
                 '/plans/{}/tenders'.format(plan['id']),
                 {'data': test_tender_data},
+            )
+
+        # readonly fields
+
+        with open(TARGET_DIR + 'tender-from-plan-readonly-fields.http', 'w') as self.app.file_obj:
+            self.app.patch_json(
+                '/plans/{}?acc_token={}'.format(plan["id"], owner_token),
+                {'data': {
+                    'budget': {
+                        'breakdown': [{
+                            "description": "Changed description"
+                        }]
+                    },
+                    'procuringEntity': {
+                        "identifier": {
+                            "scheme": u"UA-EDR",
+                            "id": u"111983",
+                            "legalName": u"ДП Державне Управління Справами"
+                        },
+                        "name": u"ДУС"
+                    }
+                }},
+                status=422
             )
 
         with open(TARGET_DIR + 'get-complete-plan.http', 'w') as self.app.file_obj:

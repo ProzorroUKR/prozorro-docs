@@ -112,7 +112,7 @@ msgstr ""
 "Переконайтеся, що ви використовуєте :ref:`2pc` і не проводте ці помилкові "
 "закупівлі (створюйте нові натомість)."
 
-#: ../../source/planning/tutorial.rst:57
+#: ../../source/planning/tutorial.rst:55
 msgid ""
 "There are validation rules that are supposed to decline the chance of making a "
 "mistake"
@@ -120,22 +120,22 @@ msgstr ""
 "Для зменшення шансів зробити помилку та зв’язати закупівлю з неправильним "
 "планом, встановлені правила валідації"
 
-#: ../../source/planning/tutorial.rst:62
+#: ../../source/planning/tutorial.rst:60
 msgid "There are three of them:"
 msgstr "Усього їх три:"
 
-#: ../../source/planning/tutorial.rst:64
+#: ../../source/planning/tutorial.rst:62
 msgid "procurementMethodType"
 msgstr "procurementMethodType - відповідність типу процедури плана і тендера"
 
-#: ../../source/planning/tutorial.rst:65
+#: ../../source/planning/tutorial.rst:63
 msgid ""
 "procuringEntity.identifier - matching id and scheme with the same fields in "
 "tender data"
 msgstr ""
 "procuringEntity.identifier - відповідність полів id і scheme для плана і тендера"
 
-#: ../../source/planning/tutorial.rst:66
+#: ../../source/planning/tutorial.rst:64
 msgid ""
 "classification.id  - matching with tender item classification codes using first "
 "4 digits (``336`` is exception)"
@@ -143,9 +143,29 @@ msgstr ""
 "classification.id - відповідність перших 4-х цифр кодів класифікатора плана і "
 "тендера (336 виняток - відповідність перших 3-х цифр)"
 
-#: ../../source/planning/tutorial.rst:68
+#: ../../source/planning/tutorial.rst:66
+msgid ""
+"Plan should contain budget breakdown, otherwise it will be an error "
+"during tender creation:"
+msgstr ""
+"План має містити джерела фінансування, інакше буде отрімано помилку "
+"під час створення тендеру:"
+
+#: ../../source/planning/tutorial.rst:71
+msgid "Let's add budget breakdown to plan:"
+msgstr "Додамо джерело фінансування до плану:"
+
+#: ../../source/planning/tutorial.rst:76
 msgid "A successful example looks like this:"
 msgstr "Успішний приклад виглядає так:"
+
+#: ../../source/planning/tutorial.rst:81
+msgid ""
+"After tender was created from plan it's no longer allowed to change "
+"`procuringEntity` and `budget.breakdown` fields:"
+msgstr ""
+"Після створення плану зміна полів `procuringEntity` та `budget.breakdown` "
+"більше неможліва."
 
 #: ../../source/planning/tutorial.rst:80
 msgid "Let's check that the plan status was switched to `complete`:"
