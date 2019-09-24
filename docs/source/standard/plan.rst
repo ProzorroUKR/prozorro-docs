@@ -356,3 +356,7 @@ BudgetBreakdown
     :ref:`Guarantee`
 
     Budget breakdown value
+
+    Currency should be identical for all budget breakdown values and budget
+
+    Sum of the breakdown values amounts can't be greater than budget amount
