@@ -1,6 +1,6 @@
 PATCH /api/2.5/plans/f580aa1bdcf84194995a102bc3a96d2d?acc_token=ead4319976ca4849973333da0242d440 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 152
+Content-Length: 150
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
@@ -12,7 +12,7 @@ DATA:
           "description": "Breakdown other description.", 
           "value": {
             "currency": "UAH", 
-            "amount": 150000
+            "amount": 1500
           }, 
           "title": "other"
         }
@@ -74,7 +74,7 @@ Content-Type: application/json; charset=UTF-8
           "description": "Breakdown other description.", 
           "value": {
             "currency": "UAH", 
-            "amount": 150000.0
+            "amount": 1500.0
           }, 
           "id": "e519afb9b6a34a769f6d49dc45922bc1"
         }
