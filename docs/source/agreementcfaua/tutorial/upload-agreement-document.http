@@ -1,15 +1,15 @@
 POST /api/2.5/agreements/9a49a7db3ada48519aa5b2c9a4ec5d30/documents?acc_token=76b0c07026994e7089d5f9716acfc3e7 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 142
-Content-Type: multipart/form-data; boundary=BOUNDARY
+Content-Length: 148
+Content-Type: multipart/form-data; boundary=---BOUNDARY
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
---BOUNDARY
+-----BOUNDARY
 Content-Disposition: form-data; name="file"; filename="agreement.doc"
 Content-Type: application/msword
 
 content
---BOUNDARY--
+-----BOUNDARY--
 
 
 Response: 201 Created

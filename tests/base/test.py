@@ -77,7 +77,7 @@ class DumpsWebTestApp(BaseTestApp):
         typical POST body, returning the (content_type, body).
 
         """
-        boundary = 'BOUNDARY'
+        boundary = '---BOUNDARY'
         lines = []
 
         def _append_file(file_info):

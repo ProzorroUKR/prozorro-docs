@@ -150,17 +150,12 @@ class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
                 {'data': test_tender_data},
             )
 
-        # readonly fields
+        # readonly
 
-        with open(TARGET_DIR + 'tender-from-plan-readonly-fields.http', 'w') as self.app.file_obj:
+        with open(TARGET_DIR + 'tender-from-plan-readonly.http', 'w') as self.app.file_obj:
             self.app.patch_json(
                 '/plans/{}?acc_token={}'.format(plan["id"], owner_token),
                 {'data': {
-                    'budget': {
-                        'breakdown': [{
-                            "description": "Changed description"
-                        }]
-                    },
                     'procuringEntity': {
                         "identifier": {
                             "scheme": u"UA-EDR",

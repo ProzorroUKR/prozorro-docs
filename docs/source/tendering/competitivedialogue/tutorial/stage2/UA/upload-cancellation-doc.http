@@ -1,15 +1,15 @@
 POST /api/2.5/tenders/c4eafa4139e24f1d84c1ce5ccbb4560d/cancellations/2a66556a408c4a17a62940b1ad3c728e/documents?acc_token=ce9ee5fc97484fc3b51e3f4dcea722d4 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 136
-Content-Type: multipart/form-data; boundary=BOUNDARY
+Content-Length: 142
+Content-Type: multipart/form-data; boundary=---BOUNDARY
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
---BOUNDARY
+-----BOUNDARY
 Content-Disposition: form-data; name="file"; filename="Notice.pdf"
 Content-Type: application/pdf
 
 content
---BOUNDARY--
+-----BOUNDARY--
 
 
 Response: 201 Created
