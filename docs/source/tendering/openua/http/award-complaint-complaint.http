@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/59d0b67423864278a983b4169d541645/awards/e8dca6f4ea8d4b909a9981f8b4e0f90d/complaints/332321ea73ed4e0092cb91e8d218cd17?acc_token=0a5599d92c74412fa61b38b2d93fb52a HTTP/1.0
+PATCH /api/2.5/tenders/59d0b67423864278a983b4169d541645/awards/e8dca6f4ea8d4b909a9981f8b4e0f90d/complaints/332321ea73ed4e0092cb91e8d218cd17?acc_token=2d09620fba12494ebe06f8b55313512f HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 31
 Content-Type: application/json
@@ -28,7 +28,7 @@ Content-Type: application/json; charset=UTF-8
         "dateModified": "2019-04-01T01:00:01+03:00"
       }
     ], 
-    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+    "transfer_token": "c0819cfd346df7b1b1aa805a802e7bac54686eeba6f6740480994d44a6066c63cf197d4e0fedea5e70201232fc01bc6dc4c02a100082b091770af21fb2008f31", 
     "title": "Недостатньо інформації", 
     "author": {
       "contactPoint": {
@@ -54,7 +54,8 @@ Content-Type: application/json; charset=UTF-8
     "complaintID": "UA-2019-04-01-000001.1", 
     "date": "2019-04-01T01:00:01+03:00", 
     "type": "complaint", 
-    "id": "332321ea73ed4e0092cb91e8d218cd17"
+    "id": "332321ea73ed4e0092cb91e8d218cd17", 
+    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс."
   }
 }
 

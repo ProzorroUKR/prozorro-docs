@@ -64,6 +64,39 @@ msgstr ""
 "який платить / використовує закуплені елементи."
 
 #: ../../source/standard/plan.rst:28
+msgid "status"
+msgstr ""
+
+#: ../../source/standard/plan.rst:30 ../../source/standard/plan.rst:197
+#: ../../source/standard/plan.rst:208 ../../source/standard/plan.rst:278
+msgid "string"
+msgstr "рядок"
+
+#: ../../source/standard/plan.rst:36 ../../source/standard/plan.rst:201
+msgid "Possible values:"
+msgstr "Можливі значення:"
+
+#: ../../source/standard/plan.rst:33
+msgid "draft"
+msgstr ""
+
+#: ../../source/standard/plan.rst:34
+msgid "scheduled"
+msgstr ""
+
+#: ../../source/standard/plan.rst:35
+msgid "cancelled"
+msgstr ""
+
+#: ../../source/standard/plan.rst:36
+msgid "complete"
+msgstr ""
+
+#: ../../source/standard/plan.rst:38
+msgid "Status of the Plan."
+msgstr "Статус плану."
+
+#: ../../source/standard/plan.rst:81
 msgid "buyers"
 msgstr ""
 
@@ -210,7 +243,16 @@ msgstr ""
 "|ocdsDescription| Товари та послуги, що будуть закуплені, поділені на спискові елементи, "
 "де це можливо. Елементи не повинні дублюватись, замість цього вкажіть кількість 2."
 
-#: ../../source/standard/plan.rst:109
+#: ../../source/standard/plan.rst:162
+msgid "cancellation"
+msgstr ""
+
+#: ../../source/standard/plan.rst:164
+#, fuzzy
+msgid ":ref:`PlanCancellation`"
+msgstr ":ref:`PlanOrganization`, обов’язково"
+
+#: ../../source/standard/plan.rst:168
 msgid "dateModified"
 msgstr ""
 
@@ -330,31 +372,31 @@ msgstr ""
 msgid "Possible values for `procurementMethod` == `'limited'`:"
 msgstr "Можливі значення для `procurementMethod` == `’limited’`:"
 
-#: ../../source/standard/plan.rst:169
+#: ../../source/standard/plan.rst:164
 msgid "reporting"
 msgstr ""
 
-#: ../../source/standard/plan.rst:170
+#: ../../source/standard/plan.rst:165
 msgid "negotiation"
 msgstr ""
 
-#: ../../source/standard/plan.rst:171
+#: ../../source/standard/plan.rst:166
 msgid "negotiation.quick"
 msgstr ""
 
-#: ../../source/standard/plan.rst:175
+#: ../../source/standard/plan.rst:170
 msgid "tenderPeriod"
 msgstr ""
 
-#: ../../source/standard/plan.rst:176
+#: ../../source/standard/plan.rst:171
 msgid ":ref:`period`, required"
 msgstr ":ref:`period`, обов’язково"
 
-#: ../../source/standard/plan.rst:178
+#: ../../source/standard/plan.rst:173
 msgid "Period when bids can be submitted. At least `endDate` has to be provided."
 msgstr "Період, коли подаються пропозиції. Повинна бути вказана хоча б `endDate` дата."
 
-#: ../../source/standard/plan.rst:180
+#: ../../source/standard/plan.rst:175
 msgid ""
 "|ocdsDescription| The period when the tender is open for submissions. The end date is "
 "the closing date for tender submissions."
@@ -362,112 +404,112 @@ msgstr ""
 "|ocdsDescription| Період, коли закупівля відкрита для подачі пропозицій. Кінцева дата - "
 "це дата, коли перестають прийматись пропозиції."
 
-#: ../../source/standard/plan.rst:188
+#: ../../source/standard/plan.rst:183
 msgid "Budget"
 msgstr ""
 
-#: ../../source/standard/plan.rst:191 ../../source/standard/plan.rst:236
+#: ../../source/standard/plan.rst:186 ../../source/standard/plan.rst:231
 msgid "id"
 msgstr ""
 
-#: ../../source/standard/plan.rst:192 ../../source/standard/plan.rst:237
+#: ../../source/standard/plan.rst:187 ../../source/standard/plan.rst:232
 msgid "string, required"
 msgstr "рядок, обов’язковий"
 
-#: ../../source/standard/plan.rst:195
+#: ../../source/standard/plan.rst:190
 msgid "description"
 msgstr ""
 
-#: ../../source/standard/plan.rst:196 ../../source/standard/plan.rst:241
+#: ../../source/standard/plan.rst:191 ../../source/standard/plan.rst:236
 msgid "string, multilingual, required"
 msgstr "рядок, багатомовний, обов’язковий"
 
-#: ../../source/standard/plan.rst:199
+#: ../../source/standard/plan.rst:194
 msgid "amount"
 msgstr ""
 
-#: ../../source/standard/plan.rst:200 ../../source/standard/plan.rst:204
+#: ../../source/standard/plan.rst:195 ../../source/standard/plan.rst:199
 msgid "float, required"
 msgstr "float, обов’язково"
 
-#: ../../source/standard/plan.rst:203
+#: ../../source/standard/plan.rst:198
 msgid "amountNet"
 msgstr ""
 
-#: ../../source/standard/plan.rst:207
+#: ../../source/standard/plan.rst:202
 msgid "currency"
 msgstr ""
 
-#: ../../source/standard/plan.rst:208
+#: ../../source/standard/plan.rst:203
 msgid "string, required, length = 3"
 msgstr "рядок, обов’язковий, довжина = 3"
 
-#: ../../source/standard/plan.rst:211
+#: ../../source/standard/plan.rst:206
 msgid "project"
 msgstr ""
 
-#: ../../source/standard/plan.rst:212
+#: ../../source/standard/plan.rst:207
 msgid ":ref:`Project`"
 msgstr ""
 
-#: ../../source/standard/plan.rst:215
+#: ../../source/standard/plan.rst:210
 msgid "period"
 msgstr ""
 
-#: ../../source/standard/plan.rst:216
+#: ../../source/standard/plan.rst:211
 msgid ":ref:`BudgetPeriod`"
 msgstr ""
 
-#: ../../source/standard/plan.rst:219
+#: ../../source/standard/plan.rst:214
 msgid "year"
 msgstr ""
 
-#: ../../source/standard/plan.rst:220
+#: ../../source/standard/plan.rst:215
 msgid "integer, >=2000, deprecated in favor of `period`_"
 msgstr ""
 
-#: ../../source/standard/plan.rst:223
+#: ../../source/standard/plan.rst:218
 msgid "notes"
 msgstr ""
 
-#: ../../source/standard/plan.rst:233
+#: ../../source/standard/plan.rst:228
 msgid "Project"
 msgstr ""
 
-#: ../../source/standard/plan.rst:240
+#: ../../source/standard/plan.rst:235
 msgid "name"
 msgstr ""
 
-#: ../../source/standard/plan.rst:248
+#: ../../source/standard/plan.rst:243
 msgid "BudgetPeriod"
 msgstr ""
 
-#: ../../source/standard/plan.rst:251
+#: ../../source/standard/plan.rst:246
 msgid "startDate"
 msgstr ""
 
-#: ../../source/standard/plan.rst:252 ../../source/standard/plan.rst:259
+#: ../../source/standard/plan.rst:247 ../../source/standard/plan.rst:254
 msgid "string, required, :ref:`date`"
 msgstr "рядок, обов’язковий, :ref:`date`"
 
-#: ../../source/standard/plan.rst:254
+#: ../../source/standard/plan.rst:249
 msgid "|ocdsDescription| The start date for the period."
 msgstr ""
 
-#: ../../source/standard/plan.rst:258
+#: ../../source/standard/plan.rst:253
 msgid "endDate"
 msgstr ""
 
-#: ../../source/standard/plan.rst:261
+#: ../../source/standard/plan.rst:256
 msgid "|ocdsDescription| The end date for the period."
 msgstr ""
 
-#: ../../source/standard/plan.rst:264
+#: ../../source/standard/plan.rst:259
 msgid "`startDate` should always precede `endDate`."
-msgstr ""
+msgstr "Значення `startDate` завжди повинно йти перед `endDate`."
 
-#~ msgid ":ref:`Identifier`, required"
-#~ msgstr ":ref:`Identifier`, обов’язково"
+msgid ":ref:`Identifier`, required"
+msgstr ":ref:`Identifier`, обов’язково"
 
-#~ msgid ":ref:`PlanCancellation`"
-#~ msgstr ":ref:`PlanOrganization`, обов’язково"
+msgid ":ref:`PlanCancellation`"
+msgstr ":ref:`PlanCancellation`, обов’язково"

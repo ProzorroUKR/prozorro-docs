@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/71c0e0ebf297470aa18a89c42f80fb55/complaints/06ef5a30aba04b5db7c0b44f95a3e046?acc_token=a00fff5737b04c87bd47e6e53515689c HTTP/1.0
+PATCH /api/2.5/tenders/71c0e0ebf297470aa18a89c42f80fb55/complaints/06ef5a30aba04b5db7c0b44f95a3e046?acc_token=e172b22d569c46d4a7b94ff22e02db72 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 145
 Content-Type: application/json
@@ -18,6 +18,8 @@ Content-Type: application/json; charset=UTF-8
     "status": "resolved", 
     "dateDecision": "2019-04-01T01:00:00+03:00", 
     "tendererActionDate": "2019-04-01T01:00:00+03:00", 
+    "transfer_token": "97c8796488d731424e399c3ed2246e7698ab6fe242fd8d6d89422a022a157262fb6b57d23c65a2ba3a7287881cc9a0f1506b54c1dead7acd6283c550d19945bf", 
+    "title": "Калорійність", 
     "description": "Просимо додати таблицю потрібної калорійності харчування", 
     "author": {
       "contactPoint": {
@@ -39,14 +41,7 @@ Content-Type: application/json; charset=UTF-8
         "locality": "м. Львів"
       }
     }, 
-    "title": "Калорійність", 
-    "id": "06ef5a30aba04b5db7c0b44f95a3e046", 
     "tendererAction": "Умови виправлено", 
-    "dateSubmitted": "2019-04-01T01:00:00+03:00", 
-    "complaintID": "UA-2019-04-01-000001.1", 
-    "date": "2019-04-01T01:00:00+03:00", 
-    "acceptance": true, 
-    "type": "complaint", 
     "documents": [
       {
         "hash": "md5:00000000000000000000000000000000", 
@@ -73,6 +68,12 @@ Content-Type: application/json; charset=UTF-8
         "dateModified": "2019-04-01T01:00:00+03:00"
       }
     ], 
+    "dateSubmitted": "2019-04-01T01:00:00+03:00", 
+    "complaintID": "UA-2019-04-01-000001.1", 
+    "date": "2019-04-01T01:00:00+03:00", 
+    "acceptance": true, 
+    "type": "complaint", 
+    "id": "06ef5a30aba04b5db7c0b44f95a3e046", 
     "dateAccepted": "2019-04-01T01:00:00+03:00"
   }
 }

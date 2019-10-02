@@ -27,6 +27,7 @@ areas that were not covered by it.
    organization
    plan
    procuringentity
+   plancancellation
    planrelation
    planorganization
    qualification

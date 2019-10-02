@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/71c0e0ebf297470aa18a89c42f80fb55/complaints/06ef5a30aba04b5db7c0b44f95a3e046?acc_token=9012a6abde7b42c9b1efdb64a535cb77 HTTP/1.0
+PATCH /api/2.5/tenders/71c0e0ebf297470aa18a89c42f80fb55/complaints/06ef5a30aba04b5db7c0b44f95a3e046?acc_token=c521d6f5f2194886a97f9d0b708c73ca HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 31
 Content-Type: application/json
@@ -29,7 +29,8 @@ Content-Type: application/json; charset=UTF-8
         "dateModified": "2019-04-01T01:00:00+03:00"
       }
     ], 
-    "description": "Просимо додати таблицю потрібної калорійності харчування", 
+    "transfer_token": "97c8796488d731424e399c3ed2246e7698ab6fe242fd8d6d89422a022a157262fb6b57d23c65a2ba3a7287881cc9a0f1506b54c1dead7acd6283c550d19945bf", 
+    "title": "Калорійність", 
     "author": {
       "contactPoint": {
         "email": "aagt@gmail.com", 
@@ -50,12 +51,12 @@ Content-Type: application/json; charset=UTF-8
         "locality": "м. Львів"
       }
     }, 
-    "title": "Калорійність", 
     "dateSubmitted": "2019-04-01T01:00:00+03:00", 
     "complaintID": "UA-2019-04-01-000001.1", 
     "date": "2019-04-01T01:00:00+03:00", 
     "type": "complaint", 
-    "id": "06ef5a30aba04b5db7c0b44f95a3e046"
+    "id": "06ef5a30aba04b5db7c0b44f95a3e046", 
+    "description": "Просимо додати таблицю потрібної калорійності харчування"
   }
 }
 
