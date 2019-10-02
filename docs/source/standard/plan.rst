@@ -282,6 +282,10 @@ notes
 -----
     string
 
+breakdown
+---------
+    List of :ref:`BudgetBreakdown`
+
 
 -----------
 
@@ -321,3 +325,38 @@ endDate
     The end date for the period.
 
 `startDate` should always precede `endDate`.
+
+.. _BudgetBreakdown:
+
+BudgetBreakdown
+===============
+
+:id:
+    uid, auto-generated
+
+:title:
+    string, required
+
+    Possible values are:
+
+    * `state`
+    * `crimea`
+    * `local`
+    * `own`
+    * `fund`
+    * `loan`
+    * `other`
+
+:description:
+    string, multilingual, required if title == `other`
+
+    Detailed description of budget breakdown.
+
+:value:
+    :ref:`Guarantee`
+
+    Budget breakdown value
+
+    Currency should be identical for all budget breakdown values and budget
+
+    Sum of the breakdown values amounts can't be greater than budget amount

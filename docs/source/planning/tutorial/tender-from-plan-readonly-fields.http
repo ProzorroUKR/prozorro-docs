@@ -1,0 +1,44 @@
+PATCH /api/2.5/plans/f580aa1bdcf84194995a102bc3a96d2d?acc_token=ead4319976ca4849973333da0242d440 HTTP/1.0
+Authorization: Basic YnJva2VyOg==
+Content-Length: 368
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "budget": {
+      "breakdown": [
+        {
+          "description": "Changed description"
+        }
+      ]
+    }, 
+    "procuringEntity": {
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "111983", 
+        "legalName": "ДП Державне Управління Справами"
+      }, 
+      "name": "ДУС"
+    }
+  }
+}
+
+Response: 422 Unprocessable Entity
+Content-Type: application/json; charset=UTF-8
+{
+  "status": "error", 
+  "errors": [
+    {
+      "description": "Changing this field is not allowed after tender creation", 
+      "location": "data", 
+      "name": "procuringEntity"
+    }, 
+    {
+      "description": "Changing this field is not allowed after tender creation", 
+      "location": "data", 
+      "name": "budget.breakdown"
+    }
+  ]
+}
+
