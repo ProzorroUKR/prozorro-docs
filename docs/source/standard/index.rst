@@ -30,6 +30,7 @@ areas that were not covered by it.
    plancancellation
    planrelation
    planorganization
+   planmilestone
    qualification
    question
    tender
