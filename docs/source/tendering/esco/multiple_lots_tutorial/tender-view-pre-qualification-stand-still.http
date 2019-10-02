@@ -16,18 +16,19 @@ Content-Type: application/json; charset=UTF-8
   "data": {
     "procurementMethod": "open", 
     "status": "active.pre-qualification.stand-still", 
+    "mainProcurementCategory": "services", 
     "complaintPeriod": {
-      "startDate": "2019-03-02T01:00:00+03:00", 
-      "endDate": "2019-03-28T00:00:00+03:00"
+      "startDate": "2019-09-01T01:00:00+03:00", 
+      "endDate": "2019-09-27T00:00:00+03:00"
     }, 
     "enquiryPeriod": {
-      "startDate": "2019-03-02T01:00:00+03:00", 
-      "clarificationsUntil": "2019-03-27T01:00:00+03:00", 
-      "endDate": "2019-03-22T01:00:00+03:00", 
-      "invalidationDate": "2019-04-01T01:00:00+03:00"
+      "startDate": "2019-09-01T01:00:00+03:00", 
+      "clarificationsUntil": "2019-09-26T00:00:00+03:00", 
+      "endDate": "2019-09-21T01:00:00+03:00", 
+      "invalidationDate": "2019-10-01T01:00:00+03:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "next_check": "2019-04-07T00:00:00+03:00", 
+    "next_check": "2019-10-07T00:00:00+03:00", 
     "procuringEntity": {
       "kind": "general", 
       "name": "ЗОСШ #10 м.Вінниці", 
@@ -64,7 +65,7 @@ Content-Type: application/json; charset=UTF-8
         "fundingKind": "other", 
         "title": "Лот №1", 
         "auctionPeriod": {
-          "shouldStartAfter": "2019-04-07T00:00:00+03:00"
+          "shouldStartAfter": "2019-10-07T00:00:00+03:00"
         }, 
         "minValue": {
           "currency": "UAH", 
@@ -73,7 +74,7 @@ Content-Type: application/json; charset=UTF-8
         }, 
         "minimalStepPercentage": 0.006, 
         "yearlyPaymentsPercentageRange": 0.8, 
-        "date": "2019-04-01T01:00:00+03:00", 
+        "date": "2019-10-01T01:00:00+03:00", 
         "id": "3c84167877eb48d693c12efd2c6cb01e"
       }, 
       {
@@ -88,22 +89,22 @@ Content-Type: application/json; charset=UTF-8
         }, 
         "minimalStepPercentage": 0.006, 
         "yearlyPaymentsPercentageRange": 0.8, 
-        "date": "2019-04-01T01:00:00+03:00", 
+        "date": "2019-10-01T01:00:00+03:00", 
         "id": "92e4a20a9d7f4dada89d434409f951d8"
       }
     ], 
     "qualificationPeriod": {
-      "startDate": "2019-04-01T01:00:00+03:00", 
-      "endDate": "2019-04-07T00:00:00+03:00"
+      "startDate": "2019-10-01T01:00:00+03:00", 
+      "endDate": "2019-10-07T00:00:00+03:00"
     }, 
-    "tenderID": "UA-2019-04-01-000001", 
+    "tenderID": "UA-2019-10-01-000001", 
     "minimalStepPercentage": 0.006, 
     "yearlyPaymentsPercentageRange": 0.8, 
-    "dateModified": "2019-04-01T01:00:00+03:00", 
+    "dateModified": "2019-10-01T01:00:00+03:00", 
     "numberOfBids": 2, 
     "tenderPeriod": {
-      "startDate": "2019-03-02T01:00:00+03:00", 
-      "endDate": "2019-04-01T01:00:00+03:00"
+      "startDate": "2019-09-01T01:00:00+03:00", 
+      "endDate": "2019-10-01T01:00:00+03:00"
     }, 
     "qualifications": [
       {
@@ -112,7 +113,7 @@ Content-Type: application/json; charset=UTF-8
         "eligible": true, 
         "qualified": true, 
         "bidID": "b797c74bba014457870ceda8104f0444", 
-        "date": "2019-04-01T01:00:00+03:00", 
+        "date": "2019-10-01T01:00:00+03:00", 
         "id": "5b8ed3eca3354b918a0810c13b3b15cd"
       }, 
       {
@@ -121,18 +122,44 @@ Content-Type: application/json; charset=UTF-8
         "eligible": true, 
         "qualified": true, 
         "bidID": "e330641f19174449b434b4988cccf0c6", 
-        "date": "2019-04-01T01:00:00+03:00", 
+        "date": "2019-10-01T01:00:00+03:00", 
         "id": "f12f2ca9a7f74ff1affca438285aa89d"
       }
     ], 
     "procurementMethodType": "esco", 
-    "date": "2019-04-01T01:00:00+03:00", 
+    "date": "2019-10-01T01:00:00+03:00", 
     "NBUdiscountRate": 0.22986, 
     "minValue": {
       "currency": "UAH", 
       "amount": 0.0, 
       "valueAddedTaxIncluded": true
     }, 
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 45.55, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }, 
+      {
+        "code": "postpayment", 
+        "sequenceNumber": 0, 
+        "title": "deliveryOfGoods", 
+        "duration": {
+          "type": "calendar", 
+          "days": 900
+        }, 
+        "percentage": 54.45, 
+        "type": "financing", 
+        "id": "9b5ab07f6de749a49a3766a816685c67"
+      }
+    ], 
     "fundingKind": "other", 
     "items": [
       {
@@ -250,7 +277,7 @@ Content-Type: application/json; charset=UTF-8
         ]
       }
     ], 
-    "noticePublicationDate": "2019-04-01T01:00:00+03:00", 
+    "noticePublicationDate": "2019-10-01T01:00:00+03:00", 
     "awardCriteria": "ratedCriteria"
   }
 }

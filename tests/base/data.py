@@ -5,6 +5,7 @@ from dateutil.parser import parse
 from hashlib import sha512
 from uuid import uuid4
 
+from openprocurement.tender.belowthreshold.tests.base import test_milestones
 from tests.base.constants import MOCK_DATETIME
 
 parameters = [
@@ -610,7 +611,9 @@ tender_below_maximum = {
     },
     "procurementMethodType": "belowThreshold",
     "mode": u"test",
-    "features": features
+    "features": features,
+    "milestones": test_milestones,
+    "mainProcurementCategory": "services",
 }
 
 tender_cfaselectionua_maximum = {
@@ -640,6 +643,8 @@ tender_cfaselectionua_maximum = {
     "items": items,
     "procurementMethodType": "closeFrameworkAgreementSelectionUA",
     "mode": u"test",
+    "milestones": test_milestones,
+    "mainProcurementCategory": "services",
 }
 
 tender_stage1 = {
@@ -658,7 +663,9 @@ tender_stage1 = {
         "amount": 500
     },
     "procuringEntity": procuring_entity_en,
-    "items": items_en_unit
+    "items": items_en_unit,
+    "milestones": test_milestones,
+    "mainProcurementCategory": "services",
 }
 
 tender_stage2_multiple_lots = {
@@ -738,6 +745,8 @@ tender_limited = {
     "title_ru": "Услуги школьных столовых",
     "description_en": "Services in school canteens",
     "description_ru": "Услуги школьных столовых",
+    "milestones": test_milestones,
+    "mainProcurementCategory": "services",
 }
 
 tender_openeu = {
@@ -756,7 +765,9 @@ tender_openeu = {
         "amount": 500
     },
     "procuringEntity": procuring_entity_en,
-    "items": items_en
+    "items": items_en,
+    "milestones": test_milestones,
+    "mainProcurementCategory": "services",
 }
 
 tender_openua = {
@@ -774,7 +785,9 @@ tender_openua = {
         "amount": 500
     },
     "procuringEntity": procuring_entity_ua,
-    "items": items_ua
+    "items": items_ua,
+    "milestones": test_milestones,
+    "mainProcurementCategory": "services",
 }
 
 tender_esco = {
@@ -789,7 +802,9 @@ tender_esco = {
     "items": items_en_unit,
     "NBUdiscountRate": 0.22986,
     "fundingKind": "other",
-    "yearlyPaymentsPercentageRange": 0.8
+    "yearlyPaymentsPercentageRange": 0.8,
+    "milestones": test_milestones,
+    "mainProcurementCategory": "services",
 }
 
 tender_defense = {
@@ -807,5 +822,7 @@ tender_defense = {
         "amount": 500
     },
     "procuringEntity": procuring_entity_ua,
-    "items": items_ua
+    "items": items_ua,
+    "milestones": test_milestones,
+    "mainProcurementCategory": "services",
 }

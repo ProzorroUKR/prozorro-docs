@@ -19,8 +19,31 @@ Content-Type: application/json; charset=UTF-8
 {
   "data": {
     "procurementMethod": "limited", 
-    "status": "active", 
+    "mainProcurementCategory": "services", 
     "causeDescription": "оригінальний тендер не вдався двічі", 
+    "procuringEntity": {
+      "contactPoint": {
+        "url": "http://sch10.edu.vn.ua/", 
+        "name": "Куца Світлана Валентинівна", 
+        "telephone": "+380 (432) 46-53-02"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "21725150", 
+        "legalName": "Заклад \"Загальноосвітня школа І-ІІІ ступенів № 10 Вінницької міської ради\""
+      }, 
+      "name": "ЗОСШ #10 м.Вінниці", 
+      "kind": "special", 
+      "address": {
+        "postalCode": "21027", 
+        "countryName": "Україна", 
+        "streetAddress": "вул. Стахурського. 22", 
+        "region": "м. Вінниця", 
+        "locality": "м. Вінниця"
+      }
+    }, 
+    "owner": "broker", 
+    "id": "0cd37a4798fe40d1b45324a394f61c9f", 
     "title": "Послуги шкільних їдалень", 
     "lots": [
       {
@@ -32,8 +55,44 @@ Content-Type: application/json; charset=UTF-8
           "amount": 500000.0, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2019-04-01T01:00:00+03:00", 
+        "date": "2019-10-01T01:00:00+03:00", 
         "id": "28f98cde22964c8ea8bbc1fda693580e"
+      }
+    ], 
+    "causeDescription_en": "original tender has failed twice", 
+    "tenderID": "UA-2019-10-01-000001", 
+    "description_ru": "Услуги школьных столовых", 
+    "dateModified": "2019-10-01T01:00:00+03:00", 
+    "status": "active", 
+    "title_en": "Services in school canteens", 
+    "procurementMethodType": "negotiation.quick", 
+    "description_en": "Services in school canteens", 
+    "causeDescription_ru": "оригинальный тендер не получился дважды", 
+    "date": "2019-10-01T01:00:00+03:00", 
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 45.55, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }, 
+      {
+        "code": "postpayment", 
+        "sequenceNumber": 0, 
+        "title": "deliveryOfGoods", 
+        "duration": {
+          "type": "calendar", 
+          "days": 900
+        }, 
+        "percentage": 54.45, 
+        "type": "financing", 
+        "id": "36596a788c2c4b67861302203cfa83c3"
       }
     ], 
     "items": [
@@ -60,51 +119,19 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-21T00:00:00+02:00", 
-          "endDate": "2019-05-21T00:00:00+02:00"
+          "startDate": "2019-10-21T00:00:00+02:00", 
+          "endDate": "2019-11-20T00:00:00+02:00"
         }, 
         "id": "a7fc62340ce04601af5b3ab66b3cf6a7", 
         "quantity": 1.0
       }
     ], 
-    "procurementMethodType": "negotiation.quick", 
     "value": {
       "currency": "UAH", 
       "amount": 500000.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "dateModified": "2019-04-01T01:00:00+03:00", 
-    "causeDescription_ru": "оригинальный тендер не получился дважды", 
-    "date": "2019-04-01T01:00:00+03:00", 
-    "causeDescription_en": "original tender has failed twice", 
-    "description_ru": "Услуги школьных столовых", 
-    "description_en": "Services in school canteens", 
-    "title_ru": "Услуги школьных столовых", 
-    "owner": "broker", 
-    "procuringEntity": {
-      "contactPoint": {
-        "url": "http://sch10.edu.vn.ua/", 
-        "name": "Куца Світлана Валентинівна", 
-        "telephone": "+380 (432) 46-53-02"
-      }, 
-      "identifier": {
-        "scheme": "UA-EDR", 
-        "id": "21725150", 
-        "legalName": "Заклад \"Загальноосвітня школа І-ІІІ ступенів № 10 Вінницької міської ради\""
-      }, 
-      "name": "ЗОСШ #10 м.Вінниці", 
-      "kind": "special", 
-      "address": {
-        "postalCode": "21027", 
-        "countryName": "Україна", 
-        "streetAddress": "вул. Стахурського. 22", 
-        "region": "м. Вінниця", 
-        "locality": "м. Вінниця"
-      }
-    }, 
-    "title_en": "Services in school canteens", 
-    "id": "0cd37a4798fe40d1b45324a394f61c9f", 
-    "tenderID": "UA-2019-04-01-000001"
+    "title_ru": "Услуги школьных столовых"
   }
 }
 

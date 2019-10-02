@@ -18,41 +18,90 @@ Content-Type: application/json; charset=UTF-8
 {
   "data": {
     "procurementMethod": "open", 
-    "status": "active.tendering", 
-    "auctionPeriod": {
-      "shouldStartAfter": "2019-04-17T00:00:00+03:00"
+    "mainProcurementCategory": "services", 
+    "complaintPeriod": {
+      "startDate": "2019-10-01T01:00:00+03:00", 
+      "endDate": "2019-10-11T00:00:00+03:00"
     }, 
-    "awardCriteria": "lowestCost", 
-    "tenderPeriod": {
-      "startDate": "2019-04-01T01:00:00+03:00", 
-      "endDate": "2019-04-16T01:00:10+03:00"
+    "enquiryPeriod": {
+      "startDate": "2019-10-01T01:00:00+03:00", 
+      "clarificationsUntil": "2019-10-15T01:00:10+03:00", 
+      "endDate": "2019-10-10T01:00:10+03:00", 
+      "invalidationDate": "2019-10-01T01:00:00+03:00"
+    }, 
+    "submissionMethod": "electronicAuction", 
+    "next_check": "2019-10-16T01:00:10+03:00", 
+    "procuringEntity": {
+      "contactPoint": {
+        "url": "http://sch10.edu.vn.ua/", 
+        "name": "Куца Світлана Валентинівна", 
+        "telephone": "+380 (432) 46-53-02"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "21725150", 
+        "legalName": "Заклад \"Загальноосвітня школа І-ІІІ ступенів № 10 Вінницької міської ради\""
+      }, 
+      "kind": "defense", 
+      "address": {
+        "postalCode": "21027", 
+        "countryName": "Україна", 
+        "streetAddress": "вул. Стахурського. 22", 
+        "region": "м. Вінниця", 
+        "locality": "м. Вінниця"
+      }, 
+      "name": "ЗОСШ #10 м.Вінниці"
+    }, 
+    "owner": "broker", 
+    "id": "127bd59fdd464def8d1189b954eefcbb", 
+    "guarantee": {
+      "currency": "USD", 
+      "amount": 8.0
     }, 
     "title": "футляри до державних нагород", 
+    "tenderID": "UA-2019-10-01-000001", 
+    "dateModified": "2019-10-01T01:00:00+03:00", 
+    "status": "active.tendering", 
+    "tenderPeriod": {
+      "startDate": "2019-10-01T01:00:00+03:00", 
+      "endDate": "2019-10-16T01:00:10+03:00"
+    }, 
+    "auctionPeriod": {
+      "shouldStartAfter": "2019-10-17T00:00:00+03:00"
+    }, 
+    "procurementMethodType": "aboveThresholdUA.defense", 
+    "date": "2019-10-01T01:00:00+03:00", 
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 45.55, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }, 
+      {
+        "code": "postpayment", 
+        "sequenceNumber": 0, 
+        "title": "deliveryOfGoods", 
+        "duration": {
+          "type": "calendar", 
+          "days": 900
+        }, 
+        "percentage": 54.45, 
+        "type": "financing", 
+        "id": "90c478d6137e44fe8beb36f09d274a98"
+      }
+    ], 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "enquiryPeriod": {
-      "startDate": "2019-04-01T01:00:00+03:00", 
-      "clarificationsUntil": "2019-04-15T01:00:10+03:00", 
-      "endDate": "2019-04-11T01:00:10+03:00", 
-      "invalidationDate": "2019-04-01T01:00:00+03:00"
-    }, 
-    "complaintPeriod": {
-      "startDate": "2019-04-01T01:00:00+03:00", 
-      "endDate": "2019-04-12T00:00:00+03:00"
-    }, 
-    "procurementMethodType": "aboveThresholdUA.defense", 
-    "value": {
-      "currency": "UAH", 
-      "amount": 500.0, 
-      "valueAddedTaxIncluded": true
-    }, 
-    "submissionMethod": "electronicAuction", 
-    "date": "2019-04-01T01:00:00+03:00", 
-    "next_check": "2019-04-16T01:00:10+03:00", 
-    "tenderID": "UA-2019-04-01-000001", 
     "items": [
       {
         "description": "Послуги шкільних їдалень", 
@@ -76,41 +125,19 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-21T00:00:00+02:00", 
-          "endDate": "2019-05-21T00:00:00+02:00"
+          "startDate": "2019-10-21T00:00:00+02:00", 
+          "endDate": "2019-11-20T00:00:00+02:00"
         }, 
         "id": "7879f679c216478b83c7b944fd00659f", 
         "quantity": 1.0
       }
     ], 
-    "owner": "broker", 
-    "dateModified": "2019-04-01T01:00:00+03:00", 
-    "guarantee": {
-      "currency": "USD", 
-      "amount": 8.0
+    "value": {
+      "currency": "UAH", 
+      "amount": 500.0, 
+      "valueAddedTaxIncluded": true
     }, 
-    "id": "127bd59fdd464def8d1189b954eefcbb", 
-    "procuringEntity": {
-      "contactPoint": {
-        "url": "http://sch10.edu.vn.ua/", 
-        "name": "Куца Світлана Валентинівна", 
-        "telephone": "+380 (432) 46-53-02"
-      }, 
-      "identifier": {
-        "scheme": "UA-EDR", 
-        "id": "21725150", 
-        "legalName": "Заклад \"Загальноосвітня школа І-ІІІ ступенів № 10 Вінницької міської ради\""
-      }, 
-      "kind": "defense", 
-      "address": {
-        "postalCode": "21027", 
-        "countryName": "Україна", 
-        "streetAddress": "вул. Стахурського. 22", 
-        "region": "м. Вінниця", 
-        "locality": "м. Вінниця"
-      }, 
-      "name": "ЗОСШ #10 м.Вінниці"
-    }
+    "awardCriteria": "lowestCost"
   }
 }
 

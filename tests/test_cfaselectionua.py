@@ -22,6 +22,7 @@ bid = deepcopy(lot_bid)
 bid2 = deepcopy(lot_bid2_with_docs)
 test_features = deepcopy(features)
 test_agreement = deepcopy(test_agreement)
+test_agreement['contracts'][0]['suppliers'][0]['scale'] = "large"
 test_lots = deepcopy(lots)
 test_tender_maximum_data = deepcopy(tender_cfaselectionua_maximum)
 

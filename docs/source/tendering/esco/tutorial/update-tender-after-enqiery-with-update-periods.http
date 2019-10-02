@@ -7,7 +7,7 @@ DATA:
 {
   "data": {
     "tenderPeriod": {
-      "endDate": "2019-04-09T01:00:00+03:00"
+      "endDate": "2019-10-09T01:00:00+03:00"
     }, 
     "minValue": {
       "currency": "UAH", 
@@ -21,18 +21,19 @@ Content-Type: application/json; charset=UTF-8
 {
   "data": {
     "procurementMethod": "open", 
+    "mainProcurementCategory": "services", 
     "complaintPeriod": {
-      "startDate": "2019-03-04T01:00:00+03:00", 
-      "endDate": "2019-04-05T00:00:00+03:00"
+      "startDate": "2019-09-03T01:00:00+03:00", 
+      "endDate": "2019-10-05T00:00:00+03:00"
     }, 
     "enquiryPeriod": {
-      "startDate": "2019-03-04T01:00:00+03:00", 
-      "clarificationsUntil": "2019-04-04T00:00:00+03:00", 
-      "endDate": "2019-03-30T01:00:00+03:00", 
-      "invalidationDate": "2019-04-01T01:00:00+03:00"
+      "startDate": "2019-09-03T01:00:00+03:00", 
+      "clarificationsUntil": "2019-10-03T00:00:00+03:00", 
+      "endDate": "2019-09-29T01:00:00+03:00", 
+      "invalidationDate": "2019-10-01T01:00:00+03:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "next_check": "2019-04-09T01:00:00+03:00", 
+    "next_check": "2019-10-09T01:00:00+03:00", 
     "procuringEntity": {
       "kind": "general", 
       "name": "ЗОСШ #10 м.Вінниці", 
@@ -61,9 +62,9 @@ Content-Type: application/json; charset=UTF-8
     "questions": [
       {
         "description": "Просимо додати таблицю потрібної калорійності харчування", 
-        "dateAnswered": "2019-04-01T01:00:00+03:00", 
+        "dateAnswered": "2019-10-01T01:00:00+03:00", 
         "title": "Калорійність", 
-        "date": "2019-04-01T01:00:00+03:00", 
+        "date": "2019-10-01T01:00:00+03:00", 
         "answer": "Таблицю додано в файлі \"Kalorijnist.xslx\"", 
         "id": "c0ace3dda24e4cfab1c52c61462ceae8", 
         "questionOf": "tender"
@@ -85,9 +86,9 @@ Content-Type: application/json; charset=UTF-8
         "url": "http://public-docs-sandbox.prozorro.gov.ua/get/258787538ea040998aa3827fa2ddc2e3?KeyID=a8968c46&Signature=%2FDHEOPLrURa1SSjfbD%2F5h90eFDzyZ%2F1JhOCU7o83YIz5TQ6AvGxzJkrGeLSf3FND%252BJfcuBoAbOgC11FD5bRJAw%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "datePublished": "2019-10-01T01:00:00+03:00", 
         "id": "c3d3fd2430b345d4b42a71495ea4e69c", 
-        "dateModified": "2019-04-01T01:00:00+03:00"
+        "dateModified": "2019-10-01T01:00:00+03:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
@@ -97,9 +98,9 @@ Content-Type: application/json; charset=UTF-8
         "url": "http://public-docs-sandbox.prozorro.gov.ua/get/59756eb62bd540e295f1dc22e5ee6f17?KeyID=a8968c46&Signature=ySBWWXiMIpTq21gQbBogDkEzKK57yN%252BFR9NPFRczfMHnl3t%252B0S0XxAetGUAoE4ZYvvjYZi9GZ6WI8guJoF6iAA%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "datePublished": "2019-10-01T01:00:00+03:00", 
         "id": "b911ae7b05114f0bb201ee77f8a09395", 
-        "dateModified": "2019-04-01T01:00:00+03:00"
+        "dateModified": "2019-10-01T01:00:00+03:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
@@ -109,32 +110,58 @@ Content-Type: application/json; charset=UTF-8
         "url": "http://public-docs-sandbox.prozorro.gov.ua/get/cc098689893848579b1e1f8837bd4c5b?KeyID=a8968c46&Signature=ZfEYLIRw9YaeXQvTP8XRxfS6yLpOGwQyvPZV%252B%252B9cVGiZcgRA9ujl56M5Ea6YhJ7x2oKiE77IFTcy5HmLymqbDQ%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "datePublished": "2019-10-01T01:00:00+03:00", 
         "id": "b911ae7b05114f0bb201ee77f8a09395", 
-        "dateModified": "2019-04-01T01:00:00+03:00"
+        "dateModified": "2019-10-01T01:00:00+03:00"
       }
     ], 
     "title": "Послуги шкільних їдалень", 
-    "tenderID": "UA-2019-04-01-000001", 
+    "tenderID": "UA-2019-10-01-000001", 
     "minimalStepPercentage": 0.006, 
     "yearlyPaymentsPercentageRange": 0.8, 
-    "dateModified": "2019-04-01T01:00:00+03:00", 
+    "dateModified": "2019-10-01T01:00:00+03:00", 
     "status": "active.tendering", 
     "tenderPeriod": {
-      "startDate": "2019-03-04T01:00:00+03:00", 
-      "endDate": "2019-04-09T01:00:00+03:00"
+      "startDate": "2019-09-03T01:00:00+03:00", 
+      "endDate": "2019-10-09T01:00:00+03:00"
     }, 
     "auctionPeriod": {
-      "shouldStartAfter": "2019-05-15T00:00:00+03:00"
+      "shouldStartAfter": "2019-11-14T00:00:00+03:00"
     }, 
     "procurementMethodType": "esco", 
-    "date": "2019-04-01T01:00:00+03:00", 
+    "date": "2019-10-01T01:00:00+03:00", 
     "NBUdiscountRate": 0.22986, 
     "minValue": {
       "currency": "UAH", 
       "amount": 0.0, 
       "valueAddedTaxIncluded": true
     }, 
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 45.55, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }, 
+      {
+        "code": "postpayment", 
+        "sequenceNumber": 0, 
+        "title": "deliveryOfGoods", 
+        "duration": {
+          "type": "calendar", 
+          "days": 900
+        }, 
+        "percentage": 54.45, 
+        "type": "financing", 
+        "id": "5d613ef3b2d94741990b2f5414d8f820"
+      }
+    ], 
     "fundingKind": "other", 
     "items": [
       {
@@ -194,7 +221,7 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "noticePublicationDate": "2019-04-01T01:00:00+03:00", 
+    "noticePublicationDate": "2019-10-01T01:00:00+03:00", 
     "awardCriteria": "ratedCriteria"
   }
 }

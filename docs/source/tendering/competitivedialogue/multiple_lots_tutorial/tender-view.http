@@ -6,38 +6,19 @@ Content-Type: application/json; charset=UTF-8
 {
   "data": {
     "procurementMethod": "open", 
-    "status": "active.tendering", 
-    "awardCriteria": "lowestCost", 
-    "tenderPeriod": {
-      "startDate": "2019-04-01T01:00:00+03:00", 
-      "endDate": "2019-05-02T01:00:00+03:00"
-    }, 
-    "title": "Послуги шкільних їдалень", 
-    "minimalStep": {
-      "currency": "UAH", 
-      "amount": 35.0, 
-      "valueAddedTaxIncluded": true
+    "mainProcurementCategory": "services", 
+    "complaintPeriod": {
+      "startDate": "2019-10-01T01:00:00+03:00", 
+      "endDate": "2019-10-28T00:00:00+02:00"
     }, 
     "enquiryPeriod": {
-      "startDate": "2019-04-01T01:00:00+03:00", 
-      "clarificationsUntil": "2019-04-25T01:00:00+03:00", 
-      "endDate": "2019-04-22T01:00:00+03:00", 
-      "invalidationDate": "2019-04-01T01:00:00+03:00"
-    }, 
-    "complaintPeriod": {
-      "startDate": "2019-04-01T01:00:00+03:00", 
-      "endDate": "2019-04-28T00:00:00+03:00"
-    }, 
-    "title_en": "Services in school canteens", 
-    "value": {
-      "currency": "UAH", 
-      "amount": 1000.0, 
-      "valueAddedTaxIncluded": true
+      "startDate": "2019-10-01T01:00:00+03:00", 
+      "clarificationsUntil": "2019-10-25T01:00:00+03:00", 
+      "endDate": "2019-10-22T01:00:00+03:00", 
+      "invalidationDate": "2019-10-01T01:00:00+03:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "date": "2019-04-01T01:00:00+03:00", 
-    "dateModified": "2019-04-01T01:00:00+03:00", 
-    "procurementMethodType": "competitiveDialogueEU", 
+    "next_check": "2019-11-01T00:00:00+02:00", 
     "procuringEntity": {
       "kind": "general", 
       "name": "ЗОСШ #10 м.Вінниці", 
@@ -62,6 +43,86 @@ Content-Type: application/json; charset=UTF-8
         "legalName": "Заклад \"Загальноосвітня школа І-ІІІ ступенів № 10 Вінницької міської ради\""
       }, 
       "name_en": "School #10 of Vinnytsia"
+    }, 
+    "owner": "broker", 
+    "id": "086edc68f12d4a248ded4f9cea52e69c", 
+    "title": "Послуги шкільних їдалень", 
+    "lots": [
+      {
+        "status": "active", 
+        "description": "Опис Лот №1", 
+        "title": "Лот №1", 
+        "minimalStep": {
+          "currency": "UAH", 
+          "amount": 35.0, 
+          "valueAddedTaxIncluded": true
+        }, 
+        "value": {
+          "currency": "UAH", 
+          "amount": 500.0, 
+          "valueAddedTaxIncluded": true
+        }, 
+        "date": "2019-10-01T01:00:00+03:00", 
+        "id": "e928726a47b7461a9d8a00258123cf3d"
+      }, 
+      {
+        "status": "active", 
+        "description": "Опис Лот №2", 
+        "title": "Лот №2", 
+        "minimalStep": {
+          "currency": "UAH", 
+          "amount": 35.0, 
+          "valueAddedTaxIncluded": true
+        }, 
+        "value": {
+          "currency": "UAH", 
+          "amount": 500.0, 
+          "valueAddedTaxIncluded": true
+        }, 
+        "date": "2019-10-01T01:00:00+03:00", 
+        "id": "8de1614007d74757970d83c1d60ebc76"
+      }
+    ], 
+    "tenderID": "UA-2019-10-01-000001", 
+    "dateModified": "2019-10-01T01:00:00+03:00", 
+    "status": "active.tendering", 
+    "tenderPeriod": {
+      "startDate": "2019-10-01T01:00:00+03:00", 
+      "endDate": "2019-11-01T01:00:00+03:00"
+    }, 
+    "title_en": "Services in school canteens", 
+    "procurementMethodType": "competitiveDialogueEU", 
+    "date": "2019-10-01T01:00:00+03:00", 
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 45.55, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }, 
+      {
+        "code": "postpayment", 
+        "sequenceNumber": 0, 
+        "title": "deliveryOfGoods", 
+        "duration": {
+          "type": "calendar", 
+          "days": 900
+        }, 
+        "percentage": 54.45, 
+        "type": "financing", 
+        "id": "10e2e2f8217340959061e34e16e4ba55"
+      }
+    ], 
+    "minimalStep": {
+      "currency": "UAH", 
+      "amount": 35.0, 
+      "valueAddedTaxIncluded": true
     }, 
     "items": [
       {
@@ -88,8 +149,8 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-21T00:00:00+02:00", 
-          "endDate": "2019-05-21T00:00:00+02:00"
+          "startDate": "2019-10-21T00:00:00+02:00", 
+          "endDate": "2019-11-20T00:00:00+02:00"
         }, 
         "id": "ad21b87802114030bb0b6731e653d8d1", 
         "unit": {
@@ -122,8 +183,8 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-21T00:00:00+02:00", 
-          "endDate": "2019-05-21T00:00:00+02:00"
+          "startDate": "2019-10-21T00:00:00+02:00", 
+          "endDate": "2019-11-20T00:00:00+02:00"
         }, 
         "id": "910b4477203149af8ab94b82f030cd0f", 
         "unit": {
@@ -133,46 +194,12 @@ Content-Type: application/json; charset=UTF-8
         "quantity": 1.0
       }
     ], 
-    "owner": "broker", 
-    "next_check": "2019-05-02T01:00:00+03:00", 
-    "lots": [
-      {
-        "status": "active", 
-        "description": "Опис Лот №1", 
-        "title": "Лот №1", 
-        "minimalStep": {
-          "currency": "UAH", 
-          "amount": 35.0, 
-          "valueAddedTaxIncluded": true
-        }, 
-        "value": {
-          "currency": "UAH", 
-          "amount": 500.0, 
-          "valueAddedTaxIncluded": true
-        }, 
-        "date": "2019-04-01T01:00:00+03:00", 
-        "id": "e928726a47b7461a9d8a00258123cf3d"
-      }, 
-      {
-        "status": "active", 
-        "description": "Опис Лот №2", 
-        "title": "Лот №2", 
-        "minimalStep": {
-          "currency": "UAH", 
-          "amount": 35.0, 
-          "valueAddedTaxIncluded": true
-        }, 
-        "value": {
-          "currency": "UAH", 
-          "amount": 500.0, 
-          "valueAddedTaxIncluded": true
-        }, 
-        "date": "2019-04-01T01:00:00+03:00", 
-        "id": "8de1614007d74757970d83c1d60ebc76"
-      }
-    ], 
-    "id": "086edc68f12d4a248ded4f9cea52e69c", 
-    "tenderID": "UA-2019-04-01-000001"
+    "value": {
+      "currency": "UAH", 
+      "amount": 1000.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "awardCriteria": "lowestCost"
   }
 }
 

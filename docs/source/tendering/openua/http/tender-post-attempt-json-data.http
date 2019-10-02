@@ -1,13 +1,39 @@
 POST /api/2.5/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 2589
+Content-Length: 3011
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 45.55, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }, 
+      {
+        "code": "postpayment", 
+        "sequenceNumber": 0, 
+        "title": "deliveryOfGoods", 
+        "duration": {
+          "type": "calendar", 
+          "days": 900
+        }, 
+        "percentage": 54.45, 
+        "type": "financing"
+      }
+    ], 
+    "mainProcurementCategory": "services", 
     "tenderPeriod": {
-      "endDate": "2019-04-17T00:00:00+02:00"
+      "endDate": "2019-10-17T00:00:00+02:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -37,8 +63,8 @@ DATA:
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-21T00:00:00+02:00", 
-          "endDate": "2019-05-21T00:00:00+02:00"
+          "startDate": "2019-10-21T00:00:00+02:00", 
+          "endDate": "2019-11-20T00:00:00+02:00"
         }, 
         "quantity": 1
       }
@@ -82,36 +108,18 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/437cd309c59b42df
   }, 
   "data": {
     "procurementMethod": "open", 
-    "status": "active.tendering", 
-    "awardCriteria": "lowestCost", 
-    "tenderPeriod": {
-      "startDate": "2019-04-01T01:00:01+03:00", 
-      "endDate": "2019-04-17T00:00:00+02:00"
-    }, 
-    "title": "футляри до державних нагород", 
-    "minimalStep": {
-      "currency": "UAH", 
-      "amount": 35.0, 
-      "valueAddedTaxIncluded": true
+    "mainProcurementCategory": "services", 
+    "complaintPeriod": {
+      "startDate": "2019-10-01T01:00:01+03:00", 
+      "endDate": "2019-10-13T00:00:00+03:00"
     }, 
     "enquiryPeriod": {
-      "startDate": "2019-04-01T01:00:01+03:00", 
-      "clarificationsUntil": "2019-04-11T00:00:00+02:00", 
-      "endDate": "2019-04-07T00:00:00+02:00"
-    }, 
-    "complaintPeriod": {
-      "startDate": "2019-04-01T01:00:01+03:00", 
-      "endDate": "2019-04-13T00:00:00+03:00"
-    }, 
-    "procurementMethodType": "aboveThresholdUA", 
-    "value": {
-      "currency": "UAH", 
-      "amount": 500.0, 
-      "valueAddedTaxIncluded": true
+      "startDate": "2019-10-01T01:00:01+03:00", 
+      "clarificationsUntil": "2019-10-10T00:00:00+02:00", 
+      "endDate": "2019-10-07T00:00:00+02:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "date": "2019-04-01T01:00:01+03:00", 
-    "next_check": "2019-04-17T01:00:00+03:00", 
+    "next_check": "2019-10-17T01:00:00+03:00", 
     "procuringEntity": {
       "contactPoint": {
         "url": "http://sch10.edu.vn.ua/", 
@@ -133,11 +141,52 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/437cd309c59b42df
         "locality": "м. Вінниця"
       }
     }, 
-    "auctionPeriod": {
-      "shouldStartAfter": "2019-04-17T00:00:00+02:00"
-    }, 
     "owner": "broker", 
-    "dateModified": "2019-04-01T01:00:01+03:00", 
+    "id": "437cd309c59b42df958631eac101ab7d", 
+    "title": "футляри до державних нагород", 
+    "tenderID": "UA-2019-10-01-000002", 
+    "dateModified": "2019-10-01T01:00:01+03:00", 
+    "status": "active.tendering", 
+    "tenderPeriod": {
+      "startDate": "2019-10-01T01:00:01+03:00", 
+      "endDate": "2019-10-17T00:00:00+02:00"
+    }, 
+    "auctionPeriod": {
+      "shouldStartAfter": "2019-10-17T00:00:00+02:00"
+    }, 
+    "procurementMethodType": "aboveThresholdUA", 
+    "date": "2019-10-01T01:00:01+03:00", 
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 45.55, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }, 
+      {
+        "code": "postpayment", 
+        "sequenceNumber": 0, 
+        "title": "deliveryOfGoods", 
+        "duration": {
+          "type": "calendar", 
+          "days": 900
+        }, 
+        "percentage": 54.45, 
+        "type": "financing", 
+        "id": "a5fe04784520455eba574d29faa329bb"
+      }
+    ], 
+    "minimalStep": {
+      "currency": "UAH", 
+      "amount": 35.0, 
+      "valueAddedTaxIncluded": true
+    }, 
     "items": [
       {
         "description": "Послуги шкільних їдалень", 
@@ -161,15 +210,19 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/437cd309c59b42df
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-21T00:00:00+02:00", 
-          "endDate": "2019-05-21T00:00:00+02:00"
+          "startDate": "2019-10-21T00:00:00+02:00", 
+          "endDate": "2019-11-20T00:00:00+02:00"
         }, 
         "id": "c41b9968f92b4cc284e73f6fbab24644", 
         "quantity": 1.0
       }
     ], 
-    "id": "437cd309c59b42df958631eac101ab7d", 
-    "tenderID": "UA-2019-04-01-000002"
+    "value": {
+      "currency": "UAH", 
+      "amount": 500.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "awardCriteria": "lowestCost"
   }
 }
 

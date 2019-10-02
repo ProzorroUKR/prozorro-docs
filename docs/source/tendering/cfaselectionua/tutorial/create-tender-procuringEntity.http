@@ -1,11 +1,37 @@
 POST /api/2.5/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 2610
+Content-Length: 3032
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 45.55, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }, 
+      {
+        "code": "postpayment", 
+        "sequenceNumber": 0, 
+        "title": "deliveryOfGoods", 
+        "duration": {
+          "type": "calendar", 
+          "days": 900
+        }, 
+        "percentage": 54.45, 
+        "type": "financing"
+      }
+    ], 
+    "mainProcurementCategory": "services", 
     "title": "футляри до державних нагород", 
     "lots": [
       {
@@ -83,11 +109,11 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/bb5d83ccdd124232
   "data": {
     "status": "draft", 
     "procurementMethod": "selective", 
-    "tenderID": "UA-2019-04-01-000002", 
+    "tenderID": "UA-2019-10-01-000002", 
     "title": "[ТЕСТУВАННЯ] футляри до державних нагород", 
     "lots": [
       {
-        "date": "2019-04-01T01:00:00+03:00", 
+        "date": "2019-10-01T01:00:00+03:00", 
         "status": "active", 
         "title": "Лот №1", 
         "description": "Опис Лот №1", 
@@ -142,12 +168,12 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/bb5d83ccdd124232
         "locality": "м. Київ"
       }
     }, 
-    "date": "2019-04-01T01:00:00+03:00", 
+    "date": "2019-10-01T01:00:00+03:00", 
     "procurementMethodType": "closeFrameworkAgreementSelectionUA", 
     "awardCriteria": "lowestCost", 
     "title_ru": "[ТЕСТИРОВАНИЕ] футляры к государственным наградам", 
     "owner": "broker", 
-    "dateModified": "2019-04-01T01:00:00+03:00", 
+    "dateModified": "2019-10-01T01:00:00+03:00", 
     "mode": "test", 
     "id": "bb5d83ccdd124232987d417d1966bbff", 
     "agreements": [

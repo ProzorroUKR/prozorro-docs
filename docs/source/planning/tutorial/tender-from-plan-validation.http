@@ -1,13 +1,39 @@
 POST /api/2.5/plans/f580aa1bdcf84194995a102bc3a96d2d/tenders HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 3646
+Content-Length: 4068
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 45.55, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }, 
+      {
+        "code": "postpayment", 
+        "sequenceNumber": 0, 
+        "title": "deliveryOfGoods", 
+        "duration": {
+          "type": "calendar", 
+          "days": 900
+        }, 
+        "percentage": 54.45, 
+        "type": "financing"
+      }
+    ], 
+    "mainProcurementCategory": "services", 
     "tenderPeriod": {
-      "endDate": "2019-05-02T00:00:00+02:00"
+      "endDate": "2019-11-01T00:00:00+02:00"
     }, 
     "title": "Послуги шкільних їдалень", 
     "minimalStep": {
@@ -38,8 +64,8 @@ DATA:
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-21T00:00:00+02:00", 
-          "endDate": "2019-05-21T00:00:00+02:00"
+          "startDate": "2019-10-21T00:00:00+02:00", 
+          "endDate": "2019-11-20T00:00:00+02:00"
         }, 
         "quantity": 1
       }, 
@@ -66,18 +92,17 @@ DATA:
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-21T00:00:00+02:00", 
-          "endDate": "2019-05-21T00:00:00+02:00"
+          "startDate": "2019-10-21T00:00:00+02:00", 
+          "endDate": "2019-11-20T00:00:00+02:00"
         }, 
         "quantity": 1
       }
     ], 
-    "title_en": "Services in school canteens", 
+    "procurementMethodType": "aboveThresholdEU", 
     "value": {
       "currency": "UAH", 
       "amount": 500
     }, 
-    "procurementMethodType": "aboveThresholdEU", 
     "procuringEntity": {
       "kind": "general", 
       "name": "ЗОСШ #10 м.Вінниці", 
@@ -102,7 +127,8 @@ DATA:
         "availableLanguage": "uk", 
         "telephone": "+380 (432) 46-53-02"
       }
-    }
+    }, 
+    "title_en": "Services in school canteens"
   }
 }
 
