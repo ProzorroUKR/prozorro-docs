@@ -1,15 +1,15 @@
 POST /api/2.5/contracts/9625765acafb4677b7dc16e21a0caf1c/documents?acc_token=9e4e9f4da0514309b6c79bbafb5b59c3 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 165
-Content-Type: multipart/form-data; boundary=BOUNDARY
+Content-Length: 171
+Content-Type: multipart/form-data; boundary=---BOUNDARY
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
---BOUNDARY
+-----BOUNDARY
 Content-Disposition: form-data; name="file"; filename="contract_additional_docs.doc"
 Content-Type: application/msword
 
 additional info
---BOUNDARY--
+-----BOUNDARY--
 
 
 Response: 201 Created

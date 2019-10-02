@@ -1,15 +1,15 @@
 PUT /api/2.5/contracts/9625765acafb4677b7dc16e21a0caf1c/documents/1bb77c7a93764d2ea34f3c07d6317a54?acc_token=9e4e9f4da0514309b6c79bbafb5b59c3 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 174
-Content-Type: multipart/form-data; boundary=BOUNDARY
+Content-Length: 180
+Content-Type: multipart/form-data; boundary=---BOUNDARY
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
---BOUNDARY
+-----BOUNDARY
 Content-Disposition: form-data; name="file"; filename="contract_additional_docs.doc"
 Content-Type: application/msword
 
 extended additional info
---BOUNDARY--
+-----BOUNDARY--
 
 
 Response: 200 OK

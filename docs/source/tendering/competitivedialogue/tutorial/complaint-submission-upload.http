@@ -1,15 +1,15 @@
 POST /api/2.5/tenders/23fc3b938f5d4c309f682dabc068667a/complaints/552e211070ad4409bab82bd0adcd5da3/documents?acc_token=915b4aabeaaa4cee9a297092f00adec2 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 151
-Content-Type: multipart/form-data; boundary=BOUNDARY
+Content-Length: 157
+Content-Type: multipart/form-data; boundary=---BOUNDARY
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
---BOUNDARY
+-----BOUNDARY
 Content-Disposition: form-data; name="file"; filename="Complaint_Attachement.pdf"
 Content-Type: application/pdf
 
 content
---BOUNDARY--
+-----BOUNDARY--
 
 
 Response: 201 Created
