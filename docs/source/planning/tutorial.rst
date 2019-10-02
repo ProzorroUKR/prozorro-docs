@@ -85,14 +85,14 @@ A successful example looks like this:
 .. include:: tutorial/tender-from-plan.http
    :code:
 
-After tender was created from plan it's no longer allowed to change `procuringEntity` and `budget.breakdown` fields:
-
-.. include:: tutorial/tender-from-plan-readonly-fields.http
-   :code:
-
 Let's check that the plan status was switched to `complete`:
 
 .. include:: tutorial/get-complete-plan.http
+   :code:
+
+After tender was created from plan it's no longer allowed to change plan:
+
+.. include:: tutorial/tender-from-plan-readonly.http
    :code:
 
 
