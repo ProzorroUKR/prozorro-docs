@@ -1,6 +1,6 @@
 POST /api/2.5/plans?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 2942
+Content-Length: 3070
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
@@ -96,6 +96,16 @@ DATA:
       }
     ], 
     "budget": {
+      "breakdown": [
+        {
+          "description": "Breakdown other description.", 
+          "value": {
+            "currency": "UAH", 
+            "amount": 1500
+          }, 
+          "title": "other"
+        }
+      ], 
       "amountNet": 12222, 
       "description": "budget_description", 
       "period": {
@@ -144,6 +154,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/plans/f0b2403cba3040acaa
     "token": "6e891dac35c54b3c9b474544a69ca492"
   }, 
   "data": {
+    "status": "scheduled", 
     "buyers": [
       {
         "identifier": {
@@ -238,6 +249,17 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/plans/f0b2403cba3040acaa
     ], 
     "planID": "UA-P-2019-04-01-000001", 
     "budget": {
+      "breakdown": [
+        {
+          "title": "other", 
+          "description": "Breakdown other description.", 
+          "value": {
+            "currency": "UAH", 
+            "amount": 1500.0
+          }, 
+          "id": "c3d5f87552fc494c8b4967577bd26195"
+        }
+      ], 
       "amountNet": 12222.0, 
       "description": "budget_description", 
       "period": {

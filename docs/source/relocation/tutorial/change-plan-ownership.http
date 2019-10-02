@@ -15,6 +15,7 @@ Response: 200 OK
 Content-Type: application/json; charset=UTF-8
 {
   "data": {
+    "status": "scheduled", 
     "buyers": [
       {
         "identifier": {
@@ -109,6 +110,17 @@ Content-Type: application/json; charset=UTF-8
     ], 
     "planID": "UA-P-2019-04-01-000001", 
     "budget": {
+      "breakdown": [
+        {
+          "title": "other", 
+          "description": "Breakdown other description.", 
+          "value": {
+            "currency": "UAH", 
+            "amount": 1500.0
+          }, 
+          "id": "c3d5f87552fc494c8b4967577bd26195"
+        }
+      ], 
       "amountNet": 12222.0, 
       "description": "budget_description", 
       "period": {
