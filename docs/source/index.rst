@@ -16,9 +16,10 @@ Contents:
    standard/index
    tendering/index
    planning/index
-   medicines-registry/index
-   agreementcfaua/index
    contracting/index
+   agreementcfaua/index
+   relocation/index
+   medicines-registry/index
    dates
    performance
    cluster
