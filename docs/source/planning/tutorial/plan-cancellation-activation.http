@@ -1,4 +1,4 @@
-PATCH /api/2.5/plans/4689139ff34a42b09939fc6e030ecdcc?acc_token=f00bc5ae38ed42819a4480e3c9828126 HTTP/1.0
+PATCH /api/2.5/plans/4689139ff34a42b09939fc6e030ecdcc?acc_token=3ba3dae0ce4444538dd8784e3ecce947 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 48
 Content-Type: application/json
@@ -115,6 +115,17 @@ Content-Type: application/json; charset=UTF-8
     ], 
     "planID": "UA-P-2019-04-01-000003", 
     "budget": {
+      "breakdown": [
+        {
+          "title": "other", 
+          "description": "Breakdown other description.", 
+          "value": {
+            "currency": "UAH", 
+            "amount": 1500.0
+          }, 
+          "id": "1de1667a18134453b74ccce31a3225cb"
+        }
+      ], 
       "amountNet": 12222.0, 
       "description": "budget_description", 
       "period": {

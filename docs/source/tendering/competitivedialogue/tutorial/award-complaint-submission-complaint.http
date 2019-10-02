@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/4c996fcd2b9f4dc1ae2ec62e1a2e2bbb/awards/895f4fd5200a4184806f8bea83360a3f/complaints?acc_token=f23f671e4a614fbd87824140eef3ecad HTTP/1.0
+POST /api/2.5/tenders/4c996fcd2b9f4dc1ae2ec62e1a2e2bbb/awards/895f4fd5200a4184806f8bea83360a3f/complaints?acc_token=204d9b6827c54763a5847c392198ca5f HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 1319
 Content-Type: application/json
@@ -37,11 +37,13 @@ Content-Type: application/json; charset=UTF-8
 Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4c996fcd2b9f4dc1ae2ec62e1a2e2bbb/awards/895f4fd5200a4184806f8bea83360a3f/complaints/1ea45c16380643eaa9204f71b13ea50f
 {
   "access": {
-    "token": "a43d6e8005d44c469bfb76a757dc0875"
+    "transfer": "ab48ebd5dad348028b9f93aa580662a8", 
+    "token": "0c3e104279524710add54f24329ea2cd"
   }, 
   "data": {
     "status": "pending", 
-    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+    "transfer_token": "32ff20fa84361393cd4c0a103c35cc9b690a628d05ffe38b6852ab734418add55f4fa3ab87b78609f84a5825f80386390dab08101795e6872301b74534fbb220", 
+    "title": "Недостатньо інформації", 
     "author": {
       "contactPoint": {
         "email": "soleksuk@gmail.com", 
@@ -62,12 +64,12 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4c996fcd2b9f4dc1
         "locality": "м. Вінниця"
       }
     }, 
-    "title": "Недостатньо інформації", 
     "dateSubmitted": "2019-04-01T01:00:03+03:00", 
     "complaintID": "UA-2019-04-01-000001.2", 
     "date": "2019-04-01T01:00:03+03:00", 
     "type": "complaint", 
-    "id": "1ea45c16380643eaa9204f71b13ea50f"
+    "id": "1ea45c16380643eaa9204f71b13ea50f", 
+    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс."
   }
 }
 

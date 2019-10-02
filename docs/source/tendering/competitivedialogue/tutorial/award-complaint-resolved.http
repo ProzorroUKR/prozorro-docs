@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/4c996fcd2b9f4dc1ae2ec62e1a2e2bbb/awards/895f4fd5200a4184806f8bea83360a3f/complaints/993a80287c884264a12bb4d89c1cea84?acc_token=75d9771040144bddbfb8856b3014400a HTTP/1.0
+PATCH /api/2.5/tenders/4c996fcd2b9f4dc1ae2ec62e1a2e2bbb/awards/895f4fd5200a4184806f8bea83360a3f/complaints/993a80287c884264a12bb4d89c1cea84?acc_token=7d81b1cd65874d9d974e311a0eee8376 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 361
 Content-Type: application/json
@@ -18,6 +18,8 @@ Content-Type: application/json; charset=UTF-8
     "status": "resolved", 
     "dateDecision": "2019-04-01T01:00:03+03:00", 
     "tendererActionDate": "2019-04-01T01:00:03+03:00", 
+    "transfer_token": "4c93bfa923365875e92d0d6f03c24925bafb450667f9ee3c9f4fd25175a1b83059a5f8c5b0d580540bd2e8af2895703d6252b3fa038ee424be6a65e5624b47f7", 
+    "title": "Недостатньо інформації", 
     "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
     "author": {
       "contactPoint": {
@@ -39,14 +41,7 @@ Content-Type: application/json; charset=UTF-8
         "locality": "м. Вінниця"
       }
     }, 
-    "title": "Недостатньо інформації", 
-    "id": "993a80287c884264a12bb4d89c1cea84", 
     "tendererAction": "Умови виправлено, вибір переможня буде розгянуто повторно", 
-    "dateSubmitted": "2019-04-01T01:00:03+03:00", 
-    "complaintID": "UA-2019-04-01-000001.1", 
-    "date": "2019-04-01T01:00:03+03:00", 
-    "acceptance": true, 
-    "type": "complaint", 
     "documents": [
       {
         "hash": "md5:00000000000000000000000000000000", 
@@ -73,6 +68,12 @@ Content-Type: application/json; charset=UTF-8
         "dateModified": "2019-04-01T01:00:03+03:00"
       }
     ], 
+    "dateSubmitted": "2019-04-01T01:00:03+03:00", 
+    "complaintID": "UA-2019-04-01-000001.1", 
+    "date": "2019-04-01T01:00:03+03:00", 
+    "acceptance": true, 
+    "type": "complaint", 
+    "id": "993a80287c884264a12bb4d89c1cea84", 
     "dateAccepted": "2019-04-01T01:00:03+03:00"
   }
 }

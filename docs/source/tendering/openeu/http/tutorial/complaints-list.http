@@ -9,6 +9,8 @@ Content-Type: application/json; charset=UTF-8
       "status": "resolved", 
       "dateDecision": "2019-04-01T01:00:00+03:00", 
       "tendererActionDate": "2019-04-01T01:00:00+03:00", 
+      "transfer_token": "97c8796488d731424e399c3ed2246e7698ab6fe242fd8d6d89422a022a157262fb6b57d23c65a2ba3a7287881cc9a0f1506b54c1dead7acd6283c550d19945bf", 
+      "title": "Калорійність", 
       "description": "Просимо додати таблицю потрібної калорійності харчування", 
       "author": {
         "contactPoint": {
@@ -30,14 +32,7 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Львів"
         }
       }, 
-      "title": "Калорійність", 
-      "id": "06ef5a30aba04b5db7c0b44f95a3e046", 
       "tendererAction": "Умови виправлено", 
-      "dateSubmitted": "2019-04-01T01:00:00+03:00", 
-      "complaintID": "UA-2019-04-01-000001.1", 
-      "date": "2019-04-01T01:00:00+03:00", 
-      "acceptance": true, 
-      "type": "complaint", 
       "documents": [
         {
           "hash": "md5:00000000000000000000000000000000", 
@@ -64,6 +59,12 @@ Content-Type: application/json; charset=UTF-8
           "dateModified": "2019-04-01T01:00:00+03:00"
         }
       ], 
+      "dateSubmitted": "2019-04-01T01:00:00+03:00", 
+      "complaintID": "UA-2019-04-01-000001.1", 
+      "date": "2019-04-01T01:00:00+03:00", 
+      "acceptance": true, 
+      "type": "complaint", 
+      "id": "06ef5a30aba04b5db7c0b44f95a3e046", 
       "dateAccepted": "2019-04-01T01:00:00+03:00"
     }, 
     {
@@ -83,7 +84,10 @@ Content-Type: application/json; charset=UTF-8
     {
       "status": "declined", 
       "dateDecision": "2019-04-01T01:00:00+03:00", 
-      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+      "transfer_token": "63f9e09de076bd01443a6593778e418c6b896f9018ee20dc49717f1378debf159b0bc4f4a25a09129700e7d40b1ecc0fe596465401b41e94d4fa9f80c4c05fdb", 
+      "title": "Недостатньо інформації", 
+      "acceptance": true, 
+      "dateAccepted": "2019-04-01T01:00:00+03:00", 
       "author": {
         "contactPoint": {
           "email": "soleksuk@gmail.com", 
@@ -104,26 +108,55 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Вінниця"
         }
       }, 
-      "acceptance": true, 
-      "dateAccepted": "2019-04-01T01:00:00+03:00", 
       "dateSubmitted": "2019-04-01T01:00:00+03:00", 
       "complaintID": "UA-2019-04-01-000001.3", 
       "date": "2019-04-01T01:00:00+03:00", 
-      "title": "Недостатньо інформації", 
       "type": "complaint", 
-      "id": "98d226412590436d8c8aabd680d7470f"
+      "id": "98d226412590436d8c8aabd680d7470f", 
+      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс."
     }, 
     {
       "status": "invalid", 
       "dateDecision": "2019-04-01T01:00:00+03:00", 
-      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
-      "title": "Недостатньо інформації", 
+      "transfer_token": "979eee9430d47709c3a0baf16a30d5739900cb9377861ca94eaf9d94378bc9ba25bac3df45ada328998eb6923426f4c2066ae8a2f6f0b7de3aa831c0ee3c6992", 
+      "author": {
+        "contactPoint": {
+          "email": "soleksuk@gmail.com", 
+          "telephone": "+380 (432) 21-69-30", 
+          "name": "Сергій Олексюк"
+        }, 
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "00137256", 
+          "uri": "http://www.sc.gov.ua/"
+        }, 
+        "name": "ДКП «Школяр»", 
+        "address": {
+          "postalCode": "21100", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Островського, 33", 
+          "region": "м. Вінниця", 
+          "locality": "м. Вінниця"
+        }
+      }, 
       "resolutionType": "invalid", 
       "type": "complaint", 
       "acceptance": false, 
       "satisfied": false, 
       "dateEscalated": "2019-04-01T01:00:00+03:00", 
       "dateAnswered": "2019-04-01T01:00:00+03:00", 
+      "dateSubmitted": "2019-04-01T01:00:00+03:00", 
+      "complaintID": "UA-2019-04-01-000001.4", 
+      "date": "2019-04-01T01:00:00+03:00", 
+      "title": "Недостатньо інформації", 
+      "resolution": "Вимога не відповідає предмету закупівлі", 
+      "id": "d30ff8805b04436ea662fd10fd62ea54", 
+      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс."
+    }, 
+    {
+      "status": "stopped", 
+      "dateDecision": "2019-04-01T01:00:00+03:00", 
+      "transfer_token": "d99c4dc038f2ffc1f14bca01924d75980439e2facb310fbf90826d4200f381edb39fcd52d22159e39435f529cf2c2e6391d0e75f4644a189bd136b5f0bae7b78", 
       "author": {
         "contactPoint": {
           "email": "soleksuk@gmail.com", 
@@ -144,21 +177,22 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Вінниця"
         }
       }, 
-      "dateSubmitted": "2019-04-01T01:00:00+03:00", 
-      "complaintID": "UA-2019-04-01-000001.4", 
-      "date": "2019-04-01T01:00:00+03:00", 
-      "resolution": "Вимога не відповідає предмету закупівлі", 
-      "id": "d30ff8805b04436ea662fd10fd62ea54"
-    }, 
-    {
-      "status": "stopped", 
-      "dateDecision": "2019-04-01T01:00:00+03:00", 
-      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
-      "title": "Недостатньо інформації", 
       "decision": "Тендер скасовується замовником", 
       "acceptance": true, 
       "dateCanceled": "2019-04-01T01:00:00+03:00", 
       "dateAccepted": "2019-04-01T01:00:00+03:00", 
+      "dateSubmitted": "2019-04-01T01:00:00+03:00", 
+      "complaintID": "UA-2019-04-01-000001.5", 
+      "date": "2019-04-01T01:00:00+03:00", 
+      "title": "Недостатньо інформації", 
+      "type": "complaint", 
+      "id": "05e13d3c7271455c9c74e42c24221447", 
+      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс."
+    }, 
+    {
+      "status": "stopped", 
+      "dateDecision": "2019-04-01T01:00:00+03:00", 
+      "transfer_token": "19ad217bd3421321db777ce62295fea1216161a0e4cfae88e74c9ce1751af025cf72af7d0da37f49ce942f8c6a4c719ae24d3d91af0a91e7846ffc1b93e0e640", 
       "author": {
         "contactPoint": {
           "email": "soleksuk@gmail.com", 
@@ -179,47 +213,18 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Вінниця"
         }
       }, 
-      "dateSubmitted": "2019-04-01T01:00:00+03:00", 
-      "complaintID": "UA-2019-04-01-000001.5", 
-      "date": "2019-04-01T01:00:00+03:00", 
-      "type": "complaint", 
-      "id": "05e13d3c7271455c9c74e42c24221447"
-    }, 
-    {
-      "status": "stopped", 
-      "dateDecision": "2019-04-01T01:00:00+03:00", 
-      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
-      "title": "Недостатньо інформації", 
       "decision": "Тендер скасовується замовником", 
       "acceptance": true, 
       "cancellationReason": "Тендер скасовується замовником", 
       "dateCanceled": "2019-04-01T01:00:00+03:00", 
       "dateAccepted": "2019-04-01T01:00:00+03:00", 
-      "author": {
-        "contactPoint": {
-          "email": "soleksuk@gmail.com", 
-          "telephone": "+380 (432) 21-69-30", 
-          "name": "Сергій Олексюк"
-        }, 
-        "identifier": {
-          "scheme": "UA-EDR", 
-          "id": "00137256", 
-          "uri": "http://www.sc.gov.ua/"
-        }, 
-        "name": "ДКП «Школяр»", 
-        "address": {
-          "postalCode": "21100", 
-          "countryName": "Україна", 
-          "streetAddress": "вул. Островського, 33", 
-          "region": "м. Вінниця", 
-          "locality": "м. Вінниця"
-        }
-      }, 
       "dateSubmitted": "2019-04-01T01:00:00+03:00", 
       "complaintID": "UA-2019-04-01-000001.6", 
       "date": "2019-04-01T01:00:00+03:00", 
+      "title": "Недостатньо інформації", 
       "type": "complaint", 
-      "id": "eaa4fb36c6e945a7958d1567b7a73420"
+      "id": "eaa4fb36c6e945a7958d1567b7a73420", 
+      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс."
     }, 
     {
       "status": "cancelled", 
