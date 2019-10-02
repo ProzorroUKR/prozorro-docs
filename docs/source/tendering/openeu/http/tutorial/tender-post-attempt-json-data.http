@@ -1,13 +1,39 @@
 POST /api/2.5/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 3646
+Content-Length: 4068
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 45.55, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }, 
+      {
+        "code": "postpayment", 
+        "sequenceNumber": 0, 
+        "title": "deliveryOfGoods", 
+        "duration": {
+          "type": "calendar", 
+          "days": 900
+        }, 
+        "percentage": 54.45, 
+        "type": "financing"
+      }
+    ], 
+    "mainProcurementCategory": "services", 
     "tenderPeriod": {
-      "endDate": "2019-05-02T00:00:00+02:00"
+      "endDate": "2019-11-01T00:00:00+02:00"
     }, 
     "title": "Послуги шкільних їдалень", 
     "minimalStep": {
@@ -38,8 +64,8 @@ DATA:
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-21T00:00:00+02:00", 
-          "endDate": "2019-05-21T00:00:00+02:00"
+          "startDate": "2019-10-21T00:00:00+02:00", 
+          "endDate": "2019-11-20T00:00:00+02:00"
         }, 
         "quantity": 1
       }, 
@@ -66,18 +92,17 @@ DATA:
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-21T00:00:00+02:00", 
-          "endDate": "2019-05-21T00:00:00+02:00"
+          "startDate": "2019-10-21T00:00:00+02:00", 
+          "endDate": "2019-11-20T00:00:00+02:00"
         }, 
         "quantity": 1
       }
     ], 
-    "title_en": "Services in school canteens", 
+    "procurementMethodType": "aboveThresholdEU", 
     "value": {
       "currency": "UAH", 
       "amount": 500
     }, 
-    "procurementMethodType": "aboveThresholdEU", 
     "procuringEntity": {
       "kind": "general", 
       "name": "ЗОСШ #10 м.Вінниці", 
@@ -102,7 +127,8 @@ DATA:
         "availableLanguage": "uk", 
         "telephone": "+380 (432) 46-53-02"
       }
-    }
+    }, 
+    "title_en": "Services in school canteens"
   }
 }
 
@@ -116,35 +142,18 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ef61695c05174b37
   }, 
   "data": {
     "procurementMethod": "open", 
-    "status": "active.tendering", 
-    "awardCriteria": "lowestCost", 
-    "tenderPeriod": {
-      "startDate": "2019-04-01T01:00:00+03:00", 
-      "endDate": "2019-05-02T00:00:00+02:00"
-    }, 
-    "title": "Послуги шкільних їдалень", 
-    "minimalStep": {
-      "currency": "UAH", 
-      "amount": 35.0, 
-      "valueAddedTaxIncluded": true
-    }, 
-    "auctionPeriod": {
-      "shouldStartAfter": "2019-06-06T00:00:00+02:00"
-    }, 
+    "mainProcurementCategory": "services", 
     "complaintPeriod": {
-      "startDate": "2019-04-01T01:00:00+03:00", 
-      "endDate": "2019-04-28T00:00:00+03:00"
+      "startDate": "2019-10-01T01:00:00+03:00", 
+      "endDate": "2019-10-28T00:00:00+02:00"
     }, 
-    "title_en": "Services in school canteens", 
-    "value": {
-      "currency": "UAH", 
-      "amount": 500.0, 
-      "valueAddedTaxIncluded": true
+    "enquiryPeriod": {
+      "startDate": "2019-10-01T01:00:00+03:00", 
+      "clarificationsUntil": "2019-10-25T00:00:00+02:00", 
+      "endDate": "2019-10-22T00:00:00+02:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "date": "2019-04-01T01:00:00+03:00", 
-    "dateModified": "2019-04-01T01:00:00+03:00", 
-    "procurementMethodType": "aboveThresholdEU", 
+    "next_check": "2019-11-01T00:00:00+02:00", 
     "procuringEntity": {
       "kind": "general", 
       "name": "ЗОСШ #10 м.Вінниці", 
@@ -170,13 +179,53 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ef61695c05174b37
       }, 
       "name_en": "School #10 of Vinnytsia"
     }, 
-    "enquiryPeriod": {
-      "startDate": "2019-04-01T01:00:00+03:00", 
-      "clarificationsUntil": "2019-04-25T00:00:00+02:00", 
-      "endDate": "2019-04-22T00:00:00+02:00"
-    }, 
     "owner": "broker", 
-    "next_check": "2019-05-02T01:00:00+03:00", 
+    "title_en": "Services in school canteens", 
+    "id": "ef61695c05174b37b2bb6a8da114cc9d", 
+    "title": "Послуги шкільних їдалень", 
+    "tenderID": "UA-2019-10-01-000001", 
+    "dateModified": "2019-10-01T01:00:00+03:00", 
+    "status": "active.tendering", 
+    "tenderPeriod": {
+      "startDate": "2019-10-01T01:00:00+03:00", 
+      "endDate": "2019-11-01T00:00:00+02:00"
+    }, 
+    "auctionPeriod": {
+      "shouldStartAfter": "2019-12-06T00:00:00+02:00"
+    }, 
+    "procurementMethodType": "aboveThresholdEU", 
+    "date": "2019-10-01T01:00:00+03:00", 
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 45.55, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }, 
+      {
+        "code": "postpayment", 
+        "sequenceNumber": 0, 
+        "title": "deliveryOfGoods", 
+        "duration": {
+          "type": "calendar", 
+          "days": 900
+        }, 
+        "percentage": 54.45, 
+        "type": "financing", 
+        "id": "98fccaae0615493392ee5471ed6a9e17"
+      }
+    ], 
+    "minimalStep": {
+      "currency": "UAH", 
+      "amount": 35.0, 
+      "valueAddedTaxIncluded": true
+    }, 
     "items": [
       {
         "description": "Послуги шкільних їдалень", 
@@ -201,8 +250,8 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ef61695c05174b37
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-21T00:00:00+02:00", 
-          "endDate": "2019-05-21T00:00:00+02:00"
+          "startDate": "2019-10-21T00:00:00+02:00", 
+          "endDate": "2019-11-20T00:00:00+02:00"
         }, 
         "id": "d2fae6b5562b4d86acb60dc3400fc96c", 
         "quantity": 1.0
@@ -230,15 +279,19 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/ef61695c05174b37
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-21T00:00:00+02:00", 
-          "endDate": "2019-05-21T00:00:00+02:00"
+          "startDate": "2019-10-21T00:00:00+02:00", 
+          "endDate": "2019-11-20T00:00:00+02:00"
         }, 
         "id": "3a9ed691f4a447b1b27a7d04b90a1234", 
         "quantity": 1.0
       }
     ], 
-    "id": "ef61695c05174b37b2bb6a8da114cc9d", 
-    "tenderID": "UA-2019-04-01-000001"
+    "value": {
+      "currency": "UAH", 
+      "amount": 500.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "awardCriteria": "lowestCost"
   }
 }
 

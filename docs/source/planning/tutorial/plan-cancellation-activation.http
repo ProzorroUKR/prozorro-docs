@@ -18,7 +18,7 @@ Content-Type: application/json; charset=UTF-8
   "data": {
     "status": "cancelled", 
     "cancellation": {
-      "date": "2019-04-01T01:00:00+03:00", 
+      "date": "2019-10-01T01:00:00+03:00", 
       "status": "active", 
       "reason": "Підстава для скасування", 
       "reason_en": "Reason of the cancellation", 
@@ -55,7 +55,7 @@ Content-Type: application/json; charset=UTF-8
           }
         ], 
         "deliveryDate": {
-          "endDate": "2019-04-16T01:00:00+03:00"
+          "endDate": "2019-10-16T01:00:00+03:00"
         }, 
         "id": "8bac01386bd74cb988fecb5c8ae78d69", 
         "unit": {
@@ -79,7 +79,7 @@ Content-Type: application/json; charset=UTF-8
           }
         ], 
         "deliveryDate": {
-          "endDate": "2019-04-17T01:00:00+03:00"
+          "endDate": "2019-10-17T01:00:00+03:00"
         }, 
         "id": "4d8193c052514d1d911e4dc04a3d7103", 
         "unit": {
@@ -103,7 +103,7 @@ Content-Type: application/json; charset=UTF-8
           }
         ], 
         "deliveryDate": {
-          "endDate": "2019-04-18T01:00:00+03:00"
+          "endDate": "2019-10-18T01:00:00+03:00"
         }, 
         "id": "8b6e4d7fd22c4679867e56fca5dc5f3d", 
         "unit": {
@@ -113,19 +113,8 @@ Content-Type: application/json; charset=UTF-8
         "quantity": 3000.0
       }
     ], 
-    "planID": "UA-P-2019-04-01-000003", 
+    "planID": "UA-P-2019-10-01-000003", 
     "budget": {
-      "breakdown": [
-        {
-          "title": "other", 
-          "description": "Breakdown other description.", 
-          "value": {
-            "currency": "UAH", 
-            "amount": 1500.0
-          }, 
-          "id": "1de1667a18134453b74ccce31a3225cb"
-        }
-      ], 
       "amountNet": 12222.0, 
       "description": "budget_description", 
       "period": {
@@ -140,12 +129,12 @@ Content-Type: application/json; charset=UTF-8
       "amount": 10000.0, 
       "id": "12303111000-2"
     }, 
-    "dateModified": "2019-04-01T01:00:00+03:00", 
+    "dateModified": "2019-10-01T01:00:00+03:00", 
     "tender": {
       "procurementMethod": "open", 
       "procurementMethodType": "belowThreshold", 
       "tenderPeriod": {
-        "startDate": "2019-04-08T01:00:00+03:00"
+        "startDate": "2019-10-08T01:00:00+03:00"
       }
     }, 
     "additionalClassifications": [
@@ -164,7 +153,7 @@ Content-Type: application/json; charset=UTF-8
       "name": "ДУС"
     }, 
     "owner": "broker", 
-    "datePublished": "2019-04-01T01:00:00+03:00", 
+    "datePublished": "2019-10-01T01:00:00+03:00", 
     "id": "4689139ff34a42b09939fc6e030ecdcc"
   }
 }

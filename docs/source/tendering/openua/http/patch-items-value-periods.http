@@ -7,7 +7,7 @@ DATA:
 {
   "data": {
     "tenderPeriod": {
-      "endDate": "2019-04-16T01:00:10+03:00"
+      "endDate": "2019-10-16T01:00:10+03:00"
     }
   }
 }
@@ -17,37 +17,19 @@ Content-Type: application/json; charset=UTF-8
 {
   "data": {
     "procurementMethod": "open", 
-    "status": "active.tendering", 
-    "awardCriteria": "lowestCost", 
-    "tenderPeriod": {
-      "startDate": "2019-04-01T01:00:00+03:00", 
-      "endDate": "2019-04-16T01:00:10+03:00"
-    }, 
-    "title": "футляри до державних нагород", 
-    "minimalStep": {
-      "currency": "UAH", 
-      "amount": 35.0, 
-      "valueAddedTaxIncluded": true
+    "mainProcurementCategory": "services", 
+    "complaintPeriod": {
+      "startDate": "2019-10-01T01:00:00+03:00", 
+      "endDate": "2019-10-12T00:00:00+03:00"
     }, 
     "enquiryPeriod": {
-      "startDate": "2019-04-01T01:00:00+03:00", 
-      "clarificationsUntil": "2019-04-11T00:00:00+03:00", 
-      "endDate": "2019-04-06T01:00:10+03:00", 
-      "invalidationDate": "2019-04-01T01:00:00+03:00"
-    }, 
-    "complaintPeriod": {
-      "startDate": "2019-04-01T01:00:00+03:00", 
-      "endDate": "2019-04-12T00:00:00+03:00"
-    }, 
-    "procurementMethodType": "aboveThresholdUA", 
-    "value": {
-      "currency": "UAH", 
-      "amount": 500.0, 
-      "valueAddedTaxIncluded": true
+      "startDate": "2019-10-01T01:00:00+03:00", 
+      "clarificationsUntil": "2019-10-10T00:00:00+03:00", 
+      "endDate": "2019-10-06T01:00:10+03:00", 
+      "invalidationDate": "2019-10-01T01:00:00+03:00"
     }, 
     "submissionMethod": "electronicAuction", 
-    "date": "2019-04-01T01:00:00+03:00", 
-    "next_check": "2019-04-16T01:00:10+03:00", 
+    "next_check": "2019-10-16T01:00:10+03:00", 
     "procuringEntity": {
       "contactPoint": {
         "url": "http://sch10.edu.vn.ua/", 
@@ -69,11 +51,52 @@ Content-Type: application/json; charset=UTF-8
         "locality": "м. Вінниця"
       }
     }, 
-    "auctionPeriod": {
-      "shouldStartAfter": "2019-04-17T00:00:00+03:00"
-    }, 
     "owner": "broker", 
-    "dateModified": "2019-04-01T01:00:00+03:00", 
+    "id": "7898ec9992af47ccbc9b8bf1b8539660", 
+    "title": "футляри до державних нагород", 
+    "tenderID": "UA-2019-10-01-000001", 
+    "dateModified": "2019-10-01T01:00:00+03:00", 
+    "status": "active.tendering", 
+    "tenderPeriod": {
+      "startDate": "2019-10-01T01:00:00+03:00", 
+      "endDate": "2019-10-16T01:00:10+03:00"
+    }, 
+    "auctionPeriod": {
+      "shouldStartAfter": "2019-10-17T00:00:00+03:00"
+    }, 
+    "procurementMethodType": "aboveThresholdUA", 
+    "date": "2019-10-01T01:00:00+03:00", 
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 45.55, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }, 
+      {
+        "code": "postpayment", 
+        "sequenceNumber": 0, 
+        "title": "deliveryOfGoods", 
+        "duration": {
+          "type": "calendar", 
+          "days": 900
+        }, 
+        "percentage": 54.45, 
+        "type": "financing", 
+        "id": "cc1b1a8acbd04a7cb649d0dfac820263"
+      }
+    ], 
+    "minimalStep": {
+      "currency": "UAH", 
+      "amount": 35.0, 
+      "valueAddedTaxIncluded": true
+    }, 
     "items": [
       {
         "description": "Послуги шкільних їдалень", 
@@ -97,15 +120,19 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-21T00:00:00+02:00", 
-          "endDate": "2019-05-21T00:00:00+02:00"
+          "startDate": "2019-10-21T00:00:00+02:00", 
+          "endDate": "2019-11-20T00:00:00+02:00"
         }, 
         "id": "e755d433ef04489f957b7e95e13cf164", 
         "quantity": 1.0
       }
     ], 
-    "id": "7898ec9992af47ccbc9b8bf1b8539660", 
-    "tenderID": "UA-2019-04-01-000001"
+    "value": {
+      "currency": "UAH", 
+      "amount": 500.0, 
+      "valueAddedTaxIncluded": true
+    }, 
+    "awardCriteria": "lowestCost"
   }
 }
 

@@ -16,15 +16,16 @@ Content-Type: application/json; charset=UTF-8
   "data": {
     "procurementMethod": "open", 
     "status": "active.stage2.waiting", 
+    "mainProcurementCategory": "services", 
     "complaintPeriod": {
-      "startDate": "2019-02-19T01:00:00+03:00", 
-      "endDate": "2019-03-18T00:00:00+02:00"
+      "startDate": "2019-08-21T01:00:00+03:00", 
+      "endDate": "2019-09-17T00:00:00+03:00"
     }, 
     "enquiryPeriod": {
-      "startDate": "2019-02-19T01:00:00+03:00", 
-      "clarificationsUntil": "2019-03-15T01:00:00+03:00", 
-      "endDate": "2019-03-12T01:00:00+03:00", 
-      "invalidationDate": "2019-04-01T01:00:00+03:00"
+      "startDate": "2019-08-21T01:00:00+03:00", 
+      "clarificationsUntil": "2019-09-16T01:00:00+03:00", 
+      "endDate": "2019-09-11T01:00:00+03:00", 
+      "invalidationDate": "2019-10-01T01:00:00+03:00"
     }, 
     "submissionMethod": "electronicAuction", 
     "procuringEntity": {
@@ -71,7 +72,7 @@ Content-Type: application/json; charset=UTF-8
           "amount": 500.0, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2019-04-01T01:00:00+03:00", 
+        "date": "2019-10-01T01:00:00+03:00", 
         "id": "e928726a47b7461a9d8a00258123cf3d"
       }, 
       {
@@ -88,20 +89,20 @@ Content-Type: application/json; charset=UTF-8
           "amount": 400.0, 
           "valueAddedTaxIncluded": true
         }, 
-        "date": "2019-04-01T01:00:00+03:00", 
+        "date": "2019-10-01T01:00:00+03:00", 
         "id": "8de1614007d74757970d83c1d60ebc76"
       }
     ], 
     "qualificationPeriod": {
-      "startDate": "2019-03-22T01:00:00+03:00", 
-      "endDate": "2019-04-01T01:00:00+03:00"
+      "startDate": "2019-09-21T01:00:00+03:00", 
+      "endDate": "2019-10-01T01:00:00+03:00"
     }, 
-    "tenderID": "UA-2019-04-01-000001", 
-    "dateModified": "2019-04-01T01:00:00+03:00", 
+    "tenderID": "UA-2019-10-01-000001", 
+    "dateModified": "2019-10-01T01:00:00+03:00", 
     "numberOfBids": 3, 
     "tenderPeriod": {
-      "startDate": "2019-02-19T01:00:00+03:00", 
-      "endDate": "2019-03-22T01:00:00+03:00"
+      "startDate": "2019-08-21T01:00:00+03:00", 
+      "endDate": "2019-09-21T01:00:00+03:00"
     }, 
     "qualifications": [
       {
@@ -110,7 +111,7 @@ Content-Type: application/json; charset=UTF-8
         "eligible": true, 
         "qualified": true, 
         "bidID": "5c57011a1a184851aa1a971e0f443b6c", 
-        "date": "2019-04-01T01:00:00+03:00", 
+        "date": "2019-10-01T01:00:00+03:00", 
         "id": "a16346645ffd4af3b8bbeea05d93fe7c"
       }, 
       {
@@ -119,7 +120,7 @@ Content-Type: application/json; charset=UTF-8
         "eligible": true, 
         "qualified": true, 
         "bidID": "44e377d158fa42f3b8d4437c84bdda52", 
-        "date": "2019-04-01T01:00:00+03:00", 
+        "date": "2019-10-01T01:00:00+03:00", 
         "id": "16ff73824b4d4a0e9ae525d4f8a0f863"
       }, 
       {
@@ -128,12 +129,38 @@ Content-Type: application/json; charset=UTF-8
         "eligible": true, 
         "qualified": true, 
         "bidID": "eb8b16e4d30d4a81b046cae41632ed2d", 
-        "date": "2019-04-01T01:00:00+03:00", 
+        "date": "2019-10-01T01:00:00+03:00", 
         "id": "1f6555ff47b746b1a856cb44bb62bbd9"
       }
     ], 
     "procurementMethodType": "competitiveDialogueEU", 
-    "date": "2019-04-01T01:00:00+03:00", 
+    "date": "2019-10-01T01:00:00+03:00", 
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 45.55, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }, 
+      {
+        "code": "postpayment", 
+        "sequenceNumber": 0, 
+        "title": "deliveryOfGoods", 
+        "duration": {
+          "type": "calendar", 
+          "days": 900
+        }, 
+        "percentage": 54.45, 
+        "type": "financing", 
+        "id": "10e2e2f8217340959061e34e16e4ba55"
+      }
+    ], 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35.0, 
@@ -164,8 +191,8 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-21T00:00:00+02:00", 
-          "endDate": "2019-05-21T00:00:00+02:00"
+          "startDate": "2019-10-21T00:00:00+02:00", 
+          "endDate": "2019-11-20T00:00:00+02:00"
         }, 
         "id": "ad21b87802114030bb0b6731e653d8d1", 
         "unit": {
@@ -198,8 +225,8 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-21T00:00:00+02:00", 
-          "endDate": "2019-05-21T00:00:00+02:00"
+          "startDate": "2019-10-21T00:00:00+02:00", 
+          "endDate": "2019-11-20T00:00:00+02:00"
         }, 
         "id": "910b4477203149af8ab94b82f030cd0f", 
         "unit": {

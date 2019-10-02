@@ -1,6 +1,6 @@
 POST /api/2.5/tenders?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 3505
+Content-Length: 3927
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
@@ -8,6 +8,32 @@ DATA:
   "data": {
     "procurementMethod": "limited", 
     "status": "active", 
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 45.55, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }, 
+      {
+        "code": "postpayment", 
+        "sequenceNumber": 0, 
+        "title": "deliveryOfGoods", 
+        "duration": {
+          "type": "calendar", 
+          "days": 900
+        }, 
+        "percentage": 54.45, 
+        "type": "financing"
+      }
+    ], 
+    "mainProcurementCategory": "services", 
     "causeDescription": "оригінальний тендер не вдався двічі", 
     "title": "Послуги шкільних їдалень", 
     "title_en": "Services in school canteens", 
@@ -15,7 +41,6 @@ DATA:
     "description_en": "Services in school canteens", 
     "causeDescription_ru": "оригинальный тендер не получился дважды", 
     "causeDescription_en": "original tender has failed twice", 
-    "description_ru": "Услуги школьных столовых", 
     "procuringEntity": {
       "kind": "special", 
       "identifier": {
@@ -61,8 +86,8 @@ DATA:
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-21T00:00:00+02:00", 
-          "endDate": "2019-05-21T00:00:00+02:00"
+          "startDate": "2019-10-21T00:00:00+02:00", 
+          "endDate": "2019-11-20T00:00:00+02:00"
         }, 
         "quantity": 1
       }
@@ -73,6 +98,7 @@ DATA:
       "amount": 500000, 
       "valueAddedTaxIncluded": false
     }, 
+    "description_ru": "Услуги школьных столовых", 
     "cause": "twiceUnsuccessful"
   }
 }
@@ -87,9 +113,68 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/26b780552e084bbc
   }, 
   "data": {
     "procurementMethod": "limited", 
-    "status": "active", 
+    "mainProcurementCategory": "services", 
     "causeDescription": "оригінальний тендер не вдався двічі", 
+    "procuringEntity": {
+      "contactPoint": {
+        "url": "http://sch10.edu.vn.ua/", 
+        "name": "Куца Світлана Валентинівна", 
+        "telephone": "+380 (432) 46-53-02"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "id": "21725150", 
+        "legalName": "Заклад \"Загальноосвітня школа І-ІІІ ступенів № 10 Вінницької міської ради\""
+      }, 
+      "name": "ЗОСШ #10 м.Вінниці", 
+      "kind": "special", 
+      "address": {
+        "postalCode": "21027", 
+        "countryName": "Україна", 
+        "streetAddress": "вул. Стахурського. 22", 
+        "region": "м. Вінниця", 
+        "locality": "м. Вінниця"
+      }
+    }, 
+    "owner": "broker", 
+    "id": "26b780552e084bbcb2b53c5383a6e976", 
     "title": "Послуги шкільних їдалень", 
+    "causeDescription_en": "original tender has failed twice", 
+    "tenderID": "UA-2019-10-01-000001", 
+    "description_ru": "Услуги школьных столовых", 
+    "dateModified": "2019-10-01T01:00:00+03:00", 
+    "status": "active", 
+    "title_en": "Services in school canteens", 
+    "procurementMethodType": "negotiation", 
+    "description_en": "Services in school canteens", 
+    "causeDescription_ru": "оригинальный тендер не получился дважды", 
+    "date": "2019-10-01T01:00:00+03:00", 
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 45.55, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }, 
+      {
+        "code": "postpayment", 
+        "sequenceNumber": 0, 
+        "title": "deliveryOfGoods", 
+        "duration": {
+          "type": "calendar", 
+          "days": 900
+        }, 
+        "percentage": 54.45, 
+        "type": "financing", 
+        "id": "a5493c0c61f74ea181fcafb34d4aa9dd"
+      }
+    ], 
     "items": [
       {
         "description": "Послуги шкільних їдалень", 
@@ -113,52 +198,20 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/26b780552e084bbc
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-21T00:00:00+02:00", 
-          "endDate": "2019-05-21T00:00:00+02:00"
+          "startDate": "2019-10-21T00:00:00+02:00", 
+          "endDate": "2019-11-20T00:00:00+02:00"
         }, 
         "id": "1adbe25743a84ce4b4ec69c0b0ba6f02", 
         "quantity": 1.0
       }
     ], 
-    "procurementMethodType": "negotiation", 
-    "causeDescription_en": "original tender has failed twice", 
     "value": {
       "currency": "UAH", 
       "amount": 500000.0, 
       "valueAddedTaxIncluded": false
     }, 
-    "dateModified": "2019-04-01T01:00:00+03:00", 
-    "causeDescription_ru": "оригинальный тендер не получился дважды", 
-    "date": "2019-04-01T01:00:00+03:00", 
-    "title_en": "Services in school canteens", 
-    "description_ru": "Услуги школьных столовых", 
-    "description_en": "Services in school canteens", 
     "title_ru": "Услуги школьных столовых", 
-    "owner": "broker", 
-    "procuringEntity": {
-      "contactPoint": {
-        "url": "http://sch10.edu.vn.ua/", 
-        "name": "Куца Світлана Валентинівна", 
-        "telephone": "+380 (432) 46-53-02"
-      }, 
-      "identifier": {
-        "scheme": "UA-EDR", 
-        "id": "21725150", 
-        "legalName": "Заклад \"Загальноосвітня школа І-ІІІ ступенів № 10 Вінницької міської ради\""
-      }, 
-      "name": "ЗОСШ #10 м.Вінниці", 
-      "kind": "special", 
-      "address": {
-        "postalCode": "21027", 
-        "countryName": "Україна", 
-        "streetAddress": "вул. Стахурського. 22", 
-        "region": "м. Вінниця", 
-        "locality": "м. Вінниця"
-      }
-    }, 
-    "cause": "twiceUnsuccessful", 
-    "id": "26b780552e084bbcb2b53c5383a6e976", 
-    "tenderID": "UA-2019-04-01-000001"
+    "cause": "twiceUnsuccessful"
   }
 }
 

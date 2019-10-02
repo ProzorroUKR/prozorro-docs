@@ -30,14 +30,9 @@ Content-Type: application/json; charset=UTF-8
   "status": "error", 
   "errors": [
     {
-      "description": "Changing this field is not allowed after tender creation", 
+      "description": "Can't update plan in 'complete' status", 
       "location": "data", 
-      "name": "procuringEntity"
-    }, 
-    {
-      "description": "Changing this field is not allowed after tender creation", 
-      "location": "data", 
-      "name": "budget.breakdown"
+      "name": "status"
     }
   ]
 }

@@ -8,24 +8,41 @@ Content-Type: application/json; charset=UTF-8
   "data": {
     "procurementMethod": "open", 
     "status": "active.auction", 
+    "mainProcurementCategory": "services", 
     "complaintPeriod": {
-      "startDate": "2019-02-19T01:00:00+03:00", 
-      "endDate": "2019-03-18T00:00:00+02:00"
+      "startDate": "2019-08-21T01:00:00+03:00", 
+      "endDate": "2019-09-17T00:00:00+03:00"
     }, 
     "auctionUrl": "http://auction-sandbox.prozorro.gov.ua/tenders/ef61695c05174b37b2bb6a8da114cc9d", 
     "enquiryPeriod": {
-      "startDate": "2019-02-19T01:00:00+03:00", 
-      "clarificationsUntil": "2019-03-15T01:00:00+03:00", 
-      "endDate": "2019-03-12T01:00:00+03:00", 
-      "invalidationDate": "2019-04-01T01:00:00+03:00"
+      "startDate": "2019-08-21T01:00:00+03:00", 
+      "clarificationsUntil": "2019-09-16T01:00:00+03:00", 
+      "endDate": "2019-09-11T01:00:00+03:00", 
+      "invalidationDate": "2019-10-01T01:00:00+03:00"
     }, 
+    "submissionMethod": "electronicAuction", 
+    "title_en": "Services in school canteens", 
+    "next_check": "2019-10-01T01:36:00+03:00", 
+    "awardCriteria": "lowestCost", 
+    "questions": [
+      {
+        "description": "Просимо додати таблицю потрібної калорійності харчування", 
+        "dateAnswered": "2019-10-01T01:00:00+03:00", 
+        "title": "Калорійність", 
+        "date": "2019-10-01T01:00:00+03:00", 
+        "answer": "Таблицю додано в файлі \"Kalorijnist.xslx\"", 
+        "id": "690479c37d9e47f3bff5ef4a7f4c9e23", 
+        "questionOf": "tender"
+      }
+    ], 
+    "owner": "broker", 
     "qualifications": [
       {
         "status": "active", 
         "eligible": true, 
         "qualified": true, 
         "bidID": "ce6fe53ed8074a8993c306b027fa9a53", 
-        "date": "2019-04-01T01:00:00+03:00", 
+        "date": "2019-10-01T01:00:00+03:00", 
         "id": "d50f4b7f5585484cad496d3bbed3efbe"
       }, 
       {
@@ -33,7 +50,7 @@ Content-Type: application/json; charset=UTF-8
         "eligible": true, 
         "qualified": true, 
         "bidID": "8bb3878e6aa347bf8d402a8988d6475c", 
-        "date": "2019-04-01T01:00:00+03:00", 
+        "date": "2019-10-01T01:00:00+03:00", 
         "id": "7ce580e323294b4fb247ecf6895618df"
       }, 
       {
@@ -41,50 +58,10 @@ Content-Type: application/json; charset=UTF-8
         "eligible": false, 
         "qualified": false, 
         "bidID": "300d8d13119e4450b4fa9cab0c0e9507", 
-        "date": "2019-04-01T01:00:00+03:00", 
+        "date": "2019-10-01T01:00:00+03:00", 
         "id": "5f55280b600640a4866e1012b3e774ab"
       }
     ], 
-    "submissionMethod": "electronicAuction", 
-    "next_check": "2019-04-01T01:36:00+03:00", 
-    "procuringEntity": {
-      "kind": "general", 
-      "name": "ЗОСШ #10 м.Вінниці", 
-      "address": {
-        "postalCode": "21027", 
-        "countryName": "Україна", 
-        "streetAddress": "вул. Стахурського. 22", 
-        "region": "м. Вінниця", 
-        "locality": "м. Вінниця"
-      }, 
-      "contactPoint": {
-        "url": "http://sch10.edu.vn.ua/", 
-        "name_en": "Kutsa Svitlana V.", 
-        "name": "Куца Світлана Валентинівна", 
-        "availableLanguage": "uk", 
-        "telephone": "+380 (432) 46-53-02"
-      }, 
-      "identifier": {
-        "scheme": "UA-EDR", 
-        "legalName_en": "The institution \"Secondary school I-III levels № 10 Vinnitsa City Council\"", 
-        "id": "21725150", 
-        "legalName": "Заклад \"Загальноосвітня школа І-ІІІ ступенів № 10 Вінницької міської ради\""
-      }, 
-      "name_en": "School #10 of Vinnytsia"
-    }, 
-    "questions": [
-      {
-        "description": "Просимо додати таблицю потрібної калорійності харчування", 
-        "dateAnswered": "2019-04-01T01:00:00+03:00", 
-        "title": "Калорійність", 
-        "date": "2019-04-01T01:00:00+03:00", 
-        "answer": "Таблицю додано в файлі \"Kalorijnist.xslx\"", 
-        "id": "690479c37d9e47f3bff5ef4a7f4c9e23", 
-        "questionOf": "tender"
-      }
-    ], 
-    "owner": "broker", 
-    "title_en": "Services in school canteens", 
     "id": "ef61695c05174b37b2bb6a8da114cc9d", 
     "guarantee": {
       "currency": "USD", 
@@ -99,9 +76,9 @@ Content-Type: application/json; charset=UTF-8
         "url": "http://public-docs-sandbox.prozorro.gov.ua/get/4bd365011d86416fbfb9a426698d2030?KeyID=a8968c46&Signature=SYcYG4gwyNSfICbddHA2ChiaDtTKHpMaQqpOKN21bY1X8FefB7zFfliuEtq0OHQ4UIjU%252BNqWUETv3Q3L7SsNDA%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "datePublished": "2019-10-01T01:00:00+03:00", 
         "id": "bd824aeb7d9449bc81ce8a1ad7c022af", 
-        "dateModified": "2019-04-01T01:00:00+03:00"
+        "dateModified": "2019-10-01T01:00:00+03:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
@@ -111,9 +88,9 @@ Content-Type: application/json; charset=UTF-8
         "url": "http://public-docs-sandbox.prozorro.gov.ua/get/90ff0cc4f61545d8ab72e8cf9fbd729f?KeyID=a8968c46&Signature=vaE3uRPHCcBTz9M9tBYO6474BQ00Zoh81LYyyov5Y7pDQGSQmKtckMMANC9CCE6CeDi8ftOJDm6IVVU9XS36Dw%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "datePublished": "2019-10-01T01:00:00+03:00", 
         "id": "9d62a39aeb3346cd82bd3b10dfc52f7f", 
-        "dateModified": "2019-04-01T01:00:00+03:00"
+        "dateModified": "2019-10-01T01:00:00+03:00"
       }, 
       {
         "hash": "md5:00000000000000000000000000000000", 
@@ -123,29 +100,55 @@ Content-Type: application/json; charset=UTF-8
         "url": "http://public-docs-sandbox.prozorro.gov.ua/get/84de9e2ecc404982ab2124fd554c0cb3?KeyID=a8968c46&Signature=sX5%252BSJTgEercuY1lUEb7591Dse39I8zy411UsamdXznI8HNo3i1PF3RgMWgkggcQ9xfGrBTAghey4VhHvn9hBQ%253D%253D", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2019-04-01T01:00:00+03:00", 
+        "datePublished": "2019-10-01T01:00:00+03:00", 
         "id": "9d62a39aeb3346cd82bd3b10dfc52f7f", 
-        "dateModified": "2019-04-01T01:00:00+03:00"
+        "dateModified": "2019-10-01T01:00:00+03:00"
       }
     ], 
     "title": "Послуги шкільних їдалень", 
     "qualificationPeriod": {
-      "startDate": "2019-03-22T01:00:00+03:00", 
-      "endDate": "2019-04-01T01:00:00+03:00"
+      "startDate": "2019-09-21T01:00:00+03:00", 
+      "endDate": "2019-10-01T01:00:00+03:00"
     }, 
-    "tenderID": "UA-2019-04-01-000001", 
-    "dateModified": "2019-04-01T01:00:00+03:00", 
+    "tenderID": "UA-2019-10-01-000001", 
+    "dateModified": "2019-10-01T01:00:00+03:00", 
     "numberOfBids": 2, 
     "tenderPeriod": {
-      "startDate": "2019-02-19T01:00:00+03:00", 
-      "endDate": "2019-03-22T01:00:00+03:00"
+      "startDate": "2019-08-21T01:00:00+03:00", 
+      "endDate": "2019-09-21T01:00:00+03:00"
     }, 
     "auctionPeriod": {
-      "startDate": "2019-04-01T01:00:00+03:00", 
-      "shouldStartAfter": "2019-04-02T00:00:00+03:00"
+      "startDate": "2019-10-01T01:00:00+03:00", 
+      "shouldStartAfter": "2019-10-02T00:00:00+03:00"
     }, 
     "procurementMethodType": "aboveThresholdEU", 
-    "date": "2019-04-01T01:00:00+03:00", 
+    "date": "2019-10-01T01:00:00+03:00", 
+    "milestones": [
+      {
+        "code": "prepayment", 
+        "sequenceNumber": 0, 
+        "title": "signingTheContract", 
+        "duration": {
+          "type": "banking", 
+          "days": 2
+        }, 
+        "percentage": 45.55, 
+        "type": "financing", 
+        "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }, 
+      {
+        "code": "postpayment", 
+        "sequenceNumber": 0, 
+        "title": "deliveryOfGoods", 
+        "duration": {
+          "type": "calendar", 
+          "days": 900
+        }, 
+        "percentage": 54.45, 
+        "type": "financing", 
+        "id": "98fccaae0615493392ee5471ed6a9e17"
+      }
+    ], 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35.0, 
@@ -175,8 +178,8 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-21T00:00:00+02:00", 
-          "endDate": "2019-05-21T00:00:00+02:00"
+          "startDate": "2019-10-21T00:00:00+02:00", 
+          "endDate": "2019-11-20T00:00:00+02:00"
         }, 
         "id": "d2fae6b5562b4d86acb60dc3400fc96c", 
         "quantity": 1.0
@@ -204,8 +207,8 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2019-04-21T00:00:00+02:00", 
-          "endDate": "2019-05-21T00:00:00+02:00"
+          "startDate": "2019-10-21T00:00:00+02:00", 
+          "endDate": "2019-11-20T00:00:00+02:00"
         }, 
         "id": "3a9ed691f4a447b1b27a7d04b90a1234", 
         "quantity": 1.0
@@ -223,9 +226,9 @@ Content-Type: application/json; charset=UTF-8
             "url": "http://public-docs-sandbox.prozorro.gov.ua/get/be522ebe55184a0785d4ae23174e4172?KeyID=a8968c46&Signature=EaJKUS9uYShLWYTTp0e7%2Fh5TuikfyAQDmt3RZuIghzw6EnKcWh6z3zk0yfjbdw%2FfoWQ5OOWAaleuZz52pNhFAQ%253D%253D", 
             "format": "application/pdf", 
             "documentOf": "tender", 
-            "datePublished": "2019-04-01T01:00:00+03:00", 
+            "datePublished": "2019-10-01T01:00:00+03:00", 
             "id": "a2a66b3c0d8642879b6adf261fa6aee4", 
-            "dateModified": "2019-04-01T01:00:00+03:00"
+            "dateModified": "2019-10-01T01:00:00+03:00"
           }, 
           {
             "hash": "md5:00000000000000000000000000000000", 
@@ -236,9 +239,9 @@ Content-Type: application/json; charset=UTF-8
             "confidentialityRationale": "Only our company sells badgers with pink hair.", 
             "title": "Proposal_top_secrets.pdf", 
             "documentOf": "tender", 
-            "datePublished": "2019-04-01T01:00:00+03:00", 
+            "datePublished": "2019-10-01T01:00:00+03:00", 
             "id": "2049f880252f44e98d6ef8451a2a64c9", 
-            "dateModified": "2019-04-01T01:00:00+03:00"
+            "dateModified": "2019-10-01T01:00:00+03:00"
           }
         ], 
         "tenderers": [
@@ -274,9 +277,9 @@ Content-Type: application/json; charset=UTF-8
             "url": "http://public-docs-sandbox.prozorro.gov.ua/get/783f72885bc64e9fa5a031429357a29c?KeyID=a8968c46&Signature=3XxKb8lnlv7Cbt9GdqrC3wT%2FJnsyRNRsnyR01ZblD0Xi9MYqqYfcpCM%252BSxuvCw4naoUkpl8%2FLZCWNJWddaPLCQ%253D%253D", 
             "format": "application/pdf", 
             "documentOf": "tender", 
-            "datePublished": "2019-04-01T01:00:00+03:00", 
+            "datePublished": "2019-10-01T01:00:00+03:00", 
             "id": "9533018e265a4608ac5d78d118ce4c2e", 
-            "dateModified": "2019-04-01T01:00:00+03:00"
+            "dateModified": "2019-10-01T01:00:00+03:00"
           }
         ]
       }, 
@@ -342,7 +345,31 @@ Content-Type: application/json; charset=UTF-8
       "amount": 501.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "awardCriteria": "lowestCost"
+    "procuringEntity": {
+      "kind": "general", 
+      "name": "ЗОСШ #10 м.Вінниці", 
+      "address": {
+        "postalCode": "21027", 
+        "countryName": "Україна", 
+        "streetAddress": "вул. Стахурського. 22", 
+        "region": "м. Вінниця", 
+        "locality": "м. Вінниця"
+      }, 
+      "contactPoint": {
+        "url": "http://sch10.edu.vn.ua/", 
+        "name_en": "Kutsa Svitlana V.", 
+        "name": "Куца Світлана Валентинівна", 
+        "availableLanguage": "uk", 
+        "telephone": "+380 (432) 46-53-02"
+      }, 
+      "identifier": {
+        "scheme": "UA-EDR", 
+        "legalName_en": "The institution \"Secondary school I-III levels № 10 Vinnitsa City Council\"", 
+        "id": "21725150", 
+        "legalName": "Заклад \"Загальноосвітня школа І-ІІІ ступенів № 10 Вінницької міської ради\""
+      }, 
+      "name_en": "School #10 of Vinnytsia"
+    }
   }
 }
 
