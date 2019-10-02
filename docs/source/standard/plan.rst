@@ -163,6 +163,9 @@ cancellation
 
     :ref:`PlanCancellation`
 
+milestones
+----------
+   List of :ref:`PlanMilestone` objects
 
 dateModified
 ------------
