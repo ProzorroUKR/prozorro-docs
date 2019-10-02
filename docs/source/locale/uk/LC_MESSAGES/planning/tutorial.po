@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.tender.limited 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-13 21:17+0300\n"
+"POT-Creation-Date: 2019-10-03 00:09+0300\n"
 "PO-Revision-Date: 2019-09-04 15:21+0300\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
 "Language-Team: Ukrainian <info@quintagroup.com>\n"
@@ -11,8 +11,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
-"Language: uk\n"
-"X-Generator: Poedit 2.2.3\n"
 
 #: ../../source/planning/tutorial.rst:4
 msgid "Tutorial"
@@ -30,181 +28,182 @@ msgstr "Наполегливо рекомендуємо створювати п�
 msgid "Let’s create a plan:"
 msgstr "Створимо план:"
 
-#: ../../source/planning/tutorial.rst:14
+#: ../../source/planning/tutorial.rst:16
 msgid ""
-"We have `201 Created` response code, `Location` header and body with extra "
-"`id`, `planID`, and `dateModified` properties."
+"We have `201 Created` response code, `Location` header and body with "
+"extra `id`, `planID`, and `dateModified` properties."
 msgstr ""
 "Ми отримали код відповіді `201 Created`, заголовок `Location` і тіло з "
-"додатковим ідентифікатором `id`, `planID` та властивість `dateModified` - дату, "
-"що показує час, коли план закупівлі востаннє модифікувався."
+"додатковим ідентифікатором `id`, `planID` та властивість `dateModified` -"
+" дату, що показує час, коли план закупівлі востаннє модифікувався."
 
 #: ../../source/planning/tutorial.rst:18
 msgid ""
-"The second step is moving the plan to `scheduled` status so that it becomes "
-"actually published:"
+"The second step is moving the plan to `scheduled` status so that it "
+"becomes actually published:"
 msgstr ""
-"Другий крок - переміщення плану в статус `scheduled`, щоб опубліковати план:"
+"Другий крок - переміщення плану в статус `scheduled`, щоб опубліковати "
+"план:"
 
 #: ../../source/planning/tutorial.rst:23
 msgid "Let's check what plan registry contains:"
 msgstr "Перевіримо, що містить реєстр планів закупівель:"
 
-#: ../../source/planning/tutorial.rst:21
+#: ../../source/planning/tutorial.rst:28
 msgid ""
-"We do see the internal `id` of a plan (that can be used to construct full URL "
-"by prepending `http://api-sandbox.openprocurement.org/api/0/plans/`) and its "
-"`dateModified` datestamp."
+"We do see the internal `id` of a plan (that can be used to construct full"
+" URL by prepending `http://api-sandbox.openprocurement.org/api/0/plans/`)"
+" and its `dateModified` datestamp."
 msgstr ""
-"Відображається  `id` - внутрішній ідентифікатор (який можна використовувати, "
-"щоб побудувати повну URL-адресу, додаючи `http://api-sandbox.openprocurement."
-"org/api/0/plans/` на початку) та мітка часу `dateModified`."
+"Відображається  `id` - внутрішній ідентифікатор (який можна "
+"використовувати, щоб побудувати повну URL-адресу, додаючи `http://api-"
+"sandbox.openprocurement.org/api/0/plans/` на початку) та мітка часу "
+"`dateModified`."
 
-#: ../../source/planning/tutorial.rst:25
+#: ../../source/planning/tutorial.rst:32
 msgid "Modifying plan"
 msgstr "Модифікація плану закупівлі"
 
-#: ../../source/planning/tutorial.rst:27
+#: ../../source/planning/tutorial.rst:34
 msgid "Let's update plan by supplementing it with all other essential properties:"
 msgstr "Оновимо план шляхом надання їй усіх інших важливих властивостей:"
 
-#: ../../source/planning/tutorial.rst:34
+#: ../../source/planning/tutorial.rst:41
 msgid ""
-"We see the added properies have merged with existing plan data. Additionally, "
-"the `dateModified` property was updated to reflect the last modification "
-"datestamp."
+"We see the added properies have merged with existing plan data. "
+"Additionally, the `dateModified` property was updated to reflect the last"
+" modification datestamp."
 msgstr ""
 "Ми бачимо, що додаткові властивості об’єднані з існуючими даними плану. "
-"Додатково оновлена властивість dateModified, щоб відображати останню дату "
-"модифікації."
+"Додатково оновлена властивість dateModified, щоб відображати останню дату"
+" модифікації."
 
-#: ../../source/planning/tutorial.rst:36
+#: ../../source/planning/tutorial.rst:43
 msgid "Checking the listing again reflects the new modification date:"
 msgstr "Ще одна перевірка списку відображає нову дату модифікації:"
 
-#: ../../source/planning/tutorial.rst:45
+#: ../../source/planning/tutorial.rst:52
 msgid "Tender creation from a procurement plan"
 msgstr "Створення закупівлі з плану"
 
-#: ../../source/planning/tutorial.rst:47
+#: ../../source/planning/tutorial.rst:54
 msgid ""
-"A tender can be created from your procurement plan. This tender will be linked "
-"with the plan using :ref:`tender's plans <tender>` and :ref:`plan's tender_id "
-"<tender_id>` fields."
+"A tender can be created from your procurement plan. This tender will be "
+"linked with the plan using :ref:`tender's plans <tender>` and "
+":ref:`plan's tender_id <tender_id>` fields."
 msgstr ""
-"Закупівля може бути створена з відповідного їй плану закупівлі. Закупівля буде "
-"пов’язана з планом за допомогою полів :ref:`plans тендеру <tender>` і :ref:"
-"`tender_id плану <tender_id>`."
+"Закупівля може бути створена з відповідного їй плану закупівлі. Закупівля"
+" буде пов’язана з планом за допомогою полів :ref:`plans тендеру <tender>`"
+" і :ref:`tender_id плану <tender_id>`."
 
 #: ../../source/planning/tutorial.rst:0
 msgid ""
-"System failures during tender-from-plan creation can produce tenders that are "
-"not linked with their plans by :ref:`tender_id`."
+"System failures during tender-from-plan creation can produce tenders that"
+" are not linked with their plans by :ref:`tender_id`."
 msgstr ""
 "Системні збої під час створення закупівлі з плану можуть призвести до "
 "закупівель, які не пов’язані з їхніми планами по :ref:`tender_id`."
 
 #: ../../source/planning/tutorial.rst:0
 msgid ""
-"Make sure you do use :ref:`2pc` and do not proceed with these error state "
-"tender objects (create new ones)."
+"Make sure you do use :ref:`2pc` and do not proceed with these error state"
+" tender objects (create new ones)."
 msgstr ""
-"Переконайтеся, що ви використовуєте :ref:`2pc` і не проводте ці помилкові "
-"закупівлі (створюйте нові натомість)."
+"Переконайтеся, що ви використовуєте :ref:`2pc` і не проводте ці помилкові"
+" закупівлі (створюйте нові натомість)."
 
-#: ../../source/planning/tutorial.rst:55
+#: ../../source/planning/tutorial.rst:62
 msgid ""
-"There are validation rules that are supposed to decline the chance of making a "
-"mistake"
+"There are validation rules that are supposed to decline the chance of "
+"making a mistake"
 msgstr ""
-"Для зменшення шансів зробити помилку та зв’язати закупівлю з неправильним "
-"планом, встановлені правила валідації"
+"Для зменшення шансів зробити помилку та зв’язати закупівлю з неправильним"
+" планом, встановлені правила валідації"
 
-#: ../../source/planning/tutorial.rst:60
+#: ../../source/planning/tutorial.rst:67
 msgid "There are three of them:"
 msgstr "Усього їх три:"
 
-#: ../../source/planning/tutorial.rst:62
+#: ../../source/planning/tutorial.rst:69
 msgid "procurementMethodType"
 msgstr "procurementMethodType - відповідність типу процедури плана і тендера"
 
-#: ../../source/planning/tutorial.rst:63
+#: ../../source/planning/tutorial.rst:70
 msgid ""
-"procuringEntity.identifier - matching id and scheme with the same fields in "
-"tender data"
+"procuringEntity.identifier - matching id and scheme with the same fields "
+"in tender data"
 msgstr ""
-"procuringEntity.identifier - відповідність полів id і scheme для плана і тендера"
+"procuringEntity.identifier - відповідність полів id і scheme для плана і "
+"тендера"
 
-#: ../../source/planning/tutorial.rst:64
+#: ../../source/planning/tutorial.rst:71
 msgid ""
-"classification.id  - matching with tender item classification codes using first "
-"4 digits (``336`` is exception)"
+"classification.id  - matching with tender item classification codes using"
+" first 4 digits (``336`` is exception)"
 msgstr ""
-"classification.id - відповідність перших 4-х цифр кодів класифікатора плана і "
-"тендера (336 виняток - відповідність перших 3-х цифр)"
+"classification.id - відповідність перших 4-х цифр кодів класифікатора "
+"плана і тендера (336 виняток - відповідність перших 3-х цифр)"
 
-#: ../../source/planning/tutorial.rst:66
+#: ../../source/planning/tutorial.rst:73
 msgid ""
 "Plan should contain budget breakdown, otherwise it will be an error "
 "during tender creation:"
 msgstr ""
-"План має містити джерела фінансування, інакше буде отрімано помилку "
-"під час створення тендеру:"
+"План має містити джерела фінансування, інакше буде отрімано помилку під "
+"час створення тендеру:"
 
-#: ../../source/planning/tutorial.rst:71
+#: ../../source/planning/tutorial.rst:78
 msgid "Let's add budget breakdown to plan:"
 msgstr "Додамо джерело фінансування до плану:"
 
-#: ../../source/planning/tutorial.rst:76
+#: ../../source/planning/tutorial.rst:83
 msgid "A successful example looks like this:"
 msgstr "Успішний приклад виглядає так:"
 
-#: ../../source/planning/tutorial.rst:81
-msgid ""
-"After tender was created from plan it's no longer allowed to change "
-"`procuringEntity` and `budget.breakdown` fields:"
-msgstr ""
-"Після створення плану зміна полів `procuringEntity` та `budget.breakdown` "
-"більше неможліва."
-
-#: ../../source/planning/tutorial.rst:80
+#: ../../source/planning/tutorial.rst:88
 msgid "Let's check that the plan status was switched to `complete`:"
 msgstr "Перевіримо, чи стан плану було перемкнено на `complete`:"
 
-#: ../../source/planning/tutorial.rst:88
+#: ../../source/planning/tutorial.rst:93
+msgid "After tender was created from plan it's no longer allowed to change plan:"
+msgstr ""
+"Після створення закупівлі з плану змінити план більше неможливо:"
+
+#: ../../source/planning/tutorial.rst:101
 msgid "Plan completing without tendering"
 msgstr "Завершення плану без торгів"
 
-#: ../../source/planning/tutorial.rst:90
+#: ../../source/planning/tutorial.rst:103
 msgid "There is a way to complete a plan without tender creation:"
 msgstr "Існує спосіб завершити план без створення тендеру:"
 
-#: ../../source/planning/tutorial.rst:95
+#: ../../source/planning/tutorial.rst:108
 msgid "This only works if `procurementMethodType` is one of the following:"
 msgstr ""
 "Це працює лише в тому випадку, якщо `procurementMethodType` є одним із "
 "наступних:"
 
-#: ../../source/planning/tutorial.rst:97
+#: ../../source/planning/tutorial.rst:110
 msgid "``belowThreshold``"
 msgstr ""
 
-#: ../../source/planning/tutorial.rst:98
+#: ../../source/planning/tutorial.rst:111
 msgid "``reporting``"
 msgstr ""
 
-#: ../../source/planning/tutorial.rst:99
+#: ../../source/planning/tutorial.rst:112
 msgid "empty string"
 msgstr "порожній рядок"
 
-#: ../../source/planning/tutorial.rst:103
+#: ../../source/planning/tutorial.rst:116
 msgid "Plan cancellation"
 msgstr "Скасування плану"
 
-#: ../../source/planning/tutorial.rst:105
+#: ../../source/planning/tutorial.rst:118
 msgid "A plan can be cancelled using :ref:`plancancellation`:"
 msgstr "План можна скасувати за допомогою :ref:`plancancellation`:"
 
-#: ../../source/planning/tutorial.rst:110
+#: ../../source/planning/tutorial.rst:123
 msgid "Making the cancellation object ``active`` cancels the plan:"
 msgstr "Зміна статуса об’єкта скасування на ``active`` скасовує план:"
+

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.api 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-17 20:56+0300\n"
+"POT-Creation-Date: 2019-10-03 00:09+0300\n"
 "PO-Revision-Date: 2019-06-21 14:17+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -25,7 +25,7 @@ msgstr ""
 msgid "planID"
 msgstr ""
 
-#: ../../source/standard/plan.rst:10 ../../source/standard/plan.rst:95
+#: ../../source/standard/plan.rst:10 ../../source/standard/plan.rst:148
 msgid "string, auto-generated, read-only"
 msgstr "рядок, генерується автоматично, лише для читання"
 
@@ -67,11 +67,11 @@ msgid "status"
 msgstr ""
 
 #: ../../source/standard/plan.rst:30 ../../source/standard/plan.rst:197
-#: ../../source/standard/plan.rst:208 ../../source/standard/plan.rst:278
+#: ../../source/standard/plan.rst:283
 msgid "string"
 msgstr "рядок"
 
-#: ../../source/standard/plan.rst:36 ../../source/standard/plan.rst:201
+#: ../../source/standard/plan.rst:36 ../../source/standard/plan.rst:202
 msgid "Possible values:"
 msgstr "Можливі значення:"
 
@@ -99,55 +99,55 @@ msgstr "Статус плану."
 msgid "buyers"
 msgstr ""
 
-#: ../../source/standard/plan.rst:29
+#: ../../source/standard/plan.rst:82
 msgid "List of :ref:`PlanOrganization` objects, required at least 1 object"
 msgstr "Cписок об’єктів :ref:`PlanOrganization`, обов’язково 1 об’єкт"
 
-#: ../../source/standard/plan.rst:31
+#: ../../source/standard/plan.rst:84
 msgid "Identifications of the subjects in whose interests the purchase is made"
 msgstr "Cуб’єкт(и) в інтересах якого(их) проводиться закупівля"
 
-#: ../../source/standard/plan.rst:34
+#: ../../source/standard/plan.rst:87
 msgid "tender"
 msgstr ""
 
-#: ../../source/standard/plan.rst:35
+#: ../../source/standard/plan.rst:88
 msgid ":ref:`PlanTender`, required"
 msgstr ":ref:`PlanTender`, обов’язково"
 
-#: ../../source/standard/plan.rst:37
+#: ../../source/standard/plan.rst:90
 msgid "Data regarding tender process."
 msgstr "Дані щодо тендерного процесу."
 
-#: ../../source/standard/plan.rst:40
+#: ../../source/standard/plan.rst:93
 msgid "budget"
 msgstr ""
 
-#: ../../source/standard/plan.rst:41
+#: ../../source/standard/plan.rst:94
 msgid ":ref:`Budget`, required"
 msgstr ":ref:`Budget`, обов’язково"
 
-#: ../../source/standard/plan.rst:43
+#: ../../source/standard/plan.rst:96
 msgid "Total available tender budget."
 msgstr "Повний доступний бюджет закупівлі."
 
-#: ../../source/standard/plan.rst:45
+#: ../../source/standard/plan.rst:98
 msgid "|ocdsDescription| The total estimated value of the procurement."
 msgstr "|ocdsDescription| Загальна кошторисна вартість закупівлі."
 
-#: ../../source/standard/plan.rst:48
+#: ../../source/standard/plan.rst:101
 msgid "Absent in :ref:`esco`"
 msgstr "Відсутнє в :ref:`esco`"
 
-#: ../../source/standard/plan.rst:51
+#: ../../source/standard/plan.rst:104
 msgid "classification"
 msgstr ""
 
-#: ../../source/standard/plan.rst:53
+#: ../../source/standard/plan.rst:106
 msgid ":ref:`Classification`, required"
 msgstr ":ref:`Classification`, обов’язково"
 
-#: ../../source/standard/plan.rst:55
+#: ../../source/standard/plan.rst:108
 msgid ""
 "|ocdsDescription| The primary classification for the item. See the "
 "itemClassificationScheme to identify preferred classification lists, "
@@ -157,7 +157,7 @@ msgstr ""
 "itemClassificationScheme, щоб визначити бажані списки класифікації, "
 "включно з CPV та GSIN."
 
-#: ../../source/standard/plan.rst:60
+#: ../../source/standard/plan.rst:113
 msgid ""
 "It is mandatory for `classification.scheme` to be `CPV` or `ДК021`. The "
 "`classification.id` should be valid CPV or ДК021 code."
@@ -165,15 +165,15 @@ msgstr ""
 "Класифікація `classification.scheme` обов’язково повинна бути `CPV` або "
 "`ДК021`. `classification.id` повинно бути дійсним CPV або ДК021 кодом."
 
-#: ../../source/standard/plan.rst:64
+#: ../../source/standard/plan.rst:117
 msgid "additionalClassifications"
 msgstr ""
 
-#: ../../source/standard/plan.rst:66
+#: ../../source/standard/plan.rst:119
 msgid "List of :ref:`Classification` objects"
 msgstr "Список об’єктів :ref:`Classification`"
 
-#: ../../source/standard/plan.rst:68
+#: ../../source/standard/plan.rst:121
 msgid ""
 "|ocdsDescription| An array of additional classifications for the item. "
 "See the itemClassificationScheme codelist for common options to use in "
@@ -185,7 +185,7 @@ msgstr ""
 "в OCDS. Також можна використовувати для представлення кодів з внутрішньої"
 " схеми класифікації."
 
-#: ../../source/standard/plan.rst:74
+#: ../../source/standard/plan.rst:127
 msgid ""
 "Item wich classification.id starts with 336 and contains "
 "additionalClassification objects have to contain no more than one "
@@ -195,7 +195,7 @@ msgstr ""
 "об’єкти класифікації, повинен містити не більше однієї додаткової "
 "класифікації зі схемою INN."
 
-#: ../../source/standard/plan.rst:78
+#: ../../source/standard/plan.rst:131
 msgid ""
 "Item with classification.id=33600000-6 have to contain exactly one "
 "additionalClassifications with scheme=INN."
@@ -203,43 +203,43 @@ msgstr ""
 "Елемент з classification.id = 33600000-6 повинен містити рівно одну "
 "додаткову класифікацію зі схемою = INN."
 
-#: ../../source/standard/plan.rst:81
+#: ../../source/standard/plan.rst:134
 msgid "It is mandatory to have at least one item with `ДКПП` as `scheme`."
 msgstr "Обов’язково мати принаймні один елемент з `ДКПП` як `scheme`."
 
-#: ../../source/standard/plan.rst:84
+#: ../../source/standard/plan.rst:137
 msgid "documents"
 msgstr ""
 
-#: ../../source/standard/plan.rst:85
+#: ../../source/standard/plan.rst:138
 msgid "List of :ref:`document` objects"
 msgstr "Список об’єктів :ref:`document`"
 
-#: ../../source/standard/plan.rst:87
+#: ../../source/standard/plan.rst:140
 msgid "|ocdsDescription| All documents and attachments related to the tender."
 msgstr "|ocdsDescription| Всі документи та додатки пов’язані із закупівлею."
 
-#: ../../source/standard/plan.rst:93
+#: ../../source/standard/plan.rst:146
 msgid "tender_id"
 msgstr ""
 
-#: ../../source/standard/plan.rst:97
+#: ../../source/standard/plan.rst:150
 msgid "``id`` of the linked tender object. See :ref:`tender-from-plan`"
 msgstr "``id`` пов’язаного тендер об’єкта. Див :ref:`tender-from-plan`"
 
-#: ../../source/standard/plan.rst:100
+#: ../../source/standard/plan.rst:153
 msgid "items"
 msgstr ""
 
-#: ../../source/standard/plan.rst:101
+#: ../../source/standard/plan.rst:154
 msgid "list of :ref:`item` objects, required"
 msgstr "список об’єктів :ref:`item`, обов’язково"
 
-#: ../../source/standard/plan.rst:103
+#: ../../source/standard/plan.rst:156
 msgid "List that contains single item being procured."
 msgstr "Список, який містить елемент, що закуповується."
 
-#: ../../source/standard/plan.rst:105
+#: ../../source/standard/plan.rst:158
 msgid ""
 "|ocdsDescription| The goods and services to be purchased, broken into "
 "line items wherever possible. Items should not be duplicated, but a "
@@ -254,159 +254,150 @@ msgid "cancellation"
 msgstr ""
 
 #: ../../source/standard/plan.rst:164
-#, fuzzy
 msgid ":ref:`PlanCancellation`"
-msgstr ":ref:`PlanOrganization`, обов’язково"
+msgstr ":ref:`PlanCancellation`"
 
 #: ../../source/standard/plan.rst:168
 msgid "dateModified"
 msgstr ""
 
-#: ../../source/standard/plan.rst:110 ../../source/standard/plan.rst:114
+#: ../../source/standard/plan.rst:169 ../../source/standard/plan.rst:173
 msgid "string, :ref:`date`, auto-generated"
 msgstr "рядок, :ref:`date`, генерується автоматично"
 
-#: ../../source/standard/plan.rst:113
+#: ../../source/standard/plan.rst:172
 msgid "datePublished"
 msgstr ""
 
-#: ../../source/standard/plan.rst:117
+#: ../../source/standard/plan.rst:176
 msgid "owner"
 msgstr ""
 
-#: ../../source/standard/plan.rst:118
+#: ../../source/standard/plan.rst:177
 msgid "string, auto-generated"
 msgstr "рядок, генерується автоматично"
 
-#: ../../source/standard/plan.rst:121
+#: ../../source/standard/plan.rst:180
 msgid "revisions"
 msgstr ""
 
-#: ../../source/standard/plan.rst:122
+#: ../../source/standard/plan.rst:181
 msgid "List of :ref:`revision` objects, auto-generated"
 msgstr "Список об’єктів :ref:`revision`, генерується автоматично, лише для читання"
 
-#: ../../source/standard/plan.rst:124
+#: ../../source/standard/plan.rst:183
 msgid "Historical changes to Tender object properties."
 msgstr ""
 
-#: ../../source/standard/plan.rst:133
+#: ../../source/standard/plan.rst:192
 msgid "PlanTender"
 msgstr ""
 
-#: ../../source/standard/plan.rst:137
+#: ../../source/standard/plan.rst:196
 msgid "procurementMethod"
 msgstr ""
 
-#: ../../source/standard/plan.rst:138 ../../source/standard/plan.rst:224
-msgid "string"
-msgstr "рядок"
-
-#: ../../source/standard/plan.rst:143
-msgid "Possible values:"
-msgstr "Можливі значення:"
-
-#: ../../source/standard/plan.rst:141
+#: ../../source/standard/plan.rst:200
 msgid "''"
 msgstr ""
 
-#: ../../source/standard/plan.rst:142
+#: ../../source/standard/plan.rst:201
 msgid "'open'"
 msgstr ""
 
-#: ../../source/standard/plan.rst:143
+#: ../../source/standard/plan.rst:202
 msgid "'limited'"
 msgstr ""
 
-#: ../../source/standard/plan.rst:145
+#: ../../source/standard/plan.rst:204
 msgid "Procurement Method of the Tender."
 msgstr "Метод закупівлі тендеру."
 
-#: ../../source/standard/plan.rst:149
+#: ../../source/standard/plan.rst:208
 msgid "procurementMethodType"
 msgstr ""
 
-#: ../../source/standard/plan.rst:150
+#: ../../source/standard/plan.rst:209
 msgid "string Possible values for `procurementMethod` == `''`:"
 msgstr "Можливі значення для `procurementMethod` == `''`:"
 
-#: ../../source/standard/plan.rst:153
+#: ../../source/standard/plan.rst:212
 msgid "'' - Without using an electronic system"
 msgstr "'' - Без використання електронної системи"
 
-#: ../../source/standard/plan.rst:154
+#: ../../source/standard/plan.rst:213
 msgid "'centralizedProcurement' - Procurement via Central Purchasing Body"
 msgstr ""
 "'centralizedProcurement' - Закупівля через Централізовану закупівельну "
 "організацію"
 
-#: ../../source/standard/plan.rst:156
+#: ../../source/standard/plan.rst:215
 msgid "Possible values for `procurementMethod` == `'open'`:"
 msgstr "Можливі значення для `procurementMethod` == `’open’`:"
 
-#: ../../source/standard/plan.rst:158
+#: ../../source/standard/plan.rst:217
 msgid "belowThreshold"
 msgstr ""
 
-#: ../../source/standard/plan.rst:159
+#: ../../source/standard/plan.rst:218
 msgid "aboveThresholdUA"
 msgstr ""
 
-#: ../../source/standard/plan.rst:160
+#: ../../source/standard/plan.rst:219
 msgid "aboveThresholdEU"
 msgstr ""
 
-#: ../../source/standard/plan.rst:161
+#: ../../source/standard/plan.rst:220
 msgid "aboveThresholdUA.defense"
 msgstr ""
 
-#: ../../source/standard/plan.rst:162
+#: ../../source/standard/plan.rst:221
 msgid "esco"
 msgstr ""
 
-#: ../../source/standard/plan.rst:163
+#: ../../source/standard/plan.rst:222
 msgid "closeFrameworkAgreementUA"
 msgstr ""
 
-#: ../../source/standard/plan.rst:164
+#: ../../source/standard/plan.rst:223
 msgid "competitiveDialogueEU"
 msgstr ""
 
-#: ../../source/standard/plan.rst:165
+#: ../../source/standard/plan.rst:224
 msgid "competitiveDialogueUA"
 msgstr ""
 
-#: ../../source/standard/plan.rst:167
+#: ../../source/standard/plan.rst:226
 msgid "Possible values for `procurementMethod` == `'limited'`:"
 msgstr "Можливі значення для `procurementMethod` == `’limited’`:"
 
-#: ../../source/standard/plan.rst:164
+#: ../../source/standard/plan.rst:228
 msgid "reporting"
 msgstr ""
 
-#: ../../source/standard/plan.rst:165
+#: ../../source/standard/plan.rst:229
 msgid "negotiation"
 msgstr ""
 
-#: ../../source/standard/plan.rst:166
+#: ../../source/standard/plan.rst:230
 msgid "negotiation.quick"
 msgstr ""
 
-#: ../../source/standard/plan.rst:170
+#: ../../source/standard/plan.rst:234
 msgid "tenderPeriod"
 msgstr ""
 
-#: ../../source/standard/plan.rst:171
+#: ../../source/standard/plan.rst:235
 msgid ":ref:`period`, required"
 msgstr ":ref:`period`, обов’язково"
 
-#: ../../source/standard/plan.rst:173
+#: ../../source/standard/plan.rst:237
 msgid "Period when bids can be submitted. At least `endDate` has to be provided."
 msgstr ""
 "Період, коли подаються пропозиції. Повинна бути вказана хоча б `endDate` "
 "дата."
 
-#: ../../source/standard/plan.rst:175
+#: ../../source/standard/plan.rst:239
 msgid ""
 "|ocdsDescription| The period when the tender is open for submissions. The"
 " end date is the closing date for tender submissions."
@@ -414,131 +405,125 @@ msgstr ""
 "|ocdsDescription| Період, коли закупівля відкрита для подачі пропозицій. "
 "Кінцева дата - це дата, коли перестають прийматись пропозиції."
 
-#: ../../source/standard/plan.rst:183
+#: ../../source/standard/plan.rst:247
 msgid "Budget"
 msgstr ""
 
-#: ../../source/standard/plan.rst:191 ../../source/standard/plan.rst:240
+#: ../../source/standard/plan.rst:250 ../../source/standard/plan.rst:299
 #: ../../source/standard/plan.rst:0
 msgid "id"
 msgstr ""
 
-#: ../../source/standard/plan.rst:192 ../../source/standard/plan.rst:241
-#: ../../source/standard/plan.rst:279
+#: ../../source/standard/plan.rst:251 ../../source/standard/plan.rst:300
+#: ../../source/standard/plan.rst:338
 msgid "string, required"
 msgstr "рядок, обов’язковий"
 
-#: ../../source/standard/plan.rst:195 ../../source/standard/plan.rst:0
+#: ../../source/standard/plan.rst:254 ../../source/standard/plan.rst:0
 msgid "description"
 msgstr ""
 
-#: ../../source/standard/plan.rst:196 ../../source/standard/plan.rst:245
+#: ../../source/standard/plan.rst:255 ../../source/standard/plan.rst:304
 msgid "string, multilingual, required"
 msgstr "рядок, багатомовний, обов’язковий"
 
-#: ../../source/standard/plan.rst:194
+#: ../../source/standard/plan.rst:258
 msgid "amount"
 msgstr ""
 
-#: ../../source/standard/plan.rst:195 ../../source/standard/plan.rst:199
+#: ../../source/standard/plan.rst:259 ../../source/standard/plan.rst:263
 msgid "float, required"
 msgstr "float, обов’язково"
 
-#: ../../source/standard/plan.rst:198
+#: ../../source/standard/plan.rst:262
 msgid "amountNet"
 msgstr ""
 
-#: ../../source/standard/plan.rst:202
+#: ../../source/standard/plan.rst:266
 msgid "currency"
 msgstr ""
 
-#: ../../source/standard/plan.rst:203
+#: ../../source/standard/plan.rst:267
 msgid "string, required, length = 3"
 msgstr "рядок, обов’язковий, довжина = 3"
 
-#: ../../source/standard/plan.rst:206
+#: ../../source/standard/plan.rst:270
 msgid "project"
 msgstr ""
 
-#: ../../source/standard/plan.rst:207
+#: ../../source/standard/plan.rst:271
 msgid ":ref:`Project`"
 msgstr ""
 
-#: ../../source/standard/plan.rst:210
+#: ../../source/standard/plan.rst:274
 msgid "period"
 msgstr ""
 
-#: ../../source/standard/plan.rst:211
+#: ../../source/standard/plan.rst:275
 msgid ":ref:`BudgetPeriod`"
 msgstr ""
 
-#: ../../source/standard/plan.rst:214
+#: ../../source/standard/plan.rst:278
 msgid "year"
 msgstr ""
 
-#: ../../source/standard/plan.rst:215
+#: ../../source/standard/plan.rst:279
 msgid "integer, >=2000, deprecated in favor of `period`_"
 msgstr ""
 
-#: ../../source/standard/plan.rst:218
+#: ../../source/standard/plan.rst:282
 msgid "notes"
 msgstr ""
 
-#: ../../source/standard/plan.rst:227
+#: ../../source/standard/plan.rst:286
 msgid "breakdown"
 msgstr ""
 
-#: ../../source/standard/plan.rst:228
+#: ../../source/standard/plan.rst:287
 msgid "List of :ref:`BudgetBreakdown`"
 msgstr ""
 
-#: ../../source/standard/plan.rst:237
+#: ../../source/standard/plan.rst:296
 msgid "Project"
 msgstr ""
 
-#: ../../source/standard/plan.rst:244
+#: ../../source/standard/plan.rst:303
 msgid "name"
 msgstr ""
 
-#: ../../source/standard/plan.rst:252
+#: ../../source/standard/plan.rst:311
 msgid "BudgetPeriod"
 msgstr ""
 
-#: ../../source/standard/plan.rst:255
+#: ../../source/standard/plan.rst:314
 msgid "startDate"
 msgstr ""
 
-#: ../../source/standard/plan.rst:256 ../../source/standard/plan.rst:263
+#: ../../source/standard/plan.rst:315 ../../source/standard/plan.rst:322
 msgid "string, required, :ref:`date`"
 msgstr "рядок, обов’язковий, :ref:`date`"
 
-#: ../../source/standard/plan.rst:258
+#: ../../source/standard/plan.rst:317
 msgid "|ocdsDescription| The start date for the period."
 msgstr ""
 
-#: ../../source/standard/plan.rst:262
+#: ../../source/standard/plan.rst:321
 msgid "endDate"
 msgstr ""
 
-#: ../../source/standard/plan.rst:265
+#: ../../source/standard/plan.rst:324
 msgid "|ocdsDescription| The end date for the period."
 msgstr ""
 
-#: ../../source/standard/plan.rst:268
+#: ../../source/standard/plan.rst:327
 msgid "`startDate` should always precede `endDate`."
 msgstr "Значення `startDate` завжди повинно йти перед `endDate`."
 
-msgid ":ref:`Identifier`, required"
-msgstr ":ref:`Identifier`, обов’язково"
-
-msgid ":ref:`PlanCancellation`"
-msgstr ":ref:`PlanCancellation`, обов’язково"
-
-#: ../../source/standard/plan.rst:273
+#: ../../source/standard/plan.rst:332
 msgid "BudgetBreakdown"
 msgstr ""
 
-#: ../../source/standard/plan.rst:276
+#: ../../source/standard/plan.rst:335
 msgid "uid, auto-generated"
 msgstr "uid, генерується автоматично"
 
@@ -546,43 +531,43 @@ msgstr "uid, генерується автоматично"
 msgid "title"
 msgstr ""
 
-#: ../../source/standard/plan.rst:281
+#: ../../source/standard/plan.rst:340
 msgid "Possible values are:"
 msgstr "Можливі значення:"
 
-#: ../../source/standard/plan.rst:283
+#: ../../source/standard/plan.rst:342
 msgid "`state`"
 msgstr ""
 
-#: ../../source/standard/plan.rst:284
+#: ../../source/standard/plan.rst:343
 msgid "`crimea`"
 msgstr ""
 
-#: ../../source/standard/plan.rst:285
+#: ../../source/standard/plan.rst:344
 msgid "`local`"
 msgstr ""
 
-#: ../../source/standard/plan.rst:286
+#: ../../source/standard/plan.rst:345
 msgid "`own`"
 msgstr ""
 
-#: ../../source/standard/plan.rst:287
+#: ../../source/standard/plan.rst:346
 msgid "`fund`"
 msgstr ""
 
-#: ../../source/standard/plan.rst:288
+#: ../../source/standard/plan.rst:347
 msgid "`loan`"
 msgstr ""
 
-#: ../../source/standard/plan.rst:289
+#: ../../source/standard/plan.rst:348
 msgid "`other`"
 msgstr ""
 
-#: ../../source/standard/plan.rst:292
+#: ../../source/standard/plan.rst:351
 msgid "string, multilingual, required if title == `other`"
 msgstr "рядок, багатомовний, обов’язковий за умови title == `other`"
 
-#: ../../source/standard/plan.rst:294
+#: ../../source/standard/plan.rst:353
 msgid "Detailed description of budget breakdown."
 msgstr "Детальний опис джерел фінансування закупівлі."
 
@@ -590,10 +575,22 @@ msgstr "Детальний опис джерел фінансування зак
 msgid "value"
 msgstr ""
 
-#: ../../source/standard/plan.rst:297
+#: ../../source/standard/plan.rst:356
 msgid ":ref:`Guarantee`"
 msgstr ""
 
-#: ../../source/standard/plan.rst:299
+#: ../../source/standard/plan.rst:358
 msgid "Budget breakdown value"
 msgstr "Cума, яка виділена для окремого джерела фінансування"
+
+#: ../../source/standard/plan.rst:360
+msgid "Currency should be identical for all budget breakdown values and budget"
+msgstr ""
+
+#: ../../source/standard/plan.rst:362
+msgid "Sum of the breakdown values amounts can't be greater than budget amount"
+msgstr ""
+
+#~ msgid ":ref:`Identifier`, required"
+#~ msgstr ":ref:`Identifier`, обов’язково"
+
