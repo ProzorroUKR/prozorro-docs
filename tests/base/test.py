@@ -1,6 +1,7 @@
 import json
 import mimetypes
 import traceback
+
 from datetime import timedelta
 
 import mock
@@ -134,6 +135,38 @@ class DumpsWebTestApp(BaseTestApp):
         boundary = boundary.decode('ascii')
         content_type = 'multipart/form-data; boundary=%s' % boundary
         return content_type, body
+
+    def get_authorization(self):
+        """Allow to set the HTTP_AUTHORIZATION environ key. Value should looks
+        like ``('Basic', ('user', 'password'))``
+
+        If value is None the the HTTP_AUTHORIZATION is removed
+        """
+        return self.authorization_value
+
+    def set_authorization(self, value):
+        self.authorization_value = value
+        if value is not None:
+            invalid_value = (
+                "You should use a value like ('Basic', ('user', 'password'))"
+            )
+            if isinstance(value, (list, tuple)) and len(value) == 2:
+                authtype, val = value
+                if authtype == 'Basic' and val and isinstance(val, (list, tuple)):
+                    key = val[0]
+                else:
+                    raise ValueError(invalid_value)
+                value = str('Bearer %s' % key)
+            else:
+                raise ValueError(invalid_value)
+            self.extra_environ.update({
+                'HTTP_AUTHORIZATION': value,
+            })
+        else:
+            if 'HTTP_AUTHORIZATION' in self.extra_environ:
+                del self.extra_environ['HTTP_AUTHORIZATION']
+
+    authorization = property(get_authorization, set_authorization)
 
 
 class MockWebTestMixin(object):
