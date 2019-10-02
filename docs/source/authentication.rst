@@ -4,14 +4,20 @@ Authentication
 ==============
 
 Some of the API requests (especially the ones that are read-only GET
-requests) do not require any authenication.  The other ones, that modify data
+requests) do not require any authentication.  The other ones, that modify data
 into the database, require broker authentication via API key.  Additionally,
 owner tokens are issued to facilitate multiple actor roles upon object creation.
 
 API keys
 --------
 
-API key is username to use with Basic Authenication scheme (see :rfc:`2617#section-2`). 
+Basic Authenication
+~~~~~~~~~~~~~~~~~~~
+API key is username to use with Basic Authentication scheme (see :rfc:`2617#section-2`).
+
+Bearer Authenication
+~~~~~~~~~~~~~~~~~~~~
+API key is token to use with Bearer Authentication scheme
 
 Owner tokens
 ------------
