@@ -61,11 +61,12 @@ class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
         test_plan_data["tender"]["procurementMethod"] = ""
         test_plan_data["tender"]["procurementMethodType"] = "centralizedProcurement"
 
-        with open(TARGET_DIR + 'create-plan.http', 'w') as self.app.file_obj:
-            response = self.app.post_json(
-                '/plans?opt_pretty=1',
-                {'data': test_plan_data})
-            self.assertEqual(response.status, '201 Created')
+        with freeze_time("2019-05-02 01:00:00"):
+            with open(TARGET_DIR + 'create-plan.http', 'w') as self.app.file_obj:
+                response = self.app.post_json(
+                    '/plans?opt_pretty=1',
+                    {'data': test_plan_data})
+        self.assertEqual(response.status, '201 Created')
 
         plan = response.json['data']
         self.plan_id = plan["id"]
@@ -88,4 +89,22 @@ class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
                     {'data': {"status": "met"}}
                 )
         self.assertEqual(response.json["data"]["status"], "met")
+
+        # tender creation
+        procuring_entity = deepcopy(test_plan_data["procuringEntity"])
+        procuring_entity["kind"] = "central"
+        procuring_entity.update(
+            contactPoint=dict(name=u"Довідкова", telephone="0440000000"),
+            address=test_tender_data["procuringEntity"]["address"],
+        )
+        test_tender_data["procuringEntity"] = procuring_entity
+        test_tender_data["buyers"] = test_plan_data["buyers"]
+
+        with freeze_time("2019-05-12 09:00:00"):
+            with open(TARGET_DIR + 'create-tender.http', 'w') as self.app.file_obj:
+                response = self.app.post_json(
+                    '/tenders',
+                    {'data': test_tender_data}
+                )
+        self.assertEqual(response.status, '201 Created')
 
