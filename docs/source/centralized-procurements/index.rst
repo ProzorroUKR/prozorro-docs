@@ -33,3 +33,25 @@ and specifies all the buyer organizations using `buyers` list of :ref:`PlanOrgan
 .. include:: http/create-tender.http
    :code:
 
+
+Connecting plans to the tender
+------------------------------
+
+The central procurement organization connects the plan to the tender.
+If there are more than one plans, they should be connected one by one.
+
+
+.. include:: http/post-tender-plans.http
+    :code:
+
+
+As a result the plan is moved to "complete" status
+
+.. include:: http/plan-complete.http
+    :code:
+
+
+The tender `plans` field contains all the plan ids
+
+.. include:: http/tender-get.http
+    :code:

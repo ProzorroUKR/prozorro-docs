@@ -44,8 +44,9 @@ class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
 
         # create plan
         test_plan_data['status'] = "draft"
-        test_plan_data['tender'].update({"tenderPeriod": {"startDate": (get_now() + timedelta(days=7)).isoformat()}})
-        test_plan_data['items'][0].update({"deliveryDate": {"endDate": (get_now() + timedelta(days=15)).isoformat()}})
+        with freeze_time("2019-05-02 01:00:00"):
+            test_plan_data['tender'].update({"tenderPeriod": {"startDate": (get_now() + timedelta(days=7)).isoformat()}})
+            test_plan_data['items'][0].update({"deliveryDate": {"endDate": (get_now() + timedelta(days=15)).isoformat()}})
         test_plan_data['items'] = test_plan_data['items'][:1]
 
         test_plan_data["buyers"] = [deepcopy(test_plan_data["procuringEntity"])]  # just to be sure
@@ -99,6 +100,7 @@ class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
         )
         test_tender_data["procuringEntity"] = procuring_entity
         test_tender_data["buyers"] = test_plan_data["buyers"]
+        test_tender_data["items"] = test_plan_data["items"]
 
         with freeze_time("2019-05-12 09:00:00"):
             with open(TARGET_DIR + 'create-tender.http', 'w') as self.app.file_obj:
@@ -107,4 +109,25 @@ class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
                     {'data': test_tender_data}
                 )
         self.assertEqual(response.status, '201 Created')
+        tender = response.json
+
+        # attaching plans to the tender
+        with freeze_time("2019-05-12 09:01:00"):
+            with open(TARGET_DIR + 'post-tender-plans.http', 'w') as self.app.file_obj:
+                response = self.app.post_json(
+                    '/tenders/{}/plans?acc_token={}'.format(
+                        tender["data"]["id"],
+                        tender["access"]["token"]
+                    ),
+                    {"data": {"id": plan['id']}}
+                )
+        self.assertEqual(response.status, '200 OK')
+
+        with open(TARGET_DIR + 'plan-complete.http', 'w') as self.app.file_obj:
+            response = self.app.get('/plans/{}'.format(plan['id']))
+        self.assertEqual(response.status, '200 OK')
+
+        with open(TARGET_DIR + 'tender-get.http', 'w') as self.app.file_obj:
+            response = self.app.get('/tenders/{}'.format(tender["data"]["id"]))
+        self.assertEqual(response.status, '200 OK')
 

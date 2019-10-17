@@ -1,6 +1,6 @@
 POST /api/2.5/tenders HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 3005
+Content-Length: 2457
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
@@ -43,7 +43,7 @@ DATA:
     ], 
     "mainProcurementCategory": "goods", 
     "tenderPeriod": {
-      "endDate": "2019-10-29T12:18:17.224740"
+      "endDate": "2019-10-31T14:15:56.376050+03:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -51,7 +51,7 @@ DATA:
       "amount": 35
     }, 
     "enquiryPeriod": {
-      "endDate": "2019-10-22T12:18:17.224740"
+      "endDate": "2019-10-24T14:15:56.376050+03:00"
     }, 
     "procurementMethodType": "belowThreshold", 
     "value": {
@@ -80,35 +80,27 @@ DATA:
     }, 
     "items": [
       {
-        "description": "футляри до державних нагород", 
+        "description": "Насіння гірчиці", 
         "classification": {
           "scheme": "ДК021", 
-          "id": "44617100-9", 
-          "description": "Cartons"
+          "description": "Mustard seeds", 
+          "id": "03111600-8"
         }, 
         "additionalClassifications": [
           {
             "scheme": "ДКПП", 
-            "id": "17.21.1", 
-            "description": "папір і картон гофровані, паперова й картонна тара"
+            "id": "01.11.92", 
+            "description": "Насіння гірчиці"
           }
         ], 
-        "deliveryAddress": {
-          "countryName": "Україна", 
-          "postalCode": "79000", 
-          "region": "м. Київ", 
-          "streetAddress": "вул. Банкова 1", 
-          "locality": "м. Київ"
-        }, 
         "deliveryDate": {
-          "startDate": "2019-10-17T12:18:17.224740", 
-          "endDate": "2019-10-20T12:18:17.224740"
+          "endDate": "2019-05-17T04:00:00+03:00"
         }, 
         "unit": {
-          "code": "44617100-9", 
-          "name": "item"
+          "code": "KGM", 
+          "name": "кг"
         }, 
-        "quantity": 5
+        "quantity": 1000
       }
     ]
   }
@@ -163,8 +155,8 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/a40454d58b7b4e1e
     ], 
     "mainProcurementCategory": "goods", 
     "tenderPeriod": {
-      "startDate": "2019-10-22T12:18:17.224740+03:00", 
-      "endDate": "2019-10-29T12:18:17.224740+02:00"
+      "startDate": "2019-10-24T14:15:56.376050+03:00", 
+      "endDate": "2019-10-31T14:15:56.376050+03:00"
     }, 
     "title": "футляри до державних нагород", 
     "minimalStep": {
@@ -174,36 +166,28 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/a40454d58b7b4e1e
     }, 
     "items": [
       {
-        "description": "футляри до державних нагород", 
+        "description": "Насіння гірчиці", 
         "classification": {
           "scheme": "ДК021", 
-          "description": "Cartons", 
-          "id": "44617100-9"
+          "description": "Mustard seeds", 
+          "id": "03111600-8"
         }, 
         "additionalClassifications": [
           {
             "scheme": "ДКПП", 
-            "id": "17.21.1", 
-            "description": "папір і картон гофровані, паперова й картонна тара"
+            "id": "01.11.92", 
+            "description": "Насіння гірчиці"
           }
         ], 
-        "deliveryAddress": {
-          "postalCode": "79000", 
-          "countryName": "Україна", 
-          "streetAddress": "вул. Банкова 1", 
-          "region": "м. Київ", 
-          "locality": "м. Київ"
-        }, 
         "deliveryDate": {
-          "startDate": "2019-10-17T12:18:17.224740+03:00", 
-          "endDate": "2019-10-20T12:18:17.224740+03:00"
+          "endDate": "2019-05-17T04:00:00+03:00"
         }, 
         "id": "f504abadba414a5ea3b148a8323a19c4", 
         "unit": {
-          "code": "44617100-9", 
-          "name": "item"
+          "code": "KGM", 
+          "name": "кг"
         }, 
-        "quantity": 5.0
+        "quantity": 1000.0
       }
     ], 
     "procurementMethodType": "belowThreshold", 
@@ -214,7 +198,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/a40454d58b7b4e1e
     }, 
     "submissionMethod": "electronicAuction", 
     "date": "2019-05-12T12:00:00+03:00", 
-    "next_check": "2019-10-22T12:18:17.224740+03:00", 
+    "next_check": "2019-10-24T14:15:56.376050+03:00", 
     "procuringEntity": {
       "contactPoint": {
         "name": "Довідкова", 
@@ -238,7 +222,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/a40454d58b7b4e1e
     "awardCriteria": "lowestCost", 
     "enquiryPeriod": {
       "startDate": "2019-05-12T12:00:00+03:00", 
-      "endDate": "2019-10-22T12:18:17.224740+03:00"
+      "endDate": "2019-10-24T14:15:56.376050+03:00"
     }, 
     "owner": "broker", 
     "dateModified": "2019-05-12T12:00:00+03:00", 
