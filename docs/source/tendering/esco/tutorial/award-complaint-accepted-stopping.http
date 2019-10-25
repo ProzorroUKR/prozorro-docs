@@ -16,12 +16,7 @@ Content-Type: application/json; charset=UTF-8
 {
   "data": {
     "status": "stopping", 
-    "transfer_token": "15bce4aef79db367373e53008985f58eb5093ece1659530497072f30654551a6e10a653532a43c15cd09c81d6379fd36886d9932a6ba76279c29c66cadfcb053", 
-    "title": "Недостатньо інформації", 
-    "acceptance": true, 
-    "cancellationReason": "Тендер скасовується замовником", 
-    "dateCanceled": "2019-10-25T01:00:03+03:00", 
-    "dateAccepted": "2019-10-25T01:00:03+03:00", 
+    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
     "author": {
       "contactPoint": {
         "email": "soleksuk@gmail.com", 
@@ -42,12 +37,16 @@ Content-Type: application/json; charset=UTF-8
         "locality": "м. Вінниця"
       }
     }, 
+    "acceptance": true, 
+    "cancellationReason": "Тендер скасовується замовником", 
+    "dateCanceled": "2019-10-25T01:00:03+03:00", 
+    "dateAccepted": "2019-10-25T01:00:03+03:00", 
     "dateSubmitted": "2019-10-25T01:00:03+03:00", 
     "complaintID": "UA-2019-10-25-000001.4", 
     "date": "2019-10-25T01:00:03+03:00", 
+    "title": "Недостатньо інформації", 
     "type": "complaint", 
-    "id": "d5075664651240c195bb5509cf82e8ee", 
-    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс."
+    "id": "d5075664651240c195bb5509cf82e8ee"
   }
 }
 

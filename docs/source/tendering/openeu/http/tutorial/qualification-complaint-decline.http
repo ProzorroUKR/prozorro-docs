@@ -16,10 +16,7 @@ Content-Type: application/json; charset=UTF-8
   "data": {
     "status": "declined", 
     "dateDecision": "2019-10-25T01:00:01+03:00", 
-    "transfer_token": "610f8a2df9afaa080c799a936e17f6d9991ecb305006a07f96a0df1627502fe6b349341135f1c60db8b9903531bfa99308a83be6bcd49cf748461797ff9db11c", 
-    "title": "Недостатньо інформації", 
-    "acceptance": true, 
-    "dateAccepted": "2019-10-25T01:00:01+03:00", 
+    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
     "author": {
       "contactPoint": {
         "email": "soleksuk@gmail.com", 
@@ -40,12 +37,14 @@ Content-Type: application/json; charset=UTF-8
         "locality": "м. Вінниця"
       }
     }, 
+    "acceptance": true, 
+    "dateAccepted": "2019-10-25T01:00:01+03:00", 
     "dateSubmitted": "2019-10-25T01:00:01+03:00", 
     "complaintID": "UA-2019-10-25-000001.3", 
     "date": "2019-10-25T01:00:01+03:00", 
+    "title": "Недостатньо інформації", 
     "type": "complaint", 
-    "id": "25c98965719a4534aa16a2e710c36ace", 
-    "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс."
+    "id": "25c98965719a4534aa16a2e710c36ace"
   }
 }
 

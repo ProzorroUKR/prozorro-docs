@@ -32,7 +32,7 @@ Content-Type: application/json; charset=UTF-8
           "dateModified": "2019-10-25T01:00:00+03:00"
         }
       ], 
-      "transfer_token": "2bbd53d70b83648ea10e178a8c0b4f3c6d117c84ab41bbdbf3c774907a15ffabfe73f8641a486c8c8e171cf4879874fa1a4866c969924cdbb72c604d7a78973c", 
+      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
       "author": {
         "contactPoint": {
           "email": "soleksuk@gmail.com", 
@@ -53,7 +53,6 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Вінниця"
         }
       }, 
-      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
       "title": "Недостатньо інформації", 
       "tendererAction": "Умови виправлено", 
       "tendererActionDate": "2019-10-25T01:00:00+03:00", 
@@ -81,10 +80,7 @@ Content-Type: application/json; charset=UTF-8
     {
       "status": "declined", 
       "dateDecision": "2019-10-25T01:00:00+03:00", 
-      "transfer_token": "5304f897395907f58982481cbb4fcbe242d627938d6988c0f47113a998175bc15b12a600dfdfc988c523a920651ebc544ced62b9dbffba464a7a686f3b4c4335", 
-      "title": "Недостатньо інформації", 
-      "acceptance": true, 
-      "dateAccepted": "2019-10-25T01:00:00+03:00", 
+      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
       "author": {
         "contactPoint": {
           "email": "soleksuk@gmail.com", 
@@ -105,54 +101,26 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Вінниця"
         }
       }, 
+      "acceptance": true, 
+      "dateAccepted": "2019-10-25T01:00:00+03:00", 
       "dateSubmitted": "2019-10-25T01:00:00+03:00", 
       "complaintID": "UA-2019-10-25-000001.3", 
       "date": "2019-10-25T01:00:00+03:00", 
+      "title": "Недостатньо інформації", 
       "type": "complaint", 
-      "id": "4a4ee16f468b4d7797fa1a5b8967ad94", 
-      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс."
+      "id": "4a4ee16f468b4d7797fa1a5b8967ad94"
     }, 
     {
       "status": "invalid", 
       "dateDecision": "2019-10-25T01:00:00+03:00", 
-      "transfer_token": "7026415b8e11e7b7f4575964db088e70d1cde202e8b63984f77c3b7706d238383111e1418e767a06d3950cf48372ac37b97b515a267f14259ca105f9792c4567", 
-      "author": {
-        "contactPoint": {
-          "email": "soleksuk@gmail.com", 
-          "telephone": "+380 (432) 21-69-30", 
-          "name": "Сергій Олексюк"
-        }, 
-        "identifier": {
-          "scheme": "UA-EDR", 
-          "id": "00137256", 
-          "uri": "http://www.sc.gov.ua/"
-        }, 
-        "name": "ДКП «Школяр»", 
-        "address": {
-          "postalCode": "21100", 
-          "countryName": "Україна", 
-          "streetAddress": "вул. Островського, 33", 
-          "region": "м. Вінниця", 
-          "locality": "м. Вінниця"
-        }
-      }, 
+      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+      "title": "Недостатньо інформації", 
       "resolutionType": "invalid", 
       "type": "complaint", 
       "acceptance": false, 
       "satisfied": false, 
       "dateEscalated": "2019-10-25T01:00:00+03:00", 
       "dateAnswered": "2019-10-25T01:00:00+03:00", 
-      "complaintID": "UA-2019-10-25-000001.4", 
-      "date": "2019-10-25T01:00:00+03:00", 
-      "title": "Недостатньо інформації", 
-      "resolution": "Вимога не відповідає предмету закупівлі", 
-      "id": "4ee6645f2cab40abad99c276a48baee6", 
-      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс."
-    }, 
-    {
-      "status": "stopped", 
-      "dateDecision": "2019-10-25T01:00:00+03:00", 
-      "transfer_token": "3b93bd6d7f1963d197417e652ded5ae3a426ee5a1dfe27641d867815d6c1418f42d53ebcb405bdae320810658110612735c7e7967d451284d84e12c2713efc16", 
       "author": {
         "contactPoint": {
           "email": "soleksuk@gmail.com", 
@@ -173,22 +141,20 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Вінниця"
         }
       }, 
+      "complaintID": "UA-2019-10-25-000001.4", 
+      "date": "2019-10-25T01:00:00+03:00", 
+      "resolution": "Вимога не відповідає предмету закупівлі", 
+      "id": "4ee6645f2cab40abad99c276a48baee6"
+    }, 
+    {
+      "status": "stopped", 
+      "dateDecision": "2019-10-25T01:00:00+03:00", 
+      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+      "title": "Недостатньо інформації", 
       "decision": "Тендер скасовується замовником", 
       "acceptance": true, 
       "dateCanceled": "2019-10-25T01:00:00+03:00", 
       "dateAccepted": "2019-10-25T01:00:00+03:00", 
-      "dateSubmitted": "2019-10-25T01:00:00+03:00", 
-      "complaintID": "UA-2019-10-25-000001.5", 
-      "date": "2019-10-25T01:00:00+03:00", 
-      "title": "Недостатньо інформації", 
-      "type": "complaint", 
-      "id": "636e3b54d28048b1a426ada91e385add", 
-      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс."
-    }, 
-    {
-      "status": "stopped", 
-      "dateDecision": "2019-10-25T01:00:00+03:00", 
-      "transfer_token": "d58a837d571af84af4c65fc10d827c2ab31cebd99354dbde635dd6bdbd808ff4f582de647d576d6c1fea304d1593142fa4b3fe2bd8016a197e3befe0638f29d7", 
       "author": {
         "contactPoint": {
           "email": "soleksuk@gmail.com", 
@@ -209,18 +175,47 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Вінниця"
         }
       }, 
+      "dateSubmitted": "2019-10-25T01:00:00+03:00", 
+      "complaintID": "UA-2019-10-25-000001.5", 
+      "date": "2019-10-25T01:00:00+03:00", 
+      "type": "complaint", 
+      "id": "636e3b54d28048b1a426ada91e385add"
+    }, 
+    {
+      "status": "stopped", 
+      "dateDecision": "2019-10-25T01:00:00+03:00", 
+      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.", 
+      "title": "Недостатньо інформації", 
       "decision": "Тендер скасовується замовником", 
       "acceptance": true, 
       "cancellationReason": "Тендер скасовується замовником", 
       "dateCanceled": "2019-10-25T01:00:00+03:00", 
       "dateAccepted": "2019-10-25T01:00:00+03:00", 
+      "author": {
+        "contactPoint": {
+          "email": "soleksuk@gmail.com", 
+          "telephone": "+380 (432) 21-69-30", 
+          "name": "Сергій Олексюк"
+        }, 
+        "identifier": {
+          "scheme": "UA-EDR", 
+          "id": "00137256", 
+          "uri": "http://www.sc.gov.ua/"
+        }, 
+        "name": "ДКП «Школяр»", 
+        "address": {
+          "postalCode": "21100", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Островського, 33", 
+          "region": "м. Вінниця", 
+          "locality": "м. Вінниця"
+        }
+      }, 
       "dateSubmitted": "2019-10-25T01:00:00+03:00", 
       "complaintID": "UA-2019-10-25-000001.6", 
       "date": "2019-10-25T01:00:00+03:00", 
-      "title": "Недостатньо інформації", 
       "type": "complaint", 
-      "id": "a8446dd3059b49e59ffa6d82a1364edd", 
-      "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс."
+      "id": "a8446dd3059b49e59ffa6d82a1364edd"
     }, 
     {
       "status": "cancelled", 
