@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.relocation.api 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-16 09:11+0300\n"
+"POT-Creation-Date: 2019-10-30 17:39+0200\n"
 "PO-Revision-Date: 2016-11-01 12:23+0200\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
 "Language-Team: Ukrainian <support@quintagroup.com>\n"
@@ -106,7 +106,11 @@ msgstr ""
 msgid "terminated"
 msgstr ""
 
-#: ../../source/relocation/contracts.rst:49
+#: ../../source/relocation/contracts.rst:48
+msgid "cancelled"
+msgstr ""
+
+#: ../../source/relocation/contracts.rst:51
 msgid ""
 "In order to change contract's ownership new broker should send POST "
 "request to appropriate `/contracts/id/` with `data` section containing "
@@ -117,13 +121,13 @@ msgstr ""
 "ідентифікатор ``id`` для `Transfer` та ключ ``transfer`` отриманий від "
 "клієнта:"
 
-#: ../../source/relocation/contracts.rst:54
+#: ../../source/relocation/contracts.rst:56
 msgid "Updated ``owner`` value indicates that ownership is successfully changed."
 msgstr ""
 "Оновлене значення властивості ``owner`` вказує, що власник був успішно "
 "змінений."
 
-#: ../../source/relocation/contracts.rst:56
+#: ../../source/relocation/contracts.rst:58
 msgid ""
 "Note that new broker has to provide its customer with new ``transfer`` "
 "key (generated in `Transfer` object)."
@@ -131,7 +135,7 @@ msgstr ""
 "Зверніть увагу, що новий майданчик повинен довести до відома клієнта "
 "новий ключ ``transfer`` (згенерований в об'єкті `Transfer`)."
 
-#: ../../source/relocation/contracts.rst:58
+#: ../../source/relocation/contracts.rst:60
 msgid ""
 "After `Transfer` is applied it stores contract path in ``usedFor`` "
 "property."
@@ -139,7 +143,7 @@ msgstr ""
 "Можна перевірити чи після застосування об'єкта `Transfer` шлях до "
 "договору зберігається у властивості ``usedFor``."
 
-#: ../../source/relocation/contracts.rst:63
+#: ../../source/relocation/contracts.rst:65
 msgid ""
 "Let's try to change the contract using ``token`` received on `Transfer` "
 "creation:"
@@ -147,7 +151,7 @@ msgstr ""
 "Спробуємо змінити договір за допомогою ключа ``token``, отриманого при "
 "створенні об'єкта `Transfer`."
 
-#: ../../source/relocation/contracts.rst:68
+#: ../../source/relocation/contracts.rst:70
 msgid ""
 "Pay attention that only broker with appropriate accreditation level can "
 "become new owner. Otherwise broker will be forbidden from this action."
@@ -156,10 +160,11 @@ msgstr ""
 " стати новим власником. В іншому випадку майданчику така дія буде "
 "заборонена."
 
-#: ../../source/relocation/contracts.rst:73
+#: ../../source/relocation/contracts.rst:75
 msgid ""
 "Also ownership change is allowed only if current owner has a special "
 "accreditation level that allows ownership change:"
 msgstr ""
 "Зміна власника дозволена тільки якщо поточний власник тендера має "
 "спеціальний рівень акредетації, що дозволяє зміну:"
+

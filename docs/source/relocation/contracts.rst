@@ -44,6 +44,8 @@ An ability to change contract's ownership depends on contract's status:
 | active  | pending     |
 |         |             |
 |         | terminated  |
+|         |             |
+|         | cancelled   |
 +---------+-------------+
 
 In order to change contract's ownership new broker should send POST request to appropriate `/contracts/id/` with `data` section containing ``id`` of `Transfer` and ``transfer`` token received from customer:
