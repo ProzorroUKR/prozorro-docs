@@ -91,14 +91,14 @@ tender
 
 budget
 ------
-   :ref:`Budget`, required
+   :ref:`Budget`, required (except `tender.procurementMethodType` is `"esco"`).
 
    Total available tender budget.
 
    |ocdsDescription|
    The total estimated value of the procurement.
 
-   Absent in :ref:`esco`
+
 
 classification
 --------------
@@ -284,7 +284,7 @@ notes
 
 breakdown
 ---------
-    List of :ref:`BudgetBreakdown`
+    List of :ref:`BudgetBreakdown`, required (except `tender.procurementMethodType` is `"belowThreshold"`, `"reporting"`, `"esco"`, `""`)
 
 
 -----------
@@ -359,4 +359,4 @@ BudgetBreakdown
 
     Currency should be identical for all budget breakdown values and budget
 
-    Sum of the breakdown values amounts can't be greater than budget amount
+    Sum of the breakdown values amounts can't be greater than budget amount  (except `tender.procurementMethodType` is `"esco"`)

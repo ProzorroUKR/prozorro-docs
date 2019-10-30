@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.api 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-03 00:09+0300\n"
+"POT-Creation-Date: 2019-10-31 01:10+0200\n"
 "PO-Revision-Date: 2019-06-21 14:17+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -124,8 +124,11 @@ msgid "budget"
 msgstr ""
 
 #: ../../source/standard/plan.rst:94
-msgid ":ref:`Budget`, required"
-msgstr ":ref:`Budget`, обов’язково"
+msgid ""
+":ref:`Budget`, required (except `tender.procurementMethodType` is "
+"`\"esco\"`)."
+msgstr ":ref:`Budget`, обов’язково (за вийнятком "
+"`tender.procurementMethodType` має значення `\"esco\"`)"
 
 #: ../../source/standard/plan.rst:96
 msgid "Total available tender budget."
@@ -134,10 +137,6 @@ msgstr "Повний доступний бюджет закупівлі."
 #: ../../source/standard/plan.rst:98
 msgid "|ocdsDescription| The total estimated value of the procurement."
 msgstr "|ocdsDescription| Загальна кошторисна вартість закупівлі."
-
-#: ../../source/standard/plan.rst:101
-msgid "Absent in :ref:`esco`"
-msgstr "Відсутнє в :ref:`esco`"
 
 #: ../../source/standard/plan.rst:104
 msgid "classification"
@@ -480,8 +479,14 @@ msgid "breakdown"
 msgstr ""
 
 #: ../../source/standard/plan.rst:287
-msgid "List of :ref:`BudgetBreakdown`"
+msgid ""
+"List of :ref:`BudgetBreakdown`, required (except "
+"`tender.procurementMethodType` is `\"belowThreshold\"`, `\"reporting\"`, "
+"`\"esco\"`, `\"\"`)"
 msgstr ""
+"Список об’єктів :ref:`BudgetBreakdown`, обов’язковий (за вийнятком "
+"`tender.procurementMethodType` має значення `\"belowThreshold\"`, "
+"`\"reporting\"`, `\"esco\"`, `\"\"`)"
 
 #: ../../source/standard/plan.rst:296
 msgid "Project"
@@ -585,12 +590,12 @@ msgstr "Cума, яка виділена для окремого джерела 
 
 #: ../../source/standard/plan.rst:360
 msgid "Currency should be identical for all budget breakdown values and budget"
-msgstr ""
+msgstr "Валюта для всіх breakdown value та budget повинна бути однаковою"
 
 #: ../../source/standard/plan.rst:362
-msgid "Sum of the breakdown values amounts can't be greater than budget amount"
+msgid ""
+"Sum of the breakdown values amounts can't be greater than budget amount  "
+"(except `tender.procurementMethodType` is `\"esco\"`)"
 msgstr ""
-
-#~ msgid ":ref:`Identifier`, required"
-#~ msgstr ":ref:`Identifier`, обов’язково"
-
+"Загальна вартість всіх breakdown value amount не може бути більшим за "
+"budget amount (за вийнятком `tender.procurementMethodType` має значення `\"esco\"`)"
