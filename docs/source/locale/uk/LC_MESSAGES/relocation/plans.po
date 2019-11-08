@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.api 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-16 09:11+0300\n"
+"POT-Creation-Date: 2019-11-08 18:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,6 +85,34 @@ msgid "Changing plan's owner"
 msgstr "Зміна власника плану закупівлі"
 
 #: ../../source/relocation/plans.rst:42
+msgid "An ability to change plan's ownership depends on plan's status:"
+msgstr "Можливість зміни власника плану закупівлі залежить від статусу плану закупівлі:"
+
+#: ../../source/relocation/plans.rst:45
+msgid "Allowed"
+msgstr "Дозволено"
+
+#: ../../source/relocation/plans.rst:45
+msgid "Not Allowed"
+msgstr "Не дозволено"
+
+#: ../../source/relocation/plans.rst:47
+msgid "scheduled"
+msgstr ""
+
+#: ../../source/relocation/plans.rst:47
+msgid "draft"
+msgstr ""
+
+#: ../../source/relocation/plans.rst:49
+msgid "cancelled"
+msgstr ""
+
+#: ../../source/relocation/plans.rst:51
+msgid "complete"
+msgstr ""
+
+#: ../../source/relocation/plans.rst:54
 msgid ""
 "To change plan's ownership new broker should send POST request to "
 "appropriate `/plans/id/` with `data` section containing ``id`` of "
@@ -95,13 +123,13 @@ msgstr ""
 "ідентифікатор ``id`` для `Transfer` та ключ ``transfer`` отриманий від "
 "клієнта:"
 
-#: ../../source/relocation/plans.rst:47
+#: ../../source/relocation/plans.rst:59
 msgid "Updated ``owner`` value indicates that ownership is successfully changed."
 msgstr ""
 "Оновлене значення властивості ``owner`` вказує, що власник був успішно "
 "змінений."
 
-#: ../../source/relocation/plans.rst:49
+#: ../../source/relocation/plans.rst:61
 msgid ""
 "Note that new broker has to provide its customer with new ``transfer`` "
 "key (generated in `Transfer` object)."
@@ -109,20 +137,20 @@ msgstr ""
 "Зверніть увагу, що новий майданчик повинен довести до відома клієнта "
 "новий ключ ``transfer`` (згенерований в об'єкті `Transfer`)."
 
-#: ../../source/relocation/plans.rst:51
+#: ../../source/relocation/plans.rst:63
 msgid "After `Transfer` is applied it stores plan path in ``usedFor`` property:"
 msgstr ""
 "Після того, як об'єкт `Transfer` було застосовано, для нього генерується "
 "властивість ``usedFor`` (вказується шлях до об'єкта, власника якого було "
 "змінено):"
 
-#: ../../source/relocation/plans.rst:56
+#: ../../source/relocation/plans.rst:68
 msgid "'Used' `Transfer` can't be applied to any other object."
 msgstr ""
 "'Використаний' об'єкт `Transfer` вже не можна застосувати до іншого "
 "об'єкта. "
 
-#: ../../source/relocation/plans.rst:58
+#: ../../source/relocation/plans.rst:70
 msgid ""
 "Let's try to change the plan using ``token`` received on `Transfer` "
 "creation:"
@@ -130,7 +158,7 @@ msgstr ""
 "Спробуємо змінити план закупівлі за допомогою ключа ``token``, отриманого"
 " при створенні об'єкта `Transfer`."
 
-#: ../../source/relocation/plans.rst:63
+#: ../../source/relocation/plans.rst:75
 msgid ""
 "Pay attention that only broker with appropriate accreditation level can "
 "become new owner. Otherwise broker will be forbidden from this action."
@@ -139,10 +167,11 @@ msgstr ""
 " стати новим власником. В іншому випадку майданчику така дія буде "
 "заборонена."
 
-#: ../../source/relocation/plans.rst:68
+#: ../../source/relocation/plans.rst:80
 msgid ""
 "Also ownership change is allowed only if current owner has a special "
 "accreditation level that allows ownership change:"
 msgstr ""
 "Зміна власника дозволена тільки якщо поточний власник тендера має "
 "спеціальний рівень акредетації, що дозволяє зміну:"
+

@@ -39,6 +39,18 @@ Broker that is going to become new plan owner should create a `Transfer`.
 Changing plan's owner
 ^^^^^^^^^^^^^^^^^^^^^^^
 
+An ability to change plan's ownership depends on plan's status:
+
++-----------+-------------+
+| Allowed   | Not Allowed |
++-----------+-------------+
+| scheduled | draft       |
+|           |             |
+|           | cancelled   |
+|           |             |
+|           | complete    |
++-----------+-------------+
+
 To change plan's ownership new broker should send POST request to appropriate `/plans/id/` with `data` section containing ``id`` of `Transfer` and ``transfer`` token received from customer:
 
 .. include:: tutorial/change-plan-ownership.http
