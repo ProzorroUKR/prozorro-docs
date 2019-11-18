@@ -266,6 +266,7 @@ texinfo_documents = [
 
 locale_dirs = ['locale/']   # path is example but recommended.
 gettext_compact = False     # optional.
+gettext_location = False
 
 intersphinx_mapping = {
     'python': ('http://docs.python.org/dev', None),
