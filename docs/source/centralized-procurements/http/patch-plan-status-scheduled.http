@@ -1,5 +1,5 @@
 PATCH /api/2.5/plans/77cf582ab7284fb1a0e748ea7fe9033f?acc_token=b1fb3396cb2041f9812f66f4c4ddd2c7 HTTP/1.0
-Authorization: Basic YnJva2VyOg==
+Authorization: Bearer broker
 Content-Length: 33
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -25,17 +25,6 @@ Content-Type: application/json; charset=UTF-8
         "name": "ДУС"
       }
     ], 
-    "milestones": [
-      {
-        "status": "scheduled", 
-        "description": "Узагальнення та аналіз отриманної інформації щодо проведення закупівель товарів, послуг (крім поточного ремонту) в інтересах замовників", 
-        "title": "Підготовка до проведення процедури", 
-        "id": "9f438e8b73694392a6fc50537b7fcd1e", 
-        "dueDate": "2019-05-31T04:01:00+03:00", 
-        "type": "approval", 
-        "dateModified": "2019-05-02T04:01:00+03:00"
-      }
-    ], 
     "classification": {
       "scheme": "ДК021", 
       "description": "Seeds", 
@@ -57,7 +46,7 @@ Content-Type: application/json; charset=UTF-8
           }
         ], 
         "deliveryDate": {
-          "endDate": "2019-10-16T01:00:00+03:00"
+          "endDate": "2019-11-09T01:00:00+03:00"
         }, 
         "id": "f7271f852efe465c876aba44613ab929", 
         "unit": {
@@ -99,7 +88,7 @@ Content-Type: application/json; charset=UTF-8
       "procurementMethod": "", 
       "procurementMethodType": "centralizedProcurement", 
       "tenderPeriod": {
-        "startDate": "2019-10-08T01:00:00+03:00"
+        "startDate": "2019-11-01T01:00:00+03:00"
       }
     }, 
     "additionalClassifications": [
