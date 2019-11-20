@@ -55,7 +55,7 @@ For translation into *uk* (2 letter ISO language code), you have to follow the s
 
     cd docs
 
-    ../venv/bin/sphinx-intl update -p build/locale -l uk
+    ../venv/bin/sphinx-intl update -p build/locale -l uk -w 0
 
 3. Update updated/missing strings in `docs/source/locale/<lang>/LC_MESSAGES/*.po` with your-favorite-editor/poedit/transifex/pootle/etc. to have all translations complete/updated.
 

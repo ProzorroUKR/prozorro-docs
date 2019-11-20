@@ -20,6 +20,7 @@ Contents:
    agreementcfaua/index
    relocation/index
    medicines-registry/index
+   centralized-procurements/index
    dates
    performance
    cluster

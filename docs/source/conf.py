@@ -51,7 +51,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'openprocurement.api'
-copyright = u'2014-2015, Quintagroup, Ltd'
+copyright = ""
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -266,6 +266,7 @@ texinfo_documents = [
 
 locale_dirs = ['locale/']   # path is example but recommended.
 gettext_compact = False     # optional.
+gettext_location = False
 
 intersphinx_mapping = {
     'python': ('http://docs.python.org/dev', None),
