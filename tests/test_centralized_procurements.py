@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 from copy import deepcopy
-from datetime import timedelta
 from freezegun import freeze_time
-from openprocurement.api.utils import get_now
 from openprocurement.planning.api.tests.base import BasePlanWebTest
 from tests.base.data import plan
 from openprocurement.tender.belowthreshold.tests.base import test_tender_data
@@ -45,8 +43,8 @@ class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
 
         # create plan
         test_plan_data['status'] = "draft"
-        test_plan_data['tender'].update({"tenderPeriod": {"startDate": (get_now() + timedelta(days=7)).isoformat()}})
-        test_plan_data['items'][0].update({"deliveryDate": {"endDate": (get_now() + timedelta(days=15)).isoformat()}})
+        test_plan_data['tender'].update({"tenderPeriod": {"startDate": "2019-11-01T01:00:00+03:00"}})
+        test_plan_data['items'][0].update({"deliveryDate": {"endDate": "2019-11-09T01:00:00+03:00"}})
         test_plan_data['items'] = test_plan_data['items'][:1]
 
         test_plan_data["buyers"] = [deepcopy(test_plan_data["procuringEntity"])]  # just to be sure
@@ -59,8 +57,6 @@ class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
             },
             "name": "ЦЗО №1"
         }
-        test_plan_data["tender"]["procurementMethod"] = ""
-        test_plan_data["tender"]["procurementMethodType"] = "centralizedProcurement"
 
         with freeze_time("2019-05-02 01:00:00"):
             with open(TARGET_DIR + 'create-plan.http', 'w') as self.app.file_obj:
@@ -80,32 +76,53 @@ class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
                     {'data': {"status": "scheduled"}}
                 )
         self.assertEqual(response.json["data"]["status"], "scheduled")
-        # self.assertEqual(len(response.json["data"]["milestones"]), 1)
-        #
-        # milestone = response.json["data"]["milestones"][0]
-        # with freeze_time("2019-05-02 01:02:00"):
-        #     with open(TARGET_DIR + 'patch-plan-milestone-met.http', 'w') as self.app.file_obj:
-        #         response = self.app.patch_json(
-        #             '/plans/{}/milestones/{}'.format(plan['id'], milestone["id"]),
-        #             {'data': {"status": "met"}}
-        #         )
-        # self.assertEqual(response.json["data"]["status"], "met")
-        #
-        # # tender creation
-        # procuring_entity = deepcopy(test_plan_data["procuringEntity"])
-        # procuring_entity["kind"] = "central"
-        # procuring_entity.update(
-        #     contactPoint=dict(name=u"Довідкова", telephone="0440000000"),
-        #     address=test_tender_data["procuringEntity"]["address"],
-        # )
-        # test_tender_data["procuringEntity"] = procuring_entity
-        # test_tender_data["buyers"] = test_plan_data["buyers"]
-        #
-        # with freeze_time("2019-05-12 09:00:00"):
-        #     with open(TARGET_DIR + 'create-tender.http', 'w') as self.app.file_obj:
-        #         response = self.app.post_json(
-        #             '/tenders',
-        #             {'data': test_tender_data}
-        #         )
-        # self.assertEqual(response.status, '201 Created')
+
+        # tender creation
+        procuring_entity = deepcopy(test_plan_data["procuringEntity"])
+        procuring_entity.update(
+            contactPoint=dict(name=u"Довідкова", telephone="0440000000"),
+            address=test_tender_data["procuringEntity"]["address"],
+            kind="central",
+        )
+        test_tender_data["tenderPeriod"] = dict(
+            startDate=test_plan_data["tender"]["tenderPeriod"]["startDate"],
+            endDate="2019-11-11T01:00:00+03:00"
+        )
+        test_tender_data["enquiryPeriod"] = dict(
+            startDate="2019-10-01T01:00:00+03:00",
+            endDate="2019-10-30T01:00:00+03:00",
+        )
+        test_tender_data["procuringEntity"] = procuring_entity
+        test_tender_data["buyers"] = test_plan_data["buyers"]
+        test_tender_data["items"] = test_plan_data["items"]
+        test_tender_data["status"] = "draft"
+
+        with freeze_time("2019-05-12 09:00:00"):
+            with open(TARGET_DIR + 'create-tender.http', 'w') as self.app.file_obj:
+                response = self.app.post_json(
+                    '/tenders',
+                    {'data': test_tender_data}
+                )
+        self.assertEqual(response.status, '201 Created')
+        tender = response.json
+
+        # attaching plans to the tender
+        with freeze_time("2019-05-12 09:01:00"):
+            with open(TARGET_DIR + 'post-tender-plans.http', 'w') as self.app.file_obj:
+                response = self.app.post_json(
+                    '/tenders/{}/plans?acc_token={}'.format(
+                        tender["data"]["id"],
+                        tender["access"]["token"]
+                    ),
+                    {"data": {"id": plan['id']}}
+                )
+        self.assertEqual(response.status, '200 OK')
+
+        with open(TARGET_DIR + 'plan-complete.http', 'w') as self.app.file_obj:
+            response = self.app.get('/plans/{}'.format(plan['id']))
+        self.assertEqual(response.status, '200 OK')
+
+        with open(TARGET_DIR + 'tender-get.http', 'w') as self.app.file_obj:
+            response = self.app.get('/tenders/{}'.format(tender["data"]["id"]))
+        self.assertEqual(response.status, '200 OK')
 
