@@ -3,6 +3,7 @@ import os
 from copy import deepcopy
 from freezegun import freeze_time
 from openprocurement.planning.api.tests.base import BasePlanWebTest
+from openprocurement.planning.api.constants import MILESTONE_APPROVAL_TITLE, MILESTONE_APPROVAL_DESCRIPTION
 from tests.base.data import plan
 from openprocurement.tender.belowthreshold.tests.base import test_tender_data
 from tests.base.data import tender_openeu
@@ -14,6 +15,15 @@ TARGET_DIR = 'docs/source/centralized-procurements/http/'
 test_plan_data = deepcopy(plan)
 tender_openeu = deepcopy(tender_openeu)
 test_tender_data = deepcopy(test_tender_data)
+
+central_entity = {
+    "identifier": {
+        "scheme": "UA-EDR",
+        "id": "111111",
+        "legalName": u"ДП Центральний закупівельний орган №1"
+    },
+    "name": u"ЦЗО №1"
+}
 
 
 class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
@@ -49,14 +59,7 @@ class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
 
         test_plan_data["buyers"] = [deepcopy(test_plan_data["procuringEntity"])]  # just to be sure
 
-        test_plan_data["procuringEntity"] = {
-            "identifier": {
-                "scheme": "UA-EDR",
-                "id": "111111",
-                "legalName": "ДП Центральний закупівельний орган №1"
-            },
-            "name": "ЦЗО №1"
-        }
+        test_plan_data["procuringEntity"] = central_entity
 
         with freeze_time("2019-05-02 01:00:00"):
             with open(TARGET_DIR + 'create-plan.http', 'w') as self.app.file_obj:
@@ -76,6 +79,51 @@ class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
                     {'data': {"status": "scheduled"}}
                 )
         self.assertEqual(response.json["data"]["status"], "scheduled")
+
+        with freeze_time("2019-05-02 02:00:00"):
+            with open(TARGET_DIR + 'post-plan-milestone.http', 'w') as self.app.file_obj:
+                response = self.app.post_json(
+                    '/plans/{}/milestones'.format(plan['id']),
+                    {'data': {
+                        "title": MILESTONE_APPROVAL_TITLE,
+                        "description": MILESTONE_APPROVAL_DESCRIPTION,
+                        "type": "approval",
+                        "author": central_entity,
+                        "dueDate": "2019-05-15T13:00:00.000000+02:00",
+                    }}
+                )
+        self.assertEqual(response.json["data"]["status"], "scheduled")
+        milestone = response.json["data"]
+        milestone_token = response.json["access"]["token"]
+
+        with freeze_time("2019-05-02 03:00:00"):
+            with open(TARGET_DIR + 'patch-plan-milestone.http', 'w') as self.app.file_obj:
+                response = self.app.patch_json(
+                    '/plans/{}/milestones/{}?acc_token={}'.format(
+                        plan['id'], milestone["id"], milestone_token
+                    ),
+                    {'data': {
+                        "status": "met",
+                        "description": "Прийнято в обробку з останніми змінами",
+                        "dueDate": "2019-05-30T18:00:00.000000+02:00",
+                    }}
+                )
+        self.assertEqual(response.status_code, 200)
+
+        with freeze_time("2019-05-02 03:00:00"):
+            with open(TARGET_DIR + 'post-plan-milestone-document.http', 'w') as self.app.file_obj:
+                response = self.app.post_json(
+                    '/plans/{}/milestones/{}/documents?acc_token={}'.format(
+                        plan["id"], milestone["id"], milestone_token
+                    ),
+                    {"data": {
+                        "title": u"Notice.pdf",
+                        "url": self.generate_docservice_url(),
+                        "hash": "md5:" + "0" * 32,
+                        "format": "application/pdf",
+                    }}
+                )
+        self.assertEqual(response.status_code, 201)
 
         # tender creation
         procuring_entity = deepcopy(test_plan_data["procuringEntity"])

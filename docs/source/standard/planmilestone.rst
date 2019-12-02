@@ -14,8 +14,16 @@ Schema
 :title:
     string, required
 
+    The only possible value is:
+
+    * `Підготовка до проведення процедури`
+
 :description:
     string
+
+    Default value is:
+
+    * `Узагальнення та аналіз отриманної інформації щодо проведення закупівель товарів, послуг (крім поточного ремонту) в інтересах замовників`
 
 :type:
     string, required
@@ -24,20 +32,31 @@ Schema
 
     * `approval`
 
+:dueDate:
+    string, :ref:`date`, required
+
+:author:
+    :ref:`PlanOrganization` object, required
+
+
 :status:
-    string
+    string, default `scheduled`
 
     Possible values are:
 
     * `scheduled`
     * `met`
     * `notMet`
+    * `invalid`
 
-:dueDate:
-    string, :ref:`date`, auto-generated
+:documents:
+    List of :ref:`document` objects
 
 :dateModified:
     string, :ref:`date`, auto-generated
 
 :dateMet:
     string, :ref:`date`, auto-generated
+
+:owner:
+    string, auto-generated

@@ -83,6 +83,15 @@ buyers
 
    Identifications of the subjects in whose interests the purchase is made
 
+
+milestones
+----------
+
+   List of :ref:`PlanMilestone` objects
+
+   Milestones of type `approval` used to provide Central procurement organization approve feature
+
+
 tender
 ------
    :ref:`PlanTender`, required

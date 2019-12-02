@@ -13,15 +13,24 @@ Buyer creates a plan. He should specify himself in `buyers` list and point at on
 .. include:: http/create-plan.http
    :code:
 
-..
-    After the plan gets `scheduled`, the `approval` :ref:`PlanMilestone` appears in the data:
 
-    .. include:: http/patch-plan-status-scheduled.http
+Creating approve milestone
+--------------------------
+
+As central procurement organization sees itself as `procuringEntity` of a plan,
+it can post milestones to this plan:
+
+    .. include:: http/post-plan-milestone.http
        :code:
 
-    The central procurement organization can respond that the plan has been accepted
+Only if the access token from the response is provided, the milestone can be changed later:
 
-    .. include:: http/patch-plan-milestone-met.http
+    .. include:: http/patch-plan-milestone.http
+       :code:
+
+Posting documents is also require the milestone access token (as well as changing documents using PATCH/PUT methods):
+
+    .. include:: http/post-plan-milestone-document.http
        :code:
 
 
