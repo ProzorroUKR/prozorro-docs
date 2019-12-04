@@ -104,7 +104,6 @@ class PlanResourceTest(BasePlanWebTest, MockWebTestMixin):
                     ),
                     {'data': {
                         "status": "met",
-                        "description": "Прийнято в обробку з останніми змінами",
                         "dueDate": "2019-05-30T18:00:00.000000+02:00",
                     }}
                 )
