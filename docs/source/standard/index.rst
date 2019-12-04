@@ -28,6 +28,7 @@ areas that were not covered by it.
    plan
    procuringentity
    plancancellation
+   planmilestone
    planrelation
    planorganization
    qualification

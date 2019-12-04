@@ -1,20 +1,12 @@
-PATCH /api/2.5/plans/77cf582ab7284fb1a0e748ea7fe9033f?acc_token=b1fb3396cb2041f9812f66f4c4ddd2c7 HTTP/1.0
+GET /api/2.5/plans/77cf582ab7284fb1a0e748ea7fe9033f HTTP/1.0
 Authorization: Bearer broker
-Content-Length: 33
-Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
-DATA:
-{
-  "data": {
-    "status": "scheduled"
-  }
-}
 
 Response: 200 OK
 Content-Type: application/json; charset=UTF-8
 {
   "data": {
-    "status": "scheduled", 
+    "status": "complete", 
     "buyers": [
       {
         "identifier": {
@@ -23,6 +15,37 @@ Content-Type: application/json; charset=UTF-8
           "legalName": "ДП Державне Управління Справами"
         }, 
         "name": "ДУС"
+      }
+    ], 
+    "milestones": [
+      {
+        "status": "met", 
+        "documents": [
+          {
+            "hash": "md5:00000000000000000000000000000000", 
+            "title": "Notice.pdf", 
+            "url": "http://public-docs-sandbox.prozorro.gov.ua/get/d890dc3d64cf4f178fb9db75ba5af9ba?KeyID=a8968c46&Signature=l9Wow2YLingYU5xYfD1kzPUP0kjqpX8Ly4roCF5sxfCs0HdBfUMon7%2FN%252BpsAIJEt%2FROpe%252B6w9Bt1rGK0dgCIAw%253D%253D", 
+            "format": "application/pdf", 
+            "datePublished": "2019-05-02T06:00:00+03:00", 
+            "id": "a89815d701b947879ebda169b524e54c", 
+            "dateModified": "2019-05-02T06:00:00+03:00"
+          }
+        ], 
+        "description": "Узагальнення та аналіз отриманної інформації щодо проведення закупівель товарів, послуг (крім поточного ремонту) в інтересах замовників", 
+        "author": {
+          "identifier": {
+            "scheme": "UA-EDR", 
+            "id": "111111", 
+            "legalName": "ДП Центральний закупівельний орган №1"
+          }, 
+          "name": "ЦЗО №1"
+        }, 
+        "dueDate": "2019-05-30T18:00:00+02:00", 
+        "title": "Підготовка до проведення процедури", 
+        "dateModified": "2019-05-02T06:00:00+03:00", 
+        "owner": "broker", 
+        "type": "approval", 
+        "id": "e00a9a2282f647598f1688ad83fd9070"
       }
     ], 
     "classification": {
@@ -107,8 +130,9 @@ Content-Type: application/json; charset=UTF-8
       "name": "ЦЗО №1"
     }, 
     "owner": "broker", 
-    "dateModified": "2019-05-02T04:01:00+03:00", 
-    "id": "77cf582ab7284fb1a0e748ea7fe9033f"
+    "dateModified": "2019-05-12T12:01:00+03:00", 
+    "id": "77cf582ab7284fb1a0e748ea7fe9033f", 
+    "tender_id": "a40454d58b7b4e1eb327f6aef0d0d21d"
   }
 }
 

@@ -138,24 +138,9 @@ Content-Type: application/json; charset=UTF-8
   "status": "error", 
   "errors": [
     {
-      "description": "procuringEntity.identifier doesn't match: UA-EDR 111983 != UA-EDR 21725150", 
-      "location": "data", 
-      "name": "procuringEntity"
-    }, 
-    {
       "description": "procurementMethodType doesn't match: belowThreshold != aboveThresholdEU", 
       "location": "data", 
       "name": "procurementMethodType"
-    }, 
-    {
-      "description": "Plan classification.id 03111000-2 and item's 37810000-9 should be of the same group 0311", 
-      "location": "data", 
-      "name": "items[0].classification.id"
-    }, 
-    {
-      "description": "Plan classification.id 03111000-2 and item's 37810000-9 should be of the same group 0311", 
-      "location": "data", 
-      "name": "items[1].classification.id"
     }
   ]
 }
