@@ -23,6 +23,7 @@ test_tender_negotiation_data['causeDescription'] = "оригінальний т�
 test_tender_negotiation_data['causeDescription_en'] = "original tender has failed twice"
 test_tender_negotiation_data['causeDescription_ru'] = "оригинальный тендер не получился дважды"
 test_tender_negotiation_data['value']['valueAddedTaxIncluded'] = False
+test_tender_negotiation_quick_data['cause'] = "twiceUnsuccessful"
 test_tender_negotiation_quick_data['procurementMethodType'] = "negotiation.quick"
 test_tender_negotiation_quick_data['causeDescription'] = "оригінальний тендер не вдався двічі"
 test_tender_negotiation_quick_data['causeDescription_en'] = "original tender has failed twice"
