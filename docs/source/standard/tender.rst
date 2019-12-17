@@ -438,7 +438,7 @@ Schema
 
 
 :cause:
-    string, required for **negotiation** procedure/ optional for **negotiation.quick** procedure
+    string, required for **negotiation** and **negotiation.quick** procedures
 
     Causes for using negotiation or negotiation.quick procedures. For more details see Article 35 of the Law of Ukraine "On Public Procurement".
 
