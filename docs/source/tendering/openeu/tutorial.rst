@@ -196,17 +196,8 @@ Then bidder should upload proposal technical document(s):
 .. include:: http/tutorial/upload-bid-proposal.http
    :code:
 
-Confidentiality
-^^^^^^^^^^^^^^^
 
-Documents can be either public or private:
-
-  1. Privacy settings can be changed only for the latest version of the document.
-  2. When you upload new version of the document, privacy settings are copied from the previous version.
-  3. Privacy settings can be changed only during `tenderPeriod` (with `active.tendering` status).
-  4. If tender has status `active.qualification` winner can upload only public documents.
-
-Let's upload private document:
+Let's upload a document:
 
 .. include:: http/tutorial/upload-bid-private-proposal.http
    :code:
