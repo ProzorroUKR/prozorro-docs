@@ -19,7 +19,7 @@ Schema
     * `Підготовка до проведення процедури`
 
 :description:
-    string
+    string, min-length is 3
 
     Default value is:
 
