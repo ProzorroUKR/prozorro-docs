@@ -182,6 +182,10 @@ Schema
     The country name. For example, United States.
 
 
+Since 01-01-2020 fields **countryName** and **region** in all new entities will validate. Country name in field **countryName** must be present in `countries catalog <https://prozorroukr.github.io/standards/classifiers/countries.json>`_.
+If field **countryName** filled as *Україна*, and **region** filled, region must be present in `ukrainian regions catalog <https://prozorroukr.github.io/standards/classifiers/ua_regions.json>`_. For existed objects validation will not apply. 
+
+
 .. index:: Person, Phone, Email, Website, ContactPoint
 
 .. _ContactPoint:

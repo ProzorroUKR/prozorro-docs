@@ -1,9 +1,9 @@
-#
+
 msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.api 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-04 14:23+0300\n"
+"POT-Creation-Date: 2019-12-12 10:35+0200\n"
 "PO-Revision-Date: 2019-10-02 21:20+0300\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
 "Language-Team: Ukrainian <info@quintagroup.com>\n"
@@ -11,346 +11,211 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
-"Language: uk\n"
-"X-Generator: Poedit 2.2.3\n"
 
-#: ../../source/standard/organization.rst:9
 msgid "Organization"
 msgstr "Organization"
 
-#: ../../source/standard/organization.rst:12
-#: ../../source/standard/organization.rst:53
-#: ../../source/standard/organization.rst:105
-#: ../../source/standard/organization.rst:152
-#: ../../source/standard/organization.rst:193
 msgid "Schema"
 msgstr "Схема"
 
-#: ../../source/standard/organization.rst:0
 msgid "name"
 msgstr ""
 
-#: ../../source/standard/organization.rst:15
-#: ../../source/standard/organization.rst:56
-#: ../../source/standard/organization.rst:129
 msgid "string, multilingual"
 msgstr "рядок, багатомовний"
 
-#: ../../source/standard/organization.rst:17
-#: ../../source/standard/organization.rst:58
 msgid "Additionally in :ref:`openeu` and :ref:`esco`:"
 msgstr "Додатково у :ref:`openeu` та :ref:`esco`::"
 
-#: ../../source/standard/organization.rst:19
-#: ../../source/standard/organization.rst:60
 msgid "uk (name) and en (name_en) translations are required"
 msgstr "uk (name) та en (name_en) переклади обов’язкові"
 
-#: ../../source/standard/organization.rst:21
-#: ../../source/standard/organization.rst:62
 msgid "|ocdsDescription| The common name of the organization."
 msgstr "|ocdsDescription| Назва організації."
 
-#: ../../source/standard/organization.rst:0
 msgid "identifier"
 msgstr ""
 
-#: ../../source/standard/organization.rst:25
-#: ../../source/standard/organization.rst:66
 msgid ":ref:`Identifier`"
 msgstr ":ref:`Identifier`"
 
-#: ../../source/standard/organization.rst:27
-#: ../../source/standard/organization.rst:68
 msgid "|ocdsDescription| The primary identifier for this organization."
 msgstr "|ocdsDescription| Ідентифікатор цієї організації."
 
-#: ../../source/standard/organization.rst:0
 msgid "additionalIdentifiers"
 msgstr ""
 
-#: ../../source/standard/organization.rst:31
-#: ../../source/standard/organization.rst:72
 msgid "List of :ref:`identifier` objects"
 msgstr "Список об’єктів :ref:`identifier`"
 
-#: ../../source/standard/organization.rst:0
 msgid "address"
 msgstr ""
 
-#: ../../source/standard/organization.rst:34
-#: ../../source/standard/organization.rst:75
 msgid ":ref:`Address`, required"
 msgstr ":ref:`Address`, обов’язково"
 
-#: ../../source/standard/organization.rst:0
 msgid "contactPoint"
 msgstr ""
 
-#: ../../source/standard/organization.rst:37
-#: ../../source/standard/organization.rst:78
 msgid ":ref:`ContactPoint`, required"
 msgstr ":ref:`ContactPoint`, обов’язково"
 
-#: ../../source/standard/organization.rst:39
-#: ../../source/standard/organization.rst:80
 msgid "Additionally in :ref:`openeu`:"
 msgstr "Додатково у :ref:`openeu`:"
 
-#: ../../source/standard/organization.rst:0
 msgid "additionalContactPoints"
 msgstr ""
 
-#: ../../source/standard/organization.rst:42
-#: ../../source/standard/organization.rst:83
 msgid "List of :ref:`ContactPoint` objects"
 msgstr "Список об’єктів :ref:`ContactPoint`"
 
-#: ../../source/standard/organization.rst:50
 msgid "BusinessOrganization"
 msgstr ""
 
-#: ../../source/standard/organization.rst:0
 msgid "scale"
 msgstr ""
 
-#: ../../source/standard/organization.rst:86
-#: ../../source/standard/organization.rst:117
 msgid "string, required"
 msgstr "рядок, обов’язковий"
 
-#: ../../source/standard/organization.rst:88
-#: ../../source/standard/organization.rst:233
 msgid "Possible values are:"
 msgstr "Можливі значення:"
 
-#: ../../source/standard/organization.rst:90
 msgid "`micro`"
 msgstr ""
 
-#: ../../source/standard/organization.rst:91
 msgid "`sme`"
 msgstr ""
 
-#: ../../source/standard/organization.rst:92
 msgid "`large`"
 msgstr ""
 
-#: ../../source/standard/organization.rst:93
 msgid "`mid`"
 msgstr ""
 
-#: ../../source/standard/organization.rst:94
 msgid "`not specified`"
 msgstr ""
 
-#: ../../source/standard/organization.rst:102
 msgid "Identifier"
 msgstr ""
 
-#: ../../source/standard/organization.rst:0
 msgid "scheme"
 msgstr ""
 
-#: ../../source/standard/organization.rst:108
-#: ../../source/standard/organization.rst:155
-#: ../../source/standard/organization.rst:161
-#: ../../source/standard/organization.rst:167
-#: ../../source/standard/organization.rst:173
-#: ../../source/standard/organization.rst:208
-#: ../../source/standard/organization.rst:216
-#: ../../source/standard/organization.rst:231
 msgid "string"
 msgstr "рядок"
 
-#: ../../source/standard/organization.rst:110
-msgid ""
-"|ocdsDescription| Organization identifiers be drawn from an existing "
-"identification scheme. This field is used to indicate the scheme or codelist in "
-"which the identifier will be found.  This value should be drawn from the "
-"Organization Identifier Scheme."
-msgstr ""
-"|ocdsDescription| Ідентифікатори організації беруться з існуючої схеми "
-"ідентифікації. Це поле вказує схему або список кодів, де можна знайти "
-"ідентифікатор організації. Це значення повинно братись зі Схеми Ідентифікації "
-"Організацій."
+msgid "|ocdsDescription| Organization identifiers be drawn from an existing identification scheme. This field is used to indicate the scheme or codelist in which the identifier will be found.  This value should be drawn from the Organization Identifier Scheme."
+msgstr "|ocdsDescription| Ідентифікатори організації беруться з існуючої схеми ідентифікації. Це поле вказує схему або список кодів, де можна знайти ідентифікатор організації. Це значення повинно братись зі Схеми Ідентифікації Організацій."
 
-#: ../../source/standard/organization.rst:0
 msgid "id"
 msgstr ""
 
-#: ../../source/standard/organization.rst:119
-msgid ""
-"|ocdsDescription| The identifier of the organization in the selected scheme."
+msgid "|ocdsDescription| The identifier of the organization in the selected scheme."
 msgstr "|ocdsDescription| Ідентифікатор організації у вибраній схемі."
 
-#: ../../source/standard/organization.rst:122
-msgid ""
-"The allowed codes are the ones found in `\"Organisation Registration Agency\" "
-"codelist of IATI Standard <http://iatistandard.org/codelists/"
-"OrganisationRegistrationAgency/>`_ with addition of `UA-EDR` code for "
-"organizations registered in Ukraine (EDRPOU and IPN)."
-msgstr ""
-"Дозволеними є коди зі `спику кодів \"Organisation Registration Agency\" "
-"Стандарту IATI <http://iatistandard.org/codelists/"
-"OrganisationRegistrationAgency/>`_ з додаванням коду `UA-EDR` для організацій, "
-"зареєстрованих в Україні (ЄДРПОУ та ІПН)."
+msgid "The allowed codes are the ones found in `\"Organisation Registration Agency\" codelist of IATI Standard <http://iatistandard.org/codelists/OrganisationRegistrationAgency/>`_ with addition of `UA-EDR` code for organizations registered in Ukraine (EDRPOU and IPN)."
+msgstr "Дозволеними є коди зі `спику кодів \"Organisation Registration Agency\" Стандарту IATI <http://iatistandard.org/codelists/OrganisationRegistrationAgency/>`_ з додаванням коду `UA-EDR` для організацій, зареєстрованих в Україні (ЄДРПОУ та ІПН)."
 
-#: ../../source/standard/organization.rst:0
 msgid "legalName"
 msgstr ""
 
-#: ../../source/standard/organization.rst:131
 msgid "|ocdsDescription| The legally registered name of the organization."
 msgstr "|ocdsDescription| Легально зареєстрована назва організації."
 
-#: ../../source/standard/organization.rst:0
-#: ../../source/standard/organization.rst:135
 msgid "uri"
 msgstr "uri"
 
-#: ../../source/standard/organization.rst:137
-msgid ""
-"|ocdsDescription| A URI to identify the organization, such as those provided by "
-"Open Corporates or some other relevant URI provider.  This is not for listing "
-"the website of the organization: that can be done through the url field of the "
-"Organization contact point."
-msgstr ""
-"|ocdsDescription| URI для ідентифікації організації, наприклад, ті, які надають "
-"Open Corporates або інші постачальники URI. Це не для вебсайту організації, "
-"його можна надати в полі url в ContactPoint організації."
+msgid "|ocdsDescription| A URI to identify the organization, such as those provided by Open Corporates or some other relevant URI provider.  This is not for listing the website of the organization: that can be done through the url field of the Organization contact point."
+msgstr "|ocdsDescription| URI для ідентифікації організації, наприклад, ті, які надають Open Corporates або інші постачальники URI. Це не для вебсайту організації, його можна надати в полі url в ContactPoint організації."
 
-#: ../../source/standard/organization.rst:149
 msgid "Address"
 msgstr ""
 
-#: ../../source/standard/organization.rst:0
 msgid "streetAddress"
 msgstr ""
 
-#: ../../source/standard/organization.rst:157
 msgid "|ocdsDescription| The street address. For example, 1600 Amphitheatre Pkwy."
 msgstr "|ocdsDescription| Вулиця. Наприклад, вул.Хрещатик, 22."
 
-#: ../../source/standard/organization.rst:0
 msgid "locality"
 msgstr ""
 
-#: ../../source/standard/organization.rst:163
 msgid "|ocdsDescription| The locality. For example, Mountain View."
 msgstr "|ocdsDescription| Населений пункт. Наприклад, Київ."
 
-#: ../../source/standard/organization.rst:0
 msgid "region"
 msgstr ""
 
-#: ../../source/standard/organization.rst:169
 msgid "|ocdsDescription| The region. For example, CA."
 msgstr "|ocdsDescription| Область. Наприклад, Київська."
 
-#: ../../source/standard/organization.rst:0
 msgid "postalCode"
 msgstr ""
 
-#: ../../source/standard/organization.rst:175
 msgid "|ocdsDescription| The postal code. For example, 94043."
 msgstr "|ocdsDescription| Поштовий індекс, Наприклад, 78043."
 
-#: ../../source/standard/organization.rst:0
 msgid "countryName"
 msgstr ""
 
-#: ../../source/standard/organization.rst:179
-#: ../../source/standard/organization.rst:196
 msgid "string, multilingual, required"
 msgstr "рядок, багатомовний, обов’язковий"
 
-#: ../../source/standard/organization.rst:181
 msgid "|ocdsDescription| The country name. For example, United States."
 msgstr "|ocdsDescription| Назва країни. Наприклад, Україна."
 
-#: ../../source/standard/organization.rst:190
+msgid "Since 01-01-2020 fields **countryName** and **region** in all new entities will validate. Country name in field **countryName** must be present in `countries catalog <https://prozorroukr.github.io/standards/classifiers/countries.json>`_. If field **countryName** filled as *Україна*, and **region** filled, region must be present in `ukrainian regions catalog <https://prozorroukr.github.io/standards/classifiers/ua_regions.json>`_. For existed objects validation will not apply."
+msgstr "З 01-01-2020 поля countryName та region почнуть перевірятися в усіх нових обʼєктах. Назва країни в полі **countryName** має бути присутня в `довіднику країн <https://prozorroukr.github.io/standards/classifiers/countries.json>`_. Якщо поле countryName заповнене як *Україна* і поле **region** заповнене, його вміст має бути присутнім в `каталозі регіонів України <https://prozorroukr.github.io/standards/classifiers/ua_regions.json>`_. Для існуючих обʼєктів валідація застосовуватися не буде."
+
 msgid "ContactPoint"
 msgstr "ContactPoint"
 
-#: ../../source/standard/organization.rst:198
-msgid ""
-"|ocdsDescription| The name of the contact person, department, or contact point, "
-"for correspondence relating to this contracting process."
-msgstr ""
-"|ocdsDescription| Ім’я контактної особи, назва відділу чи контактного пункту "
-"для листування, що стосується цього процесу укладання договору."
+msgid "|ocdsDescription| The name of the contact person, department, or contact point, for correspondence relating to this contracting process."
+msgstr "|ocdsDescription| Ім’я контактної особи, назва відділу чи контактного пункту для листування, що стосується цього процесу укладання договору."
 
-#: ../../source/standard/organization.rst:0
-#: ../../source/standard/organization.rst:202
 msgid "email"
 msgstr "email"
 
-#: ../../source/standard/organization.rst:204
 msgid "|ocdsDescription| The e-mail address of the contact point/person."
 msgstr "|ocdsDescription| Адреса електронної пошти контактної особи/пункту."
 
-#: ../../source/standard/organization.rst:0
 msgid "telephone"
 msgstr ""
 
-#: ../../source/standard/organization.rst:210
-msgid ""
-"|ocdsDescription| The telephone number of the contact point/person. This should "
-"include the international dialling code."
-msgstr ""
-"|ocdsDescription| Номер телефону контактної особи/пункту. Повинен включати "
-"міжнародний телефонний код."
+msgid "|ocdsDescription| The telephone number of the contact point/person. This should include the international dialling code."
+msgstr "|ocdsDescription| Номер телефону контактної особи/пункту. Повинен включати міжнародний телефонний код."
 
-#: ../../source/standard/organization.rst:213
 msgid "Either `email` or `telephone` field has to be provided."
 msgstr "Повинне бути заповнене хоча б одне з полів: або `email`, або `telephone`."
 
-#: ../../source/standard/organization.rst:0
 msgid "faxNumber"
 msgstr ""
 
-#: ../../source/standard/organization.rst:218
-msgid ""
-"|ocdsDescription| The fax number of the contact point/person. This should "
-"include the international dialling code."
-msgstr ""
-"|ocdsDescription| Номер факсу контактної особи/пункту. Повинен включати "
-"міжнародний телефонний код."
+msgid "|ocdsDescription| The fax number of the contact point/person. This should include the international dialling code."
+msgstr "|ocdsDescription| Номер факсу контактної особи/пункту. Повинен включати міжнародний телефонний код."
 
-#: ../../source/standard/organization.rst:0
-#: ../../source/standard/organization.rst:222
 msgid "url"
 msgstr "url"
 
-#: ../../source/standard/organization.rst:224
 msgid "|ocdsDescription| A web address for the contact point/person."
 msgstr "|ocdsDescription| Веб адреса контактної особи/пункту."
 
-#: ../../source/standard/organization.rst:228
-msgid ""
-"Additionally in :ref:`contracting`, :ref:`openeu` and :ref:"
-"`competitivedialogue`:"
-msgstr ""
-"Додаткові поля для :ref:`contracting`, :ref:`openeu` and :ref:"
-"`competitivedialogue`:"
+msgid "Additionally in :ref:`contracting`, :ref:`openeu` and :ref:`competitivedialogue`:"
+msgstr "Додаткові поля для :ref:`contracting`, :ref:`openeu` and :ref:`competitivedialogue`:"
 
-#: ../../source/standard/organization.rst:0
 msgid "availableLanguage"
 msgstr ""
 
-#: ../../source/standard/organization.rst:235
 msgid "`uk`"
 msgstr "`uk` - українська мова"
 
-#: ../../source/standard/organization.rst:236
 msgid "`en`"
 msgstr "`en` - англійська мова"
 
-#: ../../source/standard/organization.rst:237
 msgid "`ru`"
 msgstr "`ru` - російська мова"
 
-#: ../../source/standard/organization.rst:239
 msgid "Specifies the language of communication."
 msgstr "Визначає мови спілкування."
+
