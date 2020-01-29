@@ -1017,3 +1017,127 @@ class TenderUAResourceTest(BaseTenderUAWebTest, MockWebTestMixin):
                     "status": "cancelled"
                 }})
             self.assertEqual(response.status, '200 OK')
+
+
+TARGET_DIR_DOCS = 'docs/source/tendering/basic-actions/http/confidential-documents/'
+
+
+class TenderConfidentialDocumentsTest(BaseTenderUAWebTest, MockWebTestMixin):
+    AppClass = DumpsWebTestApp
+    relative_to = os.path.dirname(__file__)
+    initial_data = test_tender_ua_data
+    docservice = True
+    docservice_url = DOCS_URL
+    auctions_url = AUCTIONS_URL
+    initial_status = "active.tendering"
+
+    def setUp(self):
+        super(TenderConfidentialDocumentsTest, self).setUp()
+        self.setUpMock()
+
+    def tearDown(self):
+        self.tearDownMock()
+        super(TenderConfidentialDocumentsTest, self).tearDown()
+
+    def test_docs(self):
+        # Create tender
+        response = self.app.post_json(
+            '/tenders?opt_pretty=1',
+            {'data': test_tender_ua_data})
+        self.assertEqual(response.status, '201 Created')
+        tender_id = response.json["data"]["id"]
+        tender_token = response.json["access"]["token"]
+
+        # Create bid
+        response = self.app.post_json(
+            "/tenders/{}/bids".format(tender_id),
+            {
+                "data": bid
+            },
+        )
+        bid_id = response.json["data"]["id"]
+        bid_token = response.json["access"]["token"]
+
+        # create private document
+        with open(TARGET_DIR_DOCS + 'create-document.http', 'w') as self.app.file_obj:
+            response = self.app.post_json(
+                "/tenders/{}/bids/{}/documents?acc_token={}".format(tender_id, bid_id, bid_token),
+                {"data": {
+                    "title": "private.doc",
+                    "url": self.generate_docservice_url(),
+                    "hash": "md5:" + "0" * 32,
+                    "format": "application/msword",
+                    "confidentiality": "buyerOnly",
+                    "confidentialityRationale": "This document contains some secret data that shouldn't be public",
+                }},
+                status=201
+            )
+            private_doc_id = response.json["data"]["id"]
+
+        response = self.app.post_json(
+            "/tenders/{}/bids/{}/documents?acc_token={}".format(tender_id, bid_id, bid_token),
+            {"data": {
+                "title": "public-to-private.doc",
+                "url": self.generate_docservice_url(),
+                "hash": "md5:" + "0" * 32,
+                "format": "application/msword",
+            }},
+            status=201
+        )
+        public_to_private_doc_id = response.json["data"]["id"]
+
+        # change to private
+        with open(TARGET_DIR_DOCS + 'patch-public-document.http', 'w') as self.app.file_obj:
+            self.app.patch_json(
+                "/tenders/{}/bids/{}/documents/{}?acc_token={}".format(
+                    tender_id, bid_id, public_to_private_doc_id, bid_token),
+                {"data": {
+                    "confidentiality": "buyerOnly",
+                    "confidentialityRationale": "Lol, this document contains some secret data "
+                                                "that shouldn't be public, I'm changing it's confidentiality",
+                }},
+                status=200
+            )
+
+        # just public for ex.
+        self.app.post_json(
+            "/tenders/{}/bids/{}/documents?acc_token={}".format(tender_id, bid_id, bid_token),
+            {"data": {
+                "title": "public.doc",
+                "url": self.generate_docservice_url(),
+                "hash": "md5:" + "0" * 32,
+                "format": "application/msword",
+            }},
+            status=201
+        )
+
+        # switch to active.qualification
+        tender = self.db.get(tender_id)
+        tender["status"] = "active.qualification"
+        tender["awards"] = [
+            {
+                "id": "0" * 32,
+                "bid_id": bid_id,
+                "status": "pending",
+            }
+        ]
+        self.db.save(tender)
+
+        # get list as tender owner
+        with open(TARGET_DIR_DOCS + 'document-list-private.http', 'w') as self.app.file_obj:
+            response = self.app.get(
+                "/tenders/{}/bids/{}/documents?acc_token={}".format(tender_id, bid_id, tender_token)
+            )
+        self.assertEqual(len(response.json["data"]), 3)
+
+        # get list as public
+        with open(TARGET_DIR_DOCS + 'document-list-public.http', 'w') as self.app.file_obj:
+            response = self.app.get(
+                "/tenders/{}/bids/{}/documents".format(tender_id, bid_id)
+            )
+        self.assertEqual(len(response.json["data"]), 3)
+        self.assertNotIn("url", response.json["data"][0])
+        self.assertNotIn("url", response.json["data"][1])
+        self.assertIn("url", response.json["data"][2])
+
+

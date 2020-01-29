@@ -63,9 +63,9 @@ Schema
 :documents:
     List of :ref:`Document` objects
 
-    Differences in :ref:`competitivedialogue` and :ref:`esco`:
+    Differences in :ref:`competitivedialogue`, :ref:`cfaua`, :ref:`openeu`, :ref:`openua`, :ref:`defense` and :ref:`esco`:
 
-        List of :ref:`ConfidentialDocument` objects. This envelope has to contain only technical part of proposal (`technicalSpecifications` and `qualificationDocuments`). It is revealed at pre-qualification.
+        List of :ref:`ConfidentialDocument` objects. See :ref:`confidential-documents`
 
 :parameters:
     List of :ref:`Parameter` objects

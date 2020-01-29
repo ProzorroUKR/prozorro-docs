@@ -9,6 +9,7 @@ Contents:
    :maxdepth: 2
 
    upload
+   confidential-documents
    questions
    tenders
    qualifications
