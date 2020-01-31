@@ -6,7 +6,7 @@ Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
-    "reasonType": "unsuccessful"
+    "reasonType": "unFixable"
   }
 }
 
@@ -16,7 +16,7 @@ Content-Type: application/json; charset=UTF-8
   "data": {
     "status": "pending", 
     "reason": "cancellation reason", 
-    "reasonType": "unsuccessful", 
+    "reasonType": "unFixable",
     "date": "2019-10-25T01:00:01+03:00", 
     "cancellationOf": "tender", 
     "id": "5c22115bd57a4d56bad766fcf88a788b"

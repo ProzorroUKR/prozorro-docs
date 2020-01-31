@@ -6,7 +6,8 @@ Host: lb-api-sandbox.prozorro.gov.ua
 DATA:
 {
   "data": {
-    "reason": "cancellation reason"
+    "reason": "cancellation reason",
+    "reasonType": "noDemand"
   }
 }
 
@@ -17,7 +18,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/6012d8a8840848c5
   "data": {
     "status": "pending", 
     "reason": "cancellation reason", 
-    "reasonType": "cancelled", 
+    "reasonType": "noDemand",
     "date": "2019-10-25T01:00:00+03:00", 
     "cancellationOf": "tender", 
     "id": "49515b18ca6f4302ad53f708eaeaa0ef"
