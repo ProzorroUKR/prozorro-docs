@@ -387,7 +387,7 @@ class TenderUAResourceTest(BaseTenderUAWebTest, MockWebTestMixin):
             response = self.app.post_json(
                 '/tenders/{}/cancellations?acc_token={}'.format(
                     self.tender_id, owner_token),
-                {'data': {'reason': 'cancellation reason'}})
+                {'data': {'reason': 'cancellation reason', 'reasonType': 'cancelled'}})
             self.assertEqual(response.status, '201 Created')
 
         cancellation_id = response.json['data']['id']
