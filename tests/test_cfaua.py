@@ -1761,3 +1761,37 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
                     "status": "cancelled"
                 }})
             self.assertEqual(response.status, '200 OK')
+    
+
+    def test_cancellation_complaints(self):
+        self.app.authorization = ('Basic', ('broker', ''))
+
+        lot = deepcopy(test_lots[0])
+        lot['id'] = uuid4().hex
+        lot['value'] = test_tender_data['value']
+        lot['minimalStep'] = test_tender_data['minimalStep']
+        second_item = deepcopy(test_tender_data['items'][0])
+        second_item['unit']['code'] = '44617100-8'
+        test_tender_data['items'] = [test_tender_data['items'][0], second_item]
+        test_tender_data['lots'] = [lot]
+        for item in test_tender_data['items']:
+            item['relatedLot'] = lot['id']
+
+        response = self.app.post_json(
+            '/tenders?opt_pretty=1',
+            {'data': test_tender_data})
+        self.assertEqual(response.status, '201 Created')
+
+        tender = response.json['data']
+        owner_token = response.json['access']['token']
+        self.tender_id = tender['id']
+
+        response = self.app.post_json(
+            '/tenders/{}/cancellations'.format(self.tender_id),
+            {"reason": "cancellation reason"},
+        )
+        self.assertEqual(response.status, '200 OK')
+        self.assertEqual(response.json["data"]["status"], "draft")  
+
+
+
