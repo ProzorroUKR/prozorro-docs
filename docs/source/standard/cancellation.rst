@@ -22,10 +22,14 @@ Schema
     string
 
     Possible values are:
+     :`draft`:
+       Default. Cancellation in a state of formation.
      :`pending`:
-       Default. The request is being prepared.
+       The request is being prepared.
      :`active`:
        Cancellation activated.
+     :`unsuccessful`:
+       Cancellation was unsuccessful. 
 
 :documents:
     List of :ref:`Document` objects
@@ -54,6 +58,13 @@ Schema
 
     Id of related :ref:`lot`.
 
+:complaint_period:
+    :ref:`period`
+
+    The timeframe when complaints can be submitted.
+
+:complaints:
+    List of :ref:`Complaint` objects
 
 Additionally in :ref:`openeu`, :ref:`openua` and :ref:`esco`:
 
@@ -74,9 +85,14 @@ Cancellation workflow in :ref:`limited` and :ref:`openeu`
 .. graphviz::
 
     digraph G {
-        A [ label="pending*" ]
-        B [ label="active"]
-         A -> B;
+        A [ label="draft*" ]
+        B [ label="pending" ]
+        C [ label="active"]
+        D [ label="unsuccessful" ]
+        
+        A -> B;
+        B -> C;
+        B -> D;
     }
 
 \* marks initial state
