@@ -89,7 +89,7 @@ Schema
      :`dateViolation`:
        Cut down the expenses of procurement of goods, works and services.
     
-    Possible types for `belowThreshold`:
+    Possible types for `belowThreshold` and `aboveThresholdUA.defense`:
      
      :`noDemand`:
        No need in procurement of goods, works and services.
@@ -99,14 +99,6 @@ Schema
 
      :`expensesCut`:
        Cut down the expenses of procurement of goods, works and services.
-    
-    Possible types for `aboveThresholdUA.defense`:
-     
-     :`cancelled`:
-       Default. Tender was cancelled.
-     
-     :`unsuccessful`:
-       Tender was unsuccessful.
 
 Cancellation workflow in :ref:`limited` and :ref:`openeu`
 ---------------------------------------------------------
