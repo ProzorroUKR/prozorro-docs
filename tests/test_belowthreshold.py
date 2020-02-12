@@ -523,7 +523,7 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
                 '/tenders/{}/cancellations?acc_token={}'.format(
                     self.tender_id, owner_token),
                 {'data': {'reason': 'cancellation reason'}})
-            self.assertEqual(response.status, '201 Created')
+            self.assertEqual(response.json["data"]["status"], "draft")
 
         cancellation_id = response.json['data']['id']
 
@@ -541,6 +541,13 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
                 }})
             cancellation_doc_id = response.json['data']['id']
             self.assertEqual(response.status, '201 Created')
+
+        with open(TARGET_DIR + 'tutorial/get-cancellation-after-uploaded-doc.http', 'w') as self.app.file_obj:
+            response = self.app.get(
+                '/tenders/{}/cancellations/{}?acc_token={}'.format(
+                    self.tender_id, cancellation_id, owner_token),
+                )
+            self.assertEqual(response.status, '200 OK')
 
         with open(TARGET_DIR + 'tutorial/patch-cancellation.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
@@ -562,6 +569,14 @@ class TenderResourceTest(BaseTenderWebTest, MockWebTestMixin):
             self.assertEqual(response.status, '200 OK')
 
         # Activating the request and cancelling tender
+        with open(TARGET_DIR + 'pending-cancellation.http', 'w') as self.app.file_obj:
+            response = self.app.patch_json(
+                '/tenders/{}/cancellations/{}?acc_token={}'.format(
+                    self.tender_id, cancellation_id, owner_token),
+                {'data': {"status": "pending"}})
+            self.assertEqual(response.status, '200 OK')
+
+        self.tick(delta=timedelta(days=10))
 
         with open(TARGET_DIR + 'tutorial/active-cancellation.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(

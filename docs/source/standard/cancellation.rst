@@ -89,8 +89,8 @@ Cancellation workflow in :ref:`limited` and :ref:`openeu`
         B [ label="pending" ]
         C [ label="active"]
         D [ label="unsuccessful" ]
-        
         A -> B;
+        A -> D;
         B -> C;
         B -> D;
     }

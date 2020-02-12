@@ -396,11 +396,15 @@ Tender creator can cancel tender anytime. The following steps should be applied:
 
 1. Prepare cancellation request.
 2. Fill it with the protocol describing the cancellation reasons.
-3. Cancel the tender with the prepared reasons.
+3. Passing complaint period(10 days)
+4. Cancel the tender with the prepared reasons.
 
 Only the request that has been activated (3rd step above) has power to
 cancel tender.  I.e.  you have to not only prepare cancellation request but
 to activate it as well.
+
+For cancelled cancellation you need to update cancellation status to `unsuccessful`
+from `draft` or `pending`.
 
 See :ref:`cancellation` data structure for details.
 
@@ -440,6 +444,16 @@ Upload new version of the document
 
 .. include::  tutorial/update-cancellation-doc.http
    :code:
+
+
+Passing Complaint Period
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+For activate complaint period, you need to update cancellation from `draft` to `pending`.
+
+.. include::  tutorial/pending-cancellation.http
+   :code:
+
 
 Activating the request and cancelling tender
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

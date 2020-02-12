@@ -1,0 +1,12 @@
+PATCH /api/2.5/tenders/43065f79dd7e45c0b16491071a916fb0/cancellations/b701dced2df24251a45c2bd4fcfdd7c2?acc_token=ef3755cd94a0443f896d385189f2ff5e HTTP/1.0
+Authorization: Bearer broker
+Content-Length: 33
+Content-Type: application/json
+Host: lb-api-sandbox.prozorro.gov.ua
+DATA:
+{
+  "data": {
+    "status": "cancelled"
+  }
+}
+

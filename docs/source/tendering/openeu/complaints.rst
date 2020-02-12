@@ -119,6 +119,36 @@ Tender Award Claims/Complaints
 
     complaints-award
 
+Tender Cancellation Complaints
+-----------------------------------
+
+.. graphviz::
+
+    digraph G {
+        rankdir=LR;
+        {rank=same; mistaken; invalid; resolved; declined; stopped; cancelled;}
+
+        subgraph cluster_complaint {
+            label = "complaint";
+            pending; satisfied; accepted; stopping;
+        }
+        satisfied -> resolved;
+        edge[style=dashed];
+        draft -> {cancelled,pending};
+        pending -> stopping;
+        accepted -> stopping;
+        edge[style=bold];
+        accepted -> {declined,satisfied,stopped};
+        pending -> {accepted,invalid,stopped};
+        stopping -> {stopped,invalid,declined,satisfied};
+        {pending;stopping} -> mistaken;
+    }
+
+.. toctree::
+    :maxdepth: 1
+
+    cancellation-complaint
+
 Roles
 -----
 

@@ -668,6 +668,14 @@ class TenderResourceTest(BaseESCOWebTest, MockWebTestMixin):
             self.assertEqual(response.status, '200 OK')
 
         #### Activating the request and cancelling tender
+        with open(TARGET_DIR + 'pending-cancellation.http', 'w') as self.app.file_obj:
+            response = self.app.patch_json(
+                '/tenders/{}/cancellations/{}?acc_token={}'.format(
+                    self.tender_id, cancellation_id, owner_token),
+                {'data': {"status": "pending"}})
+            self.assertEqual(response.status, '200 OK')
+
+        self.tick(delta=timedelta(days=10))
 
         with open(TARGET_DIR + 'active-cancellation.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(

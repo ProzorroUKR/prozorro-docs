@@ -163,7 +163,7 @@ Content-Type: application/json; charset=UTF-8
       "startDate": "2019-10-25T01:00:00+03:00", 
       "endDate": "2019-10-25T01:00:00+03:00"
     }, 
-    "dateModified": "2019-10-25T01:00:01+03:00", 
+    "dateModified": "2019-11-04T00:00:02+02:00", 
     "numberOfBids": 2, 
     "tenderPeriod": {
       "startDate": "2019-09-14T01:00:00+03:00", 
@@ -400,7 +400,7 @@ Content-Type: application/json; charset=UTF-8
         "id": "cc09c32b70944953bb082bdf4cf13c48"
       }
     ], 
-    "date": "2019-10-25T01:00:01+03:00", 
+    "date": "2019-11-04T00:00:02+02:00", 
     "minValue": {
       "currency": "UAH", 
       "amount": 0.0, 
@@ -806,7 +806,11 @@ Content-Type: application/json; charset=UTF-8
         ], 
         "reason": "cancellation reason", 
         "reasonType": "unsuccessful", 
-        "date": "2019-10-25T01:00:01+03:00", 
+        "date": "2019-11-04T00:00:02+02:00", 
+        "complaint_period": {
+          "startDate": "2019-10-25T01:00:01+03:00", 
+          "endDate": "2019-11-04T01:00:01+03:00"
+        }, 
         "cancellationOf": "tender", 
         "id": "340d917daa2d41599bb71c6f330fdd43"
       }
