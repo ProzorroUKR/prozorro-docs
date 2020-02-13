@@ -746,6 +746,8 @@ class TenderUAResourceTest(BaseTenderUAWebTest, MockWebTestMixin):
                 upload_files=[('file', u'Complaint_Attachement.pdf', 'content')])
             self.assertEqual(response.status, '201 Created')
 
+        self.tick()
+
         with open(TARGET_DIR + 'award-complaint-complaint.http', 'w') as self.app.file_obj:
             response = self.app.patch_json(
                 '/tenders/{}/awards/{}/complaints/{}?acc_token={}'.format(
