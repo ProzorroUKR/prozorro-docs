@@ -68,14 +68,13 @@ Tender Qualification Claims/Complaints
         claim -> answered;
         satisfied -> resolved;
         edge[style=dashed];
-        draft -> {claim,pending};
+        draft -> {claim,pending,mistaken};
         {draft,claim,answered} -> cancelled;
         {pending,accepted} -> stopping;
         edge[style=bold];
         pending -> {accepted,invalid,stopped};
         stopping -> {stopped,invalid,declined,satisfied};
         accepted -> {declined,satisfied,stopped};
-        {pending;stopping} -> mistaken;
     }
 
 .. toctree::
@@ -102,14 +101,13 @@ Tender Award Claims/Complaints
         claim -> answered;
         satisfied -> resolved;
         edge[style=dashed];
-        draft -> {claim,pending};
+        draft -> {claim,pending,mistaken};
         {draft,claim,answered} -> cancelled;
         {pending,accepted} -> stopping;
         edge[style=bold];
         pending -> {accepted,invalid,stopped};
         stopping -> {stopped,invalid,declined,satisfied};
         accepted -> {declined,satisfied,stopped};
-        {pending;stopping} -> mistaken;
     }
 
 .. toctree::

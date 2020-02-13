@@ -83,7 +83,7 @@ Tender Award Complaints
         }
         satisfied -> resolved;
         edge[style=dashed];
-        draft -> {pending,cancelled}; 
+        draft -> {pending,cancelled,mistaken};
         {pending,accepted} -> stopping;
         edge[style=bold];
         pending -> {accepted,invalid,stopped};
